@@ -1,0 +1,15 @@
+---
+title: "IST215 - Hafta 01"
+subtitle: "Tanışma"
+# format: live-html
+engine: knitr
+# webr:
+#   packages:
+#     - dplyr
+toc: true
+link-external-icon: true
+link-external-newwindow: true
+---
+
+* Bu hafta herhangi bir ders işlenmeyecek olup, dersle ilgili genel bilgiler verilecektir. 
+* Öğrencilerle dersin ve istatistiğin genel olarak ne işe yaradığıyla ilgili tartışılacaktır.
