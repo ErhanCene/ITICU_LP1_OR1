@@ -12,18 +12,23 @@
     ]
   },
   {
+    "objectID": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "title": "IST115 - Hafta 01",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 01"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Öğretim Üyesi hk.",
     "section": "",
     "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "IST115_WEEK01_MAIN.html",
-    "href": "IST115_WEEK01_MAIN.html",
-    "title": "Hafta 01",
-    "section": "",
-    "text": "You can switch to full screen mode by pressing ff.\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "IST115/Hafta01/index.html",
@@ -220,17 +225,5 @@
     "title": "Hafta 01",
     "section": "Modelin Uygulanması",
     "text": "Modelin Uygulanması\n\n\n\n\nModelin Uygulanması\n\n\n\nTutarlılığı kanıtlanmış bir modelin çözümünün uygulanması, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir."
-  },
-  {
-    "objectID": "IST115/MainPage/IST115_WEEK01_MAIN.html",
-    "href": "IST115/MainPage/IST115_WEEK01_MAIN.html",
-    "title": "IST115 - Hafta 01",
-    "section": "",
-    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Öğretim Üyesi hk.",
-      "IST115 - Doğrusal Programlama 1 Ders Notları",
-      "IST115 - Hafta 01"
-    ]
   }
 ]
