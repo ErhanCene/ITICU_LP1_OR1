@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "IST115 - Doğrusal Programlama ve IST215 - Yöneylem Araştırması Ders Notları"
+  #favicon: LectureNotes/figures/intro to r logo black.png
+  description: "IST115 ve IST215 için ders notlarını içeren websayfası."
+  repo-url: https://github.com/ErhanCene/ITICU_LP1_OR1.git
+  repo-actions: [edit, issue]
+  repo-subdir: "docs"
+  page-navigation: true
+  back-to-top-navigation: true
+
+  navbar: 
+    # title: false
+    logo: iticulogo.png
+    logo-alt: "Logo for introduction to R Programming"
+    right: 
+      - href: about.qmd
+  sidebar:
+    style: 'docked'
+    contents:
+      - section: Başlamadan Önce - Hafta 0
+        contents: 
+        - index.qmd
+        #- LectureNotes/Week00/00--01--General--Info.qmd
+        #- LectureNotes/Week00/00--02--Installing--R--and--RStudio.qmd
+        #- LectureNotes/Week00/00--03--Syllabus.qmd
+        #- LectureNotes/Week00/00--04--Evaluation.qmd
+        #- LectureNotes/Week00/00--05--Materials.qmd
+        #- LectureNotes/Week00/00--06--Useful--Websites.qmd
+        #- LectureNotes/Week00/00--07--How--to--use--this--Webpage.qmd
+      - section: IST115 - Doğrusal Programlama 1 Ders Notları
+        contents: 
+          #- MainPage/01--01--Basics--Main.qmd
+          #- MainPage/01--02--Data--Types--Main.qmd
+          # - LabSession01Main.qmd
+      - section: IST215 - Yöneylem Araştırması 1 Ders Notları
+        contents: 
+          #- MainPage/01--01--Basics--Main.qmd
+          #- MainPage/01--02--Data--Types--Main.qmd
+          # - LabSession01Main.qmd
+  page-footer:
+    background: light # or `dark`
+    left: Copyright 2025, Erhan ÇENE
+    right: This website is built with {{< fa heart title="a heart" >}}, {{< fa droplet title="a droplet" >}}, {{< fa face-grin-tears title="a face with tears" >}}, [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com/erhancene){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
+    
+format:
+  live-html:
+    theme: 
+      light: 
+        - cosmo
+        - styles.scss
+      dark: 
+        - darkly
+        - styles.scss
+    mainfont: Nunito
+    toc: true
+    page-layout: full

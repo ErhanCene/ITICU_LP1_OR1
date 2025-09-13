@@ -1,0 +1,12 @@
+---
+title: Ön Bilgi
+# subtitle: Lecture Notes
+# format: live-html
+engine: knitr
+toc: true
+link-external-icon: true
+link-external-newwindow: true
+---
+
+* Bu websayfası, lisans düzeyindeki `IST115 - Doğrusal Programlama 1` ve `IST215 - Yöneylem Araştırması 1` derslerinin ders notlarına eşlik etmek üzere hazırlanmıştır.
+* Bu websayfasının amacı, ders notlarını kolay ve düzenli bir şekilde sunmaktır.

@@ -1,0 +1,56 @@
+---
+title: Öğretim Üyesi hk.
+# subtitle: Motivation 
+# format: live-html
+engine: knitr
+toc: true
+link-external-icon: true
+link-external-newwindow: true
+
+
+image: ./erhanceneavesis.png
+about: 
+  template: jolla 
+  image-shape: round
+  image-width: 12em
+  links: # create buttons
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/erhan-%C3%A7ene-03488960/
+      target: _blank # opens link in a new browser tab
+    - icon: github
+      text: GitHub
+      href: https://github.com/erhanCene/
+      target: _blank 
+    - icon: house
+      text: University Webpage
+      href: https://avesis.yildiz.edu.tr/ecene
+      target: _blank 
+    - icon: envelope
+      text: Email
+      href: mailto:ecene@yildiz.edu.tr
+
+---
+
+```{css, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+
+.addpad {
+  padding: 20px 100px;
+}
+
+```
+
+::: {.justify .addpad}
+
+* Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü'nde doçent olarak çalışıyorum ([üniversite web sayfasına bakınız](https://avesis.yildiz.edu.tr/ecene "kişisel web sayfası")).
+* Genel araştırma ve ilgi alanlarım, **bunlarla sınırlı olmamakla birlikte**, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir ([yayın listesine bakınız](https://avesis.yildiz.edu.tr/ecene/yayinlar "yayın listesi")).
+* Lisans düzeyinde `Python'a Giriş`, `R ile İstatistiksel Programlama`, `Veritabanı` ve `Web Programlama` gibi programlama derslerinin yanı sıra `Örnekleme 1` ve lisansüstü düzeyde `Veri Düzenleme ve Görselleştirme` dersleri veriyorum.
+* Ders notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için `bookdown` paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.
+* 2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi'nde vereceğim `IST115 - Doğrusal Programlama 1` ve `IST215 - Yöneylem Araştırması 1` derslerinin de notlarını bu websayfasında topladım.
+* Eğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.
+* Herhangi bir sorunuz ve olası iş birliği için [linkedin](https://www.linkedin.com/in/erhan-%C3%A7ene-03488960/) üzerinden benimle iletişime geçebilirsiniz.
+
+:::

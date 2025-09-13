@@ -1,0 +1,21 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ön Bilgi",
+    "section": "",
+    "text": "Bu websayfası, lisans düzeyindeki IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin ders notlarına eşlik etmek üzere hazırlanmıştır.\nBu websayfasının amacı, ders notlarını kolay ve düzenli bir şekilde sunmaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "Başlamadan Önce - Hafta 0",
+      "Ön Bilgi"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Öğretim Üyesi hk.",
+    "section": "",
+    "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  }
+]
