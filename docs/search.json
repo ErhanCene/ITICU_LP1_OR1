@@ -12,16 +12,35 @@
     ]
   },
   {
-    "objectID": "IST215/MainPage/IST215_WEEK01_MAIN.html",
-    "href": "IST215/MainPage/IST215_WEEK01_MAIN.html",
-    "title": "IST215 - Hafta 01",
+    "objectID": "IST215/MainPage/IST215_WEEK02_MAIN.html",
+    "href": "IST215/MainPage/IST215_WEEK02_MAIN.html",
+    "title": "IST215 - Hafta 02",
     "section": "",
-    "text": "Bu hafta herhangi bir ders işlenmeyecek olup, dersle ilgili genel bilgiler verilecektir.\nÖğrencilerle dersin ve istatistiğin genel olarak ne işe yaradığıyla ilgili tartışılacaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Öğretim Üyesi hk.",
       "IST215 - Yöneylem Araştırması 1 Ders Notları",
-      "IST215 - Hafta 01"
+      "IST215 - Hafta 02"
     ]
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "title": "IST115 - Hafta 01",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 01"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Öğretim Üyesi hk.",
+    "section": "",
+    "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "IST115/Hafta01/index.html",
@@ -220,22 +239,309 @@
     "text": "Modelin Uygulanması\n\n\n\n\nModelin Uygulanması\n\n\n\nTutarlılığı kanıtlanmış bir modelin çözümünün uygulanması, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Öğretim Üyesi hk.",
+    "objectID": "IST215/MainPage/IST215_WEEK01_MAIN.html",
+    "href": "IST215/MainPage/IST215_WEEK01_MAIN.html",
+    "title": "IST215 - Hafta 01",
     "section": "",
-    "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "IST115/MainPage/IST115_WEEK01_MAIN.html",
-    "href": "IST115/MainPage/IST115_WEEK01_MAIN.html",
-    "title": "IST115 - Hafta 01",
-    "section": "",
-    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Bu hafta herhangi bir ders işlenmeyecek olup, dersle ilgili genel bilgiler verilecektir.\nÖğrencilerle dersin ve istatistiğin genel olarak ne işe yaradığıyla ilgili tartışılacaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Öğretim Üyesi hk.",
-      "IST115 - Doğrusal Programlama 1 Ders Notları",
-      "IST115 - Hafta 01"
+      "IST215 - Yöneylem Araştırması 1 Ders Notları",
+      "IST215 - Hafta 01"
     ]
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#haftalık-ders-planı",
+    "href": "IST215/Hafta02/index.html#haftalık-ders-planı",
+    "title": "Hafta 02",
+    "section": "Haftalık Ders Planı",
+    "text": "Haftalık Ders Planı\n\nPlanlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n5\n16 Ekim 2025 Perşembe\nAtama Problemleri 1\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri 2\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#kaynak-kitaplar",
+    "href": "IST215/Hafta02/index.html#kaynak-kitaplar",
+    "title": "Hafta 02",
+    "section": "Kaynak Kitaplar",
+    "text": "Kaynak Kitaplar\n\n\nDers notları, sınavlar için yeterlidir.\nTAHA, H. (2017), Yöneylem Araştırması, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar: Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul.\nÖZTÜRK, A. (2014), Yöneylem Araştırması, 15. Baskı, Ekin Yayınevi.\nWINSTON, Wayne L. (2004), Operations Research Applications and Algorithms, Fourth Edition, Thomson Learning, USA\nBRONSON, R. ve NAADIMUTHI, G. (1997), Schaum’s Outline of Operations Research, Second Edition, McGraw-Hill."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yönetim-fonksiyonları",
+    "href": "IST215/Hafta02/index.html#yönetim-fonksiyonları",
+    "title": "Hafta 02",
+    "section": "Yönetim Fonksiyonları",
+    "text": "Yönetim Fonksiyonları\n\n\n\n\nYönetim Fonksiyonları\n\n\n\nSanayi devrimi ile birlikte endüstri işletmelerinin hızla büyümeleri sonucunda bir kişinin bütün yöneticilik fonksiyonlarını tek başına yürütebilmesi imkansız hale gelmiştir.\nBunun doğal sonucu olarak yönetim fonksiyonları ayrılmış, böylece işletme bünyesinde üretim, pazarlama, finansman vb. farklı bölümler ortaya çıkmıştır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#çatışan-amaçlar",
+    "href": "IST215/Hafta02/index.html#çatışan-amaçlar",
+    "title": "Hafta 02",
+    "section": "Çatışan Amaçlar",
+    "text": "Çatışan Amaçlar\n\n\n\n\nÇatışan Amaçlar\n\n\n\nYönetim fonksiyonunun gittikçe artan sayıda bölümlere ayrılması, yeni işletme sorunlarını da beraberinde getirmiştir.\nBir bölüm için en iyi olan davranış biçiminin bir başka bölüm için iyi olmak bir yana genellikle yıkıcı olması, bölümleri birbirlerinin amaç ve faaliyetlerini göz önünde bulundurmak zorunda bırakmıştır.\nBu tip sorunlar ve bunlara daha iyi çözüm bulma yaklaşımları da yöneylem araştırmasını doğurmuştur."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (1)\n\n\n\nKayıtlı olan literatüre göre yönetim için bilimsel yaklaşım presipleri 1900’lü yılların başlarında Frederick Taylor tarafından ortaya konulmuştur.\nGünümüz yöneylem araştırmasında kullanılan bazı model ve tekniklerin kullanılması çok eskiye dayansa da, yöneylem araştırması adı verilen ilk faaliyetin II. Dünya Savaşı sırasında gerçekleştirildiği kabul edilmektedir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (2)\n\n\n\nİkinci Dünya Savaşı sırasında İngiltere askeri yönetimi, düşmanlarının hava akınları karşısında en iyi savunma şeklini belirlemek amacıyla farklı disiplinlerden bilim adamlarıyla bir ekip çalışması başlatmış ve böylece en iyi savunma şeklini bulmuştur.\nBu çalışma için bir araya gelen bilim adamlarından yeni tip bombaların etkinliklerinin belirlenmesi ve radarların etkili biçimde kullanımlarının sağlanması problemlerini çözmeleri istenmiştir.\nÇözüm sonuçlarının uygulamada çok başarılı olması, savunma sisteminin diğer kesimlerinde; radar denetim politikaları, uçaksavar yangın kontrolü, konvoy büyüklüğü, düşman denizaltılarının yerlerinin saptanması gibi çeşitli askeri problemlerin çözümünde benzer ekiplerin oluşturulması sağlanmıştır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (3)\n\n\n\nİngiltere’de alınan başarılı sonuçlar müttefiklerin de dikkatini çekmiş, bu ülkeler de askeri problemlerini farklı disiplinlerden bilim adamlarıyla oluşturdukları ekipleriyle çözmeye girişmişlerdir\nYöneylem araştırmasıyla İngiltere’den çok sonra tanışmış olmakla beraber, ABD’nin bu konudaki yoğun çabaları yöneylem araştırmasında önemli ilerlemeler kaydedilmesini sağlamıştır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (4)\n\n\n\nABD hava kuvvetlerinin kurduğu ekibin üyelerinden birisi olan Dantzig, büyük organizasyonların gerçekleştirdikleri faaliyetlerin büyük bir bölümünün dağıtım problemi olarak ele alınabileceğini düşünmüştür.\nOna göre en iyi plan-programa bir amaç fonksiyonunun en küçüklenmesi (minimizasyonu) ile ulaşılabilecektir.\nDantzig, ayrıca doğrusal programlama problemlerinin klasik çözüm tekniği olan simpleks yöntemini önermiştir"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (5)\n\n\n\nSavaş sırasında, askeri problemlerin çözümü için oluşturulan ekiplerde aktif biçimde çalışan bilim adamları, savaş sonrasında dikkatlerini benzer yaklaşımın sivil yaşam problemlerine uygulanabilirliği üzerinde yoğunlaştırmışlardır:\n\nÜniversitelerine dönüp mevcut teknikler için sağlam temel oluşturma konusunda çalışanlar\nYeni teknikler geliştirme çabasına girenler\nÖzel ekonominin değişik kesimlerindeki çalışmalarına dönerek buralarda karşılaşılan problemleri benzer yaklaşımla çözmeye çalışanlar\n\nBütün bu çalışmalar bilimsel bir uğraşı alanının yani Yöneylem Araştırması nın doğuşuna yol açmıştır"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının uygulanması",
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (1)\n\n\n\nYöneylem araştırmasını ilk uygulayan sivil kuruluşlar kar amaçlı büyük endüstriyel kuruluşlar olmuştur.\nKüçük boyutlu kuruluşlar, yöneylem araştırmasının yalnızca büyük işletmeler için değil, kendileri için de yararlı olduğunun farkına biraz geç varmışlardır\nKüçük şirketler ancak, araştırmacıların birbirlerinden farklı gibi görünmelerine karşın pek çok problemin stok, dağıtım, sıralama, kuyruk, oyun gibi belirli bir başlık altında incelenebileceklerini farketmeleri ve bunlar için standart çözüm teknikleri geliştirmelerinden çok sonra konuya ilgi göstermişlerdir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının uygulanması",
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (2)\n\n\n\nBirkaç uygulama dışında yöneylem araştırmasının hizmet ağırlıklı endüstrilerde ve kamu kesiminde kullanılması 1960’lı yılların ortalarında gerçekleşmiştir.\nBugün, banka, kütüphane, hastane, otel, okul gibi hizmet ağırlıklı pek çok kuruluş hizmet verme etkinliğini artırmada yöneylem araştırmasından büyük yarar sağlamaktadır.\nDevlet kuruluşları da plan, program ve politika belirleme çalışmalarında yöneylem araştırmasını yaygın bir biçimde kullanmaktadırlar.\nYöneylem araştırmasının çok geniş bir uygulama alanı bulması ve çok hızlı bir gelişme göstermesindeki en önemli faktör bilgisayar teknolojisindeki gelişme olmuştur."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
+    "href": "IST215/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
+    "title": "Hafta 02",
+    "section": "İlk yöneylem araştırması kuruluşu",
+    "text": "İlk yöneylem araştırması kuruluşu\n\n\n\n\nİlk yöneylem araştırması kuruluşu\n\n\n\nYöneylem araştırması alanında çalışan bilimadamlarının ihtiyaçlarını karşılamak amacıyla kurulan ilk yöneylem araştırması kuruluşu, 1952 yılında ABD’de kurulan ORSA (The Operational Research Society of America) olmuştur.\nTürkiye’de yöneylem araştırması çalışmalarının batıdan çok sonra başladığı bilinmektedir.\nÜlkemizde de ilk yöneylem araştırması çalışmaları batıda olduğu gibi savunma kesiminde başlamıştır.\nSavunma kesimi dışında ilk yöneylem araştırması ekibi 1965 yılında Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK) bünyesinde kurulmuştur."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının tanımı",
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (1)\n\n\n\nYöneylem araştırması, sistemlerin performansını optimize etmek için teknikler kullanan bir bilim dalıdır.\nYöneylem araştırması, bir sistemde ortaya çıkan problemlere, sistemin denetlenebilir elemanları cinsinden bilimsel yöntem, teknik ve araçların uygulanmasıyla en iyi çözümün bulunmasıdır.\nYöneylem araştırması, insan, makina, para ve malzemeden oluşan endüstriyel, ticari, resmive askeri sistemlerde yönetimlerde karşılaşılan problemlere bilimsel yaklaşımdır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının tanımı",
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (2)\n\n\n\nAmacı, yönetime politika ve faaliyetlerini bilimsel olarak belirlemede yardımcı olmaktır.\nYöneylem araştırması, mevcut imkanlardan en büyük faydayı sağlamak için girişilen bilimsel yaklaşmalar ve teknikler cümlesidir.\nYöneylem araştırmasının ana konusu, herhangi bir sistemin karmaşık operasyonlarını anlamak ve performansını iyileştirmek için bilimsel karar verme yöntemleridir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının temel özellikleri",
+    "text": "Yöneylem araştırmasının temel özellikleri\n\n\n\n\nYöneylem araştırmasının temel özellikleri\n\n\n1. Sistem yaklaşımını kullanması: Yöneylem araştırması problemi çözerken, o problemin ait olduğu organizasyonun bütün unsurlarını, çevresini ve aralarındaki etkileşimi göz önünde bulundurur.\n2. Disiplinlerarası bir yaklaşım olması: Problemin modellenmesinde ve çözümünde farklı bakış açılarından faydalanabilmek için problemlerin disiplinlerarası bir ekip tarafından incelenmesi gerekir.\n3. Bilimsel yöntemler kullanması: Yöneylem araştırması problemi tanımlar, modeller, çözer, sonuçları test eder ve uygular."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
+    "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının metodolojisi (1)",
+    "text": "Yöneylem araştırmasının metodolojisi (1)\n\n\n\n\nİyi bir YA uygulamasının altı basamağı\n\n\n1) Problemin Tanımlanması\n2) Sistemin Gözlenmesi\n3) Problemin Matematiksel Modelinin Geliştirilmesi\n4) Modelin Çözülmesi\n5) Modelin Geçerliliğinin Gösterilmesi\n6) Çözümün Uygulanması ve Yorumlanması"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-tanımlanması",
+    "href": "IST215/Hafta02/index.html#problemin-tanımlanması",
+    "title": "Hafta 02",
+    "section": "Problemin Tanımlanması",
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (1)\n\n\n\nAmaçlar nelerdir?\nProblem çok dar kapsamlı mı ele alındı?\nProblem çok geniş kapsamlı mı ele alındı?"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-tanımlanması-1",
+    "href": "IST215/Hafta02/index.html#problemin-tanımlanması-1",
+    "title": "Hafta 02",
+    "section": "Problemin Tanımlanması",
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (2)\n\n\n\nMümkün seçenekler arasından bir faaliyet veya faaliyetler dizisinin benimsenmesine karar denir.\nAlternatif stratejiler arasından en uygun olanını seçme konusunda karar verme yetkisine sahip birey ya da topluluğa verilen genel isme karar verici denir.\nKarar vericinin ulaşmak istediği bir amacının olması, bu amaca ulaşmada izlenebilecek alternatif stratejilerin bulunması ve alternatifler içinden hangisinin amacı gerçekleştirebileceği konusunda kuşku içinde bulunulması gerekmektedir.\nAncak bu koşullar sağlandığında bir problem vardır denir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#sistemin-gözlenmesi",
+    "href": "IST215/Hafta02/index.html#sistemin-gözlenmesi",
+    "title": "Hafta 02",
+    "section": "Sistemin Gözlenmesi",
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (1)\n\n\n\nHangi veriler toplanmalı?\nVeriler nasıl toplanmalı?\nSistemin farklı parçaları birbirleriyle nasıl etkileşmektedir?"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#sistemin-gözlenmesi-1",
+    "href": "IST215/Hafta02/index.html#sistemin-gözlenmesi-1",
+    "title": "Hafta 02",
+    "section": "Sistemin Gözlenmesi",
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (2)\n\n\n\nSistem gözlemlenir ve probleme etki eden parametreler tahmin edilmeye çalışılır.\nBu amaçla veri derlenmesi, bu adımın çok önemli bir kısmını oluşturur.\nTahmin değerleri sabit sayılar olarak işleme tabi tutulurlar ve matematiksel modelin geliştirilmesinde kullanılırlar.\nProblem elemanlarının duruma en uygun biçimde belirlenebilmesi için sistem yaklaşımı kullanılır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#sistem-nedir",
+    "href": "IST215/Hafta02/index.html#sistem-nedir",
+    "title": "Hafta 02",
+    "section": "Sistem Nedir?",
+    "text": "Sistem Nedir?\n\n\n\n\nSistem Nedir?\n\n\n\nBir sınır içerisinde, birbirleriyle etkileşim içinde bulunan ve ortak bir amaca yönelmiş olan öğeler topluluğuna sistem denir.\nSistem, girdileri çıktılara dönüştüren birbirleriyle ilişkili faaliyetlerden ve öğelerden (elemanlardan) oluşmaktadır.\nSistemin çok sayıda girdisi ve çıktısı olabilir.\n\n\n\n\n\n\n\n\nA\n\n\n\nGirdiler\n\nGirdiler\n\n\n\nİşlemler\n\nİşlemler\n\n\n\nGirdiler-&gt;İşlemler\n\n\n\n\n\nÇıktılar\n\nÇıktılar\n\n\n\nİşlemler-&gt;Çıktılar"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (1)\n\n\n\nHangi tür model kullanılmalı?\nModel, problemi tam olarak ifade ediyor mu?\nModel çok mu karmaşık?"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (2)\n\n\n\nProblemin kolayca çözülebilecek bir yapıya oturtulması gerekmektedir.\nModel nedir?\nBir sistemin değişen koşullar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında varsayımlarda bulunmak amacıyla elemanları arasındaki bağlantıları kelimeler veya matematiksek terimlerle belirleyen ifadeler topluluğuna model denir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Model Şeması\n\n\n\n\n\n\n\n\n\n\n\n\nmygraph\n\n\n\nSistem\n\nSistem\n\n\n\nGerçek Sistem Üzerinde Çalışmak\n\nGerçek Sistem Üzerinde Çalışmak\n\n\n\nSistem-&gt;Gerçek Sistem Üzerinde Çalışmak\n\n\n\n\n\nSistem Modeli Üzerinde Çalışmak\n\nSistem Modeli Üzerinde Çalışmak\n\n\n\nSistem-&gt;Sistem Modeli Üzerinde Çalışmak\n\n\n\n\n\nFiziksel Modeller Üzerinde Çalışmak\n\nFiziksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Fiziksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak\n\nMatematiksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Matematiksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nAnalitik Model Üzerinde Çalışmak\n\nAnalitik Model Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Analitik Model Üzerinde Çalışmak\n\n\n\n\n\nSimülasyon Modeli Üzerinde Çalışmak\n\nSimülasyon Modeli Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Simülasyon Modeli Üzerinde Çalışmak\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Problemin Matematiksel Model Şeması"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (3)\n\n\n\nHer modelin kuruluş amacı, belirli bir ekonomik sistemi yönetmekle görevli kişi veya kişilere (karar vericiye) mümkün karar seçeneklerini sunmak, bunların sonuçlarını belirlemek ve karşılaştırmalar yapmaktır.\nYöneylem araştırmasının karar vermeye en önemli katkısı matematiksel modellerdir.\nBir sistemin davranışlarıyla ilgili kuralların matematiksel olarak ifade edilmesiyle matematiksel modeller kurulur."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (4)\n\n\n\nEğer ele alınan sistem matematiksel modellerle çözülemeyecek kadar karmaşık bir yapıya sahipse sistemin bir simülasyon modeli kurulur.\nSimülasyon, bir sistemin tüm çalışma zamanı boyunca davranış şeklinin bilgisayar ortamında taklit edilmesidir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (1)\n\n\n\nEkonomik sistemlerin matematiksel modellerinde kullanılan elemanlarını üç ana grupta toplamak mümkündür:\n\n\nAmaç fonksiyonu\nKarar değişkenleri\nKısıtlar"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
+    "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (2)\n\n\n\nBir karar verme durumunda ilgilenilen sistem dikkatli bir şekilde gözlemlenir ve değerleri kontrol edilebilen ve sistemin performansını etkileyen parametreler belirlenir.\nBu parametreler yöneticilerin kontrolü altındadır ve karar değişkenleri olarak tanımlanırlar. Bir üretim sisteminde farklı ürünlerin üretilecek miktarları, bir yerden başka yere taşınacak ürün miktarı, işçi sayısı, makina sayısı vb\nKarar değişkenlerinin amaç üzerindeki etkilerinin analitik olarak gösterilmesiyle amaç fonksiyonu oluşturulur\nKısıtlar, sistemin içinde bulunduğu koşullardan kaynaklanmaktadır (talep kısıtları, kapasite kısıtları gibi)"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi",
+    "href": "IST215/Hafta02/index.html#modelin-çözülmesi",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (1)\n\n\nEn uygun çözüm tekniği nedir?\n\nAnalitik çözüm\nAlgoritmalar\nSimülasyon\nSezgisel"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi-1",
+    "href": "IST215/Hafta02/index.html#modelin-çözülmesi-1",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (2)\n\n\n\nAnalitik çözüm: Problemin Lagrange çarpanları, diferansiyel ve integral hesapları ile koşullu en iyi çözümünün bulunmasıdır. Analitik çözümde sadece matematiğin değil iktisat teorisinin de temel kuralları kullanılır.\nAlgoritma çözümü: Analitik çözüm bazen çok zor veya imkansız olabilir. Belirli bir sıra içerisinde gerçekleştirilen matematiksel ve mantıksal işlemler kümesine algoritma denir. Yinelemeli olarak uygulanan algoritmalar her adımda optimuma daha yakın bir çözüme doğru ilerler."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi-2",
+    "href": "IST215/Hafta02/index.html#modelin-çözülmesi-2",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (3)\n\n\n\nSimülasyon çözümü: Problem, analitik olarak veya algoritmalarla çözülemiyorsa kullanılır. Sistemin davranış şekli bilgisayar ortamında taklit edilir.\nSezgisel çözüm: Problem optimum çözümü bulunamayacak kadar karmaşıksa, sezgisel yöntemler sezgiye veya bazı deneysel kayıtlara dayanan karar kuralları ile belirli sayıda adımdan sonra en iyi olmasa da tatminkar bir sonuç verirler."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
+    "href": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
+    "title": "Hafta 02",
+    "section": "Modelin Geçerliliğinin Gösterilmesi",
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (1)\n\n\n\nModelden elde edilen çıktılar sistemin kendisinden elde edilen çıktılarla uyuşuyor mu?\nModelden elde edilen çıktılar mantıklı mı?\nModel hatalı olabilir mi?"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
+    "href": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
+    "title": "Hafta 02",
+    "section": "Modelin Geçerliliğinin Gösterilmesi",
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (2)\n\n\n\nModelden elde edilen çözümü uygulamaya koymadan önce gerçeğe uygunluğunun kanıtlanması gerekir.\nEğer çözüm sistemin geçmiş dönem sonuçlarını aynen veya daha olumlu bir şekilde sağlıyorsa, modelin geçerli olduğu kabul edilir.\nEğer sistemin geçmiş dönem sonuçları yoksa simülasyondan yararlanılır.\nModel geçerliliğinin kanıtlanmasında bir başka yol olarak da sistemdeki deneyimli kişilerin görüşlerine başvurulabilir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
+    "href": "IST215/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
+    "title": "Hafta 02",
+    "section": "Çözümün Uygulanması ve Yorumlanması",
+    "text": "Çözümün Uygulanması ve Yorumlanması\n\n\n\n\nÇözümün Uygulanması ve Yorumlanması (1)\n\n\n\nYöneylem araştırması ekibi, uygulama sürecini açıklamalı ve uygulamada yardımcı olmalıdır.\nUygulamanın nasıl yapılacağı bir rapor halinde yönetime sunulmalıdır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
+    "href": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
+    "title": "Hafta 02",
+    "section": "Başarılı Yöneylem Araştırması Uygulamaları",
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nHewlett Packard\n\n\n1998\n\n\nÜretim hattında ara stok tasarımı\n\n\nKuyruk Modelleri\n\n\n$280 million\n\n\n\n\nTaco Bell\n\n\n1998\n\n\nİşgücü çizelgelemesi\n\n\nTamsayılı Programlama, Tahmin, Simülasyon\n\n\n$13 million\n\n\n\n\nProctor & Gamble\n\n\n1997\n\n\nÜretim ve dağıtım sisteminin yeniden tasarlanması\n\n\nUlaştırma Modelleri\n\n\n$200 million\n\n\n\n\nDelta Airlines\n\n\n1994\n\n\nUçakların rotalara atanması\n\n\nTamsayılı Programlama\n\n\n$100 million\n\n\n\n\nAT&T\n\n\n1993\n\n\nÇağrı merkezi tasarımı\n\n\nKuyruk Modelleri, Simülasyon\n\n\n$750 million\n\n\n\n\nYellow Freight Systems, Inc.\n\n\n1992\n\n\nNakliye şebekelerinin tasarımı\n\n\nŞebeke Modelleri, Tahmin, Simülasyon\n\n\n$11.3 million\n\n\n\n\nSan Francisco Police Dept.\n\n\n1989\n\n\nDevriye çizelgeleme\n\n\nDoğrusal Programlama\n\n\n$11 million"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
+    "href": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
+    "title": "Hafta 02",
+    "section": "Başarılı Yöneylem Araştırması Uygulamaları",
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nBethlehem Steel\n\n\n1989\n\n\nKülçe kalıbı tasarımı\n\n\nTamsayılı Programlama\n\n\n$8 million\n\n\n\n\nNorth American Van Lines\n\n\n1988\n\n\nYükleri şöförlere atamak\n\n\nŞebeke Modelleme\n\n\n$2.5 million\n\n\n\n\nCitgo Petroleum\n\n\n1987\n\n\nRafineri operasyonları & dağıtım\n\n\nDoğrusal Programlama, Tahmin\n\n\n$70 million\n\n\n\n\nUnited Airlines\n\n\n1986\n\n\nRezervasyon personelinin çizelgelenmesi\n\n\nDoğrusal Programlama, Kuyruk, Tahmin\n\n\n$6 million\n\n\n\n\nDairyman’s Creamery\n\n\n1985\n\n\nOptimum üretim seviyeleri\n\n\nDoğrusal Programlama\n\n\n$48,000\n\n\n\n\nPhillips Petroleum\n\n\n1983\n\n\nEkipman yenileme\n\n\nŞebeke Modelleme\n\n\n$90,000"
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri",
+    "href": "IST215/Hafta02/index.html#matematiksel-model-türleri",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (1)\n\n\n\nYöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-1",
+    "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-1",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (2)\n\n\n\nEğer karar değişkenleri üzerinde hiçbir sınırlama yoksa kısıtsız modeller ortaya çıkar, en azından bir sınırlama olması kısıtlı modelleri ortaya çıkarır.\nGerçek hayatta genellikle kısıtlı problemler karşımıza çıkar.\nEğer problem tek bir dönem için çözülecekse statik model, birden fazla dönem göz önüne alınarak çözülecekse dinamik model ortaya çıkar.\nEğer birden fazla amaç varsa çok amaçlı problemler ortaya çıkar."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-2",
+    "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-2",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (3)\n\n\n\nEğer tüm karar değişkenleri pozitif reel (gerçel) değerler alıyorsa sürekli optimizasyon problemi söz konusudur\nTüm karar değişkenlerinin tamsayı değerler alması gerekiyorsa kesikli optimizasyon problemi ortaya çıkar\nBazı karar değişkenlerinin reel, bazılarının tamsayı değer alması durumunda ise karışık kesikli optimizasyon problemi ile karşılaşırız.\nEğer karar değişkenlerinin kombinatoryal seçenekleri söz konusuysa kombinatoryal optimizasyon problemleri ortaya çıkar."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-3",
+    "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-3",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (1)\n\n\n\nDinamik modeller için kullanılan yaklaşım dinamik programlamadır.\nEğer optimize edilecek birden fazla amaç varsa genellikle kullanılan yaklaşım hedef programlamadır.\nModeldeki tüm fonksiyonların doğrusal olması durumunda sürekli optimizasyon problemleri doğrusal programlama yöntemi ile çözülür. Sürekli optimizasyon modelinde en azından bir fonksiyonun doğrusal olmaması durumundaysa doğrusal olmayan programlama yöntemi kullanılır."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-4",
+    "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-4",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (2)\n\n\n\nEğer kesikli optimizasyon problemlerinde karar değişkenleri herhangi bir tamsayı değer alıyorsa tamsayılı programlama yöntemi kullanılır.\nKombinatoryal optimizasyon problemlerinin belirli bir boyuta kadar olanı tamsayılı programlama yöntemi ile çözülürken, orta ve büyük boyutlu problemlerin sezgisel yöntemlerle çözülmesi gerekmektedir."
+  },
+  {
+    "objectID": "IST215/Hafta02/index.html",
+    "href": "IST215/Hafta02/index.html",
+    "title": "Hafta 02",
+    "section": "",
+    "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n5\n16 Ekim 2025 Perşembe\nAtama Problemleri 1\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri 2\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
   }
 ]

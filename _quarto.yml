@@ -32,7 +32,7 @@ website:
       - section: IST215 - Yöneylem Araştırması 1 Ders Notları
         contents: 
           - IST215/MainPage/IST215_WEEK01_MAIN.qmd
-          #- MainPage/01--02--Data--Types--Main.qmd
+          - IST215/MainPage/IST215_WEEK02_MAIN.qmd
           # - LabSession01Main.qmd
   page-footer:
     background: light # or `dark`

@@ -1,0 +1,607 @@
+---
+title: Hafta 02
+subtitle: "Yöneylem Araştırması Nedir?"
+date: 09/25/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST215 - Yöneylem Araştırması 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+## Haftalık Ders Planı
+
+::: {style="font-size: 50%;"}
+Planlanan [taslak]{.red} haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.
+
+| Hafta   | Tarih                  | Konu                                                |
+|---------|:-----------------------|:----------------------------------------------------|
+| 1       | 18 Eylül 2025 Perşembe | Tanışma |
+| 2       | 25 Eylül 2025 Perşembe | Yöneylem Araştırması Nedir?      | 
+| 3       | 02 Ekim 2025 Perşembe  | Ulaştırma Problemleri 1        |  
+| 4       | 09 Ekim 2025 Perşembe  | Ulaştırma Problemleri 1                           |  
+| 5       | 16 Ekim 2025 Perşembe  | Atama Problemleri 1|  
+| 6       | 23 Ekim 2025 Perşembe  | Atama Problemleri 2                 |   
+| 7       | 30 Ekim 2025 Perşembe  |[Genel Tekrar ve Soru Çözümü]{.orange}              |  
+| 8       | 06 Kasım 2025 Perşembe |[VİZE]{.light-blue} |  
+| 9       | 13 Kasım 2025 Perşembe | Tamsayılı Programlama 1 | 
+| 10      | 20 Kasım 2025 Perşembe | Tamsayılı Programlama 2 | 
+| 11      | 27 Kasım 2025 Perşembe | Karar Kuramı 1 |  
+| 12      | 04 Aralık 2025 Perşembe| Karar Kuramı 2 |  
+| 13      | 11 Aralık 2025 Perşembe| Oyun Kuramı 1 |  
+| 14      | 18 Aralık 2025 Perşembe| Oyun Kuramı 2 |  
+| 15      | 25 Aralık 2025 Perşembe| [Soru Çözümü ve Genel Değerlendirme]{.orange} |  
+:::
+
+
+## Kaynak Kitaplar
+::: {style="font-size: 90%;"}
+* [Ders notları, sınavlar için yeterlidir]{.light-blue}.
+* TAHA, H. (2017), Yöneylem Araştırması, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar:
+Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul. 
+* ÖZTÜRK, A. (2014), Yöneylem Araştırması, 15. Baskı, Ekin Yayınevi.
+* WINSTON, Wayne L. (2004), Operations Research Applications and Algorithms, Fourth Edition, Thomson Learning, USA
+* BRONSON, R. ve NAADIMUTHI, G. (1997), Schaum's Outline of Operations Research, Second Edition, McGraw-Hill.
+:::
+
+
+## Yönetim Fonksiyonları
+
+::: {.callout-important icon=false title="Yönetim Fonksiyonları" style="font-size: 150%;"}
+
+* Sanayi devrimi ile birlikte endüstri işletmelerinin hızla büyümeleri sonucunda bir kişinin bütün yöneticilik fonksiyonlarını tek başına yürütebilmesi imkansız hale gelmiştir.
+* Bunun doğal sonucu olarak [yönetim fonksiyonları]{.light-red} ayrılmış, böylece işletme bünyesinde [üretim]{.light-red}, [pazarlama]{.light-red}, [finansman]{.light-red} vb. farklı bölümler ortaya çıkmıştır.
+:::
+
+## Çatışan Amaçlar
+
+::: {.callout-important icon=false title="Çatışan Amaçlar" style="font-size: 140%;"}
+
+* Yönetim fonksiyonunun gittikçe artan sayıda bölümlere ayrılması, yeni işletme sorunlarını da beraberinde getirmiştir.
+* Bir bölüm için [en iyi]{.light-red} olan davranış biçiminin bir başka bölüm için iyi olmak bir yana genellikle [yıkıcı]{.light-red} olması, bölümleri birbirlerinin amaç ve faaliyetlerini göz önünde bulundurmak zorunda bırakmıştır.
+* Bu tip sorunlar ve bunlara [daha iyi çözüm bulma yaklaşımları]{.light-red} da [yöneylem araştırmasını]{.light-blue} doğurmuştur.
+:::
+
+## Yöneylem Araştırmasının Tarihçesi
+
+::: {.callout-important icon=false title="Yöneylem Araştırmasının Tarihçesi (1)" style="font-size: 150%;"}
+* Kayıtlı olan literatüre göre yönetim için bilimsel yaklaşım presipleri [1900]{.light-red}’lü yılların başlarında [Frederick Taylor]{.light-red} tarafından ortaya konulmuştur.
+* Günümüz yöneylem araştırmasında kullanılan bazı model ve tekniklerin kullanılması çok eskiye dayansa da, [yöneylem
+araştırması]{.light-red} adı verilen ilk faaliyetin [II. Dünya Savaşı sırasında]{.light-red} gerçekleştirildiği kabul edilmektedir.
+
+:::
+
+## Yöneylem Araştırmasının Tarihçesi
+
+::: {.callout-important icon=false title="Yöneylem Araştırmasının Tarihçesi (2)" style="font-size: 110%;"}
+* İkinci Dünya Savaşı sırasında İngiltere askeri yönetimi, düşmanlarının hava akınları karşısında [en iyi savunma şeklini]{.light-red} belirlemek amacıyla farklı disiplinlerden bilim adamlarıyla bir ekip çalışması başlatmış ve böylece en iyi savunma şeklini bulmuştur.
+* Bu çalışma için bir araya gelen bilim adamlarından [yeni tip bombaların etkinliklerinin belirlenmesi]{.light-red} ve [radarların etkili biçimde kullanımlarının sağlanması]{.light-red} problemlerini çözmeleri istenmiştir.
+* Çözüm sonuçlarının uygulamada çok başarılı olması, savunma sisteminin diğer kesimlerinde; [radar denetim politikaları]{.light-red}, [uçaksavar yangın kontrolü]{.light-red}, [konvoy büyüklüğü]{.light-red}, [düşman denizaltılarının yerlerinin saptanması]{.light-red} gibi çeşitli askeri problemlerin çözümünde benzer ekiplerin oluşturulması sağlanmıştır.
+
+:::
+
+## Yöneylem Araştırmasının Tarihçesi
+
+::: {.callout-important icon=false title="Yöneylem Araştırmasının Tarihçesi (3)" style="font-size: 150%;"}
+* İngiltere’de alınan başarılı sonuçlar müttefiklerin de dikkatini çekmiş, bu ülkeler de [askeri problemlerini]{.light-red} farklı disiplinlerden bilim adamlarıyla oluşturdukları ekipleriyle çözmeye girişmişlerdir
+* Yöneylem araştırmasıyla İngiltere’den çok sonra tanışmış olmakla beraber, ABD’nin bu konudaki yoğun çabaları yöneylem araştırmasında önemli ilerlemeler kaydedilmesini sağlamıştır.
+
+:::
+
+## Yöneylem Araştırmasının Tarihçesi
+
+::: {.callout-important icon=false title="Yöneylem Araştırmasının Tarihçesi (4)" style="font-size: 140%;"}
+* ABD hava kuvvetlerinin kurduğu ekibin üyelerinden birisi olan [Dantzig]{.light-red}, büyük organizasyonların gerçekleştirdikleri faaliyetlerin büyük bir bölümünün [dağıtım problemi]{.light-red} olarak ele alınabileceğini düşünmüştür.
+* Ona göre en iyi plan-programa [bir amaç fonksiyonunun en küçüklenmesi (minimizasyonu)]{.light-red} ile ulaşılabilecektir.
+* Dantzig, ayrıca doğrusal programlama problemlerinin klasik çözüm tekniği olan [simpleks yöntemini]{.light-red} önermiştir
+
+:::
+
+## Yöneylem Araştırmasının Tarihçesi
+
+::: {.callout-important icon=false title="Yöneylem Araştırmasının Tarihçesi (5)" style="font-size: 110%;"}
+* Savaş sırasında, askeri problemlerin çözümü için oluşturulan ekiplerde aktif biçimde çalışan bilim adamları, savaş sonrasında dikkatlerini benzer yaklaşımın [sivil yaşam problemlerine]{.light-red} uygulanabilirliği üzerinde yoğunlaştırmışlardır:
+  * Üniversitelerine dönüp [mevcut teknikler için sağlam temel oluşturma]{.light-red} konusunda çalışanlar
+  * [Yeni teknikler geliştirme]{.light-red} çabasına girenler
+  * [Özel ekonominin]{.light-red} değişik kesimlerindeki çalışmalarına dönerek buralarda [karşılaşılan problemleri benzer yaklaşımla]{.light-red} çözmeye çalışanlar
+* Bütün bu çalışmalar bilimsel bir uğraşı alanının yani [Yöneylem Araştırması]{.light-blue} nın doğuşuna yol açmıştır
+
+:::
+
+## Yöneylem araştırmasının uygulanması
+
+::: {.callout-important icon=false title="Yöneylem araştırmasının uygulanması (1)" style="font-size: 130%;"}
+* Yöneylem araştırmasını ilk uygulayan sivil kuruluşlar [kar amaçlı büyük endüstriyel kuruluşlar]{.light-red} olmuştur.
+* [Küçük boyutlu kuruluşlar]{.light-red}, yöneylem araştırmasının yalnızca büyük işletmeler için değil, kendileri için de yararlı olduğunun [farkına biraz geç varmışlardır]{.light-red} 
+* Küçük şirketler ancak, araştırmacıların birbirlerinden farklı gibi görünmelerine karşın pek çok problemin [stok]{.light-red}, [dağıtım]{.light-red}, [sıralama]{.light-red}, [kuyruk]{.light-red}, [oyun]{.light-red} gibi belirli bir başlık altında incelenebileceklerini farketmeleri ve bunlar için standart çözüm teknikleri geliştirmelerinden çok sonra konuya ilgi göstermişlerdir.
+:::
+
+
+## Yöneylem araştırmasının uygulanması
+
+::: {.callout-important icon=false title="Yöneylem araştırmasının uygulanması (2)" style="font-size: 110%;"}
+* Birkaç uygulama dışında yöneylem araştırmasının [hizmet ağırlıklı endüstrilerde]{.light-red} ve [kamu kesiminde]{.light-red} kullanılması [1960’lı yılların ortalarında]{.light-red} gerçekleşmiştir.
+* Bugün, [banka]{.light-red}, [kütüphane]{.light-red}, [hastane]{.light-red}, [otel]{.light-red}, [okul]{.light-red} gibi hizmet ağırlıklı pek çok kuruluş hizmet verme etkinliğini artırmada [yöneylem araştırmasından]{.light-blue} büyük yarar sağlamaktadır.
+* [Devlet kuruluşları]{.light-red} da [plan]{.light-red}, [program]{.light-red} ve [politika]{.light-red} belirleme çalışmalarında yöneylem araştırmasını yaygın bir biçimde kullanmaktadırlar.
+* Yöneylem araştırmasının çok geniş bir uygulama alanı bulması ve çok hızlı bir gelişme göstermesindeki en önemli faktör [bilgisayar teknolojisindeki gelişme]{.light-red} olmuştur.
+:::
+
+## İlk yöneylem araştırması kuruluşu
+
+::: {.callout-important icon=false title="İlk yöneylem araştırması kuruluşu" style="font-size: 120%;"}
+* Yöneylem araştırması alanında çalışan bilimadamlarının ihtiyaçlarını karşılamak amacıyla kurulan ilk yöneylem araştırması kuruluşu, [1952]{.light-red} yılında [ABD’de kurulan ORSA (The Operational Research Society of America)]{.light-red} olmuştur.
+* Türkiye’de yöneylem araştırması çalışmalarının batıdan çok sonra başladığı bilinmektedir.
+* Ülkemizde de ilk yöneylem araştırması çalışmaları batıda olduğu gibi savunma kesiminde başlamıştır.
+* Savunma kesimi dışında ilk yöneylem araştırması ekibi [1965]{.light-red} yılında [Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK)]{.light-red} bünyesinde kurulmuştur.
+:::
+
+## Yöneylem araştırmasının tanımı
+
+::: {.callout-important icon=false title="Yöneylem araştırmasının tanımı (1)" style="font-size: 130%;"}
+* Yöneylem araştırması, [sistemlerin performansını optimize etmek]{.light-red} için teknikler kullanan bir bilim dalıdır.
+* Yöneylem araştırması, bir sistemde ortaya çıkan [problemlere]{.light-red}, [sistemin denetlenebilir elemanları]{.light-red} cinsinden [bilimsel yöntem]{.light-red}, [teknik]{.light-red} ve [araçların]{.light-red} uygulanmasıyla [en iyi çözümün]{.light-red} bulunmasıdır.
+* Yöneylem araştırması, [insan]{.light-red}, [makina]{.light-red}, [para]{.light-red} ve [malzemeden]{.light-red} oluşan [endüstriyel]{.light-red}, [ticari]{.light-red}, [resmi]{.light-red}ve [askeri]{.light-red} sistemlerde yönetimlerde karşılaşılan problemlere [bilimsel yaklaşımdır]{.light-red}. 
+
+:::
+
+## Yöneylem araştırmasının tanımı
+
+::: {.callout-important icon=false title="Yöneylem araştırmasının tanımı (2)" style="font-size: 130%;"}
+* Amacı, yönetime [politika]{.light-red} ve [faaliyetlerini bilimsel olarak belirlemede]{.light-red} yardımcı olmaktır.
+* Yöneylem araştırması, mevcut imkanlardan [en büyük faydayı]{.light-red} sağlamak için girişilen [bilimsel yaklaşmalar]{.light-red} ve [teknikler]{.light-red} cümlesidir.
+* Yöneylem araştırmasının ana konusu, herhangi bir sistemin [karmaşık operasyonlarını anlamak]{.light-red} ve [performansını iyileştirmek]{.light-red} için [bilimsel karar verme]{.light-red} yöntemleridir.
+:::
+
+## Yöneylem araştırmasının temel özellikleri
+
+::: {.callout-important icon=false title="Yöneylem araştırmasının temel özellikleri" style="font-size: 130%;"}
+[1. Sistem yaklaşımını kullanması:]{.light-red} Yöneylem araştırması problemi çözerken, o problemin ait olduğu organizasyonun [bütün unsurlarını]{.orange}, [çevresini]{.orange} ve [aralarındaki etkileşimi]{.orange} göz önünde bulundurur.
+
+[2. Disiplinlerarası bir yaklaşım olması:]{.light-red} Problemin modellenmesinde ve çözümünde farklı bakış açılarından faydalanabilmek için problemlerin [disiplinlerarası bir ekip]{.orange} tarafından incelenmesi gerekir.
+
+[3. Bilimsel yöntemler kullanması:]{.light-red} Yöneylem araştırması problemi [tanımlar]{.orange}, [modeller]{.orange}, [çözer]{.orange}, sonuçları [test eder]{.orange} ve [uygular]{.orange}.
+:::
+
+
+## Yöneylem araştırmasının metodolojisi (1)
+
+::: {.callout-important icon=false title="İyi bir YA uygulamasının altı basamağı" style="font-size: 130%;"}
+[1)]{.red} [Problemin Tanımlanması]{.light-red}
+
+[2)]{.red} [Sistemin Gözlenmesi]{.light-red}
+
+[3)]{.red} [Problemin Matematiksel Modelinin Geliştirilmesi]{.light-red}
+
+[4)]{.red} [Modelin Çözülmesi]{.light-red}
+
+[5)]{.red} [Modelin Geçerliliğinin Gösterilmesi]{.light-red}
+
+[6)]{.red} [Çözümün Uygulanması ve Yorumlanması]{.light-red}
+:::
+
+
+## Problemin Tanımlanması
+
+::: {.callout-important icon=false title="Problemin Tanımlanması (1)" style="font-size: 150%;"}
+* Amaçlar [nelerdir]{.orange}?
+* Problem [çok dar kapsamlı]{.orange} mı ele alındı?
+* Problem [çok geniş kapsamlı]{.orange} mı ele alındı?
+:::
+
+
+## Problemin Tanımlanması
+
+::: {.callout-important icon=false title="Problemin Tanımlanması (2)" style="font-size: 130%;"}
+* [Mümkün seçenekler]{.light-red} arasından bir [faaliyet]{.light-red} veya [faaliyetler]{.light-red} dizisinin benimsenmesine [karar]{.light-blue} denir.
+* [Alternatif stratejiler]{.light-red} arasından [en uygun]{.light-red} olanını seçme konusunda [karar verme yetkisine sahip birey]{.light-red} ya da [topluluğa]{.light-red} verilen genel isme [karar verici]{.light-blue} denir.
+* Karar vericinin ulaşmak istediği bir [amacının olması]{.light-red}, bu amaca ulaşmada izlenebilecek [alternatif stratejilerin bulunması]{.light-red} ve alternatifler içinden [hangisinin amacı gerçekleştirebileceği konusunda kuşku içinde bulunulması]{.light-red} gerekmektedir.
+* [Ancak bu koşullar sağlandığında bir problem vardır]{.red} denir.
+:::
+
+## Sistemin Gözlenmesi
+
+::: {.callout-important icon=false title="Sistemin Gözlenmesi (1)" style="font-size: 150%;"}
+* [Hangi veriler]{.orange} toplanmalı?
+* Veriler [nasıl]{.orange} toplanmalı?
+* Sistemin farklı parçaları [birbirleriyle nasıl etkileşmektedir]{.orange}?
+:::
+
+## Sistemin Gözlenmesi
+
+::: {.callout-important icon=false title="Sistemin Gözlenmesi (2)" style="font-size: 130%;"}
+* Sistem gözlemlenir ve probleme etki eden [parametreler]{.light-red} tahmin edilmeye çalışılır.
+* Bu amaçla [veri derlenmesi]{.light-red}, bu adımın çok önemli bir kısmını oluşturur.
+* Tahmin değerleri [sabit sayılar]{.light-red} olarak işleme tabi tutulurlar ve [matematiksel modelin geliştirilmesinde]{.light-red} kullanılırlar.
+* Problem elemanlarının duruma en uygun biçimde belirlenebilmesi için [sistem yaklaşımı]{.light-blue} kullanılır.
+:::
+
+## Sistem Nedir?
+
+::: {.callout-important icon=false title="Sistem Nedir?" style="font-size: 130%;"}
+* Bir sınır içerisinde, [birbirleriyle etkileşim içinde bulunan]{.light-red} ve [ortak bir amaca yönelmiş olan öğeler topluluğuna]{.light-red} [sistem]{.light-blue} denir.
+* Sistem, [girdileri çıktılara dönüştüren]{.light-red} birbirleriyle ilişkili faaliyetlerden ve öğelerden (elemanlardan) oluşmaktadır.
+* Sistemin [çok sayıda]{.light-red} girdisi ve çıktısı olabilir.
+
+```{dot}
+//| fig-height: 2
+
+digraph A{
+  rankdir="LR";
+  Girdiler [shape=box] 
+  İşlemler[shape=diamond]
+  Çıktılar[shape=box]
+  
+  Girdiler -> İşlemler -> Çıktılar
+}
+```
+
+:::
+
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Problemin Matematiksel Modelinin Geliştirilmesi (1)" style="font-size: 150%;"}
+* [Hangi tür model]{.orange} kullanılmalı?
+* Model, problemi [tam olarak ifade ediyor]{.orange} mu?
+* Model [çok mu karmaşık]{.orange}?
+:::
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Problemin Matematiksel Modelinin Geliştirilmesi (2)" style="font-size: 130%;"}
+* Problemin [kolayca çözülebilecek bir yapıya]{.orange} oturtulması gerekmektedir.
+* [Model nedir]{.orange}?
+* Bir sistemin [değişen koşullar altındaki davranışlarını incelemek]{.light-red}, [kontrol etmek]{.light-red} ve [geleceği hakkında varsayımlarda bulunmak]{.light-red} amacıyla elemanları arasındaki [bağlantıları kelimeler]{.light-red} veya [matematiksek terimlerle]{.light-red} belirleyen ifadeler topluluğuna [model]{.light-blue} denir.
+:::
+
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Problemin Matematiksel Model Şeması" style="font-size: 130%;"}
+
+::: {#fig-simple}
+
+```{dot}
+digraph mygraph {
+  fontname="Helvetica,Arial,sans-serif"
+  node [fontname="Helvetica,Arial,sans-serif"]
+  edge [fontname="Helvetica,Arial,sans-serif"]
+  node [shape=box];
+  "Sistem"
+  "Sistem" -> "Gerçek Sistem Üzerinde Çalışmak"
+  "Sistem" -> "Sistem Modeli Üzerinde Çalışmak"
+  "Sistem Modeli Üzerinde Çalışmak" -> "Fiziksel Modeller Üzerinde Çalışmak"
+  "Sistem Modeli Üzerinde Çalışmak" -> "Matematiksel Modeller Üzerinde Çalışmak"
+  "Matematiksel Modeller Üzerinde Çalışmak" -> "Analitik Model Üzerinde Çalışmak"
+  "Matematiksel Modeller Üzerinde Çalışmak" -> "Simülasyon Modeli Üzerinde Çalışmak"
+}
+```
+
+Problemin Matematiksel Model Şeması
+:::
+
+
+:::
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Problemin Matematiksel Modelinin Geliştirilmesi (3)" style="font-size: 130%;"}
+* Her [modelin]{.light-red} kuruluş amacı, belirli bir ekonomik sistemi yönetmekle görevli kişi veya kişilere (karar vericiye) [mümkün karar seçeneklerini sunmak]{.light-red}, [bunların sonuçlarını belirlemek]{.light-red} ve [karşılaştırmalar]{.light-red} yapmaktır.
+* Yöneylem araştırmasının karar vermeye en önemli katkısı matematiksel modellerdir.
+* Bir sistemin davranışlarıyla ilgili kuralların matematiksel olarak ifade edilmesiyle [matematiksel modeller]{.light-red} kurulur.
+:::
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Problemin Matematiksel Modelinin Geliştirilmesi (4)" style="font-size: 140%;"}
+* Eğer ele alınan sistem matematiksel modellerle çözülemeyecek kadar karmaşık bir yapıya sahipse sistemin bir [simülasyon modeli]{.light-red} kurulur.
+* Simülasyon, bir sistemin tüm [çalışma zamanı boyunca davranış şeklinin bilgisayar ortamında taklit edilmesidir]{.light-red}.
+:::
+
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Matematiksel modellerin elemanları (1)" style="font-size: 150%;"}
+* Ekonomik sistemlerin matematiksel modellerinde kullanılan elemanlarını [üç]{.light-red} ana grupta toplamak mümkündür:
+1. [Amaç fonksiyonu]{.light-red}
+2. [Karar değişkenleri]{.light-red}
+3. [Kısıtlar]{.light-red}
+:::
+
+## Problemin Matematiksel Modelinin Geliştirilmesi
+
+::: {.callout-important icon=false title="Matematiksel modellerin elemanları (2)" style="font-size: 120%;"}
+
+* Bir karar verme durumunda ilgilenilen sistem dikkatli bir şekilde gözlemlenir ve değerleri kontrol edilebilen ve sistemin performansını etkileyen [parametreler]{.light-red} belirlenir.
+* Bu parametreler yöneticilerin kontrolü altındadır ve [karar değişkenleri]{.light-red} olarak tanımlanırlar. Bir üretim sisteminde [farklı ürünlerin üretilecek miktarları]{.light-red}, [bir yerden başka yere taşınacak ürün miktarı]{.light-red}, [işçi sayısı]{.light-red}, [makina sayısı]{.light-red} vb
+* Karar değişkenlerinin amaç üzerindeki etkilerinin analitik olarak gösterilmesiyle [amaç fonksiyonu]{.light-red} oluşturulur
+* [Kısıtlar]{.light-red}, sistemin içinde bulunduğu koşullardan kaynaklanmaktadır ([talep kısıtları]{.light-red}, [kapasite kısıtları]{.light-red} gibi)
+:::
+
+
+
+## Modelin Çözülmesi
+
+::: {.callout-important icon=false title="Modelin Çözülmesi (1)" style="font-size: 150%;"}
+En uygun çözüm tekniği nedir?
+
+* [Analitik çözüm]{.light-red}
+* [Algoritmalar]{.light-red} 
+* [Simülasyon]{.light-red}
+* [Sezgisel]{.light-red}
+:::
+
+## Modelin Çözülmesi
+
+::: {.callout-important icon=false title="Modelin Çözülmesi (2)" style="font-size: 140%;"}
+* [Analitik çözüm:]{.light-red} Problemin Lagrange çarpanları, diferansiyel ve integral hesapları ile koşullu en iyi çözümünün bulunmasıdır. Analitik çözümde sadece matematiğin değil iktisat teorisinin de temel kuralları kullanılır.
+* [Algoritma çözümü:]{.light-red} Analitik çözüm bazen çok zor veya imkansız olabilir. Belirli bir sıra içerisinde gerçekleştirilen matematiksel ve mantıksal işlemler kümesine [algoritma]{.light-red} denir. Yinelemeli olarak uygulanan algoritmalar her adımda [optimuma daha yakın bir çözüme]{.light-red} doğru ilerler.
+:::
+
+## Modelin Çözülmesi
+
+::: {.callout-important icon=false title="Modelin Çözülmesi (3)" style="font-size: 140%;"}
+* [Simülasyon çözümü:]{.light-red} Problem, analitik olarak veya algoritmalarla çözülemiyorsa kullanılır. Sistemin davranış şekli bilgisayar ortamında taklit edilir.
+* [Sezgisel çözüm:]{.light-red} Problem optimum çözümü bulunamayacak kadar karmaşıksa, sezgisel yöntemler sezgiye veya bazı deneysel kayıtlara dayanan karar kuralları ile belirli sayıda adımdan sonra en iyi olmasa da tatminkar bir sonuç verirler.
+:::
+
+
+## Modelin Geçerliliğinin Gösterilmesi
+
+::: {.callout-important icon=false title="Modelin Geçerliliğinin Gösterilmesi (1)" style="font-size: 150%;"}
+* Modelden elde edilen çıktılar sistemin kendisinden elde edilen çıktılarla [uyuşuyor mu?]{.orange}
+* Modelden elde edilen çıktılar [mantıklı mı?]{.orange}
+* Model [hatalı]{.orange} olabilir mi?
+:::
+
+## Modelin Geçerliliğinin Gösterilmesi
+
+::: {.callout-important icon=false title="Modelin Geçerliliğinin Gösterilmesi (2)" style="font-size: 130%;"}
+* Modelden elde edilen çözümü uygulamaya koymadan önce [gerçeğe uygunluğunun kanıtlanması]{.light-red} gerekir.
+* Eğer çözüm sistemin [geçmiş dönem sonuçlarını aynen veya daha olumlu bir şekilde sağlıyorsa]{.light-red}, modelin geçerli olduğu kabul edilir.
+* Eğer sistemin geçmiş dönem sonuçları yoksa [simülasyondan]{.light-red} yararlanılır.
+* Model geçerliliğinin kanıtlanmasında bir başka yol olarak da sistemdeki [deneyimli kişilerin görüşlerine]{.light-red} başvurulabilir.
+:::
+
+
+## Çözümün Uygulanması ve Yorumlanması
+
+::: {.callout-important icon=false title="Çözümün Uygulanması ve Yorumlanması (1)" style="font-size: 150%;"}
+* Yöneylem araştırması ekibi, uygulama sürecini açıklamalı ve uygulamada yardımcı olmalıdır.
+* Uygulamanın nasıl yapılacağı bir rapor halinde yönetime sunulmalıdır.
+:::
+
+## Başarılı Yöneylem Araştırması Uygulamaları
+
+::: {.callout-important icon=false title="Başarılı Yöneylem Araştırması Uygulamaları" style="font-size: 130%;"}
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 1px;
+    }
+    th {
+      background-color: #009879;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+  </style>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Şirket</th>
+      <th>Yıl</th>
+      <th>Problem</th>
+      <th>Kullanılan Teknik</th>
+      <th>Yıllık Tasarruf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hewlett Packard</td>
+      <td>1998</td>
+      <td>Üretim hattında ara stok tasarımı</td>
+      <td>Kuyruk Modelleri</td>
+      <td>$280 million</td>
+    </tr>
+    <tr>
+      <td>Taco Bell</td>
+      <td>1998</td>
+      <td>İşgücü çizelgelemesi</td>
+      <td>Tamsayılı Programlama, Tahmin, Simülasyon</td>
+      <td>$13 million</td>
+    </tr>
+    <tr>
+      <td>Proctor & Gamble</td>
+      <td>1997</td>
+      <td>Üretim ve dağıtım sisteminin yeniden tasarlanması</td>
+      <td>Ulaştırma Modelleri</td>
+      <td>$200 million</td>
+    </tr>
+    <tr>
+      <td>Delta Airlines</td>
+      <td>1994</td>
+      <td>Uçakların rotalara atanması</td>
+      <td>Tamsayılı Programlama</td>
+      <td>$100 million</td>
+    </tr>
+    <tr>
+      <td>AT&amp;T</td>
+      <td>1993</td>
+      <td>Çağrı merkezi tasarımı</td>
+      <td>Kuyruk Modelleri, Simülasyon</td>
+      <td>$750 million</td>
+    </tr>
+    <tr>
+      <td>Yellow Freight Systems, Inc.</td>
+      <td>1992</td>
+      <td>Nakliye şebekelerinin tasarımı</td>
+      <td>Şebeke Modelleri, Tahmin, Simülasyon</td>
+      <td>$11.3 million</td>
+    </tr>
+    <tr>
+      <td>San Francisco Police Dept.</td>
+      <td>1989</td>
+      <td>Devriye çizelgeleme</td>
+      <td>Doğrusal Programlama</td>
+      <td>$11 million</td>
+    </tr>
+  </tbody>
+</table>
+
+
+:::
+
+
+## Başarılı Yöneylem Araştırması Uygulamaları
+
+::: {.callout-important icon=false title="Başarılı Yöneylem Araştırması Uygulamaları" style="font-size: 130%;"}
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 1px;
+    }
+    th {
+      background-color: #009879;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+  </style>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Şirket</th>
+      <th>Yıl</th>
+      <th>Problem</th>
+      <th>Kullanılan Teknik</th>
+      <th>Yıllık Tasarruf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bethlehem Steel</td>
+      <td>1989</td>
+      <td>Külçe kalıbı tasarımı</td>
+      <td>Tamsayılı Programlama</td>
+      <td>$8 million</td>
+    </tr>
+    <tr>
+      <td>North American Van Lines</td>
+      <td>1988</td>
+      <td>Yükleri şöförlere atamak</td>
+      <td>Şebeke Modelleme</td>
+      <td>$2.5 million</td>
+    </tr>
+    <tr>
+      <td>Citgo Petroleum</td>
+      <td>1987</td>
+      <td>Rafineri operasyonları & dağıtım</td>
+      <td>Doğrusal Programlama, Tahmin</td>
+      <td>$70 million</td>
+    </tr>
+    <tr>
+      <td>United Airlines</td>
+      <td>1986</td>
+      <td>Rezervasyon personelinin çizelgelenmesi</td>
+      <td>Doğrusal Programlama, Kuyruk, Tahmin</td>
+      <td>$6 million</td>
+    </tr>
+    <tr>
+      <td>Dairyman's Creamery</td>
+      <td>1985</td>
+      <td>Optimum üretim seviyeleri</td>
+      <td>Doğrusal Programlama</td>
+      <td>$48,000</td>
+    </tr>
+    <tr>
+      <td>Phillips Petroleum</td>
+      <td>1983</td>
+      <td>Ekipman yenileme</td>
+      <td>Şebeke Modelleme</td>
+      <td>$90,000</td>
+    </tr>
+  </tbody>
+</table>
+
+
+:::
+
+
+## Matematiksel model türleri
+
+::: {.callout-important icon=false title="Matematiksel model türleri (1)" style="font-size: 90%;"}
+* Yöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir.
+
+
+![](./images/matematiksel_model.png){width=700 height=472}
+
+
+:::
+
+## Matematiksel model türleri
+
+::: {.callout-important icon=false title="Matematiksel model türleri (2)" style="font-size: 130%;"}
+* Eğer karar değişkenleri üzerinde hiçbir sınırlama yoksa [kısıtsız modeller]{.light-red} ortaya çıkar, en azından bir sınırlama olması [kısıtlı modelleri]{.light-red} ortaya çıkarır. 
+* Gerçek hayatta genellikle [kısıtlı problemler]{.light-red} karşımıza çıkar.
+* Eğer problem tek bir dönem için çözülecekse [statik model]{.light-red}, birden fazla dönem göz önüne alınarak çözülecekse [dinamik model]{.light-red} ortaya çıkar.
+* Eğer birden fazla amaç varsa [çok amaçlı problemler]{.light-red} ortaya çıkar.
+:::
+
+
+## Matematiksel model türleri
+
+::: {.callout-important icon=false title="Matematiksel model türleri (3)" style="font-size: 130%;"}
+* Eğer tüm karar değişkenleri pozitif reel (gerçel) değerler alıyorsa [sürekli optimizasyon problemi]{.light-red} söz konusudur
+* Tüm karar değişkenlerinin tamsayı değerler alması gerekiyorsa [kesikli optimizasyon problemi]{.light-red} ortaya çıkar
+* Bazı karar değişkenlerinin reel, bazılarının tamsayı değer alması durumunda ise [karışık kesikli optimizasyon problemi]{.light-red} ile karşılaşırız.
+* Eğer karar değişkenlerinin kombinatoryal seçenekleri söz konusuysa [kombinatoryal optimizasyon problemleri]{.light-red} ortaya çıkar.
+:::
+
+## Matematiksel model türleri
+
+::: {.callout-important icon=false title="Matematiksel model türlerine göre kullanılan çözüm yaklaşımları (1)" style="font-size: 130%;"}
+* Dinamik modeller için kullanılan yaklaşım [dinamik programlamadır]{.light-red}.
+* Eğer optimize edilecek birden fazla amaç varsa genellikle kullanılan yaklaşım [hedef programlamadır]{.light-red}.
+* Modeldeki tüm fonksiyonların doğrusal olması durumunda sürekli optimizasyon problemleri [doğrusal programlama]{.light-red} yöntemi ile çözülür. Sürekli optimizasyon modelinde en azından bir fonksiyonun doğrusal olmaması durumundaysa [doğrusal olmayan programlama]{.light-red} yöntemi kullanılır.
+:::
+
+## Matematiksel model türleri
+
+::: {.callout-important icon=false title="Matematiksel model türlerine göre kullanılan çözüm yaklaşımları (2)" style="font-size: 130%;"}
+* Eğer kesikli optimizasyon problemlerinde karar değişkenleri herhangi bir tamsayı değer alıyorsa [tamsayılı programlama]{.light-red} yöntemi kullanılır.
+* Kombinatoryal optimizasyon problemlerinin belirli bir boyuta kadar olanı [tamsayılı programlama yöntemi]{.light-red} ile çözülürken, orta ve büyük boyutlu problemlerin [sezgisel yöntemlerle]{.light-red} çözülmesi gerekmektedir.
+:::
