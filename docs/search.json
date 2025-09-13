@@ -17,5 +17,220 @@
     "title": "Öğretim Üyesi hk.",
     "section": "",
     "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "IST115_WEEK01_MAIN.html",
+    "href": "IST115_WEEK01_MAIN.html",
+    "title": "Hafta 01",
+    "section": "",
+    "text": "You can switch to full screen mode by pressing ff.\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html",
+    "href": "IST115/Hafta01/index.html",
+    "title": "Hafta 01",
+    "section": "",
+    "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nYöneylem Araştırması ve Doğrusal Programlamaya Giriş\n\n\n2\n25 Eylül 2025 Perşembe\nDoğrusal Programlama: Model Kurma ve Örnekler\n\n\n3\n02 Ekim 2025 Perşembe\nGrafikle Çözüm Yöntemi ve Çözüme Uygun Bölge\n\n\n4\n09 Ekim 2025 Perşembe\nSimpleks Yönteme Hazırlık: Standart ve Kanonik Formlar\n\n\n5\n16 Ekim 2025 Perşembe\nSimpleks Yöntem\n\n\n6\n23 Ekim 2025 Perşembe\nSimpleks Yöntem: Büyük M yöntemi\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nSimpleks Yöntemde Özel Durumlar\n\n\n10\n20 Kasım 2025 Perşembe\nSimpleks Yöntem: İki Aşamalı Yöntem\n\n\n11\n27 Kasım 2025 Perşembe\nDualite Kavramı ve Dual Problemin Oluşturulması\n\n\n12\n04 Aralık 2025 Perşembe\nPrimal-Dual İlişkileri, Dualitenin Ekonomik Yorumu, Dual Simpleks Yöntem\n\n\n13\n11 Aralık 2025 Perşembe\nDuyarlılık Analizi\n\n\n14\n18 Aralık 2025 Perşembe\nParametrik Programlama\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#haftalık-ders-planı",
+    "href": "IST115/Hafta01/index.html#haftalık-ders-planı",
+    "title": "Hafta 01",
+    "section": "Haftalık Ders Planı",
+    "text": "Haftalık Ders Planı\n\nPlanlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nYöneylem Araştırması ve Doğrusal Programlamaya Giriş\n\n\n2\n25 Eylül 2025 Perşembe\nDoğrusal Programlama: Model Kurma ve Örnekler\n\n\n3\n02 Ekim 2025 Perşembe\nGrafikle Çözüm Yöntemi ve Çözüme Uygun Bölge\n\n\n4\n09 Ekim 2025 Perşembe\nSimpleks Yönteme Hazırlık: Standart ve Kanonik Formlar\n\n\n5\n16 Ekim 2025 Perşembe\nSimpleks Yöntem\n\n\n6\n23 Ekim 2025 Perşembe\nSimpleks Yöntem: Büyük M yöntemi\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nSimpleks Yöntemde Özel Durumlar\n\n\n10\n20 Kasım 2025 Perşembe\nSimpleks Yöntem: İki Aşamalı Yöntem\n\n\n11\n27 Kasım 2025 Perşembe\nDualite Kavramı ve Dual Problemin Oluşturulması\n\n\n12\n04 Aralık 2025 Perşembe\nPrimal-Dual İlişkileri, Dualitenin Ekonomik Yorumu, Dual Simpleks Yöntem\n\n\n13\n11 Aralık 2025 Perşembe\nDuyarlılık Analizi\n\n\n14\n18 Aralık 2025 Perşembe\nParametrik Programlama\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#kaynak-kitaplar",
+    "href": "IST115/Hafta01/index.html#kaynak-kitaplar",
+    "title": "Hafta 01",
+    "section": "Kaynak Kitaplar",
+    "text": "Kaynak Kitaplar\n\n\nDers notları, sınavlar için yeterlidir.\nTAHA, H. (2017), Yöneylem Araştırması, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar: Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul.\nÖZTÜRK, A. (2014), Yöneylem Araştırması, 15. Baskı, Ekin Yayınevi.\nWINSTON, Wayne L. (2004), Operations Research Applications and Algorithms, Fourth Edition, Thomson Learning, USA\nBRONSON, R. ve NAADIMUTHI, G. (1997), Schaum’s Outline of Operations Research, Second Edition, McGraw-Hill."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#karar-verme",
+    "href": "IST115/Hafta01/index.html#karar-verme",
+    "title": "Hafta 01",
+    "section": "Karar Verme",
+    "text": "Karar Verme\n\n\n\n\nKarar Verme\n\n\nKarar vermenin çok çeşitli tanımları bulunmaktadır.\n\n“Algılanan ihtiyaçlara özgü kasıtlı ve düşünceli seçim” (Kleindorfer ve diğ., 1993)\n“Karar Verici’nin mevcut tüm seçenekler arasından amacına veya amaçlarına en uygun bir veya birkaç seçeneği seçme sürecine girmesi” (Evren ve Ülengin, 1992)\nEn genel hali ile karar verme; Karar Verici’nin mevcut seçenekler arasından bir seçim, sıralama ya da sınıflandırma yapması ile bir sorunu çözmesi sürecidir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#iyi-bir-karar",
+    "href": "IST115/Hafta01/index.html#iyi-bir-karar",
+    "title": "Hafta 01",
+    "section": "İyi Bir Karar",
+    "text": "İyi Bir Karar\n\n\n\n\nİyi Bir Karar\n\n\n\nKarar verme kalitesini ölçecek tek bir ortak ölçü saptanamamıştır (Olson ve Courtney, 1992).\nİyi karar verme sanatı sistematik düşünce ile oluşur (Hammond ve diğ., 1999).\nİyi bir karar;\n\n\n\n\n\n\n\nMantığa dayanır.\n\n\n\n\nTüm mevcut kaynakları kullanır.\n\n\n\n\nTüm olası seçenekleri inceler.\n\n\n\n\nSayısal bir yöntem uygular."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#karar-verme-süreci",
+    "href": "IST115/Hafta01/index.html#karar-verme-süreci",
+    "title": "Hafta 01",
+    "section": "Karar Verme Süreci",
+    "text": "Karar Verme Süreci\n\n\n\n\nKarar Verme Süreci 1\n\n\n\nDar anlamda karar verme, çeşitli alternatifler içinde en uygun olanının seçiminin yapıldığ bir süreç olarak tanımlanabilir.\nKarar Verme Süreci, değişik kaynaklarda farklı aşamalarla sıralanmıştır. Ancak farklı yaklaşımların ortak noktaları dikkate alındığında, söz konusu sürecin aşamalarını aşağıdaki gibi ifade etmek yanlış olmaz.\n\n\n\nKarar probleminin tanımlanması\n\n\n\n\nKarar verecek kişi veya kişiler\nAmaç\nAlternatif eylem biçimleri\nBelirsizlik"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#karar-verme-süreci-1",
+    "href": "IST115/Hafta01/index.html#karar-verme-süreci-1",
+    "title": "Hafta 01",
+    "section": "Karar Verme Süreci",
+    "text": "Karar Verme Süreci\n\n\n\n\nKarar Verme Süreci 2\n\n\n\n\nKarar probleminin modelinin kurulması\n\n\n\nProblemin kolayca çözümlenebilmesi için diğer bir deyişle problemi en iyi biçimde temsil edecek ve problemin çözümündeki belirsizlikleri en aza indirecek bir modelin kurulması gerekir.\n\n\nModel: Bir sistemin değişen şartlar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında tahminlerde bulunmak amacıyla elemanları arasındaki bağıntıları kelimeler veya matematik terimlerle belirten ifadeler topluluğuna model denir.\n\n\n\nModelden çözüm elde edilmesi\n\n\n\n\nModelin çözümünün test edilmesi\n\n\n\n\nKarar verme ve kararın uygulamaya konulması"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nKarar hangi kısıtlar altında verilmiştir?\n\n\n\nAynı haftanın pazartesi günü Ankara’ya gitmek ve çarşamba günü Ankara’dan dönmek."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-1",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-1",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nBu kararı değerlendirmede kullanacağımız uygun bir amaç fonksiyonu nasıl olmalıdır?\n\n\n\nEn düşük bilet fiyatı maliyetini veren alternatifi bulmak."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-2",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-2",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Aynı haftanın her pazartesisi için gidiş çarşambası dönüş olmak üzere beş tane IST-ANK-IST gidiş dönüş bileti almak\n\n\n\nMaliyet: \\(400 \\times 5 = 2000\\) pb"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-3",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-3",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - İlk pazartesi bir tane IST-ANK, hafta sonlarını da kapsayacak dört tane ANK-IST-ANK, ve son çarşamda da bir tane de ANK-IST bileti almak\n\n\n\nMaliyet:\n\\[\\begin{align}\n0.75 \\times 400 &+ 4 \\times (0.8 \\times 400)\\\\\n                & + 0.75 \\times 400 = 1880 pb\n\\end{align}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-4",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-4",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Birinci haftanın pazartesini ve sonuncu haftanın Çarşambasında kullanılmak üzere hafta sonunu da kapsayan bir tane IST-ANK-IST ve yine hafta sonlarını kapsayan dört tane ANK-IST-ANK bileti almak.\n\n\n\nMaliyet: \\(5 \\times (0.8 \\times 400) = 1600\\) pb"
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-5",
+    "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-5",
+    "title": "Hafta 01",
+    "section": "İstanbul - Ankara Arası Gezi",
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\nEn uygun alternatif 3 numaralı alternatiftir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#yöneylem-probleminin-bileşenleri",
+    "href": "IST115/Hafta01/index.html#yöneylem-probleminin-bileşenleri",
+    "title": "Hafta 01",
+    "section": "Yöneylem Probleminin Bileşenleri",
+    "text": "Yöneylem Probleminin Bileşenleri\n\n\n\n\nYöneylem Probleminin Bileşenleri\n\n\n\nBir yöneylem araştırması modeli, kısıtlar, amaç ve alternatif lerden oluşur.\nGenelde karar problemlerinin alternatifleri, bilinmeyen değişkenler olarak karşımıza çıkar.\nBu değişkenler daha sonra kısıtları ve amaç kriterini oluşturmak üzere uygun matematik fonksiyonlarda kullanılır.\nNihai sonuç, değişkenler, kısıtlar ve amaç fonksiyonundan oluşan bir matematiksel model dir.\nModelin çözülmesiyle, hem tüm kısıtları sağlayan, hem de amaç fonksiyonunu optimum kılan (maksimum ya da minimum kılan) karar değişkenlerinin değerleri elde edilmiş olur.\nSonuç çözüm optimum uygun çözüm adını alır."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen",
+    "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen",
+    "title": "Hafta 01",
+    "section": "Tel Parçası - Dikdörtgen",
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (1)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nDikdörtgen\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeğişken, Amaç ve kısıtlar\n\n\n\n\nDeğişkenler \\(l\\) ve \\(w\\)\n\n\n\n\nAmaç fonksiyonu \\(Maks. A=l \\cdot w\\)\n\n\n\n\nKısıt ise \\(l+w = \\frac{L}{2}\\) şeklinde olur."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-1",
+    "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-1",
+    "title": "Hafta 01",
+    "section": "Tel Parçası - Dikdörtgen",
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (2)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nBu modeli \\(l+w = \\frac{L}{2}\\) kısıtını amaç fonksiyonunda kullanarak çözebiliriz. \\(l = \\frac{L}{2}-w\\) yu yerine koyarsak,\n\n\n\n\\[A = \\left(\\frac{L}{2}-w\\right)w = \\frac{Lw}{2}-w^2 \\] elde edilir.\n\n\n\n\\(A\\) alanının maksimum olduğu yer, \\(A\\) nın eğiminin \\(w\\) ya göre 0 olduğu noktadır. Yani\n\n\n\n\\[\\frac{dA}{dw}=\\frac{L}{2}-2w=0 \\] olmalıdır."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-2",
+    "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-2",
+    "title": "Hafta 01",
+    "section": "Tel Parçası - Dikdörtgen",
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (3)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nBu denklemin çözümü \\(w=\\frac{L}{4}\\) olacağından bu nokta maksimumu göstermektedir.\n\n\n\n\nKısıt denkleminde \\(w\\) yerine \\(\\frac{L}{4}\\) yazıldığında \\(l=\\frac{L}{4}\\) bulunur.\n\n\n\n\nDolayısıyla en uygun çözüm karedir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri",
+    "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri",
+    "title": "Hafta 01",
+    "section": "Yöneylem Araştırması Teknikleri",
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 1\n\n\n\nYöneylem Araştırması’ndaki matematiksel modellerde karar değişkenleri tamsayılı ya da sürekli olabilir. Buna karşılık amaç ve kısıt fonksiyonları doğrusal (linear) olabilir ya da olmayabilir (nonlinear).\nOptimizasyon problemleri bu tür modeller sayesinde ortaya çıkmakta ve değişik çözüm yöntemlerinin gelişmesine kaynak oluşturmaktadır.\nBunların içerisinde en belirgin ve başarıyla kullanılanı doğrusal programlamadır.\nDoğrusal programlamada tüm amaç ve kısıt fonksiyonları doğrusal, tüm değişkenler süreklidir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-1",
+    "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-1",
+    "title": "Hafta 01",
+    "section": "Yöneylem Araştırması Teknikleri",
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 2\n\n\n\nBaşka tip modellerin çözümü için geliştirilmiş diğer matematiksel teknikler içinde\n\n\n\n\n\n\nDinamik programlama\nTamsayılı programlama\nDoğrusal olmayan (nonlineer) programlama\n\n\n\nHedef programlama ve\nŞebeke programlama\n\n\nsayılabilir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-2",
+    "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-2",
+    "title": "Hafta 01",
+    "section": "Yöneylem Araştırması Teknikleri",
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 3\n\n\n\nHemen hemen tüm yöneylem araştırması teknikleri, yapısında yineleme (tekrarlama) bulunan hesaplama algoritmalarıyla sonuçlandırılır.\nBu problemin yinelemelerle (iterasyon) çözülmekte olduğunu ve her yeni yineleme sonunda çözümün optimuma daha yakın hale getirildiğini ifade etmektedir.\nBu iterasyonlar günümüzde daha çok bilgisayar desteğiyle yapılmaktadır.\nBazı matematiksel modeller ise, bilinen herhangi bir optimizasyon algoritmasıyla çözülemeyecek kadar karmaşık yapıda olabilir. Böyle durumlarda optimum çözümü aramak yerine, sezgisel yöntemler kullanarak sadece iyi bir çözüm arama yoluna gidilir.\nSezgisel algoritmalar, genellikle optimumu tam bulan algoritmalara göre daha hızlı çalışma avantajına sahiptir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#simülasyonla-modelleme",
+    "href": "IST115/Hafta01/index.html#simülasyonla-modelleme",
+    "title": "Hafta 01",
+    "section": "Simülasyonla Modelleme",
+    "text": "Simülasyonla Modelleme\n\n\n\n\nSimülasyonla Modelleme (1)\n\n\n\nMatematiksel gösterimin katılığı, çoğu kez karar problemlerini yeterince tanımlamayı olanaksız hale getirmektedir.\nBunun tersine, bir model uygun formüle edilse bile çok karmaşık çözüm algoritmalarıyla uğraşmak zorunda kalınabilir.\nBöyle karmaşık sistemlerin modellemesinde kullanılabilecek uygun yaklaşımlardan biri de simülasyondur.\nSimülasyonda matematiksel modellemeden farklı olarak, girdi ile çıktı arasındaki ilişkilerin açıklıkla ifade edilmesine gereksinim duyulmamaktadır."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#simülasyonla-modelleme-1",
+    "href": "IST115/Hafta01/index.html#simülasyonla-modelleme-1",
+    "title": "Hafta 01",
+    "section": "Simülasyonla Modelleme",
+    "text": "Simülasyonla Modelleme\n\n\n\n\nSimülasyonla Modelleme (2)\n\n\n\nOnun yerine simülasyon, gerçek sistemi küçük birimler halinde inceler ve bu birimleri birlikte hareket ettirecek mantıksal ilişkileri kullanarak sistemin mevcut davranışını taklit eder.\nGirdilerle işleme başlanarak çıktılar realize oluncaya kadar bu birimler arasındaki simülasyon hesaplarına devam edilir.\nSimülasyon sistemleri basit olsa da çok yüklü bilgisayar hesabı gerektirir.\nSimülasyon modelleri aynı sistemin matematiksel modellerine göre çok daha esnektir. Bunun sebebi simülasyon sisteme basit düzeyden bakarken, matematiksel model global düzeyden bakar.\nSimülasyon esnek olsa da, zaman ve kaynak açısından maliyetlidir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#model-kurmada-yöntem",
+    "href": "IST115/Hafta01/index.html#model-kurmada-yöntem",
+    "title": "Hafta 01",
+    "section": "Model Kurmada Yöntem",
+    "text": "Model Kurmada Yöntem\n\n\n\n\nModel Kurmada Yöntem\n\n\n\nYöneylem araştırmaları uygulamalarındaki temel aşamalar şöyle ifade edilebilir.\n1) Problemin tanımlanması.  2) Modelin kurulması.  3) Modelin çözülmesi.  4) Modelin geçerliliğinin onaylanması.  5) Çözümün uygulanması."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#problemin-tanımlanması",
+    "href": "IST115/Hafta01/index.html#problemin-tanımlanması",
+    "title": "Hafta 01",
+    "section": "Problemin tanımlanması",
+    "text": "Problemin tanımlanması\n\n\n\n\nProblemin tanımlanması\n\n\n\nProblemin tanımlanması aşaması ele alınan problemin incelenip izlenerek tanımlanmasını kapsar.\nİnceleme ve araştırma aşamalarının sonucunda karar problemlerinin üç temel elemanının neler olduğu ortaya çıkar.\nBunlar\n\nKarar alternatiflerinin tanımlanması (alternatif kararların neler olduğu)\nÇalışmanın amacının ne olduğu\nModelin kuruluş sisteminin çalışması esnasındaki sınırlandırmaların belirlenmesidir."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#model-kurma",
+    "href": "IST115/Hafta01/index.html#model-kurma",
+    "title": "Hafta 01",
+    "section": "Model Kurma",
+    "text": "Model Kurma\n\n\n\n\nModel Kurma\n\n\n\nModel kurma aşamasında problem, matematiksel ilişkiler halinde ifade edilir. Başka bir deyişle problem matematik diline tercüme edilir.\nModel doğrusal programlama gibi standart bir matematik model halinde ifade edilebiliyorsa, mevcut algoritmalar yardımıyla çözüme ulaşılır.\nModel analitik bir çözüme ulaşmak için çok karmaşık matematiksel ilişkiler içeriyorsa, bu durumda ya sezgisel yöntemlerle ya da simülasyonla optimum sonuca ulaşılmaya çalışılacaktır.\nMatematiksel modellerin, sezgisel yöntemlerin ve simülasyonun bir arada kullanıldığı yöntemler de mevcuttur."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#modelin-çözümü",
+    "href": "IST115/Hafta01/index.html#modelin-çözümü",
+    "title": "Hafta 01",
+    "section": "Modelin Çözümü",
+    "text": "Modelin Çözümü\n\n\n\n\nModelin Çözümü\n\n\n\nModelin çözümü bu beş adım arasında en basiti olarak görülür. Çünkü bu aşamada çok iyi bilinen optimizasyon algoritmaları kullanılmaktadır.\nModelin çözülmesi aşamasının önemli bir yanı da duyarlılık analizini de içermesidir.\nDuyarlılık analizi model parametrelerinin tam olarak tahmin edilemediği durumlarda bazı parametrelerin değişmesi halinde modelin ne zaman optimum çözümden uzaklaşacağı hakkında bilgi verir.\nBaşlangıçta model parametrelerinin tahminlerine göre oluşan optimum çözümün zaman geçtikçe nasıl davranacağının incelenmesi duyarlılık analizinin konusudur."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#modelin-geçerliliği",
+    "href": "IST115/Hafta01/index.html#modelin-geçerliliği",
+    "title": "Hafta 01",
+    "section": "Modelin Geçerliliği",
+    "text": "Modelin Geçerliliği\n\n\n\n\nModelin Geçerliliği\n\n\n\nModelin geçerliliği aşamasında, geliştirilmiş olan modelle sistemin çalışması karşılaştırılır ve modelin beklenen davranışları sergileyip sergilemeyeceği incelenir.\nBiçimsel olarak düşünüldüğünde modelin geçerliliğini anlamak üzere ilk akla gelen davranış, sistemin geçmişteki çıktıları ile modelin çıktılarını karşılaştırarak kontrol etmektir.\nEğer model, geçmişteki benzer girdiler ile benzer performans üretiyorsa sonuç geçerlidir.\nAncak sistem ilk kez kuruluyorsa, performansın test edileceği bir geçmiş veri bulunamayacağından bu kez simülasyona başvurulur."
+  },
+  {
+    "objectID": "IST115/Hafta01/index.html#modelin-uygulanması",
+    "href": "IST115/Hafta01/index.html#modelin-uygulanması",
+    "title": "Hafta 01",
+    "section": "Modelin Uygulanması",
+    "text": "Modelin Uygulanması\n\n\n\n\nModelin Uygulanması\n\n\n\nTutarlılığı kanıtlanmış bir modelin çözümünün uygulanması, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir."
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK01_MAIN.html",
+    "title": "IST115 - Hafta 01",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 01"
+    ]
   }
 ]

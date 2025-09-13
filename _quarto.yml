@@ -24,16 +24,9 @@ website:
       - section: Başlamadan Önce - Hafta 0
         contents: 
         - index.qmd
-        #- LectureNotes/Week00/00--01--General--Info.qmd
-        #- LectureNotes/Week00/00--02--Installing--R--and--RStudio.qmd
-        #- LectureNotes/Week00/00--03--Syllabus.qmd
-        #- LectureNotes/Week00/00--04--Evaluation.qmd
-        #- LectureNotes/Week00/00--05--Materials.qmd
-        #- LectureNotes/Week00/00--06--Useful--Websites.qmd
-        #- LectureNotes/Week00/00--07--How--to--use--this--Webpage.qmd
       - section: IST115 - Doğrusal Programlama 1 Ders Notları
         contents: 
-          #- MainPage/01--01--Basics--Main.qmd
+          - IST115/MainPage/IST115_WEEK01_MAIN.qmd
           #- MainPage/01--02--Data--Types--Main.qmd
           # - LabSession01Main.qmd
       - section: IST215 - Yöneylem Araştırması 1 Ders Notları

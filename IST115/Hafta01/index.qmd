@@ -1,0 +1,680 @@
+---
+title: Hafta 01
+subtitle: "Doğrusal Programlama ve Yöneylem Araştırması Nedir?"
+date: 09/18/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 01 - 18 Eylül 2025 - Doç. Dr. Erhan Çene"
+---
+
+## Haftalık Ders Planı
+
+::: {style="font-size: 50%;"}
+Planlanan [taslak]{.red} haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.
+
+| Hafta   | Tarih                  | Konu                                                |
+|---------|:-----------------------|:----------------------------------------------------|
+| 1       | 18 Eylül 2025 Perşembe |Yöneylem Araştırması ve Doğrusal Programlamaya Giriş |
+| 2       | 25 Eylül 2025 Perşembe |Doğrusal Programlama: Model Kurma ve Örnekler        | 
+| 3       | 02 Ekim 2025 Perşembe  |Grafikle Çözüm Yöntemi ve Çözüme Uygun Bölge         |  
+| 4       | 09 Ekim 2025 Perşembe  |Simpleks Yönteme Hazırlık: Standart ve Kanonik Formlar                            |  
+| 5       | 16 Ekim 2025 Perşembe  |Simpleks Yöntem|  
+| 6       | 23 Ekim 2025 Perşembe  |Simpleks Yöntem: Büyük M yöntemi                    |   
+| 7       | 30 Ekim 2025 Perşembe  |[Genel Tekrar ve Soru Çözümü]{.orange}              |  
+| 8       | 06 Kasım 2025 Perşembe |[VİZE]{.light-blue} |  
+| 9       | 13 Kasım 2025 Perşembe | Simpleks Yöntemde Özel Durumlar | 
+| 10      | 20 Kasım 2025 Perşembe |Simpleks Yöntem: İki Aşamalı Yöntem| 
+| 11      | 27 Kasım 2025 Perşembe |Dualite Kavramı ve Dual Problemin Oluşturulması  |  
+| 12      | 04 Aralık 2025 Perşembe|Primal-Dual İlişkileri, Dualitenin Ekonomik Yorumu, Dual Simpleks Yöntem  |  
+| 13      | 11 Aralık 2025 Perşembe|Duyarlılık Analizi  |  
+| 14      | 18 Aralık 2025 Perşembe|Parametrik Programlama  |  
+| 15      | 25 Aralık 2025 Perşembe| [Soru Çözümü ve Genel Değerlendirme]{.orange} |  
+:::
+
+
+## Kaynak Kitaplar
+::: {style="font-size: 90%;"}
+* [Ders notları, sınavlar için yeterlidir]{.light-blue}.
+* TAHA, H. (2017), Yöneylem Araştırması, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar:
+Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul. 
+* ÖZTÜRK, A. (2014), Yöneylem Araştırması, 15. Baskı, Ekin Yayınevi.
+* WINSTON, Wayne L. (2004), Operations Research Applications and Algorithms, Fourth Edition, Thomson Learning, USA
+* BRONSON, R. ve NAADIMUTHI, G. (1997), Schaum's Outline of Operations Research, Second Edition, McGraw-Hill.
+:::
+
+
+## Karar Verme
+
+::: {.callout-important icon=false title="Karar Verme" style="font-size: 110%;"}
+
+Karar vermenin çok çeşitli tanımları bulunmaktadır.
+
+* "Algılanan ihtiyaçlara özgü [kasıtlı]{.light-red} ve [düşünceli]{.light-red} seçim" [(Kleindorfer ve diğ., 1993)]{.light-blue}
+* "Karar Verici’nin mevcut tüm seçenekler arasından [amacına]{.light-red} veya [amaçlarına en uygun]{.light-red} [bir veya birkaç seçeneği]{.light-red} seçme sürecine girmesi" [(Evren ve Ülengin, 1992)]{.light-blue}
+* En genel hali ile karar verme; Karar Verici’nin mevcut seçenekler arasından bir [seçim]{.light-red}, [sıralama]{.light-red} ya da [sınıflandırma yapması]{.light-red} ile bir sorunu çözmesi sürecidir.
+
+:::
+
+## İyi Bir Karar
+
+::: {.callout-important icon=false title="İyi Bir Karar" style="font-size: 100%;"}
+
+* Karar verme kalitesini ölçecek tek bir ortak ölçü [saptanamamıştır]{.light-red} [(Olson ve Courtney, 1992)]{.light-blue}.
+* İyi karar verme sanatı [sistematik düşünce]{.light-red} ile oluşur [(Hammond ve diğ., 1999)]{.light-blue}.
+
+* İyi bir karar;
+
+::: columns
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="80%"}
+
+
+::: {.fragment fragment-index=1}
+  * [Mantığa]{.light-red} dayanır.
+:::
+
+::: {.fragment fragment-index=2}
+  * [Tüm mevcut kaynakları]{.light-red} kullanır.
+:::
+
+::: {.fragment fragment-index=3}
+  * [Tüm olası seçenekleri]{.light-red} inceler.
+:::
+
+::: {.fragment fragment-index=4}
+  * [Sayısal]{.light-red} bir yöntem uygular.
+:::
+
+:::
+
+:::
+
+:::
+
+## Karar Verme Süreci
+
+::: {.callout-important icon=false title="Karar Verme Süreci 1" style="font-size: 100%;"}
+
+* Dar anlamda [karar verme]{.light-red}, [çeşitli alternatifler içinde en uygun olanının seçiminin yapıldığ]{.light-blue} bir süreç olarak tanımlanabilir.
+* [Karar Verme Süreci]{.light-red}, değişik kaynaklarda farklı aşamalarla sıralanmıştır. Ancak farklı yaklaşımların ortak noktaları dikkate alındığında, söz konusu sürecin aşamalarını aşağıdaki gibi ifade etmek yanlış olmaz.
+
+
+::: {.fragment fragment-index=1}
+1. [Karar probleminin tanımlanması]{.light-red}
+:::
+
+::: {.fragment fragment-index=2}
+* Karar verecek [kişi]{.light-blue} veya [kişiler]{.light-blue}
+* [Amaç]{.light-blue}
+* [Alternatif]{.light-blue} eylem biçimleri
+* [Belirsizlik]{.light-blue}
+:::
+
+:::
+
+
+## Karar Verme Süreci
+
+::: {.callout-important icon=false title="Karar Verme Süreci 2" style="font-size: 100%;"}
+
+::: {.fragment fragment-index=3}
+2. [Karar probleminin modelinin kurulması]{.light-red}
+:::
+
+::: {.fragment fragment-index=4}
+
+Problemin kolayca çözümlenebilmesi için diğer bir deyişle problemi [en iyi biçimde temsil edecek]{.light-blue} ve problemin çözümündeki [belirsizlikleri en aza indirecek]{.light-blue} bir [modelin]{.light-red} kurulması gerekir.
+:::
+
+::: {.fragment fragment-index=5}
+[Model:]{.light-red} Bir sistemin [değişen şartlar altındaki davranışlarını incelemek]{.light-blue}, [kontrol etmek]{.light-blue} ve [geleceği hakkında tahminlerde bulunmak]{.light-blue} amacıyla elemanları arasındaki bağıntıları [kelimeler]{.light-blue} veya [matematik terimlerle]{.light-blue} belirten ifadeler topluluğuna [model]{.light-red} denir.
+:::
+
+
+::: {.fragment fragment-index=6}
+3. [Modelden çözüm elde edilmesi]{.light-red}
+:::
+
+::: {.fragment fragment-index=7}
+4. [Modelin çözümünün test edilmesi]{.light-red}
+:::
+
+::: {.fragment fragment-index=8}
+5. [Karar verme ve kararın uygulamaya konulması]{.light-red}
+:::
+
+:::
+
+
+## İstanbul - Ankara Arası Gezi
+
+<!-- SLAYT 2 -->
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%" .fragment fragment-index=1}
+::: {.callout-note icon=false title="Ne Yapmalı" .fragment fragment-index=1 style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+
+::: {.fragment fragment-index=3 style="color: orange;"}
+1)   Karar hangi **kısıtlar** altında verilmiştir?
+:::
+
+::: {style="color: red;" .fragment fragment-index=5}
+Aynı haftanın pazartesi günü Ankara'ya gitmek ve çarşamba günü Ankara'dan dönmek.
+:::
+:::
+:::
+:::
+
+<!-- SLAYT 3 -->
+
+## İstanbul - Ankara Arası Gezi
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%" }
+::: {.callout-note icon=false title="Ne Yapmalı" style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+::: {style="color: orange;" .fragment fragment-index=3 }
+2)   Bu kararı değerlendirmede kullanacağımız uygun bir **amaç fonksiyonu** nasıl olmalıdır?
+:::
+
+::: {style="color: red;" .fragment fragment-index=5}
+En düşük bilet fiyatı maliyetini veren alternatifi bulmak.
+:::
+:::
+:::
+:::
+
+<!-- SLAYT 4 -->
+
+## İstanbul - Ankara Arası Gezi
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+::: {.callout-note icon=false title="Ne Yapmalı" style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+
+::: {style="color: orange" .fragment fragment-index=2}
+3)   **Alternatif** kararlar nelerdir?
+:::
+
+::: {style="color: red;" .fragment fragment-index=7}
+1. alternatif - Aynı haftanın her pazartesisi için gidiş çarşambası dönüş olmak üzere beş tane IST-ANK-IST gidiş dönüş bileti almak
+:::
+
+::: {style="color: blue;" .fragment fragment-index=8}
+Maliyet: $400 \times 5 = 2000$ pb
+
+:::
+:::
+:::
+:::
+
+<!-- SLAYT 5 -->
+
+## İstanbul - Ankara Arası Gezi
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+::: {.callout-note icon=false title="Ne Yapmalı" style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+::: {style="color: orange;" .fragment fragment-index=2}
+3)   **Alternatif** kararlar nelerdir?
+:::
+
+::: {style="color: red;" .fragment fragment-index=7}
+2. alternatif - İlk pazartesi bir tane IST-ANK, hafta sonlarını da kapsayacak dört tane ANK-IST-ANK, ve son çarşamda da bir tane de ANK-IST bileti almak
+:::
+
+::: {style="color: blue; font-size:100%" .fragment fragment-index=8}
+Maliyet: 
+
+\begin{align}
+0.75 \times 400 &+ 4 \times (0.8 \times 400)\\
+                & + 0.75 \times 400 = 1880 pb
+\end{align}
+
+:::
+:::
+
+
+
+:::
+
+:::
+
+<!-- SLAYT 6 -->
+
+## İstanbul - Ankara Arası Gezi
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+::: {.callout-note icon=false title="Ne Yapmalı" style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+::: {style="color:orange;" .fragment fragment-index=2}
+3)   **Alternatif** kararlar nelerdir?
+:::
+
+::: {style="color: red;" .fragment fragment-index=7}
+3. alternatif - Birinci haftanın pazartesini ve sonuncu haftanın Çarşambasında kullanılmak üzere hafta sonunu da kapsayan bir tane IST-ANK-IST ve yine hafta sonlarını kapsayan dört tane ANK-IST-ANK bileti almak.
+:::
+
+::: {style="color: blue;" .fragment fragment-index=8}
+Maliyet: $5 \times (0.8 \times 400) = 1600$ pb
+:::
+
+:::
+:::
+:::
+
+<!-- SLAYT 7 -->
+
+## İstanbul - Ankara Arası Gezi
+
+::: columns
+::: {.column width="45%" style="font-size: 80%;"}
+::: {.callout-tip icon=false title="Örnek: İstanbul - Ankara Arası Gezi"}
+
+* Bir iş gezisi nedeniyle [beş]{.light-red} hafta boyunca uçakla [İstanbul (IST) - Ankara (ANK)]{.light-red} arasında gidip geldiğinizi düşünelim.
+* Her hafta [pazartesi]{.light-red} günleri, oturmakta olduğunuz İstanbul'dan Ankara'ya gidip [çarşambaları]{.light-red} da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti [**400 pb**]{.light-blue} (para birimi) dir. 
+* Biletin [hafta sonuna denk gelen tarihleri de kapsaması halinde]{.light-red} [**%20**]{.light-blue} lik bir indirim yapılmaktadır.
+* Ayrıca her iki kentten de alınabilecek [sadece gidiş ve ya dönüş]{.light-red} bileti ise normal gidiş dönüş biletinin [**%75**]{.light-blue} i kadardır.
+* [Bu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?]{.red}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+::: {.callout-note icon=false title="Ne Yapmalı" style="font-size: 80%;"}
+Bu soruya üç temel bileşene sahip  bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.
+
+::: {style="font-size: 150%; color: orange".fragment fragment-index=2}
+En uygun alternatif **3** numaralı alternatiftir.
+:::
+
+:::
+:::
+:::
+
+
+## Yöneylem Probleminin Bileşenleri
+
+::: {.callout-important icon=false title="Yöneylem Probleminin Bileşenleri"}
+
+* Bir yöneylem araştırması modeli, [**kısıtlar**]{.light-red}, [**amaç**]{.light-red} ve [**alternatif**]{.light-red} lerden oluşur. 
+* Genelde karar problemlerinin alternatifleri, bilinmeyen değişkenler olarak karşımıza çıkar. 
+* Bu değişkenler daha sonra kısıtları ve amaç kriterini oluşturmak üzere uygun matematik fonksiyonlarda kullanılır.
+* Nihai sonuç, değişkenler, kısıtlar ve amaç fonksiyonundan oluşan bir [**matematiksel model**]{.light-red} dir.
+* Modelin çözülmesiyle, [**hem tüm kısıtları sağlayan, hem de amaç fonksiyonunu optimum kılan (maksimum ya da minimum kılan)**]{.light-red} karar değişkenlerinin değerleri elde edilmiş olur.
+* Sonuç çözüm [**optimum uygun çözüm**]{.light-red} adını alır.
+:::
+
+
+## Tel Parçası - Dikdörtgen
+
+::: columns
+
+::: {.column width="45%" style="font-size: 100%;"}
+
+::: {.callout-tip icon=false title="Örnek: Tel Parçası (1)"}
+
+* Elimizde [$L$]{.light-blue} cm uzunluğunda bir tel parçası olduğunu varsayalım ve [bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim]{.red}.
+* Problemin değişkenleri, dikdörtgenin uzun kenarı olan [$l$]{.light-blue} uzunluğu ve kısa kenarı olan [$w$]{.light-blue} uzunluğudur. 
+* Dolayısıyla dikdörtgenin alanı [$A=l\cdot w$ $cm^2$]{.light-blue} ve dikdörtgenin çevresi [$L=2(l+w)$ cm]{.light-blue} dir.
+
+:::
+
+:::
+
+
+::: {.column width="50%" style="font-size: 90%;"}
+
+::: {.callout-tip icon=false title="Dikdörtgen" .fragment fragment-index=1}
+
+```{r, fig.width=3, fig.height=2, fig.pos='T', echo=FALSE}
+# Rectangle dimensions
+l <- 6
+w <- 3
+
+# Set background and remove margins
+par(mar = c(0, 0, 0, 0), bg = "white")
+
+# Set plot limits slightly larger than rectangle for spacing
+plot(0, 0, type = "n", xlim = c(-1, l + 1), ylim = c(-1, w + 1),
+     axes = FALSE, xlab = "", ylab = "", asp = 1)
+
+# Draw rectangle
+rect(0, 0, l, w, border = "blue", lwd = 3)
+
+# Add double-headed arrow for length (bottom side)
+arrows(0, -0.5, l, -0.5, code = 3, length = 0.1, col = "blue", lwd = 2)
+text(l / 2, -0.8, "l", col = "blue", cex = 1.5)
+
+# Add double-headed arrow for width (left side)
+arrows(-0.5, 0, -0.5, w, code = 3, length = 0.1, col = "blue", lwd = 2)
+text(-0.8, w / 2, "w", col = "blue", cex = 1.5)
+
+```
+        
+:::
+
+
+::: {.callout-note icon=false title="Değişken, Amaç ve kısıtlar" style="font-size: 100%;" .fragment fragment-index=2}
+
+::: {.fragment fragment-index=3}
+* Değişkenler [$l$]{.light-blue} ve [$w$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* Amaç fonksiyonu [$Maks. A=l \cdot w$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Kısıt ise [$l+w = \frac{L}{2}$]{.light-blue}
+şeklinde olur.
+:::
+
+:::
+:::
+
+:::
+
+
+## Tel Parçası - Dikdörtgen
+
+::: columns
+
+::: {.column width="45%" style="font-size: 100%;"}
+
+::: {.callout-tip icon=false title="Örnek: Tel Parçası (2)"}
+
+* Elimizde [$L$]{.light-blue} cm uzunluğunda bir tel parçası olduğunu varsayalım ve [bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim]{.red}.
+* Problemin değişkenleri, dikdörtgenin uzun kenarı olan [$l$]{.light-blue} uzunluğu ve kısa kenarı olan [$w$]{.light-blue} uzunluğudur. 
+* Dolayısıyla dikdörtgenin alanı [$A=l\cdot w$ $cm^2$]{.light-blue} ve dikdörtgenin çevresi [$L=2(l+w)$ cm]{.light-blue} dir.
+
+:::
+
+:::
+
+
+::: {.column width="50%" style="font-size: 90%;"}
+
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 90%;" .fragment fragment-index=6}
+
+:::{.fragment fragment-index=7}
+* Bu modeli [$l+w = \frac{L}{2}$]{.orange} kısıtını amaç fonksiyonunda kullanarak çözebiliriz. [$l = \frac{L}{2}-w$]{.orange} yu yerine koyarsak,
+:::
+
+:::{.fragment fragment-index=8}
+[$$A = \left(\frac{L}{2}-w\right)w = \frac{Lw}{2}-w^2 $$]{.orange} elde edilir.
+:::
+
+:::{.fragment fragment-index=9}
+* [$A$]{.orange} alanının maksimum olduğu yer, [$A$]{.orange} nın eğiminin [$w$]{.orange} ya göre 0 olduğu noktadır. Yani
+:::
+
+:::{.fragment fragment-index=10}
+[$$\frac{dA}{dw}=\frac{L}{2}-2w=0 $$]{.orange} olmalıdır.
+:::
+
+:::
+
+
+:::
+:::
+
+
+## Tel Parçası - Dikdörtgen
+
+::: columns
+
+::: {.column width="45%" style="font-size: 100%;"}
+
+::: {.callout-tip icon=false title="Örnek: Tel Parçası (3)"}
+
+* Elimizde [$L$]{.light-blue} cm uzunluğunda bir tel parçası olduğunu varsayalım ve [bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim]{.red}.
+* Problemin değişkenleri, dikdörtgenin uzun kenarı olan [$l$]{.light-blue} uzunluğu ve kısa kenarı olan [$w$]{.light-blue} uzunluğudur. 
+* Dolayısıyla dikdörtgenin alanı [$A=l\cdot w$ $cm^2$]{.light-blue} ve dikdörtgenin çevresi [$L=2(l+w)$ cm]{.light-blue} dir.
+
+:::
+
+:::
+
+
+::: {.column width="50%" style="font-size: 100%;"}
+
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=6}
+
+
+:::{.fragment fragment-index=11}
+* Bu denklemin çözümü [$w=\frac{L}{4}$]{.orange} olacağından bu nokta maksimumu göstermektedir.
+:::
+
+:::{.fragment fragment-index=12}
+* Kısıt denkleminde [$w$]{.orange} yerine  [$\frac{L}{4}$]{.orange} yazıldığında [$l=\frac{L}{4}$]{.orange} bulunur.
+:::
+
+:::{.fragment fragment-index=13}
+* Dolayısıyla en uygun çözüm [karedir]{.orange}.
+:::
+
+:::
+
+
+:::
+:::
+
+
+## Yöneylem Araştırması Teknikleri
+
+::: {.callout-important icon=false title="Yöneylem Araştırması Teknikleri 1" style="font-size: 120%;"}
+* Yöneylem Araştırması'ndaki matematiksel modellerde karar değişkenleri [tamsayılı]{.light-red} ya da [sürekli]{.light-red} olabilir. Buna karşılık amaç ve kısıt fonksiyonları [doğrusal (linear)]{.light-red} olabilir ya da [olmayabilir (nonlinear)]{.light-red}.
+* Optimizasyon problemleri bu tür modeller sayesinde ortaya çıkmakta ve değişik çözüm yöntemlerinin gelişmesine kaynak oluşturmaktadır.
+* Bunların içerisinde en belirgin ve başarıyla kullanılanı [doğrusal programlamadır]{.light-red}.
+* Doğrusal programlamada [tüm amaç ve kısıt fonksiyonları doğrusal]{.light-red}, [tüm değişkenler süreklidir]{.light-red}. 
+:::
+
+
+## Yöneylem Araştırması Teknikleri
+
+::: {.callout-important icon=false title="Yöneylem Araştırması Teknikleri 2" style="font-size: 120%;"}
+ 
+* Başka tip modellerin çözümü için geliştirilmiş diğer matematiksel teknikler içinde
+
+
+::: columns
+::: {.column width="5%"}
+:::
+::: {.column width="45%"}
+  * [Dinamik programlama]{.light-red}
+  * [Tamsayılı programlama]{.light-red}
+  * [Doğrusal olmayan (nonlineer) programlama]{.light-red}
+  
+:::
+::: {.column width="45%"}
+  * [Hedef programlama]{.light-red} ve
+  * [Şebeke programlama]{.light-red}
+:::
+:::
+sayılabilir.
+:::
+
+
+
+
+
+## Yöneylem Araştırması Teknikleri
+
+::: {.callout-important icon=false title="Yöneylem Araştırması Teknikleri 3" style="font-size: 100;"}
+* Hemen hemen tüm yöneylem araştırması teknikleri, yapısında [yineleme (tekrarlama)]{.light-red} bulunan [hesaplama algoritmalarıyla]{.light-red} sonuçlandırılır.
+* Bu problemin yinelemelerle (iterasyon) çözülmekte olduğunu ve her yeni yineleme sonunda çözümün [optimuma daha yakın]{.light-red} hale getirildiğini ifade etmektedir.
+* Bu iterasyonlar günümüzde daha çok [bilgisayar desteğiyle]{.light-red} yapılmaktadır.
+* Bazı matematiksel modeller ise, bilinen herhangi bir optimizasyon algoritmasıyla çözülemeyecek kadar karmaşık yapıda olabilir. Böyle durumlarda optimum çözümü aramak yerine, [sezgisel yöntemler]{.light-red} kullanarak sadece iyi bir çözüm arama yoluna gidilir.
+* Sezgisel algoritmalar, genellikle optimumu tam bulan algoritmalara göre [daha hızlı çalışma avantajına]{.light-red} sahiptir.
+:::
+
+
+## Simülasyonla Modelleme
+
+::: {.callout-important icon=false title="Simülasyonla Modelleme (1)" style="font-size: 100%;"}
+* Matematiksel gösterimin katılığı, çoğu kez karar problemlerini yeterince tanımlamayı olanaksız hale getirmektedir.
+* Bunun tersine, bir model uygun formüle edilse bile çok karmaşık çözüm algoritmalarıyla uğraşmak zorunda kalınabilir.
+* Böyle karmaşık sistemlerin modellemesinde kullanılabilecek uygun yaklaşımlardan biri de [simülasyondur]{.light-red}.
+* Simülasyonda matematiksel modellemeden farklı olarak, girdi ile çıktı arasındaki ilişkilerin açıklıkla ifade edilmesine gereksinim duyulmamaktadır.
+:::
+
+
+## Simülasyonla Modelleme
+
+::: {.callout-important icon=false title="Simülasyonla Modelleme (2)" style="font-size: 100%;"}
+* Onun yerine simülasyon, gerçek sistemi [küçük birimler halinde inceler]{.light-red} ve bu birimleri birlikte hareket ettirecek [mantıksal ilişkileri]{.light-red} kullanarak sistemin mevcut davranışını [taklit eder]{.light-red}.
+* Girdilerle işleme başlanarak çıktılar realize oluncaya kadar bu birimler arasındaki simülasyon hesaplarına devam edilir.
+* Simülasyon sistemleri basit olsa da çok yüklü bilgisayar hesabı gerektirir.
+* Simülasyon modelleri aynı sistemin matematiksel modellerine göre çok daha esnektir. Bunun sebebi simülasyon sisteme [basit düzeyden]{.light-red} bakarken, matematiksel model [global]{.light-red} düzeyden bakar.
+* Simülasyon esnek olsa da, [zaman]{.light-red} ve [kaynak]{.light-red} açısından maliyetlidir.
+:::
+
+
+## Model Kurmada Yöntem
+
+::: {.callout-important icon=false title="Model Kurmada Yöntem" style="font-size: 150%;"}
+* Yöneylem araştırmaları uygulamalarındaki temel aşamalar şöyle ifade edilebilir.
+
+  **1)** [Problemin tanımlanması]{.light-red}. <br>
+  **2)** [Modelin kurulması]{.light-red}. <br>
+  **3)** [Modelin çözülmesi]{.light-red}. <br>
+  **4)** [Modelin geçerliliğinin onaylanması]{.light-red}. <br>
+  **5)** [Çözümün uygulanması]{.light-red}.
+:::
+
+## Problemin tanımlanması
+
+::: {.callout-important icon=false title="Problemin tanımlanması" style="font-size: 110%;"}
+* [Problemin tanımlanması]{.light-red} aşaması ele alınan problemin incelenip izlenerek tanımlanmasını kapsar.
+* İnceleme ve araştırma aşamalarının sonucunda karar problemlerinin üç temel elemanının neler olduğu ortaya çıkar.
+* Bunlar 
+  1) [Karar alternatiflerinin]{.light-red} tanımlanması (alternatif kararların neler olduğu)
+  2) [Çalışmanın amacının]{.light-red} ne olduğu
+  3) Modelin kuruluş sisteminin çalışması esnasındaki [sınırlandırmaların]{.light-red} belirlenmesidir.
+:::
+
+## Model Kurma
+
+::: {.callout-important icon=false title="Model Kurma" style="font-size: 110%;"}
+* [Model kurma]{.light-red} aşamasında problem, matematiksel ilişkiler halinde ifade edilir. Başka bir deyişle problem matematik diline tercüme edilir.
+* Model [doğrusal programlama]{.light-red} gibi standart bir matematik model halinde ifade edilebiliyorsa, mevcut algoritmalar yardımıyla çözüme ulaşılır. 
+* Model analitik bir çözüme ulaşmak için çok karmaşık matematiksel ilişkiler içeriyorsa, bu durumda ya [sezgisel yöntemlerle]{.light-red} ya da [simülasyonla]{.light-red} optimum sonuca ulaşılmaya çalışılacaktır.
+* Matematiksel modellerin, sezgisel yöntemlerin ve simülasyonun [bir arada kullanıldığı]{.light-red} yöntemler de mevcuttur.
+:::
+
+## Modelin Çözümü
+
+::: {.callout-important icon=false title="Modelin Çözümü" style="font-size: 110%;"}
+* [Modelin çözümü]{.light-red} bu beş adım arasında en basiti olarak görülür. Çünkü bu aşamada çok iyi bilinen optimizasyon algoritmaları kullanılmaktadır.
+* Modelin çözülmesi aşamasının önemli bir yanı da [duyarlılık analizini]{.light-red} de içermesidir.
+* Duyarlılık analizi model parametrelerinin [tam olarak tahmin edilemediği durumlarda]{.light-red} bazı parametrelerin değişmesi halinde modelin [ne zaman optimum çözümden uzaklaşacağı]{.light-red} hakkında bilgi verir.
+* Başlangıçta model parametrelerinin tahminlerine göre oluşan optimum çözümün [zaman geçtikçe nasıl davranacağının incelenmesi]{.light-red} duyarlılık analizinin konusudur.
+:::
+
+## Modelin Geçerliliği
+
+::: {.callout-important icon=false title="Modelin Geçerliliği" style="font-size: 110%;"}
+* [Modelin geçerliliği]{.light-red} aşamasında, geliştirilmiş olan modelle sistemin çalışması karşılaştırılır ve modelin beklenen davranışları sergileyip sergilemeyeceği incelenir.
+* Biçimsel olarak düşünüldüğünde modelin geçerliliğini anlamak üzere ilk akla gelen davranış, [sistemin geçmişteki çıktıları ile modelin çıktılarını karşılaştırarak kontrol etmektir]{.light-red}.
+* Eğer model, geçmişteki benzer girdiler ile benzer performans üretiyorsa sonuç geçerlidir.
+* Ancak sistem ilk kez kuruluyorsa, performansın test edileceği bir geçmiş veri bulunamayacağından bu kez [simülasyona]{.light-red} başvurulur.
+:::
+
+## Modelin Uygulanması
+
+::: {.callout-important icon=false title="Modelin Uygulanması" style="font-size: 110%;"}
+* Tutarlılığı kanıtlanmış bir modelin çözümünün [uygulanması]{.light-red}, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir.
+:::
