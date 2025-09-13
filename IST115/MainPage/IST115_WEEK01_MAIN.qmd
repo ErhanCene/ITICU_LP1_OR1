@@ -13,7 +13,7 @@ link-external-newwindow: true
 
 Tam Ekran moduna klavyenizden {{< kbd f >}} tuşuna basarak geçebilirsiniz.
 
-Ders notunun PDF haline [bağlantıdan ulaşabilirsiniz](./IST115/PDF/IST115 - Hafta 01.pdf "ders notu") 
+Ders notunun PDF haline [bağlantıdan ulaşabilirsiniz](../PDF/IST115Hafta01.pdf "ders notu") 
 
 <div style= 'border: 1px solid #3f83e0;'>
 
