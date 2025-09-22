@@ -1,0 +1,1135 @@
+---
+title: Hafta 02
+subtitle: "Doğrusal Programlama: Model Kurma ve Örnekler"
+date: 09/25/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene"
+    # width: 1800
+    # height: 900
+filters:
+  - parse-latex
+---
+
+## Doğrusal Programlama (1)
+
+::: {style="font-size: 110%;"}
+* Günümüzde, [işletme]{.light-red}, [ekonomi]{.light-red} ve [muhasebe]{.light-red} dallarını en yakından ilgilendiren konulardan bir olan [doğrusal programlama (DP)]{.light-red}, aynı zamanda [yöneylem araştırmasında]{.light-red} da en önemli konulardan biridir. 
+* Doğrusal programlama, [kaynakların optimal dağılımını elde etmeye]{.light-red}, [maliyetleri minimize]{.light-red}, [karı ise maksimize]{.light-red} etmeye yarayan bir tekniktir.
+* Doğrusal Programlama, [optimizasyon problemlerinin]{.light-red} çözümünde kullanılan bir yöntemdir. 
+:::
+
+
+## Doğrusal Programlama (2)
+
+::: {style="font-size: 94%;"}
+* 1947’ de, George Dantzig, doğrusal Programlama problemlerinin çözümünde kullanılan etkin bir yol olan [Simpleks Algoritma]{.light-red}’ yı buldu ve bu buluşla birlikte doğrusal Programlama, sıklıkla ve hemen hemen her sektörde kullanılmaya başlandı.
+* Temel olarak, doğrusal programlama, [kıt kaynakların optimum şekilde]{.light-red} dağılımını içeren [deterministik]{.light-red} bir matematiksel tekniktir.
+* Doğrusal programlama, [iyi tanımlanmış]{.light-red} doğrusal eşitliklerin veya eşitsizliklerin [kısıtlayıcı]{.light-red} koşulları altında [doğrusal bir amaç fonksiyonunu]{.light-red} [en iyi]{.light-red} (optimum/ maksimizasyon-minimizasyon) kılan değişken değerlerinin belirlenmesinde kullanılan matematiksel programlama tekniğidir.
+:::
+
+
+## DP Modelinin Yapısal Unsurları (1)
+
+
+::: {.callout-important icon=false title="1- Karar Değişkenleri" style="font-size: 130%;"}
+* Karar vericinin denetimi altında olan niteliklere [karar değişkenleri]{.light-red} denir. 
+* Bunlar modele ilişkin [bilinmeyenler]{.light-red} olup değerleri modelin çözümünden sonra belirlenir. 
+* Bu değişkenler karar vericinin denetimi altında olduklarından bunlara [kontrol değişkenleri]{.light-red} de denir.
+* Örneğin [$x_j$]{.light-red}: Belirli bir zaman döneminde [$j$]{.light-red}’inci ürünün üretim miktarı veya faaliyet düzeyini gösterebilir. 
+* Burada [$j=1, 2, 3, \dots , n$]{.light-red}: Ürün çeşidi, faaliyet sayısını belirtir.
+:::
+
+## DP Modelinin Yapısal Unsurları (2)
+
+::: {.callout-important icon=false title="2- Amaç Fonksiyonu" style="font-size: 100%;"}
+* Karar vericinin ulaşmak istediği hedef doğrusal bir denklem ile açıklanır. 
+* [Amaç fonksiyonu]{.light-red} olarak adlandırılan bu denklem, [karar değişkenleri]{.light-red} ile karar vericinin amacı arasındaki fonksiyonel ilişkiyi gösterir.
+* Bu denklemin genel formu
+
+[$$Z_{enk/enb} = c_1x_1+c_2x_2+ \dots + c_n x_n = \sum_{j=1}^n c_jx_j$$]{.light-blue}
+şeklinde yazılabilir.
+
+* Denklemde [$x_j$]{.light-red} ler [karar değişkenlerini]{.light-red} gösterir. 
+* Denklemde [$c_j$]{.light-red} ler ise [kar ve ya maliyet katsayılarını (parametrelerini) ]{.light-red} gösterir. 
+* [$x_j$]{.light-red} ler bulunmak istenen değerler iken, [$c_j$]{.light-red} ler ise bilinen değerlerdir.
+:::
+
+## DP Modelinin Yapısal Unsurları (3)
+
+::: {.callout-important icon=false title="3- Kısıtlayıcı Fonksiyonlar (1)" style="font-size: 130%;"}
+
+
+
+* Karar değişkenleri ve karar değişkenleriyle parametrelerin birbirleriyle olan ilişkilerinde sağlanması zorunlu olan ilişkilerin matematiksel olarak açıklanmasıyla elde edilen denklemlere [kısıtlayıcı fonksiyonlar]{.light-red} denir. 
+* Kısıtlayıcıların değerleri [kesin olarak önceden belirlenmiş olup]{.light-red} sistemin tanımlanmasında kullanılır. 
+* Kısıtlayıcı fonksiyonlar sadece kaynakların sınırlarını değil, gereksinim
+ve yönetim kararlarını ifade etmekte de kullanılır.
+
+:::
+
+
+
+## DP Modelinin Yapısal Unsurları (4)
+
+::: {.callout-important icon=false title="3- Kısıtlayıcı Fonksiyonlar (2)" style="font-size: 100%;"}
+
+
+[$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n &\;\leq ( = ya da \geq)& b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n &\;\leq (= ya da \geq)& b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n &\;\leq ( = ya da \geq)& b_{m}.
+\end{alignedat}
+$$]{.light-blue}
+
+ya da kısaca
+
+[$$\sum_{j=1}^n a_{ij}x_j\leq (=; ya da\geq) b_i \quad{} (i=1,2,3,\dots,m)$$]{.light-blue}
+
+
+
+* Burada [$a_{ij}$]{.light-red} ler [teknoloji katsayılarını]{.light-red}, [$b_i$]{.light-red} ler ise [elverişli kaynak miktarını]{.light-red} gösterir. Hem [$a_{ij}$]{.light-red} hem de [$b_i$]{.light-red} ler bilinen değerlerdir.
+* Kısıtlar her zaman [$\leq$]{.light-red} ile ifade edilmek zorunda değildir. [$=$]{.light-red} ya da [$\geq$]{.light-red} ile ifade edilen kısıtlar da bulunur.
+
+
+:::
+
+
+
+
+## DP Modelinin Yapısal Unsurları (5)
+
+::: {.callout-important icon=false title="4- Parametreler (1)" style="font-size: 140%;"}
+* Alabileceği değerlerde karar vericinin hiçbir etkisi olmayan niteliklere [parametre]{.light-red} veya [kontrol dışı değişkenler]{.light-red} denir. 
+* Amaç denkleminde yer alan [$c_j$]{.light-red} ler ve kısıt denklemlerinde yer alan [$a_{ij}$]{.light-red} ile [$b_i$]{.light-red} ler önceden belirlenmiş değerler olduğundan [parametre]{.light-red} veya [kontrol dışı değişkenler]{.light-red} dir. 
+* Belirli koşullarda belirli değerler alan parametreler problem için [veri]{.light-red} durumundadır.
+:::
+
+## DP Modelinin Yapısal Unsurları (6)
+
+::: {.callout-important icon=false title="4- Parametreler (2)" style="font-size: 140%;"}
+* [$c_j$]{.light-red}: [$j$]{.light-red}’inci karar değişkeninin [amaç fonksiyonu katsayısı]{.light-red} (parametre)-(birim kar,
+birim fiyat, birim maliyet vs.).
+* [$a_{ij}$]{.light-red}: [$j$]{.light-red}’inci üründen bir birim üretmek için [$i$]{.light-red}’inci kaynaktan tüketilen [kaynak miktarı]{.light-red} veya [girdi katsayısı]{.light-red}
+* [$b_i$]{.light-red}: [$n$]{.light-red} sayıdaki ürün için elde bulunan [$i$]{.light-red}’inci [sınırlı kaynak miktarı]{.light-red}.
+* [$i= 1, 2, 3, \dots, m$]{.light-red} : Üretim bölümlerinin veya üretim kaynaklarının sayısı.
+:::
+
+## DP Modelinin Yapısal Unsurları (7)
+
+::: {.callout-important icon=false title="5- İşaret Kısıtlaması" style="font-size: 140%;"}
+* Doğrusal programlama probleminin formülizasyonunu tamamlamak için her bir karar değişkenlerinin [$x_j$]{.light-red} [sadece negatif olmayan değerler]{.light-red} mi aldığı [yoksa hem pozitif hem de negatif değerler]{.light-red}  mi aldığı belirtilmelidir.
+* Eğer pozitif değer kısıtlaması kullanılıyorsa, bu durum doğrusal programlama probleminde [$x_j \geq 0$]{.light-red} ifadesiyle, eğer [hem pozitif hem negatif değerler]{.light-red} alabiliyorsa bu durum doğrusal programlama probleminde [$x_j^+,x_j^- \geq 0$]{.light-red} ile gösterilir.
+:::
+
+
+## Örnek bir DP Modeli
+
+::: {.callout-tip icon=false title="Örnek bir DP Modeli" style="font-size: 100%;"}
+
+* Tüm bu bilgiler doğrultusunda, [karar değişkenleri]{.light-blue}, [amaç fonksiyonu]{.light-blue}, [kısıtları]{.light-blue}, [parametreleri]{.light-blue} ve [işaret kısıtlamasını]{.light-blue} içeren örnek bir DP modeli aşağıda verilmiştir.
+
+
+::: {style="font-size: 82%;"}
+[Amaç fonksiyonu ve karar değişkenleri:]{.light-blue}
+
+
+
+[$$Z_{enk/enb} = c_1x_1+c_2x_2+ \dots + c_n x_n = \sum_{j=1}^n c_jx_j$$]{.light-red}
+:::
+
+
+::: {style="font-size: 82%;"}
+
+[Kısıtlayıcı fonksiyonlar ve parametreler:]{.light-blue}
+
+
+
+[$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n &\;\leq (= ya da \geq)& b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n &\;\leq (= ya da \geq)& b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n &\;\leq (= ya da \geq)& b_{m}.
+\end{alignedat}
+$$]{.light-red}
+:::
+
+::: {style="font-size: 82%;"}
+
+[İşaret kısıtlaması:]{.light-blue}
+
+
+
+[$$x_1 \geq 0, x_2 \geq 0, \dots, x_n \geq 0$$]{.light-red}
+:::
+
+:::
+
+
+## Doğrusal Programlama Modelinin Matris Gösterimi
+
+::: {.callout-important icon=false title="Doğrusal Programlama Modelinin Matris Gösterimi" style="font-size: 85%;"}
+
+[Amaç fonksiyonunun matrissel gösterimi:]{.light-red}
+
+
+[$$Z_{enb/enk} = \begin{bmatrix}
+C_1 & C_2 & \dots & C_n
+\end{bmatrix} \begin{bmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{n} \end{bmatrix} = \mathbf{Cx}$$]{.light-blue}
+
+[Kısıtlayıcı fonksiyonların matrissel gösterimi:]{.light-red}
+
+[$$\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots &       & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn} \\
+\end{bmatrix} \begin{bmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{n} \end{bmatrix} (\leq;=;\geq) \begin{bmatrix} b_{1} \\ b_{2} \\ \vdots \\ b_{m} \end{bmatrix} = \mathbf{Ax}(\leq;=;\geq)\mathbf{b}$$]{.light-blue}
+:::
+
+## Doğrusal Programlamanın Varsayımları (1)
+
+::: {.callout-important icon=false title="Doğrusal Programlamanın Varsayımları" style="font-size: 120%;"}
+
+[1.Doğrusallık (veya Oransallık) Varsayımı:]{.light-red}
+
+* Modeldeki [amaç fonksiyonları]{.light-red} ve [kısıtlayıcı fonksiyonların]{.light-red} hepsi [doğrusaldır]{.light-red}. 
+* Doğrusallık varsayımı, amacın ve kısıtların bir doğru denklemi olarak ifade edilebilmesini sağlar.
+* Doğrusallığın sağlanabilmesi için kısıtlayıcı ve amaç fonksiyonlarındaki değişkenlerin [($x_{j}$)]{.light-red} derecesi yani [üssü 1 olmalıdır]{.light-red}. Üs birden başka bir değerse doğrusallık sağlanmaz.
+* Bu varsayım gerçekleşmediği takdirde [Doğrusal Olmayan Programlama (DOP)]{.light-red} söz konusudur.
+:::
+
+## Doğrusal Programlamanın Varsayımları (2)
+
+::: {.callout-important icon=false title="Doğrusal Programlamanın Varsayımları" style="font-size: 110%;"}
+
+[2.Toplanabilirlik Varsayımı]{.light-red}
+
+* Doğrusal programlamada her fonksiyon (amaç fonksiyonu ya da kısıtlayıcının sol tarafındaki fonksiyon) [ilişkin olduğu faaliyetlerin bireysel katkısının toplamıdır]{.light-red}.
+* Örneğin bir ürünün üretimi için [3 saat]{.light-red}, bir başka ürünün üretimi için [5 saat]{.light-red} gerekiyorsa, iki ürünün birden üretimi için [8 saat]{.light-red} gerektiği varsayılır.
+
+[3. Bölünebilirlik Varsayımı]{.light-red}
+
+* Bu varsayım, her karar değişkenlerinin [ondalıklı bir sayı]{.light-red} alabileceği anlamına gelir. 
+* Bu varsayım ortadan kalktığında [tamsayılı programlama]{.light-red} söz konusu olur.
+
+:::
+
+## Doğrusal Programlamanın Varsayımları (3)
+
+::: {.callout-important icon=false title="Doğrusal Programlamanın Varsayımları" style="font-size: 120%;"}
+
+[4.Kesinlik Varsayımı:]{.light-red}
+
+* Bu varsayım, tüm parametrelerin ([amaç fonksiyonu katsayısı]{.light-blue} [$(c_j)$]{.light-red}, [sağ taraf kısıtlayıcı değeri]{.light-blue} [$(b_i)$]{.light-red} ve [teknolojik katsayı]{.light-blue} [$(a_{ij})$]{.light-red} ) kesin olarak bilindiğini ve [ilgili dönemde değişmeyeceğini]{.light-red} öngörür. 
+* Eğer bu değerler tam olarak bilinmiyorsa, sonuç güvenilir olmayacaktır. Böyle bir durumda [duyarlılık analizine]{.light-red} başvurulabilir.
+
+[5. Negatif Olmama Varsayımı]{.light-red}
+
+* [Karar değişkenleri]{.light-blue} [$(x_j)$]{.light-red} [negatif değerler alamaz]{.light-red}.
+
+:::
+
+
+## DP'nin Uygulama Alanları
+
+::: {.callout-important icon=false title="Doğrusal Programlamanın Uygulama Alanları" style="font-size: 130%;"}
+
+* Ulaştırma ve dağıtım kanallar
+* Beslenme ve karıştırma problemleri
+* Üretim planlaması
+* Yatırım planlaması
+* Görev dağıtımı
+* Arazi kullanımı planlaması
+* Kuruluş yeri seçimi
+* Oyun teorisi
+* $\dots$
+
+:::
+
+
+## DP Modeli Kurulurken İzlenecek Adımlar
+
+::: {.callout-important icon=false title="Doğrusal Programlama Modeli Kurulurken İzlenecek Adımlar" style="font-size: 140%;"}
+
+1. [Karar değişkenlerinin tanımlanması]{.light-red} ve bunların [sembolize]{.light-red} edilmesi.
+2. [Amacın]{.light-red} belirlenerek [amaç fonksiyonun karar değişkenlerinin doğrusal bir fonksiyonu]{.light-red} olarak yazılması.
+3. Tüm [kısıtlamaların karar değişkenlerinin doğrusal bir fonksiyonları]{.light-red} olarak [eşitlik]{.light-red} veya [eşitsizlik]{.light-red} olarak yazılması.
+4. [Negatif olmama]{.light-red} koşullarının yazılması.
+
+:::
+
+
+## Örnek DP Modeli - 1 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 1: Kimya Firması"  style="font-size: 100%;"}
+* İnci kimya firması [X]{.light-blue} ve [Y]{.light-blue} gibi iki tip kimyasal madde üretmektedir. 
+* [1 litre X]{.light-blue} ürününün maliyeti [160 TL]{.light-blue}, [1 litre Y]{.light-blue} ürününün maliyeti ise [240 TL]{.light-blue} dir. 
+* Müşteri talebine göre, firma, gelecek hafta için [en az 6 litre X]{.light-blue} ve [en az 2 litre Y]{.light-blue} ürünü üretmelidir. 
+* X ve Y kimyasal ürünlerinde kullanılan hammaddelerden birisinin sunumu azdır ve [sadece 30 gr.]{.light-blue} sağlanabilmektedir. 
+* [X ürününün bir litresinde]{.light-blue} bu hammaddeden [3 gr]{.light-blue} ve [Y nin litresinde]{.light-blue} de [5 gr]{.light-blue} gerekli olmaktadır.
+* İnci firması, toplam maliyetini minimize etmek için [X ve Y ürünlerinden kaçar litre üretmesi]{.light-blue} gerektiği konusunda çok büyük bir kararsızlık içerisine girmiştir. 
+* [Bu soruyu yanıtlayacak modeli kurunuz.]{.red}
+
+:::
+
+
+## Örnek DP Modeli - 1 (2)
+
+
+::: columns
+
+
+::: {.column width="55%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 90%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=3}
+* [$x_1$]{.orange} = Üretilecek X ürününün miktarı ( litre )
+* [$x_2$]{.orange} = Üretilecek Y ürününün miktarı ( litre )
+:::
+
+:::{.fragment fragment-index=4}
+[Minimize edilmek istenen toplam maliyet:]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+* [$160 x_1 + 240 x_2$]{.orange} dir.
+:::
+
+:::{.fragment fragment-index=6}
+[İstenen gerekli minimum miktar:]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$x_1 \geq 6$]{.orange} ve [$x_2 \geq 2$]{.orange} dir.
+:::
+
+:::{.fragment fragment-index=8}
+[Hammadde kısıtlayıcısı:]{.red}
+:::
+
+:::{.fragment fragment-index=9}
+* [$3x_1 + 5x_2 \leq 30$]{.orange} dur.
+:::
+
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="43%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=10}
+[Böylece minimizasyon modeli şöyle olacaktır:]{.red}
+:::
+
+:::{.fragment fragment-index=11}
+* [$min \quad{} z = 160 x_1 + 240 x_2$]{.orange}
+* [$x_1 \geq 6$]{.orange}
+* [$x_2 \geq 2$]{.orange}
+* [$3x_1 + 5x_2 \leq 30$]{.orange}
+* [$x_1$ , $x_2 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+
+:::
+
+
+## Örnek DP Modeli - 2 (1)
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 2: Süt Şirketi"  style="font-size: 110%;"}
+
+
+* Mügesüt şirketi kapasite sorunu yüzünden günde [120.000 kg. dan daha çok süt işleyememektedir]{.light-blue}. 
+* Yönetim, yağ veya işlenmiş süt için kullanılan sütün dengelenmesi için peynir fabrikasında [en az 10.000 kg.]{.light-blue} lık günlük süt kullanmak istemektedir. 
+* Bir kg. sütün [yağ üretimi]{.light-blue} için kullanıldığında, kara katkısı, [4 TL]{.light-blue}., [şişe sütü]{.light-blue} olarak kullanıldığında katkısı [8 TL]{.light-blue}. ve [peynir üretimi]{.light-blue} için kullanıldığında ise katkısı [6 TL]{.light-blue}. dir.
+* [Yağ bölümü]{.light-blue} günde [60.000 kg.]{.light-blue}, [süt şişeleme]{.light-blue} donanımı günde [40.000 kg.]{.light-blue}, [peynir donanımı]{.light-blue} ise günde [30.000]{.light-blue} kg. süt işleyebilir.
+* [Şirket karını maksimize etmek istediğine göre problemi doğrusal programlama modeli olarak ifade ediniz.]{.red}
+:::
+
+
+## Örnek DP Modeli - 2 (2)
+
+
+::: columns
+
+::: {.column width="60%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 105%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Yağ yapımında kullanılan süt miktarı ( kg )
+* [$x_2$]{.orange} = Şişelemede kullanılan süt miktarı ( kg )
+* [$x_3$]{.orange} = Peynir yapımında kullanılan süt miktarı ( kg )
+:::
+
+:::{.fragment fragment-index=3}
+[İşletmenin karını maksimize edecek amaç fonksiyonu:]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$maks \quad{} z = 4 x_1 + 8 x_2 + 6 x_3$]{.orange}
+:::
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_3 \geq 10000$]{.orange} 
+:::
+
+:::{.fragment fragment-index=9}
+* [$x_1 \leq 60000$]{.orange}
+* [$x_2 \leq 40000$]{.orange}
+* [$x_3 \leq 30000$]{.orange}
+:::
+
+:::{.fragment fragment-index=10}
+* [$x_1 + x_2 + x_3 \leq 120000$]{.orange}
+:::
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=11}
+* [$x_1$ , $x_2$, $x_3 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+
+:::
+
+## Örnek DP Modeli - 3 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 3: Ulaştırma Problemi"  style="font-size: 90%;"}
+
+* Üç ayrı fabrikada beyaz eşya üreten bir işletme satışlarını değişik bölgelerdeki üç depo aracılığıyla yapmaktadır. 
+* İşletme yönetiminin temel sorunu beyaz eşyanın fabrikalardan satış depolarına ulaştırılmasında karşılaştığı [yüksek ulaştırma giderleridir]{.light-blue}. 
+* Fabrikalardan depolara birim ulaştırma maliyetleri aşağıda verilmiştir.
+
+
+::: columns
+
+::: {.column width="60%"}
+* Üretim miktarları sırasıyla [150]{.light-blue}, [200]{.light-blue} ve [400]{.light-blue} adettir. 
+* Depoların aylık istemleri [A]{.light-blue} için [220]{.light-blue}, [B]{.light-blue} için [150]{.light-blue}, [C]{.light-blue} için [380]{.light-blue} adettir. 
+* Depoların gereksinimini tam olarak sağlamak isteyen işletme, tüm üretimini [toplam ulaştırma maliyetini en küçük]{.light-blue} yapacak şekilde dağıtmak istemektedir. 
+* [Problemin doğrusal programlama modelini kurunuz.]{.red}
+
+:::
+
+::: {.column width="1%"}
+
+
+:::
+
+::: {.column width="38%"}
+|         |    | Depo |    |
+|---------|----|------|----|
+| Fabrika | A  | B    | C  |
+| 1       | 30 | 25   | 15 |
+| 2       | 16 | 45   | 29 |
+| 3       | 25 | 10   | 16 |
+
+:::
+
+:::
+
+
+:::
+
+
+
+## Örnek DP Modeli - 3 (2)
+
+
+::: columns
+
+::: {.column width="60%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 74%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+
+İlk olarak karar değişkenlerini, [$i$]{.orange}’inci fabrikadan [$j$]{.orange}’inci depoya taşınan beyaz eşya miktarı (adet olarak) olmak üzere [$x_{ij}$]{.orange} [$(i = 1, 2, 3)$]{.orange} ve [$(j = A, B, C)$]{.orange} şeklinde tanımlayalım. Buna göre, karar değişkenleri aşağıdaki gibi olur.
+
+:::
+
+:::{.fragment fragment-index=3}
+* [$x_{1A}$]{.orange} = [$1$]{.orange} nolu fabrikadan [$A$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{1B}$]{.orange} = [$1$]{.orange} nolu fabrikadan [$B$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{1C}$]{.orange} = [$1$]{.orange} nolu fabrikadan [$C$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{2A}$]{.orange} = [$2$]{.orange} nolu fabrikadan [$A$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{2B}$]{.orange} = [$2$]{.orange} nolu fabrikadan [$B$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{2C}$]{.orange} = [$2$]{.orange} nolu fabrikadan [$C$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{3A}$]{.orange} = [$3$]{.orange} nolu fabrikadan [$A$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{3B}$]{.orange} = [$3$]{.orange} nolu fabrikadan [$B$]{.orange} deposuna gönderilen beyaz eşya sayısı
+* [$x_{3C}$]{.orange} = [$3$]{.orange} nolu fabrikadan [$C$]{.orange} deposuna gönderilen beyaz eşya sayısı
+:::
+
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="38%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 80%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=4}
+[Amaç: İşletmenin aylık taşıma maliyetleri toplamını en küçükleyen fonksiyon]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+
+[\begin{multline*}
+min \quad{} z = 30 x_{1A} + 25 x_{1B} +15 x_{1C} \\ 
++16 x_{2A} +45 x_{2B} +29 x_{2C}\\
++25 x_{3A} +10 x_{3B} +16 x_{3C}
+\end{multline*}]{.orange}
+
+:::
+:::
+:::
+
+:::
+
+
+
+## Örnek DP Modeli - 3 (3)
+
+
+::: columns
+
+::: {.column width="49%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Kısıtlar ise fabrikaların üretim miktarları ile depoların gereksinim miktarlarıdır.]{.red}
+:::
+
+:::{.fragment fragment-index=3}
+[Herhangi bir fabrikadan üretiminden fazla taşıma yapılamayacağından ve üretimin tamamı dağıtılmak istendiğinden]{.red}
+:::
+
+:::{.fragment fragment-index=4}
+
+* [Üretim miktarı ile ilgili kısıtlayıcı fonksiyonlar.]{.red}
+
+[\begin{align*}
+  x_{1A} + x_{1B}+ x_{1C} = 150,&\\
+  x_{21} + x_{2B}+ x_{2C} = 200,&\\
+  x_{3A} + x_{3B}+ x_{3C} = 400,&
+\end{align*}]{.orange}
+
+:::
+
+
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+
+
+:::{.fragment fragment-index=5}
+
+* [Depoların beyaz eşya gereksiniminin eksiksiz karşılanması koşulu da aşağıdaki eşitlik sistemiyle açıklanabilir.]{.red}
+
+[\begin{align*}
+  x_{1A} + x_{2A}+ x_{3A} = 220,&\\
+  x_{1B} + x_{2B}+ x_{3B} = 150,&\\
+  x_{1C} + x_{2C}+ x_{3C} = 380,&
+\end{align*}]{.orange}
+:::
+
+:::{.fragment fragment-index=6}
+[Negatif Taşıma Olamayacağına Göre:]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$x_{ij} \geq 0$]{.orange} [$(i = 1,2,3)$]{.orange} ve [(j=A,B,C)]{.orange}
+:::
+
+:::
+:::
+
+:::
+
+
+## Örnek DP Modeli - 4 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 4: Beslenme Problemi"  style="font-size: 110%;"}
+
+
+* Bir çiftçi çiftliğindeki tavukların günlük [karbonhidrat]{.light-blue}, [protein]{.light-blue} ve [vitamin]{.light-blue} gereksinimini [en küçük maliyetle]{.light-blue} karşılamak amacıyla en uygun besin maddelerini ve bunların miktarlarını belirlemek istemektedir. 
+* Alternatif besin maddelerinin [birim maliyetleri]{.light-blue}, içerdikleri [karbonhidrat]{.light-blue}, [protein]{.light-blue} ve [vitamin]{.light-blue} miktarları ile bunlara olan [günlük gereksinim]{.light-blue} aşağıdaki tabloda özetlenmiştir.
+
+
+::: columns
+
+::: {.column width="44%"}
+* [Bu verilere göre, tavukların günlük besin gereksinimini tam olarak karşılayan en küçük maliyetli besin karışımının belirlenmesinde kullanılacak doğrusal programlama modelini kurunuz]{.red}.
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="54%"}
+```{=html}
+
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-uzvj" rowspan="2">Besin Elemanı</th>
+    <th class="tg-7btt" colspan="3">Besin Türü (kg)</th>
+    <th class="tg-uzvj" rowspan="2">En Az Günlük Gereksinim</th>
+  </tr>
+  <tr>
+    <th class="tg-7btt">Suni Yem</th>
+    <th class="tg-7btt">Buğday</th>
+    <th class="tg-7btt">Arpa</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt">Karbonhidrat (gr)</td>
+    <td class="tg-c3ow">9</td>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-7btt">20</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">Protein (gr)</td>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-7btt">18</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">Vitamin (mgr)</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-7btt">15</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">Birim Fiyat (TL)</td>
+    <td class="tg-7btt">7</td>
+    <td class="tg-7btt">6</td>
+    <td class="tg-7btt">5</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+</tbody></table>
+
+```
+:::
+
+:::
+
+
+
+
+
+:::
+
+
+## Örnek DP Modeli - 4 (2)
+
+
+::: columns
+
+::: {.column width="45%"}
+
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Suni yem tüketim miktarı (kg/gün)
+* [$x_2$]{.orange} = Buğday tüketim miktarı (kg/gün)
+* [$x_3$]{.orange} = Arpa tüketim miktarı (kg/gün)
+:::
+
+:::{.fragment fragment-index=3}
+[Amaç en az maliyetle gerekli besini sağlamaktır]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$min \quad{} z = 7 x_1 + 6 x_2 + 5 x_3$]{.orange}
+:::
+
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="50%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 90%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$9x_1 + 2x_2 + 4x_3 \geq 20$ (Karbonhidrat kısıtı)]{.orange}
+* [$3x_1 + 8x_2 + 6x_3 \geq 18$ (Protein kısıtı)]{.orange}
+* [$1x_1 + 2x_2 + 6x_3 \geq 15$ (Vitamin kısıtı)]{.orange}
+
+[Kısıtlardaki $\geq$ işareti alınması gereken besin elemanlarının belirtilen miktarların altına düşmeyeceğini, fakat bu miktarlardan fazla olabileceğini belitmektedir.]{.light-blue}
+:::
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=9}
+* [$x_1$ , $x_2$, $x_3 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+:::
+
+
+
+## Örnek DP Modeli - 5 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 5: Gübre"  style="font-size: 110%;"}
+
+
+* Bereket AŞ [düşük]{.light-blue} ve [yüksek]{.light-blue} fosfatlı olmak üzere iki çeşit [gübre]{.light-blue} üretmektedir. 
+* Gübreler [üç]{.light-blue} farklı hammaddenin [(A, B, C)]{.light-blue} karışımından oluşmaktadır. 
+* 1 ton [yüksek fosfatlı]{.light-blue} gübre üretiminde [2 ton A]{.light-blue}, [1’er ton B ve C]{.light-blue}; 1 ton [düşük fosfatlı]{.light-blue} gübre üretiminde ise [A ve B’den 1’er ton]{.light-blue} kullanılmaktadır. 
+* İşletmenin aylık hammadde kapasitesi [150 ton A]{.light-blue}, [120 ton B]{.light-blue}, [50 ton C]{.light-blue}’dir.
+* [Düşük fosfatlı]{.light-blue} gübre isteminin [en çok 20 ton/ay]{.light-blue} olduğu bilinmektedir. 
+* [Yüksek fosfatlı]{.light-blue} gübrenin satış fiyatı [150 TL/ton]{.light-blue}, [düşük fosfatlı]{.light-blue} gübrenin satış fiyatı ise [100 TL/ton]{.light-blue} dur. 
+* İşletme, toplam satış gelirini [en büyüklemek]{.light-blue} için her ay her bir üründen kaç birim üretmelidir? 
+* [Problemi doğrusal programlama olarak modelleyiniz.]{.red}
+:::
+
+
+## Örnek DP Modeli - 5 (2)
+
+
+::: columns
+
+::: {.column width="40%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Yüksek fosfatlı gübre üretim miktarı (ton/ay)
+* [$x_2$]{.orange} = Düşük fosfatlı gübre üretim miktarı (ton/ay)
+:::
+
+:::{.fragment fragment-index=3}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$maks \quad{} z = 150 x_1 + 100 x_2$]{.orange}
+:::
+
+
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="59%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=10}
+* [$2x_1 + x_2 \leq 150$ (A hammaddesi kısıtı)]{.orange}
+* [$1x_1 + 1x_2  \leq 120$ (B hammaddesi kısıtı)]{.orange}
+* [$1x_1 + 0x_2  \leq 50$ (C hammaddesi kısıtı)]{.orange}
+* [$1x_1 \leq 20$ (Düşük fosfatlı gübre istem miktarı kısıtı)]{.orange}
+:::
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=11}
+* [$x_1$ , $x_2 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+:::
+
+
+## Örnek DP Modeli - 6 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 6: Pencere Üretimi"  style="font-size: 95%;"}
+
+
+* Biri [alüminyum]{.light-blue} diğeri [ahşap]{.light-blue} çerçeveli olmak üzere [iki tip pencere]{.light-blue} üretimi planlanmaktadır. 
+* Üretim atölyelerinin [günlük çalışma kapasiteleri]{.light-blue} ve her üründen bir adet üretmek için [gerekli zaman (saat olarak)]{.light-blue} aşağıdaki tablodaki gibidir. 
+
+| **Atölye/Pencere** | **Alüminyum** | **Ahşap** | **Çalışma Kapasitesi (Gün/Saat)** |
+|:------------------:|:------------:|:----------:|:---------------------------------:|
+|    **Alüminyum**   |       1      |      0     |               **4**               |
+|      **Ahşap**     |       0      |      2     |               **12**              |
+|   **Cam Üretim**   |       3      |      2     |               **18**              |
+| **Birim Kar (TL)** |    **300**   |   **500**  |               **-**               |
+
+* Alüminyum çerçeveli pencerenin kâra katkısı [300 TL]{.light-blue}, ahşap çerçevelininki ise [500 TL]{.light-blue}’dir. 
+* İşletme, günlük karını [en büyüklemek]{.light-blue} için her üründen kaç birim üreteceğini belirlemek istemektedir. 
+* [Buna göre, problemi doğrusal programlama modeli olarak formüle ediniz.]{.red}
+
+
+:::
+
+## Örnek DP Modeli - 6 (2)
+
+
+::: columns
+
+::: {.column width="45%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 110%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Alüminyum pencere üretim miktarı (adet/gün)
+* [$x_2$]{.orange} = Ahşap pencere üretim miktarı (adet/gün)
+:::
+
+:::{.fragment fragment-index=3}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$maks \quad{} z = 300 x_1 + 500 x_2$]{.orange}
+:::
+
+
+
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 110%;" .fragment fragment-index=1}
+
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=10}
+* [$1x_1 + 0x_2 \leq 4$ (Alüminyum atölyesi çalışma zamanı kısıtı)]{.orange}
+* [$0x_1 + 2x_2  \leq 12$ (Ahşap atölyesi çalışma zamanı kısıtı)]{.orange}
+* [$3x_1 + 2x_2  \leq 18$ (Cam atölyesi çalışma zamanı kısıtı)]{.orange}
+:::
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=11}
+* [$x_1$ , $x_2 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+:::
+
+
+## Örnek DP Modeli - 7 (1)
+
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 7: Domates"  style="font-size: 115%;"}
+
+* Hazır gıda AŞ kg’ı [0.85 TL]{.light-blue}’den [120000]{.light-blue} kg domates alarak [domates suyu]{.light-blue} ve [domates salçası]{.light-blue} üretmektedir. 
+* Konserve edilen ürünler [12 kutuluk koliler]{.light-blue} halinde paketlenmektedir. 
+* Bir kutu domates suyu için [0.75 kg]{.light-blue}, bir kutu salça için [1 kg]{.light-blue} domates kullanılmaktadır. 
+* Şirketin pazar payı [2500 koli]{.light-blue} domates suyu, [7500 koli]{.light-blue} domates salçası olarak belirlenmiştir. 
+* Bir koli domates suyunun satış fiyatı [36 TL]{.light-blue}, bir koli salçanın satış fiyatı [18 TL]{.light-blue} dir.
+* [Toplam satış gelirinin en büyük olmasını isteyen işletmenin üretim planını belirleyiniz.]{.red}
+
+
+:::
+
+## Örnek DP Modeli - 7 (2)
+
+
+::: columns
+
+::: {.column width="45%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 110%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Domates suyu kolisi miktarı (adet)
+* [$x_2$]{.orange} = Domates salçası kolisi miktarı (adet)
+:::
+
+:::{.fragment fragment-index=3}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$maks \quad{} z = 36 x_1 + 18 x_2$]{.orange}
+:::
+
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 110%;" .fragment fragment-index=1}
+
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=10}
+* [$9x_1 + 12x_2 \leq 120000$ (Domates miktarı kısıtı)]{.orange}
+* [$x_1 \leq 2500$ (Domates suyu pazar payı kısıtı)]{.orange}
+* [$x_2  \leq 7500$ (Salça pazar payı kısıtı)]{.orange}
+:::
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=11}
+* [$x_1$ , $x_2 \geq 0$]{.orange}
+:::
+
+:::
+:::
+
+:::
+
+## Örnek DP Modeli - 8 (1)
+
+::: {.callout-tip icon=false title="Örnek DP Modeli - 8: Yatırım Planı"  style="font-size: 90%;"}
+
+* Cihan Bey [60 milyon TL]{.light-blue} tutarındaki emekli ikramiyesi ile yıllık gelirini en büyük yapacak yatırımlara girmeyi planlamaktadır. 
+* Cihan Bey için [uygun yatırım seçenekleri]{.light-blue} ile bu yatırımların [yıllık getiri oranları]{.light-blue} aşağıdaki tabloda verilmiştir. 
+
+
+::: columns
+
+::: {.column width="60%"}
+* Cihan Bey’in amacı, [yıllık getirisi en büyük olan]{.light-blue} yatırım planını belirlemektir. 
+* Cihan Bey karşılaşabileceği risklere karşın aşağıdaki prensip kararlarını almıştır.
+  a. [Banka mevduatı]{.light-blue}, [devlet tahvili]{.light-blue} ile [altına]{.light-blue} yatırımların [toplamına]{.light-blue} eşit olmalıdır.
+  b. [Altına]{.light-blue} yatırım, [nakit]{.light-blue} olarak saklanan paranın [%30’undan fazla olmamalıdır]{.light-blue}.
+  c. [Hisse senedi]{.light-blue} yatırımı [15 milyon TL]{.light-blue}’yi geçmemelidir.
+  d. [Devlet tahvili]{.light-blue} yatırımı [en fazla 10 milyon TL]{.light-blue} olmalıdır.
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+| **Yatırım Seçeneği (Milyon TL)** | **Getiri Oranı (%)** |
+|:--------------------------------:|:--------------------:|
+|        **Banka Mevduatı**        |          52          |
+|         **Hisse Senedi**         |          40          |
+|        **Devlet Tahvili**        |          32          |
+|             **Altın**            |          16          |
+|             **Nakit**            |          -5          |
+:::
+
+
+:::
+
+:::
+
+## Örnek DP Modeli - 8 (2)
+
+::: columns
+::: {.column width="51%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_1$]{.orange} = Banka mevduatı yatırım miktarı
+* [$x_2$]{.orange} = Hisse senedi yatırım miktarı
+* [$x_3$]{.orange} = Devlet tahvili yatırım miktarı
+* [$x_4$]{.orange} = Altına yatırım miktarı
+* [$x_5$]{.orange} = Nakit olarak ayrılan para miktarı
+:::
+
+:::{.fragment fragment-index=3}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+
+[\begin{multline*}
+maks \quad{} z = 0.52 x_1 + 0.40 x_2+ 0.32 x_3\\
++ 0.16 x_4 - 0.05 x_5
+\end{multline*}]{.orange}
+:::
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="48%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=4}
+[Kısıtlar ise]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+
+a. Banka mevduatı ([$x_1$]{.orange}), devlet tahvili ([$x_3$]{.orange}) ile altına ([$x_4$]{.orange}) yatırımların toplamına eşit olmalıdır. Buna göre,
+
+* [$x_1 = x_3 + x_4$]{.orange}
+:::
+
+:::{.fragment fragment-index=9}
+
+Doğrusal programlamadaki kısıtlayıcı fonksiyonların sağ taraflarında bir sabit olması gerekmektedir. Buna göre denklem tekrar düzenlenirse
+
+* [$x_1- x_3 - x_4 = 0$]{.orange} olur.
+
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek DP Modeli - 8 (3)
+
+::: columns
+::: {.column width="58%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=2}
+[Kısıtlar (Devam):]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+
+b. Nakit olarak ayrılan paranın [$x_5$]{.orange} olduğu düşünülürse, altına yapılan yatırıma ilişkin kısıtlayıcı aşağıdaki gibi formüllenir.
+
+[$x_4 \leq 0.30 x_5$]{.orange} ya da [$x_4 - 0.30 x_5 \leq 0$]{.orange}
+
+:::
+
+:::{.fragment fragment-index=7}
+c. [$x_2 \leq 15$]{.orange} (Hisse senedi yatırımı)
+:::
+
+:::{.fragment fragment-index=8}
+d. [$x_3 \leq 10$]{.orange} (Devlet tahvili yatırımı)
+:::
+
+:::{.fragment fragment-index=9}
+
+[$x_1 + x_2 + x_3 + x_4 + x_5 = 60$]{.orange} (Paranın tamamının değerlendirilmesi kısıtı)
+:::
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="40%"}
+::: {.callout-warning icon=false title="Çözüm" style="font-size: 100%;" .fragment fragment-index=1}
+
+:::{.fragment fragment-index=5}
+[Negatif Olmama koşulu:]{.red}
+:::
+
+:::{.fragment fragment-index=10}
+* [$x_2 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$, $x_5 \geq 0$]{.orange}
+:::
+
+:::
+
+:::
+
+:::
+

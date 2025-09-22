@@ -27,7 +27,7 @@ website:
       - section: IST115 - Doğrusal Programlama 1 Ders Notları
         contents: 
           - IST115/MainPage/IST115_WEEK01_MAIN.qmd
-          #- MainPage/01--02--Data--Types--Main.qmd
+          - IST115/MainPage/IST115_WEEK02_MAIN.qmd
           # - LabSession01Main.qmd
       - section: IST215 - Yöneylem Araştırması 1 Ders Notları
         contents: 

@@ -543,5 +543,262 @@
     "title": "Hafta 02",
     "section": "",
     "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri 1\n\n\n5\n16 Ekim 2025 Perşembe\nAtama Problemleri 1\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri 2\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK02_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK02_MAIN.html",
+    "title": "IST115 - Hafta 02",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 02"
+    ]
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html",
+    "href": "IST115/Hafta02/index.html",
+    "title": "Hafta 02",
+    "section": "",
+    "text": "Günümüzde, işletme, ekonomi ve muhasebe dallarını en yakından ilgilendiren konulardan bir olan doğrusal programlama (DP), aynı zamanda yöneylem araştırmasında da en önemli konulardan biridir.\nDoğrusal programlama, kaynakların optimal dağılımını elde etmeye, maliyetleri minimize, karı ise maksimize etmeye yarayan bir tekniktir.\nDoğrusal Programlama, optimizasyon problemlerinin çözümünde kullanılan bir yöntemdir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-1",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlama-1",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlama (1)",
+    "text": "Doğrusal Programlama (1)\n\n\nGünümüzde, işletme, ekonomi ve muhasebe dallarını en yakından ilgilendiren konulardan bir olan doğrusal programlama (DP), aynı zamanda yöneylem araştırmasında da en önemli konulardan biridir.\nDoğrusal programlama, kaynakların optimal dağılımını elde etmeye, maliyetleri minimize, karı ise maksimize etmeye yarayan bir tekniktir.\nDoğrusal Programlama, optimizasyon problemlerinin çözümünde kullanılan bir yöntemdir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-2",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlama-2",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlama (2)",
+    "text": "Doğrusal Programlama (2)\n\n\n1947’ de, George Dantzig, doğrusal Programlama problemlerinin çözümünde kullanılan etkin bir yol olan Simpleks Algoritma’ yı buldu ve bu buluşla birlikte doğrusal Programlama, sıklıkla ve hemen hemen her sektörde kullanılmaya başlandı.\nTemel olarak, doğrusal programlama, kıt kaynakların optimum şekilde dağılımını içeren deterministik bir matematiksel tekniktir.\nDoğrusal programlama, iyi tanımlanmış doğrusal eşitliklerin veya eşitsizliklerin kısıtlayıcı koşulları altında doğrusal bir amaç fonksiyonunu en iyi (optimum/ maksimizasyon-minimizasyon) kılan değişken değerlerinin belirlenmesinde kullanılan matematiksel programlama tekniğidir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-1",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-1",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (1)",
+    "text": "DP Modelinin Yapısal Unsurları (1)\n\n\n\n\n1- Karar Değişkenleri\n\n\n\nKarar vericinin denetimi altında olan niteliklere karar değişkenleri denir.\nBunlar modele ilişkin bilinmeyenler olup değerleri modelin çözümünden sonra belirlenir.\nBu değişkenler karar vericinin denetimi altında olduklarından bunlara kontrol değişkenleri de denir.\nÖrneğin \\(x_j\\): Belirli bir zaman döneminde \\(j\\)’inci ürünün üretim miktarı veya faaliyet düzeyini gösterebilir.\nBurada \\(j=1, 2, 3, \\dots , n\\): Ürün çeşidi, faaliyet sayısını belirtir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-2",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-2",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (2)",
+    "text": "DP Modelinin Yapısal Unsurları (2)\n\n\n\n\n2- Amaç Fonksiyonu\n\n\n\nKarar vericinin ulaşmak istediği hedef doğrusal bir denklem ile açıklanır.\nAmaç fonksiyonu olarak adlandırılan bu denklem, karar değişkenleri ile karar vericinin amacı arasındaki fonksiyonel ilişkiyi gösterir.\nBu denklemin genel formu\n\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\] şeklinde yazılabilir.\n\nDenklemde \\(x_j\\) ler karar değişkenlerini gösterir.\nDenklemde \\(c_j\\) ler ise kar ve ya maliyet katsayılarını (parametrelerini) gösterir.\n\\(x_j\\) ler bulunmak istenen değerler iken, \\(c_j\\) ler ise bilinen değerlerdir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-3",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-3",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (3)",
+    "text": "DP Modelinin Yapısal Unsurları (3)\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (1)\n\n\n\nKarar değişkenleri ve karar değişkenleriyle parametrelerin birbirleriyle olan ilişkilerinde sağlanması zorunlu olan ilişkilerin matematiksel olarak açıklanmasıyla elde edilen denklemlere kısıtlayıcı fonksiyonlar denir.\nKısıtlayıcıların değerleri kesin olarak önceden belirlenmiş olup sistemin tanımlanmasında kullanılır.\nKısıtlayıcı fonksiyonlar sadece kaynakların sınırlarını değil, gereksinim ve yönetim kararlarını ifade etmekte de kullanılır."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-4",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-4",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (4)",
+    "text": "DP Modelinin Yapısal Unsurları (4)\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (2)\n\n\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq ( = ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq ( = ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\nya da kısaca\n\\[\\sum_{j=1}^n a_{ij}x_j\\leq (=; ya da\\geq) b_i \\quad{} (i=1,2,3,\\dots,m)\\]\n\nBurada \\(a_{ij}\\) ler teknoloji katsayılarını, \\(b_i\\) ler ise elverişli kaynak miktarını gösterir. Hem \\(a_{ij}\\) hem de \\(b_i\\) ler bilinen değerlerdir.\nKısıtlar her zaman \\(\\leq\\) ile ifade edilmek zorunda değildir. \\(=\\) ya da \\(\\geq\\) ile ifade edilen kısıtlar da bulunur."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-5",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-5",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (5)",
+    "text": "DP Modelinin Yapısal Unsurları (5)\n\n\n\n\n4- Parametreler (1)\n\n\n\nAlabileceği değerlerde karar vericinin hiçbir etkisi olmayan niteliklere parametre veya kontrol dışı değişkenler denir.\nAmaç denkleminde yer alan \\(c_j\\) ler ve kısıt denklemlerinde yer alan \\(a_{ij}\\) ile \\(b_i\\) ler önceden belirlenmiş değerler olduğundan parametre veya kontrol dışı değişkenler dir.\nBelirli koşullarda belirli değerler alan parametreler problem için veri durumundadır."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-6",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-6",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (6)",
+    "text": "DP Modelinin Yapısal Unsurları (6)\n\n\n\n\n4- Parametreler (2)\n\n\n\n\\(c_j\\): \\(j\\)’inci karar değişkeninin amaç fonksiyonu katsayısı (parametre)-(birim kar, birim fiyat, birim maliyet vs.).\n\\(a_{ij}\\): \\(j\\)’inci üründen bir birim üretmek için \\(i\\)’inci kaynaktan tüketilen kaynak miktarı veya girdi katsayısı\n\\(b_i\\): \\(n\\) sayıdaki ürün için elde bulunan \\(i\\)’inci sınırlı kaynak miktarı.\n\\(i= 1, 2, 3, \\dots, m\\) : Üretim bölümlerinin veya üretim kaynaklarının sayısı."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-7",
+    "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-7",
+    "title": "Hafta 02",
+    "section": "DP Modelinin Yapısal Unsurları (7)",
+    "text": "DP Modelinin Yapısal Unsurları (7)\n\n\n\n\n5- İşaret Kısıtlaması\n\n\n\nDoğrusal programlama probleminin formülizasyonunu tamamlamak için her bir karar değişkenlerinin \\(x_j\\) sadece negatif olmayan değerler mi aldığı yoksa hem pozitif hem de negatif değerler mi aldığı belirtilmelidir.\nEğer pozitif değer kısıtlaması kullanılıyorsa, bu durum doğrusal programlama probleminde \\(x_j \\geq 0\\) ifadesiyle, eğer hem pozitif hem negatif değerler alabiliyorsa bu durum doğrusal programlama probleminde \\(x_j^+,x_j^- \\geq 0\\) ile gösterilir."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-bir-dp-modeli",
+    "href": "IST115/Hafta02/index.html#örnek-bir-dp-modeli",
+    "title": "Hafta 02",
+    "section": "Örnek bir DP Modeli",
+    "text": "Örnek bir DP Modeli\n\n\n\n\nÖrnek bir DP Modeli\n\n\n\nTüm bu bilgiler doğrultusunda, karar değişkenleri, amaç fonksiyonu, kısıtları, parametreleri ve işaret kısıtlamasını içeren örnek bir DP modeli aşağıda verilmiştir.\n\n\nAmaç fonksiyonu ve karar değişkenleri:\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\]\n\n\nKısıtlayıcı fonksiyonlar ve parametreler:\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq (= ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq (= ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\n\n\nİşaret kısıtlaması:\n\\[x_1 \\geq 0, x_2 \\geq 0, \\dots, x_n \\geq 0\\]"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-modelinin-matris-gösterimi",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlama-modelinin-matris-gösterimi",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlama Modelinin Matris Gösterimi",
+    "text": "Doğrusal Programlama Modelinin Matris Gösterimi\n\n\n\n\nDoğrusal Programlama Modelinin Matris Gösterimi\n\n\nAmaç fonksiyonunun matrissel gösterimi:\n\\[Z_{enb/enk} = \\begin{bmatrix}\nC_1 & C_2 & \\dots & C_n\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} = \\mathbf{Cx}\\]\nKısıtlayıcı fonksiyonların matrissel gösterimi:\n\\[\\begin{bmatrix}\na_{11} & a_{12} & \\dots & a_{1n} \\\\\na_{21} & a_{22} & \\dots & a_{2n} \\\\\n\\vdots & \\vdots &       & \\vdots \\\\\na_{m1} & a_{m2} & \\dots & a_{mn} \\\\\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} (\\leq;=;\\geq) \\begin{bmatrix} b_{1} \\\\ b_{2} \\\\ \\vdots \\\\ b_{m} \\end{bmatrix} = \\mathbf{Ax}(\\leq;=;\\geq)\\mathbf{b}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-1",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-1",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlamanın Varsayımları (1)",
+    "text": "Doğrusal Programlamanın Varsayımları (1)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n1.Doğrusallık (veya Oransallık) Varsayımı:\n\nModeldeki amaç fonksiyonları ve kısıtlayıcı fonksiyonların hepsi doğrusaldır.\nDoğrusallık varsayımı, amacın ve kısıtların bir doğru denklemi olarak ifade edilebilmesini sağlar.\nDoğrusallığın sağlanabilmesi için kısıtlayıcı ve amaç fonksiyonlarındaki değişkenlerin (\\(x_{j}\\)) derecesi yani üssü 1 olmalıdır. Üs birden başka bir değerse doğrusallık sağlanmaz.\nBu varsayım gerçekleşmediği takdirde Doğrusal Olmayan Programlama (DOP) söz konusudur."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-2",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-2",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlamanın Varsayımları (2)",
+    "text": "Doğrusal Programlamanın Varsayımları (2)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n2.Toplanabilirlik Varsayımı\n\nDoğrusal programlamada her fonksiyon (amaç fonksiyonu ya da kısıtlayıcının sol tarafındaki fonksiyon) ilişkin olduğu faaliyetlerin bireysel katkısının toplamıdır.\nÖrneğin bir ürünün üretimi için 3 saat, bir başka ürünün üretimi için 5 saat gerekiyorsa, iki ürünün birden üretimi için 8 saat gerektiği varsayılır.\n\n3. Bölünebilirlik Varsayımı\n\nBu varsayım, her karar değişkenlerinin ondalıklı bir sayı alabileceği anlamına gelir.\nBu varsayım ortadan kalktığında tamsayılı programlama söz konusu olur."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-3",
+    "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-3",
+    "title": "Hafta 02",
+    "section": "Doğrusal Programlamanın Varsayımları (3)",
+    "text": "Doğrusal Programlamanın Varsayımları (3)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n4.Kesinlik Varsayımı:\n\nBu varsayım, tüm parametrelerin (amaç fonksiyonu katsayısı \\((c_j)\\), sağ taraf kısıtlayıcı değeri \\((b_i)\\) ve teknolojik katsayı \\((a_{ij})\\) ) kesin olarak bilindiğini ve ilgili dönemde değişmeyeceğini öngörür.\nEğer bu değerler tam olarak bilinmiyorsa, sonuç güvenilir olmayacaktır. Böyle bir durumda duyarlılık analizine başvurulabilir.\n\n5. Negatif Olmama Varsayımı\n\nKarar değişkenleri \\((x_j)\\) negatif değerler alamaz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dpnin-uygulama-alanları",
+    "href": "IST115/Hafta02/index.html#dpnin-uygulama-alanları",
+    "title": "Hafta 02",
+    "section": "DP’nin Uygulama Alanları",
+    "text": "DP’nin Uygulama Alanları\n\n\n\n\nDoğrusal Programlamanın Uygulama Alanları\n\n\n\nUlaştırma ve dağıtım kanallar\nBeslenme ve karıştırma problemleri\nÜretim planlaması\nYatırım planlaması\nGörev dağıtımı\nArazi kullanımı planlaması\nKuruluş yeri seçimi\nOyun teorisi\n\\(\\dots\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#dp-modeli-kurulurken-izlenecek-adımlar",
+    "href": "IST115/Hafta02/index.html#dp-modeli-kurulurken-izlenecek-adımlar",
+    "title": "Hafta 02",
+    "section": "DP Modeli Kurulurken İzlenecek Adımlar",
+    "text": "DP Modeli Kurulurken İzlenecek Adımlar\n\n\n\n\nDoğrusal Programlama Modeli Kurulurken İzlenecek Adımlar\n\n\n\nKarar değişkenlerinin tanımlanması ve bunların sembolize edilmesi.\nAmacın belirlenerek amaç fonksiyonun karar değişkenlerinin doğrusal bir fonksiyonu olarak yazılması.\nTüm kısıtlamaların karar değişkenlerinin doğrusal bir fonksiyonları olarak eşitlik veya eşitsizlik olarak yazılması.\nNegatif olmama koşullarının yazılması."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---1-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---1-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 1 (1)",
+    "text": "Örnek DP Modeli - 1 (1)\n\n\n\n\nÖrnek DP Modeli - 1: Kimya Firması\n\n\n\nİnci kimya firması X ve Y gibi iki tip kimyasal madde üretmektedir.\n1 litre X ürününün maliyeti 160 TL, 1 litre Y ürününün maliyeti ise 240 TL dir.\nMüşteri talebine göre, firma, gelecek hafta için en az 6 litre X ve en az 2 litre Y ürünü üretmelidir.\nX ve Y kimyasal ürünlerinde kullanılan hammaddelerden birisinin sunumu azdır ve sadece 30 gr. sağlanabilmektedir.\nX ürününün bir litresinde bu hammaddeden 3 gr ve Y nin litresinde de 5 gr gerekli olmaktadır.\nİnci firması, toplam maliyetini minimize etmek için X ve Y ürünlerinden kaçar litre üretmesi gerektiği konusunda çok büyük bir kararsızlık içerisine girmiştir.\nBu soruyu yanıtlayacak modeli kurunuz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---1-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---1-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 1 (2)",
+    "text": "Örnek DP Modeli - 1 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Üretilecek X ürününün miktarı ( litre )\n\\(x_2\\) = Üretilecek Y ürününün miktarı ( litre )\n\n\n\nMinimize edilmek istenen toplam maliyet:\n\n\n\n\\(160 x_1 + 240 x_2\\) dir.\n\n\n\nİstenen gerekli minimum miktar:\n\n\n\n\\(x_1 \\geq 6\\) ve \\(x_2 \\geq 2\\) dir.\n\n\n\nHammadde kısıtlayıcısı:\n\n\n\n\\(3x_1 + 5x_2 \\leq 30\\) dur.\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nBöylece minimizasyon modeli şöyle olacaktır:\n\n\n\n\\(min \\quad{} z = 160 x_1 + 240 x_2\\)\n\\(x_1 \\geq 6\\)\n\\(x_2 \\geq 2\\)\n\\(3x_1 + 5x_2 \\leq 30\\)\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---2-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---2-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 2 (1)",
+    "text": "Örnek DP Modeli - 2 (1)\n\n\n\n\nÖrnek DP Modeli - 2: Süt Şirketi\n\n\n\nMügesüt şirketi kapasite sorunu yüzünden günde 120.000 kg. dan daha çok süt işleyememektedir.\nYönetim, yağ veya işlenmiş süt için kullanılan sütün dengelenmesi için peynir fabrikasında en az 10.000 kg. lık günlük süt kullanmak istemektedir.\nBir kg. sütün yağ üretimi için kullanıldığında, kara katkısı, 4 TL., şişe sütü olarak kullanıldığında katkısı 8 TL. ve peynir üretimi için kullanıldığında ise katkısı 6 TL. dir.\nYağ bölümü günde 60.000 kg., süt şişeleme donanımı günde 40.000 kg., peynir donanımı ise günde 30.000 kg. süt işleyebilir.\nŞirket karını maksimize etmek istediğine göre problemi doğrusal programlama modeli olarak ifade ediniz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---2-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---2-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 2 (2)",
+    "text": "Örnek DP Modeli - 2 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yağ yapımında kullanılan süt miktarı ( kg )\n\\(x_2\\) = Şişelemede kullanılan süt miktarı ( kg )\n\\(x_3\\) = Peynir yapımında kullanılan süt miktarı ( kg )\n\n\n\nİşletmenin karını maksimize edecek amaç fonksiyonu:\n\n\n\n\\(maks \\quad{} z = 4 x_1 + 8 x_2 + 6 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(x_3 \\geq 10000\\)\n\n\n\n\n\\(x_1 \\leq 60000\\)\n\\(x_2 \\leq 40000\\)\n\\(x_3 \\leq 30000\\)\n\n\n\n\n\\(x_1 + x_2 + x_3 \\leq 120000\\)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 3 (1)",
+    "text": "Örnek DP Modeli - 3 (1)\n\n\n\n\nÖrnek DP Modeli - 3: Ulaştırma Problemi\n\n\n\nÜç ayrı fabrikada beyaz eşya üreten bir işletme satışlarını değişik bölgelerdeki üç depo aracılığıyla yapmaktadır.\nİşletme yönetiminin temel sorunu beyaz eşyanın fabrikalardan satış depolarına ulaştırılmasında karşılaştığı yüksek ulaştırma giderleridir.\nFabrikalardan depolara birim ulaştırma maliyetleri aşağıda verilmiştir.\n\n\n\n\nÜretim miktarları sırasıyla 150, 200 ve 400 adettir.\nDepoların aylık istemleri A için 220, B için 150, C için 380 adettir.\nDepoların gereksinimini tam olarak sağlamak isteyen işletme, tüm üretimini toplam ulaştırma maliyetini en küçük yapacak şekilde dağıtmak istemektedir.\nProblemin doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\n\n\nDepo\n\n\n\n\n\nFabrika\nA\nB\nC\n\n\n1\n30\n25\n15\n\n\n2\n16\n45\n29\n\n\n3\n25\n10\n16"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 3 (2)",
+    "text": "Örnek DP Modeli - 3 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\nİlk olarak karar değişkenlerini, \\(i\\)’inci fabrikadan \\(j\\)’inci depoya taşınan beyaz eşya miktarı (adet olarak) olmak üzere \\(x_{ij}\\) \\((i = 1, 2, 3)\\) ve \\((j = A, B, C)\\) şeklinde tanımlayalım. Buna göre, karar değişkenleri aşağıdaki gibi olur.\n\n\n\n\\(x_{1A}\\) = \\(1\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1B}\\) = \\(1\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1C}\\) = \\(1\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2A}\\) = \\(2\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2B}\\) = \\(2\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2C}\\) = \\(2\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3A}\\) = \\(3\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3B}\\) = \\(3\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3C}\\) = \\(3\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nAmaç: İşletmenin aylık taşıma maliyetleri toplamını en küçükleyen fonksiyon\n\n\n\\[\\begin{gathered}\nmin \\quad{} z = 30 x_{1A} + 25 x_{1B} +15 x_{1C} \\\\\n+16 x_{2A} +45 x_{2B} +29 x_{2C}\\\\\n+25 x_{3A} +10 x_{3B} +16 x_{3C}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-3",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-3",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 3 (3)",
+    "text": "Örnek DP Modeli - 3 (3)\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise fabrikaların üretim miktarları ile depoların gereksinim miktarlarıdır.\n\n\nHerhangi bir fabrikadan üretiminden fazla taşıma yapılamayacağından ve üretimin tamamı dağıtılmak istendiğinden\n\n\n\nÜretim miktarı ile ilgili kısıtlayıcı fonksiyonlar.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{1B}+ x_{1C} = 150,&\\\\\n  x_{21} + x_{2B}+ x_{2C} = 200,&\\\\\n  x_{3A} + x_{3B}+ x_{3C} = 400,&\n\\end{aligned}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nDepoların beyaz eşya gereksiniminin eksiksiz karşılanması koşulu da aşağıdaki eşitlik sistemiyle açıklanabilir.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{2A}+ x_{3A} = 220,&\\\\\n  x_{1B} + x_{2B}+ x_{3B} = 150,&\\\\\n  x_{1C} + x_{2C}+ x_{3C} = 380,&\n\\end{aligned}\\]\n\n\nNegatif Taşıma Olamayacağına Göre:\n\n\n\n\\(x_{ij} \\geq 0\\) \\((i = 1,2,3)\\) ve (j=A,B,C)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---4-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---4-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 4 (1)",
+    "text": "Örnek DP Modeli - 4 (1)\n\n\n\n\nÖrnek DP Modeli - 4: Beslenme Problemi\n\n\n\nBir çiftçi çiftliğindeki tavukların günlük karbonhidrat, protein ve vitamin gereksinimini en küçük maliyetle karşılamak amacıyla en uygun besin maddelerini ve bunların miktarlarını belirlemek istemektedir.\nAlternatif besin maddelerinin birim maliyetleri, içerdikleri karbonhidrat, protein ve vitamin miktarları ile bunlara olan günlük gereksinim aşağıdaki tabloda özetlenmiştir.\n\n\n\n\nBu verilere göre, tavukların günlük besin gereksinimini tam olarak karşılayan en küçük maliyetli besin karışımının belirlenmesinde kullanılacak doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\nBesin Elemanı\nBesin Türü (kg)\nEn Az Günlük Gereksinim\n\n\nSuni Yem\nBuğday\nArpa\n\n\n\n\nKarbonhidrat (gr)\n9\n2\n4\n20\n\n\nProtein (gr)\n3\n8\n6\n18\n\n\nVitamin (mgr)\n1\n2\n6\n15\n\n\nBirim Fiyat (TL)\n7\n6\n5\n-"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---4-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---4-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 4 (2)",
+    "text": "Örnek DP Modeli - 4 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Suni yem tüketim miktarı (kg/gün)\n\\(x_2\\) = Buğday tüketim miktarı (kg/gün)\n\\(x_3\\) = Arpa tüketim miktarı (kg/gün)\n\n\n\nAmaç en az maliyetle gerekli besini sağlamaktır\n\n\n\n\\(min \\quad{} z = 7 x_1 + 6 x_2 + 5 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 2x_2 + 4x_3 \\geq 20\\) (Karbonhidrat kısıtı)\n\\(3x_1 + 8x_2 + 6x_3 \\geq 18\\) (Protein kısıtı)\n\\(1x_1 + 2x_2 + 6x_3 \\geq 15\\) (Vitamin kısıtı)\n\nKısıtlardaki \\(\\geq\\) işareti alınması gereken besin elemanlarının belirtilen miktarların altına düşmeyeceğini, fakat bu miktarlardan fazla olabileceğini belitmektedir.\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---5-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---5-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 5 (1)",
+    "text": "Örnek DP Modeli - 5 (1)\n\n\n\n\nÖrnek DP Modeli - 5: Gübre\n\n\n\nBereket AŞ düşük ve yüksek fosfatlı olmak üzere iki çeşit gübre üretmektedir.\nGübreler üç farklı hammaddenin (A, B, C) karışımından oluşmaktadır.\n1 ton yüksek fosfatlı gübre üretiminde 2 ton A, 1’er ton B ve C; 1 ton düşük fosfatlı gübre üretiminde ise A ve B’den 1’er ton kullanılmaktadır.\nİşletmenin aylık hammadde kapasitesi 150 ton A, 120 ton B, 50 ton C’dir.\nDüşük fosfatlı gübre isteminin en çok 20 ton/ay olduğu bilinmektedir.\nYüksek fosfatlı gübrenin satış fiyatı 150 TL/ton, düşük fosfatlı gübrenin satış fiyatı ise 100 TL/ton dur.\nİşletme, toplam satış gelirini en büyüklemek için her ay her bir üründen kaç birim üretmelidir?\nProblemi doğrusal programlama olarak modelleyiniz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---5-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---5-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 5 (2)",
+    "text": "Örnek DP Modeli - 5 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yüksek fosfatlı gübre üretim miktarı (ton/ay)\n\\(x_2\\) = Düşük fosfatlı gübre üretim miktarı (ton/ay)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 150 x_1 + 100 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(2x_1 + x_2 \\leq 150\\) (A hammaddesi kısıtı)\n\\(1x_1 + 1x_2  \\leq 120\\) (B hammaddesi kısıtı)\n\\(1x_1 + 0x_2  \\leq 50\\) (C hammaddesi kısıtı)\n\\(1x_1 \\leq 20\\) (Düşük fosfatlı gübre istem miktarı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---6-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---6-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 6 (1)",
+    "text": "Örnek DP Modeli - 6 (1)\n\n\n\n\nÖrnek DP Modeli - 6: Pencere Üretimi\n\n\n\nBiri alüminyum diğeri ahşap çerçeveli olmak üzere iki tip pencere üretimi planlanmaktadır.\nÜretim atölyelerinin günlük çalışma kapasiteleri ve her üründen bir adet üretmek için gerekli zaman (saat olarak) aşağıdaki tablodaki gibidir.\n\n\n\n\n\n\n\n\n\n\nAtölye/Pencere\nAlüminyum\nAhşap\nÇalışma Kapasitesi (Gün/Saat)\n\n\n\n\nAlüminyum\n1\n0\n4\n\n\nAhşap\n0\n2\n12\n\n\nCam Üretim\n3\n2\n18\n\n\nBirim Kar (TL)\n300\n500\n-\n\n\n\n\nAlüminyum çerçeveli pencerenin kâra katkısı 300 TL, ahşap çerçevelininki ise 500 TL’dir.\nİşletme, günlük karını en büyüklemek için her üründen kaç birim üreteceğini belirlemek istemektedir.\nBuna göre, problemi doğrusal programlama modeli olarak formüle ediniz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---6-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---6-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 6 (2)",
+    "text": "Örnek DP Modeli - 6 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Alüminyum pencere üretim miktarı (adet/gün)\n\\(x_2\\) = Ahşap pencere üretim miktarı (adet/gün)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 300 x_1 + 500 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(1x_1 + 0x_2 \\leq 4\\) (Alüminyum atölyesi çalışma zamanı kısıtı)\n\\(0x_1 + 2x_2  \\leq 12\\) (Ahşap atölyesi çalışma zamanı kısıtı)\n\\(3x_1 + 2x_2  \\leq 18\\) (Cam atölyesi çalışma zamanı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---7-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---7-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 7 (1)",
+    "text": "Örnek DP Modeli - 7 (1)\n\n\n\n\nÖrnek DP Modeli - 7: Domates\n\n\n\nHazır gıda AŞ kg’ı 0.85 TL’den 120000 kg domates alarak domates suyu ve domates salçası üretmektedir.\nKonserve edilen ürünler 12 kutuluk koliler halinde paketlenmektedir.\nBir kutu domates suyu için 0.75 kg, bir kutu salça için 1 kg domates kullanılmaktadır.\nŞirketin pazar payı 2500 koli domates suyu, 7500 koli domates salçası olarak belirlenmiştir.\nBir koli domates suyunun satış fiyatı 36 TL, bir koli salçanın satış fiyatı 18 TL dir.\nToplam satış gelirinin en büyük olmasını isteyen işletmenin üretim planını belirleyiniz."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---7-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---7-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 7 (2)",
+    "text": "Örnek DP Modeli - 7 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Domates suyu kolisi miktarı (adet)\n\\(x_2\\) = Domates salçası kolisi miktarı (adet)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 36 x_1 + 18 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 12x_2 \\leq 120000\\) (Domates miktarı kısıtı)\n\\(x_1 \\leq 2500\\) (Domates suyu pazar payı kısıtı)\n\\(x_2  \\leq 7500\\) (Salça pazar payı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-1",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-1",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 8 (1)",
+    "text": "Örnek DP Modeli - 8 (1)\n\n\n\n\nÖrnek DP Modeli - 8: Yatırım Planı\n\n\n\nCihan Bey 60 milyon TL tutarındaki emekli ikramiyesi ile yıllık gelirini en büyük yapacak yatırımlara girmeyi planlamaktadır.\nCihan Bey için uygun yatırım seçenekleri ile bu yatırımların yıllık getiri oranları aşağıdaki tabloda verilmiştir.\n\n\n\n\nCihan Bey’in amacı, yıllık getirisi en büyük olan yatırım planını belirlemektir.\nCihan Bey karşılaşabileceği risklere karşın aşağıdaki prensip kararlarını almıştır.\n\nBanka mevduatı, devlet tahvili ile altına yatırımların toplamına eşit olmalıdır.\nAltına yatırım, nakit olarak saklanan paranın %30’undan fazla olmamalıdır.\nHisse senedi yatırımı 15 milyon TL’yi geçmemelidir.\nDevlet tahvili yatırımı en fazla 10 milyon TL olmalıdır.\n\n\n\n\n\n\n\n\nYatırım Seçeneği (Milyon TL)\nGetiri Oranı (%)\n\n\n\n\nBanka Mevduatı\n52\n\n\nHisse Senedi\n40\n\n\nDevlet Tahvili\n32\n\n\nAltın\n16\n\n\nNakit\n-5"
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-2",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-2",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 8 (2)",
+    "text": "Örnek DP Modeli - 8 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Banka mevduatı yatırım miktarı\n\\(x_2\\) = Hisse senedi yatırım miktarı\n\\(x_3\\) = Devlet tahvili yatırım miktarı\n\\(x_4\\) = Altına yatırım miktarı\n\\(x_5\\) = Nakit olarak ayrılan para miktarı\n\n\n\nAmaç fonksiyonu\n\n\n\\[\\begin{gathered}\nmaks \\quad{} z = 0.52 x_1 + 0.40 x_2+ 0.32 x_3\\\\\n+ 0.16 x_4 - 0.05 x_5\n\\end{gathered}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\nBanka mevduatı (\\(x_1\\)), devlet tahvili (\\(x_3\\)) ile altına (\\(x_4\\)) yatırımların toplamına eşit olmalıdır. Buna göre,\n\n\n\\(x_1 = x_3 + x_4\\)\n\n\n\nDoğrusal programlamadaki kısıtlayıcı fonksiyonların sağ taraflarında bir sabit olması gerekmektedir. Buna göre denklem tekrar düzenlenirse\n\n\\(x_1- x_3 - x_4 = 0\\) olur."
+  },
+  {
+    "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-3",
+    "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-3",
+    "title": "Hafta 02",
+    "section": "Örnek DP Modeli - 8 (3)",
+    "text": "Örnek DP Modeli - 8 (3)\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar (Devam):\n\n\n\nNakit olarak ayrılan paranın \\(x_5\\) olduğu düşünülürse, altına yapılan yatırıma ilişkin kısıtlayıcı aşağıdaki gibi formüllenir.\n\n\\(x_4 \\leq 0.30 x_5\\) ya da \\(x_4 - 0.30 x_5 \\leq 0\\)\n\n\n\n\\(x_2 \\leq 15\\) (Hisse senedi yatırımı)\n\n\n\n\n\\(x_3 \\leq 10\\) (Devlet tahvili yatırımı)\n\n\n\n\\(x_1 + x_2 + x_3 + x_4 + x_5 = 60\\) (Paranın tamamının değerlendirilmesi kısıtı)\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_2 \\geq 0\\), \\(x_2 \\geq 0\\), \\(x_3 \\geq 0\\), \\(x_4 \\geq 0\\), \\(x_5 \\geq 0\\)"
   }
 ]
