@@ -12,7 +12,7 @@ format:
     preview-links: auto
     logo: images/iticulogo.png
     css: styles.css
-    footer: "IST215 - Yöneylem Araştırması 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene"
+    footer: "IST215 - Yöneylem Araştırması 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
     # width: 2000
     # height: 1500
 filters:
@@ -24,17 +24,19 @@ html-math-method:
 
 ## Haftalık Ders Planı
 
-::: {style="font-size: 50%;"}
+::: {style="font-size: 80%;"}
 Planlanan [taslak]{.red} haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.
+:::
 
+:::{.small-table}
 | Hafta   | Tarih                  | Konu                                                |
 |---------|:-----------------------|:----------------------------------------------------|
 | 1       | 18 Eylül 2025 Perşembe | Tanışma |
 | 2       | 25 Eylül 2025 Perşembe | Yöneylem Araştırması Nedir?      | 
-| 3       | 02 Ekim 2025 Perşembe  | Ulaştırma Problemleri 1        |  
-| 4       | 09 Ekim 2025 Perşembe  | Ulaştırma Problemleri 1                           |  
-| 5       | 16 Ekim 2025 Perşembe  | Atama Problemleri 1|  
-| 6       | 23 Ekim 2025 Perşembe  | Atama Problemleri 2                 |   
+| 3       | 02 Ekim 2025 Perşembe  | Ulaştırma Problemleri        |  
+| 4       | 09 Ekim 2025 Perşembe  | Ulaştırma Problemleri: Bozulma Durumu, Dengesiz Ulaştırma Prob.                           |  
+| 5       | 16 Ekim 2025 Perşembe  | Ulaştırma Problemleri: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob.|  
+| 6       | 23 Ekim 2025 Perşembe  | Atama Problemleri                 |   
 | 7       | 30 Ekim 2025 Perşembe  |[Genel Tekrar ve Soru Çözümü]{.orange}              |  
 | 8       | 06 Kasım 2025 Perşembe |[VİZE]{.light-blue} |  
 | 9       | 13 Kasım 2025 Perşembe | Tamsayılı Programlama 1 | 
@@ -45,6 +47,7 @@ Planlanan [taslak]{.red} haftalık plan aşağıdaki tabloda verilmiş olup niha
 | 14      | 18 Aralık 2025 Perşembe| Oyun Kuramı 2 |  
 | 15      | 25 Aralık 2025 Perşembe| [Soru Çözümü ve Genel Değerlendirme]{.orange} |  
 :::
+
 
 
 ## Kaynak Kitaplar
@@ -270,7 +273,7 @@ digraph A{
 
 ## Problemin Matematiksel Modelinin Geliştirilmesi
 
-::: {.callout-important icon=false title="Problemin Matematiksel Model Şeması" style="font-size: 130%;"}
+::: {.callout-important icon=false title="Problemin Matematiksel Model Şeması" style="font-size: 120%;"}
 
 ::: {#fig-simple}
 
@@ -567,7 +570,7 @@ En uygun çözüm tekniği nedir?
 * Yöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir.
 
 
-![](./images/matematiksel_model.png){width=700 height=472}
+![](./images/matematiksel_model.png){width=650 height=400}
 
 
 :::

@@ -12,7 +12,7 @@ format:
     preview-links: auto
     logo: images/iticulogo.png
     css: styles.css
-    footer: "IST115 - Doğrusal Programlama 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene"
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 02 - 25 Eylül 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
     # width: 1800
     # height: 900
 filters:
@@ -804,7 +804,7 @@ min \quad{} z = 30 x_{1A} + 25 x_{1B} +15 x_{1C} \\
 * [$2x_1 + x_2 \leq 150$ (A hammaddesi kısıtı)]{.orange}
 * [$1x_1 + 1x_2  \leq 120$ (B hammaddesi kısıtı)]{.orange}
 * [$1x_1 + 0x_2  \leq 50$ (C hammaddesi kısıtı)]{.orange}
-* [$1x_1 \leq 20$ (Düşük fosfatlı gübre istem miktarı kısıtı)]{.orange}
+* [$1x_2 \leq 20$ (Düşük fosfatlı gübre istem miktarı kısıtı)]{.orange}
 :::
 
 :::{.fragment fragment-index=5}

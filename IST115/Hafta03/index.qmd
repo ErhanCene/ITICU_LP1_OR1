@@ -1,0 +1,2579 @@
+---
+title: Hafta 03
+subtitle: "Grafikle Çözüm Yöntemi ve Çözüme Uygun Bölge"
+date: 10/02/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 03 - 02 Ekim 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+---
+
+```{r}
+source("lp_plot.R")
+source('lp_step_by_step.R')
+library(tidyverse)
+```
+
+
+## Temel Kavramlar
+
+::: {.callout-important icon=false title="Temel Kavramlar" style="font-size: 130%;"}
+
+* [**Çözüm:**]{.light-red} Bir doğrusal programlama probleminin kısıtlayıcı fonksiyonlarının hepsini birden sağlayan karar değişkenlerinin [($x_1$, $x_2$, \dots, $x_n$)]{.light-red} oluşturduğu kümeye [çözüm]{.light-red} denir.
+* [**Uygun çözüm:**]{.light-red} Negatif olmama koşulunu sağlayan çözüme [uygun çözüm]{.light-red} denir.
+* [**En iyi çözüm:**]{.light-red} Amaç fonksiyonuna en iyi değeri (en küçük veya en büyük) sağlayan uygun çözüme [en iyi çözüm]{.light-red} denir.
+
+:::
+
+## Grafik Çözüm Yöntemi
+
+::: {.callout-important icon=false title="Grafik Çözüm Yöntemi" style="font-size: 130%;"}
+
+* İki karar değişkenli doğrusal programlama problemlerini [grafik yöntemle]{.light-red} çözülebilir.
+* Üç ve üçten fazla karar değişkeni olduğunda grafik yöntem ile çözüm çok kolay olmamaktadır. Bu durumda çözüm ilerleyen haftalarda göreceğimiz üzere [simpleks yöntem]{.light-red} ile çözülecektir.
+
+
+:::
+
+## Konveks Alan
+
+::: {.callout-important icon=false title="Konveks Alan" style="font-size: 120%;"}
+
+* Grafiksel yöntemle çözülen DP problemlerinde [optimum çözüm var olduğunda]{.light-red}, mümkün çözüm bölgesi [konveks (dışbükey)]{.light-red} bir alan olarak ortaya çıkmaktadır.
+  * Geometrik anlamda konveks (dışbükey) bir alan, [kenarlarında çukurlaşmalar olmayan]{.light-red} ve [içinde boşluklar]{.light-red} olmayan bir alandır.
+  * Diğer bir ifadeyle konveks bir alan içerisinde seçilen [herhangi iki noktayı birleştiren doğrunun tamamı bu alan içerisinde kalır]{.light-red}.
+  * [Daire]{.light-blue}, [yamuk]{.light-blue}, [kare]{.light-blue} konveks bir alandır.
+:::
+
+
+## Dışbükey (Konveks) örnekler
+
+* Konveks Alanlara Örnekler
+
+![konveks](images/konveks.png){width=80%}
+
+## Konkav Alan
+
+::: {.callout-important icon=false title="Konkav Alan" style="font-size: 140%;"}
+
+* Bir DP probleminin belirlediği mümkün çözüm bölgesi, [konkav (içbükey)]{.light-red} bir alan oluşturuyorsa bu problemin [çözümü yoktur]{.light-red}. 
+  * Çünkü konkav bir alan içinde seçilen [herhangi iki noktayı birleştiren doğrunun tamamı bu alan içinde kalmamaktadır]{.light-red}.
+:::
+
+## İçbükey (Konkav) örnekler
+
+
+* Konkav Alanlara Örnekler
+
+![konkav](images/konkav.png){width=80%}
+
+
+## Grafik Çözüm Yönteminin Aşamaları
+
+::: {.callout-important icon=false title="Grafik Çözüm Yönteminin Aşamaları" style="font-size: 130%;"}
+
+* Bir doğrusal programlama probleminin grafik
+çözümünde aşağıdaki adımlar izlenir:
+
+[1]{.light-red}. Değişkenlerin koordinat sisteminin [yatay]{.light-red} ve [dikey]{.light-red} eksenlerine yerleştirilmesi,
+
+[2]{.light-red}. [Kısıtlayıcı]{.light-red} fonksiyonların grafiğinin çizilmesi,
+
+[3]{.light-red}. [Uygun çözüm]{.light-red} bölgesinin belirlenmesi,
+
+[4]{.light-red}. [En iyi çözümün]{.light-red} araştırılması.
+
+:::
+
+## 1) Değişkenlerin Koordinat Sistemine Yerleştirilmesi
+
+::: {.callout-important icon=false title="1-Değişkenlerin Koordinat Sistemine Yerleştirilmesi" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5
+#| fig-height: 5
+
+
+library(ggplot2)
+library(grid)
+
+lims   <- c(-5, 5)
+qcx    <- 0.5 * lims[2]
+qcy    <- 0.5 * lims[2]
+ax_pad <- 0.3   # distance from arrow tip
+
+ggplot() +
+  # Axes with arrowheads
+  geom_segment(aes(x = 0, y = 0, xend = lims[2], yend = 0),
+               linewidth = 1, arrow = arrow(type = "closed", length = unit(12, "pt"))) +
+  geom_segment(aes(x = 0, y = 0, xend = lims[1], yend = 0),
+               linewidth = 1, arrow = arrow(type = "closed", length = unit(12, "pt"))) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = lims[2]),
+               linewidth = 1, arrow = arrow(type = "closed", length = unit(12, "pt"))) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = lims[1]),
+               linewidth = 1, arrow = arrow(type = "closed", length = unit(12, "pt"))) +
+
+  # Axis labels at arrow tips
+  annotate("text", x = lims[2] + ax_pad, y = 0,
+           label = "x[1]", parse = TRUE, hjust = 0, vjust = 0.5, size = 5) +
+  annotate("text", x = 0, y = lims[2] + ax_pad,
+           label = "x[2]", parse = TRUE, hjust = 0.5, vjust = 0, size = 5) +
+
+  # Quadrant labels
+  annotate("text", x =  qcx, y =  qcy, label = "I. Bölüm",  fontface = "bold", vjust = 1.2, size = 7) +
+  annotate("text", x = -qcx, y =  qcy, label = "II. Bölüm", fontface = "bold", vjust = 1.2, size = 7) +
+  annotate("text", x = -qcx, y = -qcy, label = "III. Bölüm", fontface = "bold", vjust = 1.2, size = 7) +
+  annotate("text", x =  qcx, y = -qcy, label = "IV. Bölüm", fontface = "bold", vjust = 1.2, size = 7) +
+
+  # Inequalities
+  annotate("text", x =  qcx, y =  qcy, label = "x[1] >= 0 ~ ~ x[2] >= 0", parse = TRUE, vjust = -0.2, size = 8) +
+  annotate("text", x = -qcx, y =  qcy, label = "x[1] <= 0 ~ ~ x[2] >= 0", parse = TRUE, vjust = -0.2, size = 8) +
+  annotate("text", x = -qcx, y = -qcy, label = "x[1] <= 0 ~ ~ x[2] <= 0", parse = TRUE, vjust = -0.2, size = 8) +
+  annotate("text", x =  qcx, y = -qcy, label = "x[1] >= 0 ~ ~ x[2] <= 0", parse = TRUE, vjust = -0.2, size = 8) +
+
+  coord_fixed(xlim = lims, ylim = lims, expand = FALSE, clip = "off") +
+  theme_void() +
+  theme(plot.margin = margin(30, 30, 30, 30))
+
+```
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 120%;"}
+* Problemimiz iki değişkenli olduğundan [$x_1 \geq 0$]{.light-red} yatay eksende ve [$x_2 \geq 0$]{.light-red} dikey eksende gösterilir.
+* Negatif olmama kısıtından dolayı genellikle [$x_1 \geq 0$]{.light-red} ve [$x_2 \geq 0$]{.light-red} olduğundan ilk önce, diğer kısıtlara bakılmaksızın uygun [çözüm belgesi birinci bölgenin]{.light-red} içinde yer alacaktır. 
+:::
+:::
+:::
+
+:::
+
+## 2) Kısıtlayıcı fonksiyonların grafiğinin çizilmesi,
+
+::: {.callout-important icon=false title="2-Kısıtlayıcı fonksiyonların grafiğinin çizilmesi" style="font-size: 120%;"}
+
+* Doğrusal eşitsizliklerin ve kısıtlayıcıların grafiğini çizmek için [iki adım]{.light-red} vardır:
+
+  [1)]{.light-red} Doğrusal eşitsizlikler, [eşitlikmiş gibi kabul edilerek]{.light-red}, bunların sınırlarını gösteren doğrular çizilir.
+  
+  [2)]{.light-red} Doğrunun hangi tarafının [eşitsizlikle verilen koşulu sağladığı]{.light-red} belirlenir.
+* Adımlara devam etmeden önce şu ana kadar gördüklerimizi bir örnek üzerinde görelim.
+
+:::
+
+## Örnek 1 (1)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = 20 x_1 + 15 x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$x_1 \leq 100$]{.light-blue} (teyp)
+* [$x_2 \leq 100$]{.light-blue} (radyo)
+* [$50x_1 + 35x_2 \leq 6000$]{.light-blue} (nakit durumu)
+* [$20x_1 + 15x_2 \geq 2000$]{.light-blue} (aktif/pasif oranı)
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  olduğundan optimum çözüm sadece birinci bölgede olmalıdır.
+
+
+:::
+
+::: {.column width='45%' .fragment fragment-index=3}
+
+[1. kısıt]{.red} [$x_1 \leq 100$]{.light-red}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5
+#| fig-height: 5
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-10, 150), ylim = c(-10, 180),
+                  title = "Uygun Bölge - Z = 20*x1 + 15*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(20, 15), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=12)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=12)              # x2 ≥ 0
+g <- lp_step_add_x1_bound(g, 100, dir = "<=", label_size=12)              # x1 ≤ 100
+g$p
+
+```
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1 (2)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = 20 x_1 + 15 x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$x_1 \leq 100$]{.light-blue} (teyp)
+* [$x_2 \leq 100$]{.light-blue} (radyo)
+* [$50x_1 + 35x_2 \leq 6000$]{.light-blue} (nakit durumu)
+* [$20x_1 + 15x_2 \geq 2000$]{.light-blue} (aktif/pasif oranı)
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  olduğundan optimum çözüm sadece birinci bölgede olmalıdır.
+
+
+:::
+
+
+
+::: {.column width='45%' .fragment fragment-index=4}
+
+[1. kısıt]{.red} [$x_1 \leq 100$]{.light-red} ve [2. kısıt]{.red} [$x_2 \leq 100$]{.light-red}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 7
+#| fig-height: 7
+
+# Init with objective (max)
+g <- lp_step_add_x2_bound(g, 100, dir = "<=", label_size=12)              # x2 ≤ 100
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1 (3)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 96%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+[3. kısıt]{.red}
+
+* [$50x_1 + 35x_2 \leq 6000$]{.light-blue} için doğru denklemini çizebilmek için, doğrunun eksenleri kestiği yerleri belirlemeliyiz.
+
+::: {.fragment fragment-index=1}
+* Denklemde [$x_1 = 0 \Rightarrow 35x_2 = 6000 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{6000}{35}=171.4286$]{.light-blue} ve
+:::
+
+::: {.fragment fragment-index=2}
+* Denklemde [$x_2 = 0 \Rightarrow 50x_1 = 6000 \Rightarrow$]{.light-blue}
+[$x_1 = \frac{6000}{50}=120$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* Doğru [$(0, 171.4286)$]{.light-red} ve [$(120,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+
+
+
+::: {.column width='45%' .fragment fragment-index=4}
+
+[1. kısıt]{.red} [$x_1 \leq 100$]{.light-red}, [2. kısıt]{.red} [$x_2 \leq 100$]{.light-red} ve <br>
+[3. kısıt]{.red} [$50x_1 + 35x_2 \leq 6000$]{.light-red}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 8
+#| fig-height: 8
+
+g <- lp_step_add(g, coef = c(50, 35), rhs = 6000, dir = "<=",label_size=9)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+## Örnek 1 (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 85%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+[4. kısıt]{.red}
+
+* [$20x_1 + 15x_2 \geq 2000$]{.light-blue} için doğru denklemini çizebilmek için, doğrunun eksenleri kestiği yerleri belirlemeliyiz.
+
+::: {.fragment fragment-index=1}
+* Denklemde [$x_1 = 0 \Rightarrow 15x_2 = 2000 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{2000}{15}=133.3333$]{.light-blue} ve
+:::
+
+::: {.fragment fragment-index=2}
+* Denklemde [$x_2 = 0 \Rightarrow 20x_1 = 2000 \Rightarrow$]{.light-blue} 
+[$x_1 = \frac{2000}{20}=100$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* Doğru [$(0, 133.3333)$]{.light-red} ve [$(100,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+::: {.column width='45%' .fragment fragment-index=4}
+
+[1. kısıt]{.red} [$x_1 \leq 100$]{.light-red}, [2. kısıt]{.red} [$x_2 \leq 100$]{.light-red}, <br> [3. kısıt]{.red} [$50x_1 + 35x_2 \leq 6000$]{.light-red} ve <br>[4. kısıt]{.red} [$20x_1 + 15x_2 \geq 2000$]{.light-red}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 8
+#| fig-height: 8
+
+g <- lp_step_add(g, coef = c(20, 15), rhs = 2000, dir = ">=",label_size=8)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+## 3) Uygun çözüm bölgesinin belirlenmesi
+
+::: {.callout-important icon=false title="3-Uygun çözüm bölgesinin belirlenmesi" style="font-size: 120%;"}
+
+* Uygun bölgenin sınırları, kısıtlayıcılarla ifade edilen ve çizilen doğrusal eşitsizliklerin grafiği ile belirlenir.
+* Tüm kısıtlayıcı koşullarının uygun düştüğü bölgenin ortak kesişim yeri [uygun bölgedir]{.light-red}.
+* Uygun bölgenin sınırları doğru çizgileridir. Bu doğrular, [köşe noktası]{.light-red} olarak bilinen noktalarda kesişir.
+* Doğrusal programlamanın en önemli özelliklerinden birisi [optimal çözümün her zaman uygun bölgenin bir köşe noktasında yer almasıdır]{.light-red}.
+
+:::
+
+
+
+## Örnek 1 (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 8
+#| fig-height: 8
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 8,
+                             repel = TRUE,
+                             color='red',
+                             size=6)
+g$p
+```
+
+
+:::
+
+::: {.column width='50%'}
+
+
+* [Kırmızı]{.red} ile gösterilen [aday noktaların]{.light-red} koordinatlarını bulmak için her denklem çiftinin [kesişim noktalarını]{.light-red} bulmak gerekir.
+
+::: {.fragment fragment-index=1}
+* [$20x_1+15x_2=2000$]{.light-blue} ve [$x_2=100$]{.light-red} denklemlerinin kesişim noktası [$20x_1+15\cdot100=2000 \Rightarrow$]{.light-blue} [$20x_1 = 500$]{.light-blue} ve [$x_1 = 25$]{.light-red} olur. 
+:::
+
+::: {.fragment fragment-index=2}
+* [$50x_1+35x_2=6000$]{.light-blue} ve [$x_2=100$]{.light-red} denklemlerinin kesişim noktası [$50x_1+35\cdot100=6000\Rightarrow$]{.light-blue} [$50x_1 = 2500$]{.light-blue} ve [$x_1 = 50$]{.light-red} olur.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1 (6)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 8
+#| fig-height: 8
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 8,
+                             repel = TRUE,
+                             color='red',
+                             size=6)
+g$p
+```
+
+
+:::
+
+::: {.column width='50%'}
+
+
+::: {.fragment fragment-index=3}
+* [$20x_1+15x_2=2000$]{.light-blue}, [$x_1=100$]{.light-blue} ve [$x_2=0$]{.light-blue} denklemlerinin kesişim noktası [$x_1=100$]{.light-red} ve [$x_2=0$]{.light-red} olur. 
+:::
+
+::: {.fragment fragment-index=4}
+* [$50x_1+35x_2=6000$]{.light-blue} ve [$x_1=100$]{.light-red} denklemlerinin kesişim noktası [$50\cdot100+35x_2=6000\Rightarrow$]{.light-blue} [$35x_2 = 1000$]{.light-blue} ve [$x_2 = 28.57$]{.light-red} olur.
+:::
+
+::: {.fragment fragment-index=5}
+* Bu durumda tüm aday noktalar [$(25,100)$]{.light-red},[$(50,100)$]{.light-red},[$(100,0)$]{.light-red} ve [$(100,28.57)$]{.light-red} olur.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## 4) En iyi çözümün araştırılması.
+
+::: {.callout-important icon=false title="4-En iyi çözümün araştırılması" style="font-size: 140%;"}
+
+* En iyi çözüm ise [aday noktalardaki değişken değerleri amaç fonksiyonuna yazılarak bulunur]{.light-red}. 
+* Bir [en çoklama (maksimizasyon)]{.light-red} probleminde [amaç fonksiyonunu en büyük]{.light-red} yapan, bir [en azaltma (minimizasyon)]{.light-red} probleminde ise [amaç fonksiyonunu en küçük]{.light-red} yapan [aday nokta]{.light-red}, [optimum çözüme]{.light-red} sahip noktadır.
+
+:::
+
+## Örnek 1 (7)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='40%'}
+
+* Her bir [aday nokta]{.light-red}, [amaç fonksiyonunda]{.light-red} yerine yazılarak [amaç fonksiyonunun]{.light-red} değerini [maksimum]{.light-red} yapan nokta bulunmalıdır.  
+
+::: {.fragment fragment-index=1}
+* Amaç fonksiyonu 
+[$max \quad{} z=20x_1+15x_2$]{.light-blue} ve
+:::
+
+::: {.fragment fragment-index=2}
+* Birinci aday nokta, [$(25,100)$]{.light-red} olduğundan,
+
+[\begin{align*} 
+z_{(25,100)}&=20\cdot 25+15\cdot 100 \\
+&=500+1500=2000
+\end{align*}]{.light-blue}
+:::
+
+
+:::
+
+::: {.column width='60%'}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 8
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 6,
+                             repel = TRUE,
+                             color='red',
+                             size=6)
+g$p
+```
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1 (8)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 85%;"}
+
+::: columns
+
+::: {.column width='40%'}
+
+
+::: {.fragment fragment-index=3}
+* İkinci aday nokta [$(50,100)$]{.light-red} olduğundan,
+[\begin{align*} 
+z_{(50,100)}&=20\cdot 50+15\cdot 100 \\
+&=1000+1500=2500
+\end{align*}]{.light-blue}
+:::
+::: {.fragment fragment-index=4}
+* Üçüncü aday nokta [$(100,0)$]{.light-red} olduğundan,
+[\begin{align*} 
+z_{(100,0)}&=20\cdot 100+15\cdot 0\\
+&=2000+0=2000
+\end{align*}]{.light-blue}
+:::
+::: {.fragment fragment-index=5}
+* Dördüncü aday nokta [$(100,28.57)$]{.light-red} olduğundan,
+[\begin{align*} 
+z_{(100,0)}&=20\cdot 100+15\cdot 28.57\\
+&=2000+428.5714=2428.5714\approx 2429
+\end{align*}]{.light-blue}
+:::
+
+:::
+
+::: {.column width='60%'}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 8
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 6,
+                             repel = TRUE,
+                             color='red',
+                             size=6)
+g$p
+```
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1 (9)
+
+::: {.callout-tip icon=false title="Örnek 1: Teyp-Radyo" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='40%'}
+
+* [$(50,100)$]{.light-red} noktası aday noktalar arasından [$2500$]{.light-blue} ile [amaç fonksiyonunu maksimum yapan değer]{.light-red} olduğundan [optimum]{.orange} noktadır.
+
+:::
+
+::: {.column width='60%'}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 8
+
+g <- lp_step_init(xlim = c(-10, 150), ylim = c(-10, 180),
+                  title = "Uygun Bölge - Z = 20*x1 + 15*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(20, 15), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=6)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=6)              # x2 ≥ 0
+g <- lp_step_add_x1_bound(g, 100, dir = "<=", label_size=6)              # x1 ≤ 100
+g <- lp_step_add_x2_bound(g, 100, dir = "<=", label_size=6)              # x2 ≤ 100
+g <- lp_step_add(g, coef = c(50, 35), rhs = 6000, dir = "<=",label_size=6)
+g <- lp_step_add(g, coef = c(20, 15), rhs = 2000, dir = ">=",label_size=6)
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=6)
+g$p
+```
+
+:::
+:::
+:::
+
+
+## Örnek 2 (1)
+
+::: {.callout-tip icon=false title="Örnek 2" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = 6 x_1 + 8 x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$7x_1 + 3x_2 \leq 21$]{.light-blue} 
+* [$6x_1 + 7x_2 \leq 42$]{.light-blue} 
+* [$x_1 \leq 3$]{.light-blue} 
+* [$x_2 \leq 4$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$7x_1 + 3x_2 \leq 21$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow 3x_2 = 21 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{21}{3}=7$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow 7x_1 = 21 \Rightarrow$]{.light-blue}
+[$x_1 = \frac{21}{7}=3$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 7)$]{.light-red} ve [$(3,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$6x_1 + 7x_2 \leq 42$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow 7x_2 = 42 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{42}{7}=6$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow 6x_1 = 42 \Rightarrow$]{.light-blue}
+[$x_1 = \frac{42}{6}=7$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 6)$]{.light-red} ve [$(7,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2 (2)
+
+::: {.callout-tip icon=false title="Örnek 2" style="font-size: 95%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$x_1 \leq 3$]{.light-blue} denklemi dikey bir doğru belirtir.
+:::
+
+::: {.fragment fragment-index=2}
+[4. kısıt]{.red} [$x_2 \leq 4$]{.light-blue} denklemi yatay bir doğru belirtir.
+:::
+
+
+::: {.fragment fragment-index=3}
+[$x_1 \geq 0$]{.light-blue} ve [$x_2 \geq 0$]{.light-blue} ise çözümün birinci bölgede aranacağını gösterir.
+:::
+
+::: {.fragment fragment-index=4}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 7), ylim = c(-1, 7),
+                  title = "Uygun Bölge - Z = 6*x1 + 8*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(6, 8), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=6)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=6)              # x2 ≥ 0
+g <- lp_step_add_x1_bound(g, 3, dir = "<=", label_size=6)              # x1 ≤ 3
+g <- lp_step_add_x2_bound(g, 4, dir = "<=", label_size=6)              # x2 ≤ 4
+g <- lp_step_add(g, coef = c(7, 3), rhs = 21, dir = "<=",label_size=6)
+g <- lp_step_add(g, coef = c(6, 7), rhs = 42, dir = "<=",label_size=6)
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 6,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2 (3)
+
+::: {.callout-tip icon=false title="Örnek 2" style="font-size: 95%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir. 
+* Aday noktaların koordinatları bulunduktan sonra [$z = 6x_1 + 8x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en büyük değer aranır.
+
+::: {.fragment fragment-index=1}
+* [$x_1 = 0$]{.light-blue} ve [$x_2 = 4$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(0,4)$]{.light-blue} noktası olur. 
+  * [$(0,4)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 6 \cdot 0 + 8 \cdot 4 = 32$]{.light-blue} dir.
+:::
+
+
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=2}
+* [$x_2 = 4$]{.light-blue} ve [$7x_1 + 3x_2 = 21$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$7x_1+3\cdot 4=21\Rightarrow$]{.light-blue} [$7x_1 = 9$]{.light-blue} ve [$x_1 = \frac{9}{7}=1.285714$]{.light-blue} olur.
+  * [$(1.285714,4)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 6 \cdot 1.285714 + 8 \cdot 4 = 39.714$]{.light-blue} tür.
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0$]{.light-blue} ve [$x_2 = 0$]{.light-blue} noktalarının kesişimi     
+  * [$(0,0)$]{.light-blue} noktası olur. 
+  * [$(0,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 6 \cdot 0 + 8 \cdot 0 = 0$]{.light-blue} dır.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2 (4)
+
+::: {.callout-tip icon=false title="Örnek 2" style="font-size: 95%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0$]{.light-blue} ve [$7x_1 + 3x_2 = 21$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$7x_1+3 \cdot 0=21\Rightarrow$]{.light-blue} [$7x_1 = 21$]{.light-blue} ve [$x_1 = 3$]{.light-blue} olur. Bu iki doğrunun kesişimi başka bir kısıt olan [$x_1 = 3$]{.light-blue} doğrusundan da geçmektedir.
+  * [$(3,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 6 \cdot 3 + 8 \cdot 0 = 18$]{.light-blue} dir.
+:::
+
+::: {.fragment fragment-index=5}
+Kısıtlardan [$6x_1 + 7x_2 = 42$]{.light-blue} eşitsizliğinin sonuca hiç bir etkisi yoktur.
+:::
+
+
+:::
+
+::: {.column width='50%'}
+
+
+::: {.fragment fragment-index=6}
+* [$(1.285714,4)$]{.light-red} [noktası aday noktalar arasından]{.orange} [$39.714$]{.light-blue} [ile amaç fonksiyonunu maksimum yapan değer olduğundan optimum noktadır.]{.orange}
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 2 (5)
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 11
+#| fig-height: 8
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 7), ylim = c(-1, 7),
+                  title = "Uygun Bölge - Z = 6*x1 + 8*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(6, 8), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=6)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=6)              # x2 ≥ 0
+g <- lp_step_add_x1_bound(g, 3, dir = "<=", label_size=6)              # x1 ≤ 3
+g <- lp_step_add_x2_bound(g, 4, dir = "<=", label_size=6)              # x2 ≤ 4
+g <- lp_step_add(g, coef = c(7, 3), rhs = 21, dir = "<=",label_size=6)
+g <- lp_step_add(g, coef = c(6, 7), rhs = 42, dir = "<=",label_size=6)
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+```
+
+
+## Örnek 3 (1)
+
+::: {.callout-tip icon=false title="Örnek 3" style="font-size: 80%;"}
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = x_1 + 3 x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$x_1 + x_2 \leq 8$]{.light-blue} 
+* [$x_1 + 2x_2 \geq 8$]{.light-blue} 
+* [$x_2 \geq 3$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$x_1 + x_2 \leq 8$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow x_2 = 8$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow x_1 = 8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 8)$]{.light-red} ve [$(8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$x_1 + 2x_2 \geq 8$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{8}{2}=4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow x_1 = 8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 4)$]{.light-red} ve [$(8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3 (2)
+
+::: {.callout-tip icon=false title="Örnek 3" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$x_2 \geq 3$]{.light-blue} denklemi yatay bir doğru belirtir.
+:::
+
+::: {.fragment fragment-index=2}
+[$x_1 \geq 0$]{.light-blue} ve [$x_2 \geq 0$]{.light-blue} ise çözümün birinci bölgede aranacağını gösterir.
+:::
+
+::: {.fragment fragment-index=3}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 9), ylim = c(-1, 9),
+                  title = "Uygun Bölge - Z = x1 + 3*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(1, 3), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=6)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=6)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 1), rhs = 8, dir = "<=",label_size=6)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = ">=",label_size=6)
+g <- lp_step_add_x2_bound(g, 3, dir = ">=", label_size=6)              # x2 ≤ 4
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 6,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3 (3)
+
+::: {.callout-tip icon=false title="Örnek 3" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir. 
+* Aday noktaların koordinatları bulunduktan sonra [$z = x_1 + 3x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en büyük değer aranır.
+
+
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=1}
+* [$x_1 = 0$]{.light-blue} ve [$x_1+x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(0,8)$]{.light-blue} noktası olur. 
+  * [$(0,8)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 0 + 3 \cdot 8 = 24$]{.light-blue} tür.
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0$]{.light-blue} ve [$x_1 + 2x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$2x_2=8\Rightarrow$]{.light-blue} [$x_2 = \frac{8}{2}=4$]{.light-blue} olur.
+  * [$(0,4)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 0 + 3 \cdot 4 = 12$]{.light-blue} dir.
+:::
+
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3 (4)
+
+::: {.callout-tip icon=false title="Örnek 3" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+
+::: {.fragment fragment-index=3}
+* [$x_2 = 3$]{.light-blue} ve [$x_1 + 2x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$x_1 + 2 \cdot 3=8\Rightarrow$]{.light-blue} [$x_1 = 2$]{.light-blue} olur.
+  * [$(2,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 + 3 \cdot 3 = 11$]{.light-blue} dir.
+:::
+
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 3$]{.light-blue} ve [$x_1 + x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$x_1 + 3=8\Rightarrow$]{.light-blue} [$x_1 = 5$]{.light-blue} olur.
+  * [$(5,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 5 + 3 \cdot 3 = 14$]{.light-blue} tür.
+:::
+
+::: {.fragment fragment-index=5}
+* [$(0,8)$]{.light-red} [noktası aday noktalar arasından]{.orange} [$24$]{.light-blue} [ile amaç fonksiyonunu maksimum yapan değer olduğundan optimum noktadır.]{.orange}
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 3 (5)
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 11
+#| fig-height: 8
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 9), ylim = c(-1, 9),
+                  title = "Uygun Bölge - Z = x1 + 3*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(1, 3), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=6)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=6)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 1), rhs = 8, dir = "<=",label_size=6)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = ">=",label_size=6)
+g <- lp_step_add_x2_bound(g, 3, dir = ">=", label_size=6)              # x2 ≤ 4
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+```
+
+## Örnek 4 (1)
+
+::: {.callout-tip icon=false title="Örnek 4" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$min \quad{} z = 3x_1 + 5x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$3x_1 + x_2 \geq 9$]{.light-blue} 
+* [$x_1 + 2x_2 \geq 8$]{.light-blue} 
+* [$x_1 + 5x_2 \geq 10$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$3x_1 + x_2 \geq 9$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow x_2 = 9$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow 3x_1 = 9$]{.light-blue} ve [$x_1 = 3$]{.light-blue} olur.
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 9)$]{.light-red} ve [$(3,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$x_1 + 2x_2 \geq 8$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{8}{2}=4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow x_1 = 8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 4)$]{.light-red} ve [$(8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4 (2)
+
+::: {.callout-tip icon=false title="Örnek 4" style="font-size: 85%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$x_1 + 5x_2 \geq 10$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0 \Rightarrow 5x_2 = 10 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{10}{5}=2$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_2 = 0 \Rightarrow x_1 = 10$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* Doğru [$(0, 2)$]{.light-red} ve [$(10,0)$]{.light-blue} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=5}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 11), ylim = c(-1, 11),
+                  title = "Uygun Bölge - Z = 3*x1 + 5*x2 (min)",
+                  pastel = TRUE,
+                  obj = c(3, 5), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(3, 1), rhs = 9, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 5), rhs = 10, dir = ">=",label_size=5)
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4 (3)
+
+::: {.callout-tip icon=false title="Örnek 4" style="font-size: 90%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir. 
+* Aday noktaların koordinatları bulunduktan sonra [$z = 3x_1 + 5x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en küçük değer aranır.
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=1}
+* [$x_1 = 0$]{.light-blue} ve [$3x_1+x_2 = 9$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(0,9)$]{.light-blue} noktası olur. 
+  * [$(0,9)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 3 \cdot 0 + 5 \cdot 9 = 45$]{.light-blue} tir.
+:::
+
+::: {.fragment fragment-index=2}
+* [$3x_1+x_2 = 9$]{.light-blue} ve [$x_1 + 2x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası birinci denklem $-2$ ile çarpılıp ikinci denkleme eklenerek
+  * [$-5x_1=-10 \Rightarrow x_1 = 2$]{.light-blue} ve [$3 \cdot 2 + x_2 = 9 \Rightarrow x_2=3$]{.light-blue} olur.
+  * [$(2,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 3 \cdot 2 + 5 \cdot 3 = 21$]{.light-blue} dir.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4 (4)
+
+::: {.callout-tip icon=false title="Örnek 4" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=3}
+* [$x_1+2x_2 = 8$]{.light-blue} ve [$x_1 + 5x_2 = 10$]{.light-blue} denklemlerinin kesişim noktası birinci denklem $-1$ ile çarpılıp ikinci denkleme eklenerek
+  * [$3x_2=2 \Rightarrow x_2 = \frac{2}{3}=0.667$]{.light-blue} ve [$x_1+2 \cdot 0.667 = 8 \Rightarrow x_1 = 6.667$]{.light-blue} olur.
+  * [$(6.667,0.667)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 3 \cdot 6.667 + 5 \cdot 0.667 = 23.336$]{.light-blue} dır.
+:::
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0$]{.light-blue} ve [$x_1 + 5x_2 = 10$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$x_1 = 10$]{.light-blue} olur.
+  * [$(10,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 3 \cdot 10 + 5 \cdot 0 = 30$]{.light-blue} dir.
+:::
+
+::: {.fragment fragment-index=5}
+* [$(2,3)$]{.light-red} [noktası aday noktalar arasından]{.orange} [$21$]{.light-blue} [ile amaç fonksiyonunu minimum yapan değer olduğundan optimum noktadır.]{.orange}
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 4 (5)
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 11
+#| fig-height: 8
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 11), ylim = c(-1, 11),
+                  title = "Uygun Bölge - Z = 3*x1 + 5*x2 (min)",
+                  pastel = TRUE,
+                  obj = c(3, 5), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(3, 1), rhs = 9, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 5), rhs = 10, dir = ">=",label_size=5)           # x2 ≤ 4
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+```
+
+
+## Örnek 5 (1)
+
+::: {.callout-tip icon=false title="Örnek 5" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$min \quad{} z = 2x_1 + 3x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$3x_1 + 2x_2 \geq 6$]{.light-blue} 
+* [$x_1 - 2x_2 \leq 4$]{.light-blue} 
+* [$x_1 \leq 5$]{.light-blue} 
+* [$x_2 \leq 3$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$3x_1 + 2x_2 \geq 6$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow 2x_2 = 6 \Rightarrow x_2 = 3$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow 3x_1 = 6$]{.light-blue} ve [$x_1 = 2$]{.light-blue} olur.
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 3)$]{.light-red} ve [$(2,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$x_1 - 2x_2 \leq 4$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow -2x_2 = 4 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{4}{-2}=-2$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow x_1 = 4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, -2)$]{.light-red} ve [$(4,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5 (2)
+
+::: {.callout-tip icon=false title="Örnek 5" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$x_1 \leq 5$]{.light-blue} denklemi dikey bir doğru belirtir.
+:::
+
+::: {.fragment fragment-index=2}
+[4. kısıt]{.red} [$x_2 \leq 3$]{.light-blue} denklemi dikey bir doğru belirtir.
+:::
+
+::: {.fragment fragment-index=3}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 6), ylim = c(-1, 4),
+                  title = "Uygun Bölge - Z = 2*x1 + 3*x2 (min)",
+                  pastel = TRUE,
+                  obj = c(2, 3), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(3, 2), rhs = 6, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, -2), rhs = 4, dir = "<=",label_size=5)
+g <- lp_step_add_x1_bound(g, 5,   dir = "<=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 3,   dir = "<=", label_size=5)              # x1 ≥ 0
+
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5 (3)
+
+::: {.callout-tip icon=false title="Örnek 5" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir. 
+* Aday noktaların koordinatları bulunduktan sonra [$z = 2x_1 + 3x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en küçük değer aranır.
+
+
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=1}
+* [$x_1 = 0$]{.light-blue} ve [$x_2 = 3$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(0,3)$]{.light-blue} noktası olur. 
+  * [$(0,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 \cdot 0 + 3 \cdot 3 = 9$]{.light-blue} dur.
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 5$]{.light-blue} ve [$x_2 = 3$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(5,3)$]{.light-blue} noktası olur. 
+  * [$(5,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 \cdot 5 + 3 \cdot 3 = 19$]{.light-blue} dur.
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 5 (4)
+
+::: {.callout-tip icon=false title="Örnek 5" style="font-size: 95%;"}
+
+::: columns
+
+::: {.column width='40%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=3}
+* [$3x_1+2x_2 = 6$]{.light-blue} ve [$x_2 = 0$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$3x_1 = 6 \Rightarrow x_1 = 2$]{.light-blue} 
+  * [$(2,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 \cdot 2 + 3 \cdot 0 = 4$]{.light-blue} dir.
+:::
+
+
+
+
+:::
+
+::: {.column width='60%'}
+
+::: {.fragment fragment-index=4}
+* [$x_1-2x_2 = 4$]{.light-blue} ve [$x_2 = 0$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$x_1 = 4$]{.light-blue} 
+  * [$(4,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 \cdot 4 + 3 \cdot 0 = 8$]{.light-blue} dir.
+:::
+
+::: {.fragment fragment-index=5}
+* [$x_1-2x_2 = 4$]{.light-blue} ve [$x_1 = 5$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$5 - 2x_2 = 4 \Rightarrow - 2x_2 = -1 \Rightarrow x_2 = 0.5$]{.light-blue} 
+  * [$(5,0.5)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 \cdot 5 + 3 \cdot 0.5 = 11.5$]{.light-blue} dir.
+:::
+
+::: {.fragment fragment-index=6}
+* [$(2,0)$]{.light-red} [noktası aday noktalar arasından]{.orange} [$4$]{.light-blue} [ile amaç fonksiyonunu minimum yapan değer olduğundan optimum noktadır.]{.orange}
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 5 (5)
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 11
+#| fig-height: 8
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 6), ylim = c(-1, 4),
+                  title = "Uygun Bölge - Z = 2*x1 + 3*x2 (min)",
+                  pastel = TRUE,
+                  obj = c(2, 3), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(3, 2), rhs = 6, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(1, -2), rhs = 4, dir = "<=",label_size=5)
+g <- lp_step_add_x1_bound(g, 5,   dir = "<=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 3,   dir = "<=", label_size=5)              # x1 ≥ 0
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+```
+
+
+## Grafiksel Çözümde Karşılaşabilecek Özel Haller
+
+::: {.callout-important icon=false title="Grafik Çözüm Yöntemi" style="font-size: 130%;"}
+
+[1)]{.light-red} Bir DP probleminin [birden fazla optimum çözüme]{.light-red} sahip olması.
+
+[2)]{.light-red} Bir DP probleminin [tek bir çözüme]{.light-red} sahip olması.
+
+[3)]{.light-red} Uygun çözümün [sınırsız]{.light-red} olması
+
+[4)]{.light-red} Mümkün çözüm [olmaması]{.light-red}
+:::
+
+## Örnek 6: Birden fazla optimum çözüme sahip olması (1)
+
+::: {.callout-tip icon=false title="Örnek 6: Birden fazla optimum çözüme sahip olması (1)" style="font-size: 74%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = x_1 + x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$x_1 + x_2 \leq 5$]{.light-blue} 
+* [$x_1 + 2x_2 \leq 8$]{.light-blue} 
+* [$5x_1 + x_2 \leq 20$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$x_1 + x_2 \leq 5$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow x_2 = 5$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow x_1 = 5$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 5)$]{.light-red} ve [$(5,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$x_1 + 2x_2 \leq 8$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow$]{.light-blue} 
+[$x_2 = \frac{8}{2}=4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow x_1 = 8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 4)$]{.light-red} ve [$(8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Birden fazla optimum çözüme sahip olması (2)
+
+::: {.callout-tip icon=false title="Örnek 6: Birden fazla optimum çözüme sahip olması (2)" style="font-size: 90%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$5x_1+x_2 \leq 20$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0 \Rightarrow x_2 = 20$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_2 = 0 \Rightarrow 5x_1 = 20 \Rightarrow$]{.light-blue} 
+[$x_1 = \frac{20}{5}=4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* Doğru [$(0, 20)$]{.light-red} ve [$(4,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+
+::: {.fragment fragment-index=5}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 20), ylim = c(-1, 20),
+                  title = "Uygun Bölge - Z = x1 + x2 (max)",
+                  pastel = TRUE,
+                  obj = c(1, 1), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 1), rhs = 5, dir = "<=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = "<=",label_size=5)
+g <- lp_step_add(g, coef = c(5, 1), rhs = 20, dir = "<=",label_size=5)
+
+
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Birden fazla optimum çözüme sahip olması (3)
+
+::: {.callout-tip icon=false title="Örnek 6: Birden fazla optimum çözüme sahip olması (3)" style="font-size: 90%;"}
+
+::: columns
+
+::: {.column width='50%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir. 
+* Aday noktaların koordinatları bulunduktan sonra [$z = x_1 + x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en büyük değer aranır.
+
+::: {.fragment fragment-index=1}
+* [$x_1 = 0$]{.light-blue} ve [$x_2 = 0$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$(0,0)$]{.light-red} noktası olur. Bu noktanın amaç fonksiyondaki değeri [$z = 0 + 0 = 0$]{.light-blue} dır.
+:::
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0$]{.light-blue} ve [$x_1+2x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$0+2x_2 = 8 \Rightarrow x_2 = 4$]{.light-blue} olduğundan
+  * [$(0,4)$]{.light-red} noktası olur. Bu noktanın amaç fonksiyondaki değeri [$z = 0+4 = 4$]{.light-blue} tür.
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1+x_2 = 5$]{.light-blue} ve [$x_1+2x_2 = 8$]{.light-blue} denklemlerinin kesişim noktası birinci denklem -1 ile çarpılım ikinci denklem ile toplanarak bulunur.
+  * [$x_2 = 3 \Rightarrow x_1+3 = 5 \Rightarrow x_1=2$]{.light-blue} 
+  * [$(2,3)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 2 + 3 = 5$]{.light-blue} tir.
+:::
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 6: Birden fazla optimum çözüme sahip olması (4)
+
+::: {.callout-tip icon=false title="Örnek 6: Birden fazla optimum çözüme sahip olması (3)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='63%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=4}
+* [$x_1+x_2 = 5$]{.light-blue} ve [$5x_1+x_2 = 20$]{.light-blue} denklemlerinin kesişim noktası birinci denklem -1 ile çarpılım ikinci denklem ile toplanarak bulunur.
+  * [$4x_2 = 15 \Rightarrow x_2 = 3.75 \Rightarrow$]{.light-blue} <br>
+  [$3.75 + x_2 =5 \Rightarrow x_2 = 1.25$]{.light-blue} 
+  * [$(3.75,1.25)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 3.75 + 1.25 = 5$]{.light-blue} tir.
+:::
+
+:::
+
+::: {.column width='35%'}
+
+::: {.fragment fragment-index=5}
+* [$x_2 = 0$]{.light-blue} ve [$5x_1+x_2 = 20$]{.light-blue} denklemlerinin kesişim noktası 
+  * [$5x_1 = 20 \Rightarrow x_1 = 4$]{.light-blue} 
+  * [$(4,0)$]{.light-red} noktasının amaç fonksiyondaki değeri [$z = 4+0 = 4$]{.light-blue} tür.
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek 6: Birden fazla optimum çözüme sahip olması (5)
+
+::: columns
+
+::: {.column width = '50%' style="font-size: 65%;"}
+
+* Aday noktalardan [$(2,3)$]{.light-red} ve [$(3.75,1.25)$]{.light-red} [noktalarından her ikisi de]{.orange} [$5$]{.light-blue} değeri [ile amaç fonksiyonunu maksimum yapan değer olduğundan her ikisi de optimum noktadır.]{.orange}
+* Dahası [$x_1+x_2=5$]{.light-blue} denklemi üzerinde bulunan ve [$(2,3)$]{.light-red} ile [$(3.75,1.25)$]{.light-red} noktaları arasındaki [tüm noktalar için amaç fonksiyonu 5 olduğundan bu aralıktaki tüm noktalar optimum çözüme sahiptir]{.orange}.
+* Bu optimum çözümlerin hepsi geçerlidir ve herhangi birinin diğerine göre bir üstünlüğü yoktur. 
+* Bu şekilde sonsuz farklı noktanın optimum nokta olabildiği bir doğrusal programlama problemi [tam olarak formülize edilememiş]{.orange} demektir. Problemin [fazladan kısıtlara]{.orange} ihtiyacı vardır.
+
+:::
+
+::: {.column width = '50%'}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 9
+#| fig-align: center
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 12), ylim = c(-1, 12),
+                  title = "Uygun Bölge - Z = x1 + x2 (max)",
+                  pastel = TRUE,
+                  obj = c(1, 1), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 1), rhs = 5, dir = "<=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 8, dir = "<=",label_size=5)
+g <- lp_step_add(g, coef = c(5, 1), rhs = 20, dir = "<=",label_size=5)
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+```
+:::
+:::
+
+
+## Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (1)
+
+::: {.callout-tip icon=false title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (1)" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$min \quad{} z = 3x_1 + 4x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$5x_1 + 3x_2 \geq 29$]{.light-blue}
+* [$2x_1 + x_2 \geq 10$]{.light-blue}
+* [$3x_1 - 4x_2 \geq 24$]{.light-blue}
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$5x_1 + 3x_2 \geq 29$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow 3x_2 = 29 \Rightarrow x_2=9.67$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow 5x_1 = 29 \Rightarrow x_1=5.8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 9.67)$]{.light-red} ve [$(5.8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$2x_1 + x_2 \geq 10$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow x_2 = 10$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow 2x_1 = 10 \Rightarrow x_1 = 5$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 10)$]{.light-red} ve [$(5,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (2)
+
+::: {.callout-tip icon=false title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (2)" style="font-size: 85%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$3x_1-4x_2 \geq 24$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0 \Rightarrow -4x_2 = 24 \Rightarrow$]{.light-blue}
+[$x_2=-6$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_2 = 0 \Rightarrow 3x_1 = 24 \Rightarrow$]{.light-blue}
+[$x_1 = 8$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* Doğru [$(0, -6)$]{.light-red} ve [$(8,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=5}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-8, 8.01), ylim = c(-8, 12),
+                  title = "Uygun Bölge - Z = 3x1 + 4x2 (min)",
+                  pastel = TRUE,
+                  obj = c(3, 4), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(5, 3), rhs = 29, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(2, 1), rhs = 10, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(3, -4), rhs = 24, dir = ">=",label_size=5)
+
+
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (3)
+
+::: {.callout-tip icon=false title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (3)" style="font-size: 80%;"}
+
+::: columns
+
+::: {.column width='40%'}
+
+**Çözüm (Devam):**
+
+* [Kırmızı]{.red} ile gösterilen aday noktanin koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.
+* Aday noktaların koordinatları bulunduktan sonra [$z = 3x_1 + 4x_2$]{.light-blue} amaç fonksiyonunda yerine yazılarak en küçük değer aranır.
+
+::: {.fragment fragment-index=1}
+* [$3x_1 + 4x_2 = 24$]{.light-blue} ve [$x_2 = 0$]{.light-blue} denklemlerinin kesişim noktası
+  * [$3x_1=24 \Rightarrow x_1=8$]{.light-blue}
+  * [$(8,0)$]{.light-red} noktası olur. Bu noktanın amaç fonksiyondaki değeri [$z = 2 \cdot 8 + 4 \cdot 0 = 24$]{.light-blue} tür.
+:::
+
+
+:::
+
+::: {.column width='55%' .fragment fragment-index=3}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-8, 8.01), ylim = c(-8, 12),
+                  title = "Uygun Bölge - Z = 3x1 + 4x2 (min)",
+                  pastel = TRUE,
+                  obj = c(3, 4), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(5, 3), rhs = 29, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(2, 1), rhs = 10, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(3, -4), rhs = 24, dir = ">=",label_size=5)
+
+
+
+g <- lp_step_mark_candidates(g, label = TRUE,
+                             show_z = TRUE,
+                             highlight_best = TRUE,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+::: {.fragment fragment-index=2}
+* Tüm kısıtları sağlayan tek değer [$(8,0)$]{.light-red} noktasıdır. Belirlenen koşulu sağlayan [tek nokta olduğundan bu nokta aynı zamanda optimum noktadır]{.orange}.
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek 8: Uygun çözümün sınırsız olması (1)
+
+::: {.callout-tip icon=false title="Örnek 8: Uygun çözümün sınırsız olması (1)" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = 3x_1 + 2x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$2x_1 + x_2 \geq 10$]{.light-blue} 
+* [$-x_1 + x_2 \geq -2$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$2x_1 + x_2 \geq 10$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow x_2 = 10$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow 2x_1 = 10 \Rightarrow$]{.light-blue}
+[$x_1 = 5$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 10)$]{.light-red} ve [$(5,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$-x_1 + x_2 \geq -2$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow x_2 = -2$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow -x_1 = -2 \Rightarrow$]{.light-blue}
+[$x_1 = 2$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, -2)$]{.light-red} ve [$(2,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 8: Uygun çözümün sınırsız olması (2)
+
+::: {.callout-tip icon=false title="Örnek 8: Uygun çözümün sınırsız olması (2)" style="font-size: 90%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+::: {.fragment fragment-index=1}
+[3. kısıt]{.red} [$5x_1+x_2 \leq 20$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=2}
+* [$x_1 = 0 \Rightarrow x_2 = 20$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_2 = 0 \Rightarrow 5x_1 = 20 \Rightarrow$]{.light-blue} 
+[$x_1 = \frac{20}{5}=4$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* Doğru [$(0, 20)$]{.light-red} ve [$(4,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+
+::: {.fragment fragment-index=5}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 10), ylim = c(-1, 10),
+                  title = "Uygun Bölge - Z = 3x1 + 2x2 (max)",
+                  pastel = TRUE,
+                  obj = c(3, 2), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(2, 1), rhs = 10, dir = ">=",label_size=5)
+g <- lp_step_add(g, coef = c(-1, 1), rhs = -2, dir = ">=",label_size=5)
+
+
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 8: Uygun çözümün sınırsız olması (3)
+
+::: {.callout-tip icon=false title="Örnek 8: Uygun çözümün sınırsız olması (3)" style="font-size: 130%;"}
+
+
+
+**Çözüm (Devam):**
+
+* Mümkün çözüm bölgesi taralı alandır. Mümkün çözüm bölgesinde [$x_1$]{.orange} ve [$x_2$]{.orange} noktalarının değerleri büyüdükçe, amaç fonksiyonunun değeri de büyür.
+* Amaç fonksiyonunun değeri sonsuza kadar arttırılabilir.
+* Bu doğrusal programlama problemi için çözüm sınırsızdır.
+:::
+
+## Örnek 9: Mümkün Çözüm Olmaması (1)
+
+::: {.callout-tip icon=false title="Örnek 9: Mümkün Çözüm Olmaması (1)" style="font-size: 78%;"}
+
+* Bir doğrusal programlama problemine ilişkin, [amaç fonksiyonu]{.light-blue} ve [kısıtlar]{.light-blue}  aşağıda verilmiştir. [Bu problemin optimum noktasını grafiksel yöntem ile bulun]{.red}.
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+
+[Amaç fonksiyonu]{.red}
+
+* [$max \quad{} z = 2x_1 + 5x_2$]{.light-blue}
+
+[Kısıtlayıcılar]{.red}
+
+* [$x_1 + 2x_2 \leq 6$]{.light-blue} 
+* [$x_1 + 2x_2 \geq 10$]{.light-blue} 
+
+[Negatif olmama koşulu]{.red}
+
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+
+:::
+:::
+
+::: {.column width='60%'}
+::: {.fragment fragment-index=1}
+**Çözüm:**
+:::
+
+
+::: {.fragment fragment-index=2}
+[1. kısıt]{.red} [$x_1 + 2x_2 \leq 6$]{.light-blue}  denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=3}
+* [$x_1 = 0 \Rightarrow 2x_2 = 6 \Rightarrow$]{.light-blue}
+[$x_2 =3$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=4}
+* [$x_2 = 0 \Rightarrow x_1 = 6$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=5}
+* Doğru [$(0, 3)$]{.light-red} ve [$(6,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+
+::: {.fragment fragment-index=6}
+[2. kısıt]{.red} [$x_1 + 2x_2 \geq 10$]{.light-blue} denkleminin eksenleri kestiği yerler
+:::
+
+::: {.fragment fragment-index=7}
+* [$x_1 = 0 \Rightarrow 2x_2 = 10 \Rightarrow$]{.light-blue} 
+[$x_2 = 5$]{.light-blue} 
+:::
+
+::: {.fragment fragment-index=8}
+* [$x_2 = 0 \Rightarrow x_1 = 10$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=9}
+* Doğru [$(0, 5)$]{.light-red} ve [$(10,0)$]{.light-red} noktalarından geçmeli.
+:::
+
+:::
+:::
+:::
+
+
+## Örnek 9: Mümkün Çözüm Olmaması (2)
+
+::: {.callout-tip icon=false title="Örnek 9: Mümkün Çözüm Olmaması (2)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width='30%'}
+
+**Çözüm (Devam):**
+
+
+::: {.fragment fragment-index=1}
+Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.
+:::
+
+::: {.fragment fragment-index=2}
+Grafikten görüldüğü gibi uygun çözümün bulunduğu bir alan yoktur.
+:::
+
+:::
+
+::: {.column width='70%' .fragment fragment-index=5}
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 9
+#| fig-height: 7
+
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 12), ylim = c(-1, 8),
+                  title = "Uygun Bölge - Z = 2x1 + 5x2 (max)",
+                  pastel = TRUE,
+                  obj = c(2, 5), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=5)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=5)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 2), rhs = 6, dir = "<=",label_size=5)
+g <- lp_step_add(g, coef = c(1, 2), rhs = 10, dir = ">=",label_size=5)
+
+
+
+g <- lp_step_mark_candidates(g, label = FALSE,
+                             show_z = FALSE,
+                             highlight_best = FALSE,
+                             show_obj_line = FALSE,
+                             label_size = 5,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+:::
+
+:::
+
+## Örnek 9: Mümkün Çözüm Olmaması (3)
+
+::: {.callout-important icon=false title="Örnek 9: Mümkün Çözüm Olmaması (3)" style="font-size: 140%;"}
+
+
+::: {.fragment fragment-index=3}
+Uygun çözümün olmamasının iki sebebi olabilir
+:::
+::: {.fragment fragment-index=4}
+  * Kısıtlayıcıların [ortak kesim noktası yoktur]{.orange}.
+:::
+
+::: {.fragment fragment-index=5}
+  * Mümkün çözüm bölgesi [2., 3. ya da 4. bölgededir]{.orange}. [$x_1$ , $x_2 \geq 0$]{.orange} koşulu sağlanmamıştır.
+:::
+
+:::

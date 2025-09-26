@@ -1,0 +1,45 @@
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+</style>
+<style>.rij{font-size:12px;color:#495057}</style>
+<table class="tbl-sim">
+<caption>Adım 16 — R_{ij} Hesapları (tablo)</caption>
+<thead><tr><th></th>
+<th>Depo 1<span class='uv'>v<sub>1</sub>=2</span></th>
+<th>Depo 2<span class='uv'>v<sub>2</sub>=3</span></th>
+<th>Depo 3<span class='uv'>v<sub>3</sub>=1</span></th>
+<th>Depo 4<span class='uv'>v<sub>4</sub>=5</span></th>
+</tr></thead><tbody>
+<tr><th>Fabrika 1<span class='uv'>u<sub>1</sub>=0</span></th>
+<td class='rij'>R<sub>1,1</sub>=4-0-2=2</td>
+<td class='rij'>R<sub>1,2</sub>=3-0-3=0</td>
+<td class='rij'>R<sub>1,3</sub>=4-0-1=3</td>
+<td class='rij'>R<sub>1,4</sub>=5-0-5=0</td>
+</tr>
+<tr><th>Fabrika 2<span class='uv'>u<sub>2</sub>=4</span></th>
+<td class='rij'>R<sub>2,1</sub>=6-4-2=0</td>
+<td class='rij'>R<sub>2,2</sub>=8-4-3=1</td>
+<td class='rij'>R<sub>2,3</sub>=5-4-1=0</td>
+<td class='rij'>R<sub>2,4</sub>=8-4-5=-1</td>
+</tr>
+<tr><th>Fabrika 3<span class='uv'>u<sub>3</sub>=0</span></th>
+<td class='rij'>R<sub>3,1</sub>=3-0-2=1</td>
+<td class='rij'>R<sub>3,2</sub>=4-0-3=1</td>
+<td class='rij'>R<sub>3,3</sub>=5-0-1=4</td>
+<td class='rij'>R<sub>3,4</sub>=5-0-5=0</td>
+</tr>
+<tr><th>Fabrika 4<span class='uv'>u<sub>4</sub>=-1</span></th>
+<td class='rij'>R<sub>4,1</sub>=1--1-2=0</td>
+<td class='rij'>R<sub>4,2</sub>=2--1-3=0</td>
+<td class='rij'>R<sub>4,3</sub>=3--1-1=3</td>
+<td class='rij'>R<sub>4,4</sub>=4--1-5=0</td>
+</tr>
+</tbody></table>

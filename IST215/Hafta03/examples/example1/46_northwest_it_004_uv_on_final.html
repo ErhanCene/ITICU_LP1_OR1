@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'>
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+</style><style>
+      .uv-cap{display:flex;gap:12px;align-items:center;margin:6px 0}
+      .uv-cap a{color:#0d6efd;text-decoration:none}
+      .tbl-sim .uvh{font-size:12px;color:#495057}
+      .tbl-sim .uvi{font-size:12px;color:#495057}
+      .tbl-sim .basic{background:#fff3cd;border:2px solid #f0ad4e}
+      .tbl-sim .rijneg{background:#fdecea;border:2px solid #f5c2c7}
+      .cellwrap{position:relative;min-width:92px;height:54px}
+      .allocmain{font-weight:700}
+      .cmini{position:absolute;top:6px;right:6px;border:1px solid #adb5bd;border-radius:6px;padding:1px 6px;font-size:12px;color:#495057}
+      .rmini{position:absolute;left:8px;bottom:6px;font-size:12px;color:#495057}
+      .header-note{margin:0 0 8px 0;color:#6c757d;font-size:13px}
+    </style>
+<script async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head><body>
+<table class='tbl-sim'>
+<thead><tr><th></th>
+<th>Depo 1<br/><span class='uvh'>v<sub>1</sub>=3</span></th>
+<th>Depo 2<br/><span class='uvh'>v<sub>2</sub>=1</span></th>
+<th>Depo 3<br/><span class='uvh'>v<sub>3</sub>=-4</span></th>
+<th>Depo 4<br/><span class='uvh'>v<sub>4</sub>=2</span></th>
+</tr></thead><tbody>
+<tr>
+<th>Fabrika 1<br/><span class='uvi'>u<sub>1</sub>=0</span></th>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=3</div><div class='allocmain'>50</div><div class='rmini'>R=0</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=5</div><div class='muted'>&ndash;</div><div class='rmini'>R=4</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=7</div><div class='muted'>&ndash;</div><div class='rmini'>R=11</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=10</div><div class='muted'>&ndash;</div><div class='rmini'>R=8</div></div></td>
+</tr>
+<tr>
+<th>Fabrika 2<br/><span class='uvi'>u<sub>2</sub>=3</span></th>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=6</div><div class='allocmain'>25</div><div class='rmini'>R=0</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=8</div><div class='muted'>&ndash;</div><div class='rmini'>R=4</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=13</div><div class='muted'>&ndash;</div><div class='rmini'>R=14</div></div></td>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=5</div><div class='allocmain'>175</div><div class='rmini'>R=0</div></div></td>
+</tr>
+<tr>
+<th>Fabrika 3<br/><span class='uvi'>u<sub>3</sub>=1</span></th>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=4</div><div class='allocmain'>75</div><div class='rmini'>R=0</div></div></td>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=2</div><div class='allocmain'>75</div><div class='rmini'>R=0</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=6</div><div class='muted'>&ndash;</div><div class='rmini'>R=9</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=7</div><div class='muted'>&ndash;</div><div class='rmini'>R=4</div></div></td>
+</tr>
+<tr>
+<th>Fabrika 4<br/><span class='uvi'>u<sub>4</sub>=8</span></th>
+<td class=''><div class='cellwrap'><div class='cmini'>c=12</div><div class='muted'>&ndash;</div><div class='rmini'>R=1</div></div></td>
+<td class=''><div class='cellwrap'><div class='cmini'>c=9</div><div class='muted'>&ndash;</div><div class='rmini'>R=0</div></div></td>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=4</div><div class='allocmain'>175</div><div class='rmini'>R=0</div></div></td>
+<td class='basic'><div class='cellwrap'><div class='cmini'>c=10</div><div class='allocmain'>125</div><div class='rmini'>R=0</div></div></td>
+</tr>
+</tbody></table>
+</body></html>

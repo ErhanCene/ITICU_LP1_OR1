@@ -12,7 +12,7 @@ format:
     preview-links: auto
     logo: images/iticulogo.png
     css: styles.css
-    footer: "IST115 - Doğrusal Programlama 1 - Hafta 01 - 18 Eylül 2025 - Doç. Dr. Erhan Çene"
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 01 - 18 Eylül 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
 ---
 
 ## Haftalık Ders Planı
@@ -419,7 +419,7 @@ En uygun alternatif **3** numaralı alternatiftir.
 
 ::: {.callout-tip icon=false title="Dikdörtgen" .fragment fragment-index=1}
 
-```{r, fig.width=3, fig.height=2, fig.pos='T', echo=FALSE}
+```{r, fig.width=3, fig.height=2, fig.pos='T'}
 # Rectangle dimensions
 l <- 6
 w <- 3

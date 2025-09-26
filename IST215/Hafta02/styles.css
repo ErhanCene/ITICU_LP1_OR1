@@ -274,4 +274,8 @@ section.slide h2{
   color: red;
 }
 
-
+.reveal .small-table table,
+.reveal .small-table thead th,
+.reveal .small-table tbody td {
+  font-size: 68% !important;   /* adjust as needed */
+}
