@@ -53,8 +53,8 @@
     "objectID": "IST115/Hafta01/index.html#haftalık-ders-planı",
     "href": "IST115/Hafta01/index.html#haftalık-ders-planı",
     "title": "Hafta 01",
-    "section": "",
-    "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nYöneylem Araştırması ve Doğrusal Programlamaya Giriş\n\n\n2\n25 Eylül 2025 Perşembe\nDoğrusal Programlama: Model Kurma ve Örnekler\n\n\n3\n02 Ekim 2025 Perşembe\nGrafikle Çözüm Yöntemi ve Çözüme Uygun Bölge\n\n\n4\n09 Ekim 2025 Perşembe\nSimpleks Yönteme Hazırlık: Standart ve Kanonik Formlar\n\n\n5\n16 Ekim 2025 Perşembe\nSimpleks Yöntem\n\n\n6\n23 Ekim 2025 Perşembe\nSimpleks Yöntem: Büyük M yöntemi\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nSimpleks Yöntemde Özel Durumlar\n\n\n10\n20 Kasım 2025 Perşembe\nSimpleks Yöntem: İki Aşamalı Yöntem\n\n\n11\n27 Kasım 2025 Perşembe\nDualite Kavramı ve Dual Problemin Oluşturulması\n\n\n12\n04 Aralık 2025 Perşembe\nPrimal-Dual İlişkileri, Dualitenin Ekonomik Yorumu, Dual Simpleks Yöntem\n\n\n13\n11 Aralık 2025 Perşembe\nDuyarlılık Analizi\n\n\n14\n18 Aralık 2025 Perşembe\nParametrik Programlama\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+    "section": "Haftalık Ders Planı",
+    "text": "Haftalık Ders Planı\n\nPlanlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nYöneylem Araştırması ve Doğrusal Programlamaya Giriş\n\n\n2\n25 Eylül 2025 Perşembe\nDoğrusal Programlama: Model Kurma ve Örnekler\n\n\n3\n02 Ekim 2025 Perşembe\nGrafikle Çözüm Yöntemi ve Çözüme Uygun Bölge\n\n\n4\n09 Ekim 2025 Perşembe\nSimpleks Yönteme Hazırlık: Standart ve Kanonik Formlar\n\n\n5\n16 Ekim 2025 Perşembe\nSimpleks Yöntem\n\n\n6\n23 Ekim 2025 Perşembe\nSimpleks Yöntem: Büyük M yöntemi\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nSimpleks Yöntemde Özel Durumlar\n\n\n10\n20 Kasım 2025 Perşembe\nSimpleks Yöntem: İki Aşamalı Yöntem\n\n\n11\n27 Kasım 2025 Perşembe\nDualite Kavramı ve Dual Problemin Oluşturulması\n\n\n12\n04 Aralık 2025 Perşembe\nPrimal-Dual İlişkileri, Dualitenin Ekonomik Yorumu, Dual Simpleks Yöntem\n\n\n13\n11 Aralık 2025 Perşembe\nDuyarlılık Analizi\n\n\n14\n18 Aralık 2025 Perşembe\nParametrik Programlama\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
   },
   {
     "objectID": "IST115/Hafta01/index.html#kaynak-kitaplar",
@@ -68,175 +68,175 @@
     "href": "IST115/Hafta01/index.html#karar-verme",
     "title": "Hafta 01",
     "section": "Karar Verme",
-    "text": "Karar Verme\n\n\n\n\n\n\nKarar Verme\n\n\n\nKarar vermenin çok çeşitli tanımları bulunmaktadır.\n\n“Algılanan ihtiyaçlara özgü kasıtlı ve düşünceli seçim” (Kleindorfer ve diğ., 1993)\n“Karar Verici’nin mevcut tüm seçenekler arasından amacına veya amaçlarına en uygun bir veya birkaç seçeneği seçme sürecine girmesi” (Evren ve Ülengin, 1992)\nEn genel hali ile karar verme; Karar Verici’nin mevcut seçenekler arasından bir seçim, sıralama ya da sınıflandırma yapması ile bir sorunu çözmesi sürecidir."
+    "text": "Karar Verme\n\n\n\n\nKarar Verme\n\n\nKarar vermenin çok çeşitli tanımları bulunmaktadır.\n\n“Algılanan ihtiyaçlara özgü kasıtlı ve düşünceli seçim” (Kleindorfer ve diğ., 1993)\n“Karar Verici’nin mevcut tüm seçenekler arasından amacına veya amaçlarına en uygun bir veya birkaç seçeneği seçme sürecine girmesi” (Evren ve Ülengin, 1992)\nEn genel hali ile karar verme; Karar Verici’nin mevcut seçenekler arasından bir seçim, sıralama ya da sınıflandırma yapması ile bir sorunu çözmesi sürecidir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#iyi-bir-karar",
     "href": "IST115/Hafta01/index.html#iyi-bir-karar",
     "title": "Hafta 01",
     "section": "İyi Bir Karar",
-    "text": "İyi Bir Karar\n\n\n\n\n\n\nİyi Bir Karar\n\n\n\n\nKarar verme kalitesini ölçecek tek bir ortak ölçü saptanamamıştır (Olson ve Courtney, 1992).\nİyi karar verme sanatı sistematik düşünce ile oluşur (Hammond ve diğ., 1999).\nİyi bir karar;\n\n\n\n\n\n\n\nMantığa dayanır.\n\n\n\n\nTüm mevcut kaynakları kullanır.\n\n\n\n\nTüm olası seçenekleri inceler.\n\n\n\n\nSayısal bir yöntem uygular."
+    "text": "İyi Bir Karar\n\n\n\n\nİyi Bir Karar\n\n\n\nKarar verme kalitesini ölçecek tek bir ortak ölçü saptanamamıştır (Olson ve Courtney, 1992).\nİyi karar verme sanatı sistematik düşünce ile oluşur (Hammond ve diğ., 1999).\nİyi bir karar;\n\n\n\n\n\n\n\nMantığa dayanır.\n\n\n\n\nTüm mevcut kaynakları kullanır.\n\n\n\n\nTüm olası seçenekleri inceler.\n\n\n\n\nSayısal bir yöntem uygular."
   },
   {
     "objectID": "IST115/Hafta01/index.html#karar-verme-süreci",
     "href": "IST115/Hafta01/index.html#karar-verme-süreci",
     "title": "Hafta 01",
     "section": "Karar Verme Süreci",
-    "text": "Karar Verme Süreci\n\n\n\n\n\n\nKarar Verme Süreci 1\n\n\n\n\nDar anlamda karar verme, çeşitli alternatifler içinde en uygun olanının seçiminin yapıldığ bir süreç olarak tanımlanabilir.\nKarar Verme Süreci, değişik kaynaklarda farklı aşamalarla sıralanmıştır. Ancak farklı yaklaşımların ortak noktaları dikkate alındığında, söz konusu sürecin aşamalarını aşağıdaki gibi ifade etmek yanlış olmaz.\n\n\n\nKarar probleminin tanımlanması\n\n\n\n\nKarar verecek kişi veya kişiler\nAmaç\nAlternatif eylem biçimleri\nBelirsizlik"
+    "text": "Karar Verme Süreci\n\n\n\n\nKarar Verme Süreci 1\n\n\n\nDar anlamda karar verme, çeşitli alternatifler içinde en uygun olanının seçiminin yapıldığ bir süreç olarak tanımlanabilir.\nKarar Verme Süreci, değişik kaynaklarda farklı aşamalarla sıralanmıştır. Ancak farklı yaklaşımların ortak noktaları dikkate alındığında, söz konusu sürecin aşamalarını aşağıdaki gibi ifade etmek yanlış olmaz.\n\n\n\nKarar probleminin tanımlanması\n\n\n\n\nKarar verecek kişi veya kişiler\nAmaç\nAlternatif eylem biçimleri\nBelirsizlik"
   },
   {
     "objectID": "IST115/Hafta01/index.html#karar-verme-süreci-1",
     "href": "IST115/Hafta01/index.html#karar-verme-süreci-1",
     "title": "Hafta 01",
     "section": "Karar Verme Süreci",
-    "text": "Karar Verme Süreci\n\n\n\n\n\n\nKarar Verme Süreci 2\n\n\n\n\n\nKarar probleminin modelinin kurulması\n\n\n\nProblemin kolayca çözümlenebilmesi için diğer bir deyişle problemi en iyi biçimde temsil edecek ve problemin çözümündeki belirsizlikleri en aza indirecek bir modelin kurulması gerekir.\n\n\nModel: Bir sistemin değişen şartlar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında tahminlerde bulunmak amacıyla elemanları arasındaki bağıntıları kelimeler veya matematik terimlerle belirten ifadeler topluluğuna model denir.\n\n\n\nModelden çözüm elde edilmesi\n\n\n\n\nModelin çözümünün test edilmesi\n\n\n\n\nKarar verme ve kararın uygulamaya konulması"
+    "text": "Karar Verme Süreci\n\n\n\n\nKarar Verme Süreci 2\n\n\n\n\nKarar probleminin modelinin kurulması\n\n\n\nProblemin kolayca çözümlenebilmesi için diğer bir deyişle problemi en iyi biçimde temsil edecek ve problemin çözümündeki belirsizlikleri en aza indirecek bir modelin kurulması gerekir.\n\n\nModel: Bir sistemin değişen şartlar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında tahminlerde bulunmak amacıyla elemanları arasındaki bağıntıları kelimeler veya matematik terimlerle belirten ifadeler topluluğuna model denir.\n\n\n\nModelden çözüm elde edilmesi\n\n\n\n\nModelin çözümünün test edilmesi\n\n\n\n\nKarar verme ve kararın uygulamaya konulması"
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nKarar hangi kısıtlar altında verilmiştir?\n\n\n\nAynı haftanın pazartesi günü Ankara’ya gitmek ve çarşamba günü Ankara’dan dönmek."
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nKarar hangi kısıtlar altında verilmiştir?\n\n\n\nAynı haftanın pazartesi günü Ankara’ya gitmek ve çarşamba günü Ankara’dan dönmek."
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-1",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-1",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nBu kararı değerlendirmede kullanacağımız uygun bir amaç fonksiyonu nasıl olmalıdır?\n\n\n\nEn düşük bilet fiyatı maliyetini veren alternatifi bulmak."
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nBu kararı değerlendirmede kullanacağımız uygun bir amaç fonksiyonu nasıl olmalıdır?\n\n\n\nEn düşük bilet fiyatı maliyetini veren alternatifi bulmak."
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-2",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-2",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Aynı haftanın her pazartesisi için gidiş çarşambası dönüş olmak üzere beş tane IST-ANK-IST gidiş dönüş bileti almak\n\n\n\nMaliyet: \\(400 \\times 5 = 2000\\) pb"
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Aynı haftanın her pazartesisi için gidiş çarşambası dönüş olmak üzere beş tane IST-ANK-IST gidiş dönüş bileti almak\n\n\n\nMaliyet: \\(400 \\times 5 = 2000\\) pb"
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-3",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-3",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - İlk pazartesi bir tane IST-ANK, hafta sonlarını da kapsayacak dört tane ANK-IST-ANK, ve son çarşamda da bir tane de ANK-IST bileti almak\n\n\n\nMaliyet:\n\\[\\begin{align}\n0.75 \\times 400 &+ 4 \\times (0.8 \\times 400)\\\\\n                & + 0.75 \\times 400 = 1880 pb\n\\end{align}\\]"
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - İlk pazartesi bir tane IST-ANK, hafta sonlarını da kapsayacak dört tane ANK-IST-ANK, ve son çarşamda da bir tane de ANK-IST bileti almak\n\n\n\nMaliyet:\n\\[\\begin{align}\n0.75 \\times 400 &+ 4 \\times (0.8 \\times 400)\\\\\n                & + 0.75 \\times 400 = 1880 pb\n\\end{align}\\]"
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-4",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-4",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Birinci haftanın pazartesini ve sonuncu haftanın Çarşambasında kullanılmak üzere hafta sonunu da kapsayan bir tane IST-ANK-IST ve yine hafta sonlarını kapsayan dört tane ANK-IST-ANK bileti almak.\n\n\n\nMaliyet: \\(5 \\times (0.8 \\times 400) = 1600\\) pb"
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\n\nAlternatif kararlar nelerdir?\n\n\n\n\nalternatif - Birinci haftanın pazartesini ve sonuncu haftanın Çarşambasında kullanılmak üzere hafta sonunu da kapsayan bir tane IST-ANK-IST ve yine hafta sonlarını kapsayan dört tane ANK-IST-ANK bileti almak.\n\n\n\nMaliyet: \\(5 \\times (0.8 \\times 400) = 1600\\) pb"
   },
   {
     "objectID": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-5",
     "href": "IST115/Hafta01/index.html#istanbul---ankara-arası-gezi-5",
     "title": "Hafta 01",
     "section": "İstanbul - Ankara Arası Gezi",
-    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\nEn uygun alternatif 3 numaralı alternatiftir."
+    "text": "İstanbul - Ankara Arası Gezi\n\n\n\n\n\n\nÖrnek: İstanbul - Ankara Arası Gezi\n\n\n\nBir iş gezisi nedeniyle beş hafta boyunca uçakla İstanbul (IST) - Ankara (ANK) arasında gidip geldiğinizi düşünelim.\nHer hafta pazartesi günleri, oturmakta olduğunuz İstanbul’dan Ankara’ya gidip çarşambaları da geri döndüğünüz bu seyahatleriniz için normal bir gidiş dönüş bileti 400 pb (para birimi) dir.\nBiletin hafta sonuna denk gelen tarihleri de kapsaması halinde %20 lik bir indirim yapılmaktadır.\nAyrıca her iki kentten de alınabilecek sadece gidiş ve ya dönüş bileti ise normal gidiş dönüş biletinin %75 i kadardır.\nBu durumda söz konusu beş haftalık periyot içinde nasıl bir bilet alma politikası izlemeniz gerekir?\n\n\n\n\n\n\n\n\n\n\n\n\nNe Yapmalı\n\n\nBu soruya üç temel bileşene sahip bir karar verme problemi olarak bakabiliriz. Belirlenmesi gereken temel bileşenler şöyle ifade edilebilir.\n\nEn uygun alternatif 3 numaralı alternatiftir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#yöneylem-probleminin-bileşenleri",
     "href": "IST115/Hafta01/index.html#yöneylem-probleminin-bileşenleri",
     "title": "Hafta 01",
     "section": "Yöneylem Probleminin Bileşenleri",
-    "text": "Yöneylem Probleminin Bileşenleri\n\n\n\n\n\n\nYöneylem Probleminin Bileşenleri\n\n\n\n\nBir yöneylem araştırması modeli, kısıtlar, amaç ve alternatif lerden oluşur.\nGenelde karar problemlerinin alternatifleri, bilinmeyen değişkenler olarak karşımıza çıkar.\nBu değişkenler daha sonra kısıtları ve amaç kriterini oluşturmak üzere uygun matematik fonksiyonlarda kullanılır.\nNihai sonuç, değişkenler, kısıtlar ve amaç fonksiyonundan oluşan bir matematiksel model dir.\nModelin çözülmesiyle, hem tüm kısıtları sağlayan, hem de amaç fonksiyonunu optimum kılan (maksimum ya da minimum kılan) karar değişkenlerinin değerleri elde edilmiş olur.\nSonuç çözüm optimum uygun çözüm adını alır."
+    "text": "Yöneylem Probleminin Bileşenleri\n\n\n\n\nYöneylem Probleminin Bileşenleri\n\n\n\nBir yöneylem araştırması modeli, kısıtlar, amaç ve alternatif lerden oluşur.\nGenelde karar problemlerinin alternatifleri, bilinmeyen değişkenler olarak karşımıza çıkar.\nBu değişkenler daha sonra kısıtları ve amaç kriterini oluşturmak üzere uygun matematik fonksiyonlarda kullanılır.\nNihai sonuç, değişkenler, kısıtlar ve amaç fonksiyonundan oluşan bir matematiksel model dir.\nModelin çözülmesiyle, hem tüm kısıtları sağlayan, hem de amaç fonksiyonunu optimum kılan (maksimum ya da minimum kılan) karar değişkenlerinin değerleri elde edilmiş olur.\nSonuç çözüm optimum uygun çözüm adını alır."
   },
   {
     "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen",
     "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen",
     "title": "Hafta 01",
     "section": "Tel Parçası - Dikdörtgen",
-    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\n\n\nÖrnek: Tel Parçası (1)\n\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nDikdörtgen\n\n\n\n\n# Rectangle dimensions\nl &lt;- 6\nw &lt;- 3\n\n# Set background and remove margins\npar(mar = c(0, 0, 0, 0), bg = \"white\")\n\n# Set plot limits slightly larger than rectangle for spacing\nplot(0, 0, type = \"n\", xlim = c(-1, l + 1), ylim = c(-1, w + 1),\n     axes = FALSE, xlab = \"\", ylab = \"\", asp = 1)\n\n# Draw rectangle\nrect(0, 0, l, w, border = \"blue\", lwd = 3)\n\n# Add double-headed arrow for length (bottom side)\narrows(0, -0.5, l, -0.5, code = 3, length = 0.1, col = \"blue\", lwd = 2)\ntext(l / 2, -0.8, \"l\", col = \"blue\", cex = 1.5)\n\n# Add double-headed arrow for width (left side)\narrows(-0.5, 0, -0.5, w, code = 3, length = 0.1, col = \"blue\", lwd = 2)\ntext(-0.8, w / 2, \"w\", col = \"blue\", cex = 1.5)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeğişken, Amaç ve kısıtlar\n\n\n\n\n\nDeğişkenler \\(l\\) ve \\(w\\)\n\n\n\n\nAmaç fonksiyonu \\(Maks. A=l \\cdot w\\)\n\n\n\n\nKısıt ise \\(l+w = \\frac{L}{2}\\) şeklinde olur."
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (1)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nDikdörtgen\n\n\n\n# Rectangle dimensions\nl &lt;- 6\nw &lt;- 3\n\n# Set background and remove margins\npar(mar = c(0, 0, 0, 0), bg = \"white\")\n\n# Set plot limits slightly larger than rectangle for spacing\nplot(0, 0, type = \"n\", xlim = c(-1, l + 1), ylim = c(-1, w + 1),\n     axes = FALSE, xlab = \"\", ylab = \"\", asp = 1)\n\n# Draw rectangle\nrect(0, 0, l, w, border = \"blue\", lwd = 3)\n\n# Add double-headed arrow for length (bottom side)\narrows(0, -0.5, l, -0.5, code = 3, length = 0.1, col = \"blue\", lwd = 2)\ntext(l / 2, -0.8, \"l\", col = \"blue\", cex = 1.5)\n\n# Add double-headed arrow for width (left side)\narrows(-0.5, 0, -0.5, w, code = 3, length = 0.1, col = \"blue\", lwd = 2)\ntext(-0.8, w / 2, \"w\", col = \"blue\", cex = 1.5)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeğişken, Amaç ve kısıtlar\n\n\n\n\nDeğişkenler \\(l\\) ve \\(w\\)\n\n\n\n\nAmaç fonksiyonu \\(Maks. A=l \\cdot w\\)\n\n\n\n\nKısıt ise \\(l+w = \\frac{L}{2}\\) şeklinde olur."
   },
   {
     "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-1",
     "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-1",
     "title": "Hafta 01",
     "section": "Tel Parçası - Dikdörtgen",
-    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\n\n\nÖrnek: Tel Parçası (2)\n\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\n\nBu modeli \\(l+w = \\frac{L}{2}\\) kısıtını amaç fonksiyonunda kullanarak çözebiliriz. \\(l = \\frac{L}{2}-w\\) yu yerine koyarsak,\n\n\n\n\\[A = \\left(\\frac{L}{2}-w\\right)w = \\frac{Lw}{2}-w^2 \\] elde edilir.\n\n\n\n\\(A\\) alanının maksimum olduğu yer, \\(A\\) nın eğiminin \\(w\\) ya göre 0 olduğu noktadır. Yani\n\n\n\n\\[\\frac{dA}{dw}=\\frac{L}{2}-2w=0 \\] olmalıdır."
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (2)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nBu modeli \\(l+w = \\frac{L}{2}\\) kısıtını amaç fonksiyonunda kullanarak çözebiliriz. \\(l = \\frac{L}{2}-w\\) yu yerine koyarsak,\n\n\n\n\\[A = \\left(\\frac{L}{2}-w\\right)w = \\frac{Lw}{2}-w^2 \\] elde edilir.\n\n\n\n\\(A\\) alanının maksimum olduğu yer, \\(A\\) nın eğiminin \\(w\\) ya göre 0 olduğu noktadır. Yani\n\n\n\n\\[\\frac{dA}{dw}=\\frac{L}{2}-2w=0 \\] olmalıdır."
   },
   {
     "objectID": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-2",
     "href": "IST115/Hafta01/index.html#tel-parçası---dikdörtgen-2",
     "title": "Hafta 01",
     "section": "Tel Parçası - Dikdörtgen",
-    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\n\n\nÖrnek: Tel Parçası (3)\n\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\n\nBu denklemin çözümü \\(w=\\frac{L}{4}\\) olacağından bu nokta maksimumu göstermektedir.\n\n\n\n\nKısıt denkleminde \\(w\\) yerine \\(\\frac{L}{4}\\) yazıldığında \\(l=\\frac{L}{4}\\) bulunur.\n\n\n\n\nDolayısıyla en uygun çözüm karedir."
+    "text": "Tel Parçası - Dikdörtgen\n\n\n\n\n\n\nÖrnek: Tel Parçası (3)\n\n\n\nElimizde \\(L\\) cm uzunluğunda bir tel parçası olduğunu varsayalım ve bu tel parçasıyla çevreleyebileceğimiz en büyük alana sahip dikdörtgenin uzunluk ve genişliğinin ne olacağını bulmak isteyelim.\nProblemin değişkenleri, dikdörtgenin uzun kenarı olan \\(l\\) uzunluğu ve kısa kenarı olan \\(w\\) uzunluğudur.\nDolayısıyla dikdörtgenin alanı \\(A=l\\cdot w\\) \\(cm^2\\) ve dikdörtgenin çevresi \\(L=2(l+w)\\) cm dir.\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nBu denklemin çözümü \\(w=\\frac{L}{4}\\) olacağından bu nokta maksimumu göstermektedir.\n\n\n\n\nKısıt denkleminde \\(w\\) yerine \\(\\frac{L}{4}\\) yazıldığında \\(l=\\frac{L}{4}\\) bulunur.\n\n\n\n\nDolayısıyla en uygun çözüm karedir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri",
     "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri",
     "title": "Hafta 01",
     "section": "Yöneylem Araştırması Teknikleri",
-    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\n\n\nYöneylem Araştırması Teknikleri 1\n\n\n\n\nYöneylem Araştırması’ndaki matematiksel modellerde karar değişkenleri tamsayılı ya da sürekli olabilir. Buna karşılık amaç ve kısıt fonksiyonları doğrusal (linear) olabilir ya da olmayabilir (nonlinear).\nOptimizasyon problemleri bu tür modeller sayesinde ortaya çıkmakta ve değişik çözüm yöntemlerinin gelişmesine kaynak oluşturmaktadır.\nBunların içerisinde en belirgin ve başarıyla kullanılanı doğrusal programlamadır.\nDoğrusal programlamada tüm amaç ve kısıt fonksiyonları doğrusal, tüm değişkenler süreklidir."
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 1\n\n\n\nYöneylem Araştırması’ndaki matematiksel modellerde karar değişkenleri tamsayılı ya da sürekli olabilir. Buna karşılık amaç ve kısıt fonksiyonları doğrusal (linear) olabilir ya da olmayabilir (nonlinear).\nOptimizasyon problemleri bu tür modeller sayesinde ortaya çıkmakta ve değişik çözüm yöntemlerinin gelişmesine kaynak oluşturmaktadır.\nBunların içerisinde en belirgin ve başarıyla kullanılanı doğrusal programlamadır.\nDoğrusal programlamada tüm amaç ve kısıt fonksiyonları doğrusal, tüm değişkenler süreklidir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-1",
     "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-1",
     "title": "Hafta 01",
     "section": "Yöneylem Araştırması Teknikleri",
-    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\n\n\nYöneylem Araştırması Teknikleri 2\n\n\n\n\nBaşka tip modellerin çözümü için geliştirilmiş diğer matematiksel teknikler içinde\n\n\n\n\n\n\nDinamik programlama\nTamsayılı programlama\nDoğrusal olmayan (nonlineer) programlama\n\n\n\nHedef programlama ve\nŞebeke programlama\n\n\n\nsayılabilir."
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 2\n\n\n\nBaşka tip modellerin çözümü için geliştirilmiş diğer matematiksel teknikler içinde\n\n\n\n\n\n\nDinamik programlama\nTamsayılı programlama\nDoğrusal olmayan (nonlineer) programlama\n\n\n\nHedef programlama ve\nŞebeke programlama\n\n\nsayılabilir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-2",
     "href": "IST115/Hafta01/index.html#yöneylem-araştırması-teknikleri-2",
     "title": "Hafta 01",
     "section": "Yöneylem Araştırması Teknikleri",
-    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\n\n\nYöneylem Araştırması Teknikleri 3\n\n\n\n\nHemen hemen tüm yöneylem araştırması teknikleri, yapısında yineleme (tekrarlama) bulunan hesaplama algoritmalarıyla sonuçlandırılır.\nBu problemin yinelemelerle (iterasyon) çözülmekte olduğunu ve her yeni yineleme sonunda çözümün optimuma daha yakın hale getirildiğini ifade etmektedir.\nBu iterasyonlar günümüzde daha çok bilgisayar desteğiyle yapılmaktadır.\nBazı matematiksel modeller ise, bilinen herhangi bir optimizasyon algoritmasıyla çözülemeyecek kadar karmaşık yapıda olabilir. Böyle durumlarda optimum çözümü aramak yerine, sezgisel yöntemler kullanarak sadece iyi bir çözüm arama yoluna gidilir.\nSezgisel algoritmalar, genellikle optimumu tam bulan algoritmalara göre daha hızlı çalışma avantajına sahiptir."
+    "text": "Yöneylem Araştırması Teknikleri\n\n\n\n\nYöneylem Araştırması Teknikleri 3\n\n\n\nHemen hemen tüm yöneylem araştırması teknikleri, yapısında yineleme (tekrarlama) bulunan hesaplama algoritmalarıyla sonuçlandırılır.\nBu problemin yinelemelerle (iterasyon) çözülmekte olduğunu ve her yeni yineleme sonunda çözümün optimuma daha yakın hale getirildiğini ifade etmektedir.\nBu iterasyonlar günümüzde daha çok bilgisayar desteğiyle yapılmaktadır.\nBazı matematiksel modeller ise, bilinen herhangi bir optimizasyon algoritmasıyla çözülemeyecek kadar karmaşık yapıda olabilir. Böyle durumlarda optimum çözümü aramak yerine, sezgisel yöntemler kullanarak sadece iyi bir çözüm arama yoluna gidilir.\nSezgisel algoritmalar, genellikle optimumu tam bulan algoritmalara göre daha hızlı çalışma avantajına sahiptir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#simülasyonla-modelleme",
     "href": "IST115/Hafta01/index.html#simülasyonla-modelleme",
     "title": "Hafta 01",
     "section": "Simülasyonla Modelleme",
-    "text": "Simülasyonla Modelleme\n\n\n\n\n\n\nSimülasyonla Modelleme (1)\n\n\n\n\nMatematiksel gösterimin katılığı, çoğu kez karar problemlerini yeterince tanımlamayı olanaksız hale getirmektedir.\nBunun tersine, bir model uygun formüle edilse bile çok karmaşık çözüm algoritmalarıyla uğraşmak zorunda kalınabilir.\nBöyle karmaşık sistemlerin modellemesinde kullanılabilecek uygun yaklaşımlardan biri de simülasyondur.\nSimülasyonda matematiksel modellemeden farklı olarak, girdi ile çıktı arasındaki ilişkilerin açıklıkla ifade edilmesine gereksinim duyulmamaktadır."
+    "text": "Simülasyonla Modelleme\n\n\n\n\nSimülasyonla Modelleme (1)\n\n\n\nMatematiksel gösterimin katılığı, çoğu kez karar problemlerini yeterince tanımlamayı olanaksız hale getirmektedir.\nBunun tersine, bir model uygun formüle edilse bile çok karmaşık çözüm algoritmalarıyla uğraşmak zorunda kalınabilir.\nBöyle karmaşık sistemlerin modellemesinde kullanılabilecek uygun yaklaşımlardan biri de simülasyondur.\nSimülasyonda matematiksel modellemeden farklı olarak, girdi ile çıktı arasındaki ilişkilerin açıklıkla ifade edilmesine gereksinim duyulmamaktadır."
   },
   {
     "objectID": "IST115/Hafta01/index.html#simülasyonla-modelleme-1",
     "href": "IST115/Hafta01/index.html#simülasyonla-modelleme-1",
     "title": "Hafta 01",
     "section": "Simülasyonla Modelleme",
-    "text": "Simülasyonla Modelleme\n\n\n\n\n\n\nSimülasyonla Modelleme (2)\n\n\n\n\nOnun yerine simülasyon, gerçek sistemi küçük birimler halinde inceler ve bu birimleri birlikte hareket ettirecek mantıksal ilişkileri kullanarak sistemin mevcut davranışını taklit eder.\nGirdilerle işleme başlanarak çıktılar realize oluncaya kadar bu birimler arasındaki simülasyon hesaplarına devam edilir.\nSimülasyon sistemleri basit olsa da çok yüklü bilgisayar hesabı gerektirir.\nSimülasyon modelleri aynı sistemin matematiksel modellerine göre çok daha esnektir. Bunun sebebi simülasyon sisteme basit düzeyden bakarken, matematiksel model global düzeyden bakar.\nSimülasyon esnek olsa da, zaman ve kaynak açısından maliyetlidir."
+    "text": "Simülasyonla Modelleme\n\n\n\n\nSimülasyonla Modelleme (2)\n\n\n\nOnun yerine simülasyon, gerçek sistemi küçük birimler halinde inceler ve bu birimleri birlikte hareket ettirecek mantıksal ilişkileri kullanarak sistemin mevcut davranışını taklit eder.\nGirdilerle işleme başlanarak çıktılar realize oluncaya kadar bu birimler arasındaki simülasyon hesaplarına devam edilir.\nSimülasyon sistemleri basit olsa da çok yüklü bilgisayar hesabı gerektirir.\nSimülasyon modelleri aynı sistemin matematiksel modellerine göre çok daha esnektir. Bunun sebebi simülasyon sisteme basit düzeyden bakarken, matematiksel model global düzeyden bakar.\nSimülasyon esnek olsa da, zaman ve kaynak açısından maliyetlidir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#model-kurmada-yöntem",
     "href": "IST115/Hafta01/index.html#model-kurmada-yöntem",
     "title": "Hafta 01",
     "section": "Model Kurmada Yöntem",
-    "text": "Model Kurmada Yöntem\n\n\n\n\n\n\nModel Kurmada Yöntem\n\n\n\n\nYöneylem araştırmaları uygulamalarındaki temel aşamalar şöyle ifade edilebilir.\n1) Problemin tanımlanması.  2) Modelin kurulması.  3) Modelin çözülmesi.  4) Modelin geçerliliğinin onaylanması.  5) Çözümün uygulanması."
+    "text": "Model Kurmada Yöntem\n\n\n\n\nModel Kurmada Yöntem\n\n\n\nYöneylem araştırmaları uygulamalarındaki temel aşamalar şöyle ifade edilebilir.\n1) Problemin tanımlanması.  2) Modelin kurulması.  3) Modelin çözülmesi.  4) Modelin geçerliliğinin onaylanması.  5) Çözümün uygulanması."
   },
   {
     "objectID": "IST115/Hafta01/index.html#problemin-tanımlanması",
     "href": "IST115/Hafta01/index.html#problemin-tanımlanması",
     "title": "Hafta 01",
     "section": "Problemin tanımlanması",
-    "text": "Problemin tanımlanması\n\n\n\n\n\n\nProblemin tanımlanması\n\n\n\n\nProblemin tanımlanması aşaması ele alınan problemin incelenip izlenerek tanımlanmasını kapsar.\nİnceleme ve araştırma aşamalarının sonucunda karar problemlerinin üç temel elemanının neler olduğu ortaya çıkar.\nBunlar\n\nKarar alternatiflerinin tanımlanması (alternatif kararların neler olduğu)\nÇalışmanın amacının ne olduğu\nModelin kuruluş sisteminin çalışması esnasındaki sınırlandırmaların belirlenmesidir."
+    "text": "Problemin tanımlanması\n\n\n\n\nProblemin tanımlanması\n\n\n\nProblemin tanımlanması aşaması ele alınan problemin incelenip izlenerek tanımlanmasını kapsar.\nİnceleme ve araştırma aşamalarının sonucunda karar problemlerinin üç temel elemanının neler olduğu ortaya çıkar.\nBunlar\n\nKarar alternatiflerinin tanımlanması (alternatif kararların neler olduğu)\nÇalışmanın amacının ne olduğu\nModelin kuruluş sisteminin çalışması esnasındaki sınırlandırmaların belirlenmesidir."
   },
   {
     "objectID": "IST115/Hafta01/index.html#model-kurma",
     "href": "IST115/Hafta01/index.html#model-kurma",
     "title": "Hafta 01",
     "section": "Model Kurma",
-    "text": "Model Kurma\n\n\n\n\n\n\nModel Kurma\n\n\n\n\nModel kurma aşamasında problem, matematiksel ilişkiler halinde ifade edilir. Başka bir deyişle problem matematik diline tercüme edilir.\nModel doğrusal programlama gibi standart bir matematik model halinde ifade edilebiliyorsa, mevcut algoritmalar yardımıyla çözüme ulaşılır.\nModel analitik bir çözüme ulaşmak için çok karmaşık matematiksel ilişkiler içeriyorsa, bu durumda ya sezgisel yöntemlerle ya da simülasyonla optimum sonuca ulaşılmaya çalışılacaktır.\nMatematiksel modellerin, sezgisel yöntemlerin ve simülasyonun bir arada kullanıldığı yöntemler de mevcuttur."
+    "text": "Model Kurma\n\n\n\n\nModel Kurma\n\n\n\nModel kurma aşamasında problem, matematiksel ilişkiler halinde ifade edilir. Başka bir deyişle problem matematik diline tercüme edilir.\nModel doğrusal programlama gibi standart bir matematik model halinde ifade edilebiliyorsa, mevcut algoritmalar yardımıyla çözüme ulaşılır.\nModel analitik bir çözüme ulaşmak için çok karmaşık matematiksel ilişkiler içeriyorsa, bu durumda ya sezgisel yöntemlerle ya da simülasyonla optimum sonuca ulaşılmaya çalışılacaktır.\nMatematiksel modellerin, sezgisel yöntemlerin ve simülasyonun bir arada kullanıldığı yöntemler de mevcuttur."
   },
   {
     "objectID": "IST115/Hafta01/index.html#modelin-çözümü",
     "href": "IST115/Hafta01/index.html#modelin-çözümü",
     "title": "Hafta 01",
     "section": "Modelin Çözümü",
-    "text": "Modelin Çözümü\n\n\n\n\n\n\nModelin Çözümü\n\n\n\n\nModelin çözümü bu beş adım arasında en basiti olarak görülür. Çünkü bu aşamada çok iyi bilinen optimizasyon algoritmaları kullanılmaktadır.\nModelin çözülmesi aşamasının önemli bir yanı da duyarlılık analizini de içermesidir.\nDuyarlılık analizi model parametrelerinin tam olarak tahmin edilemediği durumlarda bazı parametrelerin değişmesi halinde modelin ne zaman optimum çözümden uzaklaşacağı hakkında bilgi verir.\nBaşlangıçta model parametrelerinin tahminlerine göre oluşan optimum çözümün zaman geçtikçe nasıl davranacağının incelenmesi duyarlılık analizinin konusudur."
+    "text": "Modelin Çözümü\n\n\n\n\nModelin Çözümü\n\n\n\nModelin çözümü bu beş adım arasında en basiti olarak görülür. Çünkü bu aşamada çok iyi bilinen optimizasyon algoritmaları kullanılmaktadır.\nModelin çözülmesi aşamasının önemli bir yanı da duyarlılık analizini de içermesidir.\nDuyarlılık analizi model parametrelerinin tam olarak tahmin edilemediği durumlarda bazı parametrelerin değişmesi halinde modelin ne zaman optimum çözümden uzaklaşacağı hakkında bilgi verir.\nBaşlangıçta model parametrelerinin tahminlerine göre oluşan optimum çözümün zaman geçtikçe nasıl davranacağının incelenmesi duyarlılık analizinin konusudur."
   },
   {
     "objectID": "IST115/Hafta01/index.html#modelin-geçerliliği",
     "href": "IST115/Hafta01/index.html#modelin-geçerliliği",
     "title": "Hafta 01",
     "section": "Modelin Geçerliliği",
-    "text": "Modelin Geçerliliği\n\n\n\n\n\n\nModelin Geçerliliği\n\n\n\n\nModelin geçerliliği aşamasında, geliştirilmiş olan modelle sistemin çalışması karşılaştırılır ve modelin beklenen davranışları sergileyip sergilemeyeceği incelenir.\nBiçimsel olarak düşünüldüğünde modelin geçerliliğini anlamak üzere ilk akla gelen davranış, sistemin geçmişteki çıktıları ile modelin çıktılarını karşılaştırarak kontrol etmektir.\nEğer model, geçmişteki benzer girdiler ile benzer performans üretiyorsa sonuç geçerlidir.\nAncak sistem ilk kez kuruluyorsa, performansın test edileceği bir geçmiş veri bulunamayacağından bu kez simülasyona başvurulur."
+    "text": "Modelin Geçerliliği\n\n\n\n\nModelin Geçerliliği\n\n\n\nModelin geçerliliği aşamasında, geliştirilmiş olan modelle sistemin çalışması karşılaştırılır ve modelin beklenen davranışları sergileyip sergilemeyeceği incelenir.\nBiçimsel olarak düşünüldüğünde modelin geçerliliğini anlamak üzere ilk akla gelen davranış, sistemin geçmişteki çıktıları ile modelin çıktılarını karşılaştırarak kontrol etmektir.\nEğer model, geçmişteki benzer girdiler ile benzer performans üretiyorsa sonuç geçerlidir.\nAncak sistem ilk kez kuruluyorsa, performansın test edileceği bir geçmiş veri bulunamayacağından bu kez simülasyona başvurulur."
   },
   {
     "objectID": "IST115/Hafta01/index.html#modelin-uygulanması",
     "href": "IST115/Hafta01/index.html#modelin-uygulanması",
     "title": "Hafta 01",
     "section": "Modelin Uygulanması",
-    "text": "Modelin Uygulanması\n\n\n\n\n\n\nModelin Uygulanması\n\n\n\n\nTutarlılığı kanıtlanmış bir modelin çözümünün uygulanması, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir."
+    "text": "Modelin Uygulanması\n\n\n\n\nModelin Uygulanması\n\n\n\nTutarlılığı kanıtlanmış bir modelin çözümünün uygulanması, önerilen sistemi uygulayacak olan kişilere anlaşılır bir biçimde verilecek çalışma talimatlarında yer alan model sonuçlarının aktarılmasını içerir."
   },
   {
     "objectID": "IST215/MainPage/IST215_WEEK01_MAIN.html",
@@ -254,8 +254,8 @@
     "objectID": "IST215/Hafta02/index.html#haftalık-ders-planı",
     "href": "IST215/Hafta02/index.html#haftalık-ders-planı",
     "title": "Hafta 02",
-    "section": "",
-    "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri: Bozulma Durumu, Dengesiz Ulaştırma Prob.\n\n\n5\n16 Ekim 2025 Perşembe\nUlaştırma Problemleri: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob.\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+    "section": "Haftalık Ders Planı",
+    "text": "Haftalık Ders Planı\n\nPlanlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri: Bozulma Durumu, Dengesiz Ulaştırma Prob.\n\n\n5\n16 Ekim 2025 Perşembe\nUlaştırma Problemleri: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob.\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
   },
   {
     "objectID": "IST215/Hafta02/index.html#kaynak-kitaplar",
@@ -269,273 +269,273 @@
     "href": "IST215/Hafta02/index.html#yönetim-fonksiyonları",
     "title": "Hafta 02",
     "section": "Yönetim Fonksiyonları",
-    "text": "Yönetim Fonksiyonları\n\n\n\n\n\n\nYönetim Fonksiyonları\n\n\n\n\nSanayi devrimi ile birlikte endüstri işletmelerinin hızla büyümeleri sonucunda bir kişinin bütün yöneticilik fonksiyonlarını tek başına yürütebilmesi imkansız hale gelmiştir.\nBunun doğal sonucu olarak yönetim fonksiyonları ayrılmış, böylece işletme bünyesinde üretim, pazarlama, finansman vb. farklı bölümler ortaya çıkmıştır."
+    "text": "Yönetim Fonksiyonları\n\n\n\n\nYönetim Fonksiyonları\n\n\n\nSanayi devrimi ile birlikte endüstri işletmelerinin hızla büyümeleri sonucunda bir kişinin bütün yöneticilik fonksiyonlarını tek başına yürütebilmesi imkansız hale gelmiştir.\nBunun doğal sonucu olarak yönetim fonksiyonları ayrılmış, böylece işletme bünyesinde üretim, pazarlama, finansman vb. farklı bölümler ortaya çıkmıştır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#çatışan-amaçlar",
     "href": "IST215/Hafta02/index.html#çatışan-amaçlar",
     "title": "Hafta 02",
     "section": "Çatışan Amaçlar",
-    "text": "Çatışan Amaçlar\n\n\n\n\n\n\nÇatışan Amaçlar\n\n\n\n\nYönetim fonksiyonunun gittikçe artan sayıda bölümlere ayrılması, yeni işletme sorunlarını da beraberinde getirmiştir.\nBir bölüm için en iyi olan davranış biçiminin bir başka bölüm için iyi olmak bir yana genellikle yıkıcı olması, bölümleri birbirlerinin amaç ve faaliyetlerini göz önünde bulundurmak zorunda bırakmıştır.\nBu tip sorunlar ve bunlara daha iyi çözüm bulma yaklaşımları da yöneylem araştırmasını doğurmuştur."
+    "text": "Çatışan Amaçlar\n\n\n\n\nÇatışan Amaçlar\n\n\n\nYönetim fonksiyonunun gittikçe artan sayıda bölümlere ayrılması, yeni işletme sorunlarını da beraberinde getirmiştir.\nBir bölüm için en iyi olan davranış biçiminin bir başka bölüm için iyi olmak bir yana genellikle yıkıcı olması, bölümleri birbirlerinin amaç ve faaliyetlerini göz önünde bulundurmak zorunda bırakmıştır.\nBu tip sorunlar ve bunlara daha iyi çözüm bulma yaklaşımları da yöneylem araştırmasını doğurmuştur."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
     "title": "Hafta 02",
     "section": "Yöneylem Araştırmasının Tarihçesi",
-    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (1)\n\n\n\n\nKayıtlı olan literatüre göre yönetim için bilimsel yaklaşım presipleri 1900’lü yılların başlarında Frederick Taylor tarafından ortaya konulmuştur.\nGünümüz yöneylem araştırmasında kullanılan bazı model ve tekniklerin kullanılması çok eskiye dayansa da, yöneylem araştırması adı verilen ilk faaliyetin II. Dünya Savaşı sırasında gerçekleştirildiği kabul edilmektedir."
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (1)\n\n\n\nKayıtlı olan literatüre göre yönetim için bilimsel yaklaşım presipleri 1900’lü yılların başlarında Frederick Taylor tarafından ortaya konulmuştur.\nGünümüz yöneylem araştırmasında kullanılan bazı model ve tekniklerin kullanılması çok eskiye dayansa da, yöneylem araştırması adı verilen ilk faaliyetin II. Dünya Savaşı sırasında gerçekleştirildiği kabul edilmektedir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
     "title": "Hafta 02",
     "section": "Yöneylem Araştırmasının Tarihçesi",
-    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (2)\n\n\n\n\nİkinci Dünya Savaşı sırasında İngiltere askeri yönetimi, düşmanlarının hava akınları karşısında en iyi savunma şeklini belirlemek amacıyla farklı disiplinlerden bilim adamlarıyla bir ekip çalışması başlatmış ve böylece en iyi savunma şeklini bulmuştur.\nBu çalışma için bir araya gelen bilim adamlarından yeni tip bombaların etkinliklerinin belirlenmesi ve radarların etkili biçimde kullanımlarının sağlanması problemlerini çözmeleri istenmiştir.\nÇözüm sonuçlarının uygulamada çok başarılı olması, savunma sisteminin diğer kesimlerinde; radar denetim politikaları, uçaksavar yangın kontrolü, konvoy büyüklüğü, düşman denizaltılarının yerlerinin saptanması gibi çeşitli askeri problemlerin çözümünde benzer ekiplerin oluşturulması sağlanmıştır."
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (2)\n\n\n\nİkinci Dünya Savaşı sırasında İngiltere askeri yönetimi, düşmanlarının hava akınları karşısında en iyi savunma şeklini belirlemek amacıyla farklı disiplinlerden bilim adamlarıyla bir ekip çalışması başlatmış ve böylece en iyi savunma şeklini bulmuştur.\nBu çalışma için bir araya gelen bilim adamlarından yeni tip bombaların etkinliklerinin belirlenmesi ve radarların etkili biçimde kullanımlarının sağlanması problemlerini çözmeleri istenmiştir.\nÇözüm sonuçlarının uygulamada çok başarılı olması, savunma sisteminin diğer kesimlerinde; radar denetim politikaları, uçaksavar yangın kontrolü, konvoy büyüklüğü, düşman denizaltılarının yerlerinin saptanması gibi çeşitli askeri problemlerin çözümünde benzer ekiplerin oluşturulması sağlanmıştır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
     "title": "Hafta 02",
     "section": "Yöneylem Araştırmasının Tarihçesi",
-    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (3)\n\n\n\n\nİngiltere’de alınan başarılı sonuçlar müttefiklerin de dikkatini çekmiş, bu ülkeler de askeri problemlerini farklı disiplinlerden bilim adamlarıyla oluşturdukları ekipleriyle çözmeye girişmişlerdir\nYöneylem araştırmasıyla İngiltere’den çok sonra tanışmış olmakla beraber, ABD’nin bu konudaki yoğun çabaları yöneylem araştırmasında önemli ilerlemeler kaydedilmesini sağlamıştır."
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (3)\n\n\n\nİngiltere’de alınan başarılı sonuçlar müttefiklerin de dikkatini çekmiş, bu ülkeler de askeri problemlerini farklı disiplinlerden bilim adamlarıyla oluşturdukları ekipleriyle çözmeye girişmişlerdir\nYöneylem araştırmasıyla İngiltere’den çok sonra tanışmış olmakla beraber, ABD’nin bu konudaki yoğun çabaları yöneylem araştırmasında önemli ilerlemeler kaydedilmesini sağlamıştır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
     "title": "Hafta 02",
     "section": "Yöneylem Araştırmasının Tarihçesi",
-    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (4)\n\n\n\n\nABD hava kuvvetlerinin kurduğu ekibin üyelerinden birisi olan Dantzig, büyük organizasyonların gerçekleştirdikleri faaliyetlerin büyük bir bölümünün dağıtım problemi olarak ele alınabileceğini düşünmüştür.\nOna göre en iyi plan-programa bir amaç fonksiyonunun en küçüklenmesi (minimizasyonu) ile ulaşılabilecektir.\nDantzig, ayrıca doğrusal programlama problemlerinin klasik çözüm tekniği olan simpleks yöntemini önermiştir"
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (4)\n\n\n\nABD hava kuvvetlerinin kurduğu ekibin üyelerinden birisi olan Dantzig, büyük organizasyonların gerçekleştirdikleri faaliyetlerin büyük bir bölümünün dağıtım problemi olarak ele alınabileceğini düşünmüştür.\nOna göre en iyi plan-programa bir amaç fonksiyonunun en küçüklenmesi (minimizasyonu) ile ulaşılabilecektir.\nDantzig, ayrıca doğrusal programlama problemlerinin klasik çözüm tekniği olan simpleks yöntemini önermiştir"
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
     "title": "Hafta 02",
     "section": "Yöneylem Araştırmasının Tarihçesi",
-    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (5)\n\n\n\n\nSavaş sırasında, askeri problemlerin çözümü için oluşturulan ekiplerde aktif biçimde çalışan bilim adamları, savaş sonrasında dikkatlerini benzer yaklaşımın sivil yaşam problemlerine uygulanabilirliği üzerinde yoğunlaştırmışlardır:\n\nÜniversitelerine dönüp mevcut teknikler için sağlam temel oluşturma konusunda çalışanlar\nYeni teknikler geliştirme çabasına girenler\nÖzel ekonominin değişik kesimlerindeki çalışmalarına dönerek buralarda karşılaşılan problemleri benzer yaklaşımla çözmeye çalışanlar\n\nBütün bu çalışmalar bilimsel bir uğraşı alanının yani Yöneylem Araştırması nın doğuşuna yol açmıştır"
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (5)\n\n\n\nSavaş sırasında, askeri problemlerin çözümü için oluşturulan ekiplerde aktif biçimde çalışan bilim adamları, savaş sonrasında dikkatlerini benzer yaklaşımın sivil yaşam problemlerine uygulanabilirliği üzerinde yoğunlaştırmışlardır:\n\nÜniversitelerine dönüp mevcut teknikler için sağlam temel oluşturma konusunda çalışanlar\nYeni teknikler geliştirme çabasına girenler\nÖzel ekonominin değişik kesimlerindeki çalışmalarına dönerek buralarda karşılaşılan problemleri benzer yaklaşımla çözmeye çalışanlar\n\nBütün bu çalışmalar bilimsel bir uğraşı alanının yani Yöneylem Araştırması nın doğuşuna yol açmıştır"
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının uygulanması",
-    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\n\n\nYöneylem araştırmasının uygulanması (1)\n\n\n\n\nYöneylem araştırmasını ilk uygulayan sivil kuruluşlar kar amaçlı büyük endüstriyel kuruluşlar olmuştur.\nKüçük boyutlu kuruluşlar, yöneylem araştırmasının yalnızca büyük işletmeler için değil, kendileri için de yararlı olduğunun farkına biraz geç varmışlardır\nKüçük şirketler ancak, araştırmacıların birbirlerinden farklı gibi görünmelerine karşın pek çok problemin stok, dağıtım, sıralama, kuyruk, oyun gibi belirli bir başlık altında incelenebileceklerini farketmeleri ve bunlar için standart çözüm teknikleri geliştirmelerinden çok sonra konuya ilgi göstermişlerdir."
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (1)\n\n\n\nYöneylem araştırmasını ilk uygulayan sivil kuruluşlar kar amaçlı büyük endüstriyel kuruluşlar olmuştur.\nKüçük boyutlu kuruluşlar, yöneylem araştırmasının yalnızca büyük işletmeler için değil, kendileri için de yararlı olduğunun farkına biraz geç varmışlardır\nKüçük şirketler ancak, araştırmacıların birbirlerinden farklı gibi görünmelerine karşın pek çok problemin stok, dağıtım, sıralama, kuyruk, oyun gibi belirli bir başlık altında incelenebileceklerini farketmeleri ve bunlar için standart çözüm teknikleri geliştirmelerinden çok sonra konuya ilgi göstermişlerdir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının uygulanması",
-    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\n\n\nYöneylem araştırmasının uygulanması (2)\n\n\n\n\nBirkaç uygulama dışında yöneylem araştırmasının hizmet ağırlıklı endüstrilerde ve kamu kesiminde kullanılması 1960’lı yılların ortalarında gerçekleşmiştir.\nBugün, banka, kütüphane, hastane, otel, okul gibi hizmet ağırlıklı pek çok kuruluş hizmet verme etkinliğini artırmada yöneylem araştırmasından büyük yarar sağlamaktadır.\nDevlet kuruluşları da plan, program ve politika belirleme çalışmalarında yöneylem araştırmasını yaygın bir biçimde kullanmaktadırlar.\nYöneylem araştırmasının çok geniş bir uygulama alanı bulması ve çok hızlı bir gelişme göstermesindeki en önemli faktör bilgisayar teknolojisindeki gelişme olmuştur."
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (2)\n\n\n\nBirkaç uygulama dışında yöneylem araştırmasının hizmet ağırlıklı endüstrilerde ve kamu kesiminde kullanılması 1960’lı yılların ortalarında gerçekleşmiştir.\nBugün, banka, kütüphane, hastane, otel, okul gibi hizmet ağırlıklı pek çok kuruluş hizmet verme etkinliğini artırmada yöneylem araştırmasından büyük yarar sağlamaktadır.\nDevlet kuruluşları da plan, program ve politika belirleme çalışmalarında yöneylem araştırmasını yaygın bir biçimde kullanmaktadırlar.\nYöneylem araştırmasının çok geniş bir uygulama alanı bulması ve çok hızlı bir gelişme göstermesindeki en önemli faktör bilgisayar teknolojisindeki gelişme olmuştur."
   },
   {
     "objectID": "IST215/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
     "href": "IST215/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
     "title": "Hafta 02",
     "section": "İlk yöneylem araştırması kuruluşu",
-    "text": "İlk yöneylem araştırması kuruluşu\n\n\n\n\n\n\nİlk yöneylem araştırması kuruluşu\n\n\n\n\nYöneylem araştırması alanında çalışan bilimadamlarının ihtiyaçlarını karşılamak amacıyla kurulan ilk yöneylem araştırması kuruluşu, 1952 yılında ABD’de kurulan ORSA (The Operational Research Society of America) olmuştur.\nTürkiye’de yöneylem araştırması çalışmalarının batıdan çok sonra başladığı bilinmektedir.\nÜlkemizde de ilk yöneylem araştırması çalışmaları batıda olduğu gibi savunma kesiminde başlamıştır.\nSavunma kesimi dışında ilk yöneylem araştırması ekibi 1965 yılında Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK) bünyesinde kurulmuştur."
+    "text": "İlk yöneylem araştırması kuruluşu\n\n\n\n\nİlk yöneylem araştırması kuruluşu\n\n\n\nYöneylem araştırması alanında çalışan bilimadamlarının ihtiyaçlarını karşılamak amacıyla kurulan ilk yöneylem araştırması kuruluşu, 1952 yılında ABD’de kurulan ORSA (The Operational Research Society of America) olmuştur.\nTürkiye’de yöneylem araştırması çalışmalarının batıdan çok sonra başladığı bilinmektedir.\nÜlkemizde de ilk yöneylem araştırması çalışmaları batıda olduğu gibi savunma kesiminde başlamıştır.\nSavunma kesimi dışında ilk yöneylem araştırması ekibi 1965 yılında Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK) bünyesinde kurulmuştur."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının tanımı",
-    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\n\n\nYöneylem araştırmasının tanımı (1)\n\n\n\n\nYöneylem araştırması, sistemlerin performansını optimize etmek için teknikler kullanan bir bilim dalıdır.\nYöneylem araştırması, bir sistemde ortaya çıkan problemlere, sistemin denetlenebilir elemanları cinsinden bilimsel yöntem, teknik ve araçların uygulanmasıyla en iyi çözümün bulunmasıdır.\nYöneylem araştırması, insan, makina, para ve malzemeden oluşan endüstriyel, ticari, resmive askeri sistemlerde yönetimlerde karşılaşılan problemlere bilimsel yaklaşımdır."
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (1)\n\n\n\nYöneylem araştırması, sistemlerin performansını optimize etmek için teknikler kullanan bir bilim dalıdır.\nYöneylem araştırması, bir sistemde ortaya çıkan problemlere, sistemin denetlenebilir elemanları cinsinden bilimsel yöntem, teknik ve araçların uygulanmasıyla en iyi çözümün bulunmasıdır.\nYöneylem araştırması, insan, makina, para ve malzemeden oluşan endüstriyel, ticari, resmive askeri sistemlerde yönetimlerde karşılaşılan problemlere bilimsel yaklaşımdır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının tanımı",
-    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\n\n\nYöneylem araştırmasının tanımı (2)\n\n\n\n\nAmacı, yönetime politika ve faaliyetlerini bilimsel olarak belirlemede yardımcı olmaktır.\nYöneylem araştırması, mevcut imkanlardan en büyük faydayı sağlamak için girişilen bilimsel yaklaşmalar ve teknikler cümlesidir.\nYöneylem araştırmasının ana konusu, herhangi bir sistemin karmaşık operasyonlarını anlamak ve performansını iyileştirmek için bilimsel karar verme yöntemleridir."
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (2)\n\n\n\nAmacı, yönetime politika ve faaliyetlerini bilimsel olarak belirlemede yardımcı olmaktır.\nYöneylem araştırması, mevcut imkanlardan en büyük faydayı sağlamak için girişilen bilimsel yaklaşmalar ve teknikler cümlesidir.\nYöneylem araştırmasının ana konusu, herhangi bir sistemin karmaşık operasyonlarını anlamak ve performansını iyileştirmek için bilimsel karar verme yöntemleridir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının temel özellikleri",
-    "text": "Yöneylem araştırmasının temel özellikleri\n\n\n\n\n\n\nYöneylem araştırmasının temel özellikleri\n\n\n\n1. Sistem yaklaşımını kullanması: Yöneylem araştırması problemi çözerken, o problemin ait olduğu organizasyonun bütün unsurlarını, çevresini ve aralarındaki etkileşimi göz önünde bulundurur.\n2. Disiplinlerarası bir yaklaşım olması: Problemin modellenmesinde ve çözümünde farklı bakış açılarından faydalanabilmek için problemlerin disiplinlerarası bir ekip tarafından incelenmesi gerekir.\n3. Bilimsel yöntemler kullanması: Yöneylem araştırması problemi tanımlar, modeller, çözer, sonuçları test eder ve uygular."
+    "text": "Yöneylem araştırmasının temel özellikleri\n\n\n\n\nYöneylem araştırmasının temel özellikleri\n\n\n1. Sistem yaklaşımını kullanması: Yöneylem araştırması problemi çözerken, o problemin ait olduğu organizasyonun bütün unsurlarını, çevresini ve aralarındaki etkileşimi göz önünde bulundurur.\n2. Disiplinlerarası bir yaklaşım olması: Problemin modellenmesinde ve çözümünde farklı bakış açılarından faydalanabilmek için problemlerin disiplinlerarası bir ekip tarafından incelenmesi gerekir.\n3. Bilimsel yöntemler kullanması: Yöneylem araştırması problemi tanımlar, modeller, çözer, sonuçları test eder ve uygular."
   },
   {
     "objectID": "IST215/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
     "href": "IST215/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
     "title": "Hafta 02",
     "section": "Yöneylem araştırmasının metodolojisi (1)",
-    "text": "Yöneylem araştırmasının metodolojisi (1)\n\n\n\n\n\n\nİyi bir YA uygulamasının altı basamağı\n\n\n\n1) Problemin Tanımlanması\n2) Sistemin Gözlenmesi\n3) Problemin Matematiksel Modelinin Geliştirilmesi\n4) Modelin Çözülmesi\n5) Modelin Geçerliliğinin Gösterilmesi\n6) Çözümün Uygulanması ve Yorumlanması"
+    "text": "Yöneylem araştırmasının metodolojisi (1)\n\n\n\n\nİyi bir YA uygulamasının altı basamağı\n\n\n1) Problemin Tanımlanması\n2) Sistemin Gözlenmesi\n3) Problemin Matematiksel Modelinin Geliştirilmesi\n4) Modelin Çözülmesi\n5) Modelin Geçerliliğinin Gösterilmesi\n6) Çözümün Uygulanması ve Yorumlanması"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-tanımlanması",
     "href": "IST215/Hafta02/index.html#problemin-tanımlanması",
     "title": "Hafta 02",
     "section": "Problemin Tanımlanması",
-    "text": "Problemin Tanımlanması\n\n\n\n\n\n\nProblemin Tanımlanması (1)\n\n\n\n\nAmaçlar nelerdir?\nProblem çok dar kapsamlı mı ele alındı?\nProblem çok geniş kapsamlı mı ele alındı?"
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (1)\n\n\n\nAmaçlar nelerdir?\nProblem çok dar kapsamlı mı ele alındı?\nProblem çok geniş kapsamlı mı ele alındı?"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-tanımlanması-1",
     "href": "IST215/Hafta02/index.html#problemin-tanımlanması-1",
     "title": "Hafta 02",
     "section": "Problemin Tanımlanması",
-    "text": "Problemin Tanımlanması\n\n\n\n\n\n\nProblemin Tanımlanması (2)\n\n\n\n\nMümkün seçenekler arasından bir faaliyet veya faaliyetler dizisinin benimsenmesine karar denir.\nAlternatif stratejiler arasından en uygun olanını seçme konusunda karar verme yetkisine sahip birey ya da topluluğa verilen genel isme karar verici denir.\nKarar vericinin ulaşmak istediği bir amacının olması, bu amaca ulaşmada izlenebilecek alternatif stratejilerin bulunması ve alternatifler içinden hangisinin amacı gerçekleştirebileceği konusunda kuşku içinde bulunulması gerekmektedir.\nAncak bu koşullar sağlandığında bir problem vardır denir."
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (2)\n\n\n\nMümkün seçenekler arasından bir faaliyet veya faaliyetler dizisinin benimsenmesine karar denir.\nAlternatif stratejiler arasından en uygun olanını seçme konusunda karar verme yetkisine sahip birey ya da topluluğa verilen genel isme karar verici denir.\nKarar vericinin ulaşmak istediği bir amacının olması, bu amaca ulaşmada izlenebilecek alternatif stratejilerin bulunması ve alternatifler içinden hangisinin amacı gerçekleştirebileceği konusunda kuşku içinde bulunulması gerekmektedir.\nAncak bu koşullar sağlandığında bir problem vardır denir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#sistemin-gözlenmesi",
     "href": "IST215/Hafta02/index.html#sistemin-gözlenmesi",
     "title": "Hafta 02",
     "section": "Sistemin Gözlenmesi",
-    "text": "Sistemin Gözlenmesi\n\n\n\n\n\n\nSistemin Gözlenmesi (1)\n\n\n\n\nHangi veriler toplanmalı?\nVeriler nasıl toplanmalı?\nSistemin farklı parçaları birbirleriyle nasıl etkileşmektedir?"
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (1)\n\n\n\nHangi veriler toplanmalı?\nVeriler nasıl toplanmalı?\nSistemin farklı parçaları birbirleriyle nasıl etkileşmektedir?"
   },
   {
     "objectID": "IST215/Hafta02/index.html#sistemin-gözlenmesi-1",
     "href": "IST215/Hafta02/index.html#sistemin-gözlenmesi-1",
     "title": "Hafta 02",
     "section": "Sistemin Gözlenmesi",
-    "text": "Sistemin Gözlenmesi\n\n\n\n\n\n\nSistemin Gözlenmesi (2)\n\n\n\n\nSistem gözlemlenir ve probleme etki eden parametreler tahmin edilmeye çalışılır.\nBu amaçla veri derlenmesi, bu adımın çok önemli bir kısmını oluşturur.\nTahmin değerleri sabit sayılar olarak işleme tabi tutulurlar ve matematiksel modelin geliştirilmesinde kullanılırlar.\nProblem elemanlarının duruma en uygun biçimde belirlenebilmesi için sistem yaklaşımı kullanılır."
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (2)\n\n\n\nSistem gözlemlenir ve probleme etki eden parametreler tahmin edilmeye çalışılır.\nBu amaçla veri derlenmesi, bu adımın çok önemli bir kısmını oluşturur.\nTahmin değerleri sabit sayılar olarak işleme tabi tutulurlar ve matematiksel modelin geliştirilmesinde kullanılırlar.\nProblem elemanlarının duruma en uygun biçimde belirlenebilmesi için sistem yaklaşımı kullanılır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#sistem-nedir",
     "href": "IST215/Hafta02/index.html#sistem-nedir",
     "title": "Hafta 02",
     "section": "Sistem Nedir?",
-    "text": "Sistem Nedir?\n\n\n\n\n\n\nSistem Nedir?\n\n\n\n\nBir sınır içerisinde, birbirleriyle etkileşim içinde bulunan ve ortak bir amaca yönelmiş olan öğeler topluluğuna sistem denir.\nSistem, girdileri çıktılara dönüştüren birbirleriyle ilişkili faaliyetlerden ve öğelerden (elemanlardan) oluşmaktadır.\nSistemin çok sayıda girdisi ve çıktısı olabilir.\n\n\n\n\n\n\n\n\nA\n\n\n\nGirdiler\n\nGirdiler\n\n\n\nİşlemler\n\nİşlemler\n\n\n\nGirdiler-&gt;İşlemler\n\n\n\n\n\nÇıktılar\n\nÇıktılar\n\n\n\nİşlemler-&gt;Çıktılar"
+    "text": "Sistem Nedir?\n\n\n\n\nSistem Nedir?\n\n\n\nBir sınır içerisinde, birbirleriyle etkileşim içinde bulunan ve ortak bir amaca yönelmiş olan öğeler topluluğuna sistem denir.\nSistem, girdileri çıktılara dönüştüren birbirleriyle ilişkili faaliyetlerden ve öğelerden (elemanlardan) oluşmaktadır.\nSistemin çok sayıda girdisi ve çıktısı olabilir.\n\n\n\n\n\n\n\n\nA\n\n\n\nGirdiler\n\nGirdiler\n\n\n\nİşlemler\n\nİşlemler\n\n\n\nGirdiler-&gt;İşlemler\n\n\n\n\n\nÇıktılar\n\nÇıktılar\n\n\n\nİşlemler-&gt;Çıktılar"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (1)\n\n\n\n\nHangi tür model kullanılmalı?\nModel, problemi tam olarak ifade ediyor mu?\nModel çok mu karmaşık?"
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (1)\n\n\n\nHangi tür model kullanılmalı?\nModel, problemi tam olarak ifade ediyor mu?\nModel çok mu karmaşık?"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (2)\n\n\n\n\nProblemin kolayca çözülebilecek bir yapıya oturtulması gerekmektedir.\nModel nedir?\nBir sistemin değişen koşullar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında varsayımlarda bulunmak amacıyla elemanları arasındaki bağlantıları kelimeler veya matematiksek terimlerle belirleyen ifadeler topluluğuna model denir."
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (2)\n\n\n\nProblemin kolayca çözülebilecek bir yapıya oturtulması gerekmektedir.\nModel nedir?\nBir sistemin değişen koşullar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında varsayımlarda bulunmak amacıyla elemanları arasındaki bağlantıları kelimeler veya matematiksek terimlerle belirleyen ifadeler topluluğuna model denir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nProblemin Matematiksel Model Şeması\n\n\n\n\n\n\n\n\n\n\n\n\n\nmygraph\n\n\n\nSistem\n\nSistem\n\n\n\nGerçek Sistem Üzerinde Çalışmak\n\nGerçek Sistem Üzerinde Çalışmak\n\n\n\nSistem-&gt;Gerçek Sistem Üzerinde Çalışmak\n\n\n\n\n\nSistem Modeli Üzerinde Çalışmak\n\nSistem Modeli Üzerinde Çalışmak\n\n\n\nSistem-&gt;Sistem Modeli Üzerinde Çalışmak\n\n\n\n\n\nFiziksel Modeller Üzerinde Çalışmak\n\nFiziksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Fiziksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak\n\nMatematiksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Matematiksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nAnalitik Model Üzerinde Çalışmak\n\nAnalitik Model Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Analitik Model Üzerinde Çalışmak\n\n\n\n\n\nSimülasyon Modeli Üzerinde Çalışmak\n\nSimülasyon Modeli Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Simülasyon Modeli Üzerinde Çalışmak\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Problemin Matematiksel Model Şeması"
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Model Şeması\n\n\n\n\n\n\n\n\n\n\n\n\nmygraph\n\n\n\nSistem\n\nSistem\n\n\n\nGerçek Sistem Üzerinde Çalışmak\n\nGerçek Sistem Üzerinde Çalışmak\n\n\n\nSistem-&gt;Gerçek Sistem Üzerinde Çalışmak\n\n\n\n\n\nSistem Modeli Üzerinde Çalışmak\n\nSistem Modeli Üzerinde Çalışmak\n\n\n\nSistem-&gt;Sistem Modeli Üzerinde Çalışmak\n\n\n\n\n\nFiziksel Modeller Üzerinde Çalışmak\n\nFiziksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Fiziksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak\n\nMatematiksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Matematiksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nAnalitik Model Üzerinde Çalışmak\n\nAnalitik Model Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Analitik Model Üzerinde Çalışmak\n\n\n\n\n\nSimülasyon Modeli Üzerinde Çalışmak\n\nSimülasyon Modeli Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Simülasyon Modeli Üzerinde Çalışmak\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Problemin Matematiksel Model Şeması"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (3)\n\n\n\n\nHer modelin kuruluş amacı, belirli bir ekonomik sistemi yönetmekle görevli kişi veya kişilere (karar vericiye) mümkün karar seçeneklerini sunmak, bunların sonuçlarını belirlemek ve karşılaştırmalar yapmaktır.\nYöneylem araştırmasının karar vermeye en önemli katkısı matematiksel modellerdir.\nBir sistemin davranışlarıyla ilgili kuralların matematiksel olarak ifade edilmesiyle matematiksel modeller kurulur."
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (3)\n\n\n\nHer modelin kuruluş amacı, belirli bir ekonomik sistemi yönetmekle görevli kişi veya kişilere (karar vericiye) mümkün karar seçeneklerini sunmak, bunların sonuçlarını belirlemek ve karşılaştırmalar yapmaktır.\nYöneylem araştırmasının karar vermeye en önemli katkısı matematiksel modellerdir.\nBir sistemin davranışlarıyla ilgili kuralların matematiksel olarak ifade edilmesiyle matematiksel modeller kurulur."
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (4)\n\n\n\n\nEğer ele alınan sistem matematiksel modellerle çözülemeyecek kadar karmaşık bir yapıya sahipse sistemin bir simülasyon modeli kurulur.\nSimülasyon, bir sistemin tüm çalışma zamanı boyunca davranış şeklinin bilgisayar ortamında taklit edilmesidir."
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (4)\n\n\n\nEğer ele alınan sistem matematiksel modellerle çözülemeyecek kadar karmaşık bir yapıya sahipse sistemin bir simülasyon modeli kurulur.\nSimülasyon, bir sistemin tüm çalışma zamanı boyunca davranış şeklinin bilgisayar ortamında taklit edilmesidir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nMatematiksel modellerin elemanları (1)\n\n\n\n\nEkonomik sistemlerin matematiksel modellerinde kullanılan elemanlarını üç ana grupta toplamak mümkündür:\n\n\nAmaç fonksiyonu\nKarar değişkenleri\nKısıtlar"
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (1)\n\n\n\nEkonomik sistemlerin matematiksel modellerinde kullanılan elemanlarını üç ana grupta toplamak mümkündür:\n\n\nAmaç fonksiyonu\nKarar değişkenleri\nKısıtlar"
   },
   {
     "objectID": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
     "href": "IST215/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
     "title": "Hafta 02",
     "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
-    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\n\n\nMatematiksel modellerin elemanları (2)\n\n\n\n\nBir karar verme durumunda ilgilenilen sistem dikkatli bir şekilde gözlemlenir ve değerleri kontrol edilebilen ve sistemin performansını etkileyen parametreler belirlenir.\nBu parametreler yöneticilerin kontrolü altındadır ve karar değişkenleri olarak tanımlanırlar. Bir üretim sisteminde farklı ürünlerin üretilecek miktarları, bir yerden başka yere taşınacak ürün miktarı, işçi sayısı, makina sayısı vb\nKarar değişkenlerinin amaç üzerindeki etkilerinin analitik olarak gösterilmesiyle amaç fonksiyonu oluşturulur\nKısıtlar, sistemin içinde bulunduğu koşullardan kaynaklanmaktadır (talep kısıtları, kapasite kısıtları gibi)"
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (2)\n\n\n\nBir karar verme durumunda ilgilenilen sistem dikkatli bir şekilde gözlemlenir ve değerleri kontrol edilebilen ve sistemin performansını etkileyen parametreler belirlenir.\nBu parametreler yöneticilerin kontrolü altındadır ve karar değişkenleri olarak tanımlanırlar. Bir üretim sisteminde farklı ürünlerin üretilecek miktarları, bir yerden başka yere taşınacak ürün miktarı, işçi sayısı, makina sayısı vb\nKarar değişkenlerinin amaç üzerindeki etkilerinin analitik olarak gösterilmesiyle amaç fonksiyonu oluşturulur\nKısıtlar, sistemin içinde bulunduğu koşullardan kaynaklanmaktadır (talep kısıtları, kapasite kısıtları gibi)"
   },
   {
     "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi",
     "href": "IST215/Hafta02/index.html#modelin-çözülmesi",
     "title": "Hafta 02",
     "section": "Modelin Çözülmesi",
-    "text": "Modelin Çözülmesi\n\n\n\n\n\n\nModelin Çözülmesi (1)\n\n\n\nEn uygun çözüm tekniği nedir?\n\nAnalitik çözüm\nAlgoritmalar\nSimülasyon\nSezgisel"
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (1)\n\n\nEn uygun çözüm tekniği nedir?\n\nAnalitik çözüm\nAlgoritmalar\nSimülasyon\nSezgisel"
   },
   {
     "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi-1",
     "href": "IST215/Hafta02/index.html#modelin-çözülmesi-1",
     "title": "Hafta 02",
     "section": "Modelin Çözülmesi",
-    "text": "Modelin Çözülmesi\n\n\n\n\n\n\nModelin Çözülmesi (2)\n\n\n\n\nAnalitik çözüm: Problemin Lagrange çarpanları, diferansiyel ve integral hesapları ile koşullu en iyi çözümünün bulunmasıdır. Analitik çözümde sadece matematiğin değil iktisat teorisinin de temel kuralları kullanılır.\nAlgoritma çözümü: Analitik çözüm bazen çok zor veya imkansız olabilir. Belirli bir sıra içerisinde gerçekleştirilen matematiksel ve mantıksal işlemler kümesine algoritma denir. Yinelemeli olarak uygulanan algoritmalar her adımda optimuma daha yakın bir çözüme doğru ilerler."
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (2)\n\n\n\nAnalitik çözüm: Problemin Lagrange çarpanları, diferansiyel ve integral hesapları ile koşullu en iyi çözümünün bulunmasıdır. Analitik çözümde sadece matematiğin değil iktisat teorisinin de temel kuralları kullanılır.\nAlgoritma çözümü: Analitik çözüm bazen çok zor veya imkansız olabilir. Belirli bir sıra içerisinde gerçekleştirilen matematiksel ve mantıksal işlemler kümesine algoritma denir. Yinelemeli olarak uygulanan algoritmalar her adımda optimuma daha yakın bir çözüme doğru ilerler."
   },
   {
     "objectID": "IST215/Hafta02/index.html#modelin-çözülmesi-2",
     "href": "IST215/Hafta02/index.html#modelin-çözülmesi-2",
     "title": "Hafta 02",
     "section": "Modelin Çözülmesi",
-    "text": "Modelin Çözülmesi\n\n\n\n\n\n\nModelin Çözülmesi (3)\n\n\n\n\nSimülasyon çözümü: Problem, analitik olarak veya algoritmalarla çözülemiyorsa kullanılır. Sistemin davranış şekli bilgisayar ortamında taklit edilir.\nSezgisel çözüm: Problem optimum çözümü bulunamayacak kadar karmaşıksa, sezgisel yöntemler sezgiye veya bazı deneysel kayıtlara dayanan karar kuralları ile belirli sayıda adımdan sonra en iyi olmasa da tatminkar bir sonuç verirler."
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (3)\n\n\n\nSimülasyon çözümü: Problem, analitik olarak veya algoritmalarla çözülemiyorsa kullanılır. Sistemin davranış şekli bilgisayar ortamında taklit edilir.\nSezgisel çözüm: Problem optimum çözümü bulunamayacak kadar karmaşıksa, sezgisel yöntemler sezgiye veya bazı deneysel kayıtlara dayanan karar kuralları ile belirli sayıda adımdan sonra en iyi olmasa da tatminkar bir sonuç verirler."
   },
   {
     "objectID": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
     "href": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
     "title": "Hafta 02",
     "section": "Modelin Geçerliliğinin Gösterilmesi",
-    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (1)\n\n\n\n\nModelden elde edilen çıktılar sistemin kendisinden elde edilen çıktılarla uyuşuyor mu?\nModelden elde edilen çıktılar mantıklı mı?\nModel hatalı olabilir mi?"
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (1)\n\n\n\nModelden elde edilen çıktılar sistemin kendisinden elde edilen çıktılarla uyuşuyor mu?\nModelden elde edilen çıktılar mantıklı mı?\nModel hatalı olabilir mi?"
   },
   {
     "objectID": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
     "href": "IST215/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
     "title": "Hafta 02",
     "section": "Modelin Geçerliliğinin Gösterilmesi",
-    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (2)\n\n\n\n\nModelden elde edilen çözümü uygulamaya koymadan önce gerçeğe uygunluğunun kanıtlanması gerekir.\nEğer çözüm sistemin geçmiş dönem sonuçlarını aynen veya daha olumlu bir şekilde sağlıyorsa, modelin geçerli olduğu kabul edilir.\nEğer sistemin geçmiş dönem sonuçları yoksa simülasyondan yararlanılır.\nModel geçerliliğinin kanıtlanmasında bir başka yol olarak da sistemdeki deneyimli kişilerin görüşlerine başvurulabilir."
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (2)\n\n\n\nModelden elde edilen çözümü uygulamaya koymadan önce gerçeğe uygunluğunun kanıtlanması gerekir.\nEğer çözüm sistemin geçmiş dönem sonuçlarını aynen veya daha olumlu bir şekilde sağlıyorsa, modelin geçerli olduğu kabul edilir.\nEğer sistemin geçmiş dönem sonuçları yoksa simülasyondan yararlanılır.\nModel geçerliliğinin kanıtlanmasında bir başka yol olarak da sistemdeki deneyimli kişilerin görüşlerine başvurulabilir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
     "href": "IST215/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
     "title": "Hafta 02",
     "section": "Çözümün Uygulanması ve Yorumlanması",
-    "text": "Çözümün Uygulanması ve Yorumlanması\n\n\n\n\n\n\nÇözümün Uygulanması ve Yorumlanması (1)\n\n\n\n\nYöneylem araştırması ekibi, uygulama sürecini açıklamalı ve uygulamada yardımcı olmalıdır.\nUygulamanın nasıl yapılacağı bir rapor halinde yönetime sunulmalıdır."
+    "text": "Çözümün Uygulanması ve Yorumlanması\n\n\n\n\nÇözümün Uygulanması ve Yorumlanması (1)\n\n\n\nYöneylem araştırması ekibi, uygulama sürecini açıklamalı ve uygulamada yardımcı olmalıdır.\nUygulamanın nasıl yapılacağı bir rapor halinde yönetime sunulmalıdır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
     "href": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
     "title": "Hafta 02",
     "section": "Başarılı Yöneylem Araştırması Uygulamaları",
-    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nHewlett Packard\n\n\n1998\n\n\nÜretim hattında ara stok tasarımı\n\n\nKuyruk Modelleri\n\n\n$280 million\n\n\n\n\nTaco Bell\n\n\n1998\n\n\nİşgücü çizelgelemesi\n\n\nTamsayılı Programlama, Tahmin, Simülasyon\n\n\n$13 million\n\n\n\n\nProctor & Gamble\n\n\n1997\n\n\nÜretim ve dağıtım sisteminin yeniden tasarlanması\n\n\nUlaştırma Modelleri\n\n\n$200 million\n\n\n\n\nDelta Airlines\n\n\n1994\n\n\nUçakların rotalara atanması\n\n\nTamsayılı Programlama\n\n\n$100 million\n\n\n\n\nAT&T\n\n\n1993\n\n\nÇağrı merkezi tasarımı\n\n\nKuyruk Modelleri, Simülasyon\n\n\n$750 million\n\n\n\n\nYellow Freight Systems, Inc.\n\n\n1992\n\n\nNakliye şebekelerinin tasarımı\n\n\nŞebeke Modelleri, Tahmin, Simülasyon\n\n\n$11.3 million\n\n\n\n\nSan Francisco Police Dept.\n\n\n1989\n\n\nDevriye çizelgeleme\n\n\nDoğrusal Programlama\n\n\n$11 million"
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nHewlett Packard\n\n\n1998\n\n\nÜretim hattında ara stok tasarımı\n\n\nKuyruk Modelleri\n\n\n$280 million\n\n\n\n\nTaco Bell\n\n\n1998\n\n\nİşgücü çizelgelemesi\n\n\nTamsayılı Programlama, Tahmin, Simülasyon\n\n\n$13 million\n\n\n\n\nProctor & Gamble\n\n\n1997\n\n\nÜretim ve dağıtım sisteminin yeniden tasarlanması\n\n\nUlaştırma Modelleri\n\n\n$200 million\n\n\n\n\nDelta Airlines\n\n\n1994\n\n\nUçakların rotalara atanması\n\n\nTamsayılı Programlama\n\n\n$100 million\n\n\n\n\nAT&T\n\n\n1993\n\n\nÇağrı merkezi tasarımı\n\n\nKuyruk Modelleri, Simülasyon\n\n\n$750 million\n\n\n\n\nYellow Freight Systems, Inc.\n\n\n1992\n\n\nNakliye şebekelerinin tasarımı\n\n\nŞebeke Modelleri, Tahmin, Simülasyon\n\n\n$11.3 million\n\n\n\n\nSan Francisco Police Dept.\n\n\n1989\n\n\nDevriye çizelgeleme\n\n\nDoğrusal Programlama\n\n\n$11 million"
   },
   {
     "objectID": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
     "href": "IST215/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
     "title": "Hafta 02",
     "section": "Başarılı Yöneylem Araştırması Uygulamaları",
-    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nBethlehem Steel\n\n\n1989\n\n\nKülçe kalıbı tasarımı\n\n\nTamsayılı Programlama\n\n\n$8 million\n\n\n\n\nNorth American Van Lines\n\n\n1988\n\n\nYükleri şöförlere atamak\n\n\nŞebeke Modelleme\n\n\n$2.5 million\n\n\n\n\nCitgo Petroleum\n\n\n1987\n\n\nRafineri operasyonları & dağıtım\n\n\nDoğrusal Programlama, Tahmin\n\n\n$70 million\n\n\n\n\nUnited Airlines\n\n\n1986\n\n\nRezervasyon personelinin çizelgelenmesi\n\n\nDoğrusal Programlama, Kuyruk, Tahmin\n\n\n$6 million\n\n\n\n\nDairyman’s Creamery\n\n\n1985\n\n\nOptimum üretim seviyeleri\n\n\nDoğrusal Programlama\n\n\n$48,000\n\n\n\n\nPhillips Petroleum\n\n\n1983\n\n\nEkipman yenileme\n\n\nŞebeke Modelleme\n\n\n$90,000"
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nBethlehem Steel\n\n\n1989\n\n\nKülçe kalıbı tasarımı\n\n\nTamsayılı Programlama\n\n\n$8 million\n\n\n\n\nNorth American Van Lines\n\n\n1988\n\n\nYükleri şöförlere atamak\n\n\nŞebeke Modelleme\n\n\n$2.5 million\n\n\n\n\nCitgo Petroleum\n\n\n1987\n\n\nRafineri operasyonları & dağıtım\n\n\nDoğrusal Programlama, Tahmin\n\n\n$70 million\n\n\n\n\nUnited Airlines\n\n\n1986\n\n\nRezervasyon personelinin çizelgelenmesi\n\n\nDoğrusal Programlama, Kuyruk, Tahmin\n\n\n$6 million\n\n\n\n\nDairyman’s Creamery\n\n\n1985\n\n\nOptimum üretim seviyeleri\n\n\nDoğrusal Programlama\n\n\n$48,000\n\n\n\n\nPhillips Petroleum\n\n\n1983\n\n\nEkipman yenileme\n\n\nŞebeke Modelleme\n\n\n$90,000"
   },
   {
     "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri",
     "href": "IST215/Hafta02/index.html#matematiksel-model-türleri",
     "title": "Hafta 02",
     "section": "Matematiksel model türleri",
-    "text": "Matematiksel model türleri\n\n\n\n\n\n\nMatematiksel model türleri (1)\n\n\n\n\nYöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir."
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (1)\n\n\n\nYöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir."
   },
   {
     "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-1",
     "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-1",
     "title": "Hafta 02",
     "section": "Matematiksel model türleri",
-    "text": "Matematiksel model türleri\n\n\n\n\n\n\nMatematiksel model türleri (2)\n\n\n\n\nEğer karar değişkenleri üzerinde hiçbir sınırlama yoksa kısıtsız modeller ortaya çıkar, en azından bir sınırlama olması kısıtlı modelleri ortaya çıkarır.\nGerçek hayatta genellikle kısıtlı problemler karşımıza çıkar.\nEğer problem tek bir dönem için çözülecekse statik model, birden fazla dönem göz önüne alınarak çözülecekse dinamik model ortaya çıkar.\nEğer birden fazla amaç varsa çok amaçlı problemler ortaya çıkar."
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (2)\n\n\n\nEğer karar değişkenleri üzerinde hiçbir sınırlama yoksa kısıtsız modeller ortaya çıkar, en azından bir sınırlama olması kısıtlı modelleri ortaya çıkarır.\nGerçek hayatta genellikle kısıtlı problemler karşımıza çıkar.\nEğer problem tek bir dönem için çözülecekse statik model, birden fazla dönem göz önüne alınarak çözülecekse dinamik model ortaya çıkar.\nEğer birden fazla amaç varsa çok amaçlı problemler ortaya çıkar."
   },
   {
     "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-2",
     "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-2",
     "title": "Hafta 02",
     "section": "Matematiksel model türleri",
-    "text": "Matematiksel model türleri\n\n\n\n\n\n\nMatematiksel model türleri (3)\n\n\n\n\nEğer tüm karar değişkenleri pozitif reel (gerçel) değerler alıyorsa sürekli optimizasyon problemi söz konusudur\nTüm karar değişkenlerinin tamsayı değerler alması gerekiyorsa kesikli optimizasyon problemi ortaya çıkar\nBazı karar değişkenlerinin reel, bazılarının tamsayı değer alması durumunda ise karışık kesikli optimizasyon problemi ile karşılaşırız.\nEğer karar değişkenlerinin kombinatoryal seçenekleri söz konusuysa kombinatoryal optimizasyon problemleri ortaya çıkar."
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (3)\n\n\n\nEğer tüm karar değişkenleri pozitif reel (gerçel) değerler alıyorsa sürekli optimizasyon problemi söz konusudur\nTüm karar değişkenlerinin tamsayı değerler alması gerekiyorsa kesikli optimizasyon problemi ortaya çıkar\nBazı karar değişkenlerinin reel, bazılarının tamsayı değer alması durumunda ise karışık kesikli optimizasyon problemi ile karşılaşırız.\nEğer karar değişkenlerinin kombinatoryal seçenekleri söz konusuysa kombinatoryal optimizasyon problemleri ortaya çıkar."
   },
   {
     "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-3",
     "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-3",
     "title": "Hafta 02",
     "section": "Matematiksel model türleri",
-    "text": "Matematiksel model türleri\n\n\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (1)\n\n\n\n\nDinamik modeller için kullanılan yaklaşım dinamik programlamadır.\nEğer optimize edilecek birden fazla amaç varsa genellikle kullanılan yaklaşım hedef programlamadır.\nModeldeki tüm fonksiyonların doğrusal olması durumunda sürekli optimizasyon problemleri doğrusal programlama yöntemi ile çözülür. Sürekli optimizasyon modelinde en azından bir fonksiyonun doğrusal olmaması durumundaysa doğrusal olmayan programlama yöntemi kullanılır."
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (1)\n\n\n\nDinamik modeller için kullanılan yaklaşım dinamik programlamadır.\nEğer optimize edilecek birden fazla amaç varsa genellikle kullanılan yaklaşım hedef programlamadır.\nModeldeki tüm fonksiyonların doğrusal olması durumunda sürekli optimizasyon problemleri doğrusal programlama yöntemi ile çözülür. Sürekli optimizasyon modelinde en azından bir fonksiyonun doğrusal olmaması durumundaysa doğrusal olmayan programlama yöntemi kullanılır."
   },
   {
     "objectID": "IST215/Hafta02/index.html#matematiksel-model-türleri-4",
     "href": "IST215/Hafta02/index.html#matematiksel-model-türleri-4",
     "title": "Hafta 02",
     "section": "Matematiksel model türleri",
-    "text": "Matematiksel model türleri\n\n\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (2)\n\n\n\n\nEğer kesikli optimizasyon problemlerinde karar değişkenleri herhangi bir tamsayı değer alıyorsa tamsayılı programlama yöntemi kullanılır.\nKombinatoryal optimizasyon problemlerinin belirli bir boyuta kadar olanı tamsayılı programlama yöntemi ile çözülürken, orta ve büyük boyutlu problemlerin sezgisel yöntemlerle çözülmesi gerekmektedir."
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (2)\n\n\n\nEğer kesikli optimizasyon problemlerinde karar değişkenleri herhangi bir tamsayı değer alıyorsa tamsayılı programlama yöntemi kullanılır.\nKombinatoryal optimizasyon problemlerinin belirli bir boyuta kadar olanı tamsayılı programlama yöntemi ile çözülürken, orta ve büyük boyutlu problemlerin sezgisel yöntemlerle çözülmesi gerekmektedir."
   },
   {
     "objectID": "IST215/Hafta02/index.html",
@@ -567,8 +567,8 @@
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-1",
     "href": "IST115/Hafta02/index.html#doğrusal-programlama-1",
     "title": "Hafta 02",
-    "section": "",
-    "text": "Günümüzde, işletme, ekonomi ve muhasebe dallarını en yakından ilgilendiren konulardan bir olan doğrusal programlama (DP), aynı zamanda yöneylem araştırmasında da en önemli konulardan biridir.\nDoğrusal programlama, kaynakların optimal dağılımını elde etmeye, maliyetleri minimize, karı ise maksimize etmeye yarayan bir tekniktir.\nDoğrusal Programlama, optimizasyon problemlerinin çözümünde kullanılan bir yöntemdir."
+    "section": "Doğrusal Programlama (1)",
+    "text": "Doğrusal Programlama (1)\n\n\nGünümüzde, işletme, ekonomi ve muhasebe dallarını en yakından ilgilendiren konulardan bir olan doğrusal programlama (DP), aynı zamanda yöneylem araştırmasında da en önemli konulardan biridir.\nDoğrusal programlama, kaynakların optimal dağılımını elde etmeye, maliyetleri minimize, karı ise maksimize etmeye yarayan bir tekniktir.\nDoğrusal Programlama, optimizasyon problemlerinin çözümünde kullanılan bir yöntemdir."
   },
   {
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-2",
@@ -582,224 +582,224 @@
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-1",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (1)",
-    "text": "DP Modelinin Yapısal Unsurları (1)\n\n\n\n\n\n\n1- Karar Değişkenleri\n\n\n\n\nKarar vericinin denetimi altında olan niteliklere karar değişkenleri denir.\nBunlar modele ilişkin bilinmeyenler olup değerleri modelin çözümünden sonra belirlenir.\nBu değişkenler karar vericinin denetimi altında olduklarından bunlara kontrol değişkenleri de denir.\nÖrneğin \\(x_j\\): Belirli bir zaman döneminde \\(j\\)’inci ürünün üretim miktarı veya faaliyet düzeyini gösterebilir.\nBurada \\(j=1, 2, 3, \\dots , n\\): Ürün çeşidi, faaliyet sayısını belirtir."
+    "text": "DP Modelinin Yapısal Unsurları (1)\n\n\n\n\n1- Karar Değişkenleri\n\n\n\nKarar vericinin denetimi altında olan niteliklere karar değişkenleri denir.\nBunlar modele ilişkin bilinmeyenler olup değerleri modelin çözümünden sonra belirlenir.\nBu değişkenler karar vericinin denetimi altında olduklarından bunlara kontrol değişkenleri de denir.\nÖrneğin \\(x_j\\): Belirli bir zaman döneminde \\(j\\)’inci ürünün üretim miktarı veya faaliyet düzeyini gösterebilir.\nBurada \\(j=1, 2, 3, \\dots , n\\): Ürün çeşidi, faaliyet sayısını belirtir."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-2",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-2",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (2)",
-    "text": "DP Modelinin Yapısal Unsurları (2)\n\n\n\n\n\n\n2- Amaç Fonksiyonu\n\n\n\n\nKarar vericinin ulaşmak istediği hedef doğrusal bir denklem ile açıklanır.\nAmaç fonksiyonu olarak adlandırılan bu denklem, karar değişkenleri ile karar vericinin amacı arasındaki fonksiyonel ilişkiyi gösterir.\nBu denklemin genel formu\n\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\] şeklinde yazılabilir.\n\nDenklemde \\(x_j\\) ler karar değişkenlerini gösterir.\nDenklemde \\(c_j\\) ler ise kar ve ya maliyet katsayılarını (parametrelerini) gösterir.\n\\(x_j\\) ler bulunmak istenen değerler iken, \\(c_j\\) ler ise bilinen değerlerdir."
+    "text": "DP Modelinin Yapısal Unsurları (2)\n\n\n\n\n2- Amaç Fonksiyonu\n\n\n\nKarar vericinin ulaşmak istediği hedef doğrusal bir denklem ile açıklanır.\nAmaç fonksiyonu olarak adlandırılan bu denklem, karar değişkenleri ile karar vericinin amacı arasındaki fonksiyonel ilişkiyi gösterir.\nBu denklemin genel formu\n\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\] şeklinde yazılabilir.\n\nDenklemde \\(x_j\\) ler karar değişkenlerini gösterir.\nDenklemde \\(c_j\\) ler ise kar ve ya maliyet katsayılarını (parametrelerini) gösterir.\n\\(x_j\\) ler bulunmak istenen değerler iken, \\(c_j\\) ler ise bilinen değerlerdir."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-3",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-3",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (3)",
-    "text": "DP Modelinin Yapısal Unsurları (3)\n\n\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (1)\n\n\n\n\nKarar değişkenleri ve karar değişkenleriyle parametrelerin birbirleriyle olan ilişkilerinde sağlanması zorunlu olan ilişkilerin matematiksel olarak açıklanmasıyla elde edilen denklemlere kısıtlayıcı fonksiyonlar denir.\nKısıtlayıcıların değerleri kesin olarak önceden belirlenmiş olup sistemin tanımlanmasında kullanılır.\nKısıtlayıcı fonksiyonlar sadece kaynakların sınırlarını değil, gereksinim ve yönetim kararlarını ifade etmekte de kullanılır."
+    "text": "DP Modelinin Yapısal Unsurları (3)\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (1)\n\n\n\nKarar değişkenleri ve karar değişkenleriyle parametrelerin birbirleriyle olan ilişkilerinde sağlanması zorunlu olan ilişkilerin matematiksel olarak açıklanmasıyla elde edilen denklemlere kısıtlayıcı fonksiyonlar denir.\nKısıtlayıcıların değerleri kesin olarak önceden belirlenmiş olup sistemin tanımlanmasında kullanılır.\nKısıtlayıcı fonksiyonlar sadece kaynakların sınırlarını değil, gereksinim ve yönetim kararlarını ifade etmekte de kullanılır."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-4",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-4",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (4)",
-    "text": "DP Modelinin Yapısal Unsurları (4)\n\n\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (2)\n\n\n\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq ( = ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq ( = ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\nya da kısaca\n\\[\\sum_{j=1}^n a_{ij}x_j\\leq (=; ya da\\geq) b_i \\quad{} (i=1,2,3,\\dots,m)\\]\n\nBurada \\(a_{ij}\\) ler teknoloji katsayılarını, \\(b_i\\) ler ise elverişli kaynak miktarını gösterir. Hem \\(a_{ij}\\) hem de \\(b_i\\) ler bilinen değerlerdir.\nKısıtlar her zaman \\(\\leq\\) ile ifade edilmek zorunda değildir. \\(=\\) ya da \\(\\geq\\) ile ifade edilen kısıtlar da bulunur."
+    "text": "DP Modelinin Yapısal Unsurları (4)\n\n\n\n\n3- Kısıtlayıcı Fonksiyonlar (2)\n\n\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq ( = ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq ( = ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\nya da kısaca\n\\[\\sum_{j=1}^n a_{ij}x_j\\leq (=; ya da\\geq) b_i \\quad{} (i=1,2,3,\\dots,m)\\]\n\nBurada \\(a_{ij}\\) ler teknoloji katsayılarını, \\(b_i\\) ler ise elverişli kaynak miktarını gösterir. Hem \\(a_{ij}\\) hem de \\(b_i\\) ler bilinen değerlerdir.\nKısıtlar her zaman \\(\\leq\\) ile ifade edilmek zorunda değildir. \\(=\\) ya da \\(\\geq\\) ile ifade edilen kısıtlar da bulunur."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-5",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-5",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (5)",
-    "text": "DP Modelinin Yapısal Unsurları (5)\n\n\n\n\n\n\n4- Parametreler (1)\n\n\n\n\nAlabileceği değerlerde karar vericinin hiçbir etkisi olmayan niteliklere parametre veya kontrol dışı değişkenler denir.\nAmaç denkleminde yer alan \\(c_j\\) ler ve kısıt denklemlerinde yer alan \\(a_{ij}\\) ile \\(b_i\\) ler önceden belirlenmiş değerler olduğundan parametre veya kontrol dışı değişkenler dir.\nBelirli koşullarda belirli değerler alan parametreler problem için veri durumundadır."
+    "text": "DP Modelinin Yapısal Unsurları (5)\n\n\n\n\n4- Parametreler (1)\n\n\n\nAlabileceği değerlerde karar vericinin hiçbir etkisi olmayan niteliklere parametre veya kontrol dışı değişkenler denir.\nAmaç denkleminde yer alan \\(c_j\\) ler ve kısıt denklemlerinde yer alan \\(a_{ij}\\) ile \\(b_i\\) ler önceden belirlenmiş değerler olduğundan parametre veya kontrol dışı değişkenler dir.\nBelirli koşullarda belirli değerler alan parametreler problem için veri durumundadır."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-6",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-6",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (6)",
-    "text": "DP Modelinin Yapısal Unsurları (6)\n\n\n\n\n\n\n4- Parametreler (2)\n\n\n\n\n\\(c_j\\): \\(j\\)’inci karar değişkeninin amaç fonksiyonu katsayısı (parametre)-(birim kar, birim fiyat, birim maliyet vs.).\n\\(a_{ij}\\): \\(j\\)’inci üründen bir birim üretmek için \\(i\\)’inci kaynaktan tüketilen kaynak miktarı veya girdi katsayısı\n\\(b_i\\): \\(n\\) sayıdaki ürün için elde bulunan \\(i\\)’inci sınırlı kaynak miktarı.\n\\(i= 1, 2, 3, \\dots, m\\) : Üretim bölümlerinin veya üretim kaynaklarının sayısı."
+    "text": "DP Modelinin Yapısal Unsurları (6)\n\n\n\n\n4- Parametreler (2)\n\n\n\n\\(c_j\\): \\(j\\)’inci karar değişkeninin amaç fonksiyonu katsayısı (parametre)-(birim kar, birim fiyat, birim maliyet vs.).\n\\(a_{ij}\\): \\(j\\)’inci üründen bir birim üretmek için \\(i\\)’inci kaynaktan tüketilen kaynak miktarı veya girdi katsayısı\n\\(b_i\\): \\(n\\) sayıdaki ürün için elde bulunan \\(i\\)’inci sınırlı kaynak miktarı.\n\\(i= 1, 2, 3, \\dots, m\\) : Üretim bölümlerinin veya üretim kaynaklarının sayısı."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-7",
     "href": "IST115/Hafta02/index.html#dp-modelinin-yapısal-unsurları-7",
     "title": "Hafta 02",
     "section": "DP Modelinin Yapısal Unsurları (7)",
-    "text": "DP Modelinin Yapısal Unsurları (7)\n\n\n\n\n\n\n5- İşaret Kısıtlaması\n\n\n\n\nDoğrusal programlama probleminin formülizasyonunu tamamlamak için her bir karar değişkenlerinin \\(x_j\\) sadece negatif olmayan değerler mi aldığı yoksa hem pozitif hem de negatif değerler mi aldığı belirtilmelidir.\nEğer pozitif değer kısıtlaması kullanılıyorsa, bu durum doğrusal programlama probleminde \\(x_j \\geq 0\\) ifadesiyle, eğer hem pozitif hem negatif değerler alabiliyorsa bu durum doğrusal programlama probleminde \\(x_j^+,x_j^- \\geq 0\\) ile gösterilir."
+    "text": "DP Modelinin Yapısal Unsurları (7)\n\n\n\n\n5- İşaret Kısıtlaması\n\n\n\nDoğrusal programlama probleminin formülizasyonunu tamamlamak için her bir karar değişkenlerinin \\(x_j\\) sadece negatif olmayan değerler mi aldığı yoksa hem pozitif hem de negatif değerler mi aldığı belirtilmelidir.\nEğer pozitif değer kısıtlaması kullanılıyorsa, bu durum doğrusal programlama probleminde \\(x_j \\geq 0\\) ifadesiyle, eğer hem pozitif hem negatif değerler alabiliyorsa bu durum doğrusal programlama probleminde \\(x_j^+,x_j^- \\geq 0\\) ile gösterilir."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-bir-dp-modeli",
     "href": "IST115/Hafta02/index.html#örnek-bir-dp-modeli",
     "title": "Hafta 02",
     "section": "Örnek bir DP Modeli",
-    "text": "Örnek bir DP Modeli\n\n\n\n\n\n\nÖrnek bir DP Modeli\n\n\n\n\nTüm bu bilgiler doğrultusunda, karar değişkenleri, amaç fonksiyonu, kısıtları, parametreleri ve işaret kısıtlamasını içeren örnek bir DP modeli aşağıda verilmiştir.\n\n\nAmaç fonksiyonu ve karar değişkenleri:\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\]\n\n\nKısıtlayıcı fonksiyonlar ve parametreler:\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq (= ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq (= ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\n\n\nİşaret kısıtlaması:\n\\[x_1 \\geq 0, x_2 \\geq 0, \\dots, x_n \\geq 0\\]"
+    "text": "Örnek bir DP Modeli\n\n\n\n\nÖrnek bir DP Modeli\n\n\n\nTüm bu bilgiler doğrultusunda, karar değişkenleri, amaç fonksiyonu, kısıtları, parametreleri ve işaret kısıtlamasını içeren örnek bir DP modeli aşağıda verilmiştir.\n\n\nAmaç fonksiyonu ve karar değişkenleri:\n\\[Z_{enk/enb} = c_1x_1+c_2x_2+ \\dots + c_n x_n = \\sum_{j=1}^n c_jx_j\\]\n\n\nKısıtlayıcı fonksiyonlar ve parametreler:\n\\[\n\\begin{alignedat}{7}\na_{11}x_1 &+& a_{12}x_2 &+& \\cdots &+& a_{1n}x_n &\\;\\leq (= ya da \\geq)& b_{1},\\\\\na_{21}x_1 &+& a_{22}x_2 &+& \\cdots &+& a_{2n}x_n &\\;\\leq (= ya da \\geq)& b_{2},\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\na_{m1}x_1 &+& a_{m2}x_2 &+& \\cdots &+& a_{mn}x_n &\\;\\leq (= ya da \\geq)& b_{m}.\n\\end{alignedat}\n\\]\n\n\nİşaret kısıtlaması:\n\\[x_1 \\geq 0, x_2 \\geq 0, \\dots, x_n \\geq 0\\]"
   },
   {
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlama-modelinin-matris-gösterimi",
     "href": "IST115/Hafta02/index.html#doğrusal-programlama-modelinin-matris-gösterimi",
     "title": "Hafta 02",
     "section": "Doğrusal Programlama Modelinin Matris Gösterimi",
-    "text": "Doğrusal Programlama Modelinin Matris Gösterimi\n\n\n\n\n\n\nDoğrusal Programlama Modelinin Matris Gösterimi\n\n\n\nAmaç fonksiyonunun matrissel gösterimi:\n\\[Z_{enb/enk} = \\begin{bmatrix}\nC_1 & C_2 & \\dots & C_n\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} = \\mathbf{Cx}\\]\nKısıtlayıcı fonksiyonların matrissel gösterimi:\n\\[\\begin{bmatrix}\na_{11} & a_{12} & \\dots & a_{1n} \\\\\na_{21} & a_{22} & \\dots & a_{2n} \\\\\n\\vdots & \\vdots &       & \\vdots \\\\\na_{m1} & a_{m2} & \\dots & a_{mn} \\\\\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} (\\leq;=;\\geq) \\begin{bmatrix} b_{1} \\\\ b_{2} \\\\ \\vdots \\\\ b_{m} \\end{bmatrix} = \\mathbf{Ax}(\\leq;=;\\geq)\\mathbf{b}\\]"
+    "text": "Doğrusal Programlama Modelinin Matris Gösterimi\n\n\n\n\nDoğrusal Programlama Modelinin Matris Gösterimi\n\n\nAmaç fonksiyonunun matrissel gösterimi:\n\\[Z_{enb/enk} = \\begin{bmatrix}\nC_1 & C_2 & \\dots & C_n\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} = \\mathbf{Cx}\\]\nKısıtlayıcı fonksiyonların matrissel gösterimi:\n\\[\\begin{bmatrix}\na_{11} & a_{12} & \\dots & a_{1n} \\\\\na_{21} & a_{22} & \\dots & a_{2n} \\\\\n\\vdots & \\vdots &       & \\vdots \\\\\na_{m1} & a_{m2} & \\dots & a_{mn} \\\\\n\\end{bmatrix} \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ \\vdots \\\\ x_{n} \\end{bmatrix} (\\leq;=;\\geq) \\begin{bmatrix} b_{1} \\\\ b_{2} \\\\ \\vdots \\\\ b_{m} \\end{bmatrix} = \\mathbf{Ax}(\\leq;=;\\geq)\\mathbf{b}\\]"
   },
   {
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-1",
     "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-1",
     "title": "Hafta 02",
     "section": "Doğrusal Programlamanın Varsayımları (1)",
-    "text": "Doğrusal Programlamanın Varsayımları (1)\n\n\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n\n1.Doğrusallık (veya Oransallık) Varsayımı:\n\nModeldeki amaç fonksiyonları ve kısıtlayıcı fonksiyonların hepsi doğrusaldır.\nDoğrusallık varsayımı, amacın ve kısıtların bir doğru denklemi olarak ifade edilebilmesini sağlar.\nDoğrusallığın sağlanabilmesi için kısıtlayıcı ve amaç fonksiyonlarındaki değişkenlerin (\\(x_{j}\\)) derecesi yani üssü 1 olmalıdır. Üs birden başka bir değerse doğrusallık sağlanmaz.\nBu varsayım gerçekleşmediği takdirde Doğrusal Olmayan Programlama (DOP) söz konusudur."
+    "text": "Doğrusal Programlamanın Varsayımları (1)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n1.Doğrusallık (veya Oransallık) Varsayımı:\n\nModeldeki amaç fonksiyonları ve kısıtlayıcı fonksiyonların hepsi doğrusaldır.\nDoğrusallık varsayımı, amacın ve kısıtların bir doğru denklemi olarak ifade edilebilmesini sağlar.\nDoğrusallığın sağlanabilmesi için kısıtlayıcı ve amaç fonksiyonlarındaki değişkenlerin (\\(x_{j}\\)) derecesi yani üssü 1 olmalıdır. Üs birden başka bir değerse doğrusallık sağlanmaz.\nBu varsayım gerçekleşmediği takdirde Doğrusal Olmayan Programlama (DOP) söz konusudur."
   },
   {
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-2",
     "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-2",
     "title": "Hafta 02",
     "section": "Doğrusal Programlamanın Varsayımları (2)",
-    "text": "Doğrusal Programlamanın Varsayımları (2)\n\n\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n\n2.Toplanabilirlik Varsayımı\n\nDoğrusal programlamada her fonksiyon (amaç fonksiyonu ya da kısıtlayıcının sol tarafındaki fonksiyon) ilişkin olduğu faaliyetlerin bireysel katkısının toplamıdır.\nÖrneğin bir ürünün üretimi için 3 saat, bir başka ürünün üretimi için 5 saat gerekiyorsa, iki ürünün birden üretimi için 8 saat gerektiği varsayılır.\n\n3. Bölünebilirlik Varsayımı\n\nBu varsayım, her karar değişkenlerinin ondalıklı bir sayı alabileceği anlamına gelir.\nBu varsayım ortadan kalktığında tamsayılı programlama söz konusu olur."
+    "text": "Doğrusal Programlamanın Varsayımları (2)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n2.Toplanabilirlik Varsayımı\n\nDoğrusal programlamada her fonksiyon (amaç fonksiyonu ya da kısıtlayıcının sol tarafındaki fonksiyon) ilişkin olduğu faaliyetlerin bireysel katkısının toplamıdır.\nÖrneğin bir ürünün üretimi için 3 saat, bir başka ürünün üretimi için 5 saat gerekiyorsa, iki ürünün birden üretimi için 8 saat gerektiği varsayılır.\n\n3. Bölünebilirlik Varsayımı\n\nBu varsayım, her karar değişkenlerinin ondalıklı bir sayı alabileceği anlamına gelir.\nBu varsayım ortadan kalktığında tamsayılı programlama söz konusu olur."
   },
   {
     "objectID": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-3",
     "href": "IST115/Hafta02/index.html#doğrusal-programlamanın-varsayımları-3",
     "title": "Hafta 02",
     "section": "Doğrusal Programlamanın Varsayımları (3)",
-    "text": "Doğrusal Programlamanın Varsayımları (3)\n\n\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n\n4.Kesinlik Varsayımı:\n\nBu varsayım, tüm parametrelerin (amaç fonksiyonu katsayısı \\((c_j)\\), sağ taraf kısıtlayıcı değeri \\((b_i)\\) ve teknolojik katsayı \\((a_{ij})\\) ) kesin olarak bilindiğini ve ilgili dönemde değişmeyeceğini öngörür.\nEğer bu değerler tam olarak bilinmiyorsa, sonuç güvenilir olmayacaktır. Böyle bir durumda duyarlılık analizine başvurulabilir.\n\n5. Negatif Olmama Varsayımı\n\nKarar değişkenleri \\((x_j)\\) negatif değerler alamaz."
+    "text": "Doğrusal Programlamanın Varsayımları (3)\n\n\n\n\nDoğrusal Programlamanın Varsayımları\n\n\n4.Kesinlik Varsayımı:\n\nBu varsayım, tüm parametrelerin (amaç fonksiyonu katsayısı \\((c_j)\\), sağ taraf kısıtlayıcı değeri \\((b_i)\\) ve teknolojik katsayı \\((a_{ij})\\) ) kesin olarak bilindiğini ve ilgili dönemde değişmeyeceğini öngörür.\nEğer bu değerler tam olarak bilinmiyorsa, sonuç güvenilir olmayacaktır. Böyle bir durumda duyarlılık analizine başvurulabilir.\n\n5. Negatif Olmama Varsayımı\n\nKarar değişkenleri \\((x_j)\\) negatif değerler alamaz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#dpnin-uygulama-alanları",
     "href": "IST115/Hafta02/index.html#dpnin-uygulama-alanları",
     "title": "Hafta 02",
     "section": "DP’nin Uygulama Alanları",
-    "text": "DP’nin Uygulama Alanları\n\n\n\n\n\n\nDoğrusal Programlamanın Uygulama Alanları\n\n\n\n\nUlaştırma ve dağıtım kanallar\nBeslenme ve karıştırma problemleri\nÜretim planlaması\nYatırım planlaması\nGörev dağıtımı\nArazi kullanımı planlaması\nKuruluş yeri seçimi\nOyun teorisi\n\\(\\dots\\)"
+    "text": "DP’nin Uygulama Alanları\n\n\n\n\nDoğrusal Programlamanın Uygulama Alanları\n\n\n\nUlaştırma ve dağıtım kanallar\nBeslenme ve karıştırma problemleri\nÜretim planlaması\nYatırım planlaması\nGörev dağıtımı\nArazi kullanımı planlaması\nKuruluş yeri seçimi\nOyun teorisi\n\\(\\dots\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#dp-modeli-kurulurken-izlenecek-adımlar",
     "href": "IST115/Hafta02/index.html#dp-modeli-kurulurken-izlenecek-adımlar",
     "title": "Hafta 02",
     "section": "DP Modeli Kurulurken İzlenecek Adımlar",
-    "text": "DP Modeli Kurulurken İzlenecek Adımlar\n\n\n\n\n\n\nDoğrusal Programlama Modeli Kurulurken İzlenecek Adımlar\n\n\n\n\nKarar değişkenlerinin tanımlanması ve bunların sembolize edilmesi.\nAmacın belirlenerek amaç fonksiyonun karar değişkenlerinin doğrusal bir fonksiyonu olarak yazılması.\nTüm kısıtlamaların karar değişkenlerinin doğrusal bir fonksiyonları olarak eşitlik veya eşitsizlik olarak yazılması.\nNegatif olmama koşullarının yazılması."
+    "text": "DP Modeli Kurulurken İzlenecek Adımlar\n\n\n\n\nDoğrusal Programlama Modeli Kurulurken İzlenecek Adımlar\n\n\n\nKarar değişkenlerinin tanımlanması ve bunların sembolize edilmesi.\nAmacın belirlenerek amaç fonksiyonun karar değişkenlerinin doğrusal bir fonksiyonu olarak yazılması.\nTüm kısıtlamaların karar değişkenlerinin doğrusal bir fonksiyonları olarak eşitlik veya eşitsizlik olarak yazılması.\nNegatif olmama koşullarının yazılması."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---1-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---1-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 1 (1)",
-    "text": "Örnek DP Modeli - 1 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 1: Kimya Firması\n\n\n\n\nİnci kimya firması X ve Y gibi iki tip kimyasal madde üretmektedir.\n1 litre X ürününün maliyeti 160 TL, 1 litre Y ürününün maliyeti ise 240 TL dir.\nMüşteri talebine göre, firma, gelecek hafta için en az 6 litre X ve en az 2 litre Y ürünü üretmelidir.\nX ve Y kimyasal ürünlerinde kullanılan hammaddelerden birisinin sunumu azdır ve sadece 30 gr. sağlanabilmektedir.\nX ürününün bir litresinde bu hammaddeden 3 gr ve Y nin litresinde de 5 gr gerekli olmaktadır.\nİnci firması, toplam maliyetini minimize etmek için X ve Y ürünlerinden kaçar litre üretmesi gerektiği konusunda çok büyük bir kararsızlık içerisine girmiştir.\nBu soruyu yanıtlayacak modeli kurunuz."
+    "text": "Örnek DP Modeli - 1 (1)\n\n\n\n\nÖrnek DP Modeli - 1: Kimya Firması\n\n\n\nİnci kimya firması X ve Y gibi iki tip kimyasal madde üretmektedir.\n1 litre X ürününün maliyeti 160 TL, 1 litre Y ürününün maliyeti ise 240 TL dir.\nMüşteri talebine göre, firma, gelecek hafta için en az 6 litre X ve en az 2 litre Y ürünü üretmelidir.\nX ve Y kimyasal ürünlerinde kullanılan hammaddelerden birisinin sunumu azdır ve sadece 30 gr. sağlanabilmektedir.\nX ürününün bir litresinde bu hammaddeden 3 gr ve Y nin litresinde de 5 gr gerekli olmaktadır.\nİnci firması, toplam maliyetini minimize etmek için X ve Y ürünlerinden kaçar litre üretmesi gerektiği konusunda çok büyük bir kararsızlık içerisine girmiştir.\nBu soruyu yanıtlayacak modeli kurunuz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---1-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---1-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 1 (2)",
-    "text": "Örnek DP Modeli - 1 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Üretilecek X ürününün miktarı ( litre )\n\\(x_2\\) = Üretilecek Y ürününün miktarı ( litre )\n\n\n\nMinimize edilmek istenen toplam maliyet:\n\n\n\n\\(160 x_1 + 240 x_2\\) dir.\n\n\n\nİstenen gerekli minimum miktar:\n\n\n\n\\(x_1 \\geq 6\\) ve \\(x_2 \\geq 2\\) dir.\n\n\n\nHammadde kısıtlayıcısı:\n\n\n\n\\(3x_1 + 5x_2 \\leq 30\\) dur.\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nBöylece minimizasyon modeli şöyle olacaktır:\n\n\n\n\\(min \\quad{} z = 160 x_1 + 240 x_2\\)\n\\(x_1 \\geq 6\\)\n\\(x_2 \\geq 2\\)\n\\(3x_1 + 5x_2 \\leq 30\\)\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 1 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Üretilecek X ürününün miktarı ( litre )\n\\(x_2\\) = Üretilecek Y ürününün miktarı ( litre )\n\n\n\nMinimize edilmek istenen toplam maliyet:\n\n\n\n\\(160 x_1 + 240 x_2\\) dir.\n\n\n\nİstenen gerekli minimum miktar:\n\n\n\n\\(x_1 \\geq 6\\) ve \\(x_2 \\geq 2\\) dir.\n\n\n\nHammadde kısıtlayıcısı:\n\n\n\n\\(3x_1 + 5x_2 \\leq 30\\) dur.\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nBöylece minimizasyon modeli şöyle olacaktır:\n\n\n\n\\(min \\quad{} z = 160 x_1 + 240 x_2\\)\n\\(x_1 \\geq 6\\)\n\\(x_2 \\geq 2\\)\n\\(3x_1 + 5x_2 \\leq 30\\)\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---2-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---2-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 2 (1)",
-    "text": "Örnek DP Modeli - 2 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 2: Süt Şirketi\n\n\n\n\nMügesüt şirketi kapasite sorunu yüzünden günde 120.000 kg. dan daha çok süt işleyememektedir.\nYönetim, yağ veya işlenmiş süt için kullanılan sütün dengelenmesi için peynir fabrikasında en az 10.000 kg. lık günlük süt kullanmak istemektedir.\nBir kg. sütün yağ üretimi için kullanıldığında, kara katkısı, 4 TL., şişe sütü olarak kullanıldığında katkısı 8 TL. ve peynir üretimi için kullanıldığında ise katkısı 6 TL. dir.\nYağ bölümü günde 60.000 kg., süt şişeleme donanımı günde 40.000 kg., peynir donanımı ise günde 30.000 kg. süt işleyebilir.\nŞirket karını maksimize etmek istediğine göre problemi doğrusal programlama modeli olarak ifade ediniz."
+    "text": "Örnek DP Modeli - 2 (1)\n\n\n\n\nÖrnek DP Modeli - 2: Süt Şirketi\n\n\n\nMügesüt şirketi kapasite sorunu yüzünden günde 120.000 kg. dan daha çok süt işleyememektedir.\nYönetim, yağ veya işlenmiş süt için kullanılan sütün dengelenmesi için peynir fabrikasında en az 10.000 kg. lık günlük süt kullanmak istemektedir.\nBir kg. sütün yağ üretimi için kullanıldığında, kara katkısı, 4 TL., şişe sütü olarak kullanıldığında katkısı 8 TL. ve peynir üretimi için kullanıldığında ise katkısı 6 TL. dir.\nYağ bölümü günde 60.000 kg., süt şişeleme donanımı günde 40.000 kg., peynir donanımı ise günde 30.000 kg. süt işleyebilir.\nŞirket karını maksimize etmek istediğine göre problemi doğrusal programlama modeli olarak ifade ediniz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---2-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---2-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 2 (2)",
-    "text": "Örnek DP Modeli - 2 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yağ yapımında kullanılan süt miktarı ( kg )\n\\(x_2\\) = Şişelemede kullanılan süt miktarı ( kg )\n\\(x_3\\) = Peynir yapımında kullanılan süt miktarı ( kg )\n\n\n\nİşletmenin karını maksimize edecek amaç fonksiyonu:\n\n\n\n\\(maks \\quad{} z = 4 x_1 + 8 x_2 + 6 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\n\\(x_3 \\geq 10000\\)\n\n\n\n\n\\(x_1 \\leq 60000\\)\n\\(x_2 \\leq 40000\\)\n\\(x_3 \\leq 30000\\)\n\n\n\n\n\\(x_1 + x_2 + x_3 \\leq 120000\\)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 2 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yağ yapımında kullanılan süt miktarı ( kg )\n\\(x_2\\) = Şişelemede kullanılan süt miktarı ( kg )\n\\(x_3\\) = Peynir yapımında kullanılan süt miktarı ( kg )\n\n\n\nİşletmenin karını maksimize edecek amaç fonksiyonu:\n\n\n\n\\(maks \\quad{} z = 4 x_1 + 8 x_2 + 6 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(x_3 \\geq 10000\\)\n\n\n\n\n\\(x_1 \\leq 60000\\)\n\\(x_2 \\leq 40000\\)\n\\(x_3 \\leq 30000\\)\n\n\n\n\n\\(x_1 + x_2 + x_3 \\leq 120000\\)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 3 (1)",
-    "text": "Örnek DP Modeli - 3 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 3: Ulaştırma Problemi\n\n\n\n\nÜç ayrı fabrikada beyaz eşya üreten bir işletme satışlarını değişik bölgelerdeki üç depo aracılığıyla yapmaktadır.\nİşletme yönetiminin temel sorunu beyaz eşyanın fabrikalardan satış depolarına ulaştırılmasında karşılaştığı yüksek ulaştırma giderleridir.\nFabrikalardan depolara birim ulaştırma maliyetleri aşağıda verilmiştir.\n\n\n\n\nÜretim miktarları sırasıyla 150, 200 ve 400 adettir.\nDepoların aylık istemleri A için 220, B için 150, C için 380 adettir.\nDepoların gereksinimini tam olarak sağlamak isteyen işletme, tüm üretimini toplam ulaştırma maliyetini en küçük yapacak şekilde dağıtmak istemektedir.\nProblemin doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\n\n\nDepo\n\n\n\n\n\nFabrika\nA\nB\nC\n\n\n1\n30\n25\n15\n\n\n2\n16\n45\n29\n\n\n3\n25\n10\n16"
+    "text": "Örnek DP Modeli - 3 (1)\n\n\n\n\nÖrnek DP Modeli - 3: Ulaştırma Problemi\n\n\n\nÜç ayrı fabrikada beyaz eşya üreten bir işletme satışlarını değişik bölgelerdeki üç depo aracılığıyla yapmaktadır.\nİşletme yönetiminin temel sorunu beyaz eşyanın fabrikalardan satış depolarına ulaştırılmasında karşılaştığı yüksek ulaştırma giderleridir.\nFabrikalardan depolara birim ulaştırma maliyetleri aşağıda verilmiştir.\n\n\n\n\nÜretim miktarları sırasıyla 150, 200 ve 400 adettir.\nDepoların aylık istemleri A için 220, B için 150, C için 380 adettir.\nDepoların gereksinimini tam olarak sağlamak isteyen işletme, tüm üretimini toplam ulaştırma maliyetini en küçük yapacak şekilde dağıtmak istemektedir.\nProblemin doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\n\n\nDepo\n\n\n\n\n\nFabrika\nA\nB\nC\n\n\n1\n30\n25\n15\n\n\n2\n16\n45\n29\n\n\n3\n25\n10\n16"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 3 (2)",
-    "text": "Örnek DP Modeli - 3 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\nİlk olarak karar değişkenlerini, \\(i\\)’inci fabrikadan \\(j\\)’inci depoya taşınan beyaz eşya miktarı (adet olarak) olmak üzere \\(x_{ij}\\) \\((i = 1, 2, 3)\\) ve \\((j = A, B, C)\\) şeklinde tanımlayalım. Buna göre, karar değişkenleri aşağıdaki gibi olur.\n\n\n\n\\(x_{1A}\\) = \\(1\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1B}\\) = \\(1\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1C}\\) = \\(1\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2A}\\) = \\(2\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2B}\\) = \\(2\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2C}\\) = \\(2\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3A}\\) = \\(3\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3B}\\) = \\(3\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3C}\\) = \\(3\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nAmaç: İşletmenin aylık taşıma maliyetleri toplamını en küçükleyen fonksiyon\n\n\n\\[\\begin{gathered}\nmin \\quad{} z = 30 x_{1A} + 25 x_{1B} +15 x_{1C} \\\\\n+16 x_{2A} +45 x_{2B} +29 x_{2C}\\\\\n+25 x_{3A} +10 x_{3B} +16 x_{3C}\n\\end{gathered}\\]"
+    "text": "Örnek DP Modeli - 3 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\nİlk olarak karar değişkenlerini, \\(i\\)’inci fabrikadan \\(j\\)’inci depoya taşınan beyaz eşya miktarı (adet olarak) olmak üzere \\(x_{ij}\\) \\((i = 1, 2, 3)\\) ve \\((j = A, B, C)\\) şeklinde tanımlayalım. Buna göre, karar değişkenleri aşağıdaki gibi olur.\n\n\n\n\\(x_{1A}\\) = \\(1\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1B}\\) = \\(1\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{1C}\\) = \\(1\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2A}\\) = \\(2\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2B}\\) = \\(2\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{2C}\\) = \\(2\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3A}\\) = \\(3\\) nolu fabrikadan \\(A\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3B}\\) = \\(3\\) nolu fabrikadan \\(B\\) deposuna gönderilen beyaz eşya sayısı\n\\(x_{3C}\\) = \\(3\\) nolu fabrikadan \\(C\\) deposuna gönderilen beyaz eşya sayısı\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nAmaç: İşletmenin aylık taşıma maliyetleri toplamını en küçükleyen fonksiyon\n\n\n\\[\\begin{gathered}\nmin \\quad{} z = 30 x_{1A} + 25 x_{1B} +15 x_{1C} \\\\\n+16 x_{2A} +45 x_{2B} +29 x_{2C}\\\\\n+25 x_{3A} +10 x_{3B} +16 x_{3C}\n\\end{gathered}\\]"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---3-3",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---3-3",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 3 (3)",
-    "text": "Örnek DP Modeli - 3 (3)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise fabrikaların üretim miktarları ile depoların gereksinim miktarlarıdır.\n\n\nHerhangi bir fabrikadan üretiminden fazla taşıma yapılamayacağından ve üretimin tamamı dağıtılmak istendiğinden\n\n\n\nÜretim miktarı ile ilgili kısıtlayıcı fonksiyonlar.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{1B}+ x_{1C} = 150,&\\\\\n  x_{21} + x_{2B}+ x_{2C} = 200,&\\\\\n  x_{3A} + x_{3B}+ x_{3C} = 400,&\n\\end{aligned}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\n\nDepoların beyaz eşya gereksiniminin eksiksiz karşılanması koşulu da aşağıdaki eşitlik sistemiyle açıklanabilir.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{2A}+ x_{3A} = 220,&\\\\\n  x_{1B} + x_{2B}+ x_{3B} = 150,&\\\\\n  x_{1C} + x_{2C}+ x_{3C} = 380,&\n\\end{aligned}\\]\n\n\nNegatif Taşıma Olamayacağına Göre:\n\n\n\n\\(x_{ij} \\geq 0\\) \\((i = 1,2,3)\\) ve (j=A,B,C)"
+    "text": "Örnek DP Modeli - 3 (3)\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise fabrikaların üretim miktarları ile depoların gereksinim miktarlarıdır.\n\n\nHerhangi bir fabrikadan üretiminden fazla taşıma yapılamayacağından ve üretimin tamamı dağıtılmak istendiğinden\n\n\n\nÜretim miktarı ile ilgili kısıtlayıcı fonksiyonlar.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{1B}+ x_{1C} = 150,&\\\\\n  x_{21} + x_{2B}+ x_{2C} = 200,&\\\\\n  x_{3A} + x_{3B}+ x_{3C} = 400,&\n\\end{aligned}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nDepoların beyaz eşya gereksiniminin eksiksiz karşılanması koşulu da aşağıdaki eşitlik sistemiyle açıklanabilir.\n\n\\[\\begin{aligned}\n  x_{1A} + x_{2A}+ x_{3A} = 220,&\\\\\n  x_{1B} + x_{2B}+ x_{3B} = 150,&\\\\\n  x_{1C} + x_{2C}+ x_{3C} = 380,&\n\\end{aligned}\\]\n\n\nNegatif Taşıma Olamayacağına Göre:\n\n\n\n\\(x_{ij} \\geq 0\\) \\((i = 1,2,3)\\) ve (j=A,B,C)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---4-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---4-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 4 (1)",
-    "text": "Örnek DP Modeli - 4 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 4: Beslenme Problemi\n\n\n\n\nBir çiftçi çiftliğindeki tavukların günlük karbonhidrat, protein ve vitamin gereksinimini en küçük maliyetle karşılamak amacıyla en uygun besin maddelerini ve bunların miktarlarını belirlemek istemektedir.\nAlternatif besin maddelerinin birim maliyetleri, içerdikleri karbonhidrat, protein ve vitamin miktarları ile bunlara olan günlük gereksinim aşağıdaki tabloda özetlenmiştir.\n\n\n\n\nBu verilere göre, tavukların günlük besin gereksinimini tam olarak karşılayan en küçük maliyetli besin karışımının belirlenmesinde kullanılacak doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\nBesin Elemanı\nBesin Türü (kg)\nEn Az Günlük Gereksinim\n\n\nSuni Yem\nBuğday\nArpa\n\n\n\n\nKarbonhidrat (gr)\n9\n2\n4\n20\n\n\nProtein (gr)\n3\n8\n6\n18\n\n\nVitamin (mgr)\n1\n2\n6\n15\n\n\nBirim Fiyat (TL)\n7\n6\n5\n-"
+    "text": "Örnek DP Modeli - 4 (1)\n\n\n\n\nÖrnek DP Modeli - 4: Beslenme Problemi\n\n\n\nBir çiftçi çiftliğindeki tavukların günlük karbonhidrat, protein ve vitamin gereksinimini en küçük maliyetle karşılamak amacıyla en uygun besin maddelerini ve bunların miktarlarını belirlemek istemektedir.\nAlternatif besin maddelerinin birim maliyetleri, içerdikleri karbonhidrat, protein ve vitamin miktarları ile bunlara olan günlük gereksinim aşağıdaki tabloda özetlenmiştir.\n\n\n\n\nBu verilere göre, tavukların günlük besin gereksinimini tam olarak karşılayan en küçük maliyetli besin karışımının belirlenmesinde kullanılacak doğrusal programlama modelini kurunuz.\n\n\n\n\n\n\n\nBesin Elemanı\nBesin Türü (kg)\nEn Az Günlük Gereksinim\n\n\nSuni Yem\nBuğday\nArpa\n\n\n\n\nKarbonhidrat (gr)\n9\n2\n4\n20\n\n\nProtein (gr)\n3\n8\n6\n18\n\n\nVitamin (mgr)\n1\n2\n6\n15\n\n\nBirim Fiyat (TL)\n7\n6\n5\n-"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---4-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---4-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 4 (2)",
-    "text": "Örnek DP Modeli - 4 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Suni yem tüketim miktarı (kg/gün)\n\\(x_2\\) = Buğday tüketim miktarı (kg/gün)\n\\(x_3\\) = Arpa tüketim miktarı (kg/gün)\n\n\n\nAmaç en az maliyetle gerekli besini sağlamaktır\n\n\n\n\\(min \\quad{} z = 7 x_1 + 6 x_2 + 5 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 2x_2 + 4x_3 \\geq 20\\) (Karbonhidrat kısıtı)\n\\(3x_1 + 8x_2 + 6x_3 \\geq 18\\) (Protein kısıtı)\n\\(1x_1 + 2x_2 + 6x_3 \\geq 15\\) (Vitamin kısıtı)\n\nKısıtlardaki \\(\\geq\\) işareti alınması gereken besin elemanlarının belirtilen miktarların altına düşmeyeceğini, fakat bu miktarlardan fazla olabileceğini belitmektedir.\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 4 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Suni yem tüketim miktarı (kg/gün)\n\\(x_2\\) = Buğday tüketim miktarı (kg/gün)\n\\(x_3\\) = Arpa tüketim miktarı (kg/gün)\n\n\n\nAmaç en az maliyetle gerekli besini sağlamaktır\n\n\n\n\\(min \\quad{} z = 7 x_1 + 6 x_2 + 5 x_3\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 2x_2 + 4x_3 \\geq 20\\) (Karbonhidrat kısıtı)\n\\(3x_1 + 8x_2 + 6x_3 \\geq 18\\) (Protein kısıtı)\n\\(1x_1 + 2x_2 + 6x_3 \\geq 15\\) (Vitamin kısıtı)\n\nKısıtlardaki \\(\\geq\\) işareti alınması gereken besin elemanlarının belirtilen miktarların altına düşmeyeceğini, fakat bu miktarlardan fazla olabileceğini belitmektedir.\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---5-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---5-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 5 (1)",
-    "text": "Örnek DP Modeli - 5 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 5: Gübre\n\n\n\n\nBereket AŞ düşük ve yüksek fosfatlı olmak üzere iki çeşit gübre üretmektedir.\nGübreler üç farklı hammaddenin (A, B, C) karışımından oluşmaktadır.\n1 ton yüksek fosfatlı gübre üretiminde 2 ton A, 1’er ton B ve C; 1 ton düşük fosfatlı gübre üretiminde ise A ve B’den 1’er ton kullanılmaktadır.\nİşletmenin aylık hammadde kapasitesi 150 ton A, 120 ton B, 50 ton C’dir.\nDüşük fosfatlı gübre isteminin en çok 20 ton/ay olduğu bilinmektedir.\nYüksek fosfatlı gübrenin satış fiyatı 150 TL/ton, düşük fosfatlı gübrenin satış fiyatı ise 100 TL/ton dur.\nİşletme, toplam satış gelirini en büyüklemek için her ay her bir üründen kaç birim üretmelidir?\nProblemi doğrusal programlama olarak modelleyiniz."
+    "text": "Örnek DP Modeli - 5 (1)\n\n\n\n\nÖrnek DP Modeli - 5: Gübre\n\n\n\nBereket AŞ düşük ve yüksek fosfatlı olmak üzere iki çeşit gübre üretmektedir.\nGübreler üç farklı hammaddenin (A, B, C) karışımından oluşmaktadır.\n1 ton yüksek fosfatlı gübre üretiminde 2 ton A, 1’er ton B ve C; 1 ton düşük fosfatlı gübre üretiminde ise A ve B’den 1’er ton kullanılmaktadır.\nİşletmenin aylık hammadde kapasitesi 150 ton A, 120 ton B, 50 ton C’dir.\nDüşük fosfatlı gübre isteminin en çok 20 ton/ay olduğu bilinmektedir.\nYüksek fosfatlı gübrenin satış fiyatı 150 TL/ton, düşük fosfatlı gübrenin satış fiyatı ise 100 TL/ton dur.\nİşletme, toplam satış gelirini en büyüklemek için her ay her bir üründen kaç birim üretmelidir?\nProblemi doğrusal programlama olarak modelleyiniz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---5-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---5-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 5 (2)",
-    "text": "Örnek DP Modeli - 5 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yüksek fosfatlı gübre üretim miktarı (ton/ay)\n\\(x_2\\) = Düşük fosfatlı gübre üretim miktarı (ton/ay)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 150 x_1 + 100 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\n\\(2x_1 + x_2 \\leq 150\\) (A hammaddesi kısıtı)\n\\(1x_1 + 1x_2  \\leq 120\\) (B hammaddesi kısıtı)\n\\(1x_1 + 0x_2  \\leq 50\\) (C hammaddesi kısıtı)\n\\(1x_2 \\leq 20\\) (Düşük fosfatlı gübre istem miktarı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 5 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Yüksek fosfatlı gübre üretim miktarı (ton/ay)\n\\(x_2\\) = Düşük fosfatlı gübre üretim miktarı (ton/ay)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 150 x_1 + 100 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(2x_1 + x_2 \\leq 150\\) (A hammaddesi kısıtı)\n\\(1x_1 + 1x_2  \\leq 120\\) (B hammaddesi kısıtı)\n\\(1x_1 + 0x_2  \\leq 50\\) (C hammaddesi kısıtı)\n\\(1x_2 \\leq 20\\) (Düşük fosfatlı gübre istem miktarı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---6-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---6-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 6 (1)",
-    "text": "Örnek DP Modeli - 6 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 6: Pencere Üretimi\n\n\n\n\nBiri alüminyum diğeri ahşap çerçeveli olmak üzere iki tip pencere üretimi planlanmaktadır.\nÜretim atölyelerinin günlük çalışma kapasiteleri ve her üründen bir adet üretmek için gerekli zaman (saat olarak) aşağıdaki tablodaki gibidir.\n\n\n\n\n\n\n\n\n\n\nAtölye/Pencere\nAlüminyum\nAhşap\nÇalışma Kapasitesi (Gün/Saat)\n\n\n\n\nAlüminyum\n1\n0\n4\n\n\nAhşap\n0\n2\n12\n\n\nCam Üretim\n3\n2\n18\n\n\nBirim Kar (TL)\n300\n500\n-\n\n\n\n\nAlüminyum çerçeveli pencerenin kâra katkısı 300 TL, ahşap çerçevelininki ise 500 TL’dir.\nİşletme, günlük karını en büyüklemek için her üründen kaç birim üreteceğini belirlemek istemektedir.\nBuna göre, problemi doğrusal programlama modeli olarak formüle ediniz."
+    "text": "Örnek DP Modeli - 6 (1)\n\n\n\n\nÖrnek DP Modeli - 6: Pencere Üretimi\n\n\n\nBiri alüminyum diğeri ahşap çerçeveli olmak üzere iki tip pencere üretimi planlanmaktadır.\nÜretim atölyelerinin günlük çalışma kapasiteleri ve her üründen bir adet üretmek için gerekli zaman (saat olarak) aşağıdaki tablodaki gibidir.\n\n\n\n\n\n\n\n\n\n\nAtölye/Pencere\nAlüminyum\nAhşap\nÇalışma Kapasitesi (Gün/Saat)\n\n\n\n\nAlüminyum\n1\n0\n4\n\n\nAhşap\n0\n2\n12\n\n\nCam Üretim\n3\n2\n18\n\n\nBirim Kar (TL)\n300\n500\n-\n\n\n\n\nAlüminyum çerçeveli pencerenin kâra katkısı 300 TL, ahşap çerçevelininki ise 500 TL’dir.\nİşletme, günlük karını en büyüklemek için her üründen kaç birim üreteceğini belirlemek istemektedir.\nBuna göre, problemi doğrusal programlama modeli olarak formüle ediniz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---6-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---6-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 6 (2)",
-    "text": "Örnek DP Modeli - 6 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Alüminyum pencere üretim miktarı (adet/gün)\n\\(x_2\\) = Ahşap pencere üretim miktarı (adet/gün)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 300 x_1 + 500 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\n\\(1x_1 + 0x_2 \\leq 4\\) (Alüminyum atölyesi çalışma zamanı kısıtı)\n\\(0x_1 + 2x_2  \\leq 12\\) (Ahşap atölyesi çalışma zamanı kısıtı)\n\\(3x_1 + 2x_2  \\leq 18\\) (Cam atölyesi çalışma zamanı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 6 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Alüminyum pencere üretim miktarı (adet/gün)\n\\(x_2\\) = Ahşap pencere üretim miktarı (adet/gün)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 300 x_1 + 500 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(1x_1 + 0x_2 \\leq 4\\) (Alüminyum atölyesi çalışma zamanı kısıtı)\n\\(0x_1 + 2x_2  \\leq 12\\) (Ahşap atölyesi çalışma zamanı kısıtı)\n\\(3x_1 + 2x_2  \\leq 18\\) (Cam atölyesi çalışma zamanı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---7-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---7-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 7 (1)",
-    "text": "Örnek DP Modeli - 7 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 7: Domates\n\n\n\n\nHazır gıda AŞ kg’ı 0.85 TL’den 120000 kg domates alarak domates suyu ve domates salçası üretmektedir.\nKonserve edilen ürünler 12 kutuluk koliler halinde paketlenmektedir.\nBir kutu domates suyu için 0.75 kg, bir kutu salça için 1 kg domates kullanılmaktadır.\nŞirketin pazar payı 2500 koli domates suyu, 7500 koli domates salçası olarak belirlenmiştir.\nBir koli domates suyunun satış fiyatı 36 TL, bir koli salçanın satış fiyatı 18 TL dir.\nToplam satış gelirinin en büyük olmasını isteyen işletmenin üretim planını belirleyiniz."
+    "text": "Örnek DP Modeli - 7 (1)\n\n\n\n\nÖrnek DP Modeli - 7: Domates\n\n\n\nHazır gıda AŞ kg’ı 0.85 TL’den 120000 kg domates alarak domates suyu ve domates salçası üretmektedir.\nKonserve edilen ürünler 12 kutuluk koliler halinde paketlenmektedir.\nBir kutu domates suyu için 0.75 kg, bir kutu salça için 1 kg domates kullanılmaktadır.\nŞirketin pazar payı 2500 koli domates suyu, 7500 koli domates salçası olarak belirlenmiştir.\nBir koli domates suyunun satış fiyatı 36 TL, bir koli salçanın satış fiyatı 18 TL dir.\nToplam satış gelirinin en büyük olmasını isteyen işletmenin üretim planını belirleyiniz."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---7-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---7-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 7 (2)",
-    "text": "Örnek DP Modeli - 7 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Domates suyu kolisi miktarı (adet)\n\\(x_2\\) = Domates salçası kolisi miktarı (adet)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 36 x_1 + 18 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 12x_2 \\leq 120000\\) (Domates miktarı kısıtı)\n\\(x_1 \\leq 2500\\) (Domates suyu pazar payı kısıtı)\n\\(x_2  \\leq 7500\\) (Salça pazar payı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 7 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Domates suyu kolisi miktarı (adet)\n\\(x_2\\) = Domates salçası kolisi miktarı (adet)\n\n\n\nAmaç fonksiyonu\n\n\n\n\\(maks \\quad{} z = 36 x_1 + 18 x_2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\n\\(9x_1 + 12x_2 \\leq 120000\\) (Domates miktarı kısıtı)\n\\(x_1 \\leq 2500\\) (Domates suyu pazar payı kısıtı)\n\\(x_2  \\leq 7500\\) (Salça pazar payı kısıtı)\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_1\\) , \\(x_2 \\geq 0\\)"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-1",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-1",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 8 (1)",
-    "text": "Örnek DP Modeli - 8 (1)\n\n\n\n\n\n\nÖrnek DP Modeli - 8: Yatırım Planı\n\n\n\n\nCihan Bey 60 milyon TL tutarındaki emekli ikramiyesi ile yıllık gelirini en büyük yapacak yatırımlara girmeyi planlamaktadır.\nCihan Bey için uygun yatırım seçenekleri ile bu yatırımların yıllık getiri oranları aşağıdaki tabloda verilmiştir.\n\n\n\n\nCihan Bey’in amacı, yıllık getirisi en büyük olan yatırım planını belirlemektir.\nCihan Bey karşılaşabileceği risklere karşın aşağıdaki prensip kararlarını almıştır.\n\nBanka mevduatı, devlet tahvili ile altına yatırımların toplamına eşit olmalıdır.\nAltına yatırım, nakit olarak saklanan paranın %30’undan fazla olmamalıdır.\nHisse senedi yatırımı 15 milyon TL’yi geçmemelidir.\nDevlet tahvili yatırımı en fazla 10 milyon TL olmalıdır.\n\n\n\n\n\n\n\n\nYatırım Seçeneği (Milyon TL)\nGetiri Oranı (%)\n\n\n\n\nBanka Mevduatı\n52\n\n\nHisse Senedi\n40\n\n\nDevlet Tahvili\n32\n\n\nAltın\n16\n\n\nNakit\n-5"
+    "text": "Örnek DP Modeli - 8 (1)\n\n\n\n\nÖrnek DP Modeli - 8: Yatırım Planı\n\n\n\nCihan Bey 60 milyon TL tutarındaki emekli ikramiyesi ile yıllık gelirini en büyük yapacak yatırımlara girmeyi planlamaktadır.\nCihan Bey için uygun yatırım seçenekleri ile bu yatırımların yıllık getiri oranları aşağıdaki tabloda verilmiştir.\n\n\n\n\nCihan Bey’in amacı, yıllık getirisi en büyük olan yatırım planını belirlemektir.\nCihan Bey karşılaşabileceği risklere karşın aşağıdaki prensip kararlarını almıştır.\n\nBanka mevduatı, devlet tahvili ile altına yatırımların toplamına eşit olmalıdır.\nAltına yatırım, nakit olarak saklanan paranın %30’undan fazla olmamalıdır.\nHisse senedi yatırımı 15 milyon TL’yi geçmemelidir.\nDevlet tahvili yatırımı en fazla 10 milyon TL olmalıdır.\n\n\n\n\n\n\n\n\nYatırım Seçeneği (Milyon TL)\nGetiri Oranı (%)\n\n\n\n\nBanka Mevduatı\n52\n\n\nHisse Senedi\n40\n\n\nDevlet Tahvili\n32\n\n\nAltın\n16\n\n\nNakit\n-5"
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-2",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-2",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 8 (2)",
-    "text": "Örnek DP Modeli - 8 (2)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Banka mevduatı yatırım miktarı\n\\(x_2\\) = Hisse senedi yatırım miktarı\n\\(x_3\\) = Devlet tahvili yatırım miktarı\n\\(x_4\\) = Altına yatırım miktarı\n\\(x_5\\) = Nakit olarak ayrılan para miktarı\n\n\n\nAmaç fonksiyonu\n\n\n\\[\\begin{gathered}\nmaks \\quad{} z = 0.52 x_1 + 0.40 x_2+ 0.32 x_3\\\\\n+ 0.16 x_4 - 0.05 x_5\n\\end{gathered}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar ise\n\n\n\nBanka mevduatı (\\(x_1\\)), devlet tahvili (\\(x_3\\)) ile altına (\\(x_4\\)) yatırımların toplamına eşit olmalıdır. Buna göre,\n\n\n\\(x_1 = x_3 + x_4\\)\n\n\n\nDoğrusal programlamadaki kısıtlayıcı fonksiyonların sağ taraflarında bir sabit olması gerekmektedir. Buna göre denklem tekrar düzenlenirse\n\n\\(x_1- x_3 - x_4 = 0\\) olur."
+    "text": "Örnek DP Modeli - 8 (2)\n\n\n\n\n\n\nÇözüm\n\n\n\nKarar değişkenleri:\n\n\n\n\\(x_1\\) = Banka mevduatı yatırım miktarı\n\\(x_2\\) = Hisse senedi yatırım miktarı\n\\(x_3\\) = Devlet tahvili yatırım miktarı\n\\(x_4\\) = Altına yatırım miktarı\n\\(x_5\\) = Nakit olarak ayrılan para miktarı\n\n\n\nAmaç fonksiyonu\n\n\n\\[\\begin{gathered}\nmaks \\quad{} z = 0.52 x_1 + 0.40 x_2+ 0.32 x_3\\\\\n+ 0.16 x_4 - 0.05 x_5\n\\end{gathered}\\]\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar ise\n\n\n\nBanka mevduatı (\\(x_1\\)), devlet tahvili (\\(x_3\\)) ile altına (\\(x_4\\)) yatırımların toplamına eşit olmalıdır. Buna göre,\n\n\n\\(x_1 = x_3 + x_4\\)\n\n\n\nDoğrusal programlamadaki kısıtlayıcı fonksiyonların sağ taraflarında bir sabit olması gerekmektedir. Buna göre denklem tekrar düzenlenirse\n\n\\(x_1- x_3 - x_4 = 0\\) olur."
   },
   {
     "objectID": "IST115/Hafta02/index.html#örnek-dp-modeli---8-3",
     "href": "IST115/Hafta02/index.html#örnek-dp-modeli---8-3",
     "title": "Hafta 02",
     "section": "Örnek DP Modeli - 8 (3)",
-    "text": "Örnek DP Modeli - 8 (3)\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nKısıtlar (Devam):\n\n\n\nNakit olarak ayrılan paranın \\(x_5\\) olduğu düşünülürse, altına yapılan yatırıma ilişkin kısıtlayıcı aşağıdaki gibi formüllenir.\n\n\\(x_4 \\leq 0.30 x_5\\) ya da \\(x_4 - 0.30 x_5 \\leq 0\\)\n\n\n\n\\(x_2 \\leq 15\\) (Hisse senedi yatırımı)\n\n\n\n\n\\(x_3 \\leq 10\\) (Devlet tahvili yatırımı)\n\n\n\n\\(x_1 + x_2 + x_3 + x_4 + x_5 = 60\\) (Paranın tamamının değerlendirilmesi kısıtı)\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_2 \\geq 0\\), \\(x_2 \\geq 0\\), \\(x_3 \\geq 0\\), \\(x_4 \\geq 0\\), \\(x_5 \\geq 0\\)"
+    "text": "Örnek DP Modeli - 8 (3)\n\n\n\n\n\n\nÇözüm\n\n\n\nKısıtlar (Devam):\n\n\n\nNakit olarak ayrılan paranın \\(x_5\\) olduğu düşünülürse, altına yapılan yatırıma ilişkin kısıtlayıcı aşağıdaki gibi formüllenir.\n\n\\(x_4 \\leq 0.30 x_5\\) ya da \\(x_4 - 0.30 x_5 \\leq 0\\)\n\n\n\n\\(x_2 \\leq 15\\) (Hisse senedi yatırımı)\n\n\n\n\n\\(x_3 \\leq 10\\) (Devlet tahvili yatırımı)\n\n\n\n\\(x_1 + x_2 + x_3 + x_4 + x_5 = 60\\) (Paranın tamamının değerlendirilmesi kısıtı)\n\n\n\n\n\n\n\n\n\n\n\n\nÇözüm\n\n\n\nNegatif Olmama koşulu:\n\n\n\n\\(x_2 \\geq 0\\), \\(x_2 \\geq 0\\), \\(x_3 \\geq 0\\), \\(x_4 \\geq 0\\), \\(x_5 \\geq 0\\)"
   },
   {
     "objectID": "IST215/MainPage/IST215_WEEK03_MAIN.html",
@@ -2280,5 +2280,12 @@
     "title": "Hafta 03",
     "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (3)",
     "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (3)\n\n\n\n\nMODI Tablosu\n\n\nVAM Çözümü\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nv1=3\nDepo 2\nv2=3\nDepo 3\nv3=2\nDepo 4\nv4=5\n\n\n\n\nFabrika 1\nu1=0\n\n\nc=4\n\n\n–\n\n\nR=1\n\n\n\n\nc=3\n\n\n25\n\n\nR=0\n\n\n\n\nc=4\n\n\n–\n\n\nR=2\n\n\n\n\nc=5\n\n\n15\n\n\nR=0\n\n\n\n\nFabrika 2\nu2=3\n\n\nc=6\n\n\n–\n\n\nR=0\n\n\n\n\nc=8\n\n\n–\n\n\nR=2\n\n\n\n\nc=5\n\n\n50\n\n\nR=0\n\n\n\n\nc=8\n\n\n10\n\n\nR=0\n\n\n\n\nFabrika 3\nu3=0\n\n\nc=3\n\n\n5\n\n\nR=0\n\n\n\n\nc=4\n\n\n–\n\n\nR=1\n\n\n\n\nc=5\n\n\n–\n\n\nR=3\n\n\n\n\nc=5\n\n\n35\n\n\nR=0\n\n\n\n\nFabrika 4\nu4=-2\n\n\nc=1\n\n\n50\n\n\nR=0\n\n\n\n\nc=2\n\n\n–\n\n\nR=1\n\n\n\n\nc=3\n\n\n–\n\n\nR=3\n\n\n\n\nc=4\n\n\n–\n\n\nR=1\n\n\n\n\n\n\n\n\nTüm \\(R_{ij}\\geq0\\) olduğundan çözüm optimumdur."
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK04_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK04_MAIN.html",
+    "title": "IST115 - Hafta 04",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]
