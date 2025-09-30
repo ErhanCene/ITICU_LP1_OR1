@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "IST115 - Doğrusal Programlama ve IST215 - Yöneylem Araştırması Ders Notları"
+  title: "IST115 - Doğrusal Programlama I ve IST207 - Yöneylem Araştırması Ders Notları"
   #favicon: LectureNotes/figures/intro to r logo black.png
-  description: "IST115 ve IST215 için ders notlarını içeren websayfası."
+  description: "IST115 ve IST207 için ders notlarını içeren websayfası."
   repo-url: https://github.com/ErhanCene/ITICU_LP1_OR1.git
   repo-actions: [edit, issue]
   repo-subdir: "docs"
@@ -29,11 +29,11 @@ website:
           - IST115/MainPage/IST115_WEEK01_MAIN.qmd
           - IST115/MainPage/IST115_WEEK02_MAIN.qmd
           - IST115/MainPage/IST115_WEEK03_MAIN.qmd
-      - section: IST215 - Yöneylem Araştırması 1 Ders Notları
+      - section: IST207 - Yöneylem Araştırması 1 Ders Notları
         contents: 
-          - IST215/MainPage/IST215_WEEK01_MAIN.qmd
-          - IST215/MainPage/IST215_WEEK02_MAIN.qmd
-          - IST215/MainPage/IST215_WEEK03_MAIN.qmd
+          - IST207/MainPage/IST207_WEEK01_MAIN.qmd
+          - IST207/MainPage/IST207_WEEK02_MAIN.qmd
+          - IST207/MainPage/IST207_WEEK03_MAIN.qmd
   page-footer:
     background: light # or `dark`
     left: Copyright 2025, Erhan ÇENE

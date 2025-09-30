@@ -1,0 +1,2750 @@
+---
+title: Hafta 03
+subtitle: "Yöneylem Araştırması I: Ulaştırma Problemleri"
+date: 10/02/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST207 - Yöneylem Araştırması - Hafta 03 - 02 Ekim 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Ulaştırma Probleminin Tarihçe ve Tanımı
+
+::: {.callout-important icon=false title="Ulaştırma Probleminin Tarihçe ve Tanımı (1)" style="font-size: 130%;"}
+
+* Doğrusal programlama probleminin özel bir biçimi olan [ulaştırma problemi]{.light-red} ve [çözümü]{.light-red} ilk olarak [1941]{.light-red} yılında [Frank L. Hitchcock]{.light-red} tarafından önerilmiş [Tjalling C. Koopmans (1947)]{.light-red} tarafından geliştirilmiştir. 
+* Konu ile ilgili asıl gelişme simpleks yöntemin ulaştırma problemlerine uygulanmasından sonra olmuştur. 
+* Ulaştırma probleminin doğrusal programlama problemi biçiminde modellenmesi ve simpleks yöntemle çözülmesi ilk olarak [Dantzig]{.light-red} tarafından gerçekleştirilmiştir. 
+:::
+
+## Ulaştırma Probleminin Tarihçe ve Tanımı
+
+::: {.callout-important icon=false title="Ulaştırma Probleminin Tarihçe ve Tanımı (2)" style="font-size: 130%;"}
+
+* İkinci Dünya Savaşı sırasında Amerika Birleşik Devletleri’nin [askeri faaliyetlerini]{.light-red} planlamak amacıyla uygulanan ulaştırma modeli savaştan sonra da endüstride [ulaşım mal ve hizmet dağıtımının planlanması]{.light-red} [işletmelerin kuruluş yeri seçimi]{.light-red} [personelin işe yerleştirilmesi]{.light-red} gibi hem iktisadi hem de sosyal problemlerin çözümünde yaygın biçimde kullanılmaya başlanmıştır.
+* Sunum merkezlerindeki (fabrika depo vb.) malların istem merkezlerine dağıtımının
+planlanması [ulaştırma problemi]{.light-red} olarak adlandırılır.
+
+:::
+
+## Ulaştırma Modellerinin Varsayımları
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Varsayımları (1)" style="font-size: 100%;"}
+
+* Doğrusal Programlama Modellerinin varsayımlarına [ek olarak]{.light-red}
+
+[1.]{.light-red} Probleme konu olan mal ve hizmetlerin aynı birimle açıklanmaları yani [homojen olmaları]{.light-red} gerekir. Bu koşula [homojenlik koşulu]{.light-red} denir.
+
+[2.]{.light-red} Belirli sayıdaki sunum merkezinde dağıtılmak üzere [bekleyen mal]{.light-red} miktarları ile belirli sayıdaki istem merkezlerinin [bu mala olan istem]{.light-red} miktarlarının [kesin olarak bilinmesi]{.light-red} gerekir. 
+
+Ayrıca [sunum miktarları toplamı]{.light-red} ile [istem miktarları toplamı eşit olmalı]{.light-red} veya bu eşitlik [kuramsal olarak sağlanmalıdır]{.light-red}. 
+
+Toplam istem ile toplam sunumun eşitliğini ileri süren bu koşula [tutarlılık koşulu]{.light-red} denir. 
+
+Tutarlılık koşulunun sağlandığı ulaştırma problemlerinin [dengeli]{.light-red} veya [standart]{.light-red} oldukları kabul edilir.
+
+
+:::
+
+## Ulaştırma Modellerinin Varsayımları
+
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Varsayımları (2)" style="font-size: 100%;"}
+
+[3.]{.light-red} Sunum merkezleri ile istem merkezleri arasında [aktarma yapılması söz konusu değildir]{.light-red}. Bu malların sunum merkezlerinden istem merkezlerine [doğrudan taşınması]{.light-red} demektir. 
+
+Bazı durumlarda malın bulunduğu kaynak noktalarından aktarılacağı esas noktalara doğrudan taşınması ekonomik olmayabilir. 
+
+Dağıtım işleminde malların önce bazı transfer noktalarına daha sonra esas istem merkezlerine nakledilmesi daha ekonomik olabilir. 
+
+Bu tip ulaştırma problemlerine [aktarmalı]{.light-red} veya [konaklamalı ulaştırma problemi]{.light-red} denir.
+
+[4.]{.light-red} Herhangi bir sunum merkezinden herhangi bir istem merkezine bir birim mal taşımanın yol açtığı maliyetin [sabit]{.light-red} olması gerekir. Kısacası taşıma maliyetleri [doğrusal nitelikli amaç fonksiyonunun]{.light-red} özelliklerine uymaktadır.
+
+:::
+
+## Ulaştırma Modellerinin Yapısal Görüntüsü
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Yapısal Görüntüsü (1)" style="font-size: 100%;"}
+
+[Amaç fonksiyonu ve karar değişkenleri:]{.light-red}
+
+[\begin{align*} 
+Z_{enk/enb} &= c_{11}x_{11}+c_{12}x_{12}+ \dots + c_{1n} x_{1n} \\
+            &+ c_{21}x_{21}+c_{22}x_{22}+ \dots + c_{2n} x_{2n} \\
+            &+ \dots  \\
+            &+ c_{m1}x_{m1}+c_{m2}x_{m2}+ \dots + c_{mn} x_{mn}
+\end{align*}]{.light-blue}
+
+[Arz (Sunum) Kısıtları:]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{12}  &+& \cdots &+& x_{1n}  &\;= & a_{1}\\
+x_{21} &+& x_{22}  &+& \cdots &+& x_{2n}  &\;= & a_{2}\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+x_{m1} &+& x_{m2}  &+& \cdots &+& x_{mn}  &\;= & a_{m}\\
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Ulaştırma Modellerinin Yapısal Görüntüsü
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Yapısal Görüntüsü (2)" style="font-size: 100%;"}
+
+[Talep (İstem) Kısıtları:]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{21}  &+& \cdots &+& x_{m1}  &\;= & b_{1}\\
+x_{12} &+& x_{22}  &+& \cdots &+& x_{m2}  &\;= & b_{2}\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+x_{1n} &+& x_{2n}  &+& \cdots &+& x_{mn}  &\;= & b_{n}\\
+\end{alignedat}
+$$]{.light-blue}
+
+[İşaret kısıtlaması:]{.light-red}
+[$$x_{ij} \geq 0 \quad{} i = 1,2, \dots, m; \quad{} j = 1,2, \dots, n;$$]{.light-blue}
+
+:::
+
+## Ulaştırma Modellerinin Yapısal Görüntüsü
+
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Yapısal Görüntüsü (3)" style="font-size: 110%;"}
+
+Bu formüllerde
+
+* [$m$]{.light-red}: [Sunum]{.light-red} merkezi sayısı [($i = 1, 2, ..., m$)]{.light-red}
+* [$n$]{.light-red}: [İstem]{.light-red} merkezi sayısı [($j = 1, 2, ..., n$)]{.light-red}
+* [$c_{ij}$]{.light-red}: [$i$]{.light-red} sunum merkezinden [$j$]{.light-red} istem merkezine bir birim malın [taşınması maliyeti]{.light-red}
+* [$x_{ij}$]{.light-red}: [$i$]{.light-red} sunum merkezinden [$j$]{.light-red} istem merkezine [taşınan mal miktarı]{.light-red}
+* [$a_i$]{.light-red}: [$i$]{.light-red} sunum merkezinin [sunum miktarı]{.light-red}
+* [$b_j$]{.light-red}: [$j$]{.light-red} istem merkezinin [istem miktarı]{.light-red}
+
+:::
+
+
+## Ulaştırma Tablosu
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Yapısal Görüntüsü (3)" style="font-size: 120%;"}
+
+* Toplam sunumun toplam isteme eşit olmadığı durumdaki ulaştırma modeline [dengeli olmayan ulaştırma problemi]{.light-red} denir. 
+* Ulaştırma problemlerinin çözümü için önerilen özel yöntemlerin uygulanabilmeleri [bu eşitliğin sağlanmasına]{.light-red} bağlıdır.
+* Doğrusal programlama ilkelerine göre formüle edilen bir ulaştırma problemi çok sık olarak hatta her zaman bir [tablo biçiminde]{.light-red} sunulur. 
+* [Ulaştırma modeli tablosu]{.light-red} veya kısaca [ulaştırma tablosu]{.light-red} adı verilen tablo problemle ilgili tüm bilgileri ve malların sunum merkezlerinden istem merkezlerine nasıl taşındığını açıkça göstermektedir.
+:::
+
+
+## Ulaştırma Tablosu
+
+::: {.callout-important icon=false title="Ulaştırma Modellerinin Yapısal Görüntüsü (4)" style="font-size: 70%;"}
+
+
+
+```{=html}
+
+<head>
+<meta charset="utf-8" />
+<title>Ulaştırma Modeli Tablosu</title>
+<style>
+  /* --- Table look: black/white presentation style --- */
+  .u-wrap{max-width:980px;margin:24px auto;font-family:"Segoe UI"RobotoHelveticaArialsans-serif}
+  h1{margin:0 0 10px;text-align:center;font-size:24px;font-style:italic}
+  table.u-table{border-collapse:collapse;width:100%}
+  .u-table th.u-table td{border:2px solid #000;padding:10px 12px;text-align:center;vertical-align:middle}
+  .band{background:#f7f7f7;font-weight:600}
+  .leftband.rightband.botband{background:#fafafa;font-weight:600}
+  /* inner cell: show cost (top-right boxed) and variable (bottom-left) */
+  .cell{position:relative;min-height:60px;line-height:1}
+  .cost{
+    position:absolute;top:6px;right:6px;
+    padding:2px 8px;border:2px solid #000;border-radius:6px;font-weight:600;
+  }
+  .xvar{position:absolute;left:8px;bottom:6px;font-weight:600}
+  /* helper glyphs */
+  .dots{letter-spacing:2px}
+  .vdots{font-size:18px}
+  .eqcell{font-size:14px}
+</style>
+</head>
+<body>
+<div class="u-wrap">
+
+  <table class="u-table">
+    <!-- Column band header -->
+    <thead>
+      <tr>
+        <th class="leftband" rowspan="2" style="width:14%">Sunum<br/>Merkezi</th>
+        <th class="band" colspan="6">İstem&nbsp;Merkezi</th>
+        <th class="rightband" rowspan="2" style="width:14%">Sunum Miktarı<br/><em>a<sub>i</sub></em></th>
+      </tr>
+      <tr>
+        <th>İM<sub>1</sub></th>
+        <th>İM<sub>2</sub></th>
+        <th class="dots">— — —</th>
+        <th>İM<sub>j</sub></th>
+        <th class="dots">— — —</th>
+        <th>İM<sub>n</sub></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <th class="leftband">SM<sub>1</sub></th>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>11</sub></div>
+            <div class="xvar">x<sub>11</sub></div>
+          </div>
+        </td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>12</sub></div>
+            <div class="xvar">x<sub>12</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>1j</sub></div>
+            <div class="xvar">x<sub>1j</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>1n</sub></div>
+            <div class="xvar">x<sub>1n</sub></div>
+          </div>
+        </td>
+        <td class="rightband">a<sub>1</sub></td>
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+        <th class="leftband">SM<sub>2</sub></th>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>21</sub></div>
+            <div class="xvar">x<sub>21</sub></div>
+          </div>
+        </td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>22</sub></div>
+            <div class="xvar">x<sub>22</sub></div>
+          </div>
+        </td>
+        <td class="vdots">&vellip;</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>2j</sub></div>
+            <div class="xvar">x<sub>2j</sub></div>
+          </div>
+        </td>
+        <td class="vdots">&vellip;</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>2n</sub></div>
+            <div class="xvar">x<sub>2n</sub></div>
+          </div>
+        </td>
+        <td class="rightband">a<sub>2</sub></td>
+      </tr>
+
+      <!-- Ellipsis rows -->
+      <tr>
+        <th class="leftband vdots">&vellip;</th>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="rightband vdots">&vellip;</td>
+      </tr>
+
+      <!-- Generic i-th row -->
+      <tr>
+        <th class="leftband">SM<sub>i</sub></th>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>i1</sub></div>
+            <div class="xvar">x<sub>i1</sub></div>
+          </div>
+        </td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>i2</sub></div>
+            <div class="xvar">x<sub>i2</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>ij</sub></div>
+            <div class="xvar">x<sub>ij</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>in</sub></div>
+            <div class="xvar">x<sub>in</sub></div>
+          </div>
+        </td>
+        <td class="rightband">a<sub>i</sub></td>
+      </tr>
+
+      <!-- Ellipsis rows -->
+      <tr>
+        <th class="leftband vdots">&vellip;</th>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="vdots">&vellip;</td>
+        <td class="rightband vdots">&vellip;</td>
+      </tr>
+
+      <!-- Last row m -->
+      <tr>
+        <th class="leftband">SM<sub>m</sub></th>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>m1</sub></div>
+            <div class="xvar">x<sub>m1</sub></div>
+          </div>
+        </td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>m2</sub></div>
+            <div class="xvar">x<sub>m2</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>mj</sub></div>
+            <div class="xvar">x<sub>mj</sub></div>
+          </div>
+        </td>
+        <td class="dots">— — —</td>
+        <td>
+          <div class="cell">
+            <div class="cost">C<sub>mn</sub></div>
+            <div class="xvar">x<sub>mn</sub></div>
+          </div>
+        </td>
+        <td class="rightband">a<sub>m</sub></td>
+      </tr>
+
+      <!-- Bottom demand row -->
+      <tr>
+        <th class="leftband">İstem Miktarı<br/><em>b<sub>j</sub></em></th>
+        <td class="botband">b<sub>1</sub></td>
+        <td class="botband">b<sub>2</sub></td>
+        <td class="botband dots">⋯</td>
+        <td class="botband">b<sub>j</sub></td>
+        <td class="botband dots">⋯</td>
+        <td class="botband">b<sub>m</sub></td>
+        <td class="botband eqcell">
+          &Sigma;<sub>i=1</sub><sup>m</sup> a<sub>i</sub>
+          &nbsp;=&nbsp;
+          &Sigma;<sub>j=1</sub><sup>n</sup> b<sub>j</sub>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
+
+```
+
+:::
+
+## Örnek 1: Güven AŞ deterjan (1)
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (1)" style="font-size: 110%;"}
+
+* Güven AŞ değişik yerlerdeki [dört fabrikasında]{.light-red} deterjan üretmektedir.
+* Satışlarını değişik bölgelerde bulunan [dört ana depo]{.light-red} ile sağlayan işletme yönetiminin temel sorunu deterjanın fabrikalardan satış depolarına ulaşımını sağlarken karşılaştığı yüksek tutarlardaki taşıma giderleridir.
+* Malların fabrikalardan satış depolarına gönderilirken katlanılması gereken [birim ulaştırma maliyetleri]{.light-red} [bir sonraki sayfadaki tabloda]{.orange} verilmiştir. 
+* Öte yandan [fabrika 1]{.light-red}, [2]{.light-red}, [3]{.light-red} ve [4]{.light-red}’ün aylık [üretim kapasiteleri]{.light-red} sırasıyla [50]{.light-blue}, [200]{.light-blue}, [150]{.light-blue} ve [300]{.light-blue} ton’dur. 
+* Depoların [istemleri]{.light-red} [depo 1]{.light-red}, [2]{.light-red}, [3]{.light-red} ve [4]{.light-red} için sırasıyla [150]{.light-blue}, [75]{.light-blue}, [175]{.light-blue} ve [300]{.light-blue} ton olarak belirlenmiştir. 
+
+
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan (2)
+
+
+
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (2)" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="33%"}
+
+
+Buna göre
+
+[a.]{.light-red} Problemin [dengeli]{.light-red} olup olmadığını belirtiniz.<br>
+[b.]{.light-red} [Ulaştırma tablosunu]{.light-red} düzenleyiniz.<br>
+[c.]{.light-red} Problemin [matematiksel modelini]{.light-red} kurunuz.
+
+:::
+
+:::
+:::
+
+
+## Örnek 1: Güven AŞ deterjan (3)
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (3)" style="font-size: 110%;"}
+
+Buna göre
+
+[a.]{.light-red} Problemin [dengeli]{.light-red} olup olmadığını belirtiniz.
+
+* Problemin dengeli olup olmadığını belirlemek için [tutarlılık]{.light-red} koşulunun sağlanıp sağlanmadığının kontrol edilmesi gerekir. 
+* Bunun için öncelikle fabrikaların [üretim miktarları toplamı (toplam sunum)]{.light-red} ile depoların ihtiyaç duydukları [ürün miktarları toplamını (toplam istem)]{.light-red} hesaplayalım.
+  * [Toplam sunum]{.light-red}: [$50 + 200 + 150 + 300 = 700$ ton]{.light-blue}
+  * [Toplam istem]{.light-red}: [$150 + 75 + 175 + 300 = 700$ ton]{.light-blue}
+* İstem-sunum [eşitliğinin sağlanması problemin dengeli olduğunu]{.light-red} göstermektedir.
+
+
+:::
+
+## Örnek 1: Güven AŞ deterjan (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (4)" style="font-size: 120%;"}
+
+Buna göre [b.]{.light-red} [Ulaştırma tablosunu]{.light-red} düzenleyiniz.<br>
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (5)" style="font-size: 95%;"}
+
+[c.]{.light-red} Problemin [matematiksel modelini]{.light-red} kurunuz.
+
+Amaç [en küçük toplam ulaştırma maliyetini]{.light-red} belirlemek olduğuna göre
+
+[$x_{11}$]{.light-red}: Fabrika [$1$]{.light-red}’den depo [$1$]{.light-red}’e taşınan deterjan miktarı <br>
+[$x_{12}$]{.light-red}: Fabrika [$1$]{.light-red}’den depo [$2$]{.light-red}’ye taşınan deterjan miktarı<br>
+$\dots$<br>
+[$x_{33}$]{.light-red}: Fabrika [$3$]{.light-red}’ten depo [$3$]{.light-red}’e taşınan deterjan miktarı<br>
+[$x_{43}$]{.light-red}: Fabrika [$4$]{.light-red}’ten depo [$3$]{.light-red}’e taşınan deterjan miktarı<br>
+[$x_{44}$]{.light-red}: Fabrika [$4$]{.light-red}’ten depo [$4$]{.light-red}’e taşınan deterjan miktarı<br>
+olarak tanımlandığında modelin [amaç fonksiyonu]{.light-red} aşağıdaki gibi yazılır.
+
+[\begin{align*} 
+Z_{enk} &= 3x_{11}+5x_{12}+7x_{13}+10x_{14} \\
+        &+ 6x_{21}+8x_{22}+13x_{23}+5x_{24} \\
+        &+ 4x_{31}+2x_{32}+6x_{33}+7x_{34} \\
+        &+ 12x_{41}+9x_{42}+4x_{43}+10x_{44}
+\end{align*}]{.light-blue}
+:::
+
+## Örnek 1: Güven AŞ deterjan (6)
+
+::: {.callout-tip icon=false title="Örnek 1: Güven AŞ deterjan (6)" style="font-size: 100%;"}
+
+[c.]{.light-red} Problemin [matematiksel modelini]{.light-red} kurunuz.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+Her bir fabrikadan gönderilecek deterjan miktarı o fabrikanın üretim miktarına eşit olacağına göre [sunum kısıtları]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\;= & 50\\
+x_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\;= & 200\\
+x_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\;= & 150\\
+x_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\;= & 300\\
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+
+Diğer taraftan her satış deposunun ürün gereksiniminin tam olarak karşılanması istendiğinden [istem kısıtlayıcıları]{.light-red}
+
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\;= & 150\\
+x_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\;= & 75\\
+x_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\;= & 175\\
+x_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\;= & 300\\
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+[İşaret kısıtlaması:]{.light-red}
+Son olarak negatif taşıma olmayacağına göre 
+[$$x_{ij} \geq 0; \quad{} i = 1,2 \dots 4; \quad{} j = 1,2 \dots 4;$$]{.light-blue}
+:::
+
+
+## Çözüm Yöntemleri
+
+
+::: {.callout-important icon=false title="Çözüm Yöntemleri" style="font-size: 110%;"}
+
+Tablo oluşturulduktan sonra bir sonraki aşama tabloyu çözüme ulaştırmaktır. 
+
+Tabloyu çözüme ulaştırmak için [en düşük maliyetle]{.light-red} hangi [fabrikadan]{.light-red} ne kadarlık bir [malzemenin]{.light-red} hangi [depoya]{.light-red} atanacağının belirlenmesi gerekir.
+
+Bu atamaları yapmak için [5]{.light-red} tane yöntemden bahsedilebilir.
+
+* [Kuzey Batı]{.light-red} Yöntemi
+* [Satır]{.light-red} Yaklaşımı
+* [Sütun]{.light-red} Yaklaşımı
+* [En Düşük Maliyet]{.light-red} Yaklaşımı
+* [VAM]{.light-red} Yöntemi
+
+:::
+
+## Kuzeybatı Yöntemi
+
+
+::: {.callout-important icon=false title="Kuzeybatı Yöntemi" style="font-size: 130%;"}
+
+* [Kuzeybatı yöntemi]{.light-red} sunum ve talepleri tablonun [sol üst köşesinden (kuzeybatısından)]{.light-red} karşılamaya başlar. 
+* [En soldaki sütunun]{.light-red} talebi [aşağıya (güneye)]{.light-red} doğru karşılanır. 
+* Talebin daha fazla karşılanamadığı satırda [sağ tarafa (doğuya)]{.light-red} doğru devam edilir.
+* [Sunum ve talep dengesi sağlanana kadar]{.light-red} işleme devam edilir.
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (1)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (1)" style="font-size: 110%;"}
+
+Ulaştırma problemini [kuzeybatı yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (2)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_northwest_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (3)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 110%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 110%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 100%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 130%;"}
+
+[Kuzeybatı Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}{\sum_{j=1}^{n}{c_{ij} x_{ij}}}  \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{44} x_{44} \\
+  &= 3\cdot 50 + 6\cdot 100 + 8\cdot 75 + 13\cdot 25 + 6\cdot 150 + 10\cdot 300 \\
+  &= \mathbf{5575}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Satır Yöntemi
+
+
+::: {.callout-important icon=false title="Satır Yöntemi" style="font-size: 115%;"}
+
+* [Satır yöntemi]{.light-red} sunum ve talepleri çözmeye [en üst satırdan]{.light-red} başlayarak aşağıya doğru [satır satır]{.light-red} çözümler. 
+  * Arz ve talep dengesi her bir satırda [en düşük maliyete sahip]{.light-red} olan [hücreyle]{.light-red} giderilir. 
+  * [Tek bir hücre bunu sağlamıyorsa]{.light-red} bu kez en düşük maliyete sahip bir sonraki hücreye geçilir. 
+  * Bir satırdaki arz ya da bir sütundaki talep giderilene kadar [aynı işleme devam edilir]{.light-red}.
+  * Denge sağlanınca [bir sonraki satıra]{.light-red} geçilir.
+* Tüm satırlar için [Sunum ve talep dengesi sağlanana kadar]{.light-red} işleme devam edilir.
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_rowmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_rowmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (10)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Satır Yöntemi (11)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (11)" style="font-size: 120%;"}
+
+[Satır Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{41} x_{41} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\
+  &= 3\cdot 50 + 4\cdot 75 + 12\cdot 25 + 2\cdot 75 + 4\cdot 175 + 5\cdot 200 + 10\cdot 100 \\
+  &= \mathbf{3600}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Sütun Yöntemi
+
+
+::: {.callout-important icon=false title="Sütun Yöntemi" style="font-size: 115%;"}
+
+* [Sütun yöntemi]{.light-red} sunum ve talepleri çözmeye [en sol sütundan]{.light-red} başlayarak sağa doğru [sütun sütun]{.light-red} çözümler. 
+  * Arz ve talep dengesi her bir sütunda [en düşük maliyete sahip]{.light-red} olan [hücreyle]{.light-red} giderilir. 
+  * [Tek bir hücre bunu sağlamıyorsa]{.light-red} bu kez en düşük maliyete sahip bir sonraki hücreye geçilir. 
+  * Bir satırdaki arz ya da bir sütundaki talep giderilene kadar [aynı işleme devam edilir]{.light-red}.
+  * Denge sağlanınca [bir sonraki sütuna]{.light-red} geçilir.
+* Tüm sütunlar için [sunum ve talep dengesi sağlanana kadar]{.light-red} işleme devam edilir.
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_colmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_colmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 120%;"}
+
+[Sütun Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{22} x_{22} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\
+  &= 3\cdot 50 + 4\cdot 100 + 8\cdot 25 + 2\cdot 50 + 4\cdot 175 + 5\cdot 175 + 10\cdot 125 \\
+  &= \mathbf{3675}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## En Düşük Maliyet Yöntemi
+
+
+::: {.callout-important icon=false title="En Düşük Maliyet Yöntemi" style="font-size: 130%;"}
+
+* [En Düşük Maliyet yöntemi]{.light-red} sunum ve talepleri çözmeye satır ve ya sütun gözetmeksizin en düşük maliyete sahip hücreyle başlar.
+* Adımlar [satır ve sütun yönteminin birleşimi]{.light-red} gibidir.
+* Tüm satır ve sütunlar için [sunum ve talep dengesi sağlanana kadar]{.light-red} işleme devam edilir.
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Düşük Maliyet yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_leastcost_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_leastcost_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (11)" style="font-size: 115%;"}
+
+[En Düşük Maliyet Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{41} x_{41} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\
+  &= 3\cdot 50 + 4\cdot 75 + 12\cdot 25 + 2\cdot 75 + 4\cdot 175 + 5\cdot 200 + 10\cdot 100 \\
+  &= \mathbf{3600}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## VAM Yöntemi (1)
+
+
+::: {.callout-important icon=false title="VAM Yöntemi" style="font-size: 150%;"}
+
+* Türkçe'deki adını İngilizce [Vogel’s Approximation Method]{.light-red} kelimelerinin ilk harflerinden alan bu yöntem [William R. Vogel]{.light-red} tarafından [1958]{.light-red}’de ileri sürülmüştür.
+* Yöntemin en önemli özelliği genellikle en iyi çözüme en yakın hatta [en iyi çözümü]{.light-red} [başlangıçta]{.light-red} vermesidir.
+
+:::
+
+
+
+## VAM Yöntemi (2)
+
+
+::: {.callout-important icon=false title="VAM Yöntemi" style="font-size: 110%;"}
+
+* Yöntem aşağıda açıklanan aşamaların [adım adım izlenmesi]{.light-red} ile uygulanır.
+
+[1)]{.light-red} Birim ulaştırma maliyetlerinin oluşturduğu matrisin her bir satır ve her bir sütunundaki [en düşük maliyetli iki]{.light-red} [$C_{ij}$]{.light-blue} maliyet katsayısı saptanır.<br>
+[2)]{.light-red} Birinci adımda belirlenen [$C_{ij}$]{.light-blue}’ler arasındaki [farklar]{.light-red} hesaplanır. <br> 
+
+  * Satır [$C_{ij}$]{.light-blue}’leri için hesaplanan fark değerleri tabloya eklenen bir [ek satıra]{.light-red} sütun [$C_{ij}$]{.light-blue}’leri için hesaplanan fark değerleri tabloya eklenen bir [ek sütuna]{.light-red} yazılır. 
+  * Bu farklar en düşük maliyetli hücrenin kullanılmaması durumunda [katlanılacak fazla harcamayı]{.light-red} yani bir çeşit [cezayı]{.light-red} ifade ettiklerinden bunlara [birim ceza (penaltı) değerleri]{.light-red} de denir. 
+  * Bu nedenle VAM yöntemi [birim penaltı yöntemi]{.light-red} olarak da bilinir.
+:::
+
+
+## VAM Yöntemi (3)
+
+
+::: {.callout-important icon=false title="VAM Yöntemi" style="font-size: 110%;"}
+
+[3)]{.light-red} İkinci adımda hesaplanan [$(m + n)$]{.light-blue} fark değerlerinden [en büyük]{.light-red} olanı saptanır.<br>
+[4)]{.light-red} <br>
+
+* [En büyük değerli farkın]{.light-red} ortaya çıktığı [satır]{.light-red} veya [sütunun en düşük maliyetli]{.light-red} hücresi belirlenir. 
+* Bu hücreye satır ve sütun koşullarına uygun olarak [en yüksek miktardaki]{.light-red} dağıtım yapılır. 
+* Yapılan bu dağıtım miktarı ilgili [satır ve sütun toplamlarından çıkartılır]{.light-red}. 
+* Dağıtım yapılan hücrenin işaret ettiği istem merkezinin istemi tam olarak karşılanmış ya da sunum merkezinin sunumu bütünüyle dağıtılmış ise o sunum merkezi veya istem merkezi (duruma göre her ikisi birden) bir sonraki dağıtım işleminde [devre dışı]{.light-red} bırakılır.
+:::
+
+## VAM Yöntemi (4)
+
+
+::: {.callout-important icon=false title="VAM Yöntemi" style="font-size: 130%;"}
+
+[5)]{.light-red} Dağıtım yapılan satır veya sütunun (veya her ikisinin birden) devre dışı bırakılması ve sunum ile istem merkezlerinin sunum-istem miktarlarının yeniden ayarlanmasıyla [yeni bir tablo]{.light-red} düzenlenir.<br>
+[6)]{.light-red} Düzenlenen bu yeni tabloda satır veya sütun sayısı [bire]{.light-red} ininceye değin [1-5]{.light-red} nolu işlemler sırasıyla izlenerek yinelenir.<br>
+
+* En büyük fark değerleri birbirine [eşit]{.light-red} olabilir. Bu durumda dağıtım işlemi bunlardan herhangi birinin [rasgele seçilmesiyle]{.light-red} sürdürülebilir. Ancak bu durumda en iyi çözüme ulaşmak için [gerekli işlem sayısı artabilir]{.light-red}.
+:::
+
+## VAM Yöntemi (5)
+
+
+::: {.callout-important icon=false title="VAM Yöntemi" style="font-size: 110%;"}
+
+Aşağıdaki kurallara uyulması durumunda en büyük fark değerlerinin birbirine eşit olduğu durumda [gereksiz işlem yapma tehlikesi ortadan kalkar]{.light-red}.
+
+* En büyük fark [iki ya da daha fazla satırda (ya da sütunda)]{.light-red} ortaya çıkarsa en büyük [$a_i$]{.light-blue} (ya da [$b_j$]{.light-blue}) değerli satırdaki (ya da sütundaki) [en düşük maliyetli]{.light-red} hücre seçilir.
+* En büyük fark bir satır ve bir sütunda aynı anda ortaya çıkarsa ve 
+  * Söz konusu [satır ile sütunun kesiştiği]{.light-red} yerdeki hücrenin maliyeti [en düşük]{.light-red} ise dağıtım için bu hücre seçilir. 
+  * Söz konusu hücreye ilişkin maliyet [en düşük değilse]{.light-red} ilgili satır ya da sütunun [en düşük maliyetli]{.light-red} hücresi seçilir.
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: VAM Yöntemi (11)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (11)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\
+  &= 3\cdot 50 + 6\cdot 25 + 4\cdot 75 + 2\cdot 75 + 4\cdot 175 + 5\cdot 175 + 10\cdot 125 \\
+  &= \mathbf{3575}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$5575$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$3600$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$3675$]{.light-blue}
+* [En Düşük Maliyet Yöntemi]{.light-red}: [$3600$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$3575$]{.light-blue}
+
+* [En düşük maliyet VAM Yöntemi'nde elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## MODI Yöntemi (1)
+
+
+::: {.callout-important icon=false title="MODI Yöntemi (1)" style="font-size: 120%;"}
+
+* Örnekten görüldüğü gibi farklı yöntemler farklı sonuçlar getirebilmektedir.
+* Ancak bu yöntemler her zaman optimum değeri bulmamakta daha çok bir [başlangıç değeri]{.light-red} elde edilmesini sağlamaktadır.
+* Elde edilen sonucun [en iyi (optimum)]{.light-red} olup olmadığını belirlemek için ise [MODI Yöntemi]{.light-red} kullanılabilir. 
+* Modi yönteminde yapılması gereken ilk işlem [$U_i$]{.light-blue} ve [$V_j$]{.light-blue} olarak gösterilen dual değişken değerlerinin hesaplanmasıdır. 
+
+:::
+
+
+## MODI Yöntemi (2)
+
+
+::: {.callout-important icon=false title="MODI Yöntemi (2)" style="font-size: 120%;"}
+
+* [$U_i$]{.light-blue} ve [$V_j$]{.light-blue} değerlerinin hesaplanmasında [dolu hücrelerden]{.light-red} yararlanılır. 
+* [$U_i$ + $V_j$]{.light-blue} toplamının dolu hücrelerdeki [$C_{ij}$]{.light-blue} katsayısına [eşit]{.light-red} olması gerekir. 
+* [$U_i$]{.light-blue} ve [$V_j$]{.light-blue} olarak [($m + n$)]{.light-blue} bilinmeyene karşılık [($m + n - 1$)]{.light-blue} temel değişken dolayısıyla [$(m + n - 1)$]{.light-blue} denklem vardır. 
+* Bilinmeyen sayısı denklem sayısından bir fazla olduğu için [$U_i$]{.light-blue} ve ya [$V_j$]{.light-blue}’lerden keyfi olarak seçilen bir tanesine rasgele bir değer [(genellikle sıfır)]{.light-red} verip kalanlar hesaplanabilir.
+* [$U_i$]{.light-blue} ve [$V_j$]{.light-blue} değerlerinin belirlenmesinden sonra [boş hücrelerin gizli maliyetlerinin]{.light-red} hesaplanması gerekir. 
+
+:::
+
+## MODI Yöntemi (3)
+
+
+::: {.callout-important icon=false title="MODI Yöntemi (3)" style="font-size: 110%;"}
+* [Gizli maliyetler]{.light-red}
+[$$d_{ij} = C_{ij} - (U_i + V_j)$$]{.light-blue}
+bağıntısından hesaplanır. 
+
+* Gizli Maliyet için [üç olası durum]{.light-red} söz konusudur.
+  * [$d_{ij} > 0$]{.light-blue} ise bu hücrenin doldurulması [toplam maliyeti artıracağından]{.light-red} söz konusu hücrenin [boş bırakılmasına]{.light-red} karar verilir.
+  * [$d_{ij} < 0$]{.light-blue} ise bu hücrenin doldurulması [toplam maliyeti azaltacağından]{.light-red} hali hazırda boş olan hücrenin [doldurulmasına]{.light-red} karar verilir.
+  * [$d_{ij} = 0$]{.light-blue} ise bu hücrenin doldurulmasıyla ulaşılacak toplam maliyet bir önceki toplam maliyete [eşit olacağından]{.light-red} [alternatif çözümlerden]{.light-red} söz edilir.
+
+:::
+
+## MODI Yöntemi (4)
+
+
+::: {.callout-important icon=false title="MODI Yöntemi (4)" style="font-size: 110%;"}
+* Gizli maliyetlerden [bir ya da birkaçı negatif değerli]{.light-red} ise eldeki çözümün [en iyi olmadığı]{.light-red} kararlaştırılır.
+* İlk önce hangi negatif değerli boş hücreye dağıtım yapılması gerektiğine karar verirken
+[mutlak değerce en büyük negatif]{.light-red} gizli maliyetin hesaplandığı [boş hücreden]{.light-red} başlamak doğru olur. 
+* Boş hücre seçiminin tamamlanmasından sonra [boş hücre başlangıç noktası]{.light-red} olmak üzere uygun [dolu hücreler kullanılarak kapalı bir çevrim]{.light-red} oluşturulur ve hücreler arasında mal aktarmaları yapılarak yeni bir taşıma programı belirlenir.
+* Aktarmalardan sonra elde edilen yeni çözümün temel olup olmadığının belirlenmesinden sonra [$U_i$]{.light-blue} ve [$V_j$]{.light-blue} değerleri yeniden hesaplanır. 
+* Yukarıdaki işlemler en iyi çözüme ulaşılıncaya değin tekrarlanır.
+
+:::
+
+## Örnek 1: Güven AŞ deterjan: MODI Hesabı (1)
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_vam_initial.html >}}
+```
+:::
+şeklinde idi. 
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: MODI Hesabı (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 110%;"}
+
+[$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{1} &= c_{11} - u_{1} = 3 - 0 = 3 \\
+u_{2} &= c_{21} - v_{1} = 6 - 3 = 3 \\
+v_{4} &= c_{24} - u_{2} = 5 - 3 = 2 \\
+u_{3} &= c_{31} - v_{1} = 4 - 3 = 1 \\
+v_{2} &= c_{32} - u_{3} = 2 - 1 = 1 \\
+u_{4} &= c_{44} - v_{4} = 10 - 2 = 8 \\
+v_{3} &= c_{43} - u_{4} = 4 - 8 = -4 \\
+\end{aligned}$$]{.light-blue}
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Güven AŞ deterjan: MODI Hesabı (3)
+
+::: {.callout-tip icon=false title="MODI Tablosu" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+:::
+
+
+
+
+
+## Örnek 1: Güven AŞ deterjan: MODI Hesabı (4)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} &= c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} &= c_{12} - u_{1} - v_{2} = 5 - 0 - 1 = 4 \\
+R_{13} &= c_{13} - u_{1} - v_{3} = 7 - 0 - (-4) = 11 \\
+R_{14} &= c_{14} - u_{1} - v_{4} = 10 - 0 - 2 = 8 \\
+R_{21} &= c_{21} - u_{2} - v_{1} = 6 - 3 - 3 = 0 \\
+R_{22} &= c_{22} - u_{2} - v_{2} = 8 - 3 - 1 = 4 \\
+R_{23} &= c_{23} - u_{2} - v_{3} = 13 - 3 - (-4) = 14 \\
+R_{24} &= c_{24} - u_{2} - v_{4} = 5 - 3 - 2 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} &= c_{31} - u_{3} - v_{1} = 4 - 1 - 3 = 0 \\
+R_{32} &= c_{32} - u_{3} - v_{2} = 2 - 1 - 1 = 0 \\
+R_{33} &= c_{33} - u_{3} - v_{3} = 6 - 1 - (-4) = 9 \\
+R_{34} &= c_{34} - u_{3} - v_{4} = 7 - 1 - 2 = 4 \\
+R_{41} &= c_{41} - u_{4} - v_{1} = 12 - 8 - 3 = 1 \\
+R_{42} &= c_{42} - u_{4} - v_{2} = 9 - 8 - 1 = 0 \\
+R_{43} &= c_{43} - u_{4} - v_{3} = 4 - 8 - (-4) = 0 \\
+R_{44} &= c_{44} - u_{4} - v_{4} = 10 - 8 - 2 = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1: Güven AŞ deterjan: MODI Hesabı (5)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\50_vam_step_001_uvR_table.html >}}
+```
+:::
+
+Tüm [$R_{ij}\geq0$]{.light-blue} olduğundan çözüm optimumdur.
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi (1)
+
+::: {.callout-tip icon=false title="Örnek 2: Alet AŞ Bulaşık makinesi (1)" style="font-size: 110%;"}
+
+* Bulaşık makinesi üreticisi [Alet AŞ]{.light-red}’nin değişik yerlerde [dört fabrikası]{.light-red} vardır. 
+* İşletme, satışlarını değişik yerlerdeki [dört deposu]{.light-red} ile yapmaktadır. 
+* İşletme yönetiminin temel sorunu, makineleri depolara [en küçük maliyetle]{.light-red} taşımaktır.
+* Fabrikaların [üretim kapasiteleri]{.light-red}, [depoların istem miktarları]{.light-red} ve [birim ulaştırma maliyetleri]{.light-red} aşağıdaki [ulaştırma tablosunda]{.orange} gösterilmiştir. 
+* [Başlangıç çözümünü ve bu çözüme ilişkin toplam ulaştırma maliyetini bulunuz.]{.red}
+
+
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi (2)
+
+
+
+
+::: {.callout-tip icon=false title="Örnek 2: Alet AŞ Bulaşık makinesi (2)" style="font-size: 120%;"}
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi (3)
+
+::: {.callout-tip icon=false title="Örnek 2: Alet AŞ Bulaşık makinesi (3)" style="font-size: 110%;"}
+
+Problemin [dengeli]{.light-red} olup olmadığını belirleyelim.
+
+* Problemin dengeli olup olmadığını belirlemek için [tutarlılık]{.light-red} koşulunun sağlanıp sağlanmadığının kontrol edilmesi gerekir. 
+* Bunun için öncelikle fabrikaların [üretim miktarları toplamı (toplam sunum)]{.light-red} ile depoların ihtiyaç duydukları [ürün miktarları toplamını (toplam istem)]{.light-red} hesaplayalım.
+  * [Toplam sunum]{.light-red}: [$40 + 60 + 40 + 50 = 190$ ton]{.light-blue}
+  * [Toplam istem]{.light-red}: [$55 + 25 + 50 + 60 = 190$ ton]{.light-blue}
+* İstem-sunum [eşitliğinin sağlanması problemin dengeli olduğunu]{.light-red} göstermektedir.
+
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi (4)
+
+::: {.callout-tip icon=false title="Örnek 2: Alet AŞ Bulaşık makinesi (4)" style="font-size: 100%;"}
+
+[c.]{.light-red} Problemin [matematiksel modelini]{.light-red} kurunuz.
+
+Amaç [en küçük toplam ulaştırma maliyetini]{.light-red} belirlemek olduğuna göre
+
+[$x_{11}$]{.light-red}: Fabrika [$1$]{.light-red}’den depo [$1$]{.light-red}’e taşınan bulaşık makinası adeti <br>
+[$x_{12}$]{.light-red}: Fabrika [$1$]{.light-red}’den depo [$2$]{.light-red}’ye taşınan bulaşık makinası adeti<br>
+$\dots$<br>
+[$x_{33}$]{.light-red}: Fabrika [$3$]{.light-red}’ten depo [$3$]{.light-red}’e taşınan bulaşık makinası adeti<br>
+[$x_{43}$]{.light-red}: Fabrika [$4$]{.light-red}’ten depo [$3$]{.light-red}’e taşınan bulaşık makinası adeti<br>
+[$x_{44}$]{.light-red}: Fabrika [$4$]{.light-red}’ten depo [$4$]{.light-red}’e taşınan bulaşık makinası adeti<br>
+olarak tanımlandığında modelin [amaç fonksiyonu]{.light-red} aşağıdaki gibi yazılır.
+
+[\begin{align*} 
+Z_{enk} &= 4x_{11}+3x_{12}+4x_{13}+5x_{14} \\
+        &+ 6x_{21}+8x_{22}+5x_{23}+8x_{24} \\
+        &+ 3x_{31}+4x_{32}+5x_{33}+5x_{34} \\
+        &+ 1x_{41}+2x_{42}+3x_{43}+4x_{44}
+\end{align*}]{.light-blue}
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi (5)
+
+::: {.callout-tip icon=false title="Örnek 2: Alet AŞ Bulaşık makinesi (5)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="49%"}
+
+Her bir fabrikadan gönderilecek bulaşık makinesi adeti o fabrikanın üretim miktarına eşit olacağına göre [sunum kısıtları]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\;= & 40\\
+x_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\;= & 60\\
+x_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\;= & 40\\
+x_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\;= & 50\\
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+
+Diğer taraftan her satış deposunun ürün gereksiniminin tam olarak karşılanması istendiğinden [istem kısıtlayıcıları]{.light-red}
+
+
+[$$
+\begin{alignedat}{7}
+x_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\;= & 55\\
+x_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\;= & 25\\
+x_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\;= & 50\\
+x_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\;= & 60\\
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+[İşaret kısıtlaması:]{.light-red}
+Son olarak negatif taşıma olmayacağına göre 
+[$$x_{ij} \geq 0; \quad{} i = 1,2 \dots 4; \quad{} j = 1,2 \dots 4;$$]{.light-blue}
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (1)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [kuzeybatı yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (2)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_northwest_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (3)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{34} x_{34} + c_{44} x_{44} \\
+  &= 4\cdot 40 + 6\cdot 15 + 8\cdot 25 + 5\cdot 20 + 5\cdot 30 + 5\cdot 10 + 4\cdot 50 \\
+  &= \mathbf{950}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_rowmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (10)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (11)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (11)" style="font-size: 110%;"}
+
+[Satır Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{31} x_{31} + c_{12} x_{12} + c_{23} x_{23} + c_{34} x_{34} + c_{44} x_{44} \\
+  &= 4\cdot 15 + 6\cdot 10 + 3\cdot 30 + 3\cdot 25 + 5\cdot 50 + 5\cdot 10 + 4\cdot 50 \\
+  &= \mathbf{785}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_colmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 110%;"}
+
+[Sütun Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} + c_{34} x_{34} \\
+  &= 3\cdot 5 + 1\cdot 50 + 3\cdot 25 + 4\cdot 15 + 5\cdot 35 + 8\cdot 25 + 5\cdot 35 \\
+  &= \mathbf{750}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Düşük Maliyet yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_leastcost_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (11)" style="font-size: 115%;"}
+
+[En Düşük Maliyet Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} + c_{34} x_{34} \\
+  &= 3\cdot 5 + 1\cdot 50 + 3\cdot 25 + 4\cdot 15 + 5\cdot 35 + 8\cdot 25 + 5\cdot 35 \\
+  &= \mathbf{750}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-80 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (11)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (11)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{23} x_{23} + c_{14} x_{14} + c_{24} x_{24} + c_{34} x_{34} \\
+  &= 3\cdot 5 + 1\cdot 50 + 3\cdot 25 + 5\cdot 50 + 5\cdot 15 + 8\cdot 10 + 5\cdot 35 \\
+  &= \mathbf{720}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$950$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$785$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$750$]{.light-blue}
+* [En Düşük Maliyet Yöntemi]{.light-red}: [$750$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$720$]{.light-blue}
+
+* [En düşük maliyet VAM Yöntemi'nde elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (1)
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_vam_initial.html >}}
+```
+:::
+şeklinde idi. 
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 110%;"}
+
+[$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{2} &= c_{12} - u_{1} = 3 - 0 = 3 \\
+v_{4} &= c_{14} - u_{1} = 5 - 0 = 5 \\
+u_{2} &= c_{24} - v_{4} = 8 - 5 = 3 \\
+u_{3} &= c_{34} - v_{4} = 5 - 5 = 0 \\
+v_{3} &= c_{23} - u_{2} = 5 - 3 = 2 \\
+v_{1} &= c_{31} - u_{3} = 3 - 0 = 3 \\
+u_{4} &= c_{41} - v_{1} = 1 - 3 = -2 \\
+\end{aligned}$$]{.light-blue}
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (3)
+
+::: {.callout-tip icon=false title="MODI Tablosu" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+:::
+
+
+
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (4)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 4 - 0 - 3 = 1 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 3 - 0 - 3 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 4 - 0 - 2 = 2 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 5 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 6 - 3 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 8 - 3 - 3 = 2 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 5 - 3 - 2 = 0 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 8 - 3 - 5 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 4 - 0 - 3 = 1 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 5 - 0 - 2 = 3 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 5 - 0 - 5 = 0 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 1 - (-2) - 3 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 2 - (-2) - 3 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - (-2) - 2 = 3 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 4 - (-2) - 5 = 1 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (5)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_001_uvR_table.html >}}
+```
+:::
+
+Tüm [$R_{ij}\geq0$]{.light-blue} olduğundan çözüm optimumdur.
+:::

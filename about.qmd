@@ -49,7 +49,7 @@ about:
 * Genel araştırma ve ilgi alanlarım, **bunlarla sınırlı olmamakla birlikte**, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir ([yayın listesine bakınız](https://avesis.yildiz.edu.tr/ecene/yayinlar "yayın listesi")).
 * Lisans düzeyinde `Python'a Giriş`, `R ile İstatistiksel Programlama`, `Veritabanı` ve `Web Programlama` gibi programlama derslerinin yanı sıra `Örnekleme 1` ve lisansüstü düzeyde `Veri Düzenleme ve Görselleştirme` dersleri veriyorum.
 * Ders notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için `bookdown` paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.
-* 2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi'nde vereceğim `IST115 - Doğrusal Programlama 1` ve `IST215 - Yöneylem Araştırması 1` derslerinin de notlarını bu websayfasında topladım.
+* 2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi'nde vereceğim `IST115 - Doğrusal Programlama 1` ve `IST207 - Yöneylem Araştırması` derslerinin de notlarını bu websayfasında topladım.
 * Eğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.
 * Herhangi bir sorunuz ve olası iş birliği için [linkedin](https://www.linkedin.com/in/erhan-%C3%A7ene-03488960/) üzerinden benimle iletişime geçebilirsiniz.
 

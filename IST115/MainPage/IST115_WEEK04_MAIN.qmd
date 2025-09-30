@@ -1,6 +1,6 @@
 ---
 title: "IST115 - Hafta 04"
-subtitle: "Doğrusal Programlama: Simpleks Yönteme Hazırlık Standart ve Kanonik Formlar"
+subtitle: "Doğrusal Programlama I: Simpleks Yönteme Hazırlık Standart ve Kanonik Formlar"
 # format: live-html
 engine: knitr
 # webr:

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Ön Bilgi",
     "section": "",
-    "text": "Bu websayfası, lisans düzeyindeki IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin ders notlarına eşlik etmek üzere hazırlanmıştır.\nBu websayfasının amacı, ders notlarını kolay ve düzenli bir şekilde sunmaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Bu websayfası, lisans düzeyindeki IST115 - Doğrusal Programlama 1 ve IST207 - Yöneylem Araştırması derslerinin ders notlarına eşlik etmek üzere hazırlanmıştır.\nBu websayfasının amacı, ders notlarını kolay ve düzenli bir şekilde sunmaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Öğretim Üyesi hk.",
       "Başlamadan Önce - Hafta 0",
@@ -40,7 +40,7 @@
     "href": "about.html",
     "title": "Öğretim Üyesi hk.",
     "section": "",
-    "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST215 - Yöneylem Araştırması 1 derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Ben Erhan Çene, Yıldız Teknik Üniversitesi, İstatistik Bölümü’nde doçent olarak çalışıyorum (üniversite web sayfasına bakınız).\nGenel araştırma ve ilgi alanlarım, bunlarla sınırlı olmamakla birlikte, veri bilimi ve istatistiksel programlama, spor analitiği ve biyoistatistiktir (yayın listesine bakınız).\nLisans düzeyinde Python'a Giriş, R ile İstatistiksel Programlama, Veritabanı ve Web Programlama gibi programlama derslerinin yanı sıra Örnekleme 1 ve lisansüstü düzeyde Veri Düzenleme ve Görselleştirme dersleri veriyorum.\nDers notlarını birkaç yıl önce Rmarkdown formatında hazırlamaya başladım, ardından daha iyi ve düzenli bir görünüm için bookdown paketiyle birleştirdim. Bookdown ile GitHub Pages kullanmayı da öğrendim ve şimdi ders notlarını Quarto ile hazırlamaya başladım.\n2025-2026 Güz döneminde İstanbul Ticaret Üniversitesi’nde vereceğim IST115 - Doğrusal Programlama 1 ve IST207 - Yöneylem Araştırması derslerinin de notlarını bu websayfasında topladım.\nEğer dersimi aldıysanız ve hoşunuza gittiyse, lütfen bir linkedin hesabı açıp aşağıdaki linkedin sayfasından benimle bağlantı kurun. İlerleyen yıllarda nerelerde çalıştığınızı görmekten çok büyük mutluluk duyuyorum.\nHerhangi bir sorunuz ve olası iş birliği için linkedin üzerinden benimle iletişime geçebilirsiniz.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "IST115/Hafta01/index.html",
@@ -2287,5 +2287,1434 @@
     "title": "IST115 - Hafta 04",
     "section": "",
     "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK04_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK04_MAIN.html",
+    "title": "IST207 - Hafta 04",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK02_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK02_MAIN.html",
+    "title": "IST207 - Hafta 02",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 02"
+    ]
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html",
+    "href": "IST207/Hafta03/index.html",
+    "title": "Hafta 03",
+    "section": "",
+    "text": "Ulaştırma Probleminin Tarihçe ve Tanımı (1)\n\n\n\n\nDoğrusal programlama probleminin özel bir biçimi olan ulaştırma problemi ve çözümü ilk olarak 1941 yılında Frank L. Hitchcock tarafından önerilmiş Tjalling C. Koopmans (1947) tarafından geliştirilmiştir.\nKonu ile ilgili asıl gelişme simpleks yöntemin ulaştırma problemlerine uygulanmasından sonra olmuştur.\nUlaştırma probleminin doğrusal programlama problemi biçiminde modellenmesi ve simpleks yöntemle çözülmesi ilk olarak Dantzig tarafından gerçekleştirilmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-probleminin-tarihçe-ve-tanımı",
+    "href": "IST207/Hafta03/index.html#ulaştırma-probleminin-tarihçe-ve-tanımı",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Probleminin Tarihçe ve Tanımı",
+    "text": "Ulaştırma Probleminin Tarihçe ve Tanımı\n\n\n\n\nUlaştırma Probleminin Tarihçe ve Tanımı (1)\n\n\n\nDoğrusal programlama probleminin özel bir biçimi olan ulaştırma problemi ve çözümü ilk olarak 1941 yılında Frank L. Hitchcock tarafından önerilmiş Tjalling C. Koopmans (1947) tarafından geliştirilmiştir.\nKonu ile ilgili asıl gelişme simpleks yöntemin ulaştırma problemlerine uygulanmasından sonra olmuştur.\nUlaştırma probleminin doğrusal programlama problemi biçiminde modellenmesi ve simpleks yöntemle çözülmesi ilk olarak Dantzig tarafından gerçekleştirilmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-probleminin-tarihçe-ve-tanımı-1",
+    "href": "IST207/Hafta03/index.html#ulaştırma-probleminin-tarihçe-ve-tanımı-1",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Probleminin Tarihçe ve Tanımı",
+    "text": "Ulaştırma Probleminin Tarihçe ve Tanımı\n\n\n\n\nUlaştırma Probleminin Tarihçe ve Tanımı (2)\n\n\n\nİkinci Dünya Savaşı sırasında Amerika Birleşik Devletleri’nin askeri faaliyetlerini planlamak amacıyla uygulanan ulaştırma modeli savaştan sonra da endüstride ulaşım mal ve hizmet dağıtımının planlanması işletmelerin kuruluş yeri seçimi personelin işe yerleştirilmesi gibi hem iktisadi hem de sosyal problemlerin çözümünde yaygın biçimde kullanılmaya başlanmıştır.\nSunum merkezlerindeki (fabrika depo vb.) malların istem merkezlerine dağıtımının planlanması ulaştırma problemi olarak adlandırılır."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-modellerinin-varsayımları",
+    "href": "IST207/Hafta03/index.html#ulaştırma-modellerinin-varsayımları",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Modellerinin Varsayımları",
+    "text": "Ulaştırma Modellerinin Varsayımları\n\n\n\n\nUlaştırma Modellerinin Varsayımları (1)\n\n\n\nDoğrusal Programlama Modellerinin varsayımlarına ek olarak\n\n1. Probleme konu olan mal ve hizmetlerin aynı birimle açıklanmaları yani homojen olmaları gerekir. Bu koşula homojenlik koşulu denir.\n2. Belirli sayıdaki sunum merkezinde dağıtılmak üzere bekleyen mal miktarları ile belirli sayıdaki istem merkezlerinin bu mala olan istem miktarlarının kesin olarak bilinmesi gerekir.\nAyrıca sunum miktarları toplamı ile istem miktarları toplamı eşit olmalı veya bu eşitlik kuramsal olarak sağlanmalıdır.\nToplam istem ile toplam sunumun eşitliğini ileri süren bu koşula tutarlılık koşulu denir.\nTutarlılık koşulunun sağlandığı ulaştırma problemlerinin dengeli veya standart oldukları kabul edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-modellerinin-varsayımları-1",
+    "href": "IST207/Hafta03/index.html#ulaştırma-modellerinin-varsayımları-1",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Modellerinin Varsayımları",
+    "text": "Ulaştırma Modellerinin Varsayımları\n\n\n\n\nUlaştırma Modellerinin Varsayımları (2)\n\n\n3. Sunum merkezleri ile istem merkezleri arasında aktarma yapılması söz konusu değildir. Bu malların sunum merkezlerinden istem merkezlerine doğrudan taşınması demektir.\nBazı durumlarda malın bulunduğu kaynak noktalarından aktarılacağı esas noktalara doğrudan taşınması ekonomik olmayabilir.\nDağıtım işleminde malların önce bazı transfer noktalarına daha sonra esas istem merkezlerine nakledilmesi daha ekonomik olabilir.\nBu tip ulaştırma problemlerine aktarmalı veya konaklamalı ulaştırma problemi denir.\n4. Herhangi bir sunum merkezinden herhangi bir istem merkezine bir birim mal taşımanın yol açtığı maliyetin sabit olması gerekir. Kısacası taşıma maliyetleri doğrusal nitelikli amaç fonksiyonunun özelliklerine uymaktadır."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü",
+    "href": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Modellerinin Yapısal Görüntüsü",
+    "text": "Ulaştırma Modellerinin Yapısal Görüntüsü\n\n\n\n\nUlaştırma Modellerinin Yapısal Görüntüsü (1)\n\n\nAmaç fonksiyonu ve karar değişkenleri:\n\\[\\begin{aligned}\nZ_{enk/enb} &= c_{11}x_{11}+c_{12}x_{12}+ \\dots + c_{1n} x_{1n} \\\\\n            &+ c_{21}x_{21}+c_{22}x_{22}+ \\dots + c_{2n} x_{2n} \\\\\n            &+ \\dots  \\\\\n            &+ c_{m1}x_{m1}+c_{m2}x_{m2}+ \\dots + c_{mn} x_{mn}\n\\end{aligned}\\]\nArz (Sunum) Kısıtları:\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& \\cdots &+& x_{1n}  &\\;= & a_{1}\\\\\nx_{21} &+& x_{22}  &+& \\cdots &+& x_{2n}  &\\;= & a_{2}\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\nx_{m1} &+& x_{m2}  &+& \\cdots &+& x_{mn}  &\\;= & a_{m}\\\\\n\\end{alignedat}\n\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü-1",
+    "href": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü-1",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Modellerinin Yapısal Görüntüsü",
+    "text": "Ulaştırma Modellerinin Yapısal Görüntüsü\n\n\n\n\nUlaştırma Modellerinin Yapısal Görüntüsü (2)\n\n\nTalep (İstem) Kısıtları:\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& \\cdots &+& x_{m1}  &\\;= & b_{1}\\\\\nx_{12} &+& x_{22}  &+& \\cdots &+& x_{m2}  &\\;= & b_{2}\\\\\n\\vdots    & & \\vdots    & & \\ddots & & \\vdots    & &\\vdots\\\\\nx_{1n} &+& x_{2n}  &+& \\cdots &+& x_{mn}  &\\;= & b_{n}\\\\\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: \\[x_{ij} \\geq 0 \\quad{} i = 1,2, \\dots, m; \\quad{} j = 1,2, \\dots, n;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü-2",
+    "href": "IST207/Hafta03/index.html#ulaştırma-modellerinin-yapısal-görüntüsü-2",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Modellerinin Yapısal Görüntüsü",
+    "text": "Ulaştırma Modellerinin Yapısal Görüntüsü\n\n\n\n\nUlaştırma Modellerinin Yapısal Görüntüsü (3)\n\n\nBu formüllerde\n\n\\(m\\): Sunum merkezi sayısı (\\(i = 1, 2, ..., m\\))\n\\(n\\): İstem merkezi sayısı (\\(j = 1, 2, ..., n\\))\n\\(c_{ij}\\): \\(i\\) sunum merkezinden \\(j\\) istem merkezine bir birim malın taşınması maliyeti\n\\(x_{ij}\\): \\(i\\) sunum merkezinden \\(j\\) istem merkezine taşınan mal miktarı\n\\(a_i\\): \\(i\\) sunum merkezinin sunum miktarı\n\\(b_j\\): \\(j\\) istem merkezinin istem miktarı"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-tablosu",
+    "href": "IST207/Hafta03/index.html#ulaştırma-tablosu",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Tablosu",
+    "text": "Ulaştırma Tablosu\n\n\n\n\nUlaştırma Modellerinin Yapısal Görüntüsü (3)\n\n\n\nToplam sunumun toplam isteme eşit olmadığı durumdaki ulaştırma modeline dengeli olmayan ulaştırma problemi denir.\nUlaştırma problemlerinin çözümü için önerilen özel yöntemlerin uygulanabilmeleri bu eşitliğin sağlanmasına bağlıdır.\nDoğrusal programlama ilkelerine göre formüle edilen bir ulaştırma problemi çok sık olarak hatta her zaman bir tablo biçiminde sunulur.\nUlaştırma modeli tablosu veya kısaca ulaştırma tablosu adı verilen tablo problemle ilgili tüm bilgileri ve malların sunum merkezlerinden istem merkezlerine nasıl taşındığını açıkça göstermektedir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#ulaştırma-tablosu-1",
+    "href": "IST207/Hafta03/index.html#ulaştırma-tablosu-1",
+    "title": "Hafta 03",
+    "section": "Ulaştırma Tablosu",
+    "text": "Ulaştırma Tablosu\n\n\n\n\nUlaştırma Modellerinin Yapısal Görüntüsü (4)\n\n\n\n\nUlaştırma Modeli Tablosu\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nSunum\nMerkezi\nİstem Merkezi\nSunum Miktarı\nai\n\n\nİM1\nİM2\n— — —\nİMj\n— — —\nİMn\n\n\n\n\nSM1\n\n\nC11\n\n\nx11\n\n\n\n\nC12\n\n\nx12\n\n\n— — —\n\n\nC1j\n\n\nx1j\n\n\n— — —\n\n\nC1n\n\n\nx1n\n\n\na1\n\n\nSM2\n\n\nC21\n\n\nx21\n\n\n\n\nC22\n\n\nx22\n\n\n⋮\n\n\nC2j\n\n\nx2j\n\n\n⋮\n\n\nC2n\n\n\nx2n\n\n\na2\n\n\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n\n\nSMi\n\n\nCi1\n\n\nxi1\n\n\n\n\nCi2\n\n\nxi2\n\n\n— — —\n\n\nCij\n\n\nxij\n\n\n— — —\n\n\nCin\n\n\nxin\n\n\nai\n\n\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n\n\nSMm\n\n\nCm1\n\n\nxm1\n\n\n\n\nCm2\n\n\nxm2\n\n\n— — —\n\n\nCmj\n\n\nxmj\n\n\n— — —\n\n\nCmn\n\n\nxmn\n\n\nam\n\n\nİstem Miktarı\nbj\nb1\nb2\n⋯\nbj\n⋯\nbm\nΣi=1m ai  =  Σj=1n bj"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (1)",
+    "text": "Örnek 1: Güven AŞ deterjan (1)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (1)\n\n\n\nGüven AŞ değişik yerlerdeki dört fabrikasında deterjan üretmektedir.\nSatışlarını değişik bölgelerde bulunan dört ana depo ile sağlayan işletme yönetiminin temel sorunu deterjanın fabrikalardan satış depolarına ulaşımını sağlarken karşılaştığı yüksek tutarlardaki taşıma giderleridir.\nMalların fabrikalardan satış depolarına gönderilirken katlanılması gereken birim ulaştırma maliyetleri bir sonraki sayfadaki tabloda verilmiştir.\nÖte yandan fabrika 1, 2, 3 ve 4’ün aylık üretim kapasiteleri sırasıyla 50, 200, 150 ve 300 ton’dur.\nDepoların istemleri depo 1, 2, 3 ve 4 için sırasıyla 150, 75, 175 ve 300 ton olarak belirlenmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (2)",
+    "text": "Örnek 1: Güven AŞ deterjan (2)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (2)\n\n\n\n\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700\n\n\n\n\n\n\n\nBuna göre\na. Problemin dengeli olup olmadığını belirtiniz. b. Ulaştırma tablosunu düzenleyiniz. c. Problemin matematiksel modelini kurunuz."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (3)",
+    "text": "Örnek 1: Güven AŞ deterjan (3)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (3)\n\n\nBuna göre\na. Problemin dengeli olup olmadığını belirtiniz.\n\nProblemin dengeli olup olmadığını belirlemek için tutarlılık koşulunun sağlanıp sağlanmadığının kontrol edilmesi gerekir.\nBunun için öncelikle fabrikaların üretim miktarları toplamı (toplam sunum) ile depoların ihtiyaç duydukları ürün miktarları toplamını (toplam istem) hesaplayalım.\n\nToplam sunum: \\(50 + 200 + 150 + 300 = 700\\) ton\nToplam istem: \\(150 + 75 + 175 + 300 = 700\\) ton\n\nİstem-sunum eşitliğinin sağlanması problemin dengeli olduğunu göstermektedir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (4)",
+    "text": "Örnek 1: Güven AŞ deterjan (4)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (4)\n\n\nBuna göre b. Ulaştırma tablosunu düzenleyiniz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (5)",
+    "text": "Örnek 1: Güven AŞ deterjan (5)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (5)\n\n\nc. Problemin matematiksel modelini kurunuz.\nAmaç en küçük toplam ulaştırma maliyetini belirlemek olduğuna göre\n\\(x_{11}\\): Fabrika \\(1\\)’den depo \\(1\\)’e taşınan deterjan miktarı  \\(x_{12}\\): Fabrika \\(1\\)’den depo \\(2\\)’ye taşınan deterjan miktarı \\(\\dots\\) \\(x_{33}\\): Fabrika \\(3\\)’ten depo \\(3\\)’e taşınan deterjan miktarı \\(x_{43}\\): Fabrika \\(4\\)’ten depo \\(3\\)’e taşınan deterjan miktarı \\(x_{44}\\): Fabrika \\(4\\)’ten depo \\(4\\)’e taşınan deterjan miktarı olarak tanımlandığında modelin amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 3x_{11}+5x_{12}+7x_{13}+10x_{14} \\\\\n        &+ 6x_{21}+8x_{22}+13x_{23}+5x_{24} \\\\\n        &+ 4x_{31}+2x_{32}+6x_{33}+7x_{34} \\\\\n        &+ 12x_{41}+9x_{42}+4x_{43}+10x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan (6)",
+    "text": "Örnek 1: Güven AŞ deterjan (6)\n\n\n\n\nÖrnek 1: Güven AŞ deterjan (6)\n\n\nc. Problemin matematiksel modelini kurunuz.\n\n\nHer bir fabrikadan gönderilecek deterjan miktarı o fabrikanın üretim miktarına eşit olacağına göre sunum kısıtları\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 50\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 200\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 150\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 300\\\\\n\\end{alignedat}\n\\]\n\n\n\nDiğer taraftan her satış deposunun ürün gereksiniminin tam olarak karşılanması istendiğinden istem kısıtlayıcıları\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 150\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 75\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 175\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 300\\\\\n\\end{alignedat}\n\\]\n\nİşaret kısıtlaması: Son olarak negatif taşıma olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots 4; \\quad{} j = 1,2 \\dots 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#çözüm-yöntemleri",
+    "href": "IST207/Hafta03/index.html#çözüm-yöntemleri",
+    "title": "Hafta 03",
+    "section": "Çözüm Yöntemleri",
+    "text": "Çözüm Yöntemleri\n\n\n\n\nÇözüm Yöntemleri\n\n\nTablo oluşturulduktan sonra bir sonraki aşama tabloyu çözüme ulaştırmaktır.\nTabloyu çözüme ulaştırmak için en düşük maliyetle hangi fabrikadan ne kadarlık bir malzemenin hangi depoya atanacağının belirlenmesi gerekir.\nBu atamaları yapmak için 5 tane yöntemden bahsedilebilir.\n\nKuzey Batı Yöntemi\nSatır Yaklaşımı\nSütun Yaklaşımı\nEn Düşük Maliyet Yaklaşımı\nVAM Yöntemi"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#kuzeybatı-yöntemi",
+    "href": "IST207/Hafta03/index.html#kuzeybatı-yöntemi",
+    "title": "Hafta 03",
+    "section": "Kuzeybatı Yöntemi",
+    "text": "Kuzeybatı Yöntemi\n\n\n\n\nKuzeybatı Yöntemi\n\n\n\nKuzeybatı yöntemi sunum ve talepleri tablonun sol üst köşesinden (kuzeybatısından) karşılamaya başlar.\nEn soldaki sütunun talebi aşağıya (güneye) doğru karşılanır.\nTalebin daha fazla karşılanamadığı satırda sağ tarafa (doğuya) doğru devam edilir.\nSunum ve talep dengesi sağlanana kadar işleme devam edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (1)\n\n\n\n\nKuzeybatı Yöntemi (1)\n\n\nUlaştırma problemini kuzeybatı yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (2)\n\n\n\n\nKuzeybatı Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n0 (150)\n0 (75)\n0 (175)\n0 (300)\n0 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (3)\n\n\n\n\nKuzeybatı Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n0 (75)\n0 (175)\n0 (300)\n50 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (4)\n\n\n\n\nKuzeybatı Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n100 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n0 (75)\n0 (175)\n0 (300)\n150 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (5)\n\n\n\n\nKuzeybatı Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n75\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n175 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n0 (175)\n0 (300)\n225 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (6)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (6)\n\n\n\n\nKuzeybatı Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n75\n\n\n(m=8)\n\n\n25\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n25 (175)\n0 (300)\n250 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (7)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (7)\n\n\n\n\nKuzeybatı Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n75\n\n\n(m=8)\n\n\n25\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n150\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n0 (300)\n400 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (8)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (8)\n\n\n\n\nKuzeybatı Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n75\n\n\n(m=8)\n\n\n25\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n150\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n300\n\n\n(m=10)\n\n300 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n300 (300)\n700 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (9)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (9)\n\n\n\n\nKuzeybatı Yöntemi (9)\n\n\nÇözüm\n\n\n\n\nDağıtım – Kuzeybatı Köşe (NW) (Başlangıç) (Toplam Maliyet = 5575)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n100\n\n\n(m=6)\n\n\n75\n\n\n(m=8)\n\n\n25\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n150\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n300\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-kuzeybatı-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (10)",
+    "text": "Örnek 1: Güven AŞ deterjan: Kuzeybatı Yöntemi (10)\n\n\n\n\nKuzeybatı Yöntemi (10)\n\n\nKuzeybatı Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}{\\sum_{j=1}^{n}{c_{ij} x_{ij}}}  \\\\\n  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{44} x_{44} \\\\\n  &= 3\\cdot 50 + 6\\cdot 100 + 8\\cdot 75 + 13\\cdot 25 + 6\\cdot 150 + 10\\cdot 300 \\\\\n  &= \\mathbf{5575}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#satır-yöntemi",
+    "href": "IST207/Hafta03/index.html#satır-yöntemi",
+    "title": "Hafta 03",
+    "section": "Satır Yöntemi",
+    "text": "Satır Yöntemi\n\n\n\n\nSatır Yöntemi\n\n\n\nSatır yöntemi sunum ve talepleri çözmeye en üst satırdan başlayarak aşağıya doğru satır satır çözümler.\n\nArz ve talep dengesi her bir satırda en düşük maliyete sahip olan hücreyle giderilir.\nTek bir hücre bunu sağlamıyorsa bu kez en düşük maliyete sahip bir sonraki hücreye geçilir.\nBir satırdaki arz ya da bir sütundaki talep giderilene kadar aynı işleme devam edilir.\nDenge sağlanınca bir sonraki satıra geçilir.\n\nTüm satırlar için Sunum ve talep dengesi sağlanana kadar işleme devam edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (1)\n\n\n\n\nSatır Yöntemi (1)\n\n\nUlaştırma problemini Satır yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (2)\n\n\n\n\nSatır Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n0 (150)\n0 (75)\n0 (175)\n0 (300)\n0 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (3)\n\n\n\n\nSatır Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n0 (75)\n0 (175)\n0 (300)\n50 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (4)\n\n\n\n\nSatır Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n0 (75)\n0 (175)\n200 (300)\n250 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (5)\n\n\n\n\nSatır Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n75 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n75 (75)\n0 (175)\n200 (300)\n325 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (6)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (6)\n\n\n\n\nSatır Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n0 (175)\n200 (300)\n400 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (7)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (7)\n\n\n\n\nSatır Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n200 (300)\n575 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (8)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (8)\n\n\n\n\nSatır Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n275 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n300 (300)\n675 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (9)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (9)\n\n\n\n\nSatır Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n25\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n300 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n300 (300)\n700 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (10)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (10)\n\n\n\n\nSatır Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Satır-Min (Row Min) (Başlangıç) (Toplam Maliyet = 3600)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n25\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-satır-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (11)",
+    "text": "Örnek 1: Güven AŞ deterjan: Satır Yöntemi (11)\n\n\n\n\nSatır Yöntemi (11)\n\n\nSatır Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{31} x_{31} + c_{41} x_{41} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\\\\n  &= 3\\cdot 50 + 4\\cdot 75 + 12\\cdot 25 + 2\\cdot 75 + 4\\cdot 175 + 5\\cdot 200 + 10\\cdot 100 \\\\\n  &= \\mathbf{3600}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#sütun-yöntemi",
+    "href": "IST207/Hafta03/index.html#sütun-yöntemi",
+    "title": "Hafta 03",
+    "section": "Sütun Yöntemi",
+    "text": "Sütun Yöntemi\n\n\n\n\nSütun Yöntemi\n\n\n\nSütun yöntemi sunum ve talepleri çözmeye en sol sütundan başlayarak sağa doğru sütun sütun çözümler.\n\nArz ve talep dengesi her bir sütunda en düşük maliyete sahip olan hücreyle giderilir.\nTek bir hücre bunu sağlamıyorsa bu kez en düşük maliyete sahip bir sonraki hücreye geçilir.\nBir satırdaki arz ya da bir sütundaki talep giderilene kadar aynı işleme devam edilir.\nDenge sağlanınca bir sonraki sütuna geçilir.\n\nTüm sütunlar için sunum ve talep dengesi sağlanana kadar işleme devam edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (1)\n\n\n\n\nSütun Yöntemi (1)\n\n\nUlaştırma problemini Sütun yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (2)\n\n\n\n\nSütun Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n0 (150)\n0 (75)\n0 (175)\n0 (300)\n0 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (3)\n\n\n\n\nSütun Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n0 (75)\n0 (175)\n0 (300)\n50 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (4)\n\n\n\n\nSütun Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n100 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n0 (75)\n0 (175)\n0 (300)\n150 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (5)\n\n\n\n\nSütun Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n50 (75)\n0 (175)\n0 (300)\n200 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (6)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (6)\n\n\n\n\nSütun Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n25 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n0 (175)\n0 (300)\n225 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (7)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (7)\n\n\n\n\nSütun Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n25 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n0 (300)\n400 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (8)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (8)\n\n\n\n\nSütun Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n175 (300)\n575 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (9)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (9)\n\n\n\n\nSütun Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n300 (300)\n700 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (10)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (10)\n\n\n\n\nSütun Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Sütun-Min (Col Min) (Başlangıç) (Toplam Maliyet = 3675)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n100\n\n\n(m=4)\n\n\n50\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-sütun-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (11)",
+    "text": "Örnek 1: Güven AŞ deterjan: Sütun Yöntemi (11)\n\n\n\n\nSütun Yöntemi (11)\n\n\nSütun Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{31} x_{31} + c_{22} x_{22} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\\\\n  &= 3\\cdot 50 + 4\\cdot 100 + 8\\cdot 25 + 2\\cdot 50 + 4\\cdot 175 + 5\\cdot 175 + 10\\cdot 125 \\\\\n  &= \\mathbf{3675}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#en-düşük-maliyet-yöntemi",
+    "href": "IST207/Hafta03/index.html#en-düşük-maliyet-yöntemi",
+    "title": "Hafta 03",
+    "section": "En Düşük Maliyet Yöntemi",
+    "text": "En Düşük Maliyet Yöntemi\n\n\n\n\nEn Düşük Maliyet Yöntemi\n\n\n\nEn Düşük Maliyet yöntemi sunum ve talepleri çözmeye satır ve ya sütun gözetmeksizin en düşük maliyete sahip hücreyle başlar.\nAdımlar satır ve sütun yönteminin birleşimi gibidir.\nTüm satır ve sütunlar için sunum ve talep dengesi sağlanana kadar işleme devam edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (1)\n\n\n\n\nEn Düşük Maliyet Yöntemi (1)\n\n\nUlaştırma problemini En Düşük Maliyet yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (2)\n\n\n\n\nEn Düşük Maliyet Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n0 (150)\n0 (75)\n0 (175)\n0 (300)\n0 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (3)\n\n\n\n\nEn Düşük Maliyet Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n75 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n0 (150)\n75 (75)\n0 (175)\n0 (300)\n75 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (4)\n\n\n\n\nEn Düşük Maliyet Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n75 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n50 (150)\n75 (75)\n0 (175)\n0 (300)\n125 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (5)\n\n\n\n\nEn Düşük Maliyet Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n0 (175)\n0 (300)\n200 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (6)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (6)\n\n\n\n\nEn Düşük Maliyet Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n0 (300)\n375 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (7)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (7)\n\n\n\n\nEn Düşük Maliyet Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n200 (300)\n575 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (8)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (8)\n\n\n\n\nEn Düşük Maliyet Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n275 (300)\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n300 (300)\n675 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (9)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (9)\n\n\n\n\nEn Düşük Maliyet Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200 (200)\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n\n\nFabrika 4\n\n25\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n300 (300)\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n300 (300)\n700 (700)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (10)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (10)\n\n\n\n\nEn Düşük Maliyet Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – En Düşük Maliyet (Least Cost) (Başlangıç) (Toplam Maliyet = 3600)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n200\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n25\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n100\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-en-düşük-maliyet-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (11)",
+    "text": "Örnek 1: Güven AŞ deterjan: En Düşük Maliyet Yöntemi (11)\n\n\n\n\nEn Düşük Maliyet Yöntemi (11)\n\n\nEn Düşük Maliyet Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{31} x_{31} + c_{41} x_{41} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\\\\n  &= 3\\cdot 50 + 4\\cdot 75 + 12\\cdot 25 + 2\\cdot 75 + 4\\cdot 175 + 5\\cdot 200 + 10\\cdot 100 \\\\\n  &= \\mathbf{3600}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#vam-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#vam-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "VAM Yöntemi (1)",
+    "text": "VAM Yöntemi (1)\n\n\n\n\nVAM Yöntemi\n\n\n\nTürkçe’deki adını İngilizce Vogel’s Approximation Method kelimelerinin ilk harflerinden alan bu yöntem William R. Vogel tarafından 1958’de ileri sürülmüştür.\nYöntemin en önemli özelliği genellikle en iyi çözüme en yakın hatta en iyi çözümü başlangıçta vermesidir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#vam-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#vam-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "VAM Yöntemi (2)",
+    "text": "VAM Yöntemi (2)\n\n\n\n\nVAM Yöntemi\n\n\n\nYöntem aşağıda açıklanan aşamaların adım adım izlenmesi ile uygulanır.\n\n1) Birim ulaştırma maliyetlerinin oluşturduğu matrisin her bir satır ve her bir sütunundaki en düşük maliyetli iki \\(C_{ij}\\) maliyet katsayısı saptanır. 2) Birinci adımda belirlenen \\(C_{ij}\\)’ler arasındaki farklar hesaplanır. \n\nSatır \\(C_{ij}\\)’leri için hesaplanan fark değerleri tabloya eklenen bir ek satıra sütun \\(C_{ij}\\)’leri için hesaplanan fark değerleri tabloya eklenen bir ek sütuna yazılır.\nBu farklar en düşük maliyetli hücrenin kullanılmaması durumunda katlanılacak fazla harcamayı yani bir çeşit cezayı ifade ettiklerinden bunlara birim ceza (penaltı) değerleri de denir.\nBu nedenle VAM yöntemi birim penaltı yöntemi olarak da bilinir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#vam-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#vam-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "VAM Yöntemi (3)",
+    "text": "VAM Yöntemi (3)\n\n\n\n\nVAM Yöntemi\n\n\n3) İkinci adımda hesaplanan \\((m + n)\\) fark değerlerinden en büyük olanı saptanır. 4) \n\nEn büyük değerli farkın ortaya çıktığı satır veya sütunun en düşük maliyetli hücresi belirlenir.\nBu hücreye satır ve sütun koşullarına uygun olarak en yüksek miktardaki dağıtım yapılır.\nYapılan bu dağıtım miktarı ilgili satır ve sütun toplamlarından çıkartılır.\nDağıtım yapılan hücrenin işaret ettiği istem merkezinin istemi tam olarak karşılanmış ya da sunum merkezinin sunumu bütünüyle dağıtılmış ise o sunum merkezi veya istem merkezi (duruma göre her ikisi birden) bir sonraki dağıtım işleminde devre dışı bırakılır."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#vam-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#vam-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "VAM Yöntemi (4)",
+    "text": "VAM Yöntemi (4)\n\n\n\n\nVAM Yöntemi\n\n\n5) Dağıtım yapılan satır veya sütunun (veya her ikisinin birden) devre dışı bırakılması ve sunum ile istem merkezlerinin sunum-istem miktarlarının yeniden ayarlanmasıyla yeni bir tablo düzenlenir. 6) Düzenlenen bu yeni tabloda satır veya sütun sayısı bire ininceye değin 1-5 nolu işlemler sırasıyla izlenerek yinelenir.\n\nEn büyük fark değerleri birbirine eşit olabilir. Bu durumda dağıtım işlemi bunlardan herhangi birinin rasgele seçilmesiyle sürdürülebilir. Ancak bu durumda en iyi çözüme ulaşmak için gerekli işlem sayısı artabilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#vam-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#vam-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "VAM Yöntemi (5)",
+    "text": "VAM Yöntemi (5)\n\n\n\n\nVAM Yöntemi\n\n\nAşağıdaki kurallara uyulması durumunda en büyük fark değerlerinin birbirine eşit olduğu durumda gereksiz işlem yapma tehlikesi ortadan kalkar.\n\nEn büyük fark iki ya da daha fazla satırda (ya da sütunda) ortaya çıkarsa en büyük \\(a_i\\) (ya da \\(b_j\\)) değerli satırdaki (ya da sütundaki) en düşük maliyetli hücre seçilir.\nEn büyük fark bir satır ve bir sütunda aynı anda ortaya çıkarsa ve\n\nSöz konusu satır ile sütunun kesiştiği yerdeki hücrenin maliyeti en düşük ise dağıtım için bu hücre seçilir.\nSöz konusu hücreye ilişkin maliyet en düşük değilse ilgili satır ya da sütunun en düşük maliyetli hücresi seçilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (1)\n\n\n\n\nVAM Yöntemi (1)\n\n\nUlaştırma problemini VAM yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n3\n\n\nx11\n\n\n\n\n5\n\n\nx12\n\n\n\n\n7\n\n\nx13\n\n\n\n\n10\n\n\nx14\n\n\n50\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n13\n\n\nx23\n\n\n\n\n5\n\n\nx24\n\n\n200\n\n\nFabrika 3\n\n\n4\n\n\nx31\n\n\n\n\n2\n\n\nx32\n\n\n\n\n6\n\n\nx33\n\n\n\n\n7\n\n\nx34\n\n\n150\n\n\nFabrika 4\n\n\n12\n\n\nx41\n\n\n\n\n9\n\n\nx42\n\n\n\n\n4\n\n\nx43\n\n\n\n\n10\n\n\nx44\n\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (2)\n\n\n\n\nVAM Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n2\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n2\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n0 (300)\n5\n\n\n\nTalep\n0 (150)\n0 (75)\n0 (175)\n0 (300)\n0 (700)\n \n\n\nCol Δ\n1\n3\n2\n2"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (3)\n\n\n\n\nVAM Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n2\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n0 (150)\n2\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n1\n\n\n\nTalep\n0 (150)\n0 (75)\n175 (175)\n0 (300)\n175 (700)\n \n\n\nCol Δ\n1\n3\n–\n2"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (4)\n\n\n\n\nVAM Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n0 (50)\n7\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n75 (150)\n3\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n2\n\n\n\nTalep\n0 (150)\n75 (75)\n175 (175)\n0 (300)\n250 (700)\n \n\n\nCol Δ\n1\n–\n–\n2"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (5)\n\n\n\n\nVAM Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n75 (150)\n3\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n2\n\n\n\nTalep\n50 (150)\n75 (75)\n175 (175)\n0 (300)\n300 (700)\n \n\n\nCol Δ\n2\n–\n–\n2"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (6)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (6)\n\n\n\n\nVAM Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n0 (200)\n1\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n–\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n2\n\n\n\nTalep\n125 (150)\n75 (75)\n175 (175)\n0 (300)\n375 (700)\n \n\n\nCol Δ\n6\n–\n–\n5"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (7)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (7)\n\n\n\n\nVAM Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n–\n\n\nFabrika 2\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n–\n\n\n(m=5)\n\n25 (200)\n–\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n–\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n–\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n0 (300)\n400 (700)\n \n\n\nCol Δ\n–\n–\n–\n5"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (8)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (8)\n\n\n\n\nVAM Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n–\n\n\nFabrika 2\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200 (200)\n–\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n–\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n–\n\n\n(m=10)\n\n175 (300)\n–\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n175 (300)\n575 (700)\n \n\n\nCol Δ\n–\n–\n–\n–"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (9)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (9)\n\n\n\n\nVAM Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50 (50)\n–\n\n\nFabrika 2\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200 (200)\n–\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150 (150)\n–\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300 (300)\n–\n\n\n\nTalep\n150 (150)\n75 (75)\n175 (175)\n300 (300)\n700 (700)\n \n\n\nCol Δ\n–\n–\n–\n–"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (10)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (10)\n\n\n\n\nVAM Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Vogel Yaklaşımı (VAM) (Başlangıç) (Toplam Maliyet = 3575)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-vam-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (11)",
+    "text": "Örnek 1: Güven AŞ deterjan: VAM Yöntemi (11)\n\n\n\n\nVAM Yöntemi (11)\n\n\nVAM Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{43} x_{43} + c_{24} x_{24} + c_{44} x_{44} \\\\\n  &= 3\\cdot 50 + 6\\cdot 25 + 4\\cdot 75 + 2\\cdot 75 + 4\\cdot 175 + 5\\cdot 175 + 10\\cdot 125 \\\\\n  &= \\mathbf{3575}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-yöntemlerin-karşılaştırılması",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-yöntemlerin-karşılaştırılması",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: Yöntemlerin Karşılaştırılması",
+    "text": "Örnek 1: Güven AŞ deterjan: Yöntemlerin Karşılaştırılması\n\n\n\n\nKarşılaştırma\n\n\nYöntemlerin Karşılaştırılması\n\nKuzeybatı Yöntemi: \\(5575\\)\nSatır Yöntemi: \\(3600\\)\nSütun Yöntemi: \\(3675\\)\nEn Düşük Maliyet Yöntemi: \\(3600\\)\nVAM Yöntemi: \\(3575\\)\nEn düşük maliyet VAM Yöntemi’nde elde edilmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#modi-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#modi-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "MODI Yöntemi (1)",
+    "text": "MODI Yöntemi (1)\n\n\n\n\nMODI Yöntemi (1)\n\n\n\nÖrnekten görüldüğü gibi farklı yöntemler farklı sonuçlar getirebilmektedir.\nAncak bu yöntemler her zaman optimum değeri bulmamakta daha çok bir başlangıç değeri elde edilmesini sağlamaktadır.\nElde edilen sonucun en iyi (optimum) olup olmadığını belirlemek için ise MODI Yöntemi kullanılabilir.\nModi yönteminde yapılması gereken ilk işlem \\(U_i\\) ve \\(V_j\\) olarak gösterilen dual değişken değerlerinin hesaplanmasıdır."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#modi-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#modi-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "MODI Yöntemi (2)",
+    "text": "MODI Yöntemi (2)\n\n\n\n\nMODI Yöntemi (2)\n\n\n\n\\(U_i\\) ve \\(V_j\\) değerlerinin hesaplanmasında dolu hücrelerden yararlanılır.\n\\(U_i\\) + \\(V_j\\) toplamının dolu hücrelerdeki \\(C_{ij}\\) katsayısına eşit olması gerekir.\n\\(U_i\\) ve \\(V_j\\) olarak (\\(m + n\\)) bilinmeyene karşılık (\\(m + n - 1\\)) temel değişken dolayısıyla \\((m + n - 1)\\) denklem vardır.\nBilinmeyen sayısı denklem sayısından bir fazla olduğu için \\(U_i\\) ve ya \\(V_j\\)’lerden keyfi olarak seçilen bir tanesine rasgele bir değer (genellikle sıfır) verip kalanlar hesaplanabilir.\n\\(U_i\\) ve \\(V_j\\) değerlerinin belirlenmesinden sonra boş hücrelerin gizli maliyetlerinin hesaplanması gerekir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#modi-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#modi-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "MODI Yöntemi (3)",
+    "text": "MODI Yöntemi (3)\n\n\n\n\nMODI Yöntemi (3)\n\n\n\nGizli maliyetler \\[d_{ij} = C_{ij} - (U_i + V_j)\\] bağıntısından hesaplanır.\nGizli Maliyet için üç olası durum söz konusudur.\n\n\\(d_{ij} &gt; 0\\) ise bu hücrenin doldurulması toplam maliyeti artıracağından söz konusu hücrenin boş bırakılmasına karar verilir.\n\\(d_{ij} &lt; 0\\) ise bu hücrenin doldurulması toplam maliyeti azaltacağından hali hazırda boş olan hücrenin doldurulmasına karar verilir.\n\\(d_{ij} = 0\\) ise bu hücrenin doldurulmasıyla ulaşılacak toplam maliyet bir önceki toplam maliyete eşit olacağından alternatif çözümlerden söz edilir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#modi-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#modi-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "MODI Yöntemi (4)",
+    "text": "MODI Yöntemi (4)\n\n\n\n\nMODI Yöntemi (4)\n\n\n\nGizli maliyetlerden bir ya da birkaçı negatif değerli ise eldeki çözümün en iyi olmadığı kararlaştırılır.\nİlk önce hangi negatif değerli boş hücreye dağıtım yapılması gerektiğine karar verirken mutlak değerce en büyük negatif gizli maliyetin hesaplandığı boş hücreden başlamak doğru olur.\nBoş hücre seçiminin tamamlanmasından sonra boş hücre başlangıç noktası olmak üzere uygun dolu hücreler kullanılarak kapalı bir çevrim oluşturulur ve hücreler arasında mal aktarmaları yapılarak yeni bir taşıma programı belirlenir.\nAktarmalardan sonra elde edilen yeni çözümün temel olup olmadığının belirlenmesinden sonra \\(U_i\\) ve \\(V_j\\) değerleri yeniden hesaplanır.\nYukarıdaki işlemler en iyi çözüme ulaşılıncaya değin tekrarlanır."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-1",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-1",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (1)",
+    "text": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (1)\n\n\n\n\nVAM Sonucu\n\n\nVAM Çözümü\n\n\n\n\nDağıtım – Vogel Yaklaşımı (VAM) (Başlangıç) (Toplam Maliyet = 3575)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200\n\n\nFabrika 3\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700\n\n\n\n\nşeklinde idi."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-2",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-2",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (2)",
+    "text": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (2)\n\n\n\n\n\\(u_i\\) ve \\(v_j\\) hesabı\n\n\n\\(m=4\\) satır ve \\(n=4\\) sütun ve \\(m+n-1=7\\) tane temel değişken olduğundan \\(u_1=0\\) rastgele değeri belirlenerek diğer \\(u_i\\), \\(v_j\\) ve \\(R_{ij}\\) ler hesaplanır.\n\n\n\\[\\begin{aligned}\nv_{1} &= c_{11} - u_{1} = 3 - 0 = 3 \\\\\nu_{2} &= c_{21} - v_{1} = 6 - 3 = 3 \\\\\nv_{4} &= c_{24} - u_{2} = 5 - 3 = 2 \\\\\nu_{3} &= c_{31} - v_{1} = 4 - 3 = 1 \\\\\nv_{2} &= c_{32} - u_{3} = 2 - 1 = 1 \\\\\nu_{4} &= c_{44} - v_{4} = 10 - 2 = 8 \\\\\nv_{3} &= c_{43} - u_{4} = 4 - 8 = -4 \\\\\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-3",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-3",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (3)",
+    "text": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (3)\n\n\n\n\nMODI Tablosu\n\n\n\\(u_i\\) ve \\(v_j\\) hesabı\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nv1 = 3\nDepo 2\nv2 = 1\nDepo 3\nv3 = -4\nDepo 4\nv4 = 2\nArz\n\n\n\n\nFabrika 1\nu1 = 0\n\n50\n\n\n(m=3)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=7)\n\n\n–\n\n\n(m=10)\n\n50\n\n\nFabrika 2\nu2 = 3\n\n25\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=13)\n\n\n175\n\n\n(m=5)\n\n200\n\n\nFabrika 3\nu3 = 1\n\n75\n\n\n(m=4)\n\n\n75\n\n\n(m=2)\n\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=7)\n\n150\n\n\nFabrika 4\nu4 = 8\n\n–\n\n\n(m=12)\n\n\n–\n\n\n(m=9)\n\n\n175\n\n\n(m=4)\n\n\n125\n\n\n(m=10)\n\n300\n\n\nTalep\n150\n75\n175\n300\n700"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-4",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-4",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (4)",
+    "text": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (4)\n\n\n\n\n\\(R_{ij}\\) hesabı\n\n\nHer bir \\(R_{ij}\\), \\(R_{ij} = c_{ij} - u_{i} - v_{j}\\) formülü ile hesaplanır.\n\n\n\\[\\begin{aligned}\nR_{11} &= c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\\\\nR_{12} &= c_{12} - u_{1} - v_{2} = 5 - 0 - 1 = 4 \\\\\nR_{13} &= c_{13} - u_{1} - v_{3} = 7 - 0 - (-4) = 11 \\\\\nR_{14} &= c_{14} - u_{1} - v_{4} = 10 - 0 - 2 = 8 \\\\\nR_{21} &= c_{21} - u_{2} - v_{1} = 6 - 3 - 3 = 0 \\\\\nR_{22} &= c_{22} - u_{2} - v_{2} = 8 - 3 - 1 = 4 \\\\\nR_{23} &= c_{23} - u_{2} - v_{3} = 13 - 3 - (-4) = 14 \\\\\nR_{24} &= c_{24} - u_{2} - v_{4} = 5 - 3 - 2 = 0\n\\end{aligned}\\]\n\n\n\n\\[\\begin{aligned}\nR_{31} &= c_{31} - u_{3} - v_{1} = 4 - 1 - 3 = 0 \\\\\nR_{32} &= c_{32} - u_{3} - v_{2} = 2 - 1 - 1 = 0 \\\\\nR_{33} &= c_{33} - u_{3} - v_{3} = 6 - 1 - (-4) = 9 \\\\\nR_{34} &= c_{34} - u_{3} - v_{4} = 7 - 1 - 2 = 4 \\\\\nR_{41} &= c_{41} - u_{4} - v_{1} = 12 - 8 - 3 = 1 \\\\\nR_{42} &= c_{42} - u_{4} - v_{2} = 9 - 8 - 1 = 0 \\\\\nR_{43} &= c_{43} - u_{4} - v_{3} = 4 - 8 - (-4) = 0 \\\\\nR_{44} &= c_{44} - u_{4} - v_{4} = 10 - 8 - 2 = 0\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-5",
+    "href": "IST207/Hafta03/index.html#örnek-1-güven-aş-deterjan-modi-hesabı-5",
+    "title": "Hafta 03",
+    "section": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (5)",
+    "text": "Örnek 1: Güven AŞ deterjan: MODI Hesabı (5)\n\n\n\n\n\\(R_{ij}\\)\n\n\n\\(R_{ij}\\) hesabı ve optimum kontrolü\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nv1 = 3\nDepo 2\nv2 = 1\nDepo 3\nv3 = -4\nDepo 4\nv4 = 2\nArz\n\n\n\n\nFabrika 1\nu1 = 0\n\n\nc=3\n\n\n50\n\n\n\nR=–\n\n\n\nc=5\n\n\n–\n\n\n\nR=4\n\n\n\nc=7\n\n\n–\n\n\n\nR=11\n\n\n\nc=10\n\n\n–\n\n\n\nR=8\n\n50\n\n\nFabrika 2\nu2 = 3\n\n\nc=6\n\n\n25\n\n\n\nR=–\n\n\n\nc=8\n\n\n–\n\n\n\nR=4\n\n\n\nc=13\n\n\n–\n\n\n\nR=14\n\n\n\nc=5\n\n\n175\n\n\n\nR=–\n\n200\n\n\nFabrika 3\nu3 = 1\n\n\nc=4\n\n\n75\n\n\n\nR=–\n\n\n\nc=2\n\n\n75\n\n\n\nR=–\n\n\n\nc=6\n\n\n–\n\n\n\nR=9\n\n\n\nc=7\n\n\n–\n\n\n\nR=4\n\n150\n\n\nFabrika 4\nu4 = 8\n\n\nc=12\n\n\n–\n\n\n\nR=1\n\n\n\nc=9\n\n\n–\n\n\n\nR=0\n\n\n\nc=4\n\n\n175\n\n\n\nR=–\n\n\n\nc=10\n\n\n125\n\n\n\nR=–\n\n300\n\n\nTalep\n150\n75\n175\n300\n700\n\n\n\n\nTüm \\(R_{ij}\\geq0\\) olduğundan çözüm optimumdur."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi (1)\n\n\n\n\nÖrnek 2: Alet AŞ Bulaşık makinesi (1)\n\n\n\nBulaşık makinesi üreticisi Alet AŞ’nin değişik yerlerde dört fabrikası vardır.\nİşletme, satışlarını değişik yerlerdeki dört deposu ile yapmaktadır.\nİşletme yönetiminin temel sorunu, makineleri depolara en küçük maliyetle taşımaktır.\nFabrikaların üretim kapasiteleri, depoların istem miktarları ve birim ulaştırma maliyetleri aşağıdaki ulaştırma tablosunda gösterilmiştir.\nBaşlangıç çözümünü ve bu çözüme ilişkin toplam ulaştırma maliyetini bulunuz."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi (2)\n\n\n\n\nÖrnek 2: Alet AŞ Bulaşık makinesi (2)\n\n\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi (3)\n\n\n\n\nÖrnek 2: Alet AŞ Bulaşık makinesi (3)\n\n\nProblemin dengeli olup olmadığını belirleyelim.\n\nProblemin dengeli olup olmadığını belirlemek için tutarlılık koşulunun sağlanıp sağlanmadığının kontrol edilmesi gerekir.\nBunun için öncelikle fabrikaların üretim miktarları toplamı (toplam sunum) ile depoların ihtiyaç duydukları ürün miktarları toplamını (toplam istem) hesaplayalım.\n\nToplam sunum: \\(40 + 60 + 40 + 50 = 190\\) ton\nToplam istem: \\(55 + 25 + 50 + 60 = 190\\) ton\n\nİstem-sunum eşitliğinin sağlanması problemin dengeli olduğunu göstermektedir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi (4)\n\n\n\n\nÖrnek 2: Alet AŞ Bulaşık makinesi (4)\n\n\nc. Problemin matematiksel modelini kurunuz.\nAmaç en küçük toplam ulaştırma maliyetini belirlemek olduğuna göre\n\\(x_{11}\\): Fabrika \\(1\\)’den depo \\(1\\)’e taşınan bulaşık makinası adeti  \\(x_{12}\\): Fabrika \\(1\\)’den depo \\(2\\)’ye taşınan bulaşık makinası adeti \\(\\dots\\) \\(x_{33}\\): Fabrika \\(3\\)’ten depo \\(3\\)’e taşınan bulaşık makinası adeti \\(x_{43}\\): Fabrika \\(4\\)’ten depo \\(3\\)’e taşınan bulaşık makinası adeti \\(x_{44}\\): Fabrika \\(4\\)’ten depo \\(4\\)’e taşınan bulaşık makinası adeti olarak tanımlandığında modelin amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 4x_{11}+3x_{12}+4x_{13}+5x_{14} \\\\\n        &+ 6x_{21}+8x_{22}+5x_{23}+8x_{24} \\\\\n        &+ 3x_{31}+4x_{32}+5x_{33}+5x_{34} \\\\\n        &+ 1x_{41}+2x_{42}+3x_{43}+4x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi (5)\n\n\n\n\nÖrnek 2: Alet AŞ Bulaşık makinesi (5)\n\n\n\n\nHer bir fabrikadan gönderilecek bulaşık makinesi adeti o fabrikanın üretim miktarına eşit olacağına göre sunum kısıtları\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 40\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 60\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 40\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 50\\\\\n\\end{alignedat}\n\\]\n\n\n\nDiğer taraftan her satış deposunun ürün gereksiniminin tam olarak karşılanması istendiğinden istem kısıtlayıcıları\n\\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 55\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 25\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 50\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 60\\\\\n\\end{alignedat}\n\\]\n\nİşaret kısıtlaması: Son olarak negatif taşıma olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots 4; \\quad{} j = 1,2 \\dots 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (1)\n\n\n\n\nKuzeybatı Yöntemi (1)\n\n\nUlaştırma problemini kuzeybatı yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (2)\n\n\n\n\nKuzeybatı Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n0 (55)\n0 (25)\n0 (50)\n0 (60)\n0 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (3)\n\n\n\n\nKuzeybatı Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n40 (55)\n0 (25)\n0 (50)\n0 (60)\n40 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (4)\n\n\n\n\nKuzeybatı Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n15 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n0 (25)\n0 (50)\n0 (60)\n55 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (5)\n\n\n\n\nKuzeybatı Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n40 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n0 (50)\n0 (60)\n80 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (6)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (6)\n\n\n\n\nKuzeybatı Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n20\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n20 (50)\n0 (60)\n100 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (7)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (7)\n\n\n\n\nKuzeybatı Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n20\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n30\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n30 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n0 (60)\n130 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (8)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (8)\n\n\n\n\nKuzeybatı Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n20\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n30\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n10 (60)\n140 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (9)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (9)\n\n\n\n\nKuzeybatı Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n20\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n30\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n50\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n60 (60)\n190 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (10)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (10)\n\n\n\n\nKuzeybatı Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Kuzeybatı Köşe (NW) (Başlangıç) (Toplam Maliyet = 950)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n40\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n15\n\n\n(m=6)\n\n\n25\n\n\n(m=8)\n\n\n20\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n30\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n50\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-kuzeybatı-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (11)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Kuzeybatı Yöntemi (11)\n\n\n\n\nKuzeybatı Yöntemi (11)\n\n\nKuzeybatı Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{34} x_{34} + c_{44} x_{44} \\\\\n  &= 4\\cdot 40 + 6\\cdot 15 + 8\\cdot 25 + 5\\cdot 20 + 5\\cdot 30 + 5\\cdot 10 + 4\\cdot 50 \\\\\n  &= \\mathbf{950}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (1)\n\n\n\n\nSatır Yöntemi (1)\n\n\nUlaştırma problemini Satır yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (2)\n\n\n\n\nSatır Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n0 (55)\n0 (25)\n0 (50)\n0 (60)\n0 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (3)\n\n\n\n\nSatır Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n25 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n0 (55)\n25 (25)\n0 (50)\n0 (60)\n25 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (4)\n\n\n\n\nSatır Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n15 (55)\n25 (25)\n0 (50)\n0 (60)\n40 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (5)\n\n\n\n\nSatır Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n50 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n15 (55)\n25 (25)\n50 (50)\n0 (60)\n90 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (6)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (6)\n\n\n\n\nSatır Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n10\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n25 (55)\n25 (25)\n50 (50)\n0 (60)\n100 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (7)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (7)\n\n\n\n\nSatır Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n10\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n30\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n30 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n0 (60)\n130 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (8)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (8)\n\n\n\n\nSatır Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n10\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n30\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n10 (60)\n140 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (9)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (9)\n\n\n\n\nSatır Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n10\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n30\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n50\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n60 (60)\n190 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (10)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (10)\n\n\n\n\nSatır Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Satır-Min (Row Min) (Başlangıç) (Toplam Maliyet = 785)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n15\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n10\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n30\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n10\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n50\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-satır-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (11)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Satır Yöntemi (11)\n\n\n\n\nSatır Yöntemi (11)\n\n\nSatır Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{11} x_{11} + c_{21} x_{21} + c_{31} x_{31} + c_{12} x_{12} + c_{23} x_{23} + c_{34} x_{34} + c_{44} x_{44} \\\\\n  &= 4\\cdot 15 + 6\\cdot 10 + 3\\cdot 30 + 3\\cdot 25 + 5\\cdot 50 + 5\\cdot 10 + 4\\cdot 50 \\\\\n  &= \\mathbf{785}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (1)\n\n\n\n\nSütun Yöntemi (1)\n\n\nUlaştırma problemini Sütun yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (2)\n\n\n\n\nSütun Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n0 (55)\n0 (25)\n0 (50)\n0 (60)\n0 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (3)\n\n\n\n\nSütun Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n50 (55)\n0 (25)\n0 (50)\n0 (60)\n50 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (4)\n\n\n\n\nSütun Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n0 (25)\n0 (50)\n0 (60)\n55 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (5)\n\n\n\n\nSütun Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n25 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n0 (50)\n0 (60)\n80 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (6)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (6)\n\n\n\n\nSütun Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n15 (50)\n0 (60)\n95 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (7)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (7)\n\n\n\n\nSütun Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n35 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n0 (60)\n130 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (8)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (8)\n\n\n\n\nSütun Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n35 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n35 (60)\n165 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (9)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (9)\n\n\n\n\nSütun Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n25\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n60 (60)\n190 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (10)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (10)\n\n\n\n\nSütun Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Sütun-Min (Col Min) (Başlangıç) (Toplam Maliyet = 750)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n25\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-sütun-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (11)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Sütun Yöntemi (11)\n\n\n\n\nSütun Yöntemi (11)\n\n\nSütun Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} + c_{34} x_{34} \\\\\n  &= 3\\cdot 5 + 1\\cdot 50 + 3\\cdot 25 + 4\\cdot 15 + 5\\cdot 35 + 8\\cdot 25 + 5\\cdot 35 \\\\\n  &= \\mathbf{750}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (1)\n\n\n\n\nEn Düşük Maliyet Yöntemi (1)\n\n\nUlaştırma problemini En Düşük Maliyet yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (2)\n\n\n\n\nEn Düşük Maliyet Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n\n\n\nTalep\n0 (55)\n0 (25)\n0 (50)\n0 (60)\n0 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (3)\n\n\n\n\nEn Düşük Maliyet Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n50 (55)\n0 (25)\n0 (50)\n0 (60)\n50 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (4)\n\n\n\n\nEn Düşük Maliyet Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n0 (25)\n0 (50)\n0 (60)\n55 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (5)\n\n\n\n\nEn Düşük Maliyet Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n25 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n0 (50)\n0 (60)\n80 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (6)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (6)\n\n\n\n\nEn Düşük Maliyet Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n15 (50)\n0 (60)\n95 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (7)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (7)\n\n\n\n\nEn Düşük Maliyet Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n35 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n0 (60)\n130 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (8)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (8)\n\n\n\n\nEn Düşük Maliyet Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n35 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n35 (60)\n165 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (9)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (9)\n\n\n\n\nEn Düşük Maliyet Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n25\n\n\n(m=8)\n\n60 (60)\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n60 (60)\n190 (190)"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (10)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (10)\n\n\n\n\nEn Düşük Maliyet Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – En Düşük Maliyet (Least Cost) (Başlangıç) (Toplam Maliyet = 750)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n15\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n35\n\n\n(m=5)\n\n\n25\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-en-düşük-maliyet-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (11)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: En Düşük Maliyet Yöntemi (11)\n\n\n\n\nEn Düşük Maliyet Yöntemi (11)\n\n\nEn Düşük Maliyet Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} + c_{34} x_{34} \\\\\n  &= 3\\cdot 5 + 1\\cdot 50 + 3\\cdot 25 + 4\\cdot 15 + 5\\cdot 35 + 8\\cdot 25 + 5\\cdot 35 \\\\\n  &= \\mathbf{750}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (1)\n\n\n\n\nVAM Yöntemi (1)\n\n\nUlaştırma problemini VAM yöntemiyle çözünüz.\n\n\n\n  \n\n\nBaşlangıç Tablosu (Birim Maliyetler)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n\n4\n\n\nx11\n\n\n\n\n3\n\n\nx12\n\n\n\n\n4\n\n\nx13\n\n\n\n\n5\n\n\nx14\n\n\n40\n\n\nFabrika 2\n\n\n6\n\n\nx21\n\n\n\n\n8\n\n\nx22\n\n\n\n\n5\n\n\nx23\n\n\n\n\n8\n\n\nx24\n\n\n60\n\n\nFabrika 3\n\n\n3\n\n\nx31\n\n\n\n\n4\n\n\nx32\n\n\n\n\n5\n\n\nx33\n\n\n\n\n5\n\n\nx34\n\n\n40\n\n\nFabrika 4\n\n\n1\n\n\nx41\n\n\n\n\n2\n\n\nx42\n\n\n\n\n3\n\n\nx43\n\n\n\n\n4\n\n\nx44\n\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (2)\n\n\n\n\nVAM Yöntemi (2)\n\n\nÖncelikle tabloyu aşağıdaki gibi yeniden yazalım.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n1\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n1\n\n\nFabrika 4\n\n–\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n0 (50)\n1\n\n\n\nTalep\n0 (55)\n0 (25)\n0 (50)\n0 (60)\n0 (190)\n \n\n\nCol Δ\n2\n1\n1\n1"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (3)\n\n\n\n\nVAM Yöntemi (3)\n\n\nAdım 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n1\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n1\n\n\nFabrika 3\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n1\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n50 (55)\n0 (25)\n0 (50)\n0 (60)\n50 (190)\n \n\n\nCol Δ\n1\n1\n1\n0"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (4)\n\n\n\n\nVAM Yöntemi (4)\n\n\nAdım 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n1\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n0 (60)\n3\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n1\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n0 (25)\n0 (50)\n0 (60)\n55 (190)\n \n\n\nCol Δ\n–\n1\n1\n0"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (5)\n\n\n\n\nVAM Yöntemi (5)\n\n\nAdım 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n0 (40)\n2\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n50 (60)\n0\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n1\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n0 (25)\n50 (50)\n0 (60)\n105 (190)\n \n\n\nCol Δ\n–\n1\n–\n0"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-6",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-6",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (6)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (6)\n\n\n\n\nVAM Yöntemi (6)\n\n\nAdım 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n25 (40)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n50 (60)\n–\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n–\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n0 (60)\n130 (190)\n \n\n\nCol Δ\n–\n–\n–\n0"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-7",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-7",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (7)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (7)\n\n\n\n\nVAM Yöntemi (7)\n\n\nAdım 5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40 (40)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n50 (60)\n–\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n–\n\n\n(m=5)\n\n5 (40)\n–\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n15 (60)\n145 (190)\n \n\n\nCol Δ\n–\n–\n–\n3"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-8",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-8",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (8)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (8)\n\n\n\n\nVAM Yöntemi (8)\n\n\nAdım 6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40 (40)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n–\n\n\n(m=8)\n\n50 (60)\n–\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n–\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n50 (60)\n180 (190)\n \n\n\nCol Δ\n–\n–\n–\n–"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-9",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-9",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (9)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (9)\n\n\n\n\nVAM Yöntemi (9)\n\n\nAdım 7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\nRow Δ\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40 (40)\n–\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n10\n\n\n(m=8)\n\n60 (60)\n–\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40 (40)\n–\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50 (50)\n–\n\n\n\nTalep\n55 (55)\n25 (25)\n50 (50)\n60 (60)\n190 (190)\n \n\n\nCol Δ\n–\n–\n–\n–"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-10",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-10",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (10)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (10)\n\n\n\n\nVAM Yöntemi (10)\n\n\nÇözüm\n\n\n\n\nDağıtım – Vogel Yaklaşımı (VAM) (Başlangıç) (Toplam Maliyet = 720)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n10\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-11",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-vam-yöntemi-11",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (11)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: VAM Yöntemi (11)\n\n\n\n\nVAM Yöntemi (11)\n\n\nVAM Yöntemiyle bulunan maliyet\n\\[\\begin{aligned}\nZ &= \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij} x_{ij} \\\\\n  &= c_{31} x_{31} + c_{41} x_{41} + c_{12} x_{12} + c_{23} x_{23} + c_{14} x_{14} + c_{24} x_{24} + c_{34} x_{34} \\\\\n  &= 3\\cdot 5 + 1\\cdot 50 + 3\\cdot 25 + 5\\cdot 50 + 5\\cdot 15 + 8\\cdot 10 + 5\\cdot 35 \\\\\n  &= \\mathbf{720}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-yöntemlerin-karşılaştırılması",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-yöntemlerin-karşılaştırılması",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: Yöntemlerin Karşılaştırılması",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: Yöntemlerin Karşılaştırılması\n\n\n\n\nKarşılaştırma\n\n\nYöntemlerin Karşılaştırılması\n\nKuzeybatı Yöntemi: \\(950\\)\nSatır Yöntemi: \\(785\\)\nSütun Yöntemi: \\(750\\)\nEn Düşük Maliyet Yöntemi: \\(750\\)\nVAM Yöntemi: \\(720\\)\nEn düşük maliyet VAM Yöntemi’nde elde edilmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-1",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-1",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (1)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (1)\n\n\n\n\nVAM Sonucu\n\n\nVAM Çözümü\n\n\n\n\nDağıtım – Vogel Yaklaşımı (VAM) (Başlangıç) (Toplam Maliyet = 720)\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nDepo 2\nDepo 3\nDepo 4\nArz\n\n\n\n\nFabrika 1\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40\n\n\nFabrika 2\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n10\n\n\n(m=8)\n\n60\n\n\nFabrika 3\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40\n\n\nFabrika 4\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190\n\n\n\n\nşeklinde idi."
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-2",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-2",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (2)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (2)\n\n\n\n\n\\(u_i\\) ve \\(v_j\\) hesabı\n\n\n\\(m=4\\) satır ve \\(n=4\\) sütun ve \\(m+n-1=7\\) tane temel değişken olduğundan \\(u_1=0\\) rastgele değeri belirlenerek diğer \\(u_i\\), \\(v_j\\) ve \\(R_{ij}\\) ler hesaplanır.\n\n\n\\[\\begin{aligned}\nv_{2} &= c_{12} - u_{1} = 3 - 0 = 3 \\\\\nv_{4} &= c_{14} - u_{1} = 5 - 0 = 5 \\\\\nu_{2} &= c_{24} - v_{4} = 8 - 5 = 3 \\\\\nu_{3} &= c_{34} - v_{4} = 5 - 5 = 0 \\\\\nv_{3} &= c_{23} - u_{2} = 5 - 3 = 2 \\\\\nv_{1} &= c_{31} - u_{3} = 3 - 0 = 3 \\\\\nu_{4} &= c_{41} - v_{1} = 1 - 3 = -2 \\\\\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-3",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-3",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (3)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (3)\n\n\n\n\nMODI Tablosu\n\n\n\\(u_i\\) ve \\(v_j\\) hesabı\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nv1 = 3\nDepo 2\nv2 = 3\nDepo 3\nv3 = 2\nDepo 4\nv4 = 5\nArz\n\n\n\n\nFabrika 1\nu1 = 0\n\n–\n\n\n(m=4)\n\n\n25\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n15\n\n\n(m=5)\n\n40\n\n\nFabrika 2\nu2 = 3\n\n–\n\n\n(m=6)\n\n\n–\n\n\n(m=8)\n\n\n50\n\n\n(m=5)\n\n\n10\n\n\n(m=8)\n\n60\n\n\nFabrika 3\nu3 = 0\n\n5\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n\n–\n\n\n(m=5)\n\n\n35\n\n\n(m=5)\n\n40\n\n\nFabrika 4\nu4 = -2\n\n50\n\n\n(m=1)\n\n\n–\n\n\n(m=2)\n\n\n–\n\n\n(m=3)\n\n\n–\n\n\n(m=4)\n\n50\n\n\nTalep\n55\n25\n50\n60\n190"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-4",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-4",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (4)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (4)\n\n\n\n\n\\(R_{ij}\\) hesabı\n\n\nHer bir \\(R_{ij}\\), \\(R_{ij} = c_{ij} - u_{i} - v_{j}\\) formülü ile hesaplanır.\n\n\n\\[\\begin{aligned}\nR_{11} = c_{11} - u_{1} - v_{1} = 4 - 0 - 3 = 1 \\\\\nR_{12} = c_{12} - u_{1} - v_{2} = 3 - 0 - 3 = 0 \\\\\nR_{13} = c_{13} - u_{1} - v_{3} = 4 - 0 - 2 = 2 \\\\\nR_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 5 = 0 \\\\\nR_{21} = c_{21} - u_{2} - v_{1} = 6 - 3 - 3 = 0 \\\\\nR_{22} = c_{22} - u_{2} - v_{2} = 8 - 3 - 3 = 2 \\\\\nR_{23} = c_{23} - u_{2} - v_{3} = 5 - 3 - 2 = 0 \\\\\nR_{24} = c_{24} - u_{2} - v_{4} = 8 - 3 - 5 = 0\n\\end{aligned}\\]\n\n\n\n\\[\\begin{aligned}\nR_{31} = c_{31} - u_{3} - v_{1} = 3 - 0 - 3 = 0 \\\\\nR_{32} = c_{32} - u_{3} - v_{2} = 4 - 0 - 3 = 1 \\\\\nR_{33} = c_{33} - u_{3} - v_{3} = 5 - 0 - 2 = 3 \\\\\nR_{34} = c_{34} - u_{3} - v_{4} = 5 - 0 - 5 = 0 \\\\\nR_{41} = c_{41} - u_{4} - v_{1} = 1 - (-2) - 3 = 0 \\\\\nR_{42} = c_{42} - u_{4} - v_{2} = 2 - (-2) - 3 = 1 \\\\\nR_{43} = c_{43} - u_{4} - v_{3} = 3 - (-2) - 2 = 3 \\\\\nR_{44} = c_{44} - u_{4} - v_{4} = 4 - (-2) - 5 = 1\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-5",
+    "href": "IST207/Hafta03/index.html#örnek-2-alet-aş-bulaşık-makinesi-modi-hesabı-5",
+    "title": "Hafta 03",
+    "section": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (5)",
+    "text": "Örnek 2: Alet AŞ Bulaşık makinesi: MODI Hesabı (5)\n\n\n\n\n\\(R_{ij}\\)\n\n\n\\(R_{ij}\\) hesabı ve optimum kontrolü\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepo 1\nv1 = 3\nDepo 2\nv2 = 3\nDepo 3\nv3 = 2\nDepo 4\nv4 = 5\nArz\n\n\n\n\nFabrika 1\nu1 = 0\n\n\nc=4\n\n\n–\n\n\n\nR=1\n\n\n\nc=3\n\n\n25\n\n\n\nR=–\n\n\n\nc=4\n\n\n–\n\n\n\nR=2\n\n\n\nc=5\n\n\n15\n\n\n\nR=–\n\n40\n\n\nFabrika 2\nu2 = 3\n\n\nc=6\n\n\n–\n\n\n\nR=0\n\n\n\nc=8\n\n\n–\n\n\n\nR=2\n\n\n\nc=5\n\n\n50\n\n\n\nR=–\n\n\n\nc=8\n\n\n10\n\n\n\nR=–\n\n60\n\n\nFabrika 3\nu3 = 0\n\n\nc=3\n\n\n5\n\n\n\nR=–\n\n\n\nc=4\n\n\n–\n\n\n\nR=1\n\n\n\nc=5\n\n\n–\n\n\n\nR=3\n\n\n\nc=5\n\n\n35\n\n\n\nR=–\n\n40\n\n\nFabrika 4\nu4 = -2\n\n\nc=1\n\n\n50\n\n\n\nR=–\n\n\n\nc=2\n\n\n–\n\n\n\nR=1\n\n\n\nc=3\n\n\n–\n\n\n\nR=3\n\n\n\nc=4\n\n\n–\n\n\n\nR=1\n\n50\n\n\nTalep\n55\n25\n50\n60\n190\n\n\n\n\nTüm \\(R_{ij}\\geq0\\) olduğundan çözüm optimumdur."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html",
+    "href": "IST207/Hafta02/index.html",
+    "title": "Hafta 02",
+    "section": "",
+    "text": "Planlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri: Bozulma Durumu, Dengesiz Ulaştırma Prob.\n\n\n5\n16 Ekim 2025 Perşembe\nUlaştırma Problemleri: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob.\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#haftalık-ders-planı",
+    "href": "IST207/Hafta02/index.html#haftalık-ders-planı",
+    "title": "Hafta 02",
+    "section": "Haftalık Ders Planı",
+    "text": "Haftalık Ders Planı\n\nPlanlanan taslak haftalık plan aşağıdaki tabloda verilmiş olup nihai değildir. İhtiyaç halinde değiştirilmesi mümkündür.\n\n\n\n\n\n\n\n\n\n\nHafta\nTarih\nKonu\n\n\n\n\n1\n18 Eylül 2025 Perşembe\nTanışma\n\n\n2\n25 Eylül 2025 Perşembe\nYöneylem Araştırması Nedir?\n\n\n3\n02 Ekim 2025 Perşembe\nUlaştırma Problemleri\n\n\n4\n09 Ekim 2025 Perşembe\nUlaştırma Problemleri: Bozulma Durumu, Dengesiz Ulaştırma Prob.\n\n\n5\n16 Ekim 2025 Perşembe\nUlaştırma Problemleri: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob.\n\n\n6\n23 Ekim 2025 Perşembe\nAtama Problemleri\n\n\n7\n30 Ekim 2025 Perşembe\nGenel Tekrar ve Soru Çözümü\n\n\n8\n06 Kasım 2025 Perşembe\nVİZE\n\n\n9\n13 Kasım 2025 Perşembe\nTamsayılı Programlama 1\n\n\n10\n20 Kasım 2025 Perşembe\nTamsayılı Programlama 2\n\n\n11\n27 Kasım 2025 Perşembe\nKarar Kuramı 1\n\n\n12\n04 Aralık 2025 Perşembe\nKarar Kuramı 2\n\n\n13\n11 Aralık 2025 Perşembe\nOyun Kuramı 1\n\n\n14\n18 Aralık 2025 Perşembe\nOyun Kuramı 2\n\n\n15\n25 Aralık 2025 Perşembe\nSoru Çözümü ve Genel Değerlendirme"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#kaynak-kitaplar",
+    "href": "IST207/Hafta02/index.html#kaynak-kitaplar",
+    "title": "Hafta 02",
+    "section": "Kaynak Kitaplar",
+    "text": "Kaynak Kitaplar\n\n\nDers notları, sınavlar için yeterlidir.\nTAHA, H. (2017), Yöneylem Araştırması, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar: Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul.\nÖZTÜRK, A. (2014), Yöneylem Araştırması, 15. Baskı, Ekin Yayınevi.\nWINSTON, Wayne L. (2004), Operations Research Applications and Algorithms, Fourth Edition, Thomson Learning, USA\nBRONSON, R. ve NAADIMUTHI, G. (1997), Schaum’s Outline of Operations Research, Second Edition, McGraw-Hill."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yönetim-fonksiyonları",
+    "href": "IST207/Hafta02/index.html#yönetim-fonksiyonları",
+    "title": "Hafta 02",
+    "section": "Yönetim Fonksiyonları",
+    "text": "Yönetim Fonksiyonları\n\n\n\n\nYönetim Fonksiyonları\n\n\n\nSanayi devrimi ile birlikte endüstri işletmelerinin hızla büyümeleri sonucunda bir kişinin bütün yöneticilik fonksiyonlarını tek başına yürütebilmesi imkansız hale gelmiştir.\nBunun doğal sonucu olarak yönetim fonksiyonları ayrılmış, böylece işletme bünyesinde üretim, pazarlama, finansman vb. farklı bölümler ortaya çıkmıştır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#çatışan-amaçlar",
+    "href": "IST207/Hafta02/index.html#çatışan-amaçlar",
+    "title": "Hafta 02",
+    "section": "Çatışan Amaçlar",
+    "text": "Çatışan Amaçlar\n\n\n\n\nÇatışan Amaçlar\n\n\n\nYönetim fonksiyonunun gittikçe artan sayıda bölümlere ayrılması, yeni işletme sorunlarını da beraberinde getirmiştir.\nBir bölüm için en iyi olan davranış biçiminin bir başka bölüm için iyi olmak bir yana genellikle yıkıcı olması, bölümleri birbirlerinin amaç ve faaliyetlerini göz önünde bulundurmak zorunda bırakmıştır.\nBu tip sorunlar ve bunlara daha iyi çözüm bulma yaklaşımları da yöneylem araştırmasını doğurmuştur."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (1)\n\n\n\nKayıtlı olan literatüre göre yönetim için bilimsel yaklaşım presipleri 1900’lü yılların başlarında Frederick Taylor tarafından ortaya konulmuştur.\nGünümüz yöneylem araştırmasında kullanılan bazı model ve tekniklerin kullanılması çok eskiye dayansa da, yöneylem araştırması adı verilen ilk faaliyetin II. Dünya Savaşı sırasında gerçekleştirildiği kabul edilmektedir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (2)\n\n\n\nİkinci Dünya Savaşı sırasında İngiltere askeri yönetimi, düşmanlarının hava akınları karşısında en iyi savunma şeklini belirlemek amacıyla farklı disiplinlerden bilim adamlarıyla bir ekip çalışması başlatmış ve böylece en iyi savunma şeklini bulmuştur.\nBu çalışma için bir araya gelen bilim adamlarından yeni tip bombaların etkinliklerinin belirlenmesi ve radarların etkili biçimde kullanımlarının sağlanması problemlerini çözmeleri istenmiştir.\nÇözüm sonuçlarının uygulamada çok başarılı olması, savunma sisteminin diğer kesimlerinde; radar denetim politikaları, uçaksavar yangın kontrolü, konvoy büyüklüğü, düşman denizaltılarının yerlerinin saptanması gibi çeşitli askeri problemlerin çözümünde benzer ekiplerin oluşturulması sağlanmıştır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-2",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (3)\n\n\n\nİngiltere’de alınan başarılı sonuçlar müttefiklerin de dikkatini çekmiş, bu ülkeler de askeri problemlerini farklı disiplinlerden bilim adamlarıyla oluşturdukları ekipleriyle çözmeye girişmişlerdir\nYöneylem araştırmasıyla İngiltere’den çok sonra tanışmış olmakla beraber, ABD’nin bu konudaki yoğun çabaları yöneylem araştırmasında önemli ilerlemeler kaydedilmesini sağlamıştır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-3",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (4)\n\n\n\nABD hava kuvvetlerinin kurduğu ekibin üyelerinden birisi olan Dantzig, büyük organizasyonların gerçekleştirdikleri faaliyetlerin büyük bir bölümünün dağıtım problemi olarak ele alınabileceğini düşünmüştür.\nOna göre en iyi plan-programa bir amaç fonksiyonunun en küçüklenmesi (minimizasyonu) ile ulaşılabilecektir.\nDantzig, ayrıca doğrusal programlama problemlerinin klasik çözüm tekniği olan simpleks yöntemini önermiştir"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tarihçesi-4",
+    "title": "Hafta 02",
+    "section": "Yöneylem Araştırmasının Tarihçesi",
+    "text": "Yöneylem Araştırmasının Tarihçesi\n\n\n\n\nYöneylem Araştırmasının Tarihçesi (5)\n\n\n\nSavaş sırasında, askeri problemlerin çözümü için oluşturulan ekiplerde aktif biçimde çalışan bilim adamları, savaş sonrasında dikkatlerini benzer yaklaşımın sivil yaşam problemlerine uygulanabilirliği üzerinde yoğunlaştırmışlardır:\n\nÜniversitelerine dönüp mevcut teknikler için sağlam temel oluşturma konusunda çalışanlar\nYeni teknikler geliştirme çabasına girenler\nÖzel ekonominin değişik kesimlerindeki çalışmalarına dönerek buralarda karşılaşılan problemleri benzer yaklaşımla çözmeye çalışanlar\n\nBütün bu çalışmalar bilimsel bir uğraşı alanının yani Yöneylem Araştırması nın doğuşuna yol açmıştır"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-uygulanması",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının uygulanması",
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (1)\n\n\n\nYöneylem araştırmasını ilk uygulayan sivil kuruluşlar kar amaçlı büyük endüstriyel kuruluşlar olmuştur.\nKüçük boyutlu kuruluşlar, yöneylem araştırmasının yalnızca büyük işletmeler için değil, kendileri için de yararlı olduğunun farkına biraz geç varmışlardır\nKüçük şirketler ancak, araştırmacıların birbirlerinden farklı gibi görünmelerine karşın pek çok problemin stok, dağıtım, sıralama, kuyruk, oyun gibi belirli bir başlık altında incelenebileceklerini farketmeleri ve bunlar için standart çözüm teknikleri geliştirmelerinden çok sonra konuya ilgi göstermişlerdir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-uygulanması-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının uygulanması",
+    "text": "Yöneylem araştırmasının uygulanması\n\n\n\n\nYöneylem araştırmasının uygulanması (2)\n\n\n\nBirkaç uygulama dışında yöneylem araştırmasının hizmet ağırlıklı endüstrilerde ve kamu kesiminde kullanılması 1960’lı yılların ortalarında gerçekleşmiştir.\nBugün, banka, kütüphane, hastane, otel, okul gibi hizmet ağırlıklı pek çok kuruluş hizmet verme etkinliğini artırmada yöneylem araştırmasından büyük yarar sağlamaktadır.\nDevlet kuruluşları da plan, program ve politika belirleme çalışmalarında yöneylem araştırmasını yaygın bir biçimde kullanmaktadırlar.\nYöneylem araştırmasının çok geniş bir uygulama alanı bulması ve çok hızlı bir gelişme göstermesindeki en önemli faktör bilgisayar teknolojisindeki gelişme olmuştur."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
+    "href": "IST207/Hafta02/index.html#ilk-yöneylem-araştırması-kuruluşu",
+    "title": "Hafta 02",
+    "section": "İlk yöneylem araştırması kuruluşu",
+    "text": "İlk yöneylem araştırması kuruluşu\n\n\n\n\nİlk yöneylem araştırması kuruluşu\n\n\n\nYöneylem araştırması alanında çalışan bilimadamlarının ihtiyaçlarını karşılamak amacıyla kurulan ilk yöneylem araştırması kuruluşu, 1952 yılında ABD’de kurulan ORSA (The Operational Research Society of America) olmuştur.\nTürkiye’de yöneylem araştırması çalışmalarının batıdan çok sonra başladığı bilinmektedir.\nÜlkemizde de ilk yöneylem araştırması çalışmaları batıda olduğu gibi savunma kesiminde başlamıştır.\nSavunma kesimi dışında ilk yöneylem araştırması ekibi 1965 yılında Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK) bünyesinde kurulmuştur."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tanımı",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının tanımı",
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (1)\n\n\n\nYöneylem araştırması, sistemlerin performansını optimize etmek için teknikler kullanan bir bilim dalıdır.\nYöneylem araştırması, bir sistemde ortaya çıkan problemlere, sistemin denetlenebilir elemanları cinsinden bilimsel yöntem, teknik ve araçların uygulanmasıyla en iyi çözümün bulunmasıdır.\nYöneylem araştırması, insan, makina, para ve malzemeden oluşan endüstriyel, ticari, resmive askeri sistemlerde yönetimlerde karşılaşılan problemlere bilimsel yaklaşımdır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-tanımı-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının tanımı",
+    "text": "Yöneylem araştırmasının tanımı\n\n\n\n\nYöneylem araştırmasının tanımı (2)\n\n\n\nAmacı, yönetime politika ve faaliyetlerini bilimsel olarak belirlemede yardımcı olmaktır.\nYöneylem araştırması, mevcut imkanlardan en büyük faydayı sağlamak için girişilen bilimsel yaklaşmalar ve teknikler cümlesidir.\nYöneylem araştırmasının ana konusu, herhangi bir sistemin karmaşık operasyonlarını anlamak ve performansını iyileştirmek için bilimsel karar verme yöntemleridir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-temel-özellikleri",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının temel özellikleri",
+    "text": "Yöneylem araştırmasının temel özellikleri\n\n\n\n\nYöneylem araştırmasının temel özellikleri\n\n\n1. Sistem yaklaşımını kullanması: Yöneylem araştırması problemi çözerken, o problemin ait olduğu organizasyonun bütün unsurlarını, çevresini ve aralarındaki etkileşimi göz önünde bulundurur.\n2. Disiplinlerarası bir yaklaşım olması: Problemin modellenmesinde ve çözümünde farklı bakış açılarından faydalanabilmek için problemlerin disiplinlerarası bir ekip tarafından incelenmesi gerekir.\n3. Bilimsel yöntemler kullanması: Yöneylem araştırması problemi tanımlar, modeller, çözer, sonuçları test eder ve uygular."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
+    "href": "IST207/Hafta02/index.html#yöneylem-araştırmasının-metodolojisi-1",
+    "title": "Hafta 02",
+    "section": "Yöneylem araştırmasının metodolojisi (1)",
+    "text": "Yöneylem araştırmasının metodolojisi (1)\n\n\n\n\nİyi bir YA uygulamasının altı basamağı\n\n\n1) Problemin Tanımlanması\n2) Sistemin Gözlenmesi\n3) Problemin Matematiksel Modelinin Geliştirilmesi\n4) Modelin Çözülmesi\n5) Modelin Geçerliliğinin Gösterilmesi\n6) Çözümün Uygulanması ve Yorumlanması"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-tanımlanması",
+    "href": "IST207/Hafta02/index.html#problemin-tanımlanması",
+    "title": "Hafta 02",
+    "section": "Problemin Tanımlanması",
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (1)\n\n\n\nAmaçlar nelerdir?\nProblem çok dar kapsamlı mı ele alındı?\nProblem çok geniş kapsamlı mı ele alındı?"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-tanımlanması-1",
+    "href": "IST207/Hafta02/index.html#problemin-tanımlanması-1",
+    "title": "Hafta 02",
+    "section": "Problemin Tanımlanması",
+    "text": "Problemin Tanımlanması\n\n\n\n\nProblemin Tanımlanması (2)\n\n\n\nMümkün seçenekler arasından bir faaliyet veya faaliyetler dizisinin benimsenmesine karar denir.\nAlternatif stratejiler arasından en uygun olanını seçme konusunda karar verme yetkisine sahip birey ya da topluluğa verilen genel isme karar verici denir.\nKarar vericinin ulaşmak istediği bir amacının olması, bu amaca ulaşmada izlenebilecek alternatif stratejilerin bulunması ve alternatifler içinden hangisinin amacı gerçekleştirebileceği konusunda kuşku içinde bulunulması gerekmektedir.\nAncak bu koşullar sağlandığında bir problem vardır denir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#sistemin-gözlenmesi",
+    "href": "IST207/Hafta02/index.html#sistemin-gözlenmesi",
+    "title": "Hafta 02",
+    "section": "Sistemin Gözlenmesi",
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (1)\n\n\n\nHangi veriler toplanmalı?\nVeriler nasıl toplanmalı?\nSistemin farklı parçaları birbirleriyle nasıl etkileşmektedir?"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#sistemin-gözlenmesi-1",
+    "href": "IST207/Hafta02/index.html#sistemin-gözlenmesi-1",
+    "title": "Hafta 02",
+    "section": "Sistemin Gözlenmesi",
+    "text": "Sistemin Gözlenmesi\n\n\n\n\nSistemin Gözlenmesi (2)\n\n\n\nSistem gözlemlenir ve probleme etki eden parametreler tahmin edilmeye çalışılır.\nBu amaçla veri derlenmesi, bu adımın çok önemli bir kısmını oluşturur.\nTahmin değerleri sabit sayılar olarak işleme tabi tutulurlar ve matematiksel modelin geliştirilmesinde kullanılırlar.\nProblem elemanlarının duruma en uygun biçimde belirlenebilmesi için sistem yaklaşımı kullanılır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#sistem-nedir",
+    "href": "IST207/Hafta02/index.html#sistem-nedir",
+    "title": "Hafta 02",
+    "section": "Sistem Nedir?",
+    "text": "Sistem Nedir?\n\n\n\n\nSistem Nedir?\n\n\n\nBir sınır içerisinde, birbirleriyle etkileşim içinde bulunan ve ortak bir amaca yönelmiş olan öğeler topluluğuna sistem denir.\nSistem, girdileri çıktılara dönüştüren birbirleriyle ilişkili faaliyetlerden ve öğelerden (elemanlardan) oluşmaktadır.\nSistemin çok sayıda girdisi ve çıktısı olabilir.\n\n\n\n\n\n\n\n\nA\n\n\n\nGirdiler\n\nGirdiler\n\n\n\nİşlemler\n\nİşlemler\n\n\n\nGirdiler-&gt;İşlemler\n\n\n\n\n\nÇıktılar\n\nÇıktılar\n\n\n\nİşlemler-&gt;Çıktılar"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (1)\n\n\n\nHangi tür model kullanılmalı?\nModel, problemi tam olarak ifade ediyor mu?\nModel çok mu karmaşık?"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-1",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (2)\n\n\n\nProblemin kolayca çözülebilecek bir yapıya oturtulması gerekmektedir.\nModel nedir?\nBir sistemin değişen koşullar altındaki davranışlarını incelemek, kontrol etmek ve geleceği hakkında varsayımlarda bulunmak amacıyla elemanları arasındaki bağlantıları kelimeler veya matematiksek terimlerle belirleyen ifadeler topluluğuna model denir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-2",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Model Şeması\n\n\n\n\n\n\n\n\n\n\n\n\nmygraph\n\n\n\nSistem\n\nSistem\n\n\n\nGerçek Sistem Üzerinde Çalışmak\n\nGerçek Sistem Üzerinde Çalışmak\n\n\n\nSistem-&gt;Gerçek Sistem Üzerinde Çalışmak\n\n\n\n\n\nSistem Modeli Üzerinde Çalışmak\n\nSistem Modeli Üzerinde Çalışmak\n\n\n\nSistem-&gt;Sistem Modeli Üzerinde Çalışmak\n\n\n\n\n\nFiziksel Modeller Üzerinde Çalışmak\n\nFiziksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Fiziksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak\n\nMatematiksel Modeller Üzerinde Çalışmak\n\n\n\nSistem Modeli Üzerinde Çalışmak-&gt;Matematiksel Modeller Üzerinde Çalışmak\n\n\n\n\n\nAnalitik Model Üzerinde Çalışmak\n\nAnalitik Model Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Analitik Model Üzerinde Çalışmak\n\n\n\n\n\nSimülasyon Modeli Üzerinde Çalışmak\n\nSimülasyon Modeli Üzerinde Çalışmak\n\n\n\nMatematiksel Modeller Üzerinde Çalışmak-&gt;Simülasyon Modeli Üzerinde Çalışmak\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Problemin Matematiksel Model Şeması"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-3",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (3)\n\n\n\nHer modelin kuruluş amacı, belirli bir ekonomik sistemi yönetmekle görevli kişi veya kişilere (karar vericiye) mümkün karar seçeneklerini sunmak, bunların sonuçlarını belirlemek ve karşılaştırmalar yapmaktır.\nYöneylem araştırmasının karar vermeye en önemli katkısı matematiksel modellerdir.\nBir sistemin davranışlarıyla ilgili kuralların matematiksel olarak ifade edilmesiyle matematiksel modeller kurulur."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-4",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nProblemin Matematiksel Modelinin Geliştirilmesi (4)\n\n\n\nEğer ele alınan sistem matematiksel modellerle çözülemeyecek kadar karmaşık bir yapıya sahipse sistemin bir simülasyon modeli kurulur.\nSimülasyon, bir sistemin tüm çalışma zamanı boyunca davranış şeklinin bilgisayar ortamında taklit edilmesidir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-5",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (1)\n\n\n\nEkonomik sistemlerin matematiksel modellerinde kullanılan elemanlarını üç ana grupta toplamak mümkündür:\n\n\nAmaç fonksiyonu\nKarar değişkenleri\nKısıtlar"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
+    "href": "IST207/Hafta02/index.html#problemin-matematiksel-modelinin-geliştirilmesi-6",
+    "title": "Hafta 02",
+    "section": "Problemin Matematiksel Modelinin Geliştirilmesi",
+    "text": "Problemin Matematiksel Modelinin Geliştirilmesi\n\n\n\n\nMatematiksel modellerin elemanları (2)\n\n\n\nBir karar verme durumunda ilgilenilen sistem dikkatli bir şekilde gözlemlenir ve değerleri kontrol edilebilen ve sistemin performansını etkileyen parametreler belirlenir.\nBu parametreler yöneticilerin kontrolü altındadır ve karar değişkenleri olarak tanımlanırlar. Bir üretim sisteminde farklı ürünlerin üretilecek miktarları, bir yerden başka yere taşınacak ürün miktarı, işçi sayısı, makina sayısı vb\nKarar değişkenlerinin amaç üzerindeki etkilerinin analitik olarak gösterilmesiyle amaç fonksiyonu oluşturulur\nKısıtlar, sistemin içinde bulunduğu koşullardan kaynaklanmaktadır (talep kısıtları, kapasite kısıtları gibi)"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#modelin-çözülmesi",
+    "href": "IST207/Hafta02/index.html#modelin-çözülmesi",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (1)\n\n\nEn uygun çözüm tekniği nedir?\n\nAnalitik çözüm\nAlgoritmalar\nSimülasyon\nSezgisel"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#modelin-çözülmesi-1",
+    "href": "IST207/Hafta02/index.html#modelin-çözülmesi-1",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (2)\n\n\n\nAnalitik çözüm: Problemin Lagrange çarpanları, diferansiyel ve integral hesapları ile koşullu en iyi çözümünün bulunmasıdır. Analitik çözümde sadece matematiğin değil iktisat teorisinin de temel kuralları kullanılır.\nAlgoritma çözümü: Analitik çözüm bazen çok zor veya imkansız olabilir. Belirli bir sıra içerisinde gerçekleştirilen matematiksel ve mantıksal işlemler kümesine algoritma denir. Yinelemeli olarak uygulanan algoritmalar her adımda optimuma daha yakın bir çözüme doğru ilerler."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#modelin-çözülmesi-2",
+    "href": "IST207/Hafta02/index.html#modelin-çözülmesi-2",
+    "title": "Hafta 02",
+    "section": "Modelin Çözülmesi",
+    "text": "Modelin Çözülmesi\n\n\n\n\nModelin Çözülmesi (3)\n\n\n\nSimülasyon çözümü: Problem, analitik olarak veya algoritmalarla çözülemiyorsa kullanılır. Sistemin davranış şekli bilgisayar ortamında taklit edilir.\nSezgisel çözüm: Problem optimum çözümü bulunamayacak kadar karmaşıksa, sezgisel yöntemler sezgiye veya bazı deneysel kayıtlara dayanan karar kuralları ile belirli sayıda adımdan sonra en iyi olmasa da tatminkar bir sonuç verirler."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
+    "href": "IST207/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi",
+    "title": "Hafta 02",
+    "section": "Modelin Geçerliliğinin Gösterilmesi",
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (1)\n\n\n\nModelden elde edilen çıktılar sistemin kendisinden elde edilen çıktılarla uyuşuyor mu?\nModelden elde edilen çıktılar mantıklı mı?\nModel hatalı olabilir mi?"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
+    "href": "IST207/Hafta02/index.html#modelin-geçerliliğinin-gösterilmesi-1",
+    "title": "Hafta 02",
+    "section": "Modelin Geçerliliğinin Gösterilmesi",
+    "text": "Modelin Geçerliliğinin Gösterilmesi\n\n\n\n\nModelin Geçerliliğinin Gösterilmesi (2)\n\n\n\nModelden elde edilen çözümü uygulamaya koymadan önce gerçeğe uygunluğunun kanıtlanması gerekir.\nEğer çözüm sistemin geçmiş dönem sonuçlarını aynen veya daha olumlu bir şekilde sağlıyorsa, modelin geçerli olduğu kabul edilir.\nEğer sistemin geçmiş dönem sonuçları yoksa simülasyondan yararlanılır.\nModel geçerliliğinin kanıtlanmasında bir başka yol olarak da sistemdeki deneyimli kişilerin görüşlerine başvurulabilir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
+    "href": "IST207/Hafta02/index.html#çözümün-uygulanması-ve-yorumlanması",
+    "title": "Hafta 02",
+    "section": "Çözümün Uygulanması ve Yorumlanması",
+    "text": "Çözümün Uygulanması ve Yorumlanması\n\n\n\n\nÇözümün Uygulanması ve Yorumlanması (1)\n\n\n\nYöneylem araştırması ekibi, uygulama sürecini açıklamalı ve uygulamada yardımcı olmalıdır.\nUygulamanın nasıl yapılacağı bir rapor halinde yönetime sunulmalıdır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
+    "href": "IST207/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları",
+    "title": "Hafta 02",
+    "section": "Başarılı Yöneylem Araştırması Uygulamaları",
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nHewlett Packard\n\n\n1998\n\n\nÜretim hattında ara stok tasarımı\n\n\nKuyruk Modelleri\n\n\n$280 million\n\n\n\n\nTaco Bell\n\n\n1998\n\n\nİşgücü çizelgelemesi\n\n\nTamsayılı Programlama, Tahmin, Simülasyon\n\n\n$13 million\n\n\n\n\nProctor & Gamble\n\n\n1997\n\n\nÜretim ve dağıtım sisteminin yeniden tasarlanması\n\n\nUlaştırma Modelleri\n\n\n$200 million\n\n\n\n\nDelta Airlines\n\n\n1994\n\n\nUçakların rotalara atanması\n\n\nTamsayılı Programlama\n\n\n$100 million\n\n\n\n\nAT&T\n\n\n1993\n\n\nÇağrı merkezi tasarımı\n\n\nKuyruk Modelleri, Simülasyon\n\n\n$750 million\n\n\n\n\nYellow Freight Systems, Inc.\n\n\n1992\n\n\nNakliye şebekelerinin tasarımı\n\n\nŞebeke Modelleri, Tahmin, Simülasyon\n\n\n$11.3 million\n\n\n\n\nSan Francisco Police Dept.\n\n\n1989\n\n\nDevriye çizelgeleme\n\n\nDoğrusal Programlama\n\n\n$11 million"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
+    "href": "IST207/Hafta02/index.html#başarılı-yöneylem-araştırması-uygulamaları-1",
+    "title": "Hafta 02",
+    "section": "Başarılı Yöneylem Araştırması Uygulamaları",
+    "text": "Başarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\nBaşarılı Yöneylem Araştırması Uygulamaları\n\n\n\n\n\n\n\nŞirket\n\n\nYıl\n\n\nProblem\n\n\nKullanılan Teknik\n\n\nYıllık Tasarruf\n\n\n\n\n\n\nBethlehem Steel\n\n\n1989\n\n\nKülçe kalıbı tasarımı\n\n\nTamsayılı Programlama\n\n\n$8 million\n\n\n\n\nNorth American Van Lines\n\n\n1988\n\n\nYükleri şöförlere atamak\n\n\nŞebeke Modelleme\n\n\n$2.5 million\n\n\n\n\nCitgo Petroleum\n\n\n1987\n\n\nRafineri operasyonları & dağıtım\n\n\nDoğrusal Programlama, Tahmin\n\n\n$70 million\n\n\n\n\nUnited Airlines\n\n\n1986\n\n\nRezervasyon personelinin çizelgelenmesi\n\n\nDoğrusal Programlama, Kuyruk, Tahmin\n\n\n$6 million\n\n\n\n\nDairyman’s Creamery\n\n\n1985\n\n\nOptimum üretim seviyeleri\n\n\nDoğrusal Programlama\n\n\n$48,000\n\n\n\n\nPhillips Petroleum\n\n\n1983\n\n\nEkipman yenileme\n\n\nŞebeke Modelleme\n\n\n$90,000"
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#matematiksel-model-türleri",
+    "href": "IST207/Hafta02/index.html#matematiksel-model-türleri",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (1)\n\n\n\nYöneylem araştırmasında karşılaşılabilecek matematiksel model türleri, ilgilenilen karar probleminin yapısına göre şekillenir."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#matematiksel-model-türleri-1",
+    "href": "IST207/Hafta02/index.html#matematiksel-model-türleri-1",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (2)\n\n\n\nEğer karar değişkenleri üzerinde hiçbir sınırlama yoksa kısıtsız modeller ortaya çıkar, en azından bir sınırlama olması kısıtlı modelleri ortaya çıkarır.\nGerçek hayatta genellikle kısıtlı problemler karşımıza çıkar.\nEğer problem tek bir dönem için çözülecekse statik model, birden fazla dönem göz önüne alınarak çözülecekse dinamik model ortaya çıkar.\nEğer birden fazla amaç varsa çok amaçlı problemler ortaya çıkar."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#matematiksel-model-türleri-2",
+    "href": "IST207/Hafta02/index.html#matematiksel-model-türleri-2",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türleri (3)\n\n\n\nEğer tüm karar değişkenleri pozitif reel (gerçel) değerler alıyorsa sürekli optimizasyon problemi söz konusudur\nTüm karar değişkenlerinin tamsayı değerler alması gerekiyorsa kesikli optimizasyon problemi ortaya çıkar\nBazı karar değişkenlerinin reel, bazılarının tamsayı değer alması durumunda ise karışık kesikli optimizasyon problemi ile karşılaşırız.\nEğer karar değişkenlerinin kombinatoryal seçenekleri söz konusuysa kombinatoryal optimizasyon problemleri ortaya çıkar."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#matematiksel-model-türleri-3",
+    "href": "IST207/Hafta02/index.html#matematiksel-model-türleri-3",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (1)\n\n\n\nDinamik modeller için kullanılan yaklaşım dinamik programlamadır.\nEğer optimize edilecek birden fazla amaç varsa genellikle kullanılan yaklaşım hedef programlamadır.\nModeldeki tüm fonksiyonların doğrusal olması durumunda sürekli optimizasyon problemleri doğrusal programlama yöntemi ile çözülür. Sürekli optimizasyon modelinde en azından bir fonksiyonun doğrusal olmaması durumundaysa doğrusal olmayan programlama yöntemi kullanılır."
+  },
+  {
+    "objectID": "IST207/Hafta02/index.html#matematiksel-model-türleri-4",
+    "href": "IST207/Hafta02/index.html#matematiksel-model-türleri-4",
+    "title": "Hafta 02",
+    "section": "Matematiksel model türleri",
+    "text": "Matematiksel model türleri\n\n\n\n\nMatematiksel model türlerine göre kullanılan çözüm yaklaşımları (2)\n\n\n\nEğer kesikli optimizasyon problemlerinde karar değişkenleri herhangi bir tamsayı değer alıyorsa tamsayılı programlama yöntemi kullanılır.\nKombinatoryal optimizasyon problemlerinin belirli bir boyuta kadar olanı tamsayılı programlama yöntemi ile çözülürken, orta ve büyük boyutlu problemlerin sezgisel yöntemlerle çözülmesi gerekmektedir."
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK01_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK01_MAIN.html",
+    "title": "IST207 - Hafta 01",
+    "section": "",
+    "text": "Bu hafta herhangi bir ders işlenmeyecek olup, dersle ilgili genel bilgiler verilecektir.\nÖğrencilerle dersin ve istatistiğin genel olarak ne işe yaradığıyla ilgili tartışılacaktır.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 01"
+    ]
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK03_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK03_MAIN.html",
+    "title": "IST207 - Hafta 03",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 03"
+    ]
   }
 ]
