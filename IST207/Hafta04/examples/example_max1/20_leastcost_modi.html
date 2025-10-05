@@ -1,0 +1,45 @@
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+.degen{background: #f0f4ff; outline: 3px dashed #1a73e8}  /* degenerate basic cell (x=0) */
+</style>
+<table class="tbl-sim">
+<caption>Dağıtım – En Düşük Maliyet (Least Cost) (MODI (u–v)) (Toplam Maliyet = <b>1060</b>)</caption>
+<thead><tr><th></th>
+<th>Depo 1</th>
+<th>Depo 2</th>
+<th>Depo 3</th>
+<th class='rhs'>Arz</th></tr></thead><tbody>
+<tr>
+<th>Fabrika 1</th>
+<td><div class='muted'>&ndash;</div><div class='sub'>(m=2)</div></td>
+<td class='alloc'><div class='bold'>20</div><div class='sub'>(m=3)</div></td>
+<td class='alloc'><div class='bold'>10</div><div class='sub'>(m=5)</div></td>
+<td class='rhs bold'>30</td>
+</tr>
+<tr>
+<th>Fabrika 2</th>
+<td><div class='muted'>&ndash;</div><div class='sub'>(m=3)</div></td>
+<td class='alloc'><div class='bold'>60</div><div class='sub'>(m=5)</div></td>
+<td><div class='muted'>&ndash;</div><div class='sub'>(m=7)</div></td>
+<td class='rhs bold'>60</td>
+</tr>
+<tr>
+<th>Fabrika 3</th>
+<td class='alloc'><div class='bold'>30</div><div class='sub'>(m=3)</div></td>
+<td><div class='muted'>&ndash;</div><div class='sub'>(m=6)</div></td>
+<td class='alloc'><div class='bold'>70</div><div class='sub'>(m=8)</div></td>
+<td class='rhs bold'>100</td>
+</tr>
+<tr><th>Talep</th>
+<td class='rhs bold'>30</td>
+<td class='rhs bold'>80</td>
+<td class='rhs bold'>80</td>
+<td class='rhs bold'>190</td></tr></tbody></table>

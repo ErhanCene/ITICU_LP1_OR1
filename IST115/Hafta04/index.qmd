@@ -1,0 +1,1230 @@
+---
+title: Hafta 04
+subtitle: "Simpleks Yönteme Hazırlık: Standart ve Kanonik Formlar"
+date: 10/09/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 04 - 09 Ekim 2025 - Doç. Dr. Erhan Çene - erhan.cene@ticaret.edu.tr"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+---
+
+
+## Doğrusal Programlama: Simpleks Çözüm Yöntemi (1)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi (1)" style="font-size: 130%;"}
+
+* Doğrusal programlama problemlerini çözmede yaygınca kullanılan [simpleks yöntem]{.light-red} ilk kez [1947]{.light-red} yılında [G.B. Dantzig]{.light-red} tarafından kullanılmıştır.
+* Daha sonra [Charnes, Cooper vd.]{.light-red} ekonomik ve endüstriyel analizler için uygulamalı öncü çalışmalar yapmışlardır.
+* [Grafik yöntem en fazla üç değişkenli]{.light-red} problemlerin çözümünde elverişlidir. 
+* Gerçek hayat problemlerinde ise değişken sayısı çok daha fazla olacağından, [değişken sayısı sınırı olmayan]{.light-red} simpleks yöntem tercih edilir.
+
+:::
+
+## Doğrusal Programlama: Simpleks Çözüm Yöntemi (2)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi (2)" style="font-size: 130%;"}
+
+* Simpleks yöntem [tekrarlama (iterasyon)]{.light-red} işlemine dayanır.
+* Yöntemde önce [başlangıç şimpleks tablosu]{.light-red} düzenlenir.
+* Ardından tekrarlayıcı işlemler ile belirli bir hesap yöntemi yardımıyla optimal çözüme ulaşıncaya kadar [adım adım]{.light-red} işlemler sürdürülür.
+* Bu yöntem hem küçük boyutlu problemlere hem de bilgisayar yardımıyla büyük boyutlu doğrusal programlama problemlerine uygulanabilir.
+
+:::
+
+## Standart ve Kanonik Formlar
+
+::: {.callout-important icon=false title="Standart ve Kanonik Fromlar" style="font-size: 140%;"}
+
+* Doğrusal programlama problemleri farklı şekillerde formülize edilebilir. Bu kısımda bu şekillerden iki tanesi olan [standart]{.light-red} ve [kanonik]{.light-red} fomlar ile ilgileneceğiz.
+* [İkilik (Dual)]{.light-red} kuramda [kanonik form daha kullanışlı]{.light-red} olurken, [simpleks]{.light-red} yöntemde ise [standart form daha kullanışlı]{.light-red} olmaktadır. 
+* Şimdi sırasıyla bu iki formu tanımlayalım.
+
+:::
+
+
+## Standart Form
+
+::: {.callout-important icon=false title="Standart Form" style="font-size: 90%;"}
+
+
+[Amaç fonksiyonu ve karar değişkenleri:]{.light-red}
+[$$Z_{enk/enb} = c_1x_1+c_2x_2+ \dots + c_n x_n$$]{.light-blue}
+
+[Kısıtlayıcı fonksiyonlar ve parametreler:]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n &\;= & b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n &\;= & b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n &\;= & b_{m}.
+\end{alignedat}
+$$]{.light-blue}
+
+[İşaret kısıtlaması:]{.light-red}
+[$$x_1 \geq 0, x_2 \geq 0, \dots, x_n \geq 0$$]{.light-blue}
+olarak formüle edilen doğrusal programlama modeli aşağıdaki özelliklere sahipse, [standart biçimde]{.light-red} olduğu söylenir.
+
+:::
+
+
+## Standart Formun Özellikleri
+
+::: {.callout-important icon=false title="Standart Formun Özellikleri" style="font-size: 140%;"}
+
+**1.** Tüm karar değişkenleri [negatif değildir]{.light-red}.
+
+**2.** Amaç fonksiyonu [en büyükleme veya en küçükleme]{.light-red} tipindedir.
+
+**3.** Tüm kısıtlayıcı fonksiyonlar (negatif olmama koşulu dışında) [$=$]{.light-red} işaretlidir.
+
+**4.** Kısıtlayıcı fonksiyonların sağ taraf sabitleri [negatif değildir]{.light-red}.
+:::
+
+## Kanonik Form
+
+::: {.callout-important icon=false title="Kanonik Form" style="font-size: 90%;"}
+
+
+[Amaç fonksiyonu ve karar değişkenleri:]{.light-red}
+[$$Z_{enb} = c_1x_1+c_2x_2+ \dots + c_n x_n$$]{.light-blue}
+
+[Kısıtlayıcı fonksiyonlar ve parametreler:]{.light-red}
+
+[$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n &\;\leq & b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n &\;\leq & b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n &\;\leq & b_{m}.
+\end{alignedat}
+$$]{.light-blue}
+
+[İşaret kısıtlaması:]{.light-red}
+[$$x_1 \geq 0, x_2 \geq 0, \dots, x_n \geq 0$$]{.light-blue}
+olarak formüle edilen doğrusal programlama modeli aşağıdaki özelliklere sahipse, [kanonik biçimde]{.light-red} olduğu söylenir.
+
+
+:::
+
+
+## Kanonik Formun Özellikleri
+
+::: {.callout-important icon=false title="Kanonik Formun Özellikleri" style="font-size: 140%;"}
+
+**1.** Tüm karar değişkenleri [negatif değildir]{.light-red}.
+
+**2.** Amaç fonksiyonu [en büyükleme]{.light-red} tipindedir.
+
+**3.** Tüm kısıtlayıcı fonksiyonlar (negatif olmama koşulu dışında) [$\leq$]{.light-red} işaretlidir.
+
+:::
+
+
+## Dönüşümler
+
+::: {.callout-important icon=false title="Dönüşümler" style="font-size: 115%;"}
+
+* Herhangi bir doğrusal programlama problemi [standart]{.light-red} ve ya [kanonik]{.light-red} şekilde yazılabilir. 
+* Bunun için aşağıda bahsedilen çeşitli [dönüşümlerden]{.light-red} faydalanılır.
+
+::: {.fragment fragment-index=1}
+**1)** [Optimizasyonun anlamını değiştirme.]{.light-red}
+:::
+
+::: {.fragment fragment-index=2}
+**2)** [Eşitsizliğin yönünü değiştirme.]{.light-red}
+:::
+
+::: {.fragment fragment-index=3}
+**3)** [Eşitsizliği eşitlik haline getirme.]{.light-red}
+:::
+
+::: {.fragment fragment-index=4}
+**4)** [Eşitliği eşitsizliğe dönüştürme.]{.light-red}
+:::
+
+::: {.fragment fragment-index=5}
+**5)** [Sınırlandırılmayan Değişkenler.]{.light-red}
+:::
+
+::: {.fragment fragment-index=6}
+**6)** [Mutlak değerli kısıtların eşitsizlik biçiminde yazılması.]{.light-red}
+:::
+
+:::
+
+## 1) Optimizasyonun Anlamını Değiştirme
+
+::: {.callout-important icon=false title="Optimizasyonun Anlamını Değiştirme" style="font-size: 100%;"}
+
+* Herhangi bir [maksimizasyon problemi minimizasyon problemi olarak]{.light-red} ve ya bunun karşıtı olarak herhangi bir [minimizasyon problemi maksimizasyon problemi]{.light-red} olarak yazılabilir.
+* Bu işlem [amaç fonksiyonundaki her katsayının işareti değiştirilerek]{.light-red} sağlanır.
+* Örneğin
+[$$Z_{enb} = c_1x_1+c_2x_2+ \dots + c_n x_n$$]{.light-blue}
+[en büyükleme]{.light-red} olarak verilen amaç fonksiyonu, her katsayı [$-1$ ile çarpılarak]{.light-red}
+[$$Z_{enk} = -c_1x_1-c_2x_2+ \dots - c_n x_n$$]{.light-blue}
+[en küçükleme]{.light-red} amacına sahip bir probleme dönüştürülebilir.
+
+* [Her iki]{.light-red} amaç fonksiyonu için de karar değişkenlerin [optimal değerleri aynı]{.light-red} olacaktır.
+:::
+
+## 2) Eşitsizliğin yönünü değiştirme
+
+::: {.callout-important icon=false title="Eşitsizliğin yönünü değiştirme" style="font-size: 110%;"}
+
+* Herhangi bir [$\leq$]{.light-red} yönündeki eşitsizlik [$\geq$]{.light-red} yönüne ve ya bunun karşıtı olarak [$\geq$]{.light-red} yönündeki eşitsizlik [$\leq$]{.light-red} yönüne değiştirilebilir.
+* Bu işlem, [eşitsizliğin her iki yanı $-1$ ile çarpılarak]{.light-red} ve [eşitsizliğin yönü değiştirilerek]{.light-red} yapılır. 
+* Örneğin
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$]{.light-blue}
+şeklinde verilen bir kısıt yerine, 
+[$$-a_1x_1-a_2x_2- \dots - a_n x_n \geq -b$$]{.light-blue}
+kısıtı yazılabilir.
+
+:::
+
+
+## 3) Eşitsizliği eşitlik haline getirme (1)
+
+::: {.callout-important icon=false title="Eşitsizliği eşitlik haline getirme $(\leq)$" style="font-size: 100%;"}
+
+* Kısıtlarda eşitsizlikler hem [$\leq$]{.light-red} hem de [$\geq$]{.light-red} şeklinde olabilir.
+  
+  * Eğer eşitsizlik [$\leq$]{.light-red} şeklindeyse, eşitsizliğin sol tarafına [negatif olmayan bir $(s)$]{.light-red} sayısı [eklenerek]{.light-red} eşitlik haline getirilir. İşte bu [$s$]{.light-red} sayısına [aylak değişken]{.light-red} denir. 
+  * Aylak değişken [$s \geq 0$]{.light-red} dır ve eşitsizliğin sağ tarafı ile sol tarafı arasındaki farkı ifade eder.
+  * Aylak değişken kullanılmayan ve boşa harcanan ya da yitirilen kaynakları gösterir.
+  * Örneğin, 
+  [$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$]{.light-blue}
+  eşitsizliği [$s \geq 0$]{.light-red} olmak üzere 
+  [$$a_1x_1+a_2x_2+ \dots + a_n x_n + s = b$$]{.light-blue} şeklinde yazılabilir.
+:::
+
+## 3) Eşitsizliği eşitlik haline getirme (2)
+
+::: {.callout-important icon=false title="Eşitsizliği eşitlik haline getirme $(\geq)$" style="font-size: 100%;"}
+
+* Kısıtlarda eşitsizlikler hem [$\leq$]{.light-red} hem de [$\geq$]{.light-red} şeklinde olabilir.
+  * Eğer eşitsizlik [$\geq$]{.light-red} şeklindeyse, eşitsizliğin sol tarafına [negatif olmayan bir $(v)$]{.light-red} sayısı [çıkartılarak]{.light-red} eşitlik haline getirilir. İşte bu [$v$]{.light-red} sayısına [artık değişken]{.light-red} denir. 
+  * Artık değişken [$v \geq 0$]{.light-red} dır ve eşitsizliğin sol tarafı ile sağ tarafı arasındaki farkı ifade eder.
+  * Artık değişken genellikle fazla kaynak ve ya kapasiteyi gösterir.
+  * Örneğin, 
+  [$$a_1x_1+a_2x_2+ \dots + a_n x_n \geq b$$]{.light-blue}
+  eşitsizliği [$v \geq 0$]{.light-red} olmak üzere 
+  [$$a_1x_1+a_2x_2+ \dots + a_n x_n - v = b$$]{.light-blue}
+  şeklinde yazılabilir.
+
+:::
+
+## 4) Eşitliği eşitsizliğe dönüştürme
+
+::: {.callout-important icon=false title="Eşitliği eşitsizliğe dönüştürme" style="font-size: 85%;"}
+
+* Eşitlik biçimindeki bir kısıtlayıcı fonksiyon biri [$\leq$]{.light-red} biri de [$\geq$]{.light-red} kısıtlı iki eşitsizlikle açıklanabilir.
+* Örneğin,
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n = b$$]{.light-blue}
+eşitliği
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$]{.light-blue} 
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \geq b$$]{.light-blue} 
+
+Burada [(2)]{.light-red} numaralı maddede öğrendiğimiz [eşitsizliğin yönünü değiştirmeyi]{.light-red} [ikinci eşitsizlikte]{.light-red} kullanırsak eşitsizlikler
+
+$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$ 
+$$-a_1x_1-a_2x_2- \dots - a_n x_n \leq -b$$ 
+şeklinde de yazılabilir.
+
+:::
+
+
+## 5) Sınırlandırılmayan değişkenler
+
+::: {.callout-important icon=false title="Sınırlandırılmayan değişkenler" style="font-size: 115%;"}
+
+* Şu ana kadar tüm değişkenlerin sadece sıfır ve ya pozitif olduğunu varsaydık [($x_1, x_2, \dots x_n \geq 0$)]{.light-red}. Pratikte ise bu durum her zaman böyle değildir. 
+* Değişkenlerin değerleriyle ilgili herhangi bir kısıt bulunmayabilir. Bu tür değişkenler [sınırlandırılmayan değişkenler]{.light-red} olarak adlandırılır.
+* Sınırlandırılmayan değişken [negatif olmayan iki değişken arasındaki fark]{.light-red} olarak açıklanabilir.
+* Örneğin, eğer bir [$x$]{.light-red} değişkeni sınırlandırılmayan bir değişken ise [$x$]{.light-red} yerine [$x^+ \geq 0$]{.light-red} ve [$x^- \geq 0$]{.light-red} olmak üzere [$x^+ - x^ -$]{.light-red} ifadesi yazılabilir. 
+* Optimal çözümlerde [$x^+$]{.light-red} ve [$x^-$]{.light-red} nin en çok biri pozitif olacaktır.
+* Sınırlandırılmayan işaretteki değişken istediği değeri alabilir.
+
+:::
+
+
+## 6) Mutlak değerli kısıtlayıcı fonksiyonların eşitsizlik biçiminde yazılması (1)
+::: {.callout-important icon=false title="Mutlak değerli kısıtlayıcı fonksiyonlar" style="font-size: 80%;"}
+* Çok sık olmasa da [mutlak değer]{.light-red} içeren kısıtlayıcı fonksiyonlara rastlanabilir. 
+* Hangi yöntem uygulanırsa uygulansın bu tür kısıtlayıcılarla çözüme ulaşılamaz. Bu yüzden mutlak değerden kurtulmak gerekir.
+* Eğer verilen kısıt
+
+[$$|a_1x_1+a_2x_2+ \dots + a_n x_n| \leq b$$]{.light-blue} 
+
+ise bu eşitsizlik
+
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$]{.light-blue}
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \geq -b$$]{.light-blue}
+şeklinde yazılabilir. Yine ikinci eşitsizlikte dönüştürme kullanılırsa eşitsizlik çifti
+
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq b$$]{.light-blue}
+[$$-a_1x_1-a_2x_2+ \dots - a_n x_n \leq b$$]{.light-blue}
+şeklinde de ifade edilebilir.
+:::
+
+
+## 6) Mutlak değerli kısıtlayıcı fonksiyonların eşitsizlik biçiminde yazılması (2)
+::: {.callout-important icon=false title="Mutlak değerli kısıtlayıcı fonksiyonlar" style="font-size: 80%;"}
+* Çok sık olmasa da [mutlak değer]{.light-red} içeren kısıtlayıcı fonksiyonlara rastlanabilir. 
+* Hangi yöntem uygulanırsa uygulansın bu tür kısıtlayıcılarla çözüme ulaşılamaz. Bu yüzden mutlak değerden kurtulmak gerekir.
+* Eğer verilen kısıt
+
+[$$|a_1x_1+a_2x_2+ \dots + a_n x_n| \geq b$$]{.light-blue} 
+ise bu eşitsizlik
+
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq -b$$]{.light-blue}
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \geq b$$]{.light-blue}
+şeklinde yazılabilir. Yine ikinci eşitsizlikte dönüştürme kullanılırsa eşitsizlik çifti
+
+[$$a_1x_1+a_2x_2+ \dots + a_n x_n \leq -b$$]{.light-blue}
+[$$-a_1x_1-a_2x_2+ \dots - a_n x_n \leq -b$$]{.light-blue}
+şeklinde de ifade edilebilir.
+:::
+
+## Örnek 1: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 1: Standart ve Kanonik Form" style="font-size: 100%;"}
+
+[$$Z_{enk} = -6x_1+7x_2+ 7x_3 - x_4$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 & & &\;\geq & 30,\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60,\\
+6x_1 & &  &+& x_3 &+& x_4 &\;= & 15,\\
+|3x_1 &+& 4x_2|  & &  & &  &\;\leq & 80,
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1 \geq 0, x_2 \geq 0, x_4 \geq 0, x_3 \quad{} sınırlandırılmamış$$]{.light-blue}
+
+şeklinde verilmiş olan doğrusal programlama problemini
+
+**a)** [Standart biçimde]{.light-red}
+
+**b)** [Kanonik biçimde]{.light-red}
+
+yazınız.
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 80%;"}
+
+* Genel kural olarak, standart formda [tüm kısıtlar eşitlik]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenmeli [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılmalıdır.
+* İşaret sınırı olmayan [$x_3$]{.light-red} değişkeni yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılmalıdır.
+* Kısıtların [sağ tarafındaki sabitler negatif olmamalıdır.]{.light-red}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+[$$Z_{enk} = -6x_1+7x_2+ 7x_3 - x_4$$]{.light-blue}
+Kısıtlar için ise
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 && &\;\geq & 30 \Rightarrow x_1 &+& 2x_2 &-&  4x_3 && && &-&v_1& &&\;= & 30\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 && && &+&  s_1&\;= & 60 \\
+6x_1 &&  &+& x_3 &+& x_4 &\;= & 15 \Rightarrow 6x_1 & &  &+& x_3 &+& x_4 & & & & && &\;= &  15\\
+|3x_1 &+& 4x_2|  &&  &&  &\;\leq & 80 \Rightarrow 3x_1 &+& 4x_2 && && && && && &\;\leq &  80\\
+&&  & &  & &  & &  \Rightarrow 3x_1 &+& 4x_2 && && && && && &\;\geq & -80
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+## Örnek 1: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 120%;"}
+
+[$$Z_{enk} = -6x_1+7x_2+ 7x_3 - x_4$$]{.light-blue}
+
+
+* Son eşitsizliğin sağ tarafı [$\leq 0$]{.light-red} olduğundan, eşitsizlik [$-$]{.light-red} ile çarpılarak negatiflik giderilir. Bu sırada eşitsizliğin işaret yönü de değişecektir.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 && &\;\geq & 30 \Rightarrow x_1 &+& 2x_2 &-&  4x_3 && && &-& v_1 && &\;= & 30\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 && && &+&  s_1&\;= & 60 \\
+6x_1 &&  &+& x_3 &+& x_4 &\;= & 15 \Rightarrow 6x_1 & &  &+& x_3 &+& x_4 & & & & && &\;= &  15\\
+|3x_1 &+& 4x_2|  &&  &&  &\;\leq & 80 \Rightarrow 3x_1 &+& 4x_2 && && && && && &\;\leq &  80\\
+&&  & &  & &  & &  \Rightarrow -3x_1 &-& 4x_2 && && && && && &\;\leq & 80
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 110%;"}
+
+[$$Z_{enk} = -6x_1+7x_2+ 7x_3 - x_4$$]{.light-blue}
+
+* Son iki eşitsizliğe aylak değişkenler eklenirse
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 && &\;\geq & 30 \Rightarrow x_1 &+& 2x_2 &-&  4x_3 && && &-& v_1 && && && &\;= & 30\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 && && &+&  s_1 && && &\;= & 60 \\
+6x_1 &&  &+& x_3 &+& x_4 &\;= & 15 \Rightarrow 6x_1 & &  &+& x_3 &+& x_4 & & & & && && && &\;= &  15\\
+|3x_1 &+& 4x_2|  &&  &&  &\;\leq & 80 \Rightarrow 3x_1 &+& 4x_2 && && && && && &+&s_2 && &\;= &  80\\
+&&  & &  & &  & &  \Rightarrow -3x_1 &-& 4x_2 && && && && && && &+&s_3 &\;= & 80
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+
+
+
+## Örnek 1: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Standart Form (4)"}
+
+* Amaç fonksiyon ve kısıtlarda [$x_3$]{.light-red} yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılırsa 
+
+
+[$$Z_{enk} = -6x_1+7x_2+ 7(x_3^+ - x_3^-) - x_4$$]{.light-blue}
+
+
+:::{style="font-size: 80%;"}
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 && && &-& v_1 && && && &\;= & 30 \Rightarrow \\ x_1 &+& 2x_2 &-&  4(x_3^+ - x_3^-) && && &-& v_1 && && && &\;= & 30\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 && && &+&  s_1 && && &\;= & 60 \Rightarrow \\ 2x_1 &+& 9x_2 &+& 6(x_3^+ - x_3^-) &+& x_4 && && &+&  s_1 && && &\;= & 60 \\
+6x_1 & &  &+& x_3 &+& x_4 & & & & && && && &\;= &  15 \Rightarrow \\ 6x_1 & &  &+& (x_3^+ - x_3^-) &+& x_4 & & & & && && && &\;= &  15\\
+3x_1 &+& 4x_2 && && && && && &+&s_2 && &\;= &  80 \Rightarrow \\ 3x_1 &+& 4x_2 && && && && && &+&s_2 && &\;= &  80\\
+-3x_1 &-& 4x_2 && && && && && && &+&s_3 &\;= & 80 \Rightarrow \\ -3x_1 &-& 4x_2 && && && && && && &+&s_3 &\;= & 80
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Standart Form (5)" style="font-size: 110%;"}
+
+* Negatif olmama kısıtları da eklenerek standart formun son haline ulaşılır.
+
+[$$Z_{enk} = -6x_1+7x_2+ 7(x_3^+ - x_3^-) - x_4$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4(x_3^+ - x_3^-) && && &-& v_1 && && && &\;= & 30\\
+2x_1 &+& 9x_2 &+& 6(x_3^+ - x_3^-) &+& x_4 && && &+&  s_1 && && &\;= & 60 \\
+6x_1 & &  &+& (x_3^+ - x_3^-) &+& x_4 & & & & && && && &\;= &  15\\
+3x_1 &+& 4x_2 && && && && && &+&s_2 && &\;= &  80\\
+-3x_1 &-& 4x_2 && && && && && && &+&s_3 &\;= & 80
+\end{alignedat}
+$$]{.light-blue}
+
+[$$x_1, x_2, x_4 \geq 0, s_1, s_2, s_3 \geq 0, v_1 \geq 0, x_3^+, x_3^- \geq 0$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 1: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (1)"}
+
+:::{style="font-size: 80%;"}
+* Genel kural olarak, kanonik formda [tüm kısıtlar $\leq$]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* İşaret sınırı olmayan [$x_3$]{.light-red} değişkeni yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılmalıdır.
+* Amaç fonksiyon [maksimumu bulacak]{.light-red} şekilde olmalıdır
+:::
+
+:::{style="font-size: 80%;"}
+
+Amaç fonksiyonunun maksimumu bulacak şekilde yazılması gerektiğinden, amaç fonksiyonu [$-$]{.light-red} ile çarpılmalıdır.
+[$$Z_{enk} = -6x_1+7x_2+ 7x_3 - x_4 \Rightarrow Z_{enb} = 6x_1-7x_2- 7x_3 + x_4$$]{.light-blue}
+:::
+
+:::{style="font-size: 80%;"}
+Kısıtlar için ise ilk adımda [$\geq$]{.light-red} olanlar [$-$]{.light-red} ile çarpılır, mutlak değer ve [$=$]{.light-red} şeklinde olan denklemler biri [$\geq$]{.light-red} ve biri [$\leq$]{.light-red} olacak şekilde iki parçada ifade edilir.
+:::
+
+:::{style="font-size: 70%;"}
+[$$
+\begin{alignedat}{7}
+x_1 &+& 2x_2 &-&  4x_3 && &\;\geq & 30 \Rightarrow -x_1 &-& 2x_2 &+&  4x_3 && &\;\leq & -30 \\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \\
+6x_1 &&  &+& x_3 &+& x_4 &\;= & 15    \Rightarrow 6x_1 &&  &+& x_3 &+& x_4 &\; \geq & 15 \\
+     &&  & &     & &     &    &       \Rightarrow 6x_1 &&  &+& x_3 &+& x_4 &\; \leq & 15 \\
+|3x_1 &+& 4x_2|  &&  &&  &\;\leq & 80 \Rightarrow 3x_1 &+& 4x_2 && && &\;\leq &  80\\
+      &&         &&  &&  &&           \Rightarrow 3x_1 &+& 4x_2 && && &\;\geq & -80
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 110%;"}
+
+[$$Z_{enb} = 6x_1-7x_2- 7x_3 + x_4$$]{.light-blue}
+
+* Bu aşamada kısıtlardan [$\geq$]{.light-red} işaretine sahip olan iki tanesi [$-$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline dönüştürülür, diğer kısıtlar aynı kalır.
+
+[$$
+\begin{alignedat}{7}
+-x_1 &-& 2x_2 &+&  4x_3 && &\;\leq & -30 \Rightarrow -x_1 &-& 2x_2 &+&  4x_3 && &\;\leq & -30 \\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \\
+6x_1 &&  &+& x_3 &+& x_4 &\; \geq & 15    \Rightarrow -6x_1 &&  &-& x_3 &-& x_4 &\; \leq & -15 \\
+6x_1 &&  &+& x_3 &+& x_4 &\; \leq & 15    \Rightarrow 6x_1 &&  &+& x_3 &+& x_4 &\; \leq & 15 \\
+3x_1 &+& 4x_2 && && &\;\leq &  80 \Rightarrow 3x_1 &+& 4x_2 && && &\;\leq &  80\\
+3x_1 &+& 4x_2 && && &\;\geq & -80 \Rightarrow -3x_1 &-& 4x_2 && && &\;\leq & 80
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (9)
+::: {.callout-tip icon=false title="Kanonik Form (3)" style="font-size: 100%;"}
+
+* Hem amaç fonksiyonunda hem de kısıtlarda, sınırlandırılmamış değişken olan [$x_3$]{.light-red} yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılır.
+
+[$$Z_{enb} = 6x_1-7x_2- 7(x_3^+ - x_3^-) + x_4$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+-x_1 &-& 2x_2 &+&  4x_3 && &\;\leq & -30 \Rightarrow -x_1 &-& 2x_2 &+&  4(x_3^+ - x_3^-) && &\;\leq & -30\\
+2x_1 &+& 9x_2 &+& 6x_3 &+& x_4 &\;\leq & 60 \Rightarrow 2x_1 &+& 9x_2 &+& 6(x_3^+ - x_3^-) &+& x_4 &\;\leq & 60 \\
+-6x_1 &&  &-& x_3 &-& x_4 &\; \leq & -15 \Rightarrow -6x_1 &&  &-& (x_3^+ - x_3^-) &-& x_4 &\; \leq & -15 \\
+6x_1 &&  &+& x_3 &+& x_4 &\; \leq & 15 \Rightarrow 6x_1 &&  &+& (x_3^+ - x_3^-) &+& x_4 &\; \leq & 15  \\
+3x_1 &+& 4x_2 && && &\;\leq &  80 \Rightarrow 3x_1 &+& 4x_2 && && &\;\leq &  80 \\
+-3x_1 &-& 4x_2 && && &\;\leq & 80 \Rightarrow -3x_1 &-& 4x_2 && && &\;\leq & 80
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+## Örnek 1: Standart ve Kanonik Form (10)
+::: {.callout-tip icon=false title="Kanonik Form (4)" style="font-size: 100%;"}
+
+* Negatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.
+
+
+[$$Z_{enb} = 6x_1-7x_2- 7(x_3^+ - x_3^-) + x_4$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+-x_1 &-& 2x_2 &+&  4(x_3^+ - x_3^-) && &\;\leq & -30\\
+2x_1 &+& 9x_2 &+& 6(x_3^+ - x_3^-) &+& x_4 &\;\leq & 60 \\
+-6x_1 &&  &-& (x_3^+ - x_3^-) &-& x_4 &\; \leq & -15 \\
+6x_1 &&  &+& (x_3^+ - x_3^-) &+& x_4 &\; \leq & 15  \\
+3x_1 &+& 4x_2 && && &\;\leq &  80 \\
+-3x_1 &-& 4x_2 && && &\;\leq & 80
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1, x_2, x_4 \geq 0, x_3^+, x_3^- \geq 0$$]{.light-blue}
+:::
+
+
+## Örnek 2: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 2: Standart ve Kanonik Form" style="font-size: 110%;"}
+
+[$$Z_{enk} = 2x_1+4x_2 - x_3$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3 &\;\leq & 40,\\
+2x_1 &+& 2x_2 &+& 5x_3 &\;\geq & 25,\\
+x_1  & &      &+& 2x_3 &\;= & 30,\\
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1  \quad{} sınırlandırılmamış, \quad{} x_2 \geq 0, x_3 \geq 0$$]{.light-blue}
+
+şeklinde verilmiş olan doğrusal programlama problemini
+
+**a)** [Standart biçimde]{.light-red}
+
+**b)** [Kanonik biçimde]{.light-red}
+
+yazınız.
+
+:::
+
+## Örnek 2: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 90%;"}
+
+* Genel kural olarak, standart formda [tüm kısıtlar eşitlik]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenmeli [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılmalıdır.
+* İşaret sınırı olmayan [$x_1$]{.light-red} değişkeni yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılmalıdır.
+* Kısıtların [sağ tarafındaki sabitler negatif olmamalıdır.]{.light-red}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+[$$Z_{enk} = 2x_1+4x_2 - x_3$$]{.light-blue}
+Kısıtlar için ise
+
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3 &\;\leq & 40 \Rightarrow 5x_1 &-& x_2 &+&  4x_3 &+& s_1 & & &\;= & 40\\
+2x_1 &+& 2x_2 &+& 5x_3 &\;\geq & 25 \Rightarrow 2x_1 &+& 2x_2 &+& 5x_3 & &     &-&v_1  &\;= & 25 \\
+x_1  & &      &+& 2x_3 &\;= & 30 \Rightarrow x_1  & &      &+& 2x_3 && && &\;= & 30
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+## Örnek 2: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 110%;"}
+
+* Amaç fonksiyon ve kısıtlarda [$x_1$]{.light-red} yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılırsa 
+
+
+[$$Z_{enk} = 2(x_1^+ - x_1^-)+4x_2 - x_3$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3 &+& s_1 & & &\;= & 40 \Rightarrow 5(x_1^+ - x_1^-) &-& x_2 &+&  4x_3 &+& s_1 & & &\;= & 40\\
+2x_1 &+& 2x_2 &+& 5x_3 & &     &-&v_1  &\;= & 25 \Rightarrow 2(x_1^+ - x_1^-) &+& 2x_2 &+& 5x_3 & &     &-&v_1  &\;= & 25 \\
+x_1  & &      &+& 2x_3 && && &\;= & 30 \Rightarrow (x_1^+ - x_1^-)  & &      &+& 2x_3 && && &\;= & 30
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 2: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek standart formun son haline ulaşılır.
+
+
+[$$Z_{enk} = 2(x_1^+ - x_1^-)+4x_2 - x_3$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+5(x_1^+ - x_1^-) &-& x_2 &+&  4x_3 &+& s_1 & & &\;= & 40\\
+2(x_1^+ - x_1^-) &+& 2x_2 &+& 5x_3 & &     &-&v_1  &\;= & 25 \\
+(x_1^+ - x_1^-)  & &      &+& 2x_3 && && &\;= & 30
+\end{alignedat}
+$$]{.light-blue}
+
+[$$x_2, x_3 \geq 0, s_1 \geq 0, v_1 \geq 0, x_1^+, x_1^- \geq 0$$]{.light-blue}
+
+:::
+
+
+## Örnek 2: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Kanonik Form (1)" style="font-size: 87%;"}
+
+* Genel kural olarak, kanonik formda [tüm kısıtlar $\leq$]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* İşaret sınırı olmayan [$x_1$]{.light-red} değişkeni yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılmalıdır.
+* Amaç fonksiyon [maksimumu bulacak]{.light-red} şekilde olmalıdır
+
+Amaç fonksiyonunun maksimumu bulacak şekilde yazılması gerektiğinden, amaç fonksiyonu [$-$]{.light-red} ile çarpılmalıdır.
+[$$Z_{enk} = 2x_1+4x_2 - x_3 \Rightarrow Z_{enb} = -2x_1-4x_2+ x_3 $$]{.light-blue}
+
+
+Kısıtlar için ise ilk adımda [$\geq$]{.light-red} olanlar [$-$]{.light-red} ile çarpılır, [$=$]{.light-red} şeklinde olan denklemler biri [$\geq$]{.light-red} ve biri [$\leq$]{.light-red} olacak şekilde iki parçada ifade edilir.
+
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3  &\;\leq & 40 \Rightarrow 5x_1 &-& x_2 &+&  4x_3  &\;\leq & 40 \\
+2x_1 &+& 2x_2 &+& 5x_3  &\;\geq & 25 \Rightarrow -2x_1 &-& 2x_2 &-& 5x_3  &\;\leq & -25 \\
+ x_1 &&       &+& 2x_3  &\;= & 30    \Rightarrow  x_1 &&  &+& 2x_3 &\; \geq & 30 \\
+     &&       & &       &    &       \Rightarrow  x_1 &&  &+& 2x_3 &\; \leq & 30
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 2: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 120%;"}
+
+[$$Z_{enb} = -2x_1-4x_2+ x_3$$]{.light-blue}
+
+* Bu aşamada kısıtlardan [$\geq$]{.light-red} işaretine sahip olan bir tanesi [$-$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline dönüştürülür, diğer kısıtlar aynı kalır.
+
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3  &\;\leq & 40 \Rightarrow 5x_1 &-& x_2 &+&  4x_3  &\;\leq & 40 \\
+-2x_1 &-& 2x_2 &-& 5x_3  &\;\leq & -25 \Rightarrow -2x_1 &-& 2x_2 &-& 5x_3  &\;\leq & -25 \\
+x_1 &&  &+& 2x_3 &\; \geq & 30    \Rightarrow  -x_1 &&  &-& 2x_3 &\; \leq & -30 \\
+x_1 &&  &+& 2x_3 &\; \leq & 30      \Rightarrow  x_1 &&  &+& 2x_3 &\; \leq & 30
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 2: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (3)" style="font-size: 120%;"}
+
+* Hem amaç fonksiyonunda hem de kısıtlarda, sınırlandırılmamış değişken olan [$x_1$]{.light-red} yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılır.
+
+[$$Z_{enb} = -2(x_1^+ - x_1^-)-4x_2+ x_3$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+5x_1 &-& x_2 &+&  4x_3  &\;\leq & 40 \Rightarrow 5(x_1^+ - x_1^-) &-& x_2 &+&  4x_3  &\;\leq & 40 \\
+-2x_1 &-& 2x_2 &-& 5x_3  &\;\leq & -25 \Rightarrow -2(x_1^+ - x_1^-) &-& 2x_2 &-& 5x_3  &\;\leq & -25 \\
+-x_1 &&  &-& 2x_3 &\; \leq & -30   \Rightarrow  -(x_1^+ - x_1^-) &&  &-& 2x_3 &\; \leq & -30 \\
+x_1 &&  &+& 2x_3 &\; \leq & 30      \Rightarrow  (x_1^+ - x_1^-) &&  &+& 2x_3 &\; \leq & 30
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+## Örnek 2: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (4)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.
+
+
+[$$Z_{enb} = -2(x_1^+ - x_1^-)-4x_2+ x_3$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+5(x_1^+ - x_1^-) &-& x_2 &+&  4x_3  &\;\leq & 40 \\
+-2(x_1^+ - x_1^-) &-& 2x_2 &-& 5x_3  &\;\leq & -25 \\
+-(x_1^+ - x_1^-) &&  &-& 2x_3 &\; \leq & -30 \\
+(x_1^+ - x_1^-) &&  &+& 2x_3 &\; \leq & 30
+\end{alignedat}
+$$]{.light-blue}
+[$$x_2, x_3 \geq 0, x_1^+, x_1^- \geq 0$$]{.light-blue}
+:::
+
+## Örnek 3: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 3: Standart ve Kanonik Form" style="font-size: 110%;"}
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &\;\geq & -5,\\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4,\\
+x_1  &+&  x_2    &+& 4x_3 &\;= & 10,\\
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1,x_2 \geq 0, x_3  \quad{} sınırlandırılmamış$$]{.light-blue}
+
+şeklinde verilmiş olan doğrusal programlama problemini
+
+**a)** [Standart biçimde]{.light-red}
+
+**b)** [Kanonik biçimde]{.light-red}
+
+yazınız.
+
+:::
+
+## Örnek 3: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 85%;"}
+
+* Genel kural olarak, standart formda [tüm kısıtlar eşitlik]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenmeli [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılmalıdır.
+* İşaret sınırı olmayan [$x_3$]{.light-red} değişkeni yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılmalıdır.
+* Kısıtların [sağ tarafındaki sabitler negatif olmamalıdır.]{.light-red}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+Kısıtlar için ise birinci kısıtın sağ tarafı negatif olduğundan denklem ilk önce [$-1$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline getirilir ardından [aylak değişken]{.light-red} eklenir.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &\;\geq & -5,   \Rightarrow -x_1   &-& x_2  &+&  x_3 &+&s_1 & & &\;= & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4, \Rightarrow -6x_1 &+& 7x_2 &-& 9x_3 & &    &+& s_2 &\;= & 4 \\
+x_1  &+&  x_2    &+& 4x_3 &\;= & 10, \Rightarrow x_1  &+&  x_2    &+& 4x_3 && && &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+## Örnek 3: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 110%;"}
+
+* Amaç fonksiyon ve kısıtlarda [$x_3$]{.light-red} yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılırsa 
+
+
+[$$Z_{enb} = 2x_1+3x_2 + 5(x_3^+ - x_3^-)$$]{.light-blue}
+
+
+[$$
+\begin{alignedat}{7}
+-x_1   &-& x_2  &+&  x_3 &+&s_1 & & &\;= & 5 \Rightarrow  -x_1   &-& x_2  &+&  (x_3^+ - x_3^-) &+&s_1 & & &\;= & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 & &    &+& s_2 &\;= & 4 \Rightarrow -6x_1 &+& 7x_2 &-& 9(x_3^+ - x_3^-) & &    &+& s_2 &\;= & 4 \\
+x_1  &+&  x_2    &+& 4x_3 && && &\;= & 10 \Rightarrow x_1  &+&  x_2    &+& 4(x_3^+ - x_3^-) && && &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 3: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek standart formun son haline ulaşılır.
+
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3^+ -5x_3^-$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+-x_1   &-& x_2  &+& x_3^+ - x_3^- &+&s_1 & & &\;= & 5 \\
+-6x_1 &+& 7x_2 &-& 9 x_3^+ +9 x_3^- & &    &+& s_2 &\;= & 4 \\
+x_1  &+&  x_2    &+& 4x_3^+ -4 x_3^- && && &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+[$$x_1, x_2 \geq 0, s_1 \geq 0, s_2 \geq 0, x_3^+, x_3^- \geq 0$$]{.light-blue}
+
+:::
+
+
+## Örnek 3: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Kanonik Form (1)" style="font-size: 90%;"}
+
+* Genel kural olarak, kanonik formda [tüm kısıtlar $\leq$]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* İşaret sınırı olmayan [$x_1$]{.light-red} değişkeni yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılmalıdır.
+* Amaç fonksiyon [maksimumu bulacak]{.light-red} şekilde olmalıdır
+
+Amaç fonksiyonu maksimum olarak verildiğinden aynı şekilde kalmalıdır.
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+Kısıtlar için ise ilk adımda [$\geq$]{.light-red} olanlar [$-$]{.light-red} ile çarpılır, [$=$]{.light-red} şeklinde olan denklemler biri [$\geq$]{.light-red} ve biri [$\leq$]{.light-red} olacak şekilde iki parçada ifade edilir.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &\;\geq & -5 \Rightarrow  -x_1 &-& x_2 &+&  x_3 &\;\leq & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4\Rightarrow -6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\;= & 10 \Rightarrow x_1  &+&  x_2    &+& 4x_3 &\leq & 10 \\ 
+     & &         & &      &    &    \Rightarrow x_1  &+&  x_2    &+& 4x_3 &\geq & 10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 3: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 120%;"}
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+* Bu aşamada kısıtlardan [$\geq$]{.light-red} işaretine sahip olan bir tanesi [$-$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline dönüştürülür, diğer kısıtlar aynı kalır.
+
+[$$
+\begin{alignedat}{7}
+-x_1 &-& x_2 &+&  x_3 &\;\leq & 5 \Rightarrow -x_1 &-& x_2 &+&  x_3 &\;\leq & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4 \Rightarrow -6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\leq & 10 \Rightarrow x_1  &+&  x_2    &+& 4x_3 &\leq & 10 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\geq & 10 \Rightarrow -x_1  &-&  x_2    &-& 4x_3 &\leq & -10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 3: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (3)" style="font-size: 120%;"}
+
+* Hem amaç fonksiyonunda hem de kısıtlarda, sınırlandırılmamış değişken olan [$x_3$]{.light-red} yerine [$(x_3^+ - x_3^-)$]{.light-red} yazılır.
+
+[$$Z_{enb} = 2x_1+3x_2 + 5(x_3^+ - x_3^-)$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+-x_1 &-& x_2 &+&  x_3 &\;\leq & 5 \Rightarrow -x_1 &-& x_2 &+&  (x_3^+ - x_3^-) &\;\leq & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\leq & 4 \Rightarrow -6x_1 &+& 7x_2 &-& 9(x_3^+ - x_3^-) &\;\leq & 4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\leq & 10 \Rightarrow x_1  &+&  x_2    &+& 4(x_3^+ - x_3^-) &\leq & 10 \\ 
+-x_1  &-&  x_2    &-& 4x_3 &\leq & -10 \Rightarrow -x_1  &-&  x_2    &-& 4(x_3^+ - x_3^-) &\leq & -10
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+## Örnek 3: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (4)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.
+
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3^+ -5x_3^-$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+-x_1 &-& x_2 &+&  x_3^+ - x_3^- &\;\leq & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3^+ -9x_3^- &\;\leq & 4 \\ 
+x_1  &+&  x_2    &+& 4x_3^+ -4x_3^- &\leq & 10 \\ 
+-x_1  &-&  x_2    &-& 4x_3^+ -4x_3^- &\leq & -10
+\end{alignedat}
+$$]{.light-blue}
+[$$x_2, x_3 \geq 0, x_1^+, x_1^- \geq 0$$]{.light-blue}
+:::
+
+## Örnek 4: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 4: Standart ve Kanonik Form" style="font-size: 110%;"}
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &= & -5,\\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\geq & 4,\\
+x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10,\\
+\end{alignedat}
+$$]{.light-blue}
+[$$x_2,x_3 \geq 0, x_1  \quad{} sınırlandırılmamış$$]{.light-blue}
+
+şeklinde verilmiş olan doğrusal programlama problemini
+
+**a)** [Standart biçimde]{.light-red}
+
+**b)** [Kanonik biçimde]{.light-red}
+
+yazınız.
+
+:::
+
+## Örnek 4: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 85%;"}
+
+* Genel kural olarak, standart formda [tüm kısıtlar eşitlik]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenmeli [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılmalıdır.
+* İşaret sınırı olmayan [$x_3$]{.light-red} değişkeni yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılmalıdır.
+* Kısıtların [sağ tarafındaki sabitler negatif olmamalıdır.]{.light-red}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+Kısıtlar için ise birinci eşitliğin sağ tarafı negatif olduğundan denklem ilk önce [$-1$]{.light-red} ile çarpılarak sağ taraf [pozitif]{.light-red} hale getirilir. [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenir, [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılır.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &\;= & -5,   \Rightarrow -x_1   &-& x_2  &+&  x_3 && & & &\;= & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\geq & 4, \Rightarrow -6x_1 &+& 7x_2 &-& 9x_3 &-& v_1    &&  &\;= & 4 \\
+x_1  &+&  x_2    &+& 4x_3 &\;\leq &10 \Rightarrow x_1  &+&  x_2    &+& 4x_3 && &+&s_1 &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+
+## Örnek 4: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 120%;"}
+
+* Amaç fonksiyon ve kısıtlarda [$x_1$]{.light-red} yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılırsa 
+
+
+[$$Z_{enb} = 2(x_1^+ - x_1^-)+3x_2 + 5x_3$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+-x_1 &-& x_2 &+&  x_3 &\;= & 5,   \Rightarrow -(x_1^+ - x_1^-)   &-& x_2  &+&  x_3 && & & &\;= & 5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\geq & 4, \Rightarrow -6(x_1^+ - x_1^-) &+& 7x_2 &-& 9x_3 &-& v_1    &&  &\;= & 4 \\
+x_1  &+&  x_2    &+& 4x_3 &\;\leq &10 \Rightarrow (x_1^+ - x_1^-)  &+&  x_2    &+& 4x_3 && &+&s_1 &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 4: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek standart formun son haline ulaşılır.
+
+
+[$$Z_{enb} = 2x_1^+ -2x_1^-+3x_2 + 5x_3$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+-x_1^+ + x_1^-   &-& x_2  &+&  x_3 && & & &\;= & 5 \\
+-6x_1^+ + 6x_1^- &+& 7x_2 &-& 9x_3 &-& v_1    &&  &\;= & 4 \\
+x_1^+ - x_1^-  &+&  x_2    &+& 4x_3 && &+&s_1 &\;= & 10
+\end{alignedat}
+$$]{.light-blue}
+
+[$$x_2, x_3 \geq 0, s_1 \geq 0, v_1 \geq 0, x_1^+, x_1^- \geq 0$$]{.light-blue}
+
+:::
+
+
+## Örnek 4: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Kanonik Form (1)" style="font-size: 85%;"}
+
+* Genel kural olarak, kanonik formda [tüm kısıtlar $\leq$]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* İşaret sınırı olmayan [$x_1$]{.light-red} değişkeni yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılmalıdır.
+* Amaç fonksiyon [maksimumu bulacak]{.light-red} şekilde olmalıdır
+
+Amaç fonksiyonu maksimum olarak verildiğinden aynı şekilde kalmalıdır.
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+Kısıtlar için ise ilk adımda [$\geq$]{.light-red} olanlar [$-$]{.light-red} ile çarpılır, [$=$]{.light-red} şeklinde olan denklemler biri [$\geq$]{.light-red} ve biri [$\leq$]{.light-red} olacak şekilde iki parçada ifade edilir.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2 &-&  x_3 &\;= & -5 \Rightarrow x_1 &+& x_2  &-&  x_3 &\;\leq & -5 \\
+    & &     & &      &    &    \Rightarrow x_1 &+& x_2  &-&  x_3 &\;\geq & -5 \\
+-6x_1 &+& 7x_2 &-& 9x_3 &\;\geq & 4\Rightarrow 6x_1 &-& 7x_2 &+& 9x_3 &\;\leq & -4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10 \Rightarrow x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10  
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 4: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 120%;"}
+
+[$$Z_{enb} = 2x_1+3x_2 + 5x_3$$]{.light-blue}
+
+* Bu aşamada kısıtlardan [$\geq$]{.light-red} işaretine sahip olan bir tanesi [$-$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline dönüştürülür, diğer kısıtlar aynı kalır.
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2  &-&  x_3 &\;\leq & -5   \Rightarrow x_1 &+& x_2  &-&  x_3 &\;\leq & -5 \\
+x_1 &+& x_2  &-&  x_3 &\;\geq & -5   \Rightarrow -x_1 &-& x_2  &+&  x_3 &\;\leq & 5 \\
+6x_1 &-& 7x_2 &+& 9x_3 &\;\leq & -4  \Rightarrow 6x_1 &-& 7x_2 &+& 9x_3 &\;\leq & -4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10 \Rightarrow x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10  
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 4: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (3)" style="font-size: 120%;"}
+
+* Hem amaç fonksiyonunda hem de kısıtlarda, sınırlandırılmamış değişken olan [$x_1$]{.light-red} yerine [$(x_1^+ - x_1^-)$]{.light-red} yazılır.
+
+[$$Z_{enb} = 2(x_1^+ - x_1^-)+3x_2 + 5x_3$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+x_1 &+& x_2  &-&  x_3 &\;\leq & -5  \Rightarrow (x_1^+ - x_1^-) &+& x_2  &-&  x_3 &\;\leq & -5 \\
+-x_1 &-& x_2  &+&  x_3 &\;\leq & 5   \Rightarrow -(x_1^+ - x_1^-) &-& x_2  &+&  x_3 &\;\leq & 5 \\
+6x_1 &-& 7x_2 &+& 9x_3 &\;\leq & -4   \Rightarrow 6(x_1^+ - x_1^-) &-& 7x_2 &+& 9x_3 &\;\leq & -4 \\ 
+x_1  &+&  x_2    &+& 4x_3 &\;\leq & 10 \Rightarrow (x_1^+ - x_1^-)  &+&  x_2    &+& 4x_3 &\;\leq & 10  
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+## Örnek 4: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (4)" style="font-size: 120%;"}
+
+* Negatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.
+
+
+[$$Z_{enb} = 2x_1^+ -2x_1^-+3x_2 + 5x_3^+ -5x_3^-$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+x_1^+ - x_1^- &+& x_2  &-&  x_3 &\;\leq & -5 \\
+-x_1^+ + x_1^- &-& x_2  &+&  x_3 &\;\leq & 5 \\
+6x_1^+ -6x_1^- &-& 7x_2 &+& 9x_3 &\;\leq & -4 \\ 
+x_1^+ - x_1^-  &+&  x_2 &+& 4x_3 &\;\leq & 10  
+\end{alignedat}
+$$]{.light-blue}
+[$$x_2, x_3 \geq 0, x_1^+, x_1^- \geq 0$$]{.light-blue}
+:::
+
+## Örnek 5: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 5: Standart ve Kanonik Form" style="font-size: 110%;"}
+
+* [$P_1$]{.light-red} ve [$P_2$]{.light-red} gibi iki farklı ürün [$M_1$]{.light-red} ve [$M_2$]{.light-red} gibi iki farklı makineden geçerek üretilebilmektedir. 
+* Her iki makinenin de her iki makinedeki [birim işlem süreleri aynıdır]{.light-red}.
+* [$M_1$]{.light-red} makinesinin günlük kapasitesi [$200$]{.light-blue} birim, [$M_2$]{.light-red} makinesinin günlük kapasitesi ise [$250$]{.light-blue} birimdir.
+* Makineler günlük kapasitelerini [sadece $P_1$]{.light-red}, [sadece $P_2$]{.light-red} ya da [$P_1$ ve $P_2$ nin bir karışımı]{.light-red} olarak doldurabilirler.
+* Atolye şefi, bu makinelerden [birinde yapılan üretimin diğerindekiyle]{.light-red} [$5$]{.light-blue} [birim yakınlıkta olmasını]{.light-red} sağlayacak şekilde dengeli bir üretim planı yapmayı arzulamaktadır.
+* [$P_1$]{.light-red} in birim başına karı [$10$]{.light-blue} pb, [$P_2$]{.light-red} nin birim başına karı [$15$]{.light-blue} pb dir. 
+* Problemi **a)** [Standart biçimde]{.light-red} **b)** [Kanonik biçimde]{.light-red} yazınız.
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Örnek 5: Standart ve Kanonik Form" style="font-size: 110%;"}
+
+* Öncelikle probleme ait karar değişkenlerini, amaç fonksiyonunu ve kısıtları yazarak başlayalım.
+
+:::{.fragment fragment-index=2}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=3}
+* [$x_{M_1P_1}$]{.light-blue} =[$M_1$]{.light-blue} makinasında üretilen [$P_1$]{.light-blue} miktarı 
+* [$x_{M_1P_2}$]{.light-blue} = [$M_1$]{.light-blue} makinasında üretilen [$P_2$]{.light-blue} miktarı 
+* [$x_{M_2P_1}$]{.light-blue} = [$M_2$]{.light-blue} makinasında üretilen [$P_1$]{.light-blue} miktarı 
+* [$x_{M_2P_2}$]{.light-blue} = [$M_2$]{.light-blue} makinasında üretilen [$P_2$]{.light-blue} miktarı 
+:::
+
+:::{.fragment fragment-index=4}
+[Maksimize edilmek istenen toplam kar:]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+* [$Z_{enb}=10 (x_{M_1P_1}+x_{M_2P_1}) + 15 (x_{M_1P_2}+x_{M_2P_2})$]{.light-blue} dir.
+:::
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Örnek 5: Standart ve Kanonik Form" style="font-size: 120%;"}
+
+:::{.fragment fragment-index=1}
+[Makine üretim kısıtları:]{.red}
+:::
+
+:::{.fragment fragment-index=2}
+* [$x_{M_1P_1}+x_{M_1P_2} \leq 200$]{.light-blue}
+* [$x_{M_2P_1}+x_{M_2P_2} \leq 250$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+[Makine üretimlerinin birbirine yakın olması kısıtı:]{.red}
+:::
+
+:::{.fragment fragment-index=4}
+* [$\mid(x_{M_1P_1}+x_{M_1P_2}) -(x_{M_2P_1}+x_{M_2P_2})\mid \leq 5$]{.light-blue} tir.
+:::
+
+:::{.fragment fragment-index=5}
+* [Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$x_{M_1P_1}, x_{M_1P_2}, x_{M_2P_1}, x_{M_2P_2} \geq 0$]{.light-blue}
+:::
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 100%;"}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+
+[$Z_{enb} = 10 (x_{M_1P_1}+x_{M_2P_1}) + 15 (x_{M_1P_2}+x_{M_2P_2})$]{.light-blue}
+
+
+Öncelikle mutlak değer şeklinde verilen eşitsizlik mutlak değerden çıkarılarak iki denklem halinde yazılmalıdır.
+
+::: {style="font-size: 90%;"}
+[$$
+\begin{alignedat}{7}
+\mid(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2})\mid &\leq& 5 \Rightarrow (x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\leq& 5 \\
+                            & &                            &    &   \Rightarrow (x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\geq& -5
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+İkinci denklemin sağ tarafı negatif olduğundan [$-$]{.light-blue} ile çarpılarak pozitif hale getirilmelidir. Bu aşamada [$\geq$]{.light-blue}, [$\leq$]{.light-blue} e dönüşür. 
+
+::: {style="font-size: 90%;"}
+[$$
+\begin{alignedat}{7}
+(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\leq& 5 \Rightarrow x_{M_1P_1}+x_{M_1P_2} &-&x_{M_2P_1}-x_{M_2P_2} &\leq& 5 \\
+(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\geq& -5 \Rightarrow -x_{M_1P_1}-x_{M_1P_2} &+&x_{M_2P_1}+x_{M_2P_2} &\leq& 5
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 95%;"}
+
+* Diğer iki denklemin sağ tarafı pozitif olduğundan bir şey yapmaya gerek yoktur. Elde edilen yeni kısıtların tümü [$\leq$]{.light-blue} olduğundan [aylak değişken]{.light-blue} eklenmesi yeterlidir.
+
+
+[$$
+\begin{alignedat}{7}
+x_{M_1P_1}  &+& x_{M_1P_2}    &+&  &&                       && && && && &\leq& 200 \Rightarrow \\
+x_{M_1P_1}  &+& x_{M_1P_2}    &+&  &&                       &+&s_1 && && && &=& 200 \\ \\
+            & &               & & x_{M_2P_1}&+& x_{M_2P_2}  && && && && &\leq& 250 \Rightarrow \\
+            & &               & & x_{M_2P_1}&+& x_{M_2P_2}  && &+&s_2 && && &=& 250 \\ \\
+x_{M_1P_1}  &+& x_{M_1P_2}    &-& x_{M_2P_1}&-&x_{M_2P_2}   && && && && &\leq& 5 \Rightarrow  \\
+x_{M_1P_1}  &+& x_{M_1P_2}    &-& x_{M_2P_1}&-&x_{M_2P_2}   && && &+&s_3 && &=& 5  \\ \\
+-x_{M_1P_1} &-& x_{M_1P_2}    &+& x_{M_2P_1}&+&x_{M_2P_2}   && && && && &\leq& 5 \Rightarrow \\
+-x_{M_1P_1} &-& x_{M_1P_2}    &+& x_{M_2P_1}&+&x_{M_2P_2}   && && && &+&s_4 &=& 5
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 120%;"}
+
+* Değişken işaret kısıtlarını da eklersek standart form aşağıdaki gibi elde edilir.
+
+[$Z_{enb} = 10x_{M_1P_1}+10x_{M_2P_1} + 15x_{M_1P_2}+15x_{M_2P_2}$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+x_{M_1P_1}  &+& x_{M_1P_2}    &+&  &&                       &+&s_1 && && && &=& 200 \\
+            & &               & & x_{M_2P_1}&+& x_{M_2P_2}  && &+&s_2 && && &=& 250 \\
+x_{M_1P_1}  &+& x_{M_1P_2}    &-& x_{M_2P_1}&-&x_{M_2P_2}   && && &+&s_3 && &=& 5  \\
+-x_{M_1P_1} &-& x_{M_1P_2}    &+& x_{M_2P_1}&+&x_{M_2P_2}   && && && &+&s_4 &=& 5 
+\end{alignedat}
+$$]{.light-blue}
+
+[$x_{M_1P_1}, x_{M_1P_2}, x_{M_2P_1}, x_{M_2P_2} \geq 0$]{.light-blue} ve [$s_1, s_2, s_3, s_4 \geq 0$]{.light-blue}
+
+:::
+
+
+## Örnek 5: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (1)" style="font-size: 100%;"}
+
+Amaç fonksiyonu zaten maksimum problemi olarak verildiğinden kanonik forma uygundur.
+
+[$Z_{enb} = 10 (x_{M_1P_1}+x_{M_2P_1}) + 15 (x_{M_1P_2}+x_{M_2P_2})$]{.light-blue}
+
+
+Öncelikle mutlak değer şeklinde verilen eşitsizlik mutlak değerden çıkarılarak iki denklem halinde yazılmalıdır.
+
+::: {style="font-size: 90%;"}
+
+[$$
+\begin{alignedat}{7}
+\mid(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2})\mid &\leq& 5 \Rightarrow (x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\leq& 5 \\
+                            & &                            &    &   \Rightarrow (x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\geq& -5
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+İkinci denklemin sağ tarafı [$\geq$]{.light-blue} olduğundan [$-$]{.light-blue} ile çarpılarak [$\leq$]{.light-blue} e dönüşür. 
+
+::: {style="font-size: 90%;"}
+
+[$$
+\begin{alignedat}{7}
+(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\leq& 5 \Rightarrow x_{M_1P_1}+x_{M_1P_2} &-&x_{M_2P_1}-x_{M_2P_2} &\leq& 5 \\
+(x_{M_1P_1}+x_{M_1P_2}) &-&(x_{M_2P_1}+x_{M_2P_2}) &\geq& -5 \Rightarrow -x_{M_1P_1}-x_{M_1P_2} &+&x_{M_2P_1}+x_{M_2P_2} &\leq& 5
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+
+## Örnek 5: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 110%;"}
+
+* Diğer iki denklemin sağ tarafı [$\leq$]{.light-blue} olduğundan bir şey yapmaya gerek yoktur. Elde edilen kısıtların tümü [$\leq$]{.light-blue} olduğundan kanonik forma uymaktadır. 
+* Değişken işaret kısıtlarını da eklersek kanonik form aşağıdaki gibi elde edilir.
+
+[$Z_{enb} = 10x_{M_1P_1}+10x_{M_2P_1} + 15x_{M_1P_2}+15x_{M_2P_2}$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+x_{M_1P_1}  &+& x_{M_1P_2}    &+&           &&              &\leq& 200 \\
+            & &               & & x_{M_2P_1}&+& x_{M_2P_2}  &\leq& 250 \\
+x_{M_1P_1}  &+& x_{M_1P_2}    &-& x_{M_2P_1}&-&x_{M_2P_2}   &\leq& 5  \\
+-x_{M_1P_1} &-& x_{M_1P_2}    &+& x_{M_2P_1}&+&x_{M_2P_2}   &\leq& 5 
+\end{alignedat}
+$$]{.light-blue}
+
+[$x_{M_1P_1}, x_{M_1P_2}, x_{M_2P_1}, x_{M_2P_2} \geq 0$]{.light-blue}
+
+
+:::
+

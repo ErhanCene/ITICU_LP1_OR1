@@ -1,0 +1,70 @@
+<html><head><meta charset='utf-8'>
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+</style><style>
+      /* exhausted tint without overriding .alloc */
+      .tbl-sim tr.exh-row td:not(.alloc), .tbl-sim tr.exh-row th { background:#fdecea; }
+      .tbl-sim td.exh-col:not(.alloc),    .tbl-sim th.exh-col    { background:#fdecea; }
+      .tbl-sim td.pen, .tbl-sim th.pen { background:#f8f9fa; font-weight:600; }
+      .tbl-sim tfoot td { font-weight:600; }
+      .tbl-mini { margin-bottom:14px }
+    </style>
+</head><body>
+<table class="tbl-sim tbl-mini">
+<thead><tr><th></th>
+<th>Depo 1</th>
+<th>Depo 2</th>
+<th class='exh-col'>Depo 3</th>
+<th class='exh-col'>Dummy</th>
+<th class='rhs'>Arz</th>
+</tr></thead><tbody>
+<tr class='exh-row'>
+<th>Fabrika 1</th>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=3)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=4)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(m=10)</div></td>
+<td class='alloc exh-col'><div class='bold'>40</div><div class='sub'>(m=0)</div></td>
+<td class='rhs bold'>40 <span class='sub'>(40)</span></td>
+</tr>
+<tr class='exh-row'>
+<th>Fabrika 2</th>
+<td class='alloc '><div class='bold'>60</div><div class='sub'>(m=5)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=10)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(m=8)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(m=0)</div></td>
+<td class='rhs bold'>60 <span class='sub'>(60)</span></td>
+</tr>
+<tr class='exh-row'>
+<th>Fabrika 3</th>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=7)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=6)</div></td>
+<td class='alloc exh-col'><div class='bold'>50</div><div class='sub'>(m=2)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(m=0)</div></td>
+<td class='rhs bold'>50 <span class='sub'>(50)</span></td>
+</tr>
+<tr>
+<th>Fabrika 4</th>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=9)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(m=8)</div></td>
+<td class='alloc exh-col'><div class='bold'>20</div><div class='sub'>(m=3)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(m=0)</div></td>
+<td class='rhs bold'>20 <span class='sub'>(100)</span></td>
+</tr>
+</tbody><tfoot>
+<tr><th>Talep</th>
+<td class='rhs bold'>60 <span class='sub'>(70)</span></td>
+<td class='rhs bold'>0 <span class='sub'>(70)</span></td>
+<td class='rhs bold exh-col'>70 <span class='sub'>(70)</span></td>
+<td class='rhs bold exh-col'>40 <span class='sub'>(40)</span></td>
+<td class='rhs bold'>170 <span class='sub'>(250)</span></td>
+</tr>
+</tfoot></table>
+</body></html>

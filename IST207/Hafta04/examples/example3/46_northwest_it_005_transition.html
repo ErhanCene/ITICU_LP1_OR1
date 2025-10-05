@@ -1,0 +1,152 @@
+<html><head><meta charset='utf-8'>
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+</style><style>
+    .tbl-sim caption{font-weight:600}
+    .sub{font-size:11px;color:#6c757d}
+    .muted{color:#adb5bd}
+    .big{font-weight:700}
+    .big.zero{color:#6c757d}
+    .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+
+    /* R-table helpers */
+    .rneg{background:#fdecea;border:2px solid #f5c2c7}
+    .rmin{box-shadow: inset 0 0 0 2px #dc3545}
+
+    th.uhead, th.vhead{white-space:nowrap}
+
+    .cbox{
+      display:inline-block;border:1px solid #adb5bd;border-radius:6px;
+      padding:1px 6px;font-size:12px;color:#495057
+    }
+
+    /* === Transition highlights (match 46_*_transition style) === */
+    .pivot{
+      background:#e8f0fe;                     /* light blue */
+      box-shadow: inset 0 0 0 3px #1a73e8;     /* strong blue ring */
+    }
+    .plus{
+      background:#f1faf1;                      /* soft green tint */
+      box-shadow: inset 0 0 0 3px #2e7d32;     /* strong green ring */
+    }
+    .minus{
+      background:#fff1f1;                      /* soft red tint */
+      box-shadow: inset 0 0 0 3px #c62828;     /* strong red ring */
+    }
+
+    .pm{
+      display:inline-block;border:1px solid #ced4da;border-radius:999px;
+      padding:0 5px;font-size:12px;line-height:18px;min-width:18px;
+      text-align:center;margin-right:4px;background:#fff
+    }
+    .pm.plus{border-color:#2e7d32;color:#2e7d32}
+    .pm.minus{border-color:#c62828;color:#c62828}
+
+    .cellwrap{position:relative;min-width:76px;height:46px}
+    .corner-note{position:absolute;right:6px;top:6px}
+    .xnote{position:absolute;left:6px;bottom:6px;font-size:11px;color:#6c757d}
+  </style>
+</head><body>
+<table class='tbl-sim'>
+<thead><tr><th></th>
+<th>Depo 1</th>
+<th>Depo 2</th>
+<th>Depo 3</th>
+<th>Depo 4</th>
+<th>Δ</th></tr></thead><tbody>
+<tr>
+<th>Fabrika 1</th>
+<td class='minus'><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=6</span></div>
+             <span class='pm minus'>&minus;</span><div class='big'>15</div>
+           </div><div class='xnote'>x: 15 &rarr; 15</div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=9</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=10</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class='plus'><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=4</span></div>
+             <span class='pm plus'>+</span><div class='big'>85</div>
+           </div><div class='xnote'>x: 85 &rarr; 85</div></td>
+<td class='rhs'>0</td>
+</tr>
+<tr>
+<th>Fabrika 2</th>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=3</span></div>
+             <div class='big'>60</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=5</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=7</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=9</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class='rhs'>0</td>
+</tr>
+<tr>
+<th>Fabrika 3</th>
+<td class='pivot'><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=3</span></div>
+             <span class='pm'>+</span><div class='big zero'>0</div>
+           </div><div class='xnote'>x: 0 &rarr; 0</div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=2</span></div>
+             <div class='big'>80</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=10</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class='minus'><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=4</span></div>
+             <span class='pm minus'>&minus;</span><div class='big'>60</div>
+           </div><div class='xnote'>x: 60 &rarr; 60</div></td>
+<td class='rhs'>0</td>
+</tr>
+<tr>
+<th>Dummy</th>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=0</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=0</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=0</span></div>
+             <div class='big'>100</div>
+           </div></td>
+<td class=''><div class='cellwrap'>
+             <div class='corner-note'><span class='cbox'>c=0</span></div>
+             <div class='muted'>&ndash;</div>
+           </div></td>
+<td class='rhs'>0</td>
+</tr>
+<tr><th>Toplam</th>
+<td class='rhs'>0</td>
+<td class='rhs'>0</td>
+<td class='rhs'>0</td>
+<td class='rhs'>0</td>
+<td class='rhs'>0</td>
+</tr>
+</tbody></table></body></html>

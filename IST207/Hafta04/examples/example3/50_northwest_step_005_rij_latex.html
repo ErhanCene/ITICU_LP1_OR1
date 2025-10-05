@@ -1,0 +1,63 @@
+<!doctype html><html><head><meta charset='utf-8'><title>LaTeX R_ij</title>
+<style>
+    body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;margin:20px}
+    h3{margin:0 0 8px 0}
+    table{border-collapse:collapse;margin:8px 0}
+    th,td{border:1px solid #e9ecef;padding:6px 10px;text-align:center}
+    thead th{background:#f1f3f5}
+    .na{color:#adb5bd}
+    .neg{color:#b00020;font-weight:600}
+    .raw{white-space:pre-wrap;background:#f8f9fa;border:1px solid #e9ecef;padding:12px;border-radius:6px;font-family:ui-monospace,Consolas,Monaco,monospace}
+  </style>
+</head><body>
+<h3>R_{ij} hesap (LaTeX – ham)</h3>
+<table><thead><tr><th></th>
+<th>j=1</th>
+<th>j=2</th>
+<th>j=3</th>
+<th>j=4</th>
+</tr></thead><tbody>
+<tr><th>i=1</th>
+<td class=''>0</td>
+<td class=''>7</td>
+<td class=''>6</td>
+<td class=''>0</td>
+</tr>
+<tr><th>i=2</th>
+<td class=''>0</td>
+<td class=''>6</td>
+<td class=''>6</td>
+<td class=''>8</td>
+</tr>
+<tr><th>i=3</th>
+<td class='neg'>-3</td>
+<td class=''>0</td>
+<td class=''>6</td>
+<td class=''>0</td>
+</tr>
+<tr><th>i=4</th>
+<td class='neg'>-2</td>
+<td class=''>2</td>
+<td class=''>0</td>
+<td class=''>0</td>
+</tr>
+</tbody></table>
+<div class='raw'>\[\begin{aligned}
+R_{1,1} = c_{1,1} - u_{1} - v_{1} = 6 - 0 - 6 = 0 \\
+R_{1,2} = c_{1,2} - u_{1} - v_{2} = 9 - 0 - 2 = 7 \\
+R_{1,3} = c_{1,3} - u_{1} - v_{3} = 10 - 0 - 4 = 6 \\
+R_{1,4} = c_{1,4} - u_{1} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{2,1} = c_{2,1} - u_{2} - v_{1} = 3 - -3 - 6 = 0 \\
+R_{2,2} = c_{2,2} - u_{2} - v_{2} = 5 - -3 - 2 = 6 \\
+R_{2,3} = c_{2,3} - u_{2} - v_{3} = 7 - -3 - 4 = 6 \\
+R_{2,4} = c_{2,4} - u_{2} - v_{4} = 9 - -3 - 4 = 8 \\
+R_{3,1} = c_{3,1} - u_{3} - v_{1} = 3 - 0 - 6 = -3 \\
+R_{3,2} = c_{3,2} - u_{3} - v_{2} = 2 - 0 - 2 = 0 \\
+R_{3,3} = c_{3,3} - u_{3} - v_{3} = 10 - 0 - 4 = 6 \\
+R_{3,4} = c_{3,4} - u_{3} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{4,1} = c_{4,1} - u_{4} - v_{1} = 0 - -4 - 6 = -2 \\
+R_{4,2} = c_{4,2} - u_{4} - v_{2} = 0 - -4 - 2 = 2 \\
+R_{4,3} = c_{4,3} - u_{4} - v_{3} = 0 - -4 - 4 = 0 \\
+R_{4,4} = c_{4,4} - u_{4} - v_{4} = 0 - -4 - 4 = 0 \\
+\end{aligned}\]</div>
+</body></html>

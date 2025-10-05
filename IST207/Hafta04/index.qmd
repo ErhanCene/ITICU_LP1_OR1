@@ -1,0 +1,2850 @@
+---
+title: Hafta 04
+subtitle: "Yön. Araş. : Bozulma Durumu, Dengesiz Ulaştırma Prob."
+date: 10/09/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST207 - Yöneylem Araştırması 1 - Hafta 04 - 09 Ekim 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Bozulma Durumu (1)
+
+::: {.callout-important icon=false title="Bozulma Durumu (1)" style="font-size: 130%;"}
+
+* Bilindiği gibi, ulaştırma problemlerinin herhangi bir yöntemle ulaşılan uygun çözümünde [temel değişken sayısı]{.light-red} [($k$)]{.light-blue}, satır ve sütun sayıları toplamının bir eksiğine eşitse, başka bir deyişle [$k = m + n - 1$]{.light-blue} bağıntısı geçerliyse ulaşılan çözüm temel, yani [bozuk olmayan bir çözümdür]{.light-red}. 
+* Diğer taraftan, bir ulaştırma probleminin başlangıç çözümünde veya en iyi çözüme ulaşma çabalarının herhangi bir adımında temel değişken sayısı [($m + n - 1$)]{.light-blue}’den farklıysa [bozulma durumu ortaya çıkmış]{.light-red} demektir. 
+
+
+:::
+
+## Bozulma Durumu (2)
+
+::: {.callout-important icon=false title="Bozulma Durumu (2)" style="font-size: 110%;"}
+
+* Bu duruma iki şekilde rastlanır.
+  * 1. [Temel değişken sayısı]{.light-red} [($k$)]{.light-blue}, [$(m + n - 1)$]{.light-blue}’den büyüktür. [$(k > m + n - 1)$]{.light-blue} yalnızca başlangıç çözümünde seyrek olarak rastlanır. Bu durumun ortaya çıkmasının nedeni, [dağıtımın yanlış yapılması]{.light-red} veya [problemin yanlış formüle edilmesidir]{.light-red}. Bu sorunun üstesinden gelebilmek için modelin ve çözümün kontrol edilmesi gerekir.
+  * 2. [Temel değişken sayısı]{.light-red} [($k$)]{.light-blue}, [$(m + n - 1)$]{.light-blue}’den küçüktür. İkinci duruma [$(k < m + n - 1)$]{.light-blue}, başlangıç çözümünde veya en iyi çözüme ulaşma sürecinin herhangi bir tekrarında rastlanabilir. 
+
+* Bozulma durumu, kaynakların [maliyeti fazla olan hücrelerden az olan hücrelere]{.light-red} doğru kaydırılmasıyla [temel değişken sayısı arttırılarak]{.light-red} ve [toplam maliyet azaltılarak]{.light-red} giderilir.
+
+:::
+
+## Örnek 1: Bozulma Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Bozulma Durumu" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+Ulaştırma tablosu yanda verilmiş olan problemi [Kuzeybatı Yöntemiyle]{.light-red} çözünüz.
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Bozulma Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Bozulma Durumu (2)" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+Toplam talep toplam arza eşit olduğundan [$(190)$]{.light-blue} [dengeli ulaştırma problemidir]{.light-red}. 
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Bozulma Durumu (3)
+
+::: {.callout-tip icon=false title="Örnek 1: Bozulma Durumu (3)" style="font-size: 120%;"}
+
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_northwest_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (1)
+
+::: {.callout-tip icon=false title="Örnek 1: Kuzeybatı Yöntemi (1)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_001.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (2)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (2)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (3)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_004.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{22} x_{22} + c_{32} x_{32} + c_{33} x_{33} \\
+  &= 2\cdot 30 + 5\cdot 60 + 6\cdot 20 + 8\cdot 80 \\
+  &= \mathbf{1120}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+* Bu problem için [$m=3$]{.light-blue}, [$n=3$]{.light-blue} olduğundan [$m+n-1=3+3-1=5$]{.light-blue} tane temel değişken bulunmalıdır.
+* Çözüme bakıldığında, sadece [$k=4$]{.light-blue} tane temel değişken olduğu görülmektedir. 
+* Bu da [bozulma durumunu]{.light-red} işaret etmektedir.
+* Bu durum, maliyeti fazla olan temel değişkenden, maliyeti az olan hücrelere kaynak transferi yapılarak giderilir.
+* Bu işlem yapılırken maliyet de optimuma yaklaşır.
+
+
+:::
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Ek Adım 1:]{.red} [$X_{11}\xrightarrow{20} X_{31}$ ve $X_{32}\xrightarrow{20} X_{12}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 110%;"}
+
+[Ek Adım 1 sonucunda bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{12} x_{12}+ c_{22} x_{22} + c_{31} x_{31} + c_{33} x_{33} \\
+  &= 2\cdot 10 + 3\cdot 20 + 5\cdot 60 + 3\cdot 20 + 8\cdot 80 \\
+  &= \mathbf{1080}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Ek Adım 2:]{.red} [$X_{11}\xrightarrow{10} X_{31}$ ve $X_{33}\xrightarrow{10} X_{13}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_northwest_step_006.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Bozulma Durumu Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Ek Adım 2 sonucunda bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{12} x_{12} + c_{13} x_{13} +c_{22} x_{22} + c_{31} x_{31} + c_{33} x_{33} \\
+  &= 3\cdot 20 + 5\cdot 10 +  5\cdot 60 + 3\cdot 30 + 8\cdot 70 \\
+  &= \mathbf{1060}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Dengesiz Ulaştırma Problemleri
+
+::: {.callout-important icon=false title="Dengesiz Ulaştırma Problemleri (1)" style="font-size: 130%;"}
+
+* Arz toplamı ve talep toplamının [birbirine eşit olmadığı]{.light-red} durumlar [dengesiz ulaştırma problemi]{.light-red} olarak adlandırılır.
+* Bu durumda gölge bir [satır ve ya sütun eklenerek]{.light-red} arz ve talep arasındaki fark kadar bir ek yaparak arz ve talep dengelenir.
+* Gölge satırda / sütunda bulunan hücrelerin [maliyet değerleri 0]{.light-red} olarak tanımlanır.
+* Diğer tüm işlemler dengeli ulaştırma problemleriyle aynı şekilde yapılır.
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) (1)
+
+::: {.callout-tip icon=false title="Örnek 2: Arz $>$ Talep" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+Yanda verilen [dengesiz]{.light-blue} ulaştırma problemini [Kuzeybatı]{.light-red}, [Satır]{.light-red}, [Sütun]{.light-red}, [En Düşük Maliyet]{.light-red} ve [VAM]{.light-red} yöntemleri ile çözünüz.
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+
+Kuzeybatı yöntemi sonucunun optimum olup olmadığını belirleyiniz. Optimum değilse [MODI]{.light-red} yöntemiyle optimum hale getiriniz.
+
+Eğer herhangi bir yöntemde [bozulma]{.light-red} durumu ortaya çıkarsa bunu da gideriniz.
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) (2)
+
+::: {.callout-tip icon=false title="Örnek 2: Arz $>$ Talep" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Arz ve talep toplamlarına bakıldığında [arz]{.light-red} toplamının [250]{.light-blue}, [talep]{.light-red} toplamının ise [210]{.light-blue} olduğu görülür.
+
+Bu durumda dengeyi sağlamak için [maliyet]{.light-red} değerleri [sıfır]{.light-blue} ve toplam talebi [$250-210=40$]{.light-blue} olan yeni bir gölge sütun tabloya eklenmelidir.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) (3)
+
+::: {.callout-tip icon=false title="Örnek 2: Arz $>$ Talep" style="font-size: 120%;"}
+
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_northwest_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) (4)
+
+::: {.callout-tip icon=false title="Örnek 2: Arz $>$ Talep" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_001.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_northwest_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{32} x_{32} + c_{33} x_{33} + c_{43} x_{43} \\
+  &= 3\cdot 40 + 5\cdot 30 + 10\cdot 30 + 6\cdot 40 + 2\cdot 10 + 3\cdot 60 \\
+  &= \mathbf{1010}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_rowmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (11)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (11)" style="font-size: 110%;"}
+
+[Satır Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{41} x_{41} + c_{42} x_{42} + c_{33} x_{33} + c_{43} x_{43} \\
+  &= 5\cdot 60 + 9\cdot 10 + 8\cdot 70 + 2\cdot 50 + 3\cdot 20 \\
+  &= \mathbf{1110}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (11)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (11)" style="font-size: 120%;"}
+
+* Bu problem için [$m=4$]{.light-blue}, [$n=4$]{.light-blue} olduğundan [$m+n-1=4+4-1=7$]{.light-blue} tane temel değişken bulunmalıdır.
+* Çözüme bakıldığında, sadece [$k=6$]{.light-blue} tane temel değişken olduğu görülmektedir. 
+* Bu da [bozulma durumunu]{.light-red} işaret etmektedir.
+* Bu durum, maliyeti fazla olan temel değişkenden, maliyeti az olan hücrelere kaynak transferi yapılarak giderilir.
+* Bu işlem yapılırken maliyet de optimuma yaklaşır.
+
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (12)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (12)" style="font-size: 120%;"}
+
+[Ek Adım 1:]{.red} [$X_{41}\xrightarrow{10} X_{11}$ ve $X_{14}\xrightarrow{10} X_{44}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (13)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (13)" style="font-size: 120%;"}
+
+[Ek Adım 2:]{.red} [$X_{42}\xrightarrow{30} X_{12}$ ve $X_{14}\xrightarrow{30} X_{44}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_008.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (14)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (14)" style="font-size: 120%;"}
+
+[Ek Adım 3:]{.red} [$X_{42}\xrightarrow{40} X_{32}$ ve $X_{33}\xrightarrow{40} X_{43}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_rowmin_step_009.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Satır Yöntemi (15)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (15)" style="font-size: 110%;"}
+
+[Ek Adım 3 sonucunda bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{12} x_{12} + c_{21} x_{21} +c_{33} x_{33} + c_{42} x_{42} + c_{43} x_{43} + c_{44} x_{44} \\
+  &= 3\cdot 10 + 4\cdot 30 +  5\cdot 60 + 6\cdot 40 + 2\cdot 10 + 3\cdot 60 + 0\cdot 40\\
+  &= \mathbf{890}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_colmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_colmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 110%;"}
+
+[Sütun Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{32} x_{32} + c_{42} x_{42} + c_{43} x_{43} \\
+  &= 3\cdot 40 + 5\cdot 30 + 6\cdot 50 + 8\cdot 20 + 3\cdot 70 \\
+  &= \mathbf{940}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Düşük Maliyet yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_leastcost_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (10)" style="font-size: 115%;"}
+
+[En Düşük Maliyet Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{41} x_{41} + c_{42} x_{42} + c_{33} x_{33} + c_{43} x_{43} \\
+  &= 5\cdot 60 + 9\cdot 10 + 8\cdot 70 + 2\cdot 50 + 3\cdot 20 \\
+  &= \mathbf{1110}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi Yöntemi (11)" style="font-size: 120%;"}
+
+* Bu problem için [$m=4$]{.light-blue}, [$n=4$]{.light-blue} olduğundan [$m+n-1=4+4-1=7$]{.light-blue} tane temel değişken bulunmalıdır.
+* Çözüme bakıldığında, sadece [$k=6$]{.light-blue} tane temel değişken olduğu görülmektedir. 
+* Bu da [bozulma durumunu]{.light-red} işaret etmektedir.
+* Bu durum, maliyeti fazla olan temel değişkenden, maliyeti az olan hücrelere kaynak transferi yapılarak giderilir.
+* Bu işlem yapılırken maliyet de optimuma yaklaşır.
+
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi Yöntemi (12)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi Yöntemi (12)" style="font-size: 120%;"}
+
+[Ek Adım 1:]{.red} [$X_{41}\xrightarrow{10} X_{11}$ ve $X_{14}\xrightarrow{10} X_{44}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi Yöntemi (13)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi Yöntemi (13)" style="font-size: 120%;"}
+
+[Ek Adım 2:]{.red} [$X_{42}\xrightarrow{30} X_{12}$ ve $X_{14}\xrightarrow{30} X_{44}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_008.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi Yöntemi (14)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi Yöntemi (14)" style="font-size: 100%;"}
+
+[Ek Adım 3:]{.red} [$X_{42}\xrightarrow{40} X_{32}$ ve $X_{33}\xrightarrow{40} X_{43}$]{.light-blue} 
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_leastcost_step_009.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) En Düşük Maliyet Yöntemi Yöntemi (15)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi Yöntemi (15)" style="font-size: 110%;"}
+
+[Ek Adım 3 sonucunda bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{12} x_{12} + c_{21} x_{21} +c_{33} x_{33} + c_{42} x_{42} + c_{43} x_{43} + c_{44} x_{44} \\
+  &= 3\cdot 10 + 4\cdot 30 +  5\cdot 60 + 6\cdot 40 + 2\cdot 10 + 3\cdot 60 + 0\cdot 40\\
+  &= \mathbf{890}
+\end{aligned}$$]{.light-blue}
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) VAM Yöntemi (11)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (11)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{41} x_{41} + c_{32} x_{32} + c_{42} x_{42} + c_{43} x_{43} + c_{24} x_{24}\\
+  &= 3\cdot 40 + 5\cdot 20 + 9\cdot 10 + 6\cdot 50 + 8\cdot 20 + 3\cdot 70 + 0 \cdot 40\\
+  &= \mathbf{980}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$1010$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$1110$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$940$]{.light-blue}
+* [En Düşük Maliyet Yöntemi]{.light-red}: [$1110$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$980$]{.light-blue}
+
+* [En düşük maliyet sütun yöntemi'nde elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: Başlangıç
+
+::: {.callout-tip icon=false title="Kuzeybatı Sonucu" style="font-size: 100%;"}
+
+[Kuzeybatı Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_northwest_initial.html >}}
+```
+:::
+şeklinde idi.
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 3 - 0 = 3 \\
+u_{2} = c_{21} - v_{1} = 5 - 3 = 2 \\
+v_{2} = c_{22} - u_{2} = 10 - 2 = 8 \\
+u_{3} = c_{32} - v_{2} = 6 - 8 = -2 \\
+v_{3} = c_{33} - u_{3} = 2 - (-2) = 4 \\
+u_{4} = c_{43} - v_{3} = 3 - 4 = -1 \\
+v_{4} = c_{44} - u_{4} = 0 - (-1) = 1 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_northwest_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 4 - 0 - 8 = -4 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 10 - 0 - 4 = 6 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 0 - 0 - 1 = -1 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 2 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 10 - 2 - 8 = 0 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 8 - 2 - 4 = 2 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 0 - 2 - 1 = -3 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 7 - (-2) - 3 = 6 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 6 - (-2) - 8 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 2 - (-2) - 4 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 0 - (-2) - 1 = 1 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 9 - (-1) - 3 = 7 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 8 - (-1) - 8 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - (-1) - 4 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 0 - (-1) - 1 = 0
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_northwest_step_001_uvR_table.html >}}
+```
+:::
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan küçük]{.light-red} değerler olduğundan [optimum değildir]{.orange}. En küçük [$R_{ij}$]{.light-blue} değeri [$-4$]{.light-red} olup, bu değerin bulunduğu hücre [pivot elemandır]{.light-blue}. 
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı
+
+::: {.callout-important icon=false title="Çevrim Oluşturma Adımları" style="font-size: 120%;"}
+
+* [Pivot elemandan]{.light-blue} ya da bir [temel değişkenden]{.light-blue} başlayarak yine [başlangıç elemanına kadar gelen]{.light-blue}, [dikey]{.light-red} ve ya [yatay çizgilerle]{.light-red} [temel değişkenlerden geçen]{.light-blue} bir [çevrim]{.light-red} oluşturulur.
+* Pivot eleman her zaman [$+$]{.light-red} işaretini alır. Çevrimdeki her bir hücre değişiminde [işaret yön değiştirir]{.light-blue}.
+* [Anahtar sayı]{.light-red}, [negatif]{.light-red} olarak işaretlenmiş hücreler arasından [en düşük değere]{.light-blue} sahip hücredir.
+* Anahtar sayı, hücre işaretine göre hücre değerlerine [toplanarak]{.light-red} ya da [çıkarılarak]{.light-red} hücre değerleri güncellenir.
+* Çevrimin [dışında]{.light-blue} kalan hücre değerleri [aynı]{.light-red} kalır. 
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\46_northwest_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$30$]{.light-blue} ve [$40$]{.light-blue} arasından daha küçük olan [$30$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$30$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$+$]{.light-blue} işareti ile başladıktan sonra, alttaki hücre [$-$]{.light-red}, onun solundaki hücre [$+$]{.light-blue} ve onun üstündeki hücreye [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\46_northwest_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+[$X_{12}=0+30=30$]{.light-blue}, [$X_{22}=30-30=0$]{.light-blue}, [$X_{21}=30+30=60$]{.light-blue} ve [$X_{11}=40-30=10$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+
+:::
+
+:::
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_northwest_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerlerini bir kez hesaplamak yeterlidir. Tekrar hesaplamaya gerek yoktur. 
+
+Ancak [$R_{ij}$]{.light-blue} değerleri tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 4 - 0 - 4 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 10 - 0 - 0 = 10 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 0 - 0 - (-3) = 3 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 2 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 10 - 2 - 4 = 4 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 8 - 2 - 0 = 6 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 0 - 2 - (-3) = 1
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 7 - 2 - 3 = 2 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 6 - 2 - 4 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 2 - 2 - 0 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 0 - 2 - (-3) = 1 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 9 - 3 - 3 = 3 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 8 - 3 - 4 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - 3 - 0 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 0 - 3 - (-3) = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_northwest_step_002_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} ler [sıfırdan büyük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+:::
+
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\20_northwest_modi.html >}}
+```
+:::
+Elde edilen tablodan, maliyet hesaplanabilir.
+
+:::
+
+## Örnek 2: Dengesiz Durum (Arz $>$ Talep) MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{12} x_{12} + c_{32} x_{32} + c_{33} x_{33} + c_{43} x_{43} + c_{44} x_{44} \\
+  &= 3\cdot 10 + 5\cdot 60 + 4\cdot 30 + 6\cdot 40 + 2\cdot 10 + 3\cdot 60 + 0\cdot 40 \\
+  &= \mathbf{890}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) (1)
+
+::: {.callout-tip icon=false title="Örnek 3: Talep $>$ Arz" style="font-size: 110%;"}
+
+* Bir firma [üç]{.light-red} fabrikasında ürettiği ürünleri [dört]{.light-red} büyük deposuna taşımaktadır. 
+* Fabrikaların haftalık [üretim kapasiteleri]{.light-red} sırasıyla [100]{.light-blue}, [60]{.light-blue} ve [140]{.light-blue} birimdir. 
+* Depoların haftalık [mal gereksinimleri]{.light-red} ise sırasıyla [75]{.light-blue}, [80]{.light-blue}, [100]{.light-blue} ve [145]{.light-blue} birimdir. 
+* Taşıma maliyetleri, [$C_{11} = 6$]{.light-blue}, [$C_{12} = 9$]{.light-blue}, [$C_{13} = 10$]{.light-blue}, [$C_{14} = 4$]{.light-blue}, [$C_{21} = 3$]{.light-blue}, [$C_{22} = 5$]{.light-blue}, [$C_{23} = 7$]{.light-blue}, [$C_{24} = 9$]{.light-blue}, [$C_{31} = 3$]{.light-blue}, [$C_{32} = 2$]{.light-blue}, [$C_{33} = 10$]{.light-blue}, [$C_{34} = 4$]{.light-blue} olarak verilmiştir. 
+* [Başlangıç tablosunu düzenleyerek]{.light-red} ulaştırma problemini [Kuzeybatı]{.light-red}, [Satır]{.light-red}, [Sütun]{.light-red}, [En Düşük Maliyet]{.light-red} ve [VAM]{.light-red} yöntemleri ile çözünüz. 
+* [VAM]{.light-red}’la bulduğunuz başlangıç çözümünü [modi]{.light-red} yöntemiyle test ediniz. 
+* Bozulma durumlarını [MODI]{.light-red} yöntemi haricinde, bu soru için ihmal ediniz.
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) (2)
+
+::: {.callout-tip icon=false title="Örnek 3: Talep $>$ Arz" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Arz ve talep toplamlarına bakıldığında [arz]{.light-red} toplamının [300]{.light-blue}, [talep]{.light-red} toplamının ise [400]{.light-blue} olduğu görülür.
+
+Bu durumda dengeyi sağlamak için [maliyet]{.light-red} değerleri [sıfır]{.light-blue} ve toplam arz değeri [$400-300=100$]{.light-blue} olan yeni bir [gölge satır]{.light-red} tabloya eklenmelidir.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) (3)
+
+::: {.callout-tip icon=false title="Örnek 3: Talep $>$ Arz" style="font-size: 120%;"}
+
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_northwest_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) (4)
+
+::: {.callout-tip icon=false title="Örnek 3: Talep $>$ Arz" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_001.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_northwest_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{12} x_{12} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{34} x_{34} \\
+  &= 6\cdot 75 + 9\cdot 25 + 5\cdot 55 + 7\cdot 5 + 10\cdot 95 + 4\cdot 45 \\
+  &= \mathbf{2115}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_rowmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_rowmin_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Satır Yöntemi (10)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 110%;"}
+
+[Satır Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{14} x_{14} + c_{34} x_{34} \\
+  &= 3\cdot 60 + 3\cdot 15 + 2\cdot 80 + 4\cdot 100 + 4\cdot 45 \\
+  &= \mathbf{965}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_colmin_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_colmin_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 110%;"}
+
+[Sütun Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{32} x_{32} + c_{13} x_{13} + c_{23} x_{23} + c_{14} x_{14} + c_{34} x_{34} \\
+  &= 2\cdot 55 + 10\cdot 40 + 7\cdot 60 + 4\cdot 60 + 4\cdot 85 \\
+  &= \mathbf{1510}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Düşük Maliyet yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_leastcost_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_leastcost_step_007.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) En Düşük Maliyet Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Düşük Maliyet Yöntemi (11)" style="font-size: 115%;"}
+
+[En Düşük Maliyet Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{32} x_{32} + c_{23} x_{23} + c_{33} x_{33} + c_{14} x_{14} + c_{34} x_{34} \\
+  &= 2\cdot 55 + 7\cdot 60 + 10\cdot 40 + 4\cdot 100 + 4\cdot 45 \\
+  &= \mathbf{1510}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{14} x_{14} + c_{34} x_{34} \\
+  &= 3\cdot 60 + 3\cdot 15 + 2\cdot 80 + 4\cdot 100 + 4\cdot 45 \\
+  &= \mathbf{965}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$2115$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$965$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$1510$]{.light-blue}
+* [En Düşük Maliyet Yöntemi]{.light-red}: [$1510$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$965$]{.light-blue}
+
+* [En düşük maliyet satır ve VAM yöntemlerinde elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: Başlangıç (1)
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_vam_initial.html >}}
+```
+:::
+şeklinde idi. Dikkat ederseniz burada, sadece [$6$]{.light-blue} tane temel değişken bulunmaktadır. Bu da bozulmaya işaret etmektedir.
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: Başlangıç (2)
+
+::: {.callout-important icon=false title="VAM Sonucu" style="font-size: 130%;"}
+
+* VAM çözümünde sadece [$6$]{.light-blue} tane temel değişken bulunmaktadır. Bu da [bozulmaya]{.light-red} işaret etmektedir. 
+* [MODI]{.light-red} yöntemini uygulamadan önce temel değişken sayısı [7]{.light-blue} ye çıkarılarak [hem bozulma giderilir]{.light-red}, hem de eklenen [joker temel değişken sayesinde çevrimlerin oluşturulması]{.light-red} kolaylaştırılır.
+* Bu joker değişken, [maliyeti en düşük olan köşe hücrelerden]{.light-red} seçilir.
+* Bu soru için joker hücre [$x_{41}$]{.light-blue} seçilmiştir.
+:::
+
+
+
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{4} = c_{14} - u_{1} = 4 - 0 = 4 \\
+u_{3} = c_{34} - v_{4} = 4 - 4 = 0 \\
+v_{1} = c_{31} - u_{3} = 3 - 0 = 3 \\
+v_{2} = c_{32} - u_{3} = 2 - 0 = 2 \\
+u_{4} = c_{41} - v_{1} = 0 - 3 = -3 \\
+v_{3} = c_{43} - u_{4} = 0 - (-3) = 3 \\
+u_{2} = c_{21} - v_{1} = 3 - 3 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 6 - 0 - 3 = 3 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 9 - 0 - 2 = 7 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 10 - 0 - 3 = 7 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 5 - 0 - 2 = 3 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 7 - 0 - 3 = 4 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 9 - 0 - 4 = 5 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 2 - 0 - 2 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 10 - 0 - 3 = 7 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 0 - (-3) - 3 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 0 - (-3) - 2 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 0 - (-3) - 3 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 0 - (-3) - 4 = -1 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_001_uvR_table.html >}}
+```
+:::
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan küçük]{.light-red} değerler olduğundan [optimum değildir]{.orange}. En küçük [$R_{ij}$]{.light-blue} değeri [$-1$]{.light-red} olup, bu değerin bulunduğu hücre [pivot elemandır]{.light-blue}. 
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\46_vam_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$0$]{.light-blue} ve [$45$]{.light-blue} arasından daha küçük olan [$0$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$0$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$+$]{.light-blue} işareti ile başladıktan sonra, üstteki hücre [$-$]{.light-red}, satırın en solundaki hücre [$+$]{.light-blue} ve onun altındaki hücreye [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\46_vam_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+[$X_{44}=0+0=0$]{.light-blue}, [$X_{34}=45-0=45$]{.light-blue}, [$X_{31}=15+0=15$]{.light-blue} ve [$X_{41}=0-0=0$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+
+:::
+
+:::
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Dejenere hücre değiştiği için [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerleri tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+v_{4} = c_{14} - u_{1} = 4 - 0 = 4 \\
+u_{3} = c_{34} - v_{4} = 4 - 4 = 0 \\
+u_{4} = c_{44} - v_{4} = 0 - 4 = -4 \\
+v_{1} = c_{31} - u_{3} = 3 - 0 = 3 \\
+v_{2} = c_{32} - u_{3} = 2 - 0 = 2 \\
+v_{3} = c_{43} - u_{4} = 0 - (-4) = 4 \\
+u_{2} = c_{21} - v_{1} = 3 - 3 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+
+[$R_{ij}$]{.light-blue} değerleri de tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 6 - 0 - 3 = 3 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 9 - 0 - 2 = 7 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 10 - 0 - 4 = 6 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 5 - 0 - 2 = 3 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 7 - 0 - 4 = 3 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 9 - 0 - 4 = 5 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 2 - 0 - 2 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 10 - 0 - 4 = 6 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 4 - 0 - 4 = 0 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 0 - (-4) - 3 = 1 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 0 - (-4) - 2 = 2 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 0 - (-4) - 4 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 0 - (-4) - 4 = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_002_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} ler [sıfırdan büyük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+:::
+
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\20_vam_modi.html >}}
+```
+:::
+Elde edilen tablodan, maliyet hesaplanabilir.
+
+:::
+
+## Örnek 3: Dengesiz Durum (Talep $>$ Arz) MODI Hesabı: 2. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{43} x_{43} + c_{14} x_{14} + c_{34} x_{34} \\
+  &= 3\cdot 60 + 3\cdot 15 + 2\cdot 80 + 0\cdot 100 + 4\cdot 100 + 4\cdot 45 \\
+  &= \mathbf{965}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+

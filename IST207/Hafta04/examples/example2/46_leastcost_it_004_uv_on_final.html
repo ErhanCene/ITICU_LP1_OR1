@@ -1,0 +1,108 @@
+<html><head><meta charset='utf-8'>
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+</style><style>
+    .tbl-sim caption{font-weight:600}
+    .sub{font-size:11px;color:#6c757d}
+    .muted{color:#adb5bd}
+    .big{font-weight:700}
+    .big.zero{color:#6c757d}
+    .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+
+    /* R-table helpers */
+    .rneg{background:#fdecea;border:2px solid #f5c2c7}
+    .rmin{box-shadow: inset 0 0 0 2px #dc3545}
+
+    th.uhead, th.vhead{white-space:nowrap}
+
+    .cbox{
+      display:inline-block;border:1px solid #adb5bd;border-radius:6px;
+      padding:1px 6px;font-size:12px;color:#495057
+    }
+
+    /* === Transition highlights (match 46_*_transition style) === */
+    .pivot{
+      background:#e8f0fe;                     /* light blue */
+      box-shadow: inset 0 0 0 3px #1a73e8;     /* strong blue ring */
+    }
+    .plus{
+      background:#f1faf1;                      /* soft green tint */
+      box-shadow: inset 0 0 0 3px #2e7d32;     /* strong green ring */
+    }
+    .minus{
+      background:#fff1f1;                      /* soft red tint */
+      box-shadow: inset 0 0 0 3px #c62828;     /* strong red ring */
+    }
+
+    .pm{
+      display:inline-block;border:1px solid #ced4da;border-radius:999px;
+      padding:0 5px;font-size:12px;line-height:18px;min-width:18px;
+      text-align:center;margin-right:4px;background:#fff
+    }
+    .pm.plus{border-color:#2e7d32;color:#2e7d32}
+    .pm.minus{border-color:#c62828;color:#c62828}
+
+    .cellwrap{position:relative;min-width:76px;height:46px}
+    .corner-note{position:absolute;right:6px;top:6px}
+    .xnote{position:absolute;left:6px;bottom:6px;font-size:11px;color:#6c757d}
+  </style>
+<style>
+               /* degenerate basic (joker) cell style */
+               .deg{background:#f3e8ff;border:2px dashed #7c3aed}
+               .deg .badge{display:inline-block;border:1px solid #7c3aed;
+                           border-radius:999px;font-size:11px;padding:0 6px;
+                           margin-right:4px;color:#7c3aed;background:#fff}
+             </style>
+</head><body>
+<table class='tbl-sim'><caption>(Toplam Maliyet = 930) – &lt;a href='20_leastcost_modi.html'&gt;Nihai dağıtıma dön&lt;/a&gt;</caption>
+<thead><tr><th></th>
+<th>Depo 1<br><span class='sub'>v<sub>1</sub> = 3</span></th>
+<th>Depo 2<br><span class='sub'>v<sub>2</sub> = 4</span></th>
+<th>Depo 3<br><span class='sub'>v<sub>3</sub> = -1</span></th>
+<th>Dummy<br><span class='sub'>v<sub>4</sub> = -4</span></th>
+<th class='rhs'>Arz</th></tr></thead><tbody>
+<tr>
+<th class='uhead'>Fabrika 1<br><span class='sub'>u<sub>1</sub> = 0</span></th>
+<td class='alloc'><div class='big'>10</div><div class='sub'>(c=3)</div></td>
+<td class='alloc'><div class='big'>30</div><div class='sub'>(c=4)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=10)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>40</td></tr>
+<tr>
+<th class='uhead'>Fabrika 2<br><span class='sub'>u<sub>2</sub> = 2</span></th>
+<td class='alloc'><div class='big'>60</div><div class='sub'>(c=5)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=10)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=8)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>60</td></tr>
+<tr>
+<th class='uhead'>Fabrika 3<br><span class='sub'>u<sub>3</sub> = 3</span></th>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=7)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=6)</div></td>
+<td class='alloc'><div class='big'>50</div><div class='sub'>(c=2)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>50</td></tr>
+<tr>
+<th class='uhead'>Fabrika 4<br><span class='sub'>u<sub>4</sub> = 4</span></th>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=9)</div></td>
+<td class='alloc'><div class='big'>40</div><div class='sub'>(c=8)</div></td>
+<td class='alloc'><div class='big'>20</div><div class='sub'>(c=3)</div></td>
+<td class='alloc'><div class='big'>40</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>100</td></tr>
+<tr><th>Talep</th>
+<td class='rhs bold'>70</td>
+<td class='rhs bold'>70</td>
+<td class='rhs bold'>70</td>
+<td class='rhs bold'>40</td>
+<td class='rhs bold'>250</td></tr>
+</tbody></table>
+<p class='sub'>Mor kesik çerçeve <b>dejenere temel</b> (basis=1, x=0) hücreyi gösterir.</p>
+</body></html>
