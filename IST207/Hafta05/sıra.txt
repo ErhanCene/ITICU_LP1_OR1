@@ -1,0 +1,18 @@
+10_northwest_initial.html (Çözüm)
+11_northwest_initial_eq.html
+00_baslangic_tablosu.html
+05_maliyetler_sadece.html
+
+
+10_northwest_initial.html
+50_northwest_step_001_uv_eqs.html
+50_northwest_step_001_uv_table.html
+50_northwest_step_001_rij_latex.html
+50_northwest_step_001_uvR_table.html
+46_northwest_it_001_transition.html
+46_northwest_it_001_transition_after.html
+50_northwest_step_002_uv_table.html
+50_northwest_step_002_rij_latex.html
+50_northwest_step_002_uvR_table.html
+20_northwest_modi.html
+21_northwest_modi_final_cost_latex.html

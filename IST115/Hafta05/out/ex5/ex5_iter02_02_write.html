@@ -1,0 +1,100 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Simplex Tableau</title><script>window.MathJax = {  tex: {    inlineMath: [['$', '$'], ['\\(', '\\)']],    displayMath: [['$$','$$'], ['\\[','\\]']],    processEscapes: true  },  options: {    skipHtmlTags: ['script','noscript','style','textarea','pre','code']  }};</script><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'></script></head><body>
+  <style>
+    table.simplex{border-collapse:collapse;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:13px;
+    margin: 0px;
+    }
+    table.simplex th,table.simplex td{border:1px solid #d0d7de;
+    padding:4px 4px;
+    text-align:right}
+    table.simplex thead th{background:#f1f1f1;font-weight:600}
+    table.simplex th.rowname{background:#f8f9fb;text-align:left;white-space:nowrap}
+    tr.cj  td, tr.cj  th.rowname{background:#eef6ff}
+    tr.zj  td, tr.zj  th.rowname{background:#fff3e0}
+    tr.zjm td, tr.zjm th.rowname{background:#ffeaea}
+    
+    /* Optional: tighter left “TDV” header cell */
+    table.simplex th.rowname{
+    padding:0px 4px;
+  }
+
+    .simplex th.colB, .simplex td.colB { 
+  background-color: #FFF3CD;   
+  padding-left:4px;
+  padding-right:4px;  /* pastel amber — istediğin renkle değiştir */
+}
+
+    /* entering column */
+    td.enterTint, th.enterTint{border-left:2px solid #1f8b24 !important; border-right:2px solid #1f8b24 !important; background:#eaf9ec !important;}
+    td.enterFrame, th.enterFrame{border-left:2px solid #1f8b24;border-right:2px solid #1f8b24}
+
+    /* leaving (base) row */
+    tr.leave td, tr.leave th.rowname{background:#f4e8ff !important; border-top:2px solid #7e33cc !important; border-bottom:2px solid #7e33cc !important}
+
+    /* extra highlighted rows (orange band) */
+    tr.otherhi td, tr.otherhi th.rowname{
+      background:#fff7eb;border-top:2px solid #ff9800 !important; border-bottom:2px solid #ff9800 !important;color:#e67e00 !important;
+    }
+
+    td.pivot{background:#fff3cd !important;font-weight:700 !important;}
+
+    /* ratio column frame */
+    td.ratiohi, th.ratiohi{border-left:2px solid #0b5ed7;border-right:2px solid #0b5ed7;background:#e7f1ff;
+    padding-left:4px;
+    padding-right:4px;}
+
+    /* sign coloring */
+    td.signpos{color:#1f8b24;font-weight:600}
+    td.signneg{color:#c62828;font-weight:600}
+
+  /* special value boxes (strong specificity so they win over row/column tints) */
+  td.enterVal,
+  tr.leave td.enterVal,
+  td.ratiohi.enterVal,
+  tr.leave td.ratiohi.enterVal {
+    background:#c8e6c9 !important;
+    font-weight:700;
+    border:2px solid #2e7d32 !important;
+  }
+  
+  td.leaveVal,
+  tr.leave td.leaveVal,
+  td.ratiohi.leaveVal,
+  tr.leave td.ratiohi.leaveVal {
+    background:#ffcdd2 !important;
+    font-weight:700;
+    border:2px solid #c62828 !important;
+  }
+  td.na{color:#9aa0a6}
+  
+  /* optimal Z value box */
+  td.optVal,
+  tr.leave td.optVal,
+  td.ratiohi.optVal,
+  tr.leave td.ratiohi.optVal,
+  td.enterTint.optVal,
+  td.enterFrame.optVal,
+  tr.leave td.enterTint.optVal,
+  tr.leave td.enterFrame.optVal {
+    background:#fff8e1 !important;      /* light gold */
+    font-weight:700 !important;
+    border:2px solid blue !important; /* amber border */
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
+    color: blue !important;
+  }
+
+  
+  /* pivot highlight — must beat row/column tints/frames */
+  td.pivot,
+  tr.leave td.pivot,
+  td.enterTint.pivot,
+  td.enterFrame.pivot,
+  td.ratiohi.pivot,
+  tr.leave td.enterTint.pivot,
+  tr.leave td.enterFrame.pivot,
+  tr.leave td.ratiohi.pivot {
+    background: #fff3cd !important;          /* amber */
+    font-weight: 700 !important;
+    box-shadow: inset 0 0 0 2px #d39e00;      /* subtle frame so it pops */
+  }
+
+  </style><table class='simplex'><thead><tr><th class='rowname'>$\textbf{TDV}$</th><th>$x_{1}$</th><th>$x_{2}$</th><th>$s_{1}$</th><th>$s_{2}$</th><th class='colB'>$b$</th><th class='ratiohi'>$\displaystyle\frac{b_{j}}{a_{j^*}}$</th></tr></thead><tbody><tr class='cj'><th class='rowname'>$C_{j}$</th><td>\(5\)</td><td>\(8\)</td><td>\(0\)</td><td>\(0\)</td><td class='colB'>\(0\)</td><td class='ratiohi'>&nbsp;</td></tr><tr><th class='rowname'>$8\, x_{2}$</th><td>\(0.50\)</td><td>\(1\)</td><td>\(0.25\)</td><td>\(0\)</td><td class='colB'>\(10\)</td><td class='ratiohi'>&nbsp;</td></tr><tr><th class='rowname'>$0\, s_{2}$</th><td>\(2\)</td><td>\(0\)</td><td>\(-0.50\)</td><td>\(1\)</td><td class='colB'>\(40\)</td><td class='ratiohi'>&nbsp;</td></tr><tr class='zj'><th class='rowname'>$Z_{j}$</th><td class='signpos'>\(4\)</td><td class='signpos'>\(8\)</td><td class='signpos'>\(2\)</td><td>\(0\)</td><td class='colB signpos'>\(80\)</td><td class='ratiohi'>&nbsp;</td></tr><tr class='zjm'><th class='rowname'>$Z_{j}-C_{j}$</th><td class='signneg'>\(-1\)</td><td>\(0\)</td><td class='signpos'>\(2\)</td><td>\(0\)</td><td class='colB signpos'>\(80\)</td><td class='ratiohi'>&nbsp;</td></tr></tbody></table></body></html>

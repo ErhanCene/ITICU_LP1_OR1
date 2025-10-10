@@ -1,0 +1,3184 @@
+---
+title: Hafta 05
+subtitle: "Simpleks Yöntem"
+date: 10/16/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 05 - 16 Ekim 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Simpleks Çözüm Yöntemi (1)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi (1)" style="font-size: 110%;"}
+
+
+* Simpleks yöntemin en basit versiyonu tüm kısıtların [$\leq$]{.light-red} biçiminde verildiği durum için uygulanır.
+* Kısıtların [$=$]{.light-red} ya da [$\geq$]{.light-red} olarak da verildiği durumlarda ise simpleks yöntemin [farklı varyasyonları]{.light-red} kullanılır. 
+* [Yapay başlangıç yöntemleri]{.light-red} olarak da anılan bu yöntemler arasında [$M$ Yöntemi]{.light-red} ve [İki Aşamalı Yöntem]{.light-red} sayılabilir.
+* Geçtiğimiz hafta, standart ve kanonik formlar arasından [standart formun simpleks yöntemde]{.light-red} tercih edildiğinden bahsetmiştik. 
+* Bu yüzden bir doğrusal programlama probleminin simpleks yöntemle çözülmesi istendiğinde ilk önce standart forma getirilmesi gerekmektedir.
+:::
+
+## Simpleks Çözüm Yöntemi (2)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi $(\leq)$ (1)" style="font-size: 115%;"}
+
+* İlk önce tüm kısıtların [$\leq$]{.light-red} biçiminde verildiği durumu ele alalım.
+
+
+$$Z_{enb} = c_1x_1+c_2x_2+ \dots + c_n x_n$$
+
+$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n &\;\leq & b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n &\;\leq & b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots    & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n &\;\leq & b_{m}.
+\end{alignedat}
+$$
+$$x_1 \geq 0, x_2 \geq 0, \dots, x_n \geq 0$$
+
+:::
+
+## Simpleks Çözüm Yöntemi (3)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi $(\leq)$ (2)" style="font-size: 130%;"}
+
+Bu problem standart forma çevrilirse,
+
+* Amaç fonksiyonu [aylak değişkenlerin katsayısı 0]{.light-red} olacak şekilde yazılır.
+
+$$Z_{enb} = c_1x_1+c_2x_2+ \dots + c_n x_n + 0s_1 + 0s_2 + \dots + 0s_m$$
+
+:::
+
+
+
+## Simpleks Çözüm Yöntemi (4)
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi $(\leq)$ (3)" style="font-size: 100%;"}
+
+* Aylak değişkenlerin eklendikleri kısıtlayıcı fonksiyonlardaki katsayılarının [$+1$]{.light-red}, diğer fonksiyonlardaki katsayıların [$0$]{.light-red} olduğu görülebilir.
+
+
+$$
+\begin{alignedat}{7}
+a_{11}x_1 &+& a_{12}x_2 &+& \cdots &+& a_{1n}x_n + 1s_1 + 0s_2 + \dots + 0s_m  &\;= & b_{1},\\
+a_{21}x_1 &+& a_{22}x_2 &+& \cdots &+& a_{2n}x_n + 0s_1 + 1s_2 + \dots + 0s_m  &\;= & b_{2},\\
+\vdots    & & \vdots    & & \ddots & & \vdots                & &\vdots\\
+a_{m1}x_1 &+& a_{m2}x_2 &+& \cdots &+& a_{mn}x_n + 0s_1 + 0s_2 + \dots + 1s_m  &\;= & b_{m}.
+\end{alignedat}
+$$
+
+* Hem karar değişkenleri, hem de tüm aylak değişkenler [sıfırdan büyük]{.light-red} olmalıdır.
+
+$$x_1 \geq 0, x_2 \geq 0, \dots, x_n \geq 0, s_1, s_2, \dots s_m \geq 0$$
+
+
+:::
+
+
+
+
+
+## Simpleks Çözüm Yöntemi (5)
+
+::: {.callout-important icon=false title="Standart Formun Matris Gösterimi - Amaç Fonksiyonu" style="font-size: 110%;"}
+
+[Amaç fonksiyonunun matrissel gösterimi:]{.light-red}
+
+$$Z_{enb} = \begin{bmatrix}
+C_1 & C_2 & \dots & C_n & s_1 & s_2 & \dots & s_m
+\end{bmatrix} \begin{bmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{n} \\ 0 \\ 0 \\ \vdots \\ 0   \end{bmatrix}$$
+
+:::
+
+
+## Simpleks Çözüm Yöntemi (6)
+
+::: {.callout-important icon=false title="Standart Formun Matris Gösterimi - Kısıtlar" style="font-size: 100%;"}
+
+[Kısıtlayıcı fonksiyonların matrissel gösterimi:]{.light-red}
+
+$$\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} & 1 & 0 & \dots & 0 \\
+a_{21} & a_{22} & \dots & a_{2n} & 0 & 1 & \dots & 0 \\
+\vdots & \vdots &       & \vdots & \vdots & \vdots & & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn} & 0 & 0 & \dots & 1 \\\\
+\end{bmatrix} \begin{bmatrix} x_{1} \\ x_{2} \\ \vdots \\ x_{n} \\ s_1 \\ s_2 \\ \vdots \\ s_m \end{bmatrix} = \begin{bmatrix} b_{1} \\ b_{2} \\ \vdots \\ b_{m} \end{bmatrix}$$
+:::
+
+## Başlangıç Çözüm Tablosu (1)
+
+
+::: columns
+
+::: {.column width="40%"}
+::: {.callout-important icon=false title="Başlangıç Çözüm Tablosu (1)" style="font-size: 100%;"}
+
+
+* Standart biçimin oluşturulmasından sonra en iyi çözümün araştırılması işlemine geçilebilir. 
+* Simpleks yöntemin ardışık tekrarları [başlangıç çözüm tablosu]{.light-red} adı verilen bir tablonun
+düzenlenmesinden sonra başlar. 
+* Başlangıç çözüm tablosu, aşağıdaki tablo esaslarına göre düzenlenir.
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="55%"}
+
+<div class="r-stretch scale-40">
+<table class="tbl-sim tbl-down">
+  <caption>Simpleks Başlangıç Çözüm Tablosu</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th><span class = 'header-color'> $2 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $3 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $4 \Downarrow$ </span></th>
+      <th><span class = 'header-color'> $5 \Downarrow$ </span></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $7 \Rightarrow$ </span> </th>
+      <th>$C_j$</th>
+      <th>$c_1$</th>
+      <th>$c_2$</th>
+      <th>&hellip;</th>
+      <th>$c_n$</th>
+      <th>$0$</th>
+      <th>$0$</th>
+      <th>&hellip;</th>
+      <th>$0$</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $1 \Rightarrow$ </span></th>
+      <th>TDV</th>
+      <th>$x_1$</th>
+      <th>$x_2$</th>
+      <th>&hellip;</th>
+      <th>$x_n$</th>
+      <th>$s_1$</th>
+      <th>$s_2$</th>
+      <th>&hellip;</th>
+      <th>$s_m$</th>
+      <th>ÇV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_1$</td>
+      <td>$a_{11}$</td>
+      <td>$a_{12}$</td>
+      <td>&hellip;</td>
+      <td>$a_{1n}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_{1}$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0  \quad{} s_2$</td>
+      <td>$a_{21}$</td>
+      <td>$a_{22}$</td>
+      <td>&hellip;</td>
+      <td>$a_{2n}$</td>
+      <td>$0$</td><td>$1$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_2$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&vellip;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_m$</td>
+      <td>$a_{m1}$</td>
+      <td>$a_{m2}$</td>
+      <td>&hellip;</td>
+      <td>$a_{mn}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$1$</td>
+      <td>$b_{m}$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $6 \Rightarrow$ </span></td>
+      <td>$Z_j$</td><td>$0$</td><td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $8 \Rightarrow$ </span></td>
+      <td>$Z_j-C_j$</td>
+      <td>$-C_1$</td>
+      <td>$-C_2$</td>
+      <td>&hellip;</td>
+      <td>$-C_n$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$−$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::
+
+:::
+
+
+## Başlangıç Çözüm Tablosu (2)
+
+
+::: columns
+
+::: {.column width="43%"}
+::: {.callout-important icon=false title="Başlangıç Çözüm Tablosu (2)" style="font-size: 95%;"}
+
+
+* [1. Değişkenler Satırı:]{.red} Tablonun ilk satırıdır. [Standart biçimin]{.light-red} tüm değişkenleri [önce karar değişkenleri]{.light-red}, [sonra diğer değişkenler]{.light-red} olmak üzere bu satırda gösterilir.
+* [2. Temel değişkenler sütunu:]{.red} Tablonun ilk sütunudur. Tablodaki çözüme karşılık gelen [temel çözümün değişkenleri]{.light-red} ile bu değişkenlerin amaç fonksiyonu katsayılarını gösterir. Başlangıçta temel çözüm değişkenleri [aylak değişkenlerdir]{.light-red}.
+
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="55%"}
+
+<div class="r-stretch scale-40">
+<table class="tbl-sim tbl-down">
+  <caption>Simpleks Başlangıç Çözüm Tablosu</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th><span class = 'header-color'> $2 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $3 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $4 \Downarrow$ </span></th>
+      <th><span class = 'header-color'> $5 \Downarrow$ </span></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $7 \Rightarrow$ </span> </th>
+      <th>$C_j$</th>
+      <th>$c_1$</th>
+      <th>$c_2$</th>
+      <th>&hellip;</th>
+      <th>$c_n$</th>
+      <th>$0$</th>
+      <th>$0$</th>
+      <th>&hellip;</th>
+      <th>$0$</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $1 \Rightarrow$ </span></th>
+      <th>TDV</th>
+      <th>$x_1$</th>
+      <th>$x_2$</th>
+      <th>&hellip;</th>
+      <th>$x_n$</th>
+      <th>$s_1$</th>
+      <th>$s_2$</th>
+      <th>&hellip;</th>
+      <th>$s_m$</th>
+      <th>ÇV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_1$</td>
+      <td>$a_{11}$</td>
+      <td>$a_{12}$</td>
+      <td>&hellip;</td>
+      <td>$a_{1n}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_{1}$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0  \quad{} s_2$</td>
+      <td>$a_{21}$</td>
+      <td>$a_{22}$</td>
+      <td>&hellip;</td>
+      <td>$a_{2n}$</td>
+      <td>$0$</td><td>$1$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_2$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&vellip;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_m$</td>
+      <td>$a_{m1}$</td>
+      <td>$a_{m2}$</td>
+      <td>&hellip;</td>
+      <td>$a_{mn}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$1$</td>
+      <td>$b_{m}$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $6 \Rightarrow$ </span></td>
+      <td>$Z_j$</td><td>$0$</td><td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $8 \Rightarrow$ </span></td>
+      <td>$Z_j-C_j$</td>
+      <td>$-C_1$</td>
+      <td>$-C_2$</td>
+      <td>&hellip;</td>
+      <td>$-C_n$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$−$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+:::
+
+:::
+
+## Başlangıç Çözüm Tablosu (3)
+
+
+::: columns
+
+::: {.column width="40%"}
+::: {.callout-important icon=false title="Başlangıç Çözüm Tablosu (3)" style="font-size: 100%;"}
+
+
+* [3. Gövde:]{.red} Problemin orijinal karar değişkenlerinin kısıtlayıcı fonksiyonlardaki katsayılarından [($a_{ij}$, $i = 1, 2, ..., m$; $j = 1, 2, ..., n$)]{.light-red} oluşan [$m \times n$]{.light-red} boyutlu matristir.
+* [4. Birim matris:]{.red} Aylak değişkenlerin kısıtlayıcı fonksiyon katsayılarının oluşturduğu [$m \times m$]{.light-red} [birim matristir]{.light-red}.
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="55%"}
+
+
+<div class="r-stretch scale-40">
+<table class="tbl-sim tbl-down">
+  <caption>Simpleks Başlangıç Çözüm Tablosu</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th><span class = 'header-color'> $2 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $3 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $4 \Downarrow$ </span></th>
+      <th><span class = 'header-color'> $5 \Downarrow$ </span></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $7 \Rightarrow$ </span> </th>
+      <th>$C_j$</th>
+      <th>$c_1$</th>
+      <th>$c_2$</th>
+      <th>&hellip;</th>
+      <th>$c_n$</th>
+      <th>$0$</th>
+      <th>$0$</th>
+      <th>&hellip;</th>
+      <th>$0$</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $1 \Rightarrow$ </span></th>
+      <th>TDV</th>
+      <th>$x_1$</th>
+      <th>$x_2$</th>
+      <th>&hellip;</th>
+      <th>$x_n$</th>
+      <th>$s_1$</th>
+      <th>$s_2$</th>
+      <th>&hellip;</th>
+      <th>$s_m$</th>
+      <th>ÇV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_1$</td>
+      <td>$a_{11}$</td>
+      <td>$a_{12}$</td>
+      <td>&hellip;</td>
+      <td>$a_{1n}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_{1}$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0  \quad{} s_2$</td>
+      <td>$a_{21}$</td>
+      <td>$a_{22}$</td>
+      <td>&hellip;</td>
+      <td>$a_{2n}$</td>
+      <td>$0$</td><td>$1$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_2$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&vellip;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_m$</td>
+      <td>$a_{m1}$</td>
+      <td>$a_{m2}$</td>
+      <td>&hellip;</td>
+      <td>$a_{mn}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$1$</td>
+      <td>$b_{m}$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $6 \Rightarrow$ </span></td>
+      <td>$Z_j$</td><td>$0$</td><td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $8 \Rightarrow$ </span></td>
+      <td>$Z_j-C_j$</td>
+      <td>$-C_1$</td>
+      <td>$-C_2$</td>
+      <td>&hellip;</td>
+      <td>$-C_n$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$−$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::
+
+:::
+
+## Başlangıç Çözüm Tablosu (4)
+
+
+::: columns
+
+::: {.column width="43%"}
+::: {.callout-important icon=false title="Başlangıç Çözüm Tablosu (4)" style="font-size: 85%;"}
+
+
+* [5. Çözüm vektörü:]{.red} Temeldeki değişkenlerin çözüm değerlerini gösteren [$m \times 1$]{.light-red} boyutlu [sütun vektördür]{.light-red}. Başlangıçta, [kısıtlayıcı fonksiyonların sağ taraf sabitlerinden]{.light-red} oluşur.
+* [6. $Z_j$ satırı:]{.red} Mevcut iterasyon sırasında, [temelde bulunan değişkenlerin amaç fonksiyonu katsayıları]{.light-red} ile [$x_j$ sütunundaki katsayıların]{.light-red} [karşılıklı çarpımlarının toplamından]{.red} oluşur.
+
+Buna göre örneğin, 
+[$$Z_1 = 0(a_{11}) + \dots + 0(a_{m1}) = 0$$]{.light-red} 
+olur.
+
+
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="55%"}
+
+
+<div class="r-stretch scale-40">
+<table class="tbl-sim tbl-down">
+  <caption>Simpleks Başlangıç Çözüm Tablosu</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th><span class = 'header-color'> $2 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $3 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $4 \Downarrow$ </span></th>
+      <th><span class = 'header-color'> $5 \Downarrow$ </span></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $7 \Rightarrow$ </span> </th>
+      <th>$C_j$</th>
+      <th>$c_1$</th>
+      <th>$c_2$</th>
+      <th>&hellip;</th>
+      <th>$c_n$</th>
+      <th>$0$</th>
+      <th>$0$</th>
+      <th>&hellip;</th>
+      <th>$0$</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $1 \Rightarrow$ </span></th>
+      <th>TDV</th>
+      <th>$x_1$</th>
+      <th>$x_2$</th>
+      <th>&hellip;</th>
+      <th>$x_n$</th>
+      <th>$s_1$</th>
+      <th>$s_2$</th>
+      <th>&hellip;</th>
+      <th>$s_m$</th>
+      <th>ÇV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_1$</td>
+      <td>$a_{11}$</td>
+      <td>$a_{12}$</td>
+      <td>&hellip;</td>
+      <td>$a_{1n}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_{1}$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0  \quad{} s_2$</td>
+      <td>$a_{21}$</td>
+      <td>$a_{22}$</td>
+      <td>&hellip;</td>
+      <td>$a_{2n}$</td>
+      <td>$0$</td><td>$1$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_2$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&vellip;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_m$</td>
+      <td>$a_{m1}$</td>
+      <td>$a_{m2}$</td>
+      <td>&hellip;</td>
+      <td>$a_{mn}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$1$</td>
+      <td>$b_{m}$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $6 \Rightarrow$ </span></td>
+      <td>$Z_j$</td><td>$0$</td><td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $8 \Rightarrow$ </span></td>
+      <td>$Z_j-C_j$</td>
+      <td>$-C_1$</td>
+      <td>$-C_2$</td>
+      <td>&hellip;</td>
+      <td>$-C_n$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$−$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+:::
+
+:::
+
+## Başlangıç Çözüm Tablosu (5)
+
+
+::: columns
+
+::: {.column width="42%"}
+::: {.callout-important icon=false title="Başlangıç Çözüm Tablosu (5)" style="font-size: 95%;"}
+
+
+* [7. Amaç Satırı:]{.red} Tüm değişkenlerin amaç fonksiyonundaki değerlerini gösteren bir satırdır. Başlangıçta, [aylak değişkenlerin]{.light-red} katsayıları [$0$]{.light-red} olacaktır.
+* [8. $Z_j - C_j$ satırı:]{.red} Tablonun son satırıdır. Elemanları, [$Z_j$]{.light-red} ile o sütunla [ilgili değişkenin amaç fonksiyonu katsayısı arasındaki farka]{.light-red} eşittir. [$Z_j - C_j$]{.light-red} farkları [$x_j$]{.light-red} değişkeninin temele alınmasının amaç fonksiyonunda yol açacağı değişikliği [ters işaretle]{.light-red} gösterir.
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="56%"}
+
+
+
+
+
+<div class="r-stretch scale-40">
+<table class="tbl-sim tbl-down">
+  <caption>Simpleks Başlangıç Çözüm Tablosu</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th><span class = 'header-color'> $2 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $3 \Downarrow$ </span></th>
+      <th colspan="4"><span class = 'header-color'> $4 \Downarrow$ </span></th>
+      <th><span class = 'header-color'> $5 \Downarrow$ </span></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $7 \Rightarrow$ </span> </th>
+      <th>$C_j$</th>
+      <th>$c_1$</th>
+      <th>$c_2$</th>
+      <th>&hellip;</th>
+      <th>$c_n$</th>
+      <th>$0$</th>
+      <th>$0$</th>
+      <th>&hellip;</th>
+      <th>$0$</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><span class = 'header-color'> $1 \Rightarrow$ </span></th>
+      <th>TDV</th>
+      <th>$x_1$</th>
+      <th>$x_2$</th>
+      <th>&hellip;</th>
+      <th>$x_n$</th>
+      <th>$s_1$</th>
+      <th>$s_2$</th>
+      <th>&hellip;</th>
+      <th>$s_m$</th>
+      <th>ÇV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_1$</td>
+      <td>$a_{11}$</td>
+      <td>$a_{12}$</td>
+      <td>&hellip;</td>
+      <td>$a_{1n}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_{1}$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0  \quad{} s_2$</td>
+      <td>$a_{21}$</td>
+      <td>$a_{22}$</td>
+      <td>&hellip;</td>
+      <td>$a_{2n}$</td>
+      <td>$0$</td><td>$1$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$b_2$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&hellip;</td>
+      <td>&vellip;</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>$0 \quad{} s_m$</td>
+      <td>$a_{m1}$</td>
+      <td>$a_{m2}$</td>
+      <td>&hellip;</td>
+      <td>$a_{mn}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$1$</td>
+      <td>$b_{m}$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $6 \Rightarrow$ </span></td>
+      <td>$Z_j$</td><td>$0$</td><td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td><span class = 'header-color'> $8 \Rightarrow$ </span></td>
+      <td>$Z_j-C_j$</td>
+      <td>$-C_1$</td>
+      <td>$-C_2$</td>
+      <td>&hellip;</td>
+      <td>$-C_n$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>&hellip;</td>
+      <td>$0$</td>
+      <td>$−$</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+:::
+
+:::
+
+## Simpleks Yöntemin Adımları (1)
+
+::: {.callout-important icon=false title="Tabloya girecek değişkenin belirlenmesi" style="font-size: 110%;"}
+
+* Başlangıç tablosu oluşturulduktan sonra uygulanacak ilk adım, [karı en fazla arttıracak ya da maliyeti en fazla azaltacak]{.light-red} değişkenin belirlenerek tabloya sokulmasıdır. 
+* Bu aşamayı [anahtar sütunun seçilmesi]{.light-red} adımı olarak tanımlayabiliriz.
+* Anahtar sütun seçilirken simpleks tablonun [$z_j-c_j$]{.light-red} satırına bakılır.
+* Eğer amaç [karın maksimizasyonu (maksimizasyon problemi)]{.light-red} ise [$z_j-c_j$]{.light-red} satırında yer alan [negatif değerler içerisinde mutlak değerce en yüksek olan]{.red} seçilir ve bu elemanın yer aldığu sütun [anahtar sütun]{.light-red} olur.
+* Eğer amaç [maliyetin minimizasyonu (minimizasyon problemi)]{.light-red} ise [$z_j-c_j$]{.light-red} satırında yer alan [en yüksek pozitif değerli eleman]{.red} seçilir ve bu elemanın yer aldığu sütun [anahtar sütun]{.light-red} olur.
+:::
+
+## Simpleks Yöntemin Adımları (2)
+
+::: {.callout-important icon=false title="Tablodan çıkacak değişkenin belirlenmesi" style="font-size: 110%;"}
+
+* Bir sonraki adımda, [anahtar sıra]{.light-red} ve tablodan çıkarılacak değişken belirlenir.
+* Bunun için [çözüm sütununda]{.light-red} yer alan elemanlar, [anahtar sütunda]{.light-red} yer alan elemanlara bölünerek [$\frac{b_j}{a_{ji}}$]{.light-red} oranına ulaşılır.
+* Bölme işlemi yapılırken, paydasında [sıfır]{.light-red} ve [negatif sayılar]{.light-red} bulunan [oranlar dikkate alınmaz]{.red}.
+* Oranlar içerisinde [en düşük olanı]{.red} seçilir ve onun karşılığı olan satır [anahtar sıra]{.light-red} olur.
+* Anahtar sırada, [temel değişkenler sütununda]{.light-red} yer alan değişken çözümden çıkarılır.
+* Anahtar sıra ile anahtar sütunun kesiştiği yerdeki eleman [anahtar sayı]{.light-red} olur.
+
+:::
+
+## Simpleks Yöntemin Adımları (3)
+
+::: {.callout-important icon=false title="Tablodaki yeni değerlerin belirlenmesi" style="font-size: 100%;"}
+
+* Temele girecek değişkenin yeni değerleri
+
+[$$\begin{pmatrix} Temele \quad{} Girecek \quad{} \\ Değişkenin \quad{} Değeri \end{pmatrix} = \frac{Anahtar \quad{} Satır \quad{} Değerleri}{Anahtar \quad{} Sayı}$$]{.light-red}
+
+* Temele girecek değişken dışındaki değişkenlerin yeni değerleri
+
+[$$\begin{pmatrix} Temel \quad{} Dışı \\ Değişkenin \\ Değeri \end{pmatrix} = \begin{pmatrix} Eski \\ Satır \\ Değerleri \end{pmatrix}  - \begin{bmatrix} \begin{pmatrix} Temel \\ Sayı\end{pmatrix} \times \begin{pmatrix} Temel \\ Sıra \\ Elemanı\end{pmatrix} \end{bmatrix}$$]{.light-red}
+:::
+
+
+## Simpleks Yöntemin Adımları (4)
+
+::: {.callout-important icon=false title="Optimal Çözüme Ulaşma" style="font-size: 120%;"}
+
+* Simpleks yöntem ile problemin çözümünde optimuma ulaşılıp ulaşılmadığını anlamak için değerleri güncellenen tabloda, [$z_j-c_j$]{.light-red} satırına bakılır.
+* Maksimizasyon amaçlı problemlerde çözümün optimal olabilmesi için tüm [$z_j-c_j$]{.light-red} değerleri [sıfıra eşit ve ya sıfırdan küçük $(z_j-c_j \geq 0)$]{.light-red} olmalıdır.
+* Minimizasyon amaçlı problemlerde çözümün optimal olabilmesi için tüm [$z_j-c_j$]{.light-red} değerleri [sıfıra eşit ve ya sıfırdan büyük $(z_j-c_j \leq 0)$]{.light-red} olmalıdır.
+:::
+
+
+## Örnek 1: Sanayi İşletmesi (1)
+
+::: {.callout-tip icon=false title="Örnek 1: Sanayi İşletmesi (1)" style="font-size: 100%;"}
+
+
+::: columns
+::: {.column width="45%"}
+
+
+* Bir sanayi işletmesi [bakır]{.light-blue}, [alüminyum]{.light-blue} ve [çinko]{.light-blue} metallerinin farklı alaşımlarını kullanarak [$A$]{.light-blue} ve [$B$]{.light-blue} gibi iki çeşit ürün üretmektedir. 
+* İşletmenin elinde [20]{.light-blue} ton [bakır]{.light-blue}, [30]{.light-blue} ton [alüminyum]{.light-blue} ve [40]{.light-blue} ton [çinko]{.light-blue} vardır. 
+* Bir birim [$A$]{.light-blue} ve bir birim [$B$]{.light-blue}’nin üretiminde kullanılan [bakır]{.light-blue}, [alüminyum]{.light-blue} ve [çinko]{.light-blue} miktarları (ton) ile [$A$]{.light-blue} ve [$B$]{.light-blue}’nin bir biriminden [elde edilen karlar (TL)]{.light-blue} yandaki tabloda gösterilmiştir.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+
+
+<table class="tbl-mat">
+  <thead>
+    <tr>
+      <th rowspan="2">Ürün</th>
+      <th colspan="3">Hammadde</th>
+      <th rowspan="2">Kâr</th>
+    </tr>
+    <tr>
+      <th>Bakır</th>
+      <th>Alüminyum</th>
+      <th>Çinko</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">A</th>
+      <td>6</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">B</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+* Bu bilgileri ve tablodaki verileri kullanarak [problemin doğrusal programlama modelini kurunuz]{.red} ve [işletmenin karını en büyükleyen üretim miktarlarını simpleks yöntemle bulunuz]{.red}.
+
+:::
+
+:::
+:::
+
+## Örnek 1: Sanayi İşletmesi (2)
+
+::: {.callout-tip icon=false title="Örnek 1: Amaç Fonksiyonu, Kısıtlar ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+
+
+::: {.fragment fragment-index=1}
+
+[$x_1$]{.light-blue} = Satılan [$A$]{.light-blue} miktarı
+
+[$x_2$]{.light-blue} = Satılan [$B$]{.light-blue} miktarı
+:::
+
+::: {.fragment fragment-index=2}
+[$Z_{max}=2x_1+3x_2$]{.light-blue}
+:::
+
+::: {.fragment fragment-index=3}
+[$6x_1 + 4x_2 \leq 20$ (Bakır kısıtı)]{.light-blue}
+
+[$3x_1 + x_2  \leq 30$ (Alüminyum kısıtı)]{.light-blue}
+
+[$x_1  + x_2  \leq 40$ (Çinko kısıtı)]{.light-blue}
+
+:::
+
+:::{.fragment fragment-index=4}
+[$x_1$ , $x_2 \geq 0$]{.light-blue}
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+$Z_{max} =2x_1+3x_2 + \color{orange}{0s_1+0s_2+0s_3}$
+:::
+
+
+:::{.fragment fragment-index=7}
+
+$$
+\begin{alignedat}{7}
+6x_1 &+& 4x_2 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3}} &\;\color{orange}= & 20,\\
+3x_1 &+& x_2 &+& {\color{orange} {0s_1 + 1s_2 + 0s_3}} &\;\color{orange}= & 30,\\
+x_1 &+& x_2 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3}} &\;\color{orange}= & 40
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ , $s_2$, $s_3 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Sanayi İşletmesi (3)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Başlangıç Tablosu (1) - Amaç ve Kısıt Katsayıları"}
+
+::: columns
+::: {.column width="60%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_01_before.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="38%"}
+
+* Simpleks tablo oluşturulurken ilk aşamada, amaç fonksiyonunun katsayıları [$C_j$]{.light-blue} satırına, her bir [kısıtın katsayıları ise satırlara sırasıyla]{.light-blue} yerleştirilir.
+* Simpleks yönteme ilk adımda giren temel değişkenler [aylak değişkenler]{.light-blue} olan [$s_1$]{.light-blue}, [$s_2$]{.light-blue} ve [$s_3$]{.light-blue} tür. Aylak değişkenlerin [başlangıç değeri $0$]{.light-blue} dır
+:::
+
+:::
+
+:::
+## Örnek 1: Sanayi İşletmesi (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Başlangıç Tablosu (2) - $Z_j$ değerlerinin hesaplanması" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="50%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_02_write.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="48%"}
+
+* Başlangıç tablosundaki [$Z_j$]{.light-blue} satır elemanları, [bulundukları sütundaki katsayılarla temel değişkenlerin amaç fonksiyonu katsayılarının karşılıklı çarpımlarının toplamı]{.light-blue} olarak aşağıdaki gibi hesaplanmıştır.
+  * $Z_1 = 0 \cdot 6  + 0 \cdot 3  + 0 \cdot 1  = 0$
+  * $Z_2 = 0 \cdot 4  + 0 \cdot 1  + 0 \cdot 1  = 0$
+  * $Z_3 = 0 \cdot 1  + 0 \cdot 0  + 0 \cdot 0  = 0$
+  * $Z_4 = 0 \cdot 0  + 0 \cdot 1  + 0 \cdot 0  = 0$
+  * $Z_5 = 0 \cdot 0  + 0 \cdot 0  + 0 \cdot 1  = 0$
+  * $Z_6 = 0 \cdot 20 + 0 \cdot 30 + 0 \cdot 10 = 0$
+:::
+
+:::
+
+:::
+
+## Örnek 1: Sanayi İşletmesi (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Başlangıç Tablosu (3) - $Z_j-C_j$ ve anahtar sütun" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="48%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_03_enter_col.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+:::{style="font-size: 90%;"}
+* İkinci aşamada her bir [$Z_j-C_j$]{.light-blue} hesaplanır.
+  * $Z_{x_1}-C_{x_1} = 0-2 = -2$,  $Z_{x_2}-C_{x_2} = 0-3 = -3$,  $Z_{s_1}-C_{s_1} = 0-0 = 0$,  $Z_{s_2}-C_{s_2} = 0-0 = 0$ ve  $Z_{s_3}-C_{s_3} = 0-0 = 0$ olur.
+  * Problem bir [maksimizasyon problemi]{.light-blue} olduğundan, [negatif değerler arasından mutlak değerce en büyük]{.light-blue} değere sahip olan sütun [anahtar sütun]{.light-blue} olarak seçilir. 
+  * [$-3$]{.red} değerinin bulunduğu sütun [anahtar sütun]{.light-blue} dur.
+  * [$x_2$]{.red} bir sonraki iterasyonda temel çözümde yer alacaktır.
+:::
+:::
+:::
+
+:::
+
+## Örnek 1: Sanayi İşletmesi (6)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Başlangıç Tablosu (4) - Anahtar Satır ve Anahtar Sayı" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="50%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="49%"}
+
+:::{style="font-size: 95%;"}
+* Üçüncü aşamada her bir [$\frac{b_j}{a_{ji}}$]{.light-blue} değerleri hesaplanır.
+  * $\frac{b_1}{a_{12}}=\frac{20}{4}=5$, $\frac{b_2}{a_{22}}=\frac{30}{1}=30$, $\frac{b_3}{a_{32}}=\frac{40}{1}=40$
+  * Bu değerler arasından en düşük olan [$5$]{.red} değerinin bulunduğu [$s_1$]{.light-blue} satırı [anahtar sıra]{.light-blue} olur.
+  * Anahtar sütun ve anahtar sıranın kesiştiği değer olan [$4$]{.red} [anahtar sayı]{.light-blue} olur.
+  * [$s_1$]{.red} değişkeni bir sonraki adım öncesi temel değişkenlerden çıkarılacaktır.
+
+:::
+:::
+
+:::
+
+
+:::
+
+
+## Örnek 1: Sanayi İşletmesi (7)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar sıra değerlerinin güncellenmesi" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="50%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="48%"}
+
+:::{style="font-size: 100%;"}
+* Anahtar satırın yeni değerleri, anahtar sayı [$1$]{.red} olacak şekilde güncellenir.
+* Anahtar sayı [$4$]{.light-blue} olduğundan anahtar satırdaki değerler [dörde bölünmelidir]{.light-blue}.
+* $a_{1j}^* =\frac{a_{1j}}{4} \Rightarrow a_{11}^*=\frac{6}{4}=1.5$, $a_{12}^*=\frac{4}{4}=1$,$a_{13}^*=\frac{1}{4}=0.25$,$a_{14}^*=\frac{0}{4}=0$,$a_{15}^*=\frac{0}{4}=0$,$a_{16}^*=\frac{20}{4}=5$ olur.
+* [$s_1$]{.red} temel değişkenlikten çıkarken, [$x_2$]{.red} temel değişken olur.
+
+:::
+:::
+
+:::
+
+
+:::
+
+## Örnek 1: Sanayi İşletmesi (8)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer satır değerlerinin güncellenmesi (1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="55%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="41%"}
+
+:::{style="font-size: 85%;"}
+* Diğer satır değerleri, anahtar sütun değerleri [$0$]{.red} olacak şekilde güncellenir.
+* Bu işlem, [anahtar satır değerlerinin bir sabitle çarpılarak diğer satırlarla toplanmasıyla]{.light-blue} elde edilir.
+* Örneğin, [$s_2$]{.light-blue} temel değişkenin, [$x_2$]{.light-blue} sütunuyla kesişiminin [0]{.light-blue} olması için [$x_2$]{.light-blue} satırı [$-1$ ile çarpılıp $s_2$ satırı ile toplanmalıdır]{.light-blue}.
+* $a_{2j}^*=a_{2j}-1\cdot a_{1j} \Rightarrow$ 
+$a_{21}^*=a_{21}-1\cdot a_{11} = 3 - 1 \cdot 1.5 = 1.5$
+$a_{22}^*=a_{22}-1\cdot a_{12} = 1 - 1 \cdot 1 = 0$
+$a_{23}^*=a_{23}-1\cdot a_{13} = 0 - 1 \cdot 0.25 = -0.25$
+$a_{24}^*=a_{24}-1\cdot a_{14} = 1 - 1 \cdot 0 = 1$
+$a_{25}^*=a_{25}-1\cdot a_{15} = 0 - 1 \cdot 0 = 0$
+$a_{26}^*=a_{26}-1\cdot a_{16} = 30 - 1 \cdot 5 = 25$
+
+:::
+:::
+
+:::
+
+
+:::
+
+
+## Örnek 1: Sanayi İşletmesi (9)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer satır değerlerinin güncellenmesi (2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="55%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_06_update_other_row.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="40%"}
+
+:::{style="font-size: 85%;"}
+* Aynı işlem, [$s_3$]{.light-blue} için yine [$x_2$]{.light-blue} satırı [$-1$ ile çarpılıp $s_3$ satırı ile toplanarak]{.light-blue} yapılabilir.
+* Bu kez matris gösterimi ile işlemi yaparsak
+
+$$\begin{pmatrix} 1 \\ 1 \\ 0 \\ 0 \\ 1 \\ 40 \end{pmatrix} - 1 \times \begin{pmatrix} 1.5 \\ 1 \\ 0.25 \\ 0 \\ 0 \\ 5 \end{pmatrix} = \begin{pmatrix} -0.5 \\ 0 \\ -0.25 \\ 0 \\ 1 \\ 35 \end{pmatrix}$$
+
+:::
+:::
+
+:::
+
+:::
+
+## Örnek 1: Sanayi İşletmesi (10)
+
+::: {.callout-tip icon=false title="Örnek 1: $Z_j$ ve $Z_j - C_j$ nin güncellenmesi" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="55%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="40%"}
+
+:::{style="font-size: 85%;"}
+* Temel değişkenlerdeki satırlar ve güncellenen matristeki değerler çapraz çarpılıp toplanarak,
+$Z_1 = 3 \cdot 1.5  + 0 \cdot 1.5  + 0 \cdot (-0.5)  = 4.5$
+$Z_2 = 3 \cdot 1  + 0 \cdot 0  + 0 \cdot 0  = 3$
+$Z_3  = 3 \cdot 0.25  + 0 \cdot (-0.25)  + 0 \cdot (-0.25)$
+$= 0.75$ <br>
+$Z_4 = 3 \cdot 0  + 0 \cdot 1  + 0 \cdot 0  = 0$
+$Z_5 = 3 \cdot 0  + 0 \cdot 0  + 0 \cdot 1  = 0$
+$Z_6 = 3 \cdot 5 + 0 \cdot 25 + 0 \cdot 35 = 15$
+
+* Yeni [$z_i$]{.light-blue} ler kullanılarak [$z_j-c_j$]{.light-blue} ler de hesaplanırsa,<br>
+$Z_{x_1}-C_{x_1} = 4.5-2 = 2.5$,  $Z_{x_2}-C_{x_2} = 3-3 = 0$,  $Z_{s_1}-C_{s_1} = 0.75-0 = 0.75$,  $Z_{s_2}-C_{s_2} = 0-0 = 0$ ve  
+$Z_{s_3}-C_{s_3} = 0-0 = 0$ olur.
+:::
+:::
+
+:::
+
+:::
+
+## Örnek 1: Sanayi İşletmesi (11)
+
+::: {.callout-tip icon=false title="Örnek 1: Optimalliğin Kontrolü" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="55%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_07_after_objective.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="40%"}
+
+:::{style="font-size: 90%;"}
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır. 
+* Eğer herhangi bir [$z_j-c_j$]{.light-blue} değeri [$\leq 0$]{.light-blue} olsaydı, iterasyon aynı şekilde devam edecekti.
+* Son durumda [$Z=15$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 0$]{.light-blue}, [$x_2 =5$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=25$]{.light-blue} ve [$s_3 = 35$]{.light-blue}’dir. 
+* Bu durumda, işletme [$B$]{.light-blue}’den [$5$]{.light-blue} birim üretirken [$A$]{.light-blue}’dan hiç üretmeyecek, böylece en yüksek kârı [$15$]{.light-blue} TL olacaktır.
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek 2: Simpleks Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 2: Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=10x_1+22x_2+18x_3$]{.light-blue}
+
+[$x_1 + 4x_2 + 3x_3 \leq 24$]{.light-blue}
+
+[$2x_1 + 2x_2 + 4x_3 \leq 46$]{.light-blue}
+
+[$3x_1 + 5x_2 + 6x_3 \leq 60$]{.light-blue}
+
+[$4x_1 + 8x_2 + 3x_3 \leq 120$]{.light-blue}
+
+[$x_1$ ,$x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}&=&10x_1+22x_2+18x_3 \\ 
+&+& \color{orange}{0s_1+0s_2+0s_3+0s_4}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+x_1 &+& 4x_2 &+& 3x_3 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3 + 0s_4}} &\;\color{orange}= & 24,\\
+2x_1 &+& 2x_2 &+& 4x_3 &+&{\color{orange} {0s_1 + 1s_2 + 0s_3 + 0s_4}} &\;\color{orange}= & 46,\\
+3x_1 &+& 5x_2 &+& 6x_3 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3 + 0s_4}} &\;\color{orange}= & 60 \\
+4x_1 &+& 8x_2 &+& 3x_3 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3 + 1s_4}} &\;\color{orange}= & 120
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2$ , $x_3 \geq 0$ ve [$s_1$ , $s_2$, $s_3$, $s_4 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Simpleks Yöntem (2)
+
+::: {.callout-tip icon=false title="Örnek 2: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 2: Simpleks Yöntem (3)
+
+::: {.callout-tip icon=false title="Örnek 2: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 2: Simpleks Yöntem (4)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 2: Simpleks Yöntem (5)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-sm .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_04_select.html >}}
+```
+:::
+
+* [$-22$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$6$]{.red} olduğundan [$s_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Anahtar sayı [$4$]{.red} olduğundan [$s_1$]{.light-blue} satırı [$0.25$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$s_1$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır sırasıyla [$-2$]{.light-blue}, [$-5$]{.light-blue} ve [$-8$]{.light-blue} ile çarpılarak, [$s_2$]{.light-blue}, [$s_3$]{.light-blue} ve [$s_4$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Simpleks Yöntem (6)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 1 \\ 4 \\ 3 \\ 1 \\ 0 \\ 0 \\ 0 \\ 24 \end{pmatrix} \times 0.25 = \begin{pmatrix} 0.25 \\ 1 \\ 0.75 \\ 0.25 \\ 0 \\ 0 \\ 0 \\ 6 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2: Simpleks Yöntem (7)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_2$]{.red}
+
+$$\begin{pmatrix} 2 \\ 2 \\ 4 \\ 0 \\ 1 \\ 0 \\ 0 \\ 46 \end{pmatrix} - 2 \times \begin{pmatrix} 0.25 \\ 1 \\ 0.75 \\ 0.25 \\ 0 \\ 0 \\ 0 \\ 6 \end{pmatrix} = \begin{pmatrix} 1.5 \\ 0 \\ 2.5 \\ -0.5 \\ 1 \\ 0 \\ 0 \\ 34 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Simpleks Yöntem (8)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="47%"}
+
+[Diğer satırlar için değerlerin hesaplanması $s_3$]{.red}
+
+$$\begin{pmatrix} 3 \\ 5 \\ 6 \\ 0 \\ 0 \\ 1 \\ 0 \\ 60 \end{pmatrix} - 5 \times \begin{pmatrix} 0.25 \\ 1 \\ 0.75 \\ 0.25 \\ 0 \\ 0 \\ 0 \\ 6 \end{pmatrix} = \begin{pmatrix} 1.75 \\ 0 \\ 2.25 \\ -1.25 \\ 0 \\ 1 \\ 0 \\ 30 \end{pmatrix} $$
+
+
+:::
+
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47%"}
+
+
+
+[Diğer satırlar için değerlerin hesaplanması $s_4$]{.red}
+
+$$\begin{pmatrix} 4 \\ 8 \\ 3 \\ 0 \\ 0 \\ 0 \\ 1 \\ 120 \end{pmatrix} - 8 \times \begin{pmatrix} 0.25 \\ 1 \\ 0.75 \\ 0.25 \\ 0 \\ 0 \\ 0 \\ 6 \end{pmatrix} = \begin{pmatrix} 2 \\ 0 \\ -3 \\ -2 \\ 0 \\ 0 \\ 1 \\ 72 \end{pmatrix} $$
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Simpleks Yöntem (9)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+* [$132$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Simpleks Yöntem (10)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-sm .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_04_select.html >}}
+```
+:::
+
+* [$-4.5$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$17.11$]{.red} olduğundan [$s_3$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$1.75$]{.red} olduğundan [$s_3$]{.light-blue} satırı [$1.75$]{.light-blue} e bölünmelidir.
+* Temel değişkenlerden [$s_3$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır sırasıyla [$-0.25$]{.light-blue}, [$-1.5$]{.light-blue} ve [$-2$]{.light-blue} ile çarpılarak, [$x_2$]{.light-blue}, [$s_2$]{.light-blue} ve [$s_4$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Simpleks Yöntem (11)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 1.75 \\ 0 \\ 2.25 \\ -1.25 \\ 0 \\ 1 \\ 0 \\ 30 \end{pmatrix} \div 1.75 = \begin{pmatrix} 1 \\ 0 \\ 1.285 \\ -0.714 \\ 0 \\ 0.571 \\ 0 \\ 17.142 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Simpleks Yöntem (12)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="60%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="39%"}
+
+:::{style="font-size: 70%;"}
+[Diğer satırlar için değerlerin hesaplanması $x_2$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 0.25 \\ 1 \\ 0.75 \\ 0.25 \\ 0 \\ 0 \\ 0 \\ 6 \end{pmatrix} &-& 0.25 \times \begin{pmatrix} 1 \\ 0 \\ 1.285 \\ -0.714 \\ 0 \\ 0.571 \\ 0 \\ 17.142 \end{pmatrix}\\ 
+&=& \begin{pmatrix} 0 \\ 1 \\ 0.428 \\ 0.428 \\ 0 \\ -0.142 \\ 0 \\ 1.714 \end{pmatrix}
+\end{multline}
+
+
+:::
+:::
+
+:::
+
+:::
+
+## Örnek 2: Simpleks Yöntem (13)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="47%"}
+
+:::{style="font-size: 90%;"}
+
+[Diğer satırlar için değerlerin hesaplanması $s_2$]{.red}
+
+$$\begin{pmatrix} 1.5 \\ 0 \\ 2.5 \\ -0.5 \\ 1 \\ 0 \\ 0 \\ 34 \end{pmatrix} - 1.5 \times \begin{pmatrix} 1 \\ 0 \\ 1.285 \\ -0.714 \\ 0 \\ 0.571 \\ 0 \\ 17.142 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0.571 \\ 0.571 \\ 1 \\ -0.857 \\ 0 \\ 8.285 \end{pmatrix} $$
+:::
+
+:::
+
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47%"}
+
+:::{style="font-size: 90%;"}
+
+
+[Diğer satırlar için değerlerin hesaplanması $s_4$]{.red}
+
+$$\begin{pmatrix} 2 \\ 0 \\ -3 \\ -2 \\ 0 \\ 0 \\ 1 \\ 72 \end{pmatrix} - 2 \times \begin{pmatrix} 1 \\ 0 \\ 1.285 \\ -0.714 \\ 0 \\ 0.571 \\ 0 \\ 17.142 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ -5.571 \\ -0.571 \\ 0 \\ -1.142 \\ 1 \\ 37.714 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Simpleks Yöntem (14)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-sm .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=209.142$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 17.142$]{.light-blue}, [$x_2 =1.714$]{.light-blue}, [$x_3 =0$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=8.285$]{.light-blue}, [$s_3=0$]{.light-blue}  ve [$s_4 = 37.714$]{.light-blue}’dir.
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Marangoz İşletmesi (1)
+
+::: {.callout-tip icon=false title="Örnek 3: Marangoz İşletmesi (1)" style="font-size: 100%;"}
+
+
+::: columns
+::: {.column width="54%"}
+
+
+* Bir marangoz işletmesinde [masa]{.light-blue} ve [sandalye]{.light-blue} üretilmektedir. 
+* Bir masa yapımı için [30]{.light-blue} metre tahta ve [5]{.light-blue} saat işgücüne gerek vardır. Bir sandalye yapımı için de [20]{.light-blue} metre tahta ve [10]{.light-blue} saat işgücü kullanılmaktadır.
+* İşletmenin elinde [300]{.light-blue} metre tahta ve [110]{.light-blue} saat işgücü vardır.
+* Ayrıca bir masanın satışından elde edilen kar [6]{.light-blue} tl ve bir sandalye satışından elde edilen kar [8]{.light-blue} tl olsun.
+* Marangozun amacı satış karını [maksimum]{.red} yapmak olduğuna göre [marangoz ne kadar masa ve sandalye üretmelidir]{.red}.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="45%"}
+
+:::{.fragment fragment-index=1 style="font-size: 85%;"}
+[$x_1$]{.light-blue} = Satılan [masa]{.light-blue} miktarı
+
+[$x_2$]{.light-blue} = Satılan [sandalye]{.light-blue} miktarı
+:::
+
+::: {.fragment fragment-index=2 style="font-size: 85%;"}
+[$Z_{max}=6x_1+8x_2$]{.light-blue}
+:::
+
+
+::: {.fragment fragment-index=3 style="font-size: 85%;"}
+[$30x_1 + 20x_2 \leq 300$ (Tahta kısıtı)]{.light-blue}
+
+[$5x_1 + 10x_2  \leq 110$ (İş gücü kısıtı)]{.light-blue}
+
+:::
+
+:::{.fragment fragment-index=4 style="font-size: 85%;"}
+[$x_1$ , $x_2 \geq 0$]{.light-blue}
+:::
+
+
+:::{.fragment fragment-index=5 style="font-size: 85%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+$Z_{max} =6x_1+8x_2 + \color{orange}{0s_1+0s_2}$
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+30x_1 &+& 20x_2 &+& {\color{orange} {1s_1 + 0s_2}} &\;\color{orange}= & 300,\\
+5x_1 &+& 10x_2 &+& {\color{orange} {0s_1 + 1s_2}} &\;\color{orange}= & 110\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 85%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ , $s_2 \geq 0$]{.orange}
+
+:::
+
+
+
+:::
+
+:::
+:::
+
+
+## Örnek 3: Marangoz İşletmesi (2)
+
+::: {.callout-tip icon=false title="Örnek 3: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 3: Marangoz İşletmesi (3)
+
+::: {.callout-tip icon=false title="Örnek 3: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 3: Marangoz İşletmesi (4)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 3: Marangoz İşletmesi (5)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_04_select.html >}}
+```
+:::
+
+* [$-8$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$10$]{.red} olduğundan [$s_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Anahtar sayı [$10$]{.red} olduğundan [$s_2$]{.light-blue} satırı [$0.10$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$s_2$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-20$]{.light-blue} ile çarpılarak, [$s_1$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Marangoz İşletmesi (6)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 5 \\ 10 \\ 0 \\ 1 \\ 110 \end{pmatrix} \times 0.10 = \begin{pmatrix} 0.5 \\ 1 \\ 0 \\ 0.1 \\ 11 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3: Marangoz İşletmesi (7)
+
+::: {.callout-tip icon=false title="Örnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_1$]{.red}
+$$\begin{pmatrix} 30 \\ 20 \\ 1 \\ 0 \\ 300 \end{pmatrix} - 20 \times \begin{pmatrix} 0.5 \\ 1 \\ 0 \\ 0.1 \\ 11 \end{pmatrix} = \begin{pmatrix} 20 \\ 0 \\ 1 \\ -2 \\ 80 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Marangoz İşletmesi (8)
+
+::: {.callout-tip icon=false title="Örnek 3: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+* [$88$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Marangoz İşletmesi (9)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_04_select.html >}}
+```
+:::
+
+* [$-2$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$4$]{.red} olduğundan [$s_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$20$]{.red} olduğundan [$s_1$]{.light-blue} satırı [$20$]{.light-blue} ye bölünmelidir.
+* Temel değişkenlerden [$s_1$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$-0.50$]{.light-blue} ile çarpılarak, [$x_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Marangoz İşletmesi (10)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 20 \\ 0 \\ 1 \\ -2 \\ 80  \end{pmatrix} \div 20 = \begin{pmatrix} 1 \\ 0 \\ 0.05 \\ -0.10 \\ 4 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Marangoz İşletmesi (11)
+
+::: {.callout-tip icon=false title="Örnek 3: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $x_2$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 0.50 \\ 1 \\ 0 \\ 0.10 \\ 11  \end{pmatrix} &-& 0.50 \times \begin{pmatrix} 1 \\ 0 \\ 0.05 \\ -0.10 \\ 4  \end{pmatrix}\\ 
+&=& \begin{pmatrix} 0 \\ 1 \\ -0.02 \\ 0.15 \\ 9 \end{pmatrix}
+\end{multline}
+
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3: Marangoz İşletmesi (12)
+
+::: {.callout-tip icon=false title="Örnek 3: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=96$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 4$]{.light-blue}, [$x_2 =9$]{.light-blue}, [$s_1 = 0$]{.light-blue} ve [$s_2 = 0$]{.light-blue}’dir.
+:::
+
+:::
+
+:::
+
+## Örnek 4: Üretim Teknoloji Matrisi (1)
+
+::: {.callout-tip icon=false title="Örnek 4: Üretim Teknoloji Matrisi (1)" style="font-size: 100%;"}
+
+
+::: columns
+::: {.column width="54%"}
+
+
+:::{style='font-size: 90%'}
+
+* Bir işletme [$x_1$]{.light-blue}, [$x_2$]{.light-blue} ve [$x_3$]{.light-blue} gibi üç farklı ürün üretirken [emek]{.light-blue} ve [hammadde]{.light-blue} gibi iki üretim faktörü kullanmaktadır.
+* İşletmenin elinde [$40$]{.light-blue} kg hammadde ile [$20$]{.light-blue} saat emek işgücü vardır.
+* Üretilen ürünlerin kara katkıları birim başına [$x_1$]{.light-blue} için [$2$]{.light-blue} TL, [$x_2$]{.light-blue} için [$6$]{.light-blue} TL ve [$x_3$]{.light-blue} için de [$5$]{.light-blue} TL dir.
+* İşletmenin [üretim teknoloji katsayısı matrisi]{.light-red} aşağıdaki gibidir.
+
+  $$A = \begin{bmatrix} x_1 & x_2 & x_3 \\
+                   1 &  1  &  1  \\ 
+                   1 &  2  &  0  \end{bmatrix} \begin{matrix} \\ Hammadde \\ Emek  \end{matrix}$$
+
+ 
+:::
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="45%"}
+* İşletmenin amacı karını [en yükseğe]{.red} çıkarmak olduğuna göre [işletmenin en yüksek karı ve en uygun üretim birleşimi]{.red} ne olur?
+
+:::{.fragment fragment-index=1 style="font-size: 85%;"}
+* [$A$]{.light-blue} matrisi şunu ifade eder.
+  * 1 birim [$X_1$]{.light-blue} üretilirken, [$1$]{.light-blue} kg hammadde ve [$1$]{.light-blue} saat işgücü,
+  * 1 birim [$X_2$]{.light-blue} üretilirken, [$1$]{.light-blue} kg hammadde ve [$2$]{.light-blue} saat işgücü,
+  * 1 birim [$X_3$]{.light-blue} üretilirken, [$1$]{.light-blue} kg hammadde ve [$0$]{.light-blue} saat işgücü,
+kullanılmaktadır.
+:::
+
+
+:::
+
+:::
+:::
+
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (2)
+
+::: {.callout-tip icon=false title="Örnek 4: Kısıtlar ve Standart Form" style="font-size: 100%;"}
+
+
+::: columns
+::: {.column width="54%"}
+
+::: {.fragment fragment-index=3 style="font-size: 100%;"}
+[$Z_{max}=2x_1+6x_2+5x_3$]{.light-blue}
+:::
+
+
+::: {.fragment fragment-index=4 style="font-size: 100%;"}
+[$1x_1 + 1x_2 + 1x_3 \leq 40$ (Hammadde kısıtı)]{.light-blue}
+
+[$1x_1 + 2x_2  \leq 20$ (İş gücü kısıtı)]{.light-blue}
+
+:::
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[$x_1$ , $x_2$, $x_3 \geq 0$]{.light-blue}
+:::
+
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+$Z_{max} =2x_1+6x_2+5x_3 + \color{orange}{0s_1+0s_2}$
+:::
+
+
+:::{.fragment fragment-index=8 style="font-size: 90%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1  &+& 1x_2   &+& 1x_3 &+& {\color{orange} {1s_1 + 0s_2}} &\;\color{orange}= & 40,\\
+1x_1 &+& 2x_2 &+& 0x_3 &+& {\color{orange} {0s_1 + 1s_2}} &\;\color{orange}= & 20\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+$x_1$ ,$x_2$, $x_3 \geq 0$ ve [$s_1$ , $s_2 \geq 0$]{.orange}
+
+:::
+
+
+
+:::
+
+:::
+:::
+
+
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (3)
+
+::: {.callout-tip icon=false title="Örnek 4: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 4: Üretim Teknoloji Matrisi (4)
+
+::: {.callout-tip icon=false title="Örnek 4: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (5)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 4: Üretim Teknoloji Matrisi (6)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_04_select.html >}}
+```
+:::
+
+* [$-6$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$10$]{.red} olduğundan [$s_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Anahtar sayı [$2$]{.red} olduğundan [$s_2$]{.light-blue} satırı [$0.50$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$s_2$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Ardından anahtar satır [$-1$]{.light-blue} ile çarpılarak   [$s_1$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (7)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 1 \\ 2 \\ 0 \\ 0 \\ 1 \\ 20 \end{pmatrix} \times 0.5 = \begin{pmatrix} 0.5 \\ 1 \\ 0 \\ 0 \\ 0.5 \\ 10 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (8)
+
+::: {.callout-tip icon=false title="Örnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_1$]{.red}
+$$\begin{pmatrix} 1 \\ 1 \\ 1 \\ 1\\ 0 \\ 40 \end{pmatrix} - 1 \times \begin{pmatrix} 0.5 \\ 1 \\ 0 \\ 0 \\ 0.5 \\ 10 \end{pmatrix} = \begin{pmatrix} 0.5 \\ 0 \\ 1 \\ 1 \\ -0.5 \\ 30 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (9)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+* [$60$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (10)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_04_select.html >}}
+```
+:::
+
+* [$-5$]{.red} en düşük değer olduğundan [$x_3$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$30$]{.red} olduğundan [$s_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$1$]{.red} olduğundan ve [$x_3$]{.red} sütunundaki diğer değer zaten [$0$]{.light-blue} olduğundan herhangi bir işlem yapmaya gerek yoktur.
+* Sadece temel değişkenlerden [$s_1$]{.red} çözümden çıkarken, [$x_3$]{.red} çözüme girer.
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4: Üretim Teknoloji Matrisi (11)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=210$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_2 = 10$]{.light-blue}, [$x_3 =30$]{.light-blue}, [$x_1 = 0$]{.light-blue}, [$s_1 = 0$]{.light-blue} ve [$s_2 = 0$]{.light-blue}’dir.
+:::
+
+:::
+
+:::
+
+## Örnek 5: Başka Bir İşletme (1)
+
+::: {.callout-tip icon=false title="Örnek 5: Başka Bir İşletme (1)" style="font-size: 90%;"}
+
+
+::: columns
+::: {.column width="54%"}
+
+
+* Bir işletme [$x_1$]{.light-blue} ve [$x_2$]{.light-blue} gibi iki ürün üretmekte ve her [$x_1$]{.light-blue} ürünü satışından [$5$]{.light-blue} TL ve her [$x_2$]{.light-blue} ürünü satışından [$8$]{.light-blue} TL kar etmektedir. 
+* İşletme bir birim [$x_1$]{.light-blue} üretiminde [$2$]{.light-blue} birim [$A$]{.light-blue} üretim faktörü ile [$3$]{.light-blue} birim [$B$]{.light-blue} üretim faktörü kullanmaktadır.
+* Öte yandan, bir birim [$x_2$]{.light-blue} üretiminde [$4$]{.light-blue} birim [$A$]{.light-blue} üretim faktörü ile [$2$]{.light-blue} birim [$B$]{.light-blue} üretim faktörü kullanmaktadır.
+* İşletmenin elinde üretim faktörü [$A$]{.light-blue} dan [40]{.light-blue} birim, üretim faktörü [$B$]{.light-blue} den de [60]{.light-blue} birim bulunmaktadır.
+* İşletmenin [maksimum karını]{.red} ve bu karı sağlamak için [$x_1$ ve $x_2$ den kaç birim üretmesi gerektiğini bulunuz]{.red}.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="45%"}
+
+::: {.fragment fragment-index=2 style="font-size: 100%;"}
+[$Z_{max}=5x_1+8x_2$]{.light-blue}
+:::
+
+
+::: {.fragment fragment-index=3 style="font-size: 100%;"}
+[$2x_1 + 4x_2 \leq 40$ ($A$ hammadde kısıtı)]{.light-blue}
+
+[$3x_1 + 2x_2  \leq 60$ ($B$ hammadde kısıtı)]{.light-blue}
+
+:::
+
+:::{.fragment fragment-index=4 style="font-size: 100%;"}
+[$x_1$ , $x_2 \geq 0$]{.light-blue}
+:::
+
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+$Z_{max} =5x_1+8x_2 + \color{orange}{0s_1+0s_2}$
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &+& {\color{orange} {1s_1 + 0s_2}} &\;\color{orange}= & 40,\\
+3x_1 &+& 2x_2 &+& {\color{orange} {0s_1 + 1s_2}} &\;\color{orange}= & 60\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ , $s_2 \geq 0$]{.orange}
+
+:::
+
+
+
+:::
+
+:::
+:::
+
+
+## Örnek 5: Başka Bir İşletme (2)
+
+::: {.callout-tip icon=false title="Örnek 5: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 5: Başka Bir İşletme (3)
+
+::: {.callout-tip icon=false title="Örnek 3: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 5: Başka Bir İşletme (4)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 5: Marangoz İşletmesi (5)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_04_select.html >}}
+```
+:::
+
+* [$-8$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$10$]{.red} olduğundan [$s_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Anahtar sayı [$4$]{.red} olduğundan [$s_1$]{.light-blue} satırı [$0.25$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$s_1$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-2$]{.light-blue} ile çarpılarak, [$s_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Başka Bir İşletme (6)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 2 \\ 4 \\ 1 \\ 0 \\ 40 \end{pmatrix} \times 0.25 = \begin{pmatrix} 0.5 \\ 1 \\ 0.25 \\ 0 \\ 10 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5: Başka Bir İşletme (7)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_1$]{.red}
+$$\begin{pmatrix} 3 \\ 2 \\ 0 \\ 1 \\ 60 \end{pmatrix} - 2 \times \begin{pmatrix}  0.5 \\ 1 \\ 0.25 \\ 0 \\ 10 \end{pmatrix} = \begin{pmatrix} 2 \\ 0 \\ -0.5 \\ 1 \\ 40 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Başka Bir İşletme (8)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+* [$80$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Başka Bir İşletme (9)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_04_select.html >}}
+```
+:::
+
+* [$-1$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue} dur. 
+* Burada her iki oran birbirine eşit ve [$20$]{.red} dir. Bu örnek için  [$x_2$]{.red} [anahtar satır]{.light-blue} olsun.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$0.50$]{.red} olduğundan [$x_2$]{.light-blue} satırı [$2$]{.light-blue} ile çarpılmalıdır.
+* Temel değişkenlerden [$x_2$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$-2$]{.light-blue} ile çarpılarak, [$s_2$]{.light-blue} satırı ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Başka Bir İşletme (10)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 0.50 \\ 1 \\ 0.25 \\ 0 \\ 10  \end{pmatrix} \times 2 = \begin{pmatrix} 1 \\ 2 \\ 0.50 \\ 0 \\ 20 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Başka Bir İşletme (11)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_2$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 2 \\ 0 \\ -0.5 \\ 0 \\ 20  \end{pmatrix} &-& 2 \times \begin{pmatrix} 1 \\ 2 \\ 0.50 \\ 0 \\ 20  \end{pmatrix}\\ 
+&=& \begin{pmatrix} 0 \\ -4 \\ -1.5 \\ 1 \\ 0 \end{pmatrix}
+\end{multline}
+
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5: Başka Bir İşletme (12)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=100$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 5$]{.light-blue}, [$x_2 =0$]{.light-blue}, [$s_1 = 0$]{.light-blue} ve [$s_2 = 0$]{.light-blue}’dır.
+:::
+
+:::
+
+:::

@@ -1,0 +1,4228 @@
+---
+title: Hafta 05
+subtitle: "Yön. Araş. : Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Prob."
+date: 10/16/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST207 - Yöneylem Araştırması - Hafta 05 - 16 Ekim 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Seçenekli Optimal Çözümler
+
+::: {.callout-important icon=false title="Seçenekli Optimal Çözümler" style="font-size: 130%;"}
+
+* [MODI]{.light-red} testi sonucunda optimuma ulaşıldıktan sonra, [temel olmayan değişkenlerden]{.light-red} bir ya da bir kaçının [$R_{ij}$]{.light-blue} değerlerinin [sıfır]{.light-blue} olması durumunda [alternatif bir optimum çözümden]{.light-red} bahsedilir.
+* Bu durumda, [$R_{ij}=0$]{.light-blue} değerine sahip temel olmayan hücre [merkezde]{.light-red} olacak şekilde bir [çevrim]{.light-red} oluşturularak hücre değerleri yeniden belirlenir.
+* Yeni değerlerle belirlenen maliyet, eski değerle [aynı]{.light-red} olmalıdır.
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: VAM Yöntemi (1)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+[Üç]{.light-blue} fabrika, [dört]{.light-blue} depolu bir ulaştırma probleminin [başlangıç tablosu]{.light-red} yan tarafta verilmiştir. [VAM + MODI]{.light-red} yöntemini uygulayarak optimum değerini bulun. 
+
+[Alternatif bir çözüm]{.light-red} olup olmadığını belirleyin. Alternatif çözüm mevcutsa, bu çözümü elde edin.
+:::
+:::
+:::
+
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{22} x_{22} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} \\
+  &= 3\cdot 75 + 1\cdot 150 + 4\cdot 225 + 6\cdot 325 + 5\cdot 25 + 2\cdot 100 \\
+  &= \mathbf{3550}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: Başlangıç
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\10_vam_initial.html >}}
+```
+:::
+şeklinde idi.
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$m=3$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=6$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 3 - 0 = 3 \\
+v_{3} = c_{13} - u_{1} = 6 - 0 = 6 \\
+u_{2} = c_{23} - v_{3} = 5 - 6 = -1 \\
+v_{4} = c_{24} - u_{2} = 2 - (-1) = 3 \\
+u_{3} = c_{31} - v_{1} = 1 - 3 = -2 \\
+v_{2} = c_{22} - u_{2} = 4 - (-1) = 5 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 85%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 5 - 0 - 5 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 6 - 0 - 6 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 7 - 0 - 3 = 4 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 10 - (-1) - 3 = 8 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 4 - (-1) - 5 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{23} = c_{23} - u_{2} - v_{3} = 5 - (-1) - 6 = 0 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 2 - (-1) - 3 = 0 \\
+R_{31} = c_{31} - u_{3} - v_{1} = 1 - (-2) - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 7 - (-2) - 5 = 4 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 8 - (-2) - 6 = 4 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 12 - (-2) - 3 = 11 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\50_vam_step_001_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} değerleri [$\geq 0$]{.light-blue} olduğundan çözüm [optimumdur]{.orange}. [$X_{12}$]{.light-blue} hücresi temel değişken olmadığı halde [$R_{12}=0$]{.light-blue} olduğundan [alternatif bir optimum çözüm]{.light-red} bulunabilir.
+
+:::
+
+## Örnek 1: Seçenekli Optimal MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{22} x_{22} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} \\
+  &= 3\cdot 75 + 1\cdot 150 + 4\cdot 225 + 6\cdot 325 + 5\cdot 25 + 2\cdot 100 \\
+  &= \mathbf{3550}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+
+
+
+## Örnek 1: Seçenekli Optimal: Alternatif Çözüme Geçiş (1)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (1)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\47_vam_alt_01_i1_j2_transition_before.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$225$]{.light-blue} ve [$325$]{.light-blue} arasından daha küçük olan [$225$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$225$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$X_{12}$]{.light-blue}'ye [$+$]{.light-blue} işareti ile başlandıktan sonra, [$X_{22}$]{.light-blue} ve [$X_{13}$]{.light-blue}'e [$-$]{.light-red}; [$X_{23}$]{.light-blue}'e ise [$+$]{.light-blue}  işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 1: Seçenekli Optimal: Alternatif Çözüme Geçiş (2)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (2)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="90%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\47_vam_alt_01_i1_j2_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="1%"}
+
+
+
+
+:::
+
+:::
+
+[$X_{12}=0+225=225$]{.light-blue}, [$X_{13}=325-225=100$]{.light-blue}, [$X_{22}=225-225=0$]{.light-blue} ve [$X_{23}=25+225=250$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+:::
+
+
+## Örnek 1: Seçenekli Optimal: Alternatif Çözüme Geçiş (3)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (3)" style="font-size: 100%;"}
+
+[Alternatif Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example1\47_vam_alt_01_i1_j2_allocation.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Seçenekli Optimal: Alternatif Çözüme Geçiş (4)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} \\
+  &= 3\cdot 75 + 1\cdot 150 + 5\cdot 225 + 6\cdot 100 + 5\cdot 250 + 2\cdot 100 \\
+  &= \mathbf{3550}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+[Eski çözüm ile alternatif çözümün maliyeti aynıdır, değişmemiştir.]{.orange}
+
+
+:::
+
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (1)
+
+
+::: {.callout-tip icon=false title="Örnek 2: VAM Yöntemi (1)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+[Üç]{.light-blue} fabrika, [dört]{.light-blue} depolu bir ulaştırma probleminin [başlangıç tablosu]{.light-red} yan tarafta verilmiştir. [VAM + MODI]{.light-red} yöntemini uygulayarak optimum değerini bulun. 
+
+[Alternatif bir çözüm]{.light-red} olup olmadığını belirleyin. Alternatif çözüm mevcutsa, bu çözümü elde edin.
+:::
+:::
+:::
+
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120 .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\31_vam_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{32} x_{32} + c_{33} x_{33} + c_{14} x_{14} + c_{24} x_{24} \\
+  &= 10\cdot 125 + 8\cdot 125 + 5\cdot 100 + 7\cdot 225 + 13\cdot 150 + 9\cdot 175 \\
+  &= \mathbf{7850}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: Başlangıç
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\10_vam_initial.html >}}
+```
+:::
+şeklinde idi.
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$m=3$]{.light-blue} satır ve [$n=5$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{4} = c_{14} - u_{1} = 13 - 0 = 13 \\
+v_{5} = c_{15} - u_{1} = 0 - 0 = 0 \\
+u_{2} = c_{24} - v_{4} = 9 - 13 = -4 \\
+v_{1} = c_{21} - u_{2} = 10 - (-4) = 14 \\
+u_{3} = c_{31} - v_{1} = 8 - 14 = -6 \\
+v_{2} = c_{32} - u_{3} = 5 - (-6) = 11 \\
+v_{3} = c_{33} - u_{3} = 7 - (-6) = 13
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 85%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 15 - 0 - 14 = 1 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 18 - 0 - 11 = 7 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 12 - 0 - 13 = -1 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 13 - 0 - 13 = 0 \\
+R_{15} = c_{15} - u_{1} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 10 - (-4) - 14 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 10 - (-4) - 11 = 3 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 11 - (-4) - 13 = 2 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{24} = c_{24} - u_{2} - v_{4} = 9 - (-4) - 13 = 0 \\
+R_{25} = c_{25} - u_{2} - v_{5} = 0 - (-4) - 0 = 4 \\
+R_{31} = c_{31} - u_{3} - v_{1} = 8 - (-6) - 14 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 5 - (-6) - 11 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 7 - (-6) - 13 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 8 - (-6) - 13 = 1 \\
+R_{35} = c_{35} - u_{3} - v_{5} = 0 - (-6) - 0 = 6 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_001_uvR_table.html >}}
+```
+:::
+
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan küçük]{.light-red} değer olduğundan [optimum değildir]{.orange}. Negatif [$R_{ij}$]{.light-blue} değeri [$-1$]{.light-red} olup, bu değerin bulunduğu hücre [pivot elemandır]{.light-blue}. 
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\46_vam_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$150$]{.light-blue}, [$125$]{.light-blue} ve [$250$]{.light-blue} arasından en küçük olan [$125$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$125$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+[$X_{13}$]{.light-blue} pivot eleman [$+$]{.light-blue} işareti ile başladıktan sonra, sırasıyla [$X_{33}$]{.light-blue} [$-$]{.light-red}, [$X_{31}$]{.light-blue} [$+$]{.light-blue}, [$X_{21}$]{.light-blue} [$-$]{.light-red}, [$X_{24}$]{.light-blue} [$+$]{.light-blue} ve [$X_{14}$]{.light-blue} [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="90%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\46_vam_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="1%"}
+
+
+:::
+
+:::
+[$X_{13}=0+125=125$]{.light-blue}, [$X_{33}=225-125=100$]{.light-blue}, [$X_{31}=125+125=250$]{.light-blue},[$X_{21}=125-125=0$]{.light-blue}, [$X_{24}=175+125=300$]{.light-blue} ve [$X_{14}=150-125=25$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 85%;"}
+
+[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerlerini tekrar hesaplanırsa.
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+v_{3} = c_{13} - u_{1} = 12 - 0 = 12 \\
+v_{4} = c_{14} - u_{1} = 13 - 0 = 13 \\
+v_{5} = c_{15} - u_{1} = 0 - 0 = 0 \\
+u_{2} = c_{24} - v_{4} = 9 - 13 = -4 \\
+u_{3} = c_{33} - v_{3} = 7 - 12 = -5 \\
+v_{1} = c_{31} - u_{3} = 8 - (-5) = 13 \\
+v_{2} = c_{32} - u_{3} = 5 - (-5) = 10 \\
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 85%;"}
+
+[$R_{ij}$]{.light-blue} değerleri tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 15 - 0 - 13 = 2 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 18 - 0 - 10 = 8 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 12 - 0 - 12 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 13 - 0 - 13 = 0 \\
+R_{15} = c_{15} - u_{1} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 10 - (-4) - 13 = 1 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 10 - (-4) - 10 = 4 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 11 - (-4) - 12 = 3 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{24} = c_{24} - u_{2} - v_{4} = 9 - (-4) - 13 = 0 \\
+R_{25} = c_{25} - u_{2} - v_{5} = 0 - (-4) - 0 = 4 \\
+R_{31} = c_{31} - u_{3} - v_{1} = 8 - (-5) - 13 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 5 - (-5) - 10 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 7 - (-5) - 12 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 8 - (-5) - 13 = 0 \\
+R_{35} = c_{35} - u_{3} - v_{5} = 0 - (-5) - 0 = 5 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\50_vam_step_002_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} ler [sıfırdan büyük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+Temel olmayan değişken [$X_{34}$]{.light-blue} için hesaplanan [$R_{34}=0$]{.light-blue} olduğundan alternatif çözüm mevcuttur.
+
+:::
+
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\20_vam_modi.html >}}
+```
+:::
+Alternatif çözüme geçmeden önce elde edilen optimum tablodan, maliyeti hesaplayalım.
+
+:::
+
+## Örnek 2: Seçenekli Optimal MODI Hesabı: 2. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{32} x_{32} + c_{13} x_{13} + c_{33} x_{33} + c_{14} x_{14} + c_{24} x_{24} + c_{15} x_{15} \\
+  &= 8\cdot 250 + 5\cdot 100 + 12\cdot 125 + 7\cdot 100 + 13\cdot 25 + 9\cdot 300 + 0\cdot 50 \\
+  &= \mathbf{7725}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+
+## Örnek 2: Seçenekli Optimal: Alternatif Çözüme Geçiş (1)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (1)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\47_vam_alt_01_i3_j4_transition_before.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$25$]{.light-blue} ve [$100$]{.light-blue} arasından daha küçük olan [$25$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$25$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$X_{34}$]{.light-blue}'e [$+$]{.light-blue} işareti ile başlandıktan sonra, [$X_{33}$]{.light-blue} ve [$X_{14}$]{.light-blue}'e [$-$]{.light-red}; [$X_{13}$]{.light-blue}'e ise [$+$]{.light-blue}  işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 2: Seçenekli Optimal: Alternatif Çözüme Geçiş (2)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (2)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="90%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\47_vam_alt_01_i3_j4_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="1%"}
+
+
+
+
+:::
+
+:::
+
+[$X_{34}=0+25=25$]{.light-blue}, [$X_{33}=100-25=75$]{.light-blue}, [$X_{13}=125+25=150$]{.light-blue} ve [$X_{14}=25-25=0$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+:::
+
+
+## Örnek 2: Seçenekli Optimal: Alternatif Çözüme Geçiş (3)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (3)" style="font-size: 100%;"}
+
+[Alternatif Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example2\47_vam_alt_01_i3_j4_allocation.html >}}
+```
+:::
+
+:::
+
+## Örnek 2: Seçenekli Optimal: Alternatif Çözüme Geçiş (4)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{32} x_{32} + c_{13} x_{13} + c_{33} x_{33} + c_{24} x_{24} + c_{34} x_{34} + c_{15} x_{15} \\
+  &= 8\cdot 250 + 5\cdot 100 + 12\cdot 150 + 7\cdot 75 + 9\cdot 300 + 8\cdot 25 + 0\cdot 50 \\
+  &= \mathbf{7725}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+[Eski çözüm ile alternatif çözümün maliyeti aynıdır, değişmemiştir.]{.orange}
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (1)
+
+
+::: {.callout-tip icon=false title="Örnek 3: VAM Yöntemi (1)" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\00_baslangic_tablosu.html >}}
+```
+:::
+
+:::
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+[Dört]{.light-blue} fabrika, [dört]{.light-blue} depolu bir ulaştırma probleminin [başlangıç tablosu]{.light-red} yan tarafta verilmiştir. [VAM + MODI]{.light-red} yöntemini uygulayarak optimum değerini bulun. 
+
+[Alternatif bir çözüm]{.light-red} olup olmadığını belirleyin. Alternatif çözüm mevcutsa, bu çözümü elde edin.
+:::
+:::
+:::
+
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\30_vam_step_001_preview.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_001.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_002.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_003.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120 .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_004.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_005.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_006.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\31_vam_step_007.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan maliyet]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{41} x_{41} + c_{12} x_{12} + c_{23} x_{23} + c_{33} x_{33} + c_{34} x_{34} + c_{44} x_{44} \\
+  &= 3\cdot 4 + 3\cdot 26 + 1\cdot 16 + 3\cdot 15 + 4\cdot 9 + 7\cdot 1 + 4\cdot 19 \\
+  &= \mathbf{270}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: Başlangıç
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\10_vam_initial.html >}}
+```
+:::
+şeklinde idi.
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$m=3$]{.light-blue} satır ve [$n=5$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 3 - 0 = 3 \\
+v_{2} = c_{12} - u_{1} = 1 - 0 = 1 \\
+u_{4} = c_{41} - v_{1} = 3 - 3 = 0 \\
+v_{4} = c_{44} - u_{4} = 4 - 0 = 4 \\
+u_{3} = c_{34} - v_{4} = 7 - 4 = 3 \\
+v_{3} = c_{33} - u_{3} = 4 - 3 = 1 \\
+u_{2} = c_{23} - v_{3} = 3 - 1 = 2 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 85%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 1 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 2 - 0 - 1 = 1 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 4 = 1 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 2 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 2 - 2 - 1 = -1 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 2 - 1 = 0 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 2 - 4 = 0 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 6 - 3 - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 4 - 3 - 1 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 4 - 3 - 1 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 7 - 3 - 4 = 0 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 2 - 0 - 1 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - 0 - 1 = 2 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 4 - 0 - 4 = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_001_uvR_table.html >}}
+```
+:::
+
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan küçük]{.light-red} değer olduğundan [optimum değildir]{.orange}. Negatif [$R_{ij}$]{.light-blue} değeri [$-1$]{.light-red} olup, bu değerin bulunduğu hücre [pivot elemandır]{.light-blue}. 
+:::
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\46_vam_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$16$]{.light-blue}, [$15$]{.light-blue}, [$1$]{.light-blue} ve [$26$]{.light-blue} arasından en küçük olan [$1$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$1$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+[$X_{22}$]{.light-blue} pivot eleman [$+$]{.light-blue} işareti ile başladıktan sonra, sırasıyla [$X_{23}$]{.light-blue} [$-$]{.light-red}, [$X_{33}$]{.light-blue} [$+$]{.light-blue}, [$X_{34}$]{.light-blue} [$-$]{.light-red}, [$X_{44}$]{.light-blue} [$+$]{.light-blue}, [$X_{14}$]{.light-blue} [$-$]{.light-red},  [$X_{11}$]{.light-blue} [$+$]{.light-blue} ve [$X_{22}$]{.light-blue} [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="90%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\46_vam_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="1%"}
+
+
+:::
+
+:::
+[$X_{22}=0+1=1$]{.light-blue}, [$X_{23}=15-1=14$]{.light-blue}, [$X_{33}=9+1=10$]{.light-blue},[$X_{34}=1-1=0$]{.light-blue}, [$X_{44}=19+1=20$]{.light-blue}, [$X_{41}=26-1=25$]{.light-blue},
+[$X_{11}=4+1=5$]{.light-blue}, [$X_{12}=16-1=15$]{.light-blue} şeklinde güncellenir. 
+
+:::
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerlerini tekrar hesaplarsak.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 3 - 0 = 3 \\
+v_{2} = c_{12} - u_{1} = 1 - 0 = 1 \\
+u_{2} = c_{22} - v_{2} = 2 - 1 = 1 \\
+v_{3} = c_{23} - u_{2} = 3 - 1 = 2 \\
+u_{3} = c_{33} - v_{3} = 4 - 2 = 2 \\
+u_{4} = c_{41} - v_{1} = 3 - 3 = 0 \\
+v_{4} = c_{44} - u_{4} = 4 - 0 = 4 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerlerini bir kez hesaplamak yeterlidir. Tekrar hesaplamaya gerek yoktur. 
+
+Ancak [$R_{ij}$]{.light-blue} değerleri tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 1 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 2 - 0 - 2 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 4 = 1 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 1 - 3 = 1 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 2 - 1 - 1 = 0 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 1 - 2 = 0 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 1 - 4 = 1 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 6 - 2 - 3 = 1 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 4 - 2 - 1 = 1 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 4 - 2 - 2 = 0 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 7 - 2 - 4 = 1 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 2 - 0 - 1 = 1 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - 0 - 2 = 1 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 4 - 0 - 4 = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 80%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\50_vam_step_002_uvR_table.html >}}
+```
+:::
+
+Tüm [$R_{ij}$]{.light-blue} ler [sıfırdan büyük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+Temel olmayan değişken [$X_{13}$]{.light-blue} için hesaplanan [$R_{13}=0$]{.light-blue} olduğundan alternatif çözüm mevcuttur.
+
+:::
+
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 80%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\20_vam_modi.html >}}
+```
+:::
+Alternatif çözüme geçmeden önce elde edilen optimum tablodan, maliyeti hesaplayalım.
+
+:::
+
+## Örnek 3: Seçenekli Optimal MODI Hesabı: 2. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{41} x_{41} + c_{12} x_{12} + c_{22} x_{22} + c_{23} x_{23} + c_{33} x_{33} + c_{44} x_{44} \\
+  &= 3\cdot 5 + 3\cdot 25 + 1\cdot 15 + 2\cdot 1 + 3\cdot 14 + 4\cdot 10 + 4\cdot 20 \\
+  &= \mathbf{269}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+
+## Örnek 3: Seçenekli Optimal: Alternatif Çözüme Geçiş (1)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (1)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\47_vam_alt_01_i1_j3_transition_before.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$15$]{.light-blue} ve [$14$]{.light-blue} arasından daha küçük olan [$14$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$14$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$X_{13}$]{.light-blue}'e [$+$]{.light-blue} işareti ile başlandıktan sonra, [$X_{23}$]{.light-blue} ve [$X_{12}$]{.light-blue}'ye [$-$]{.light-red}; [$X_{22}$]{.light-blue}'ye ise [$+$]{.light-blue} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 3: Seçenekli Optimal: Alternatif Çözüme Geçiş (2)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (2)" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="90%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\47_vam_alt_01_i1_j3_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="1%"}
+
+
+
+
+:::
+
+:::
+
+[$X_{13}=0+14=14$]{.light-blue}, [$X_{23}=14-14=0$]{.light-blue}, [$X_{22}=1+14=15$]{.light-blue} ve [$X_{12}=15-14=1$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}.
+:::
+
+
+## Örnek 3: Seçenekli Optimal: Alternatif Çözüme Geçiş (3)
+
+::: {.callout-tip icon=false title="Alternatif Çözüme Geçiş (3)" style="font-size: 100%;"}
+
+[Alternatif Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example3\47_vam_alt_01_i1_j3_allocation.html >}}
+```
+:::
+
+:::
+
+## Örnek 3: Seçenekli Optimal: Alternatif Çözüme Geçiş (4)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Maliyet Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{41} x_{41} + c_{12} x_{12} + c_{22} x_{22} + c_{13} x_{13} + c_{33} x_{33} + c_{44} x_{44} \\
+  &= 3\cdot 5 + 3\cdot 25 + 1\cdot 1 + 2\cdot 15 + 2\cdot 14 + 4\cdot 10 + 4\cdot 20 \\
+  &= \mathbf{269}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+[Eski çözüm ile alternatif çözümün maliyeti aynıdır, değişmemiştir.]{.orange}
+
+:::
+
+## Maksimum Amaçlı Ulaşım Problemleri (1)
+
+::: {.callout-important icon=false title="Maksimum Amaçlı Ulaşım Problemleri (1)" style="font-size: 105%;"}
+
+[En büyükleme amaçlı]{.light-red} bir ulaştırma probleminin çözümünde [iki]{.light-blue} yaklaşım izlenebilir. 
+
+* [1.]{.light-red} [En büyükleme amaçlı]{.light-blue} bir doğrusal programlama problemi [en küçükleme]{.light-red} problemi olarak veya bunun karşıtı, [en küçükleme amaçlı]{.light-blue} bir doğrusal programlama problemi [en büyükleme problemi]{.light-red} olarak çözülebilir. Bunun için, [amaç]{.light-blue} fonksiyonu [katsayılarının işaretlerinin değiştirilmesi]{.light-red} yeterli olur.
+
+* [2.]{.light-red} [En büyükleme amaçlı]{.light-blue} bir ulaştırma problemi, en iyilemenin anlamını değiştirmeksizin de [bilinen yöntemlerle]{.light-red} ve [aynı süreç]{.light-red} izlenerek çözülebilir.  
+  * Bunun için öncelikle, [kâr katsayılarından oluşan]{.light-red} başlangıç tablosunun düzenlenmesi gerekir. 
+  * Daha sonra, başlangıç çözümünün belirlenmesi amacıyla [geliştirilen yöntemlerden herhangi birisiyle]{.light-red} çözüme başlanır.
+
+:::
+
+## Maksimum Amaçlı Ulaşım Problemleri (2)
+
+::: {.callout-important icon=false title="Maksimum Amaçlı Ulaşım Problemleri (2)" style="font-size: 105%;"}
+
+* [En büyükleme amaçlı]{.light-blue} ulaştırma problemlerinin çözümü ile [en küçükleme amaçlı]{.light-blue} ulaştırma problemlerinin çözümü arasındaki [en önemli fark]{.light-red}, [dağıtım yapılacak hücrelerin belirlenmesinde]{.light-red} ortaya çıkmaktadır. 
+* [En küçükleme problemlerinde]{.light-blue}, [en küçük maliyetler]{.light-red} esas alınarak çözüme ulaşılırken, [en büyükleme problemlerinde]{.light-blue} [en yüksek kâr katsayıları]{.light-red} esas alınır. 
+* Sözgelimi, başlangıç çözümü [VAM]{.light-red}’la elde edilmek istendiğinde, 
+  * Satır ve sütunlara ilişkin farkların hesaplanmasında [en yüksek iki kâr]{.light-blue} katsayısı dikkate alınır ve bunlar arasındaki farklar hesaplanır. 
+  * Daha sonra, en yüksek farkın bulunduğu satır ya da sütunun [en yüksek kar]{.light-red} katsayılı hücresine dağıtım yapılır. 
+  * Bu işlem, [en küçükleme problemlerinde]{.light-blue} olduğu gibi, tek bir satır ya da tek bir sütun kalıncaya kadar sürdürülür.
+
+:::
+
+## Maksimum Amaçlı Ulaşım Problemleri (3)
+
+::: {.callout-important icon=false title="Maksimum Amaçlı Ulaşım Problemleri (3)" style="font-size: 130%;"}
+
+* Elde edilen başlangıç çözümünün en iyi olup olmadığının belirlenmesinde ve buna bağlı olarak en iyi çözümün elde edilmesinde [modi]{.light-red} yöntemi kullanılabilir.
+  * Ancak, problem en büyükleme olduğundan artık hesaplananlar [gizli maliyetler]{.light-red} değil [gizli kârlardır]{.light-red}. 
+  * Bu nedenle, en küçükleme problemindeki durumun tersine, [gizli kârların hepsi sıfır]{.light-blue} ya da [negatifse]{.light-blue} [en iyi çözümün elde edildiği]{.light-red} kararlaştırılır. 
+  * Çözüm en iyi değilse işlemler en küçükleme probleminde olduğu gibi [aynı sırayla tekrarlanır]{.light-red}.
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 4: Maks Amaçlı" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_northwest_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Yandaki ulaştırma problemini, amaç fonksiyonunu [maksimum]{.light-red} olarak kabul ederek [kuzeybatı]{.light-red}, [satır maksimum]{.light-red}, [sütun maksimum]{.light-red}, [en yüksek kar]{.light-red}, ve [VAM]{.light-red} yöntemleriyle çözünüz. [VAM]{.light-red} yöntemi için [MODI]{.light-red} düzenlemesi  uygulayınız.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 4: Maks Amaçlı" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_northwest_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Arz ve talep toplamlarına bakıldığında [arz]{.light-red} toplamının [90]{.light-blue}, [talep]{.light-red} toplamının da yine [90]{.light-blue} olduğu görülür.
+
+Dengeli bir ulaştırma problemidir.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 4: Maks Amaçlı" style="font-size: 120%;"}
+
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\30_northwest_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 4: Maks Amaçlı" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_001_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_northwest_step_007_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{22} x_{22} + c_{32} x_{32} + c_{42} x_{42} + c_{43} x_{43} + c_{44} x_{44} \\
+  &= 3\cdot 20 + 5\cdot 10 + 2\cdot 5 + 4\cdot 10 + 2\cdot 1 + 3\cdot 24 + 4\cdot 20 \\
+  &= \mathbf{314}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_rowmin_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\30_rowmin_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_rowmin_step_006_after.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (10)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 110%;"}
+
+[Satır Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{41} x_{41} + c_{42} x_{42} + c_{43} x_{43} + c_{14} x_{14} \\
+  &= 5\cdot 15 + 6\cdot 10 + 3\cdot 5 + 2\cdot 16 + 3\cdot 24 + 5\cdot 20 \\
+  &= \mathbf{354}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_colmin_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\30_colmin_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_colmin_step_007_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 110%;"}
+
+[Sütun Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{31} x_{31} + c_{42} x_{42} + c_{43} x_{43} + c_{14} x_{14} + c_{44} x_{44} \\
+  &= 3\cdot 5 + 5\cdot 15 + 6\cdot 10 + 2\cdot 16 + 3\cdot 24 + 5\cdot 15 + 4\cdot 5 \\
+  &= \mathbf{349}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Yüksek Kar yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_leastcost_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\30_leastcost_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_leastcost_step_007_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (11)" style="font-size: 115%;"}
+
+[En Yüksek Kar Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{21} x_{21} + c_{41} x_{41} + c_{42} x_{42} + c_{43} x_{43} + c_{24} x_{24} + c_{34} x_{34} \\
+  &= 3\cdot 20 + 5\cdot 5 + 3\cdot 5 + 2\cdot 16 + 3\cdot 24 + 6\cdot 10 + 7\cdot 10 \\
+  &= \mathbf{334}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\09_vam_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\30_vam_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\31_vam_step_006_after.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{41} x_{41} + c_{42} x_{42} + c_{43} x_{43} + c_{14} x_{14} \\
+  &= 5\cdot 15 + 6\cdot 10 + 3\cdot 5 + 2\cdot 16 + 3\cdot 24 + 5\cdot 20 \\
+  &= \mathbf{354}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$314$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$354$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$349$]{.light-blue}
+* [En Yüksek kar Yöntemi]{.light-red}: [$334$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$354$]{.light-blue}
+
+* [En yüksek kar, satır ve VAM yöntemlerinde elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: Başlangıç (1)
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\10_vam_initial.html >}}
+```
+:::
+şeklinde idi. Dikkat ederseniz burada, sadece [$6$]{.light-blue} tane temel değişken bulunmaktadır. Bu da bozulmaya işaret etmektedir.
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: Başlangıç (2)
+
+::: {.callout-important icon=false title="VAM Sonucu" style="font-size: 130%;"}
+
+* VAM çözümünde sadece [$6$]{.light-blue} tane temel değişken bulunmaktadır. Bu da [bozulmaya]{.light-red} işaret etmektedir. 
+* [MODI]{.light-red} yöntemini uygulamadan önce temel değişken sayısı [7]{.light-blue} ye çıkarılarak [hem bozulma giderilir]{.light-red}, hem de eklenen [joker temel değişken sayesinde çevrimlerin oluşturulması]{.light-red} kolaylaştırılır.
+* Bu joker değişken, [karı en yüksek yapacak köşe hücrelerden]{.light-red} seçilir.
+* Peki bu [hücre joker olarak seçilmezse]{.red} ne olur?
+* Bu soru için joker hücreyi [$x_{12}$]{.light-blue} seçelim.
+:::
+
+
+
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 100%;"}
+
+[$x_{12}$]{.light-blue} joker hücre de hesaba katıldığında, [$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{2} = c_{12} - u_{1} = 1 - 0 = 1 \\
+v_{4} = c_{14} - u_{1} = 5 - 0 = 5 \\
+u_{4} = c_{42} - v_{2} = 2 - 1 = 1 \\
+v_{3} = c_{43} - u_{4} = 3 - 1 = 2 \\
+v_{1} = c_{41} - u_{4} = 3 - 1 = 2 \\
+u_{2} = c_{21} - v_{1} = 5 - 2 = 3 \\
+u_{3} = c_{31} - v_{1} = 6 - 2 = 4 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 2 = 1 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 1 = 0 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 2 - 0 - 2 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 5 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 3 - 2 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 2 - 3 - 1 = -2 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 3 - 2 = -2 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 3 - 5 = -2 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 6 - 4 - 2 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 4 - 4 - 1 = -1 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 4 - 4 - 2 = -2 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 7 - 4 - 5 = -2 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 3 - 1 - 2 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 2 - 1 - 1 = 0 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - 1 - 2 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 4 - 1 - 5 = -2 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\50_vam_step_001_uvR_table.html >}}
+```
+:::
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan büyük]{.light-red} değerler olduğundan [optimum değildir]{.orange}. En büyük [$R_{ij}$]{.light-blue} değeri [$1$]{.light-red} olup, bu değerin bulunduğu hücre [$x_{11}$]{.light-blue}  [pivot elemandır]{.orange}. 
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\46_vam_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$0$]{.light-blue} ve [$5$]{.light-blue} arasından daha küçük olan [$0$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$0$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$x_{11}$]{.light-blue} e [$+$]{.light-blue} işareti ile başladıktan sonra, [$x_{41}$]{.light-blue} e [$-$]{.light-red}, [$x_{42}$]{.light-blue} ye [$+$]{.light-blue} ve [$x_{12}$]{.light-blue} ye [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\46_vam_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+[$X_{11}=0+0=0$]{.light-blue}, [$X_{41}=5-0=5$]{.light-blue}, [$X_{42}=16+0=16$]{.light-blue} ve [$X_{12}=5-0=5$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}. 
+
+Dikkat edildiyse joker elemanın bu şekilde seçimi sonucu değiştirmemiştir. Bu kez joker hücreyi kara daha çok katkı verecek olan [$x_{11}$]{.light-blue} olarak seçelim.
+
+:::
+
+:::
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\50_vam_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Joker hücre değiştiği için [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerleri de aynı [$R_{ij}$]{.light-blue} değerleri gibi tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 3 - 0 = 3 \\
+v_{4} = c_{14} - u_{1} = 5 - 0 = 5 \\
+u_{2} = c_{21} - v_{1} = 5 - 3 = 2 \\
+u_{3} = c_{31} - v_{1} = 6 - 3 = 3 \\
+u_{4} = c_{41} - v_{1} = 3 - 3 = 0 \\
+v_{2} = c_{42} - u_{4} = 2 - 0 = 2 \\
+v_{3} = c_{43} - u_{4} = 3 - 0 = 3 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 2 = -1 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 2 - 0 - 3 = -1 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 5 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 2 - 3 = 0 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 2 - 2 - 2 = -2 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 2 - 3 = -2 \\
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 2 - 5 = -1 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{31} = c_{31} - u_{3} - v_{1} = 6 - 3 - 3 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 4 - 3 - 2 = -1 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 4 - 3 - 3 = -2 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 7 - 3 - 5 = -1 \\
+R_{41} = c_{41} - u_{4} - v_{1} = 3 - 0 - 3 = 0 \\
+R_{42} = c_{42} - u_{4} - v_{2} = 2 - 0 - 2 = 0 \\
+R_{43} = c_{43} - u_{4} - v_{3} = 3 - 0 - 3 = 0 \\
+R_{44} = c_{44} - u_{4} - v_{4} = 4 - 0 - 5 = -1  
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\50_vam_step_002_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} değerleri [sıfırdan küçük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+:::
+
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max1\20_vam_modi.html >}}
+```
+:::
+Elde edilen tablodan, kar hesaplanabilir.
+
+:::
+
+## Örnek 4: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Kar Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{21} x_{21} + c_{31} x_{31} + c_{41} x_{41} + c_{42} x_{42} + c_{43} x_{43} + c_{14} x_{14} \\
+  &= 5\cdot 15 + 6\cdot 10 + 3\cdot 5 + 2\cdot 16 + 3\cdot 24 + 5\cdot 20 \\
+  &= \mathbf{354}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 5: Maks Amaçlı" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_northwest_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Yandaki ulaştırma problemini, amaç fonksiyonunu [maksimum]{.light-red} olarak kabul ederek [kuzeybatı]{.light-red}, [satır maksimum]{.light-red}, [sütun maksimum]{.light-red}, [en yüksek kar]{.light-red}, ve [VAM]{.light-red} yöntemleriyle çözünüz. [VAM]{.light-red} yöntemi için [MODI]{.light-red} düzenlemesi  uygulayınız.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 5: Maks Amaçlı" style="font-size: 120%;"}
+
+::: columns
+
+::: {.column width="66%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_northwest_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+
+:::{style="font-size: 90%;"}
+Arz ve talep toplamlarına bakıldığında [arz]{.light-red} toplamının [90]{.light-blue}, [talep]{.light-red} toplamının [57]{.light-blue} olduğu görülür.
+
+[Dengeli olmayan]{.light-red} bir ulaştırma problemidir. Kar katsayıları $0$, arz toplamı [$90-57=33$]{.light-blue} olan bir gölge sütun eklenmelidir.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 5: Maks Amaçlı" style="font-size: 120%;"}
+
+
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\30_northwest_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 5: Maks Amaçlı" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_001_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (4)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (5)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (6)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (7)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (8)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (9)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_northwest_step_007_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (10)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_northwest_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Kuzeybatı Yöntemi (11)
+
+::: {.callout-tip icon=false title="Kuzeybatı Yöntemi (11)" style="font-size: 110%;"}
+
+[Kuzeybatı Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{12} x_{12} + c_{13} x_{13} + c_{23} x_{23} + c_{24} x_{24} + c_{25} x_{25} + c_{35} x_{35} \\
+  &= 6\cdot 15 + 1\cdot 10 + 7\cdot 10 + 3\cdot 10 + 6\cdot 12 + 0\cdot 3 + 0\cdot 30 \\
+  &= \mathbf{272}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (1)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Satır yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_rowmin_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (2)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\30_rowmin_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (3)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (4)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (5)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (6)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (7)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (8)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_rowmin_step_006_after.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (9)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_rowmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Satır Yöntemi (10)
+
+::: {.callout-tip icon=false title="Satır Yöntemi (10)" style="font-size: 110%;"}
+
+[Satır Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{22} x_{22} + c_{13} x_{13} + c_{24} x_{24} + c_{25} x_{25} + c_{35} x_{35} \\
+  &= 6\cdot 15 + 4\cdot 10 + 7\cdot 20 + 6\cdot 12 + 0\cdot 3 + 0\cdot 30 \\
+  &= \mathbf{342}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (1)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [Sütun yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_colmin_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (2)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\30_colmin_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (3)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (4)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (5)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (6)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (7)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (8)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (9)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_colmin_step_007_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (10)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_colmin_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Sütun Yöntemi (11)
+
+::: {.callout-tip icon=false title="Sütun Yöntemi (11)" style="font-size: 110%;"}
+
+[Sütun Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{32} x_{32} + c_{13} x_{13} + c_{24} x_{24} + c_{34} x_{34} + c_{15} x_{15} + c_{25} x_{25} \\
+  &= 7\cdot 15 + 6\cdot 10 + 7\cdot 20 + 6\cdot 7 + 9\cdot 5 + 0\cdot 15 + 0\cdot 18 \\
+  &= \mathbf{392}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (1)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [En Yüksek Kar yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_leastcost_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (2)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\30_leastcost_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (3)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (4)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (5)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (6)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (7)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (8)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_006_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (9)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (9)" style="font-size: 120%;"}
+
+[Adım 7]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_leastcost_step_007_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (10)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (10)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_leastcost_initial.html >}}
+```
+:::
+
+:::
+
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi En Yüksek Kar Yöntemi (11)
+
+::: {.callout-tip icon=false title="En Yüksek Kar Yöntemi (11)" style="font-size: 115%;"}
+
+[En Yüksek Kar Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{31} x_{31} + c_{22} x_{22} + c_{32} x_{32} + c_{13} x_{13} + c_{34} x_{34} + c_{15} x_{15} + c_{25} x_{25} \\
+  &= 7\cdot 15 + 4\cdot 7 + 6\cdot 3 + 7\cdot 20 + 9\cdot 12 + 0\cdot 15 + 0\cdot 18 \\
+  &= \mathbf{399}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (1)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (1)" style="font-size: 120%;"}
+
+Ulaştırma problemini [VAM yöntemiyle]{.light-red} çözünüz.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\09_vam_profit_xvars_with_margins.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (2)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (2)" style="font-size: 120%;"}
+
+Öncelikle tabloyu aşağıdaki gibi yeniden yazalım.
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\30_vam_step_001_before.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (3)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (3)" style="font-size: 120%;"}
+
+[Adım 1]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_001_after.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (4)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (4)" style="font-size: 120%;"}
+
+[Adım 2]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_002_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (5)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (5)" style="font-size: 120%;"}
+
+[Adım 3]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_003_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (6)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (6)" style="font-size: 120%;"}
+
+[Adım 4]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_004_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (7)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (7)" style="font-size: 120%;"}
+
+[Adım 5]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_005_after.html >}}
+```
+:::
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (8)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (8)" style="font-size: 120%;"}
+
+[Adım 6]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\31_vam_step_006_after.html >}}
+```
+:::
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (9)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (9)" style="font-size: 120%;"}
+
+[Çözüm]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_vam_initial.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi VAM Yöntemi (10)
+
+::: {.callout-tip icon=false title="VAM Yöntemi (10)" style="font-size: 115%;"}
+
+[VAM Yöntemiyle bulunan kar]{.red}
+
+[$$\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{32} x_{32} + c_{13} x_{13} + c_{34} x_{34} + c_{25} x_{25} + c_{35} x_{35} \\
+  &= 6\cdot 15 + 6\cdot 10 + 7\cdot 20 + 9\cdot 12 + 0\cdot 25 + 0\cdot 8 \\
+  &= \mathbf{398}
+\end{aligned}$$]{.light-blue}
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi Yöntemlerin Karşılaştırılması
+
+::: {.callout-tip icon=false title="Karşılaştırma" style="font-size: 115%;"}
+
+[Yöntemlerin Karşılaştırılması]{.red}
+
+* [Kuzeybatı Yöntemi]{.light-red}: [$272$]{.light-blue}
+* [Satır Yöntemi]{.light-red}: [$342$]{.light-blue}
+* [Sütun Yöntemi]{.light-red}: [$392$]{.light-blue}
+* [En Yüksek Kar Yöntemi]{.light-red}: [$399$]{.light-blue}
+* [VAM Yöntemi]{.light-red}: [$398$]{.light-blue}
+
+* [En yüksek kar, en yüksek kar yöntemiyle elde edilmiştir.]{.orange}
+
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: Başlangıç (1)
+
+::: {.callout-tip icon=false title="VAM Sonucu" style="font-size: 100%;"}
+
+[VAM Çözümü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\10_vam_initial.html >}}
+```
+:::
+şeklinde idi. Dikkat ederseniz burada, sadece [$6$]{.light-blue} tane temel değişken bulunmaktadır. Bu da bozulmaya işaret etmektedir.  Bu soru için joker hücreyi [$x_{14}$]{.light-blue} seçelim.
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue} ve [$v_j$]{.light-blue} hesabı"  style="font-size: 100%;"}
+
+[$x_{12}$]{.light-blue} joker hücre de hesaba katıldığında, [$m=4$]{.light-blue} satır ve [$n=4$]{.light-blue} sütun ve [$m+n-1=7$]{.light-blue} tane temel değişken olduğundan [$u_1=0$]{.light-blue} rastgele değeri belirlenerek diğer [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} ler hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 6 - 0 = 6 \\
+v_{3} = c_{13} - u_{1} = 7 - 0 = 7 \\
+v_{5} = c_{15} - u_{1} = 0 - 0 = 0 \\
+u_{2} = c_{25} - v_{5} = 0 - 0 = 0 \\
+u_{3} = c_{35} - v_{5} = 0 - 0 = 0 \\
+v_{2} = c_{32} - u_{3} = 6 - 0 = 6 \\
+v_{4} = c_{34} - u_{3} = 9 - 0 = 9 
+\end{aligned}$$]{.light-blue}
+
+
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (2)
+
+::: {.callout-tip icon=false title="$u_i$ ve $v_j$" style="font-size: 100%;"}
+
+[$u_i$ ve $v_j$ hesabı]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\50_vam_step_001_uv_table.html >}}
+```
+:::
+
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (3)
+
+::: {.callout-tip icon=false title="[$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Her bir [$R_{ij}$]{.light-red}, [$R_{ij} = c_{ij} - u_{i} - v_{j}$]{.light-blue} formülü ile hesaplanır.
+
+
+::: columns
+
+::: {.column width="49%"}
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 6 - 0 - 6 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 6 = -5 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 7 - 0 - 7 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 9 = -4 \\
+R_{15} = c_{15} - u_{1} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 0 - 6 = -1 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 4 - 0 - 6 = -2 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 0 - 7 = -4 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 0 - 9 = -3 \\
+R_{25} = c_{25} - u_{2} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{31} = c_{31} - u_{3} - v_{1} = 7 - 0 - 6 = 1 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 6 - 0 - 6 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 5 - 0 - 7 = -2 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 9 - 0 - 9 = 0 \\
+R_{35} = c_{35} - u_{3} - v_{5} = 0 - 0 - 0 = 0 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (4)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-70  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\50_vam_step_001_uvR_table.html >}}
+```
+:::
+[$R_{ij}$]{.light-blue} ler arasında [sıfırdan büyük]{.light-red} değerler olduğundan [optimum değildir]{.orange}. En büyük [$R_{ij}$]{.light-blue} değeri [$1$]{.light-red} olup, bu değerin bulunduğu hücre [$x_{31}$]{.light-blue}  [pivot elemandır]{.orange}. 
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (5)
+
+::: {.callout-tip icon=false title="Çevrimin oluşturulması" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\46_vam_it_001_transition.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+Negatif işaretli hücreler arasında negatif değerli olan [$8$]{.light-blue} ve [$15$]{.light-blue} arasından daha küçük olan [$8$]{.light-red} seçilir. 
+
+Çevrimdeki hücrelerin işaretine göre [$8$]{.light-red} hücre değerlerine eklenerek ya da çıkarılarak hücreler güncellenir.
+:::
+
+Pivot eleman [$x_{31}$]{.light-blue} e [$+$]{.light-blue} işareti ile başladıktan sonra, [$x_{11}$]{.light-blue} e [$-$]{.light-red}, [$x_{15}$]{.light-blue} e [$+$]{.light-blue} ve [$x_{35}$]{.light-blue} e [$-$]{.light-red} işareti verilerek çevrim tamamlanır.
+
+:::
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 1. Adım (6)
+
+::: {.callout-tip icon=false title="Güncellenmiş Çevrim" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width="66%"}
+
+
+[Çevrimin oluşturulması]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-80  .pad-cozy .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\46_vam_it_001_transition_after.html >}}
+```
+:::
+
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="32%"}
+
+
+[$X_{31}=0+8=8$]{.light-blue}, [$X_{11}=15-7=8$]{.light-blue}, [$X_{15}=0+8=8$]{.light-blue} ve [$X_{35}=8-8=0$]{.light-blue} şeklinde güncellenir. 
+
+Diğer hücre değerleri [aynı kalır]{.light-red}. 
+
+:::
+
+:::
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım Başlangıç
+
+::: {.callout-tip icon=false title="MODI 1. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 1. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\50_vam_step_002_uv_table.html >}}
+```
+:::
+şeklinde olur.
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (1)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+Joker hücre değiştiği için [$u_i$]{.light-blue} ve [$v_j$]{.light-blue} değerleri de aynı [$R_{ij}$]{.light-blue} değerleri gibi tekrar hesaplanmalıdır.
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+v_{1} = c_{11} - u_{1} = 6 - 0 = 6 \\
+v_{3} = c_{13} - u_{1} = 7 - 0 = 7 \\
+v_{5} = c_{15} - u_{1} = 0 - 0 = 0 \\
+u_{2} = c_{25} - v_{5} = 0 - 0 = 0 \\
+u_{3} = c_{31} - v_{1} = 7 - 6 = 1 \\
+v_{2} = c_{32} - u_{3} = 6 - 1 = 5 \\
+v_{4} = c_{34} - u_{3} = 9 - 1 = 8 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (2)
+
+::: {.callout-tip icon=false title="[$u_i$]{.light-blue}, [$v_j$]{.light-blue} ve [$R_{ij}$]{.light-blue} hesabı"  style="font-size: 90%;"}
+
+
+::: columns
+
+::: {.column width="49%"}
+
+
+[$$\begin{aligned}
+R_{11} = c_{11} - u_{1} - v_{1} = 6 - 0 - 6 = 0 \\
+R_{12} = c_{12} - u_{1} - v_{2} = 1 - 0 - 5 = -4 \\
+R_{13} = c_{13} - u_{1} - v_{3} = 7 - 0 - 7 = 0 \\
+R_{14} = c_{14} - u_{1} - v_{4} = 5 - 0 - 8 = -3 \\
+R_{15} = c_{15} - u_{1} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{21} = c_{21} - u_{2} - v_{1} = 5 - 0 - 6 = -1 \\
+R_{22} = c_{22} - u_{2} - v_{2} = 4 - 0 - 5 = -1 \\
+R_{23} = c_{23} - u_{2} - v_{3} = 3 - 0 - 7 = -4 
+\end{aligned}$$]{.light-blue}
+
+
+:::
+
+::: {.column width="1%"}
+
+:::
+
+
+::: {.column width="50%"}
+[$$\begin{aligned}
+R_{24} = c_{24} - u_{2} - v_{4} = 6 - 0 - 8 = -2 \\
+R_{25} = c_{25} - u_{2} - v_{5} = 0 - 0 - 0 = 0 \\
+R_{31} = c_{31} - u_{3} - v_{1} = 7 - 1 - 6 = 0 \\
+R_{32} = c_{32} - u_{3} - v_{2} = 6 - 1 - 5 = 0 \\
+R_{33} = c_{33} - u_{3} - v_{3} = 5 - 1 - 7 = -3 \\
+R_{34} = c_{34} - u_{3} - v_{4} = 9 - 1 - 8 = 0 \\
+R_{35} = c_{35} - u_{3} - v_{5} = 0 - 1 - 0 = -1 
+\end{aligned}$$]{.light-blue}
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (3)
+
+::: {.callout-tip icon=false title="$R_{ij}$" style="font-size: 100%;"}
+
+[$R_{ij}$ hesabı ve optimum kontrolü]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\50_vam_step_002_uvR_table.html >}}
+```
+:::
+Tüm [$R_{ij}$]{.light-blue} değerleri [sıfırdan küçük ya da eşit]{.light-red} olduğundan [optimuma ulaşılmıştır]{.orange}. 
+
+:::
+
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (4)
+
+::: {.callout-tip icon=false title="MODI 2. Adım Sonucu" style="font-size: 100%;"}
+
+[MODI 2. Adım Sonucu]{.red}
+
+:::{.tblbox .tbl-fs-md .w-100 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\example_max2\20_vam_modi.html >}}
+```
+:::
+Elde edilen tablodan, kar hesaplanabilir.
+
+:::
+
+## Örnek 5: Maks Amaçlı Ulaşım Problemi MODI Hesabı: 2. Adım (5)
+
+::: {.callout-tip icon=false title="Maliyet" style="font-size: 110%;"}
+
+[Optimum Kar Hesabı]{.red}
+
+[$$
+\begin{aligned}
+Z &= \sum_{i=1}^{m}\sum_{j=1}^{n} c_{ij} x_{ij} \\
+  &= c_{11} x_{11} + c_{31} x_{31} + c_{32} x_{32} + c_{13} x_{13} + c_{34} x_{34} + c_{15} x_{15} + c_{25} x_{25} \\
+  &= 6\cdot 7 + 7\cdot 8 + 6\cdot 10 + 7\cdot 20 + 9\cdot 12 + 0\cdot 8 + 0\cdot 25 \\
+  &= \mathbf{406}
+\end{aligned}
+$$]{.light-blue}
+
+olarak elde edilir.
+
+:::

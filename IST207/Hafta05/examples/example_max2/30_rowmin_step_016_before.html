@@ -1,0 +1,72 @@
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+.tbl-sim .na{color:#adb5bd}
+.tbl-sim .neg{color:#b00020;font-weight:600}
+.tbl-sim .minneg{background:#fdecea;border:2px solid #f5c2c7}
+.tbl-sim .basic{background:#eef9f1}
+.tbl-sim .degen{background:#eaf5ff;border:2px dashed #1a73e8} /* x=0 temel hücre */
+.tbl-sim tr.exh-row td:not(.alloc), .tbl-sim tr.exh-row th { background:#fdecea; }
+.tbl-sim td.exh-col:not(.alloc),    .tbl-sim th.exh-col    { background:#fdecea; }
+.pivot{background:#e8f0fe !important; box-shadow: inset 0 0 0 3px #1a73e8}
+.plus{background:#f1faf1 !important; box-shadow: inset 0 0 0 3px #2e7d32}
+.minus{background:#fff1f1 !important; box-shadow: inset 0 0 0 3px #c62828}
+.cellwrap{position:relative;min-width:76px;height:46px}
+.viol { background:#fdecea; border:2px solid #f5c2c7 }  /* generic violation */
+.pivot{ background:#e8f0fe !important; box-shadow: inset 0 0 0 3px #1a73e8; }
+.cbox{position:absolute;top:6px;right:6px;border:1px solid #adb5bd;border-radius:6px;padding:1px 6px;font-size:12px;color:#495057}
+.uvchip{display:inline-block;padding:1px 6px;border:1px solid #adb5bd;border-radius:6px;font-size:12px;margin-left:6px;color:#495057;background:#f8f9fa}
+</style>
+<table class="tbl-sim">
+<caption>Adım 16 — stepping: Stepping enter (1,4), Δ=-6 (öncesi) (Toplam Maliyet = <b>225</b>)</caption>
+<thead><tr><th></th>
+<th class='exh-col'>Hedef 1</th>
+<th class='exh-col'>Hedef 2</th>
+<th class='exh-col'>Hedef 3</th>
+<th>Hedef 4</th>
+<th class='exh-col'>Hedef 5</th>
+<th class='rhs'>Arz</th>
+</tr></thead><tbody>
+<tr>
+<th>Kaynak 1</th>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=6)</div></td>
+<td class='alloc exh-col'><div class='bold'>10</div><div class='sub'>(c=1)</div></td>
+<td class='alloc exh-col'><div class='bold'>5</div><div class='sub'>(c=7)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=5)</div></td>
+<td class='alloc exh-col'><div class='bold'>8</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>23 <span class='sub'>(35)</span></td>
+</tr>
+<tr class='exh-row'>
+<th>Kaynak 2</th>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=5)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=4)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=3)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=6)</div></td>
+<td class='alloc exh-col'><div class='bold'>25</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>25 <span class='sub'>(25)</span></td>
+</tr>
+<tr class='exh-row'>
+<th>Kaynak 3</th>
+<td class='alloc exh-col'><div class='bold'>15</div><div class='sub'>(c=7)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=6)</div></td>
+<td class='alloc exh-col'><div class='bold'>15</div><div class='sub'>(c=5)</div></td>
+<td class=''><div class='muted'>&ndash;</div><div class='sub'>(c=9)</div></td>
+<td class='exh-col'><div class='muted'>&ndash;</div><div class='sub'>(c=0)</div></td>
+<td class='rhs bold'>30 <span class='sub'>(30)</span></td>
+</tr>
+<tr><th>Talep</th>
+<td class='rhs bold exh-col'>15 <span class='sub'>(15)</span></td>
+<td class='rhs bold exh-col'>10 <span class='sub'>(10)</span></td>
+<td class='rhs bold exh-col'>20 <span class='sub'>(20)</span></td>
+<td class='rhs bold'>0 <span class='sub'>(12)</span></td>
+<td class='rhs bold exh-col'>33 <span class='sub'>(33)</span></td>
+<td class='rhs bold'>78 <span class='sub'>(90)</span></td>
+</tr>
+</tbody></table>

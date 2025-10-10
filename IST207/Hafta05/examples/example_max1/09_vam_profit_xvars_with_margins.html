@@ -1,0 +1,130 @@
+<style>
+.tbl-sim{border-collapse:collapse;margin:10px 0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px}
+.tbl-sim caption{caption-side:top;font-weight:bold;margin-bottom:6px;text-align:left}
+.tbl-sim th,.tbl-sim td{border:1px solid #dee2e6;padding:6px 10px;text-align:center}
+.tbl-sim thead th{background:#f1f3f5}
+.tbl-sim th:first-child{background:#fafafa;text-align:left}
+.tbl-sim .muted{color:#adb5bd}.tbl-sim .sub{font-size:11px;color:#6c757d}
+.tbl-sim .bold{font-weight:bold}
+.tbl-sim .alloc{background:#fff3cd;border:2px solid #f0ad4e}
+.tbl-sim .rhs{background:#e7f1fb}
+.tbl-sim .na{color:#adb5bd}
+.tbl-sim .neg{color:#b00020;font-weight:600}
+.tbl-sim .minneg{background:#fdecea;border:2px solid #f5c2c7}
+.tbl-sim .basic{background:#eef9f1}
+.tbl-sim .degen{background:#eaf5ff;border:2px dashed #1a73e8} /* x=0 temel hücre */
+.tbl-sim tr.exh-row td:not(.alloc), .tbl-sim tr.exh-row th { background:#fdecea; }
+.tbl-sim td.exh-col:not(.alloc),    .tbl-sim th.exh-col    { background:#fdecea; }
+.pivot{background:#e8f0fe !important; box-shadow: inset 0 0 0 3px #1a73e8}
+.plus{background:#f1faf1 !important; box-shadow: inset 0 0 0 3px #2e7d32}
+.minus{background:#fff1f1 !important; box-shadow: inset 0 0 0 3px #c62828}
+.cellwrap{position:relative;min-width:76px;height:46px}
+.viol { background:#fdecea; border:2px solid #f5c2c7 }  /* generic violation */
+.pivot{ background:#e8f0fe !important; box-shadow: inset 0 0 0 3px #1a73e8; }
+.cbox{position:absolute;top:6px;right:6px;border:1px solid #adb5bd;border-radius:6px;padding:1px 6px;font-size:12px;color:#495057}
+.uvchip{display:inline-block;padding:1px 6px;border:1px solid #adb5bd;border-radius:6px;font-size:12px;margin-left:6px;color:#495057;background:#f8f9fa}
+</style>
+
+  <style>
+    .tbl-sim .cellwrap{position:relative;min-width:72px;height:48px}
+    .tbl-sim .cbox{position:absolute;top:6px;right:6px;
+                   border:1px solid #adb5bd;border-radius:6px;
+                   padding:1px 6px;font-size:12px;color:#495057}
+    .tbl-sim .xvar{position:absolute;left:8px;bottom:6px;font-weight:600}
+    .tbl-sim .rhs{background:#e7f1fb}
+  </style>
+<table class="tbl-sim">
+<caption>Birim Kâr Tablosu (xᵢⱼ + kâr + Arz/Talep) — Vogel Yaklaşımı (VAM)</caption>
+<thead><tr><th></th>
+<th>Hedef 1</th>
+<th>Hedef 2</th>
+<th>Hedef 3</th>
+<th>Hedef 4</th>
+<th class='rhs'>Arz</th></tr></thead><tbody>
+<tr>
+<th>Kaynak 1</th>
+<td><div class='cellwrap'>
+           <div class='cbox'>3</div>
+           <div class='xvar'>x<sub>11</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>1</div>
+           <div class='xvar'>x<sub>12</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>2</div>
+           <div class='xvar'>x<sub>13</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>5</div>
+           <div class='xvar'>x<sub>14</sub></div>
+         </div></td>
+<td class='rhs bold'>20</td>
+</tr>
+<tr>
+<th>Kaynak 2</th>
+<td><div class='cellwrap'>
+           <div class='cbox'>5</div>
+           <div class='xvar'>x<sub>21</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>2</div>
+           <div class='xvar'>x<sub>22</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>3</div>
+           <div class='xvar'>x<sub>23</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>6</div>
+           <div class='xvar'>x<sub>24</sub></div>
+         </div></td>
+<td class='rhs bold'>15</td>
+</tr>
+<tr>
+<th>Kaynak 3</th>
+<td><div class='cellwrap'>
+           <div class='cbox'>6</div>
+           <div class='xvar'>x<sub>31</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>4</div>
+           <div class='xvar'>x<sub>32</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>4</div>
+           <div class='xvar'>x<sub>33</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>7</div>
+           <div class='xvar'>x<sub>34</sub></div>
+         </div></td>
+<td class='rhs bold'>10</td>
+</tr>
+<tr>
+<th>Kaynak 4</th>
+<td><div class='cellwrap'>
+           <div class='cbox'>3</div>
+           <div class='xvar'>x<sub>41</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>2</div>
+           <div class='xvar'>x<sub>42</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>3</div>
+           <div class='xvar'>x<sub>43</sub></div>
+         </div></td>
+<td><div class='cellwrap'>
+           <div class='cbox'>4</div>
+           <div class='xvar'>x<sub>44</sub></div>
+         </div></td>
+<td class='rhs bold'>45</td>
+</tr>
+<tr><th>Talep</th>
+<td class='rhs bold'>30</td>
+<td class='rhs bold'>16</td>
+<td class='rhs bold'>24</td>
+<td class='rhs bold'>20</td>
+<td class='rhs bold'>90</td></tr>
+</tbody></table>
