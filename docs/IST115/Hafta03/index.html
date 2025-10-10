@@ -1,0 +1,2762 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.23">
+
+  <meta name="author" content="Doç. Dr.&nbsp;Erhan Çene">
+  <meta name="dcterms.date" content="2025-02-10">
+  <title>IST115 - Doğrusal Programlama I ve IST207 - Yöneylem Araştırması Ders Notları – Hafta 03</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-00ac2f6af1389919a18f42df5b7c0002.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Hafta 03</h1>
+  <p class="subtitle">Grafikle Çözüm Yöntemi ve Çözüme Uygun Bölge</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Doç. Dr.&nbsp;Erhan Çene 
+</div>
+</div>
+</div>
+
+  <p class="date">02/10/2025</p>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">source</span>(<span class="st">"lp_plot.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'scales' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggrepel' was built under R version 4.3.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">source</span>(<span class="st">'lp_step_by_step.R'</span>)</span>
+<span id="cb5-2"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ readr::col_factor() masks scales::col_factor()
+✖ purrr::discard()    masks scales::discard()
+✖ dplyr::filter()     masks stats::filter()
+✖ dplyr::lag()        masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+</section>
+<section id="temel-kavramlar" class="slide level2">
+<h2>Temel Kavramlar</h2>
+<div title="Temel Kavramlar" style="font-size: 130%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Temel Kavramlar</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red"><strong>Çözüm:</strong></span> Bir doğrusal programlama probleminin kısıtlayıcı fonksiyonlarının hepsini birden sağlayan karar değişkenlerinin <span class="light-red">(<span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, …, <span class="math inline">\(x_n\)</span>)</span> oluşturduğu kümeye <span class="light-red">çözüm</span> denir.</li>
+<li><span class="light-red"><strong>Uygun çözüm:</strong></span> Negatif olmama koşulunu sağlayan çözüme <span class="light-red">uygun çözüm</span> denir.</li>
+<li><span class="light-red"><strong>En iyi çözüm:</strong></span> Amaç fonksiyonuna en iyi değeri (en küçük veya en büyük) sağlayan uygun çözüme <span class="light-red">en iyi çözüm</span> denir.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="grafik-çözüm-yöntemi" class="slide level2">
+<h2>Grafik Çözüm Yöntemi</h2>
+<div title="Grafik Çözüm Yöntemi" style="font-size: 130%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Grafik Çözüm Yöntemi</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>İki karar değişkenli doğrusal programlama problemlerini <span class="light-red">grafik yöntemle</span> çözülebilir.</li>
+<li>Üç ve üçten fazla karar değişkeni olduğunda grafik yöntem ile çözüm çok kolay olmamaktadır. Bu durumda çözüm ilerleyen haftalarda göreceğimiz üzere <span class="light-red">simpleks yöntem</span> ile çözülecektir.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="konveks-alan" class="slide level2">
+<h2>Konveks Alan</h2>
+<div title="Konveks Alan" style="font-size: 120%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Konveks Alan</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Grafiksel yöntemle çözülen DP problemlerinde <span class="light-red">optimum çözüm var olduğunda</span>, mümkün çözüm bölgesi <span class="light-red">konveks (dışbükey)</span> bir alan olarak ortaya çıkmaktadır.
+<ul>
+<li>Geometrik anlamda konveks (dışbükey) bir alan, <span class="light-red">kenarlarında çukurlaşmalar olmayan</span> ve <span class="light-red">içinde boşluklar</span> olmayan bir alandır.</li>
+<li>Diğer bir ifadeyle konveks bir alan içerisinde seçilen <span class="light-red">herhangi iki noktayı birleştiren doğrunun tamamı bu alan içerisinde kalır</span>.</li>
+<li><span class="light-blue">Daire</span>, <span class="light-blue">yamuk</span>, <span class="light-blue">kare</span> konveks bir alandır.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="dışbükey-konveks-örnekler" class="slide level2">
+<h2>Dışbükey (Konveks) örnekler</h2>
+<ul>
+<li>Konveks Alanlara Örnekler</li>
+</ul>
+
+<img data-src="images/konveks.png" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption">konveks</p></section>
+<section id="konkav-alan" class="slide level2">
+<h2>Konkav Alan</h2>
+<div title="Konkav Alan" style="font-size: 140%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Konkav Alan</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir DP probleminin belirlediği mümkün çözüm bölgesi, <span class="light-red">konkav (içbükey)</span> bir alan oluşturuyorsa bu problemin <span class="light-red">çözümü yoktur</span>.
+<ul>
+<li>Çünkü konkav bir alan içinde seçilen <span class="light-red">herhangi iki noktayı birleştiren doğrunun tamamı bu alan içinde kalmamaktadır</span>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="içbükey-konkav-örnekler" class="slide level2">
+<h2>İçbükey (Konkav) örnekler</h2>
+<ul>
+<li>Konkav Alanlara Örnekler</li>
+</ul>
+
+<img data-src="images/konkav.png" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption">konkav</p></section>
+<section id="grafik-çözüm-yönteminin-aşamaları" class="slide level2">
+<h2>Grafik Çözüm Yönteminin Aşamaları</h2>
+<div title="Grafik Çözüm Yönteminin Aşamaları" style="font-size: 130%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Grafik Çözüm Yönteminin Aşamaları</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama probleminin grafik çözümünde aşağıdaki adımlar izlenir:</li>
+</ul>
+<p><span class="light-red">1</span>. Değişkenlerin koordinat sisteminin <span class="light-red">yatay</span> ve <span class="light-red">dikey</span> eksenlerine yerleştirilmesi,</p>
+<p><span class="light-red">2</span>. <span class="light-red">Kısıtlayıcı</span> fonksiyonların grafiğinin çizilmesi,</p>
+<p><span class="light-red">3</span>. <span class="light-red">Uygun çözüm</span> bölgesinin belirlenmesi,</p>
+<p><span class="light-red">4</span>. <span class="light-red">En iyi çözümün</span> araştırılması.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="değişkenlerin-koordinat-sistemine-yerleştirilmesi" class="slide level2">
+<h2>1) Değişkenlerin Koordinat Sistemine Yerleştirilmesi</h2>
+<div title="1-Değişkenlerin Koordinat Sistemine Yerleştirilmesi" style="font-size: 100%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>1-Değişkenlerin Koordinat Sistemine Yerleştirilmesi</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-2-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 120%;">
+<ul>
+<li>Problemimiz iki değişkenli olduğundan <span class="light-red"><span class="math inline">\(x_1 \geq 0\)</span></span> yatay eksende ve <span class="light-red"><span class="math inline">\(x_2 \geq 0\)</span></span> dikey eksende gösterilir.</li>
+<li>Negatif olmama kısıtından dolayı genellikle <span class="light-red"><span class="math inline">\(x_1 \geq 0\)</span></span> ve <span class="light-red"><span class="math inline">\(x_2 \geq 0\)</span></span> olduğundan ilk önce, diğer kısıtlara bakılmaksızın uygun <span class="light-red">çözüm belgesi birinci bölgenin</span> içinde yer alacaktır.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="kısıtlayıcı-fonksiyonların-grafiğinin-çizilmesi" class="slide level2">
+<h2>2) Kısıtlayıcı fonksiyonların grafiğinin çizilmesi,</h2>
+<div title="2-Kısıtlayıcı fonksiyonların grafiğinin çizilmesi" style="font-size: 120%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>2-Kısıtlayıcı fonksiyonların grafiğinin çizilmesi</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Doğrusal eşitsizliklerin ve kısıtlayıcıların grafiğini çizmek için <span class="light-red">iki adım</span> vardır:</p>
+<p><span class="light-red">1)</span> Doğrusal eşitsizlikler, <span class="light-red">eşitlikmiş gibi kabul edilerek</span>, bunların sınırlarını gösteren doğrular çizilir.</p>
+<p><span class="light-red">2)</span> Doğrunun hangi tarafının <span class="light-red">eşitsizlikle verilen koşulu sağladığı</span> belirlenir.</p></li>
+<li><p>Adımlara devam etmeden önce şu ana kadar gördüklerimizi bir örnek üzerinde görelim.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-1" class="slide level2">
+<h2>Örnek 1 (1)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = 20 x_1 + 15 x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 \leq 100\)</span></span> (teyp)</li>
+<li><span class="light-blue"><span class="math inline">\(x_2 \leq 100\)</span></span> (radyo)</li>
+<li><span class="light-blue"><span class="math inline">\(50x_1 + 35x_2 \leq 6000\)</span></span> (nakit durumu)</li>
+<li><span class="light-blue"><span class="math inline">\(20x_1 + 15x_2 \geq 2000\)</span></span> (aktif/pasif oranı)</li>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span> olduğundan optimum çözüm sadece birinci bölgede olmalıdır.</li>
+</ul>
+</div><div class="column fragment" data-fragment-index="3" style="width:45%;">
+<p><span class="red">1. kısıt</span> <span class="light-red"><span class="math inline">\(x_1 \leq 100\)</span></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-3-1.png" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-2" class="slide level2">
+<h2>Örnek 1 (2)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = 20 x_1 + 15 x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 \leq 100\)</span></span> (teyp)</li>
+<li><span class="light-blue"><span class="math inline">\(x_2 \leq 100\)</span></span> (radyo)</li>
+<li><span class="light-blue"><span class="math inline">\(50x_1 + 35x_2 \leq 6000\)</span></span> (nakit durumu)</li>
+<li><span class="light-blue"><span class="math inline">\(20x_1 + 15x_2 \geq 2000\)</span></span> (aktif/pasif oranı)</li>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span> olduğundan optimum çözüm sadece birinci bölgede olmalıdır.</li>
+</ul>
+</div><div class="column fragment" data-fragment-index="4" style="width:45%;">
+<p><span class="red">1. kısıt</span> <span class="light-red"><span class="math inline">\(x_1 \leq 100\)</span></span> ve <span class="red">2. kısıt</span> <span class="light-red"><span class="math inline">\(x_2 \leq 100\)</span></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-4-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-3" class="slide level2">
+<h2>Örnek 1 (3)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 96%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="red">3. kısıt</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(50x_1 + 35x_2 \leq 6000\)</span></span> için doğru denklemini çizebilmek için, doğrunun eksenleri kestiği yerleri belirlemeliyiz.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Denklemde <span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 35x_2 = 6000 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{6000}{35}=171.4286\)</span></span> ve</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Denklemde <span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 50x_1 = 6000 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{6000}{50}=120\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 171.4286)\)</span></span> ve <span class="light-red"><span class="math inline">\((120,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div><div class="column fragment" data-fragment-index="4" style="width:45%;">
+<p><span class="red">1. kısıt</span> <span class="light-red"><span class="math inline">\(x_1 \leq 100\)</span></span>, <span class="red">2. kısıt</span> <span class="light-red"><span class="math inline">\(x_2 \leq 100\)</span></span> ve <br> <span class="red">3. kısıt</span> <span class="light-red"><span class="math inline">\(50x_1 + 35x_2 \leq 6000\)</span></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-5-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-4" class="slide level2">
+<h2>Örnek 1 (4)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 85%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="red">4. kısıt</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(20x_1 + 15x_2 \geq 2000\)</span></span> için doğru denklemini çizebilmek için, doğrunun eksenleri kestiği yerleri belirlemeliyiz.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Denklemde <span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 15x_2 = 2000 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{2000}{15}=133.3333\)</span></span> ve</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Denklemde <span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 20x_1 = 2000 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{2000}{20}=100\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 133.3333)\)</span></span> ve <span class="light-red"><span class="math inline">\((100,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div><div class="column fragment" data-fragment-index="4" style="width:45%;">
+<p><span class="red">1. kısıt</span> <span class="light-red"><span class="math inline">\(x_1 \leq 100\)</span></span>, <span class="red">2. kısıt</span> <span class="light-red"><span class="math inline">\(x_2 \leq 100\)</span></span>, <br> <span class="red">3. kısıt</span> <span class="light-red"><span class="math inline">\(50x_1 + 35x_2 \leq 6000\)</span></span> ve <br><span class="red">4. kısıt</span> <span class="light-red"><span class="math inline">\(20x_1 + 15x_2 \geq 2000\)</span></span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-6-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="uygun-çözüm-bölgesinin-belirlenmesi" class="slide level2">
+<h2>3) Uygun çözüm bölgesinin belirlenmesi</h2>
+<div title="3-Uygun çözüm bölgesinin belirlenmesi" style="font-size: 120%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>3-Uygun çözüm bölgesinin belirlenmesi</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Uygun bölgenin sınırları, kısıtlayıcılarla ifade edilen ve çizilen doğrusal eşitsizliklerin grafiği ile belirlenir.</li>
+<li>Tüm kısıtlayıcı koşullarının uygun düştüğü bölgenin ortak kesişim yeri <span class="light-red">uygun bölgedir</span>.</li>
+<li>Uygun bölgenin sınırları doğru çizgileridir. Bu doğrular, <span class="light-red">köşe noktası</span> olarak bilinen noktalarda kesişir.</li>
+<li>Doğrusal programlamanın en önemli özelliklerinden birisi <span class="light-red">optimal çözümün her zaman uygun bölgenin bir köşe noktasında yer almasıdır</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-5" class="slide level2">
+<h2>Örnek 1 (5)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-7-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen <span class="light-red">aday noktaların</span> koordinatlarını bulmak için her denklem çiftinin <span class="light-red">kesişim noktalarını</span> bulmak gerekir.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(20x_1+15x_2=2000\)</span></span> ve <span class="light-red"><span class="math inline">\(x_2=100\)</span></span> denklemlerinin kesişim noktası <span class="light-blue"><span class="math inline">\(20x_1+15\cdot100=2000 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(20x_1 = 500\)</span></span> ve <span class="light-red"><span class="math inline">\(x_1 = 25\)</span></span> olur.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(50x_1+35x_2=6000\)</span></span> ve <span class="light-red"><span class="math inline">\(x_2=100\)</span></span> denklemlerinin kesişim noktası <span class="light-blue"><span class="math inline">\(50x_1+35\cdot100=6000\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(50x_1 = 2500\)</span></span> ve <span class="light-red"><span class="math inline">\(x_1 = 50\)</span></span> olur.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-6" class="slide level2">
+<h2>Örnek 1 (6)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-8-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(20x_1+15x_2=2000\)</span></span>, <span class="light-blue"><span class="math inline">\(x_1=100\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2=0\)</span></span> denklemlerinin kesişim noktası <span class="light-red"><span class="math inline">\(x_1=100\)</span></span> ve <span class="light-red"><span class="math inline">\(x_2=0\)</span></span> olur.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(50x_1+35x_2=6000\)</span></span> ve <span class="light-red"><span class="math inline">\(x_1=100\)</span></span> denklemlerinin kesişim noktası <span class="light-blue"><span class="math inline">\(50\cdot100+35x_2=6000\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(35x_2 = 1000\)</span></span> ve <span class="light-red"><span class="math inline">\(x_2 = 28.57\)</span></span> olur.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Bu durumda tüm aday noktalar <span class="light-red"><span class="math inline">\((25,100)\)</span></span>,<span class="light-red"><span class="math inline">\((50,100)\)</span></span>,<span class="light-red"><span class="math inline">\((100,0)\)</span></span> ve <span class="light-red"><span class="math inline">\((100,28.57)\)</span></span> olur.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="en-iyi-çözümün-araştırılması." class="slide level2">
+<h2>4) En iyi çözümün araştırılması.</h2>
+<div title="4-En iyi çözümün araştırılması" style="font-size: 140%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>4-En iyi çözümün araştırılması</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>En iyi çözüm ise <span class="light-red">aday noktalardaki değişken değerleri amaç fonksiyonuna yazılarak bulunur</span>.</li>
+<li>Bir <span class="light-red">en çoklama (maksimizasyon)</span> probleminde <span class="light-red">amaç fonksiyonunu en büyük</span> yapan, bir <span class="light-red">en azaltma (minimizasyon)</span> probleminde ise <span class="light-red">amaç fonksiyonunu en küçük</span> yapan <span class="light-red">aday nokta</span>, <span class="light-red">optimum çözüme</span> sahip noktadır.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-7" class="slide level2">
+<h2>Örnek 1 (7)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Her bir <span class="light-red">aday nokta</span>, <span class="light-red">amaç fonksiyonunda</span> yerine yazılarak <span class="light-red">amaç fonksiyonunun</span> değerini <span class="light-red">maksimum</span> yapan nokta bulunmalıdır.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Amaç fonksiyonu <span class="light-blue"><span class="math inline">\(max \quad{} z=20x_1+15x_2\)</span></span> ve</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Birinci aday nokta, <span class="light-red"><span class="math inline">\((25,100)\)</span></span> olduğundan,</li>
+</ul>
+<p><span class="light-blue"><span class="math display">\[\begin{aligned}
+z_{(25,100)}&amp;=20\cdot 25+15\cdot 100 \\
+&amp;=500+1500=2000
+\end{aligned}\]</span></span></p>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-9-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-8" class="slide level2">
+<h2>Örnek 1 (8)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 85%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>İkinci aday nokta <span class="light-red"><span class="math inline">\((50,100)\)</span></span> olduğundan, <span class="light-blue"><span class="math display">\[\begin{aligned}
+z_{(50,100)}&amp;=20\cdot 50+15\cdot 100 \\
+&amp;=1000+1500=2500
+\end{aligned}\]</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Üçüncü aday nokta <span class="light-red"><span class="math inline">\((100,0)\)</span></span> olduğundan, <span class="light-blue"><span class="math display">\[\begin{aligned}
+z_{(100,0)}&amp;=20\cdot 100+15\cdot 0\\
+&amp;=2000+0=2000
+\end{aligned}\]</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Dördüncü aday nokta <span class="light-red"><span class="math inline">\((100,28.57)\)</span></span> olduğundan, <span class="light-blue"><span class="math display">\[\begin{aligned}
+z_{(100,0)}&amp;=20\cdot 100+15\cdot 28.57\\
+&amp;=2000+428.5714=2428.5714\approx 2429
+\end{aligned}\]</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-10-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-9" class="slide level2">
+<h2>Örnek 1 (9)</h2>
+<div title="Örnek 1: Teyp-Radyo" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Teyp-Radyo</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><span class="light-red"><span class="math inline">\((50,100)\)</span></span> noktası aday noktalar arasından <span class="light-blue"><span class="math inline">\(2500\)</span></span> ile <span class="light-red">amaç fonksiyonunu maksimum yapan değer</span> olduğundan <span class="orange">optimum</span> noktadır.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-11-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-1" class="slide level2">
+<h2>Örnek 2 (1)</h2>
+<div title="Örnek 2" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = 6 x_1 + 8 x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(7x_1 + 3x_2 \leq 21\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(6x_1 + 7x_2 \leq 42\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 \leq 3\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_2 \leq 4\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span><br>
+</li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(7x_1 + 3x_2 \leq 21\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 3x_2 = 21 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{21}{3}=7\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 7x_1 = 21 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{21}{7}=3\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 7)\)</span></span> ve <span class="light-red"><span class="math inline">\((3,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(6x_1 + 7x_2 \leq 42\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 7x_2 = 42 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{42}{7}=6\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 6x_1 = 42 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{42}{6}=7\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 6)\)</span></span> ve <span class="light-red"><span class="math inline">\((7,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-2" class="slide level2">
+<h2>Örnek 2 (2)</h2>
+<div title="Örnek 2" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 \leq 3\)</span></span> denklemi dikey bir doğru belirtir.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">4. kısıt</span> <span class="light-blue"><span class="math inline">\(x_2 \leq 4\)</span></span> denklemi yatay bir doğru belirtir.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math inline">\(x_1 \geq 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 \geq 0\)</span></span> ise çözümün birinci bölgede aranacağını gösterir.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-12-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-3" class="slide level2">
+<h2>Örnek 2 (3)</h2>
+<div title="Örnek 2" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = 6x_1 + 8x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en büyük değer aranır.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 4\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\((0,4)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,4)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 6 \cdot 0 + 8 \cdot 4 = 32\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 4\)</span></span> ve <span class="light-blue"><span class="math inline">\(7x_1 + 3x_2 = 21\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(7x_1+3\cdot 4=21\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(7x_1 = 9\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 = \frac{9}{7}=1.285714\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((1.285714,4)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 6 \cdot 1.285714 + 8 \cdot 4 = 39.714\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> noktalarının kesişimi
+<ul>
+<li><span class="light-blue"><span class="math inline">\((0,0)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 6 \cdot 0 + 8 \cdot 0 = 0\)</span></span> dır.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-4" class="slide level2">
+<h2>Örnek 2 (4)</h2>
+<div title="Örnek 2" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(7x_1 + 3x_2 = 21\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(7x_1+3 \cdot 0=21\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(7x_1 = 21\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 = 3\)</span></span> olur. Bu iki doğrunun kesişimi başka bir kısıt olan <span class="light-blue"><span class="math inline">\(x_1 = 3\)</span></span> doğrusundan da geçmektedir.</li>
+<li><span class="light-red"><span class="math inline">\((3,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 6 \cdot 3 + 8 \cdot 0 = 18\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Kısıtlardan <span class="light-blue"><span class="math inline">\(6x_1 + 7x_2 = 42\)</span></span> eşitsizliğinin sonuca hiç bir etkisi yoktur.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="6">
+<ul>
+<li><span class="light-red"><span class="math inline">\((1.285714,4)\)</span></span> <span class="orange">noktası aday noktalar arasından</span> <span class="light-blue"><span class="math inline">\(39.714\)</span></span> <span class="orange">ile amaç fonksiyonunu maksimum yapan değer olduğundan optimum noktadır.</span></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-5" class="slide level2">
+<h2>Örnek 2 (5)</h2>
+
+<img data-src="index_files/figure-html/unnamed-chunk-13-1.png" width="1056" class="r-stretch"></section>
+<section id="örnek-3-1" class="slide level2">
+<h2>Örnek 3 (1)</h2>
+<div title="Örnek 3" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = x_1 + 3 x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 + x_2 \leq 8\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 8\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_2 \geq 3\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + x_2 \leq 8\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 8)\)</span></span> ve <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 8\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{8}{2}=4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 4)\)</span></span> ve <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-2" class="slide level2">
+<h2>Örnek 3 (2)</h2>
+<div title="Örnek 3" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(x_2 \geq 3\)</span></span> denklemi yatay bir doğru belirtir.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math inline">\(x_1 \geq 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 \geq 0\)</span></span> ise çözümün birinci bölgede aranacağını gösterir.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-14-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-3" class="slide level2">
+<h2>Örnek 3 (3)</h2>
+<div title="Örnek 3" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = x_1 + 3x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en büyük değer aranır.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1+x_2 = 8\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\((0,8)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,8)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 0 + 3 \cdot 8 = 24\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 = 8\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(2x_2=8\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{8}{2}=4\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,4)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 0 + 3 \cdot 4 = 12\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-4" class="slide level2">
+<h2>Örnek 3 (4)</h2>
+<div title="Örnek 3" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 3\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 = 8\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2 \cdot 3=8\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = 2\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((2,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 + 3 \cdot 3 = 11\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 3\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + x_2 = 8\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 3=8\Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = 5\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((5,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 5 + 3 \cdot 3 = 14\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li><span class="light-red"><span class="math inline">\((0,8)\)</span></span> <span class="orange">noktası aday noktalar arasından</span> <span class="light-blue"><span class="math inline">\(24\)</span></span> <span class="orange">ile amaç fonksiyonunu maksimum yapan değer olduğundan optimum noktadır.</span></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-5" class="slide level2">
+<h2>Örnek 3 (5)</h2>
+
+<img data-src="index_files/figure-html/unnamed-chunk-15-1.png" width="1056" class="r-stretch"></section>
+<section id="örnek-4-1" class="slide level2">
+<h2>Örnek 4 (1)</h2>
+<div title="Örnek 4" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(min \quad{} z = 3x_1 + 5x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1 + x_2 \geq 9\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 8\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 5x_2 \geq 10\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(3x_1 + x_2 \geq 9\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 9\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 3x_1 = 9\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 = 3\)</span></span> olur.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 9)\)</span></span> ve <span class="light-red"><span class="math inline">\((3,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 8\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{8}{2}=4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 4)\)</span></span> ve <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-2" class="slide level2">
+<h2>Örnek 4 (2)</h2>
+<div title="Örnek 4" style="font-size: 85%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 5x_2 \geq 10\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 5x_2 = 10 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{10}{5}=2\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 10\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 2)\)</span></span> ve <span class="light-blue"><span class="math inline">\((10,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-16-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-3" class="slide level2">
+<h2>Örnek 4 (3)</h2>
+<div title="Örnek 4" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = 3x_1 + 5x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en küçük değer aranır.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(3x_1+x_2 = 9\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\((0,9)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,9)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 3 \cdot 0 + 5 \cdot 9 = 45\)</span></span> tir.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1+x_2 = 9\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 = 8\)</span></span> denklemlerinin kesişim noktası birinci denklem <span class="math inline">\(-2\)</span> ile çarpılıp ikinci denkleme eklenerek
+<ul>
+<li><span class="light-blue"><span class="math inline">\(-5x_1=-10 \Rightarrow x_1 = 2\)</span></span> ve <span class="light-blue"><span class="math inline">\(3 \cdot 2 + x_2 = 9 \Rightarrow x_2=3\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((2,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 3 \cdot 2 + 5 \cdot 3 = 21\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-4" class="slide level2">
+<h2>Örnek 4 (4)</h2>
+<div title="Örnek 4" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1+2x_2 = 8\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + 5x_2 = 10\)</span></span> denklemlerinin kesişim noktası birinci denklem <span class="math inline">\(-1\)</span> ile çarpılıp ikinci denkleme eklenerek
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_2=2 \Rightarrow x_2 = \frac{2}{3}=0.667\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1+2 \cdot 0.667 = 8 \Rightarrow x_1 = 6.667\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((6.667,0.667)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 3 \cdot 6.667 + 5 \cdot 0.667 = 23.336\)</span></span> dır.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 + 5x_2 = 10\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 10\)</span></span> olur.</li>
+<li><span class="light-red"><span class="math inline">\((10,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 3 \cdot 10 + 5 \cdot 0 = 30\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li><span class="light-red"><span class="math inline">\((2,3)\)</span></span> <span class="orange">noktası aday noktalar arasından</span> <span class="light-blue"><span class="math inline">\(21\)</span></span> <span class="orange">ile amaç fonksiyonunu minimum yapan değer olduğundan optimum noktadır.</span></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-5" class="slide level2">
+<h2>Örnek 4 (5)</h2>
+
+<img data-src="index_files/figure-html/unnamed-chunk-17-1.png" width="1056" class="r-stretch"></section>
+<section id="örnek-5-1" class="slide level2">
+<h2>Örnek 5 (1)</h2>
+<div title="Örnek 5" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 5</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(min \quad{} z = 2x_1 + 3x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1 + 2x_2 \geq 6\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 - 2x_2 \leq 4\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 \leq 5\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_2 \leq 3\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(3x_1 + 2x_2 \geq 6\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 6 \Rightarrow x_2 = 3\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 3x_1 = 6\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 = 2\)</span></span> olur.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 3)\)</span></span> ve <span class="light-red"><span class="math inline">\((2,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 - 2x_2 \leq 4\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow -2x_2 = 4 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{4}{-2}=-2\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, -2)\)</span></span> ve <span class="light-red"><span class="math inline">\((4,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-5-2" class="slide level2">
+<h2>Örnek 5 (2)</h2>
+<div title="Örnek 5" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 5</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 \leq 5\)</span></span> denklemi dikey bir doğru belirtir.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">4. kısıt</span> <span class="light-blue"><span class="math inline">\(x_2 \leq 3\)</span></span> denklemi dikey bir doğru belirtir.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-18-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-5-3" class="slide level2">
+<h2>Örnek 5 (3)</h2>
+<div title="Örnek 5" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 5</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = 2x_1 + 3x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en küçük değer aranır.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 3\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\((0,3)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((0,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 0 + 3 \cdot 3 = 9\)</span></span> dur.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 5\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 3\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\((5,3)\)</span></span> noktası olur.</li>
+<li><span class="light-red"><span class="math inline">\((5,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 5 + 3 \cdot 3 = 19\)</span></span> dur.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-5-4" class="slide level2">
+<h2>Örnek 5 (4)</h2>
+<div title="Örnek 5" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 5</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1+2x_2 = 6\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1 = 6 \Rightarrow x_1 = 2\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((2,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 2 + 3 \cdot 0 = 4\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1-2x_2 = 4\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 4\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((4,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 4 + 3 \cdot 0 = 8\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1-2x_2 = 4\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1 = 5\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(5 - 2x_2 = 4 \Rightarrow - 2x_2 = -1 \Rightarrow x_2 = 0.5\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((5,0.5)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 5 + 3 \cdot 0.5 = 11.5\)</span></span> dir.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<ul>
+<li><span class="light-red"><span class="math inline">\((2,0)\)</span></span> <span class="orange">noktası aday noktalar arasından</span> <span class="light-blue"><span class="math inline">\(4\)</span></span> <span class="orange">ile amaç fonksiyonunu minimum yapan değer olduğundan optimum noktadır.</span></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-5-5" class="slide level2">
+<h2>Örnek 5 (5)</h2>
+
+<img data-src="index_files/figure-html/unnamed-chunk-19-1.png" width="1056" class="r-stretch"></section>
+<section id="grafiksel-çözümde-karşılaşabilecek-özel-haller" class="slide level2">
+<h2>Grafiksel Çözümde Karşılaşabilecek Özel Haller</h2>
+<div title="Grafik Çözüm Yöntemi" style="font-size: 130%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Grafik Çözüm Yöntemi</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="light-red">1)</span> Bir DP probleminin <span class="light-red">birden fazla optimum çözüme</span> sahip olması.</p>
+<p><span class="light-red">2)</span> Bir DP probleminin <span class="light-red">tek bir çözüme</span> sahip olması.</p>
+<p><span class="light-red">3)</span> Uygun çözümün <span class="light-red">sınırsız</span> olması</p>
+<p><span class="light-red">4)</span> Mümkün çözüm <span class="light-red">olmaması</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-6-birden-fazla-optimum-çözüme-sahip-olması-1" class="slide level2">
+<h2>Örnek 6: Birden fazla optimum çözüme sahip olması (1)</h2>
+<div title="Örnek 6: Birden fazla optimum çözüme sahip olması (1)" style="font-size: 74%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 6: Birden fazla optimum çözüme sahip olması (1)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = x_1 + x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 + x_2 \leq 5\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \leq 8\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(5x_1 + x_2 \leq 20\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + x_2 \leq 5\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 5\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 5\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 5)\)</span></span> ve <span class="light-red"><span class="math inline">\((5,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \leq 8\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 8 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = \frac{8}{2}=4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 4)\)</span></span> ve <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-6-birden-fazla-optimum-çözüme-sahip-olması-2" class="slide level2">
+<h2>Örnek 6: Birden fazla optimum çözüme sahip olması (2)</h2>
+<div title="Örnek 6: Birden fazla optimum çözüme sahip olması (2)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 6: Birden fazla optimum çözüme sahip olması (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(5x_1+x_2 \leq 20\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 20\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 5x_1 = 20 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{20}{5}=4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 20)\)</span></span> ve <span class="light-red"><span class="math inline">\((4,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-20-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-6-birden-fazla-optimum-çözüme-sahip-olması-3" class="slide level2">
+<h2>Örnek 6: Birden fazla optimum çözüme sahip olması (3)</h2>
+<div title="Örnek 6: Birden fazla optimum çözüme sahip olması (3)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 6: Birden fazla optimum çözüme sahip olması (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktaların koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = x_1 + x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en büyük değer aranır.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-red"><span class="math inline">\((0,0)\)</span></span> noktası olur. Bu noktanın amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 0 + 0 = 0\)</span></span> dır.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1+2x_2 = 8\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(0+2x_2 = 8 \Rightarrow x_2 = 4\)</span></span> olduğundan</li>
+<li><span class="light-red"><span class="math inline">\((0,4)\)</span></span> noktası olur. Bu noktanın amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 0+4 = 4\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1+x_2 = 5\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_1+2x_2 = 8\)</span></span> denklemlerinin kesişim noktası birinci denklem -1 ile çarpılım ikinci denklem ile toplanarak bulunur.
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 3 \Rightarrow x_1+3 = 5 \Rightarrow x_1=2\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((2,3)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 + 3 = 5\)</span></span> tir.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-6-birden-fazla-optimum-çözüme-sahip-olması-4" class="slide level2">
+<h2>Örnek 6: Birden fazla optimum çözüme sahip olması (4)</h2>
+<div title="Örnek 6: Birden fazla optimum çözüme sahip olması (3)" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 6: Birden fazla optimum çözüme sahip olması (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:63%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1+x_2 = 5\)</span></span> ve <span class="light-blue"><span class="math inline">\(5x_1+x_2 = 20\)</span></span> denklemlerinin kesişim noktası birinci denklem -1 ile çarpılım ikinci denklem ile toplanarak bulunur.
+<ul>
+<li><span class="light-blue"><span class="math inline">\(4x_2 = 15 \Rightarrow x_2 = 3.75 \Rightarrow\)</span></span> <br> <span class="light-blue"><span class="math inline">\(3.75 + x_2 =5 \Rightarrow x_2 = 1.25\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((3.75,1.25)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 3.75 + 1.25 = 5\)</span></span> tir.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> ve <span class="light-blue"><span class="math inline">\(5x_1+x_2 = 20\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(5x_1 = 20 \Rightarrow x_1 = 4\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((4,0)\)</span></span> noktasının amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 4+0 = 4\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-6-birden-fazla-optimum-çözüme-sahip-olması-5" class="slide level2">
+<h2>Örnek 6: Birden fazla optimum çözüme sahip olması (5)</h2>
+<div class="columns">
+<div class="column" style="font-size: 65%;">
+<ul>
+<li>Aday noktalardan <span class="light-red"><span class="math inline">\((2,3)\)</span></span> ve <span class="light-red"><span class="math inline">\((3.75,1.25)\)</span></span> <span class="orange">noktalarından her ikisi de</span> <span class="light-blue"><span class="math inline">\(5\)</span></span> değeri <span class="orange">ile amaç fonksiyonunu maksimum yapan değer olduğundan her ikisi de optimum noktadır.</span></li>
+<li>Dahası <span class="light-blue"><span class="math inline">\(x_1+x_2=5\)</span></span> denklemi üzerinde bulunan ve <span class="light-red"><span class="math inline">\((2,3)\)</span></span> ile <span class="light-red"><span class="math inline">\((3.75,1.25)\)</span></span> noktaları arasındaki <span class="orange">tüm noktalar için amaç fonksiyonu 5 olduğundan bu aralıktaki tüm noktalar optimum çözüme sahiptir</span>.</li>
+<li>Bu optimum çözümlerin hepsi geçerlidir ve herhangi birinin diğerine göre bir üstünlüğü yoktur.</li>
+<li>Bu şekilde sonsuz farklı noktanın optimum nokta olabildiği bir doğrusal programlama problemi <span class="orange">tam olarak formülize edilememiş</span> demektir. Problemin <span class="orange">fazladan kısıtlara</span> ihtiyacı vardır.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="örnek-7-bir-dp-probleminin-tek-bir-çözüme-sahip-olması-1" class="slide level2">
+<h2>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (1)</h2>
+<div title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (1)" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (1)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(min \quad{} z = 3x_1 + 4x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(5x_1 + 3x_2 \geq 29\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(2x_1 + x_2 \geq 10\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(3x_1 - 4x_2 \geq 24\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(5x_1 + 3x_2 \geq 29\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 3x_2 = 29 \Rightarrow x_2=9.67\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 5x_1 = 29 \Rightarrow x_1=5.8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 9.67)\)</span></span> ve <span class="light-red"><span class="math inline">\((5.8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(2x_1 + x_2 \geq 10\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 10\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 2x_1 = 10 \Rightarrow x_1 = 5\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 10)\)</span></span> ve <span class="light-red"><span class="math inline">\((5,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-7-bir-dp-probleminin-tek-bir-çözüme-sahip-olması-2" class="slide level2">
+<h2>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (2)</h2>
+<div title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (2)" style="font-size: 85%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(3x_1-4x_2 \geq 24\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow -4x_2 = 24 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2=-6\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 3x_1 = 24 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = 8\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, -6)\)</span></span> ve <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-22-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-7-bir-dp-probleminin-tek-bir-çözüme-sahip-olması-3" class="slide level2">
+<h2>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (3)</h2>
+<div title="Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (3)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 7: Bir DP probleminin tek bir çözüme sahip olması (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li><span class="red">Kırmızı</span> ile gösterilen aday noktanin koordinatlarını bulmak için ilgili denklem çiftinin kesişim noktalarını bulmak gerekir.</li>
+<li>Aday noktaların koordinatları bulunduktan sonra <span class="light-blue"><span class="math inline">\(z = 3x_1 + 4x_2\)</span></span> amaç fonksiyonunda yerine yazılarak en küçük değer aranır.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1 + 4x_2 = 24\)</span></span> ve <span class="light-blue"><span class="math inline">\(x_2 = 0\)</span></span> denklemlerinin kesişim noktası
+<ul>
+<li><span class="light-blue"><span class="math inline">\(3x_1=24 \Rightarrow x_1=8\)</span></span></li>
+<li><span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktası olur. Bu noktanın amaç fonksiyondaki değeri <span class="light-blue"><span class="math inline">\(z = 2 \cdot 8 + 4 \cdot 0 = 24\)</span></span> tür.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column fragment" data-fragment-index="3" style="width:55%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-23-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Tüm kısıtları sağlayan tek değer <span class="light-red"><span class="math inline">\((8,0)\)</span></span> noktasıdır. Belirlenen koşulu sağlayan <span class="orange">tek nokta olduğundan bu nokta aynı zamanda optimum noktadır</span>.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-8-uygun-çözümün-sınırsız-olması-1" class="slide level2">
+<h2>Örnek 8: Uygun çözümün sınırsız olması (1)</h2>
+<div title="Örnek 8: Uygun çözümün sınırsız olması (1)" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 8: Uygun çözümün sınırsız olması (1)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = 3x_1 + 2x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(2x_1 + x_2 \geq 10\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(-x_1 + x_2 \geq -2\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(2x_1 + x_2 \geq 10\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 10\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 2x_1 = 10 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = 5\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 10)\)</span></span> ve <span class="light-red"><span class="math inline">\((5,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(-x_1 + x_2 \geq -2\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = -2\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow -x_1 = -2 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = 2\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, -2)\)</span></span> ve <span class="light-red"><span class="math inline">\((2,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-8-uygun-çözümün-sınırsız-olması-2" class="slide level2">
+<h2>Örnek 8: Uygun çözümün sınırsız olması (2)</h2>
+<div title="Örnek 8: Uygun çözümün sınırsız olması (2)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 8: Uygun çözümün sınırsız olması (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">3. kısıt</span> <span class="light-blue"><span class="math inline">\(5x_1+x_2 \leq 20\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow x_2 = 20\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow 5x_1 = 20 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_1 = \frac{20}{5}=4\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 20)\)</span></span> ve <span class="light-red"><span class="math inline">\((4,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-24-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-8-uygun-çözümün-sınırsız-olması-3" class="slide level2">
+<h2>Örnek 8: Uygun çözümün sınırsız olması (3)</h2>
+<div title="Örnek 8: Uygun çözümün sınırsız olması (3)" style="font-size: 130%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 8: Uygun çözümün sınırsız olması (3)</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Çözüm (Devam):</strong></p>
+<ul>
+<li>Mümkün çözüm bölgesi taralı alandır. Mümkün çözüm bölgesinde <span class="orange"><span class="math inline">\(x_1\)</span></span> ve <span class="orange"><span class="math inline">\(x_2\)</span></span> noktalarının değerleri büyüdükçe, amaç fonksiyonunun değeri de büyür.</li>
+<li>Amaç fonksiyonunun değeri sonsuza kadar arttırılabilir.</li>
+<li>Bu doğrusal programlama problemi için çözüm sınırsızdır.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-9-mümkün-çözüm-olmaması-1" class="slide level2">
+<h2>Örnek 9: Mümkün Çözüm Olmaması (1)</h2>
+<div title="Örnek 9: Mümkün Çözüm Olmaması (1)" style="font-size: 78%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 9: Mümkün Çözüm Olmaması (1)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bir doğrusal programlama problemine ilişkin, <span class="light-blue">amaç fonksiyonu</span> ve <span class="light-blue">kısıtlar</span> aşağıda verilmiştir. <span class="red">Bu problemin optimum noktasını grafiksel yöntem ile bulun</span>.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 110%;">
+<p><span class="red">Amaç fonksiyonu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(max \quad{} z = 2x_1 + 5x_2\)</span></span></li>
+</ul>
+<p><span class="red">Kısıtlayıcılar</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \leq 6\)</span></span></li>
+<li><span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 10\)</span></span></li>
+</ul>
+<p><span class="red">Negatif olmama koşulu</span></p>
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<p><strong>Çözüm:</strong></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="red">1. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \leq 6\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 6 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 =3\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 6\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 3)\)</span></span> ve <span class="light-red"><span class="math inline">\((6,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="red">2. kısıt</span> <span class="light-blue"><span class="math inline">\(x_1 + 2x_2 \geq 10\)</span></span> denkleminin eksenleri kestiği yerler</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_1 = 0 \Rightarrow 2x_2 = 10 \Rightarrow\)</span></span> <span class="light-blue"><span class="math inline">\(x_2 = 5\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="8">
+<ul>
+<li><span class="light-blue"><span class="math inline">\(x_2 = 0 \Rightarrow x_1 = 10\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="9">
+<ul>
+<li>Doğru <span class="light-red"><span class="math inline">\((0, 5)\)</span></span> ve <span class="light-red"><span class="math inline">\((10,0)\)</span></span> noktalarından geçmeli.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-9-mümkün-çözüm-olmaması-2" class="slide level2">
+<h2>Örnek 9: Mümkün Çözüm Olmaması (2)</h2>
+<div title="Örnek 9: Mümkün Çözüm Olmaması (2)" style="font-size: 100%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 9: Mümkün Çözüm Olmaması (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Çözüm (Devam):</strong></p>
+<div class="fragment" data-fragment-index="1">
+<p>Tüm bu kısıtlara uygun grafik ve optimuma aday noktalar sağ tarafta verilmiş grafikteki gibi olur.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Grafikten görüldüğü gibi uygun çözümün bulunduğu bir alan yoktur.</p>
+</div>
+</div><div class="column fragment" data-fragment-index="5" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="index_files/figure-html/unnamed-chunk-25-1.png" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-9-mümkün-çözüm-olmaması-3" class="slide level2">
+<h2>Örnek 9: Mümkün Çözüm Olmaması (3)</h2>
+<div title="Örnek 9: Mümkün Çözüm Olmaması (3)" style="font-size: 140%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 9: Mümkün Çözüm Olmaması (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment" data-fragment-index="3">
+<p>Uygun çözümün olmamasının iki sebebi olabilir</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Kısıtlayıcıların <span class="orange">ortak kesim noktası yoktur</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<ul>
+<li>Mümkün çözüm bölgesi <span class="orange">2., 3. ya da 4. bölgededir</span>. <span class="orange"><span class="math inline">\(x_1\)</span> , <span class="math inline">\(x_2 \geq 0\)</span></span> koşulu sağlanmamıştır.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/iticulogo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>IST115 - Doğrusal Programlama 1 - Hafta 03 - 02 Ekim 2025 - Doç. Dr.&nbsp;Erhan Çene - erhan.cene@ticaret.edu.tr</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

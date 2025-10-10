@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.light-red{
+  color: #EB85B2;
+}
+
+.light-blue{
+  color: #4183C4;
+}
+
+.red{
+  color:#9C0311;
+}
+
+.orange{
+  color:#ffc107;
+}
+
+h1.title{
+  font-size: 2em;
+  font-family: 'Chewy', cursive;
+  color: #F6DD7C;
+}
+
+p.subtitle{
+  font-size: 1.5em;
+  font-family: 'Poppins', cursive;
+  color: #F6DD7C;
+  font-weight: bold;
+}
+
+
+div.quarto-title-author-name{
+  font-size: 0.8em;
+  font-family: "Lato", cursive;
+  color: #F6DD7C;
+}
+
+p.date{
+  font-size: 0.8em;
+  font-family: "Lato", cursive;
+  color: #F6DD7C;
+
+}
+
+div.footer p{
+  font-family: 'Chewy', cursive;
+  color: #F6DD7C;
+}
+
+section.slide h2{
+  color: #F6DD7C;
+}
