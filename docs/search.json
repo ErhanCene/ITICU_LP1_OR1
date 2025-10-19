@@ -5989,5 +5989,1373 @@
       "IST207 - Yöneylem Araştırması 1 Ders Notları",
       "IST207 - Hafta 04"
     ]
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK06_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK06_MAIN.html",
+    "title": "IST207 - Hafta 06",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 06"
+    ]
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html",
+    "href": "IST207/Hafta06/index.html",
+    "title": "Hafta 06",
+    "section": "",
+    "text": "Atama Modeli\n\n\n\n\nAtama modeli, ulaştırma modelinin basit ve özel bir biçimidir.\nUlaştırma problemlerinde olduğu gibi atama problemlerinde de amaç, belirli merkezler arasındaki dağıtım işlemlerinin en uygun biçimde gerçekleştirilmesidir.\nAncak, atama probleminin mal taşınması ile doğrudan bir ilişkisi genellikle yoktur.\nAtama modellerine daha çok işlerin makinelere, işçilerin işlere, uçuşların uçuş hatlarına, kişilerin kişilere vb. atanmalarının programlanmasında başvurulur.\nProgramlama, bir işçi bir işe veya bir makine bir işe atanacak şekilde, yani bire bir eşleme ile gerçekleştirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-1",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-1",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (1)",
+    "text": "Atama Problemleri (1)\n\n\n\n\nAtama Modeli\n\n\n\nAtama modeli, ulaştırma modelinin basit ve özel bir biçimidir.\nUlaştırma problemlerinde olduğu gibi atama problemlerinde de amaç, belirli merkezler arasındaki dağıtım işlemlerinin en uygun biçimde gerçekleştirilmesidir.\nAncak, atama probleminin mal taşınması ile doğrudan bir ilişkisi genellikle yoktur.\nAtama modellerine daha çok işlerin makinelere, işçilerin işlere, uçuşların uçuş hatlarına, kişilerin kişilere vb. atanmalarının programlanmasında başvurulur.\nProgramlama, bir işçi bir işe veya bir makine bir işe atanacak şekilde, yani bire bir eşleme ile gerçekleştirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-2",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-2",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (2)",
+    "text": "Atama Problemleri (2)\n\n\n\n\nBire-bir eşleme, Kare Matris\n\n\n\nHer model gibi atama modeli de bazı varsayımlara dayanmaktadır.\nDaha önce açıklandığı gibi, ulaştırma probleminde \\((m &gt; n)\\) veya \\((m &lt; n)\\) olabildiği halde atama probleminde \\((m = n)\\) olması gerekir.\nBunun sonucunda, ulaştırma modeli katsayılar \\((C_{ij})\\) matrisi kare matris şeklinde ortaya çıkar ve atama matrisi adıyla anılır.\nAtama matrisinin kare matris olması bire bir eşlemenin doğal bir sonucudur ve atama modelinin çok önemli bir özelliğidir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-3",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-3",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (3)",
+    "text": "Atama Problemleri (3)\n\n\n\n\nStandart Olmayan Atama Problemleri\n\n\n\n\\(m = n\\) koşulunun sağlanmadığı atama modeli standart olmayan veya dengesiz atama modelleri kapsamına girer.\nStandart olmayan bir atama probleminin çözülebilmesi için modelin standart biçime dönüştürülmesi, yani \\(m = n\\) olmasının sağlanması gerekir.\nBunun için, dengesiz bir ulaştırma probleminin dengelenmesinde kullanılan yönteme benzer bir yöntem kullanılır.\nSözgelimi, makine sayısından daha fazla sayıda işe sahip olduğumuzu düşünelim. Bu durumda bazı işler yapılamayacaktır. Bunu engellemek için modele fazla olan iş sayısı kadar makine eklenmesi gerekir. Eklenen makinelere karşılık gelen \\(C_{ij}\\)’ler sıfır kabul edilir.\nBunun tersi olarak, makine sayısı fazla ise bu makinelerin görevlendirileceği sayıda işin modele eklenmesi zorunludur."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-4",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-4",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (4)",
+    "text": "Atama Problemleri (4)\n\n\n\n\nAtama Matrisi\n\n\n\nAtama Matrisi, sütunlarını sayıları \\(n\\) olan işler, satırlarını \\(m\\) sayıdaki makineler, elemanlarını ise bire bir eşlemelerin ortaya koyduğu sonuçlar (\\(C_{ij}\\)) oluşturur."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-5",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-5",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (5)",
+    "text": "Atama Problemleri (5)\n\n\n\n\nAtama Problerinin Çözüm Yöntemleri\n\n\n\nHerhangi bir atama problemi, olanaklı tüm atamaların (bire bir eşlemelerin) listelenmesiyle çözülebilir.\nAncak bu yaklaşım yalnızca küçük boyutlu problemlerde kullanılabilir. Problemin boyutu büyüdükçe, listeleme çok zor hatta imkansızdır.\nDaha önce açıklandığı gibi esas olarak bir tür ulaştırma problemi olması nedeniyle, herhangi bir atama problemi, ulaştırma problemlerinin klasik çözüm yöntemleriyle ve aynı süreç izlenerek çözülebilir.\nAncak, bilinen yöntemlerden hangisi kullanılırsa kullanılsın, başlangıç çözümü dahil, bütün çözümler bozuk olacaktır.\nAtama problemleri, kendilerine özgü tekniklerle daha az zaman harcayarak ve daha az işlem yapılarak çözülebilir. Burada Macar yöntemi açıklanacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-6",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-6",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (6)",
+    "text": "Atama Problemleri (6)\n\n\n\n\nMacar Yöntemi\n\n\n\nAtama problemlerinin çözümünde kullanılan Macar yöntemi Macar matematikçi D. Konig tarafından formüle edilen sisteme dayanmaktadır.\nMacar yönteminin atama problemlerinin çözümüne uygulanabilmesi için \\(C_{ij}\\)’lerin negatif olmaması gerekir.\nYöntem, standart atama matrisinin herhangi bir satır veya sütununun tüm elemanlarına sabit bir sayının eklenmesi veya çıkartılmasının en iyi çözümü değiştirmediği esasına dayanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-7",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-7",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (7)",
+    "text": "Atama Problemleri (7)\n\n\n\n\nMacar Yönteminin Adımları (1)\n\n\n\n1. Adım: Maliyet matrisinin her bir satırının en küçük değeri, bulunduğu satırın tüm elemanlarından çıkartılır. Bu işlemle elde edilen matrise satırları indirgenmiş matris denir.\n2. Adım: Satır indirgenmiş matrisin her bir sütununun en küçük değeri bulunduğu sütunun tüm elemanlarından çıkartılır. Bu yolla satırları-sütunları indirgenmiş bir maliyet (sonuç) matrisi elde edilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-8",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-8",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (8)",
+    "text": "Atama Problemleri (8)\n\n\n\n\nMacar Yönteminin Adımları (2)\n\n\n\n3. Adım: İkinci adımda belirlenen matrisin sıfır değerli elemanlarından geçen en az sayıdaki çizgiler çizilir. Çizgilerinin çizimi konusunda kararsızlığa düşmemek için, çizme işlemine sıfırı en çok olan satır veya sütunlardan başlanması önerilebilir.\n\nKoruma çizgisi sayısı matrisin satır/sütun sayısına eşit ise en iyi çözüm elde edilmiş olur. Sıfır değerine sahip hücrelere, bire bir olmak koşuluyla yapılacak atamalar sonunda en iyi çözüme ulaşılır.\nÇizilen en az sayıdaki çizgilerin sayısı \\(n\\)’ye eşit değilse dördüncü adıma geçilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#atama-problemleri-9",
+    "href": "IST207/Hafta06/index.html#atama-problemleri-9",
+    "title": "Hafta 06",
+    "section": "Atama Problemleri (9)",
+    "text": "Atama Problemleri (9)\n\n\n\n\nMacar Yönteminin Adımları (3)\n\n\n\n4. Adım: Üzerinden çizgi geçmeyen elemanların en küçük değerli olanı belirlenir. Bu elemanın değeri, üzerinden çizgi geçmeyen diğer bütün elemanlardan çıkartılır. Aynı değer, çizgilerin kesişme noktalarındaki sayılara eklenir. Üzerinden çizgi geçen diğer elemanlar değişmeden kalır. Bu işlemlerden sonra üçüncü adıma dönülür.\n\nEn iyi çözüm bulununcaya kadar üçüncü ve dördüncü adımlar tekrarlanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-1",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-1",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (1)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n20\n11\n3\n6\n\n\nMakine 2\n5\n9\n10\n2\n\n\nMakine 3\n18\n7\n4\n1\n\n\nMakine 4\n10\n11\n18\n6\n\n\n\n\nBir işletmenin en kısa sürede tamamlamak istediği dört işi ve bu işlerin yapımında kullandığı dört makinesi vardır.\n\n\n\nYandaki tabloda, makinelerin işleri tamamlama süreleri saat olarak verilmiştir. İşlerin en kısa toplam sürede tamamlanması istenmektedir.\nProblemin matematiksel modelini kurunuz ve MACAR yöntemi ile çözünüz."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-2",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-2",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (2)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşlerin en kısa sürede tamamlanması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 20x_{11}+11x_{12}+3x_{13}+6x_{14} \\\\\n        &+ 5x_{21}+9x_{22}+10x_{23}+2x_{24} \\\\\n        &+ 18x_{31}+7x_{32}+4x_{33}+1x_{34} \\\\\n        &+ 10x_{41}+11x_{42}+18x_{43}+6x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-3",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-3",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (3)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (3)\n\n\n\n\nKısıtlar\n\n\n\n\nMakine Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\n\n\n\nİş Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots 4; \\quad{} j = 1,2 \\dots 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-4",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-4",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (4)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n20\n11\n3\n6\n\n\nMakine 2\n5\n9\n10\n2\n\n\nMakine 3\n18\n7\n4\n1\n\n\nMakine 4\n10\n11\n18\n6\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-3\\), \\(X_{2.}-2\\), \\(X_{3.}-1\\) ve \\(X_{4.}-6\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-5",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-5",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (5)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n17\n8\n0\n3\n\n\nMakine 2\n3\n7\n8\n0\n\n\nMakine 3\n17\n6\n3\n0\n\n\nMakine 4\n4\n5\n12\n0\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-3\\), \\(X_{.2}-5\\), \\(X_{.3}-0\\) ve \\(X_{.4}-0\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-6",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-6",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (6)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n14\n3\n0\n3\n\n\nMakine 2\n0\n2\n8\n0\n\n\nMakine 3\n14\n1\n3\n0\n\n\nMakine 4\n1\n0\n12\n0\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-7",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-7",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (7)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n14\n3\n0\n3\n\n\nMakine 2\n0\n2\n8\n0\n\n\nMakine 3\n14\n1\n3\n0\n\n\nMakine 4\n1\n0\n12\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-8",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-8",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (8)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (8)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n14\n3\n0\n3\n\n\nMakine 2\n0\n2\n8\n0\n\n\nMakine 3\n14\n1\n3\n0\n\n\nMakine 4\n1\n0\n12\n0\n\n\n\n\n\n\n\n\nMakine 1 \\(\\rightarrow\\) İş 3 e, Makine 2 \\(\\rightarrow\\) İş 1 e, Makine 3 \\(\\rightarrow\\) İş 4 e ve Makine 4 \\(\\rightarrow\\) İş 2 ye atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-9",
+    "href": "IST207/Hafta06/index.html#örnek-1-makine---iş-eşleştirme-9",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Makine - İş Eşleştirme (9)",
+    "text": "Örnek 1: Makine - İş Eşleştirme (9)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\n\n\n\n\nMakine 1\n20\n11\n3\n6\n\n\nMakine 2\n5\n9\n10\n2\n\n\nMakine 3\n18\n7\n4\n1\n\n\nMakine 4\n10\n11\n18\n6\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[3+5+1+11=20\\]\nDört işin en hızlı bitebileceği süre 20 saattir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-1",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-1",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (1)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n2\n4\n9\n7\n10\n\n\nİş B\n4\n6\n8\n2\n3\n\n\nİş C\n5\n7\n9\n11\n13\n\n\nİş D\n10\n9\n8\n7\n6\n\n\nİş E\n5\n5\n3\n4\n2\n\n\n\n\n\n\n\nBeş makinesi bulunan bir firma beş farklı iş siparişi almıştır.\nMakinelerin işleri tamamlama süreleri yandaki tabloda verilmiştir.\n\nİşlerin en kısa toplam sürede tamamlanması istenmektedir. İşlerin en kısa sürede tamamlanmasını sağlayacak iş-makine eşleşmesini bulunuz."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-2",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-2",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (2)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşlerin en kısa sürede tamamlanması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 2x_{11}+4x_{12}+9x_{13}+7x_{14}+10x_{15} \\\\\n        &+ 4x_{21}+6x_{22}+8x_{23}+2x_{24}+3x_{25} \\\\\n        &+ 5x_{31}+7x_{32}+9x_{33}+11x_{34}+13x_{35} \\\\\n        &+ 10x_{41}+9x_{42}+8x_{43}+7x_{44}+6x_{45}\\\\\n        &+ 5x_{51}+5x_{52}+3x_{53}+4x_{54}+2x_{55}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-3",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-3",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (3)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (3)\n\n\n\n\nKısıtlar\n\n\n\n\nİş Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14} &+& x_{15} &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24} &+& x_{25} &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34} &+& x_{35} &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44} &+& x_{45} &\\;= & 1\\\\\nx_{51} &+& x_{52}  &+& x_{53} &+& x_{54} &+& x_{55} &\\;= & 1\n\\end{alignedat}\n\\]\n\n\n\nMakine Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41} &+& x_{51}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42} &+& x_{52}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43} &+& x_{53}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44} &+& x_{54}  &\\;= & 1\\\\\nx_{15} &+& x_{25}  &+& x_{35} &+& x_{45} &+& x_{55}  &\\;= & 1\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 5; \\quad{} j = 1,2 \\dots, 5;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-4",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-4",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (4)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n2\n4\n9\n7\n10\n\n\nİş B\n4\n6\n8\n2\n3\n\n\nİş C\n5\n7\n9\n11\n13\n\n\nİş D\n10\n9\n8\n7\n6\n\n\nİş E\n5\n5\n3\n4\n2\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-2\\), \\(X_{2.}-2\\), \\(X_{3.}-5\\), \\(X_{4.}-6\\) ve \\(X_{5.}-2\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-5",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-5",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (5)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n0\n2\n7\n5\n8\n\n\nİş B\n2\n4\n6\n0\n1\n\n\nİş C\n0\n2\n4\n6\n8\n\n\nİş D\n4\n3\n2\n1\n0\n\n\nİş E\n3\n3\n1\n2\n0\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-2\\), \\(X_{.3}-1\\), \\(X_{.4}-0\\) ve \\(X_{.5}-0\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-6",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-6",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (6)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n0\n0\n6\n5\n8\n\n\nİş B\n2\n2\n5\n0\n1\n\n\nİş C\n0\n0\n3\n6\n8\n\n\nİş D\n4\n1\n1\n1\n0\n\n\nİş E\n3\n1\n0\n2\n0\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin kapsanıp kapsanmadığı 0 değerli hücrelerle kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-7",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-7",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (7)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n0\n0\n6\n5\n8\n\n\nİş B\n2\n2\n5\n0\n1\n\n\nİş C\n0\n0\n3\n6\n8\n\n\nİş D\n4\n1\n1\n1\n0\n\n\nİş E\n3\n1\n0\n2\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-8",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-8",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (8)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (8)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n0\n0\n6\n5\n8\n\n\nİş B\n2\n2\n5\n0\n1\n\n\nİş C\n0\n0\n3\n6\n8\n\n\nİş D\n4\n1\n1\n1\n0\n\n\nİş E\n3\n1\n0\n2\n0\n\n\n\n\n\n\n\n\nİş A \\(\\rightarrow\\) Makine 1 e,  İş B \\(\\rightarrow\\) Makine 4 e,  İş C \\(\\rightarrow\\) Makine 2 e,  İş D \\(\\rightarrow\\) Makine 5 e ve  İş E \\(\\rightarrow\\) Makine 3 e atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-9",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-9",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (9)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (9)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm: Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n2\n4\n9\n7\n10\n\n\nİş B\n4\n6\n8\n2\n3\n\n\nİş C\n5\n7\n9\n11\n13\n\n\nİş D\n10\n9\n8\n7\n6\n\n\nİş E\n5\n5\n3\n4\n2\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[2+2+7+6+3=20\\]\nBeş işin en hızlı bitebileceği süre 20 saattir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-10",
+    "href": "IST207/Hafta06/index.html#örnek-2-makine---iş-eşleştirme-10",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Makine - İş Eşleştirme (10)",
+    "text": "Örnek 2: Makine - İş Eşleştirme (10)\n\n\n\n\nAlternatif Çözüm\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nMak1\nMak2\nMak3\nMak4\nMak5\n\n\n\n\nİş A\n2\n4\n9\n7\n10\n\n\nİş B\n4\n6\n8\n2\n3\n\n\nİş C\n5\n7\n9\n11\n13\n\n\nİş D\n10\n9\n8\n7\n6\n\n\nİş E\n5\n5\n3\n4\n2\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nİş A \\(\\rightarrow\\) Makine 2 e,  İş B \\(\\rightarrow\\) Makine 4 e,  İş C \\(\\rightarrow\\) Makine 1 e,  İş D \\(\\rightarrow\\) Makine 5 e ve  İş E \\(\\rightarrow\\) Makine 3 e\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(4+2+5+6+3=20\\)\nBeş işin en hızlı bitebileceği süre yine 20 saattir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-1",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-1",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (1)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n2\n4\n5\n6\n8\n\n\nA2\n3\n5\n6\n4\n5\n\n\nA3\n6\n1\n2\n3\n4\n\n\nA4\n5\n7\n8\n9\n1\n\n\nA5\n2\n3\n5\n9\n10\n\n\n\n\n\n\n\nBir araştırma şirketinin elinde beş proje, bu projelerde görevlendireceği beş araştırmacısı vardır. Araştırmacıların projelere göre günlük ücretleri (TL) yandaki tabloda gösterilmiştir.\n\nŞirket, araştırmacılarını günlük ücretler toplamını en küçükleyecek biçimde dağıtmak istemektedir. Günlük ücret toplamını en küçükleyecek proje-araştırmacı eşleşmesini bulunuz."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-2",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-2",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (2)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nGünlük toplam ücretin en az olması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 2x_{11}+4x_{12}+5x_{13}+6x_{14}+8x_{15} \\\\\n        &+ 3x_{21}+5x_{22}+6x_{23}+4x_{24}+5x_{25} \\\\\n        &+ 6x_{31}+1x_{32}+2x_{33}+3x_{34}+4x_{35} \\\\\n        &+ 5x_{41}+7x_{42}+8x_{43}+9x_{44}+1x_{45}\\\\\n        &+ 2x_{51}+3x_{52}+5x_{53}+9x_{54}+10x_{55}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-3",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-3",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (3)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (3)\n\n\n\n\nKısıtlar\n\n\n\n\nAraştırmacı Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14} &+& x_{15} &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24} &+& x_{25} &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34} &+& x_{35} &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44} &+& x_{45} &\\;= & 1\\\\\nx_{51} &+& x_{52}  &+& x_{53} &+& x_{54} &+& x_{55} &\\;= & 1\n\\end{alignedat}\n\\]\n\n\n\nProje Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41} &+& x_{51}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42} &+& x_{52}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43} &+& x_{53}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44} &+& x_{54}  &\\;= & 1\\\\\nx_{15} &+& x_{25}  &+& x_{35} &+& x_{45} &+& x_{55}  &\\;= & 1\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 5; \\quad{} j = 1,2 \\dots, 5;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-4",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-4",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (4)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n2\n4\n5\n6\n8\n\n\nA2\n3\n5\n6\n4\n5\n\n\nA3\n6\n1\n2\n3\n4\n\n\nA4\n5\n7\n8\n9\n1\n\n\nA5\n2\n3\n5\n9\n10\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-2\\), \\(X_{2.}-3\\), \\(X_{3.}-1\\), \\(X_{4.}-1\\) ve \\(X_{5.}-2\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-5",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-5",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (5)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n2\n3\n4\n6\n\n\nA2\n0\n2\n3\n1\n2\n\n\nA3\n5\n0\n1\n2\n3\n\n\nA4\n4\n6\n7\n8\n0\n\n\nA5\n0\n1\n3\n7\n8\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0\\), \\(X_{.3}-1\\), \\(X_{.4}-1\\) ve \\(X_{.5}-0\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-6",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-6",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (6)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n2\n2\n3\n6\n\n\nA2\n0\n2\n2\n0\n2\n\n\nA3\n5\n0\n0\n1\n3\n\n\nA4\n4\n6\n6\n7\n0\n\n\nA5\n0\n1\n2\n6\n8\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-7",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-7",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (7)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n2\n2\n3\n6\n\n\nA2\n0\n2\n2\n0\n2\n\n\nA3\n5\n0\n0\n1\n3\n\n\nA4\n4\n6\n6\n7\n0\n\n\nA5\n0\n1\n2\n6\n8\n\n\n\n\n\n\n\n\nTüm hücreler kapsanmadığından Adım 4 e geçilmelidir.\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-8",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-8",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (8)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (8)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n2\n2\n3\n6\n\n\nA2\n0\n2\n2\n0\n2\n\n\nA3\n5\n0\n0\n1\n3\n\n\nA4\n4\n6\n6\n7\n0\n\n\nA5\n0\n1\n2\n6\n8\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(1\\) çıkarılırken, \\(A3\\) satırının, \\(P3\\), \\(P4\\) ve \\(P5\\) sütunu ile kesiştiği hücrelere \\(1\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-9",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-9",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (9)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (9)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n1\n1\n3\n6\n\n\nA2\n0\n1\n1\n0\n2\n\n\nA3\n6\n0\n0\n2\n4\n\n\nA4\n4\n5\n5\n7\n0\n\n\nA5\n0\n0\n1\n6\n8\n\n\n\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(A5\\) satırı ve \\(P3\\) sütununun kesiştiği hücrede yeni bir \\(0\\) değeri ortaya çıkmıştır.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse,"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-10",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-10",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (10)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (10)\n\n\n\n\nTekrar Kapsam Kontrolü\n\n\n\n\nAdım 3: Tekrar Kapsam Kontrolü\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n1\n1\n3\n6\n\n\nA2\n0\n1\n1\n0\n2\n\n\nA3\n6\n0\n0\n2\n4\n\n\nA4\n4\n5\n5\n7\n0\n\n\nA5\n0\n0\n1\n6\n8\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-11",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-11",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (11)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (11)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n0\n1\n1\n3\n6\n\n\nA2\n0\n1\n1\n0\n2\n\n\nA3\n6\n0\n0\n2\n4\n\n\nA4\n4\n5\n5\n7\n0\n\n\nA5\n0\n0\n1\n6\n8\n\n\n\n\n\n\n\n\nA1 \\(\\rightarrow\\) P1 e,  A2 \\(\\rightarrow\\) P4 e,  A3 \\(\\rightarrow\\) P3 e,  A4 \\(\\rightarrow\\) P5 e ve  A5 \\(\\rightarrow\\) P2 ye atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-12",
+    "href": "IST207/Hafta06/index.html#örnek-3-araştırmacı---proje-eşleştirme-12",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Araştırmacı - Proje Eşleştirme (12)",
+    "text": "Örnek 3: Araştırmacı - Proje Eşleştirme (12)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm: Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\nP5\n\n\n\n\nA1\n2\n4\n5\n6\n8\n\n\nA2\n3\n5\n6\n4\n5\n\n\nA3\n6\n1\n2\n3\n4\n\n\nA4\n5\n7\n8\n9\n1\n\n\nA5\n2\n3\n5\n9\n10\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[2+4+2+1+3=12\\]\nBeş iş için harcanabilecek en düşük maliyet 12 TL dir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#maksimum-amaçlı-atama-problemleri-1",
+    "href": "IST207/Hafta06/index.html#maksimum-amaçlı-atama-problemleri-1",
+    "title": "Hafta 06",
+    "section": "Maksimum Amaçlı Atama Problemleri (1)",
+    "text": "Maksimum Amaçlı Atama Problemleri (1)\n\n\n\n\nMaksimum Amaçlı Atama Problemleri\n\n\n\nMaksimum Amaçlı Atama Problemlerinde Macar Yöntemi uygulanırken değişik şekilde uygulanacak tek adım Adım 1: Satır İndirgeme adımıdır.\nBu adımda her satırdan en küçük elemanı çıkarmak yerine, en büyük eleman çıkarılır ve sonucun mutlak değeri alınarak hücrelere yazılır.\nDiğer tüm adımlar minimum amaçlı problemle aynıdır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-1",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-1",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (1)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n11\n1\n5\n8\n\n\nE2\n9\n9\n8\n1\n\n\nE3\n10\n3\n5\n10\n\n\nE4\n1\n13\n12\n11\n\n\n\n\nSatışlardan elde edilecek toplam geliri en büyükleyecek dağıtım planını belirleyiniz.\n\n\n\nBir pazarlama şirketinin piyasaya süreceği yeni ürünü için \\(4\\) farklı bölgede görevlendireceği \\(4\\) satış elemanı vardır.\nGörevlendirilecek satış elemanına göre, bölgelerden beklenen satış gelirleri yandaki tabloda verilmiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-2",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-2",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (2)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nEn fazla gelir istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enb} &= 11x_{11}+1x_{12}+5x_{13}+8x_{14} \\\\\n        &+ 9x_{21}+9x_{22}+8x_{23}+1x_{24} \\\\\n        &+ 10x_{31}+3x_{32}+5x_{33}+10x_{34} \\\\\n        &+ 1x_{41}+13x_{42}+12x_{43}+11x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-3",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-3",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (3)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (3)\n\n\n\n\nKısıtlar\n\n\n\n\nEleman Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\n\n\n\nBölge Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots 4; \\quad{} j = 1,2 \\dots 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-4",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-4",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (4)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n11\n1\n5\n8\n\n\nE2\n9\n9\n8\n1\n\n\nE3\n10\n3\n5\n10\n\n\nE4\n1\n13\n12\n11\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan, satırın en büyük elemanı çıkarılmalı ve mutlak değeri alınmalıdır.\n|\\(X_{1.}-11\\)|, |\\(X_{2.}-9\\)|, |\\(X_{3.}-10\\)| ve  |\\(X_{4.}-13\\)|"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-5",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-5",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (5)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n0\n10\n6\n3\n\n\nE2\n0\n0\n1\n8\n\n\nE3\n0\n7\n5\n0\n\n\nE4\n12\n0\n1\n2\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0c\\), \\(X_{.3}-1\\) ve  \\(X_{.4}-0\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-6",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-6",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (6)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n0\n10\n5\n3\n\n\nE2\n0\n0\n0\n8\n\n\nE3\n0\n7\n4\n0\n\n\nE4\n12\n0\n0\n2\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-7",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-7",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (7)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n0\n10\n5\n3\n\n\nE2\n0\n0\n0\n8\n\n\nE3\n0\n7\n4\n0\n\n\nE4\n12\n0\n0\n2\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-8",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-8",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (8)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (8)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n0\n10\n5\n3\n\n\nE2\n0\n0\n0\n8\n\n\nE3\n0\n7\n4\n0\n\n\nE4\n12\n0\n0\n2\n\n\n\n\n\n\n\n\nE1 \\(\\rightarrow\\) B1 e, E2 \\(\\rightarrow\\) B2 e, E3 \\(\\rightarrow\\) B4 e ve  E4 \\(\\rightarrow\\) B3 ye atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-9",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-9",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (9)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (9)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n11\n1\n5\n8\n\n\nE2\n9\n9\n8\n1\n\n\nE3\n10\n3\n5\n10\n\n\nE4\n1\n13\n12\n11\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[11+9+10+12=42\\]\nEn çok elde edilebilecek gelir 42 TL dir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-10",
+    "href": "IST207/Hafta06/index.html#örnek-4-bölge---eleman-eşleştirme-10",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Bölge - Eleman Eşleştirme (10)",
+    "text": "Örnek 4: Bölge - Eleman Eşleştirme (10)\n\n\n\n\nAlternatif Çözüm\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nB1\nB2\nB3\nB4\n\n\n\n\nE1\n11\n1\n5\n8\n\n\nE2\n9\n9\n8\n1\n\n\nE3\n10\n3\n5\n10\n\n\nE4\n1\n13\n12\n11\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nE1 \\(\\rightarrow\\) B1 e, E2 \\(\\rightarrow\\) B3 e, E3 \\(\\rightarrow\\) B4 e ve  E4 \\(\\rightarrow\\) B2 ye atanır.\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(11+8+10+13=42\\)\nEn çok elde edilebilecek gelir yine 42 TL dir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-1",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (1)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n112\n15\n74\n85\n\n\nM2\n74\n22\n100\n115\n\n\nM3\n90\n105\n21\n96\n\n\nM4\n13\nM\n97\n25\n\n\n\n\nSMS şirketi üretim kapasitesini arttırmak için satın aldığı 4 makineyi \\(A\\), \\(B\\), \\(C\\) ve \\(D\\) ismi verilen 4 olanaklı yere kurmak istemektedir.\nDört makinenin toplam taşıma maliyetini minimum kılan atama şekli ve atama değeri nedir?\n\n\n\nHer bir olanaklı yerleşimde her bir makinenin taşıma maliyeti (TL/saat) cinsinden tabloda verilmiştir.\n\\(M\\) değeri çok büyük pozitif bir sayıyı ifade etmektedir. Bu, \\(4\\) numaralı makinenin \\(B\\) bölgesine kurulmasının mümkün olmadığını ifade etmektedir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-2",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (2)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşlerin en kısa sürede tamamlanması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 112x_{11}+15x_{12}+74x_{13}+85x_{14} \\\\\n        &+ 74x_{21}+22x_{22}+100x_{23}+115x_{24} \\\\\n        &+ 90x_{31}+105x_{32}+21x_{33}+96x_{34} \\\\\n        &+ 13x_{41}+Mx_{42}+97x_{43}+25x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-3",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (3)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (3)\n\n\n\n\nKısıtlar\n\n\n\n\nMakine Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\n\n\n\nBölge Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 4; \\quad{} j = 1,2 \\dots, 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-4",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (4)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n112\n15\n74\n85\n\n\nM2\n74\n22\n100\n115\n\n\nM3\n90\n105\n21\n96\n\n\nM4\n13\nM\n97\n25\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-15\\), \\(X_{2.}-22\\), \\(X_{3.}-21\\) ve  \\(X_{4.}-13\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-5",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (5)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n97\n0\n59\n70\n\n\nM2\n52\n0\n78\n93\n\n\nM3\n69\n84\n0\n75\n\n\nM4\n0\nM-13\n84\n12\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0\\),  \\(X_{.3}-0\\) ve  \\(X_{.4}-12\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-6",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (6)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n97\n0\n59\n58\n\n\nM2\n52\n0\n78\n81\n\n\nM3\n69\n84\n0\n63\n\n\nM4\n0\nM-13\n84\n0\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-7",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (7)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n97\n0\n59\n58\n\n\nM2\n52\n0\n78\n81\n\n\nM3\n69\n84\n0\n63\n\n\nM4\n0\nM-13\n84\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsanmadığından Adım 4 e geçilmelidir.\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-8",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (8)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (8)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n97\n0\n59\n58\n\n\nM2\n52\n0\n78\n81\n\n\nM3\n69\n84\n0\n63\n\n\nM4\n0\nM-13\n84\n0\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(52\\) çıkarılırken, \\(M4\\) satırının, \\(B\\) ve \\(C\\) sütunu ile kesiştiği hücrelere \\(52\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-9",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (9)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (9)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n45\n0\n59\n6\n\n\nM2\n0\n0\n78\n29\n\n\nM3\n17\n84\n0\n11\n\n\nM4\n0\nM+39\n136\n0\n\n\n\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(M2\\) satırı ve \\(A\\) sütununun kesiştiği hücrede yeni bir \\(0\\) değeri ortaya çıkmıştır.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse,"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-10",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (10)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (10)\n\n\n\n\nTekrar Kapsam Kontrolü\n\n\n\n\nAdım 3: Tekrar Kapsam Kontrolü\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n45\n0\n59\n6\n\n\nM2\n0\n0\n78\n29\n\n\nM3\n17\n84\n0\n11\n\n\nM4\n0\nM+39\n136\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-11",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (11)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (11)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n45\n0\n59\n6\n\n\nM2\n0\n0\n78\n29\n\n\nM3\n17\n84\n0\n11\n\n\nM4\n0\nM+39\n136\n0\n\n\n\n\n\n\n\n\nM1 \\(\\rightarrow\\) B e, M2 \\(\\rightarrow\\) A ya, M3 \\(\\rightarrow\\) C ye ve  M4 \\(\\rightarrow\\) D ye atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-12",
+    "href": "IST207/Hafta06/index.html#örnek-5-makine---bölge-sms-şirketi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Makine - Bölge (SMS Şirketi) (12)",
+    "text": "Örnek 5: Makine - Bölge (SMS Şirketi) (12)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\nM1\n112\n15\n74\n85\n\n\nM2\n74\n22\n100\n115\n\n\nM3\n90\n105\n21\n96\n\n\nM4\n13\nM\n97\n25\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[15+74+21+25=135\\]\nDört makinenin yerleşimi sırasında oluşabilecek en düşük maliyet 135 TL/saat tir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-1",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-1",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (1)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\nnote \n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n35\n15\n—\n30\n30\n\n\nB\n25\n20\n15\n25\n40\n\n\nC\n20\n—\n30\n20\n50\n\n\nD\n15\n40\n35\n15\n40\n\n\nE\n10\n50\n40\n30\n35\n\n\n\n\n\n\n\n\\(A\\), \\(B\\), \\(C\\), \\(D\\) ve \\(E\\) gibi beş firma beş işe teklif verirler.\nFirmaların verdikleri tekliflerin maliyetleri milyar tl olarak tabloda verilmiştir.\n\nTablodaki \\(-\\) çizgisi firmaların bu işlere teklif vermediğini gösterir. Teklif verilmeyen bu hücrelere yine \\(M\\) değeri atanmalıdır.\nHangi firmanın hangi işi alması gerektiğini minimum maliyeti gözeterek bulunuz."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-2",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-2",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (2)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nGünlük toplam ücretin en az olması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 35x_{11}+15x_{12}+Mx_{13}+30x_{14}+30x_{15} \\\\\n        &+ 25x_{21}+20x_{22}+15x_{23}+25x_{24}+40x_{25} \\\\\n        &+ 20x_{31}+Mx_{32}+30x_{33}+20x_{34}+50x_{35} \\\\\n        &+ 15x_{41}+40x_{42}+35x_{43}+15x_{44}+40x_{45}\\\\\n        &+ 10x_{51}+50x_{52}+40x_{53}+30x_{54}+35x_{55}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-3",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-3",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (3)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (3)\n\n\n\n\nKısıtlar\n\n\n\n\nFirma Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14} &+& x_{15} &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24} &+& x_{25} &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34} &+& x_{35} &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44} &+& x_{45} &\\;= & 1\\\\\nx_{51} &+& x_{52}  &+& x_{53} &+& x_{54} &+& x_{55} &\\;= & 1\n\\end{alignedat}\n\\]\n\n\n\nİş Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41} &+& x_{51}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42} &+& x_{52}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43} &+& x_{53}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44} &+& x_{54}  &\\;= & 1\\\\\nx_{15} &+& x_{25}  &+& x_{35} &+& x_{45} &+& x_{55}  &\\;= & 1\n\\end{alignedat}\n\\]\nİşaret kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 5; \\quad{} j = 1,2 \\dots, 5;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-4",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-4",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (4)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n35\n15\nM\n30\n30\n\n\nB\n25\n20\n15\n25\n40\n\n\nC\n20\nM\n30\n20\n50\n\n\nD\n15\n40\n35\n15\n40\n\n\nE\n10\n50\n40\n30\n35\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-15\\),  \\(X_{2.}-15\\),  \\(X_{3.}-20\\),  \\(X_{4.}-15\\) ve  \\(X_{5.}-10\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-5",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-5",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (5)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n20\n0\nM-15\n15\n15\n\n\nB\n10\n5\n0\n10\n25\n\n\nC\n0\nM-20\n10\n0\n30\n\n\nD\n0\n25\n20\n0\n25\n\n\nE\n0\n40\n30\n20\n25\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0\\), \\(X_{.3}-0\\), \\(X_{.4}-0\\) ve  \\(X_{.5}-15\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-6",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-6",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (6)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n20\n0\nM-15\n15\n0\n\n\nB\n10\n5\n0\n10\n10\n\n\nC\n0\nM-20\n10\n0\n15\n\n\nD\n0\n25\n20\n0\n10\n\n\nE\n0\n40\n30\n20\n10\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-7",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-7",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (7)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n20\n0\nM-15\n15\n0\n\n\nB\n10\n5\n0\n10\n10\n\n\nC\n0\nM-20\n10\n0\n15\n\n\nD\n0\n25\n20\n0\n10\n\n\nE\n0\n40\n30\n20\n10\n\n\n\n\n\n\n\n\nTüm hücreler kapsanmadığından Adım 4 e geçilmelidir.\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-8",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-8",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (8)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (8)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n20\n0\nM-15\n15\n0\n\n\nB\n10\n5\n0\n10\n10\n\n\nC\n0\nM-20\n10\n0\n15\n\n\nD\n0\n25\n20\n0\n10\n\n\nE\n0\n40\n30\n20\n10\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(5\\) çıkarılırken, \\(A\\) satırının, \\(İş 1\\), \\(İş 3\\) ve \\(İş 5\\) sütunu ile kesiştiği hücrelere \\(5\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-9",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-9",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (9)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (9)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n25\n0\nM-10\n20\n0\n\n\nB\n10\n0\n0\n10\n5\n\n\nC\n0\nM-25\n10\n0\n10\n\n\nD\n0\n20\n20\n0\n5\n\n\nE\n0\n35\n30\n20\n5\n\n\n\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir.\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(B\\) satırı ve \\(İş 2\\) sütununun kesiştiği hücrede yeni bir \\(0\\) değeri ortaya çıkmıştır.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse, yine kapsamın sağlanmadığı görülür."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-10",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-10",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (10)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (10)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n25\n0\nM-10\n20\n0\n\n\nB\n10\n0\n0\n10\n5\n\n\nC\n0\nM-25\n10\n0\n10\n\n\nD\n0\n20\n20\n0\n5\n\n\nE\n0\n35\n30\n20\n5\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(5\\) çıkarılırken, \\(A\\) ve \\(B\\) satırlarının, \\(İş 1\\) ve \\(İş 4\\) sütunları ile kesiştiği hücrelere \\(5\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-11",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-11",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (11)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (11)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n30\n0\nM-10\n25\n0\n\n\nB\n15\n0\n0\n15\n5\n\n\nC\n0\nM-30\n5\n0\n5\n\n\nD\n0\n15\n15\n0\n0\n\n\nE\n0\n30\n25\n20\n0\n\n\n\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(D\\) ve \\(E\\) satırlarının \\(İş5\\) sütunu ile kesiştiği hücrede yeni \\(0\\) değerleri ortaya çıkmıştır.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse,"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-12",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-12",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (12)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (12)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 3: Tekrar Kapsam Kontrolü\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n30\n0\nM-10\n25\n0\n\n\nB\n15\n0\n0\n15\n5\n\n\nC\n0\nM-30\n5\n0\n5\n\n\nD\n0\n15\n15\n0\n0\n\n\nE\n0\n30\n25\n20\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-13",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-13",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (13)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (13)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n30\n0\nM-10\n25\n0\n\n\nB\n15\n0\n0\n15\n5\n\n\nC\n0\nM-30\n5\n0\n5\n\n\nD\n0\n15\n15\n0\n0\n\n\nE\n0\n30\n25\n20\n0\n\n\n\n\n\n\n\n\nA \\(\\rightarrow\\) İş 2 ye, B \\(\\rightarrow\\) İş 3 e, C \\(\\rightarrow\\) İş 4 e  D \\(\\rightarrow\\) İş 5 e ve  E \\(\\rightarrow\\) İş 1 e atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-14",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-14",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (14)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (14)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n35\n15\nM\n30\n30\n\n\nB\n25\n20\n15\n25\n40\n\n\nC\n20\nM\n30\n20\n50\n\n\nD\n15\n40\n35\n15\n40\n\n\nE\n10\n50\n40\n30\n35\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[15+15+20+40+10=100\\]\nBeş firma iş yerleşimi sırasında oluşabilecek en düşük maliyet 100 milyar TL dir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-15",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-15",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (15)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (15)\n\n\n\n\nAlternatif Çözüm (1)\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n35\n15\nM\n30\n30\n\n\nB\n25\n20\n15\n25\n40\n\n\nC\n20\nM\n30\n20\n50\n\n\nD\n15\n40\n35\n15\n40\n\n\nE\n10\n50\n40\n30\n35\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nA \\(\\rightarrow\\) İş 2 ye, B \\(\\rightarrow\\) İş 3 e, C \\(\\rightarrow\\) İş 4 e  D \\(\\rightarrow\\) İş 1 e ve  E \\(\\rightarrow\\) İş 5 e\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(15+15+20+15+35=100\\)\nBeş firma iş yerleşimi sırasında oluşabilecek en düşük maliyet yine 100 milyar TL dir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-16",
+    "href": "IST207/Hafta06/index.html#örnek-6-firma---iş-eşleştirme-16",
+    "title": "Hafta 06",
+    "section": "Örnek 6: Firma - İş Eşleştirme (16)",
+    "text": "Örnek 6: Firma - İş Eşleştirme (16)\n\n\n\n\nAlternatif Çözüm (2)\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nİş 1\nİş 2\nİş 3\nİş 4\nİş 5\n\n\n\n\nA\n35\n15\nM\n30\n30\n\n\nB\n25\n20\n15\n25\n40\n\n\nC\n20\nM\n30\n20\n50\n\n\nD\n15\n40\n35\n15\n40\n\n\nE\n10\n50\n40\n30\n35\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nA \\(\\rightarrow\\) İş 2 ye, B \\(\\rightarrow\\) İş 3 e, C \\(\\rightarrow\\) İş 1 e  D \\(\\rightarrow\\) İş 4 e ve  E \\(\\rightarrow\\) İş 5 e atanır.\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(15+15+20+15+35=100\\)\nBeş firma iş yerleşimi sırasında oluşabilecek en düşük maliyet yine 100 milyar TL dir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-1",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-1",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (1)",
+    "text": "Örnek 7: İş - İşçi Ataması (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n12\n14\n10\n9\n\n\nW2\n11\n8\n12\n7\n\n\nW3\n8\n6\n9\n5\n\n\nW4\n6\n4\n7\n6\n\n\n\n\n\n\n\nToplam maliyeti minimum kılmak için tabodaki dört işçiyi (W), dört işe (J) atayınız. Tablodaki matris elemanları TL yi göstermektedir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-2",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-2",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (2)",
+    "text": "Örnek 7: İş - İşçi Ataması (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşlerin en kısa sürede tamamlanması istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enk} &= 12x_{11}+14x_{12}+10x_{13}+9x_{14} \\\\\n        &+ 11x_{21}+8x_{22}+12x_{23}+7x_{24} \\\\\n        &+ 8x_{31}+6x_{32}+9x_{33}+5x_{34} \\\\\n        &+ 6x_{41}+4x_{42}+7x_{43}+6x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-3",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-3",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (3)",
+    "text": "Örnek 7: İş - İşçi Ataması (3)\n\n\n\n\nKısıtlar\n\n\n\n\nİş Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\n\n\n\nİşçi Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\nNegatif kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 4; \\quad{} j = 1,2 \\dots, 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-4",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-4",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (4)",
+    "text": "Örnek 7: İş - İşçi Ataması (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n12\n14\n10\n9\n\n\nW2\n11\n8\n12\n7\n\n\nW3\n8\n6\n9\n5\n\n\nW4\n6\n4\n7\n6\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en küçük elemanı çıkarılmalı.\n\\(X_{1.}-9\\), \\(X_{2.}-7\\), \\(X_{3.}-5\\) ve  \\(X_{4.}-4\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-5",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-5",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (5)",
+    "text": "Örnek 7: İş - İşçi Ataması (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n3\n5\n1\n0\n\n\nW2\n4\n1\n5\n0\n\n\nW3\n3\n1\n4\n0\n\n\nW4\n2\n0\n3\n2\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-2\\), \\(X_{.2}-0\\),  \\(X_{.3}-1\\) ve  \\(X_{.4}-0\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-6",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-6",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (6)",
+    "text": "Örnek 7: İş - İşçi Ataması (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n1\n5\n0\n0\n\n\nW2\n2\n1\n4\n0\n\n\nW3\n1\n1\n3\n0\n\n\nW4\n0\n0\n2\n2\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-7",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-7",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (7)",
+    "text": "Örnek 7: İş - İşçi Ataması (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n1\n5\n0\n0\n\n\nW2\n2\n1\n4\n0\n\n\nW3\n1\n1\n3\n0\n\n\nW4\n0\n0\n2\n2\n\n\n\n\n\n\n\n\nTüm hücreler kapsanmadığından Adım 4 e geçilmelidir.\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-8",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-8",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (8)",
+    "text": "Örnek 7: İş - İşçi Ataması (8)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n1\n5\n0\n0\n\n\nW2\n2\n1\n4\n0\n\n\nW3\n1\n1\n3\n0\n\n\nW4\n0\n0\n2\n2\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(1\\) çıkarılırken, \\(W4\\) satırının, \\(J3\\) ve \\(J4\\) sütunu ile kesiştiği hücrelere \\(1\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-9",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-9",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (9)",
+    "text": "Örnek 7: İş - İşçi Ataması (9)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n0\n4\n0\n0\n\n\nW2\n1\n0\n4\n0\n\n\nW3\n0\n0\n3\n0\n\n\nW4\n0\n0\n3\n3\n\n\n\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(J1\\) sütununun \\(W1\\) ve \\(W3\\) satırlarını kestiği, ayrıca \\(J2\\) sütununun \\(W2\\) ve \\(W3\\) satırlarını kestiği hücrelerde yeni \\(0\\) değerleri ortaya çıkmıştır.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse,"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-10",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-10",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (10)",
+    "text": "Örnek 7: İş - İşçi Ataması (10)\n\n\n\n\nTekrar Kapsam Kontrolü\n\n\n\n\nAdım 3: Tekrar Kapsam Kontrolü\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n0\n4\n0\n0\n\n\nW2\n1\n0\n4\n0\n\n\nW3\n0\n0\n3\n0\n\n\nW4\n0\n0\n3\n3\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-11",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-11",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (11)",
+    "text": "Örnek 7: İş - İşçi Ataması (11)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n0\n4\n0\n0\n\n\nW2\n1\n0\n4\n0\n\n\nW3\n0\n0\n3\n0\n\n\nW4\n0\n0\n3\n3\n\n\n\n\n\n\n\n\nW1 \\(\\rightarrow\\) J3 e, W2 \\(\\rightarrow\\) J4 ya, W3 \\(\\rightarrow\\) J1 ye ve  W4 \\(\\rightarrow\\) J2 ye atanır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-12",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-12",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (12)",
+    "text": "Örnek 7: İş - İşçi Ataması (12)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n12\n14\n10\n9\n\n\nW2\n11\n8\n12\n7\n\n\nW3\n8\n6\n9\n5\n\n\nW4\n6\n4\n7\n6\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur.\n\\[10+7+8+4=29\\]\nDört işçinin dört işe en düşük maliyeti 29 TL dir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-13",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-13",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (13)",
+    "text": "Örnek 7: İş - İşçi Ataması (13)\n\n\n\n\nAlternatif Çözüm (1)\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n12\n14\n10\n9\n\n\nW2\n11\n8\n12\n7\n\n\nW3\n8\n6\n9\n5\n\n\nW4\n6\n4\n7\n6\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nW1 \\(\\rightarrow\\) J3 e, W2 \\(\\rightarrow\\) J2 ya, W3 \\(\\rightarrow\\) J4 ye ve  W4 \\(\\rightarrow\\) J1 ye\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(10+8+5+6=29\\)\nDört işçinin dört işe en düşük maliyeti 29 TL dir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-14",
+    "href": "IST207/Hafta06/index.html#örnek-7-iş---işçi-ataması-14",
+    "title": "Hafta 06",
+    "section": "Örnek 7: İş - İşçi Ataması (14)",
+    "text": "Örnek 7: İş - İşçi Ataması (14)\n\n\n\n\nAlternatif Çözüm (2)\n\n\n\n\nÇözüm (Devam): Alternatif Çözüm\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n12\n14\n10\n9\n\n\nW2\n11\n8\n12\n7\n\n\nW3\n8\n6\n9\n5\n\n\nW4\n6\n4\n7\n6\n\n\n\n\n\n\n\n\nAtama sırasında tablo dikkatle kontrol edilirse, \nW1 \\(\\rightarrow\\) J3 e, W2 \\(\\rightarrow\\) J4 ya, W3 \\(\\rightarrow\\) J2 ye ve  W4 \\(\\rightarrow\\) J1 ye\natandığı alternatif bir çözüm daha olduğu görülür.\n\n\n\nOptimum değer tekrar bulunursa \\(10+7+6+6=29\\)\nDört işçinin dört işe en düşük maliyeti 29 TL dir. Optimum değer değişmemiştir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-1",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-1",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (1)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n62\n75\n80\n95\n\n\nW2\n75\n80\n85\n55\n\n\nW3\n80\n75\n90\n80\n\n\n\n\n\n\n\nHer bir işçinin her bir işteki saatlik getirisi tabloda verilmiştir. Toplam getiri maksimum yapılmak istendiğine göre hangi işçi, hangi işe atanmalıdır? Hangi işe hiç işçi atanmaz?"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-2",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-2",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (2)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşçilerin maksimum getirisi istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enb} &= 62x_{11}+75x_{12}+80x_{13}+95x_{14} \\\\\n        &+ 75x_{21}+80x_{22}+85x_{23}+55x_{24} \\\\\n        &+ 80x_{31}+75x_{32}+90x_{33}+80x_{34} \\\\\n        &+ 0x_{41}+0x_{42}+0x_{43}+0x_{44}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-3",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-3",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (3)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (3)\n\n\n\n\nKısıtlar\n\n\n\n\nİş Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\n\n\n\nİşçi Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44}  &\\;= & 1\\\\\n\\end{alignedat}\n\\]\nNegatif kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 4; \\quad{} j = 1,2 \\dots, 4;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-4",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-4",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (4)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n62\n75\n80\n95\n\n\nW2\n75\n80\n85\n55\n\n\nW3\n80\n75\n90\n80\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en büyük elemanı çıkarılmalı ve mutlak değeri alınmalıdır.\n\\(|X_{1.}-95|\\), \\(|X_{2.}-85|\\), \\(|X_{3.}-90|\\) ve  \\(|X_{4.}-0|\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-5",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-5",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (5)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n33\n20\n15\n0\n\n\nW2\n10\n5\n0\n30\n\n\nW3\n10\n15\n0\n10\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0\\),  \\(X_{.3}-0\\) ve  \\(X_{.4}-0\\),"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-6",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-6",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (6)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n33\n20\n15\n0\n\n\nW2\n10\n5\n0\n30\n\n\nW3\n10\n15\n0\n10\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir.\nTüm hücreler kapsanıyorsa optimal çözüm vardır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-7",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-7",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (7)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n33\n20\n15\n0\n\n\nW2\n10\n5\n0\n30\n\n\nW3\n10\n15\n0\n10\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\nTüm hücreler kapsanmadığından Adım 4 e geçilmelidir.\n\n\nBunun için problem çıkaran dikey çizgi, yatay çizgi haline getirilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-8",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-8",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (8)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (8)\n\n\n\n\nÇizgi Değiştirme\n\n\n\n\nAdım 4: Çizgi Değiştirme\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n33\n20\n15\n0\n\n\nW2\n10\n5\n0\n30\n\n\nW3\n10\n15\n0\n10\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\nÇizgi değiştirildikten sonra, kapsanmayan hücrelerdeki en düşük değer, kapsanmayan hücrelerden çıkarılır.\nÇizgilerin kesiştiği yerlerdeki hücrelere eklenir.\n\n\n\nYani beyaz hücrelerden \\(5\\) çıkarılırken, \\(Dummy\\) satırının, \\(J3\\) ve \\(J4\\) sütunu ile kesiştiği hücrelere \\(5\\) eklenir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-9",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-9",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (9)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (9)\n\n\n\n\nDeğer Güncelleme\n\n\n\n\nAdım 4: Değer Güncelleme\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n28\n15\n15\n0\n\n\nW2\n5\n0\n0\n30\n\n\nW3\n5\n10\n0\n10\n\n\ndummy_r1\n0\n0\n5\n5\n\n\n\n\n\n\n\n\nDeğer güncellenmesinden sonra \\(W2\\) satırı ile \\(J2\\) sütununun kesiştiği hücrede yeni bir \\(0\\) değeri ortaya çıkar.\n\n\nYeni matris kullanılarak kapsam kontrol edilirse,"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-10",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-10",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (10)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (10)\n\n\n\n\nTekrar Kapsam Kontrolü\n\n\n\n\nAdım 3: Tekrar Kapsam Kontrolü\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n28\n15\n15\n0\n\n\nW2\n5\n0\n0\n30\n\n\nW3\n5\n10\n0\n10\n\n\ndummy_r1\n0\n0\n5\n5\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-11",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-11",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (11)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (11)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n28\n15\n15\n0\n\n\nW2\n5\n0\n0\n30\n\n\nW3\n5\n10\n0\n10\n\n\ndummy_r1\n0\n0\n5\n5\n\n\n\n\n\n\n\n\nW1 \\(\\rightarrow\\) J4 e, W2 \\(\\rightarrow\\) J2 ye, W3 \\(\\rightarrow\\) J3 e atanır.\nDummy \\(\\rightarrow\\) J1 e gider."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-12",
+    "href": "IST207/Hafta06/index.html#örnek-8-iş---işçi-ataması-dengesiz-problem-1-12",
+    "title": "Hafta 06",
+    "section": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (12)",
+    "text": "Örnek 8: İş - İşçi Ataması (Dengesiz Problem 1) (12)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nJ1\nJ2\nJ3\nJ4\n\n\n\n\nW1\n62\n75\n80\n95\n\n\nW2\n75\n80\n85\n55\n\n\nW3\n80\n75\n90\n80\n\n\ndummy_r1\n0\n0\n0\n0\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur. Dummy değişken optimum hesabında yer almaz. \\(J1\\) işine herhangi bir işçi atanmamıştır.\n\\[95+80+90=265\\]\nÜç işçinin dört işten getirebileceği en fazla getiri 265 TL dir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-1",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-1",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (1)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (1)\n\n\n\n\nSoru\n\n\n\n\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\n\n\n\n\nF1\n13\n18\n10\n14\n\n\nF2\n17\n18\n19\n17\n\n\nF3\n12\n15\n16\n14\n\n\nF4\n10\n15\n21\n11\n\n\nF5\n22\n9\n12\n20\n\n\n\n\n\n\n\nBir firma her bir fabrikasında (F) yalnızca tek bir ürün (P) ürettirmektedir. Firma bir ürününü piyasadan çektikten sonra, elinde 5 fabrika ve 4 ürün kalmıştır. Her bir ürünün her bir fabrikadaki getirisi tabloda verildiğine göre, firma hangi fabrikasını kapatmalıdır?"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-2",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-2",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (2)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (2)\n\n\n\n\nAmaç Fonksiyonu\n\n\nİşçilerin maksimum getirisi istendiğinden amaç fonksiyonu aşağıdaki gibi yazılır.\n\\[\\begin{aligned}\nZ_{enb} &= 13x_{11}+18x_{12}+10x_{13}+14x_{14}+0x_{15} \\\\\n        &+ 17x_{21}+18x_{22}+19x_{23}+17x_{24}+0x_{25} \\\\\n        &+ 12x_{31}+15x_{32}+16x_{33}+14x_{34}+0x_{35} \\\\\n        &+ 10x_{41}+15x_{42}+21x_{43}+11x_{44}+0x_{45}\\\\\n        &+ 22x_{41}+9x_{42}+12x_{43}+20x_{44}+0x_{55}\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-3",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-3",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (3)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (3)\n\n\n\n\nKısıtlar\n\n\n\n\nFabrika Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{12}  &+& x_{13} &+& x_{14} &+& x_{15}  &\\;= & 1\\\\\nx_{21} &+& x_{22}  &+& x_{23} &+& x_{24} &+& x_{25}  &\\;= & 1\\\\\nx_{31} &+& x_{32}  &+& x_{33} &+& x_{34} &+& x_{35}  &\\;= & 1\\\\\nx_{41} &+& x_{42}  &+& x_{43} &+& x_{44} &+& x_{45}  &\\;= & 1\\\\\nx_{51} &+& x_{52}  &+& x_{53} &+& x_{54} &+& x_{55}  &\\;= & 1\n\\end{alignedat}\n\\]\n\n\n\nÜrün Kısıtları \\[\n\\begin{alignedat}{7}\nx_{11} &+& x_{21}  &+& x_{31} &+& x_{41} &+& x_{51}  &\\;= & 1\\\\\nx_{12} &+& x_{22}  &+& x_{32} &+& x_{42} &+& x_{52}  &\\;= & 1\\\\\nx_{13} &+& x_{23}  &+& x_{33} &+& x_{43} &+& x_{53}  &\\;= & 1\\\\\nx_{14} &+& x_{24}  &+& x_{34} &+& x_{44} &+& x_{54}  &\\;= & 1\\\\\nx_{15} &+& x_{25}  &+& x_{35} &+& x_{45} &+& x_{55}  &\\;= & 1\n\\end{alignedat}\n\\]\nNegatif kısıtlaması: Son olarak negatif atama olmayacağına göre \\[x_{ij} \\geq 0; \\quad{} i = 1,2 \\dots, 5; \\quad{} j = 1,2 \\dots, 5;\\]"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-4",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-4",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (4)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (4)\n\n\n\n\nBaşlangıç Tablosu\n\n\n\n\nAdım 0: Başlangıç Tablosu\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n13\n18\n10\n14\n0\n\n\nF2\n17\n18\n19\n17\n0\n\n\nF3\n12\n15\n16\n14\n0\n\n\nF4\n10\n15\n21\n11\n0\n\n\nF5\n22\n9\n12\n20\n0\n\n\n\n\n\n\n\n\nSatır indirgenmiş matrisi elde etmek için her bir satırdan satırın en büyük elemanı çıkarılmalı ve mutlak değeri alınmalıdır.\n\\(|X_{1.}-18|\\), \\(|X_{2.}-19|\\), \\(|X_{3.}-16|\\),  \\(|X_{4.}-21|\\) ve  \\(|X_{5.}-22|\\)"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-5",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-5",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (5)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (5)\n\n\n\n\nSatır İndirgeme\n\n\n\n\nAdım 1: Satır İndirgenmiş Matris\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n5\n0\n8\n4\n18\n\n\nF2\n2\n1\n0\n2\n19\n\n\nF3\n4\n1\n0\n2\n16\n\n\nF4\n11\n6\n0\n10\n21\n\n\nF5\n0\n13\n10\n2\n22\n\n\n\n\n\n\n\n\nSütun indirgenmiş matrisi elde etmek için her bir sütundan sütunun en küçük elemanı çıkarılmalı.\n\\(X_{.1}-0\\), \\(X_{.2}-0\\),  \\(X_{.3}-0\\),  \\(X_{.4}-0\\) ve  \\(X_{.5}-16\\) ve"
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-6",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-6",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (6)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (6)\n\n\n\n\nSütun İndirgeme\n\n\n\n\nAdım 2: Sütun İndirgenmiş Matris\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n5\n0\n8\n2\n2\n\n\nF2\n2\n1\n0\n0\n3\n\n\nF3\n4\n1\n0\n0\n0\n\n\nF4\n11\n6\n0\n8\n5\n\n\nF5\n0\n13\n10\n0\n6\n\n\n\n\n\n\n\n\n\\(0\\) ların bulunduğu sütunlara dikey çizgiler çekilerek, tüm hücrelerin 0 değerli hücrelerle kapsanıp kapsanmadığı kontrol edilir."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-7",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-7",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (7)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (7)\n\n\n\n\nKapsama Kontrolü\n\n\n\n\nAdım 3: Kapsama Kontrolü\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n5\n0\n8\n2\n2\n\n\nF2\n2\n1\n0\n0\n3\n\n\nF3\n4\n1\n0\n0\n0\n\n\nF4\n11\n6\n0\n8\n5\n\n\nF5\n0\n13\n10\n0\n6\n\n\n\n\n\n\n\n\nTüm hücreler kapsandığından optimum çözüm vardır.\nHer bir satır ve sütunda tek bir \\(0\\) olacak şekilde seçim yapılır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-8",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-8",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (8)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (8)\n\n\n\n\nOptimum hücrelerin belirlenmesi\n\n\n\n\nÇözüm: Optimum hücrelerin belirlenmesi\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n5\n0\n8\n2\n2\n\n\nF2\n2\n1\n0\n0\n3\n\n\nF3\n4\n1\n0\n0\n0\n\n\nF4\n11\n6\n0\n8\n5\n\n\nF5\n0\n13\n10\n0\n6\n\n\n\n\n\n\n\n\nF1 \\(\\rightarrow\\) P2 e, F2 \\(\\rightarrow\\) P4 ye, F3 \\(\\rightarrow\\) Dummy e,  F4 \\(\\rightarrow\\) P3 e, ve  F5 \\(\\rightarrow\\) P1 e atanır.\n\\(F3\\), dummy sütuna atandığından amaç fonksiyona etkisi yoktur ve kapatılmalıdır."
+  },
+  {
+    "objectID": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-9",
+    "href": "IST207/Hafta06/index.html#örnek-9-fabrika---ürün-ataması-dengesiz-problem-2-9",
+    "title": "Hafta 06",
+    "section": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (9)",
+    "text": "Örnek 9: Fabrika - Ürün Ataması (Dengesiz Problem 2) (9)\n\n\n\n\nOptimum değerin belirlenmesi\n\n\n\n\nÇözüm (Devam): Optimum değerin belirlenmesi\n\n\n\n\n\n\n\n\nP1\nP2\nP3\nP4\ndummy_c1\n\n\n\n\nF1\n13\n18\n10\n14\n0\n\n\nF2\n17\n18\n19\n17\n0\n\n\nF3\n12\n15\n16\n14\n0\n\n\nF4\n10\n15\n21\n11\n0\n\n\nF5\n22\n9\n12\n20\n0\n\n\n\n\n\n\n\n\nBaşlangıç tablosunda atama yapılan hücrelerin değerleri toplanarak optimum değer bulunur. Dummy değişken optimum hesabında yer almaz.\n\\[18+17+21+22=78\\]\nBeş fabrikanın dört üründen getirebileceği en fazla getiri 78 TL dir."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html",
+    "href": "IST115/Hafta06/index.html",
+    "title": "Hafta 06",
+    "section": "",
+    "text": "Simpleks Çözüm Yöntemi (1)\n\n\n\n\nSimpleks yöntemin en basit versiyonunu tüm kısıtların \\(\\leq\\) biçiminde verildiği durum için geçtiğimiz hafta uyguladık.\nKısıtların \\(=\\) ya da \\(\\geq\\) olarak verildiği durumlarda ise Yapay başlangıç yöntemleri kullanılır.\nBu yöntemler arasında \\(M\\) Yöntemi ve İki Aşamalı Yöntem sayılabilir.\nBu hafta bu yöntemler arasından \\(M\\) Yöntemi ni minimzasyon soruları için göreceğiz."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#büyük-m-yöntemi-1",
+    "href": "IST115/Hafta06/index.html#büyük-m-yöntemi-1",
+    "title": "Hafta 06",
+    "section": "Büyük M Yöntemi (1)",
+    "text": "Büyük M Yöntemi (1)\n\n\n\n\nSimpleks Çözüm Yöntemi (1)\n\n\n\nSimpleks yöntemin en basit versiyonunu tüm kısıtların \\(\\leq\\) biçiminde verildiği durum için geçtiğimiz hafta uyguladık.\nKısıtların \\(=\\) ya da \\(\\geq\\) olarak verildiği durumlarda ise Yapay başlangıç yöntemleri kullanılır.\nBu yöntemler arasında \\(M\\) Yöntemi ve İki Aşamalı Yöntem sayılabilir.\nBu hafta bu yöntemler arasından \\(M\\) Yöntemi ni minimzasyon soruları için göreceğiz."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#büyük-m-yöntemi-2",
+    "href": "IST115/Hafta06/index.html#büyük-m-yöntemi-2",
+    "title": "Hafta 06",
+    "section": "Büyük M Yöntemi (2)",
+    "text": "Büyük M Yöntemi (2)\n\n\n\n\nBüyük M Yöntemi (2)\n\n\n\n\\(M\\) yönteminde çözüme standart halle başlanır.\nDenklemler standart hale getirilirken, geçtiğimiz haftalarda öğrenilen yöntemler ile dolgu değişken \\(s_i\\) ler eklenir.\nKısıtlar standart hale getirildikten sonra, başlangıçta \\(=\\) ya da \\(\\geq\\) biçiminde kısıta sahip olan denklemlere \\(A_i\\) yapay değişkenleri eklenir.\nYapay değişkenler aslında modele sonradan giren yabancı değişkenler olduklarından, simpleks algoritmanın sonraki yinelemelerinde sıfır değerini alarak temel dışına çıkmalarını sağlamak için, bu değişkenlere amaç fonksiyonunda bir ceza katsayısı verilir."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#büyük-m-yöntemi-3",
+    "href": "IST115/Hafta06/index.html#büyük-m-yöntemi-3",
+    "title": "Hafta 06",
+    "section": "Büyük M Yöntemi (3)",
+    "text": "Büyük M Yöntemi (3)\n\n\n\n\nBüyük M Yöntemi (3)\n\n\n\nVerilen bu \\(M\\) ceza katsayısı yeterince büyük, pozitif bir sayıdır.\nAmaç fonksiyonu maksimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(-M\\); minimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(+M\\) olacaktır.\nOptimizasyon işlemlerinin doğası gereği, temel değişkenleri ilk terk edecek değişkenler \\(A_i\\) yapay değişkenleri olacaktır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-1",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (1)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nÖrnek 1: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=3x_1+2x_2+x_3\\)\n\\(2x_1 + 3x_2 + x_3  \\geq 21\\)\n\\(x_1 + x_2 + x_3 \\geq 12\\)\n\\(x_1\\), \\(x_2\\), and \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=2x_1+3x_2 \\\\\n\\color{orange}{+0s_1+0s_2}\n\\color{green}{+MA_1+MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n2x_1 &+& 3x_2 &+& 1x_3 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 21,\\\\\n1x_1 &+& 1x_2 &+& 1x_3 &\\color{orange}+& {\\color{orange} {0s_1 - 1s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 12\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), \\(x_3 \\geq 0\\), \\(s_1\\), \\(s_2 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-2",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (2)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (2)\n\n\n\n\nÖrnek 1: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(21\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-3",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (3)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (3)\n\n\n\n\nÖrnek 1: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(21\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n3M\n4M\n2M\n-M\n-M\nM\nM\n33M\n \n\n\n$Z_{j}-C_{j}$\n3M - 3\n4M - 2\n2M - 1\n-M\n-M\n\\(0\\)\n\\(0\\)\n33M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-4",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (4)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (4)\n\n\n\n\nÖrnek 1: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(21\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n3M\n4M\n2M\n-M\n-M\nM\nM\n33M\n \n\n\n$Z_{j}-C_{j}$\n3M - 3\n4M - 2\n2M - 1\n-M\n-M\n\\(0\\)\n\\(0\\)\n33M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-5",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (5)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (5)\n\n\n\n\nÖrnek 1: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(21\\)\n\\(7\\)\n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(12\\)\n\\(12\\)\n\n\n$Z_{j}$\n3M\n4M\n2M\n-M\n-M\nM\nM\n33M\n \n\n\n$Z_{j}-C_{j}$\n3M - 3\n4M - 2\n2M - 1\n-M\n-M\n\\(0\\)\n\\(0\\)\n33M\n \n\n\n\n\n\n\n\n\\(4M-2\\) en büyük değer olduğundan \\(x_2\\) anahtar sütun dur.\n\n\n\n\n\n\n\nEn düşük oran \\(7\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(3\\) olduğundan \\(a_1\\) satırı \\(\\frac{1}{3}\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır, \\(-1\\) ile çarpılarak \\(a_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-6",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (6)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (6)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.67\\)\n\\(1\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 21 \\end{pmatrix} \\times \\frac{1}{3} = \\begin{pmatrix} 0.67 \\\\ 1 \\\\ 0.33 \\\\ -0.33 \\\\ 0 \\\\ 0.33 \\\\0 \\\\ 7 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-7",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (7)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (7)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.67\\)\n\\(1\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(0.33\\)\n\\(0\\)\n\\(0.67\\)\n\\(0.33\\)\n\\(-1\\)\n\\(-0.33\\)\n\\(1\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 12 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 0.67 \\\\ 1 \\\\ 0.33 \\\\ -0.33 \\\\ 0 \\\\ 0.33 \\\\0 \\\\ 7 \\end{pmatrix}= \\begin{pmatrix} 0.33 \\\\ 0 \\\\ 0.67 \\\\ 0.33 \\\\ -1 \\\\ -0.33 \\\\ 1 \\\\ 5 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-8",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (8)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (8)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.67\\)\n\\(1\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(0.33\\)\n\\(0\\)\n\\(0.67\\)\n\\(0.33\\)\n\\(-1\\)\n\\(-0.33\\)\n\\(1\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n0.33M + 1.33\n\\(2\\)\n0.67M + 0.67\n0.33M - 0.67\n-M\n-0.33M + 0.67\nM\n5M + 14\n \n\n\n$Z_{j}-C_{j}$\n0.33M - 1.67\n\\(0\\)\n0.67M - 0.33\n0.33M - 0.67\n-M\n-1.33M + 0.67\n\\(0\\)\n5M + 14\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\n\\(5M+14\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-9",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (9)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (9)\n\n\n\n\nÖrnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.67\\)\n\\(1\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(7\\)\n\\(21\\)\n\n\n$M\\, a_{2}$\n\\(0.33\\)\n\\(0\\)\n\\(0.67\\)\n\\(0.33\\)\n\\(-1\\)\n\\(-0.33\\)\n\\(1\\)\n\\(5\\)\n\\(7.50\\)\n\n\n$Z_{j}$\n0.33M + 1.33\n\\(2\\)\n0.67M + 0.67\n0.33M - 0.67\n-M\n-0.33M + 0.67\nM\n5M + 14\n \n\n\n$Z_{j}-C_{j}$\n0.33M - 1.67\n\\(0\\)\n0.67M - 0.33\n0.33M - 0.67\n-M\n-1.33M + 0.67\n\\(0\\)\n5M + 14\n \n\n\n\n\n\n\n\\(0.67M+0.67\\) en büyük değer olduğundan \\(x_3\\) anahtar sütun, en düşük oran \\(7.5\\) olduğundan \\(a_2\\) anahtar satırdır.\n\n\n\n\n\nAnahtar sayı \\(0.67\\) olduğundan \\(a_2\\) satırı \\(\\frac{3}{2}\\) ile çarpılmalıdır.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\nAnahtar satır, \\(-0.33\\) ile çarpılarak \\(x_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-10",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (10)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (10)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.67\\)\n\\(1\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-1.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(7.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 0.33 \\\\ 0 \\\\ 0.67 \\\\ 0.33 \\\\ -1 \\\\ -0.33 \\\\ 1 \\\\ 5  \\end{pmatrix} \\times \\frac{3}{2} = \\begin{pmatrix} 0.50 \\\\ 0 \\\\ 1 \\\\ 0.50 \\\\ -1.50 \\\\ -0.50 \\\\ 1.50 \\\\ 7.50 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-11",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (11)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (11)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(4.50\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-1.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(7.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0.67 \\\\ 1 \\\\ 0.33  \\\\ -0.33 \\\\0\\\\ 0.33 \\\\ 0 \\\\ 7 \\end{pmatrix} - 0.33 \\times \\begin{pmatrix} 0.50 \\\\ 0 \\\\ 1 \\\\ 0.50 \\\\ -1.50 \\\\ -0.50 \\\\ 1.50 \\\\ 7.50 \\end{pmatrix}= \\begin{pmatrix} 0.50 \\\\ 1 \\\\ 0 \\\\ -0.50 \\\\ 0.50 \\\\ 0.50 \\\\ -0.50 \\\\ 4.50 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-12",
+    "href": "IST115/Hafta06/index.html#örnek-1-büyük-m-minimizasyon-problemi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 1: Büyük M Minimizasyon Problemi (12)",
+    "text": "Örnek 1: Büyük M Minimizasyon Problemi (12)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(4.50\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-1.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(7.50\\)\n \n\n\n$Z_{j}$\n\\(1.50\\)\n\\(2\\)\n\\(1\\)\n\\(-0.50\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(16.50\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-1.50\\)\n\\(0\\)\n\\(0\\)\n\\(-0.50\\)\n\\(-0.50\\)\n-M + 0.50\n-M + 0.50\n\\(16.50\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinin tamamı \\(\\leq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z = 16.50\\) amaç fonksiyonu için bulunabilecek en küçük değerdir.\nBu çözümde \\(x_1 = 0\\), \\(x_2 =4.5\\), \\(x_3 =7.5\\), \\(s_1 =0\\), \\(s_2 = 0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-1",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (1)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nÖrnek 2: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=10x_1+6x_2+8x_3\\)\n\\(x_1 + x_2 + 2x_3 \\geq 2\\)\n\\(5x_1 + 3x_2 + 2x_3 \\geq 1\\)\n\\(x_1\\), \\(x_2\\), ve \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=10x_1+6x_2+8x_3 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{+MA_1+MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n1x_1 &+& 1x_2 &+& 2x_3 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 2,\\\\\n5x_1 &+& 3x_2 &+& 2x_3 &\\color{orange}+& {\\color{orange} {0s_1 -1s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 1\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), ve \\(x_3 \\geq 0\\), \\(s_1\\) , \\(s_2 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-2",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (2)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (2)\n\n\n\n\nÖrnek 2: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$M\\, a_{2}$\n\\(5\\)\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-3",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (3)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (3)\n\n\n\n\nÖrnek 2: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$M\\, a_{2}$\n\\(5\\)\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n6M\n4M\n4M\n-M\n-M\nM\nM\n3M\n \n\n\n$Z_{j}-C_{j}$\n6M - 10\n4M - 6\n4M - 8\n-M\n-M\n\\(0\\)\n\\(0\\)\n3M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-4",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (4)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (4)\n\n\n\n\nÖrnek 2: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$M\\, a_{2}$\n\\(5\\)\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n6M\n4M\n4M\n-M\n-M\nM\nM\n3M\n \n\n\n$Z_{j}-C_{j}$\n6M - 10\n4M - 6\n4M - 8\n-M\n-M\n\\(0\\)\n\\(0\\)\n3M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-5",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (5)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (5)\n\n\n\n\nÖrnek 2: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(2\\)\n\\(2\\)\n\n\n$M\\, a_{2}$\n\\(5\\)\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(0.20\\)\n\n\n$Z_{j}$\n6M\n4M\n4M\n-M\n-M\nM\nM\n3M\n \n\n\n$Z_{j}-C_{j}$\n6M - 10\n4M - 6\n4M - 8\n-M\n-M\n\\(0\\)\n\\(0\\)\n3M\n \n\n\n\n\n\n\n\\(6M-10\\) en büyük değer olduğundan \\(x_1\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(0.20\\) olduğundan \\(a_2\\) anahtar satırdır.\nAnahtar sayı \\(5\\) olduğundan \\(a_2\\) satırı \\(\\frac{1}{5}\\) ile çarpılır.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır, \\(-1\\) ile çarpılarak \\(a_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-6",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (6)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (6)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.60\\)\n\\(0.40\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0\\)\n\\(0.20\\)\n\\(0.20\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 5 \\\\ 3 \\\\ 2 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\frac{1}{5} = \\begin{pmatrix} 1 \\\\ 0.60 \\\\ 0.40 \\\\ 0 \\\\ -0.20 \\\\ 0 \\\\ 0.20 \\\\ 0.20  \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-7",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (7)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (7)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(0.40\\)\n\\(1.60\\)\n\\(-1\\)\n\\(0.20\\)\n\\(1\\)\n\\(-0.20\\)\n\\(1.80\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.60\\)\n\\(0.40\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0\\)\n\\(0.20\\)\n\\(0.20\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\\\ 2\\\\ -1 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 2 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 1 \\\\ 0.60 \\\\ 0.40 \\\\ 0 \\\\ -0.20 \\\\ 0 \\\\ 0.20 \\\\ 0.20  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0.40 \\\\ 1.60 \\\\ -1 \\\\ 0.20 \\\\ 1 \\\\ -0.20 \\\\ 1.80 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-8",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (8)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (8)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(0.40\\)\n\\(1.60\\)\n\\(-1\\)\n\\(0.20\\)\n\\(1\\)\n\\(-0.20\\)\n\\(1.80\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.60\\)\n\\(0.40\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0\\)\n\\(0.20\\)\n\\(0.20\\)\n \n\n\n$Z_{j}$\n\\(10\\)\n0.4M + 6\n1.6M + 4\n-M\n0.2M - 2\nM\n-0.2M + 2\n1.8M + 2\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n0.4M\n1.6M - 4\n-M\n0.2M - 2\n\\(0\\)\n-1.2M + 2\n1.8M + 2\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(1.8M+2\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-9",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (9)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (9)\n\n\n\n\nÖrnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(0.40\\)\n\\(1.60\\)\n\\(-1\\)\n\\(0.20\\)\n\\(1\\)\n\\(-0.20\\)\n\\(1.80\\)\n\\(1.12\\)\n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.60\\)\n\\(0.40\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0\\)\n\\(0.20\\)\n\\(0.20\\)\n\\(0.50\\)\n\n\n$Z_{j}$\n\\(10\\)\n0.4M + 6\n1.6M + 4\n-M\n0.2M - 2\nM\n-0.2M + 2\n1.8M + 2\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n0.4M\n1.6M - 4\n-M\n0.2M - 2\n\\(0\\)\n-1.2M + 2\n1.8M + 2\n \n\n\n\n\n\n\n\\(1.6M+4\\) en büyük değer olduğundan \\(x_3\\) anahtar sütun, en düşük oran \\(0.50\\) olduğundan \\(x_1\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.40\\) olduğundan \\(x_1\\) satırı \\(0.40\\) ile bölünmelidir.\nTemel değişkenlerden \\(x_1\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\nAnahtar satır \\(-1.60\\) ile çarpılarak \\(a_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-10",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (10)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (10)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(0.40\\)\n\\(1.60\\)\n\\(-1\\)\n\\(0.20\\)\n\\(1\\)\n\\(-0.20\\)\n\\(1.80\\)\n \n\n\n$8\\, x_{3}$\n\\(2.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 1 \\\\ 0.60 \\\\ 0.40 \\\\ 0 \\\\ -0.20 \\\\ 0 \\\\ 0.20 \\\\ 0.20 \\end{pmatrix} \\div 0.40 = \\begin{pmatrix} 2.50 \\\\ 1.50 \\\\ 1 \\\\ 0 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 0.50 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-11",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (11)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (11)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(2.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_1\\)\n\\[\\begin{pmatrix} 0 \\\\ 0.40 \\\\ 1.60 \\\\ -1 \\\\ 0.20 \\\\ 1 \\\\ -0.20 \\\\ 1.80 \\end{pmatrix} - 1.60 \\times \\begin{pmatrix} 2.50 \\\\ 1.50 \\\\ 1 \\\\ 0 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 0.50  \\end{pmatrix} = \\begin{pmatrix} -4 \\\\ -2 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 1 \\\\ -1 \\\\ 1 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-12",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (12)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (12)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(2.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n-4M + 20\n-2M + 12\n\\(8\\)\n-M\nM - 4\nM\n-M + 4\nM + 4\n \n\n\n$Z_{j}-C_{j}$\n-4M + 10\n-2M + 6\n\\(0\\)\n-M\nM - 4\n\\(0\\)\n-2M + 4\nM + 4\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(M+4\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-13",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-13",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (13)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (13)\n\n\n\n\nÖrnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\n\n$8\\, x_{3}$\n\\(2.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n-4M + 20\n-2M + 12\n\\(8\\)\n-M\nM - 4\nM\n-M + 4\nM + 4\n \n\n\n$Z_{j}-C_{j}$\n-4M + 10\n-2M + 6\n\\(0\\)\n-M\nM - 4\n\\(0\\)\n-2M + 4\nM + 4\n \n\n\n\n\n\n\n\\(M-4\\) en büyük değer olduğundan \\(s_2\\) anahtar sütun, en düşük oran \\(1\\) olduğundan \\(a_1\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(1\\) olduğundan \\(a_1\\) satırı aynı kalabilir.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(s_2\\) çözüme girer.\nAnahtar satır \\(\\frac{1}{2}\\) ile çarpılarak \\(x_3\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-14",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-14",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (14)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (14)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(2.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-15",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-15",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (15)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (15)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 2.50 \\\\ 1.50 \\\\ 1 \\\\ 0 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 0.50 \\end{pmatrix} + 0.50 \\times \\begin{pmatrix} -4 \\\\ -2 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 1 \\\\ -1 \\\\ 1  \\end{pmatrix} = \\begin{pmatrix} 0.50 \\\\ 0.50 \\\\ 1 \\\\ -0.50 \\\\ 0\\\\ 0.50 \\\\ 0 \\\\ 1 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-16",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-16",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (16)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (16)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-17",
+    "href": "IST115/Hafta06/index.html#örnek-2-büyük-m-minimizasyon-problemi-17",
+    "title": "Hafta 06",
+    "section": "Örnek 2: Büyük M Minimizasyon Problemi (17)",
+    "text": "Örnek 2: Büyük M Minimizasyon Problemi (17)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(6\\)\n\\(8\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$8\\, x_{3}$\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n\\(4\\)\n\\(4\\)\n\\(8\\)\n\\(-4\\)\n+ 0\n\\(4\\)\n+ 0\n\\(8\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-6\\)\n\\(-2\\)\n\\(0\\)\n\\(-4\\)\n\\(0\\)\n-M + 4\n-M\n\\(8\\)\n \n\n\n\n\n\n\n\n\n\n\nSon durumda \\(Z=8\\) amaç fonksiyonu için bulunabilecek en küçük değerdir.\nBu çözümde \\(x_1 = 0\\), \\(x_2 =0\\), \\(x_3 =1\\) \\(s_1 = 0\\), \\(s_2=1\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır.\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\leq 0\\) olduğundan çözüm optimuma ulaşmıştır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-1",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (1)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nÖrnek 3: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=2x_1+3x_2-5x_3\\)\n\\(x_1 + x_2 + x_3 = 7\\)\n\\(2x_1 - 5x_2 + x_3 \\geq 10\\)\n\\(x_1\\), \\(x_2\\), ve \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=2x_1+3x_2-5x_3\\\\\n\\color{orange}{+0s_1} \\color{green}{+MA_1+MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n1x_1 &+& 1x_2 &+& 1x_3 &\\color{orange}+& {\\color{orange} {0s_1}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 7,\\\\\n2x_1 &-& 5x_2 &+& 1x_3 &\\color{orange}-& {\\color{orange} {1s_1}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 10\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), ve \\(x_3 \\geq 0\\), \\(s_1 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-2",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (2)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (2)\n\n\n\n\nÖrnek 3: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-3",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (3)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (3)\n\n\n\n\nÖrnek 3: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n3M\n-4M\n2M\n-M\nM\nM\n17M\n \n\n\n$Z_{j}-C_{j}$\n3M - 2\n-4M - 3\n2M + 5\n-M\n\\(0\\)\n\\(0\\)\n17M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-4",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (4)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (4)\n\n\n\n\nÖrnek 3: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n3M\n-4M\n2M\n-M\nM\nM\n17M\n \n\n\n$Z_{j}-C_{j}$\n3M - 2\n-4M - 3\n2M + 5\n-M\n\\(0\\)\n\\(0\\)\n17M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-5",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (5)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (5)\n\n\n\n\nÖrnek 3: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n\\(7\\)\n\n\n$M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n\\(5\\)\n\n\n$Z_{j}$\n3M\n-4M\n2M\n-M\nM\nM\n17M\n \n\n\n$Z_{j}-C_{j}$\n3M - 2\n-4M - 3\n2M + 5\n-M\n\\(0\\)\n\\(0\\)\n17M\n \n\n\n\n\n\n\n\\(3M-2\\) en büyük değer olduğundan \\(x_1\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(5\\) olduğundan \\(a_2\\) anahtar satırdır.\nAnahtar sayı \\(2\\) olduğundan \\(a_2\\) satırı \\(\\frac{1}{2}\\) ile çarpılır.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır, \\(-1\\) ile çarpılarak \\(a_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-6",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (6)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (6)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 2 \\\\ -5 \\\\ 1 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 10 \\end{pmatrix} \\times \\frac{1}{2} = \\begin{pmatrix} 1 \\\\ -2.5 \\\\ 0.50 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 5  \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-7",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (7)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (7)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\\\ 1\\\\ 0 \\\\ 1 \\\\ 0 \\\\ 7 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 1 \\\\ -2.5 \\\\ 0.50 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 5  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 3.50 \\\\ 0.50 \\\\ 0.50 \\\\ 1 \\\\ -0.50 \\\\ 2 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-8",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (8)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (8)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n3.5M - 5\n0.5M + 1\n0.5M - 1\nM\n-0.5M + 1\n2M + 10\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n3.5M - 8\n0.5M + 6\n0.5M - 1\n\\(0\\)\n-1.5M + 1\n2M + 10\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(1.8M+2\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-9",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (9)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (9)\n\n\n\n\nÖrnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n\\(0.57\\)\n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n3.5M - 5\n0.5M + 1\n0.5M - 1\nM\n-0.5M + 1\n2M + 10\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n3.5M - 8\n0.5M + 6\n0.5M - 1\n\\(0\\)\n-1.5M + 1\n2M + 10\n \n\n\n\n\n\n\n\\(3.5M-8\\) en büyük değer olduğundan \\(x_2\\) anahtar sütun, en düşük oran \\(0.57\\) olduğundan \\(x_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(3.50\\) olduğundan \\(a_1\\) satırı \\(3.50\\) ile bölünmelidir.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(2.50\\) ile çarpılarak \\(x_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-10",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (10)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (10)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 3.50 \\\\ 0.50 \\\\ 0.50 \\\\ 1 \\\\ -0.50 \\\\ 2 \\end{pmatrix} \\div 3.50 = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-11",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (11)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (11)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 1 \\\\ -2.50 \\\\ 0.50 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 5 \\end{pmatrix} + 2.50 \\times \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0.86 \\\\ -0.14 \\\\ 0.71 \\\\ 0.14\\\\ 6.43 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-12",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (12)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (12)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(3\\)\n\\(2.14\\)\n\\(0.14\\)\n\\(2.29\\)\n\\(-0.14\\)\n\\(14.57\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(7.14\\)\n\\(0.14\\)\n-M + 2.29\n-M - 0.14\n\\(14.57\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(14.57\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-13",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-13",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (13)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (13)\n\n\n\n\nÖrnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n\\(4\\)\n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n\\(7.50\\)\n\n\n$Z_{j}$\n\\(2\\)\n\\(3\\)\n\\(2.14\\)\n\\(0.14\\)\n\\(2.29\\)\n\\(-0.14\\)\n\\(14.57\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(7.14\\)\n\\(0.14\\)\n-M + 2.29\n-M - 0.14\n\\(14.57\\)\n \n\n\n\n\n\n\n\\(7.14\\) en büyük değer olduğundan \\(x_3\\) anahtar sütun, en düşük oran \\(4\\) olduğundan \\(x_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.14\\) olduğundan \\(x_2\\) satırı \\(0.14\\) ile bölünmelidir.\nTemel değişkenlerden \\(x_2\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\nAnahtar satır \\(-0.86\\) ile çarpılarak \\(x_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-14",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-14",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (14)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (14)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$-5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix} \\div 0.14 = \\begin{pmatrix} 0 \\\\ 7 \\\\ 1 \\\\ 1 \\\\ 2 \\\\ -1 \\\\ 4 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-15",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-15",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (15)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (15)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$-5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-6\\)\n\\(0\\)\n\\(-1\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 0 \\\\ 0.86 \\\\ -0.14 \\\\ 0.71 \\\\ 0.14 \\\\ 6.43 \\end{pmatrix} -0.86 \\times  \\begin{pmatrix} 0 \\\\ 7 \\\\ 1 \\\\ 1 \\\\ 2 \\\\ -1 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -6 \\\\ 0 \\\\ -1 \\\\ -1\\\\ 1 \\\\ 3 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-16",
+    "href": "IST115/Hafta06/index.html#örnek-3-büyük-m-minimizasyon-problemi-16",
+    "title": "Hafta 06",
+    "section": "Örnek 3: Büyük M Minimizasyon Problemi (16)",
+    "text": "Örnek 3: Büyük M Minimizasyon Problemi (16)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(-5\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$-5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-6\\)\n\\(0\\)\n\\(-1\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(-47\\)\n\\(-5\\)\n\\(-7\\)\n\\(-12\\)\n\\(7\\)\n\\(-14\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-50\\)\n\\(0\\)\n\\(-7\\)\n-M - 12\n-M + 7\n\\(-14\\)\n \n\n\n\n\n\n\n\n\n\n\nSon durumda \\(Z=-14\\) amaç fonksiyonu için bulunabilecek en küçük değerdir.\nBu çözümde \\(x_1 = 3\\), \\(x_2 =0\\), \\(x_3 =4\\) \\(s_1 = 0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır.\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\leq 0\\) olduğundan çözüm optimuma ulaşmıştır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-1",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (1)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nÖrnek 4: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=4x_1+x_2\\)\n\\(3x_1 + x_2 = 3\\)\n\\(4x_1 + 3x_2 \\geq 6\\)\n\\(x_1 + 2x_2 \\leq 4\\)\n\\(x_1\\) ,\\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=4x_1+x_2 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{+MA_1+MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n3x_1 &+& x_2 &\\color{orange}+& {\\color{orange} {0s_1 + 0s_2}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 3,\\\\\n4x_1 &+& 3x_2 &\\color{orange}-& {\\color{orange} {1s_1 +0s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 6,\\\\\nx_1 &+& 2x_2 &\\color{orange}+& {\\color{orange} {0s_1 +1s_2}}{\\color{green} {+0A_1 + 0A_2}} &\\;\\color{orange}= & 4\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\), \\(s_1\\) , \\(s_2 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-2",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (2)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (2)\n\n\n\n\nÖrnek 4: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$M\\, a_{2}$\n\\(4\\)\n\\(3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-3",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (3)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (3)\n\n\n\n\nÖrnek 4: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$M\\, a_{2}$\n\\(4\\)\n\\(3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n7M\n4M\n-M\n+ 0\nM\nM\n9M\n \n\n\n$Z_{j}-C_{j}$\n7M - 4\n4M - 1\n-M\n\\(0\\)\n\\(0\\)\n\\(0\\)\n9M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-4",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (4)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (4)\n\n\n\n\nÖrnek 4: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$M\\, a_{2}$\n\\(4\\)\n\\(3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n7M\n4M\n-M\n+ 0\nM\nM\n9M\n \n\n\n$Z_{j}-C_{j}$\n7M - 4\n4M - 1\n-M\n\\(0\\)\n\\(0\\)\n\\(0\\)\n9M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-5",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (5)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (5)\n\n\n\n\nÖrnek 4: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(3\\)\n\\(1\\)\n\n\n$M\\, a_{2}$\n\\(4\\)\n\\(3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n\\(1.50\\)\n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n\\(4\\)\n\n\n$Z_{j}$\n7M\n4M\n-M\n+ 0\nM\nM\n9M\n \n\n\n$Z_{j}-C_{j}$\n7M - 4\n4M - 1\n-M\n\\(0\\)\n\\(0\\)\n\\(0\\)\n9M\n \n\n\n\n\n\n\n\n\n\n\nEn düşük oran \\(1\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(3\\) olduğundan \\(a_1\\) satırı \\(\\frac{1}{3}\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır, \\(-4\\) ile çarpılarak \\(a_2\\) ile, \\(-1\\) ile çarpılarak \\(s_2\\) ile toplanır.\n\\(7M-4\\) en büyük değer olduğundan \\(x_1\\) anahtar sütun dur."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-6",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (6)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (6)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$M\\, a_{2}$\n\\(4\\)\n\\(3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 3 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 3 \\end{pmatrix} \\times \\frac{1}{3} = \\begin{pmatrix} 1 \\\\ 0.33 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ 0 \\\\ 1  \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-7",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (7)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (7)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$M\\, a_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(-1\\)\n\\(0\\)\n\\(-1.33\\)\n\\(1\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 4 \\\\ 3 \\\\ -1 \\\\ 0 \\\\ 0 \\\\ 1 \\\\ 6 \\end{pmatrix} - 4 \\times \\begin{pmatrix} 1 \\\\ 0.33 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ 0 \\\\ 1  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1.67 \\\\ -1 \\\\ 0 \\\\ -1.33 \\\\ 1 \\\\ 2 \\end{pmatrix} \\]\nDiğer satırlar için değerlerin hesaplanması \\(s_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 4 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 1 \\\\ 0.33 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ 0 \\\\ 1  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1.67 \\\\ 0 \\\\ 1 \\\\ -0.33 \\\\ 0 \\\\ 3 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-8",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (8)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (8)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$M\\, a_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(-1\\)\n\\(0\\)\n\\(-1.33\\)\n\\(1\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n\\(4\\)\n1.67M + 1.33\n-M\n+ 0\n-1.33M + 1.33\nM\n2M + 4\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n1.67M + 0.33\n-M\n\\(0\\)\n-2.33M + 1.33\n\\(0\\)\n2M + 4\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(2M+4\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-9",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (9)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (9)\n\n\n\n\nÖrnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n\\(3\\)\n\n\n$M\\, a_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(-1\\)\n\\(0\\)\n\\(-1.33\\)\n\\(1\\)\n\\(2\\)\n\\(1.20\\)\n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(3\\)\n\\(1.80\\)\n\n\n$Z_{j}$\n\\(4\\)\n1.67M + 1.33\n-M\n+ 0\n-1.33M + 1.33\nM\n2M + 4\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n1.67M + 0.33\n-M\n\\(0\\)\n-2.33M + 1.33\n\\(0\\)\n2M + 4\n \n\n\n\n\n\n\n\\(1.67M+1.33\\) en büyük değer olduğundan \\(x_2\\) anahtar sütun, en düşük oran \\(1.20\\) olduğundan \\(a_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(1.67\\) olduğundan \\(a_2\\) satırı \\(1.67\\) ile bölünmelidir.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(-0.33\\) ile çarpılarak \\(x_1\\) ile, \\(-1.67\\) ile çarpılarak \\(s_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-10",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (10)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (10)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0\\)\n\\(-0.80\\)\n\\(0.60\\)\n\\(1.20\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 1.67 \\\\ -1 \\\\ 0 \\\\ -1.33 \\\\ 1 \\\\ 2 \\end{pmatrix} \\div 1.67 = \\begin{pmatrix} 0 \\\\ 1 \\\\ -0.60 \\\\ 0 \\\\ -0.80 \\\\ 0.60 \\\\ 1.20 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-11",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (11)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (11)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0.60\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0\\)\n\\(-0.80\\)\n\\(0.60\\)\n\\(1.20\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 0.33 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ 0 \\\\ 1 \\end{pmatrix} - 0.33 \\times \\begin{pmatrix} 0 \\\\ 1 \\\\ -0.60 \\\\ 0 \\\\ -0.80 \\\\ 0.60 \\\\ 1.20  \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0.20 \\\\ 0 \\\\ 0.60 \\\\ -0.20 \\\\ 0.60 \\end{pmatrix} \\]\nDiğer satırlar için değerlerin hesaplanması \\(s_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 1.67 \\\\ 0 \\\\ 1 \\\\ -0.33 \\\\ 0 \\\\ 3 \\end{pmatrix} - 1.67 \\times \\begin{pmatrix} 0 \\\\ 1 \\\\ -0.60 \\\\ 0 \\\\ -0.80 \\\\ 0.60 \\\\ 1.20  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ -1 \\\\ 1 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-12",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (12)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (12)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0.60\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0\\)\n\\(-0.80\\)\n\\(0.60\\)\n\\(1.20\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n\\(4\\)\n\\(1\\)\n\\(0.20\\)\n+ 0\n\\(1.60\\)\n\\(-0.20\\)\n\\(3.60\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n-M + 1.60\n-M - 0.20\n\\(3.60\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(3.60\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-13",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-13",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (13)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (13)\n\n\n\n\nÖrnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0.60\\)\n\\(3\\)\n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0\\)\n\\(-0.80\\)\n\\(0.60\\)\n\\(1.20\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\n\n$Z_{j}$\n\\(4\\)\n\\(1\\)\n\\(0.20\\)\n+ 0\n\\(1.60\\)\n\\(-0.20\\)\n\\(3.60\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n-M + 1.60\n-M - 0.20\n\\(3.60\\)\n \n\n\n\n\n\n\n\\(0.20\\) en büyük değer olduğundan \\(s_1\\) anahtar sütun, en düşük oran \\(1\\) olduğundan \\(s_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(1\\) olduğundan \\(s_2\\) satırı aynı kalabilir.\nTemel değişkenlerden \\(s_2\\) çözümden çıkarken, \\(s_1\\) çözüme girer.\nAnahtar satır \\(-0.20\\) ile çarpılarak \\(x_1\\) ile, \\(0.60\\) ile çarpılarak \\(x_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-14",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-14",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (14)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (14)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0.60\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0\\)\n\\(-0.80\\)\n\\(0.60\\)\n\\(1.20\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-15",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-15",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (15)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (15)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0\\)\n\\(0.40\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0\\)\n\\(1.80\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 0 \\\\ 0.20 \\\\ 0 \\\\ 0.60 \\\\ -0.20 \\\\ 0.60 \\end{pmatrix} - 0.20 \\times \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ -1 \\\\ 1  \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\\\ -0.20 \\\\ 0.40 \\\\ 0 \\\\ 0.40 \\end{pmatrix} \\]\nDiğer satırlar için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 1 \\\\ -0.60 \\\\ 0 \\\\ -0.80 \\\\ 0.60 \\\\ 1.20 \\end{pmatrix} + 0.60 \\times \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ -1 \\\\ 1  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\\\ 0.60 \\\\ -0.20 \\\\ 0 \\\\ 1.80 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-16",
+    "href": "IST115/Hafta06/index.html#örnek-4-büyük-m-minimizasyon-problemi-16",
+    "title": "Hafta 06",
+    "section": "Örnek 4: Büyük M Minimizasyon Problemi (16)",
+    "text": "Örnek 4: Büyük M Minimizasyon Problemi (16)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$4\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0\\)\n\\(0.40\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(0\\)\n\\(1.80\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n\\(4\\)\n\\(1\\)\n+ 0\n\\(-0.20\\)\n\\(1.40\\)\n+ 0\n\\(3.40\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(-0.20\\)\n-M + 1.40\n-M\n\\(3.40\\)\n \n\n\n\n\n\n\n\n\n\n\nSon durumda \\(Z=3.40\\) amaç fonksiyonu için bulunabilecek en küçük değerdir.\nBu çözümde \\(x_1 = 0.40\\), \\(x_2 =1.80\\), \\(s_1 = 1\\), \\(s_2=0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır.\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\leq 0\\) olduğundan çözüm optimuma ulaşmıştır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-1",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-1",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (1)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nÖrnek 5: Büyük M Minimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=2x_1+3x_2\\)\n\\(0.5x_1 + 0.25x_2  \\leq 4\\)\n\\(x_1 + 3x_2 \\geq 20\\)\n\\(x_1 + x_2 = 10\\)\n\\(x_1\\) ,\\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=2x_1+3x_2 \\\\\n\\color{orange}{+0s_1+0s_2}\n\\color{green}{+MA_1+MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n0.5x_1 &+& 0.25x_2 &\\color{orange}+& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+0A_1 + 0A_2}} &\\;\\color{orange}= & 4,\\\\\nx_1 &+& 3x_2 &\\color{orange}+& {\\color{orange} {0s_1 - 1s_2}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 20,\\\\\nx_1 &+& x_2 &\\color{orange}+& {\\color{orange} {0s_1 + 0s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 10,\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\), \\(s_1\\), \\(s_2 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-2",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-2",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (2)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (2)\n\n\n\n\nÖrnek 5: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(3\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-3",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-3",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (3)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (3)\n\n\n\n\nÖrnek 5: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(3\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n2M\n4M\n+ 0\n-M\nM\nM\n30M\n \n\n\n$Z_{j}-C_{j}$\n2M - 2\n4M - 3\n\\(0\\)\n-M\n\\(0\\)\n\\(0\\)\n30M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-4",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-4",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (4)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (4)\n\n\n\n\nÖrnek 5: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(3\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n2M\n4M\n+ 0\n-M\nM\nM\n30M\n \n\n\n$Z_{j}-C_{j}$\n2M - 2\n4M - 3\n\\(0\\)\n-M\n\\(0\\)\n\\(0\\)\n30M"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-5",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-5",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (5)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (5)\n\n\n\n\nÖrnek 5: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n\\(16\\)\n\n\n$M\\, a_{1}$\n\\(1\\)\n\\(3\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n\\(6.67\\)\n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n\\(10\\)\n\n\n$Z_{j}$\n2M\n4M\n+ 0\n-M\nM\nM\n30M\n \n\n\n$Z_{j}-C_{j}$\n2M - 2\n4M - 3\n\\(0\\)\n-M\n\\(0\\)\n\\(0\\)\n30M\n \n\n\n\n\n\n\n\n\n\n\nEn düşük oran \\(6.67\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(3\\) olduğundan \\(a_1\\) satırı \\(\\frac{1}{3}\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır, \\(-\\frac{1}{4}\\) ile çarpılarak \\(s_1\\) ile, \\(-1\\) ile çarpılarak \\(a_2\\) ile toplanır.\n\\(4M-3\\) en büyük değer olduğundan \\(x_2\\) anahtar sütun dur."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-6",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-6",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (6)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (6)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$3\\, x_{2}$\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0\\)\n\\(6.67\\)\n \n\n\n$M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 3 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 0 \\\\ 20 \\end{pmatrix} \\times \\frac{1}{3} = \\begin{pmatrix} 0.33 \\\\ 1 \\\\ 0 \\\\ -0.33 \\\\ 0.33 \\\\ 0\\\\ 6.67 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-7",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-7",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (7)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (7)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.42\\)\n\\(0\\)\n\\(1\\)\n\\(0.08\\)\n\\(-0.08\\)\n\\(0\\)\n\\(2.33\\)\n \n\n\n$3\\, x_{2}$\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0\\)\n\\(6.67\\)\n \n\n\n$M\\, a_{2}$\n\\(0.67\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(1\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_1\\)\n\\[\\begin{pmatrix} 0.50 \\\\ 0.25 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 0 \\\\ 4 \\end{pmatrix} - \\frac{1}{4} \\times \\begin{pmatrix} 0.33 \\\\ 1 \\\\ 0 \\\\ -0.33 \\\\ 0.33 \\\\ 0\\\\ 6.67 \\end{pmatrix}= \\begin{pmatrix} 0.42 \\\\ 0 \\\\ 1 \\\\ 0.08 \\\\ -0.08 \\\\ 0 \\\\ 2.33 \\end{pmatrix} \\] Diğer satırlar için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 0 \\\\ 1 \\\\ 10 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 0.33 \\\\ 1 \\\\ 0 \\\\ -0.33 \\\\ 0.33 \\\\ 0\\\\ 6.67 \\end{pmatrix}= \\begin{pmatrix} 0.67 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ -0.33 \\\\ 1 \\\\ 3.33 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-8",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-8",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (8)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (8)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.42\\)\n\\(0\\)\n\\(1\\)\n\\(0.08\\)\n\\(-0.08\\)\n\\(0\\)\n\\(2.33\\)\n \n\n\n$3\\, x_{2}$\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0\\)\n\\(6.67\\)\n \n\n\n$M\\, a_{2}$\n\\(0.67\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(1\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n0.67M + 1\n\\(3\\)\n+ 0\n0.33M - 1\n-0.33M + 1\nM\n3.33M + 20\n \n\n\n$Z_{j}-C_{j}$\n0.67M - 1\n\\(0\\)\n\\(0\\)\n0.33M - 1\n-1.33M + 1\n\\(0\\)\n3.33M + 20\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\geq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\n\\(3.33M+20\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-9",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-9",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (9)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (9)\n\n\n\n\nÖrnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.42\\)\n\\(0\\)\n\\(1\\)\n\\(0.08\\)\n\\(-0.08\\)\n\\(0\\)\n\\(2.33\\)\n\\(5.60\\)\n\n\n$3\\, x_{2}$\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0\\)\n\\(6.67\\)\n\\(20\\)\n\n\n$M\\, a_{2}$\n\\(0.67\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(1\\)\n\\(3.33\\)\n\\(5\\)\n\n\n$Z_{j}$\n0.67M + 1\n\\(3\\)\n+ 0\n0.33M - 1\n-0.33M + 1\nM\n3.33M + 20\n \n\n\n$Z_{j}-C_{j}$\n0.67M - 1\n\\(0\\)\n\\(0\\)\n0.33M - 1\n-1.33M + 1\n\\(0\\)\n3.33M + 20\n \n\n\n\n\n\n\n\\(0.67M+1\\) en büyük değer olduğundan \\(x_1\\) anahtar sütun, en düşük oran \\(5\\) olduğundan \\(a_2\\) anahtar satırdır.\n\n\n\n\n\nAnahtar sayı \\(0.67\\) olduğundan \\(a_2\\) satırı \\(\\frac{3}{2}\\) ile çarpılmalıdır.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır, \\(-0.42\\) ile çarpılarak \\(s_1\\) ile, \\(-0.33\\) ile çarpılarak \\(x_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-10",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-10",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (10)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (10)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0.42\\)\n\\(0\\)\n\\(1\\)\n\\(0.08\\)\n\\(-0.08\\)\n\\(0\\)\n\\(2.33\\)\n \n\n\n$3\\, x_{2}$\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0\\)\n\\(6.67\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 0.67 \\\\ 0 \\\\ 0 \\\\ 0.33 \\\\ -0.33 \\\\ 1 \\\\ 3.33  \\end{pmatrix} \\times \\frac{3}{2} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0.5 \\\\ -0.5 \\\\ 1.5 \\\\ 5 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-11",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-11",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (11)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (11)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-0.12\\)\n\\(0.12\\)\n\\(-0.62\\)\n\\(0.25\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(5\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_1\\)\n\\[\\begin{pmatrix} 0.42 \\\\ 0 \\\\ 1 \\\\ 0.08 \\\\ -0.08 \\\\ 0 \\\\ 2.33 \\end{pmatrix} - 0.42 \\times \\begin{pmatrix} 1 \\\\ 0 \\\\ 0\\\\ 0.50 \\\\ -0.50\\\\ 1.5 \\\\ 5 \\end{pmatrix}= \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\\\ -0.12 \\\\ 0.12 \\\\ -0.62 \\\\ 0.25 \\end{pmatrix} \\] Diğer satırlar için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0.33 \\\\ 1 \\\\ 0 \\\\ -0.33 \\\\ 0.33 \\\\ 0 \\\\ 6.67 \\end{pmatrix} - 0.33 \\times \\begin{pmatrix} 1 \\\\ 0 \\\\ 0\\\\ 0.50 \\\\ -0.50\\\\ 1.5 \\\\ 5 \\end{pmatrix}= \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\\\ -0.50 \\\\ 0.50 \\\\ -0.50 \\\\ 5 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-12",
+    "href": "IST115/Hafta06/index.html#örnek-5-büyük-m-minimizasyon-problemi-12",
+    "title": "Hafta 06",
+    "section": "Örnek 5: Büyük M Minimizasyon Problemi (12)",
+    "text": "Örnek 5: Büyük M Minimizasyon Problemi (12)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\nM\nM\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-0.12\\)\n\\(0.12\\)\n\\(-0.62\\)\n\\(0.25\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(5\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(1.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(3\\)\n+ 0\n\\(-0.50\\)\n\\(0.50\\)\n\\(1.50\\)\n\\(25\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(-0.50\\)\n-M + 0.50\n-M + 1.50\n\\(25\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinin tamamı \\(\\leq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z = 25\\) amaç fonksiyonu için bulunabilecek en küçük değerdir.\nBu çözümde \\(x_1 = 5\\), \\(x_2 =5\\), \\(s_1 =0.25\\), \\(s_2 = 0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK06_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK06_MAIN.html",
+    "title": "IST115 - Hafta 06",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 06"
+    ]
   }
 ]

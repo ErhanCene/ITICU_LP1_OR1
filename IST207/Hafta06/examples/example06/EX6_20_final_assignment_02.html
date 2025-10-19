@@ -1,0 +1,77 @@
+<!doctype html><meta charset='utf-8'>
+<style>
+  :root{
+    --tbl-font: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+    --grid: #d9dee7;
+    --head-bg: #eef5ff;
+    --head-txt:#233042;
+    --cell-txt:#1f2937;
+    --muted:#6b7280;
+    --alloc-bg:#fff3cd;  /* star */
+    --alloc-br:#f1c40f;
+    --dead-bg:#fff0f0;   /* light tint for covered rows/cols */
+    --zero-bg:#f3fff3;   /* hint for zeros */
+    --line: rgba(200, 30, 30, 0.7); /* semi-transparent red */
+  }
+
+  table.tg{
+    border-collapse:collapse;border-spacing:0;width:auto;
+    font-family:var(--tbl-font);font-size:14px; line-height:1.2;
+    margin:10px 0;
+  }
+  .tg th, .tg td{
+    border:1px solid var(--grid);
+    padding:8px 10px; text-align:center; vertical-align:middle;
+    color:var(--cell-txt); white-space:nowrap;
+    position:relative;
+  }
+  .tg thead th{ background:var(--head-bg); color:var(--head-txt); font-weight:600; }
+  .row-hdr{ background:var(--head-bg); color:var(--head-txt); font-weight:600; }
+
+  .alloc{ background:var(--alloc-bg); border:2px solid var(--alloc-br); font-weight:700; } /* starred */
+  .prime{ border:2px dashed #4285f4; background:#e8f0fe; }                                /* primed */
+  .zero{  background:var(--zero-bg); }                                                    /* plain zero */
+
+  /* soft tint when covered (optional) */
+  .dead{  background:var(--dead-bg); }
+
+  /* augmenting path outline */
+  .path { outline: 2px dashed #16a34a; outline-offset:-2px; }
+
+  /* draw cover LINES through cell centers */
+   .line-row::after{
+    content:''; position:absolute; left:4px; right:4px; top:50%;
+    height:2px; background:var(--line); transform:translateY(-50%);
+    pointer-events:none;
+    opacity:0.4;
+  }
+  .line-col::before{
+    content:''; position:absolute; top:4px; bottom:4px; left:50%;
+    width:2px; background:var(--line); transform:translateX(-50%);
+    pointer-events:none;
+    opacity:0.4;
+  }
+  .line-both::after{
+    content:''; position:absolute; left:4px; right:4px; top:50%;
+    height:2px; background:var(--line); transform:translateY(-50%);
+    pointer-events:none;
+    opacity:0.4;
+  }
+  .line-both::before{
+    content:''; position:absolute; top:4px; bottom:4px; left:50%;
+    width:2px; background:var(--line); transform:translateX(-50%);
+    pointer-events:none;
+    opacity:0.4;
+  }
+
+
+  .cell-wrap{display:flex; flex-direction:column; align-items:center;}
+  .sub{ font-size:12px; color:var(--muted); margin-top:2px; }
+
+  .sum-hdr{ background:var(--head-bg); color:var(--head-txt); font-weight:600; }
+  .sum-cell{ font-weight:600; }
+
+  .note{margin:6px 0; color:#374151}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#eee;font-size:12px}
+</style>
+<table class='tg'><thead><tr><th></th><th class="sum-hdr">İş 1</th><th class="sum-hdr">İş 2</th><th class="sum-hdr">İş 3</th><th class="sum-hdr">İş 4</th><th class="sum-hdr">İş 5</th></tr></thead><tbody><tr><th class="row-hdr">A</th><td class="">35</td><td class="alloc">15</td><td class="">M</td><td class="">30</td><td class="">30</td></tr><tr><th class="row-hdr">B</th><td class="">25</td><td class="">20</td><td class="alloc">15</td><td class="">25</td><td class="">40</td></tr><tr><th class="row-hdr">C</th><td class="">20</td><td class="">M</td><td class="">30</td><td class="alloc">20</td><td class="">50</td></tr><tr><th class="row-hdr">D</th><td class="alloc">15</td><td class="">40</td><td class="">35</td><td class="">15</td><td class="">40</td></tr><tr><th class="row-hdr">E</th><td class="">10</td><td class="">50</td><td class="">40</td><td class="">30</td><td class="alloc">35</td></tr></tbody></table>

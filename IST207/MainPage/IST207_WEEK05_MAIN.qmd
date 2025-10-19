@@ -1,6 +1,6 @@
 ---
 title: "IST207 - Hafta 05"
-subtitle: "Yöneylem Araştırması: Ulaştırma Problemleri"
+subtitle: "Yöneylem Araştırması: Seçenekli Opt. Çözüm, Maksimum Amaçlı Ulaştırma Problemleri"
 # format: live-html
 engine: knitr
 # webr:
