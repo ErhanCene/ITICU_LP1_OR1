@@ -1,0 +1,2949 @@
+---
+title: Hafta 07
+subtitle: "Soru Çözümü 1"
+date: 10/30/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 07 - 30 Ekim 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+```{r}
+source('lp_plot.R')
+source('lp_step_by_step.R')
+source('driver_simplexR.R')
+source('driver_bigM.R')
+library(tidyverse)
+```
+
+
+## Örnek 1: İmalathane Problemi (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: İmalathane Problemi (1)"  style="font-size: 100%;"}
+
+
+* Bir imalathanenin [dört]{.light-blue} üretim bölümü vardır. Her üretim bölümü geçici fazla kapasiteye sahiptir.
+* Yönetim bu elverişli kapasiteyi [iki ürün]{.light-blue} üretimi için kullanmayı düşünür.
+* Bir birim [Ürün 1]{.light-blue} in üretimi için [Bölüm A]{.light-blue}'da [2 saat]{.light-blue}, [Bölüm C]{.light-blue}'de [3 saat]{.light-blue} ve [Bölüm D]{.light-blue}'de [1 saat]{.light-blue} işlem gereklidir. 
+* Bir birim [Ürün 2]{.light-blue} nin üretimi için [Bölüm A]{.light-blue}'da [2 saat]{.light-blue}, [Bölüm B]{.light-blue}'de [3 saat]{.light-blue}, [Bölüm C]{.light-blue}'de [1 saat]{.light-blue} ve [Bölüm D]{.light-blue}'de [30 dakika]{.light-blue} işlem gereklidir. 
+* Bir birim [Ürün 1]{.light-blue} in kara katkısı [3 TL]{.light-blue} ve bir birim [Ürün 2]{.light-blue} nin kara katkısı ise [3.6 TL]{.light-blue} dir.
+* [Bölüm A]{.light-blue} [8 saatlik]{.light-blue}, [Bölüm B]{.light-blue} [9 saatlik]{.light-blue}, [Bölüm C]{.light-blue} [7.5]{.light-blue} saatlik ve [Bölüm D]{.light-blue} [3 saatlik]{.light-blue} elverişli süreye sahiptir.
+* Problemin [doğrusal programlama problemini]{.red} kurunuz, hem [grafik yöntemle]{.red} hem de [simpleks yöntemle]{.red} çözünüz.
+:::
+
+
+## Örnek 1: İmalathane Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 1: Problemin İfadesi" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=1}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+* [$x_1$]{.orange} = Ürün 1 in satış adedi
+* [$x_2$]{.orange} = Ürün 2 nin satış adedi
+:::
+
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$max \quad{} z = 3x_1 + 3.6x_2$]{.light-blue}
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$2x_1 + 2x_2 \leq 8$]{.light-blue} 
+* [$0x_1 + 3x_2 \leq 9$]{.light-blue} 
+* [$3x_1 + 1x_2 \leq 7.5$]{.light-blue} 
+* [$1x_1 + 0.5x_2 \leq 3$]{.light-blue} 
+
+:::
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+:::
+
+:::
+
+:::
+:::
+
+## Örnek 1: İmalathane Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 1: Grafik Çözüm" style="font-size: 85%;"}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5.7
+#| fig-height: 5.7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 5), ylim = c(-1, 5),
+                  title = "Uygun Bölge - Z = 3*x1 + 3.6*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(3, 3.6), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=4)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=4)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(0, 3), rhs = 9, dir = "<=",label_size=4)
+g <- lp_step_add(g, coef = c(2, 2), rhs = 8, dir = "<=",label_size=4)
+g <- lp_step_add(g, coef = c(3, 1), rhs = 7.5, dir = "<=",label_size=4)
+g <- lp_step_add(g, coef = c(1, 0.5), rhs = 3, dir = "<=",label_size=4)
+
+g <- lp_step_mark_candidates(g, label = T,
+                             show_z = T,
+                             highlight_best = T,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+
+:::
+
+
+## Örnek 1: İmalathane Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Standart Form" style="font-size: 100%;"}
+
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+$Z_{max} =3x_1+3.6x_2 + \color{orange}{0s_1+0s_2+0s_3+0s_4}$
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 2x_2 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3 + 0s_4}} &\;\color{orange}= & 8,\\
+0x_1 &+& 3x_2 &+& {\color{orange} {0s_1 + 1s_2 + 0s_3 + 0s_4}} &\;\color{orange}= & 9, \\
+3x_1 &+& 1x_2 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3 + 0s_4}} &\;\color{orange}= & 7.5, \\
+1x_1 &+& 0.5x_2 &+& {\color{orange} {0s_1 + 0s_2 + 0s_3 + 1s_4}} &\;\color{orange}= & 3
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ ,$s_2$ ,$s_3$ , $s_4 \geq 0$]{.orange}
+
+:::
+
+:::
+
+
+## Örnek 1: İmalathane Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İmalathane Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 1: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 1: İmalathane Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İmalathane Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: İmalathane Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 1: İmalathane Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1: İmalathane Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: İmalathane Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: İmalathane Problemi (13)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1: İmalathane Problemi (14)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 1: İmalathane Problemi (15)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_07_after_objective.html >}}
+```
+
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=13.80$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 1$]{.light-blue}, [$x_2 =3$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 0$]{.light-blue} [$s_3 = 1.5$]{.light-blue} ve [$s_4 = 0.50$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (1)
+
+
+::: {.callout-tip icon=false title="Örnek 2: Çiftçi (1)"  style="font-size: 100%;"}
+
+* Bir çiftçi [200]{.light-blue} dönümlük arazisinde [tütün]{.light-blue} ve [pamuk]{.light-blue} üretmektedir. Bir dönüm tütün üretiminden [5 milyon TL]{.light-blue} ve bir dönüm pamuk üretiminden de [2.5 milyon TL]{.light-blue} gelir elde etmektedir.
+* Hükümet ancak [40]{.light-blue} dönüm tütün üretimine izin vermektedir.
+* Üretim mevsiminde ancak [500 saat]{.light-blue} işgücüne sahip olan bir çiftçi bir dönüm tütün ekimi için [6 saat]{.light-blue} işgücüne ve bir dönüm pamuk ekimi için de [2 saat]{.light-blue} işgücüne ihtiyaç duymaktadır.
+* Bu çiftçi [gelirini maksimum kılması]{.red} için [kaç dönüm pamuk]{.red} ve [kaç dönüm tütün]{.red} ekmelidir?
+* Problemin [doğrusal programlama problemini]{.red} kurunuz, hem [grafik yöntemle]{.red} hem de [simpleks yöntemle]{.red} çözünüz.
+:::
+
+
+## Örnek 2: Çiftçi (2)
+
+::: {.callout-tip icon=false title="Örnek 2: Problemin İfadesi" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=1}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+* [$x_1$]{.orange} = Tütün için ayrılan dönüm miktarı
+* [$x_2$]{.orange} = Pamuk için ayrılan dönüm miktarı
+:::
+
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$max \quad{} z = 5x_1 + 2.5x_2$]{.light-blue}
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$1x_1 + 1x_2 \leq 200$]{.light-blue} 
+* [$6x_1 + 2x_2 \leq 500$]{.light-blue} 
+* [$1x_1 + 0x_2 \leq 40$]{.light-blue} 
+:::
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+:::
+
+:::
+
+:::
+:::
+
+## Örnek 2: Çiftçi (3)
+
+::: {.callout-tip icon=false title="Örnek 2: Grafik Çözüm" style="font-size: 85%;"}
+
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5.7
+#| fig-height: 5.7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 100), ylim = c(-1, 210),
+                  title = "Uygun Bölge - Z = 5*x1 + 2.5*x2 (max)",
+                  pastel = TRUE,
+                  obj = c(5, 2.5), sense = "max")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=3)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=3)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(1, 1), rhs = 200, dir = "<=",label_size=3)
+g <- lp_step_add(g, coef = c(6, 2), rhs = 500, dir = "<=",label_size=3)
+g <- lp_step_add(g, coef = c(1, 0), rhs = 40, dir = "<=",label_size=3)
+
+g <- lp_step_mark_candidates(g, label = T,
+                             show_z = T,
+                             highlight_best = T,
+                             show_obj_line = FALSE,
+                             label_size = 3,
+                             repel = TRUE,
+                             color='red',
+                             size=4)
+g$p
+
+```
+
+:::
+
+
+## Örnek 2: Çiftçi (4)
+
+::: {.callout-tip icon=false title="Örnek 2: Standart Form" style="font-size: 100%;"}
+
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+$Z_{max} =5x_1+2.5x_2 + \color{orange}{0s_1+0s_2+0s_3}$
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 1x_2 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3 }} &\;\color{orange}= & 200,\\
+6x_1 &+& 2x_2 &+& {\color{orange} {0s_1 + 1s_2 + 0s_3 }} &\;\color{orange}= & 500, \\
+1x_1 &+& 0x_2 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3 }} &\;\color{orange}= & 40
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ ,$s_2$ , $s_3 \geq 0$]{.orange}
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (5)
+
+::: {.callout-tip icon=false title="Örnek 2: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 2: Çiftçi (6)
+
+::: {.callout-tip icon=false title="Örnek 2: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 2: Çiftçi (7)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 2: Çiftçi (8)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (9)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2: Çiftçi (10)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Çiftçi (11)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (12)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (13)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Çiftçi (14)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2: Çiftçi (15)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_07_after_objective.html >}}
+```
+
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 2: Çiftçi (16)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Çiftçi (17)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Çiftçi (18)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2: Çiftçi (19)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_07_after_objective.html >}}
+```
+
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=562.50$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 25$]{.light-blue}, [$x_2 =175$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 0$]{.light-blue} ve [$s_3 = 15$]{.light-blue} dır.
+:::
+
+:::
+
+:::
+
+## Örnek 3: Big M Soru 1 (1)
+
+::: {.callout-tip icon=false title="Örnek 3: Problemin İfadesi ve Grafik Çözüm" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$min \quad{} z = 2x_1 + x_2$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$4x_1 + 5x_2 \leq 20$]{.light-blue} 
+* [$3x_1 + 1x_2 \geq 3$]{.light-blue} 
+* [$1x_1 + 0x_2 \leq 4$]{.light-blue} 
+:::
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=9}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5.7
+#| fig-height: 5.7
+
+# Init with objective (max)
+g <- lp_step_init(xlim = c(-1, 7), ylim = c(-1, 7),
+                  title = "Uygun Bölge - Z = 2x1 + x2 (min)",
+                  pastel = TRUE,
+                  obj = c(2, 1), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=4)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=4)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(4, 5), rhs = 20, dir = "<=",label_size=4)
+g <- lp_step_add(g, coef = c(3, 1), rhs = 3, dir = ">=",label_size=4)
+g <- lp_step_add(g, coef = c(1, 0), rhs = 4, dir = "<=",label_size=4)
+
+
+g <- lp_step_mark_candidates(g, label = T,
+                             show_z = T,
+                             highlight_best = T,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+:::
+
+:::
+
+:::
+:::
+
+
+## Örnek 3: Big M Soru 1 (2)
+
+::: {.callout-tip icon=false title="Örnek 3: Standart Form" style="font-size: 100%;"}
+
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=2x_1+x_2 \\ 
+ \color{orange}{+0s_1+0s_2+0s_3}
+ \color{green}{+MA_1}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+4x_1 &+& 5x_2  &\color{orange}+& {\color{orange} {1s_1 + 0s_2 + 0s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 20,\\
+3x_1 &+& 1x_2  &\color{orange}+& {\color{orange} {0s_1 - 1s_2 + 0s_3}}{\color{green} {+1A_1}} &\;\color{orange}= & 3, \\
+1x_1 &+& 0x_2  &\color{orange}+& {\color{orange} {0s_1 + 0s_2 + 1s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 4
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ ,$s_2$ , $s_3 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::
+
+
+## Örnek 3: Big M Soru 1 (3)
+
+::: {.callout-tip icon=false title="Örnek 3: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 3: Big M Soru 1 (4)
+
+::: {.callout-tip icon=false title="Örnek 3: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 3: Big M Soru 1 (5)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 3: Big M Soru 1 (6)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Big M Soru 1 (7)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3: Big M Soru 1 (8)
+
+::: {.callout-tip icon=false title="Örnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Big M Soru 1 (9)
+
+::: {.callout-tip icon=false title="Örnek 3: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Son durumda [$Z=2$]{.light-blue} amaç fonksiyonu için bulunabilecek en küçük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 1$]{.light-blue}, [$x_2 =0$]{.light-blue}, [$s_1 = 16$]{.light-blue}, [$s_2 = 0$]{.light-blue}, [$s_3 = 3$]{.light-blue} ve [$A_1 = 0$]{.light-blue} dır.
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4: Big M Soru 2 (1)
+
+::: {.callout-tip icon=false title="Örnek 4: Problemin İfadesi ve Grafik Çözüm" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$min \quad{} z = 100x_1 + 50x_2$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$10x_1 + 40x_2 \geq 10000$]{.light-blue} 
+* [$80x_1 + 20x_2 \leq 20000$]{.light-blue} 
+:::
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ , $x_2 \geq 0$]{.light-blue}  
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=9}
+
+```{r}
+#| echo: false      # hide the code
+#| message: false   # hide messages
+#| warning: false   # hide warnings
+#| fig-width: 5.7
+#| fig-height: 5.7
+
+# Init with objective (min)
+g <- lp_step_init(xlim = c(-1, 500), ylim = c(-1, 500),
+                  title = "Uygun Bölge - Z = 100x1 + 50x2 (min)",
+                  pastel = TRUE,
+                  obj = c(100, 50), sense = "min")
+
+g <- lp_step_add_x1_bound(g, 0,   dir = ">=", label_size=4)              # x1 ≥ 0
+g <- lp_step_add_x2_bound(g, 0,   dir = ">=", label_size=4)              # x2 ≥ 0
+g <- lp_step_add(g, coef = c(10, 40), rhs = 10000, dir = ">=",label_size=4)
+g <- lp_step_add(g, coef = c(80, 20), rhs = 20000, dir = "<=",label_size=4)
+
+
+
+g <- lp_step_mark_candidates(g, label = T,
+                             show_z = T,
+                             highlight_best = T,
+                             show_obj_line = FALSE,
+                             label_size = 4,
+                             repel = TRUE,
+                             color='red',
+                             size=5)
+g$p
+
+```
+:::
+
+:::
+
+:::
+:::
+
+
+## Örnek 4: Big M Soru 2 (2)
+
+::: {.callout-tip icon=false title="Örnek 4: Standart Form" style="font-size: 100%;"}
+
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=100x_1+50x_2 \\ 
+ \color{orange}{+0s_1+0s_2}
+ \color{green}{+MA_1}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+10x_1 &+& 40x_2  &\color{orange}-& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 10000,\\
+80x_1 &+& 20x_2  &\color{orange}+& {\color{orange} {0s_1 + 1s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 20000
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$ , $x_2 \geq 0$ ve [$s_1$ , $s_2 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::
+
+
+## Örnek 4: Big M Soru 2 (3)
+
+::: {.callout-tip icon=false title="Örnek 4: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 4: Big M Soru 2 (4)
+
+::: {.callout-tip icon=false title="Örnek 4: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 4: Big M Soru 2 (5)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 4: Big M Soru 2 (6)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Big M Soru 2 (7)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4: Big M Soru 2 (8)
+
+::: {.callout-tip icon=false title="Örnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Big M Soru 2 (9)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Son durumda [$Z=12500$]{.light-blue} amaç fonksiyonu için bulunabilecek en küçük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 0$]{.light-blue}, [$x_2 =250$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 15000$]{.light-blue} ve [$A_1 = 0$]{.light-blue} dır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Guci Çanta (1)
+
+
+::: {.callout-tip icon=false title="Örnek 5: Guci Çanta (1)"  style="font-size: 100%;"}
+
+* Guci şirketi [el çantaları]{.light-blue}, [traş çantaları]{.light-blue} ve [sırt çantaları]{.light-blue} üretmektedir.
+* Çantalarında üretiminde, [deri]{.light-blue} sınırlı kullanımı olan ana hammadde olarak değerlendirilmektedir.
+* Üretim sürecine ustalık becerisine sahip bir [dikişçi]{.light-blue}, bir de [cilacı]{.light-blue} olmak üzere iki kişi gereklidir.
+
+::: columns
+
+::: {.column width="40%"}
+* Yandaki tabloda her bir ürün için [kaynak kullanım miktarları]{.light-blue} ile [birim satış fiyatları]{.light-blue} görülmektedir.
+* [Problemin doğrusal programlama modelini kurunuz.]{.red} ve [en yüksek kar]{.red} getirilebilmesi için [hangi çantadan kaç adet]{.red} üretilmesi gerektiğini bulunuz.
+
+:::
+
+::: {.column width="1%"}
+
+
+:::
+
+::: {.column width="58%"}
+
+:::{style="font-size: 80%;"}
+
+
+|   **Kaynak/Üretim**   | **El Çantası** | **Traş Çantası** | **Sırt Çantası** | **Günlük Kullanım** |
+|:---------------------:|:--------------:|------------------|------------------|---------------------|
+|    **Deri (birim)**   |        2       |         1        |         3        |       42 birim      |
+|    **Dikiş (saat)**   |        2       |         1        |         2        |       40 saat       |
+|  **Cilalama (Saat)**  |        1       |        0.5       |         1        |       45 saat       |
+| **Satış Fiyatı (pb)** |       **24**   |        **22**    |        **45**    |                     |
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Guci Çanta (2)
+
+::: {.callout-tip icon=false title="Örnek 5: Problemin İfadesi" style="font-size: 85%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=1}
+[Karar değişkenleri:]{.red}
+:::
+
+:::{.fragment fragment-index=5}
+* [$x_1$]{.orange} = El çantası satış adedi
+* [$x_2$]{.orange} = Traş çantası satış adedi
+* [$x_3$]{.orange} = Sırt çantası satış adedi
+:::
+
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$max \quad{} z = 24x_1 + 22x_2 + 45x_3$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$2x_1 + 1x_2   + 3x_3 \leq 42$]{.light-blue} 
+* [$2x_1 + 1x_2   + 2x_3 \leq 40$]{.light-blue} 
+* [$1x_1 + 0.5x_2 + 1x_3 \leq 45$]{.light-blue} 
+
+
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ ,$x_2$,  $x_3 \geq 0$]{.light-blue}  
+:::
+
+
+:::{.fragment fragment-index=9}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=10}
+$Z_{max} =24x_1 + 22x_2 + 45x_3 + \color{orange}{0s_1+0s_2+0s_3}$
+:::
+
+
+:::{.fragment fragment-index=11}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 1x_2 &+& 3x_3 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3}} &\;\color{orange}= & 42,\\
+2x_1 &+& 1x_2 &+& 2x_3 &+& {\color{orange} {0s_1 + 1s_2 + 0s_3}} &\;\color{orange}= & 40,\\
+1x_1 &+& 0.5x_2 &+& 1x_3 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3}} &\;\color{orange}= & 45
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=12}
+$x_1$,$x_2$ , $x_3 \geq 0$ ve [$s_1$ , $s_2$, $s_3 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+:::
+
+
+## Örnek 5: Guci Çanta (3)
+
+::: {.callout-tip icon=false title="Örnek 5: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 5: Guci Çanta (4)
+
+::: {.callout-tip icon=false title="Örnek 5: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 5: Guci Çanta (5)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 5: Guci Çanta (6)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Guci Çanta (7)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5: Guci Çanta (8)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Guci Çanta (9)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Guci Çanta (10)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+
+:::
+
+:::
+
+:::
+
+## Örnek 5: Guci Çanta (11)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Guci Çanta (12)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5: Guci Çanta (13)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_07_after_objective.html >}}
+```
+
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=882$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 0$]{.light-blue}, [$x_2 =36$]{.light-blue},[$x_3 =2$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 0$]{.light-blue} ve [$s_3 = 25$]{.light-blue}’tir.
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Big M Soru 3 (1)
+
+::: {.callout-tip icon=false title="Örnek 6: Problemin İfadesi ve Grafik Çözüm" style="font-size: 100%;"}
+
+
+::: columns
+
+::: {.column width='40%'}
+
+::: {style="font-size: 110%;"}
+
+:::{.fragment fragment-index=2}
+[Amaç fonksiyonu]{.red}
+:::
+
+:::{.fragment fragment-index=6}
+* [$min \quad{} z = 3x_1 + 2x_2 + 3x_3$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+[Kısıtlayıcılar]{.red}
+:::
+
+:::{.fragment fragment-index=7}
+* [$x_1 + 4x_2 + x_3 \geq 7$]{.light-blue} 
+* [$2x_1 + x_2 \geq 10$]{.light-blue} 
+:::
+
+:::{.fragment fragment-index=4}
+[Negatif olmama koşulu]{.red}
+:::
+
+:::{.fragment fragment-index=8}
+* [$x_1$ , $x_2$, $x_3 \geq 0$]{.light-blue}  
+:::
+
+
+:::
+
+:::
+
+::: {.column width='60%'}
+
+:::{.fragment fragment-index=5 style="font-size: 100%;"}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=3x_1+2x_2+3x_3 \\ 
+ \color{orange}{+0s_1+0s_2}
+ \color{green}{+MA_1 + MA_2}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 100%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 4x_2 &+& 1x_3  &\color{orange}-& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+1A_1+0A_2}} &\;\color{orange}= & 7,\\
+2x_1 &+& 1x_2 &+& 0x_3 &\color{orange}+& {\color{orange} {0s_1 + 1s_2}}{\color{green} {+0A_1 + 1A_2}} &\;\color{orange}= & 10
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2$, $x_3 \geq 0$ ve [$s_1$ , $s_2 \geq 0$]{.orange} ve [$A_1$, $A_2 \geq 0$]{.green}
+
+:::
+
+:::
+
+:::
+:::
+
+## Örnek 6: Big M Soru 3 (2)
+
+::: {.callout-tip icon=false title="Örnek 1: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 6: Big M Soru 3 (3)
+
+::: {.callout-tip icon=false title="Örnek 1: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 6: Big M Soru 3 (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 6: Big M Soru 3 (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Big M Soru 3 (6)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 6: Big M Soru 3 (7)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 6: Big M Soru 3 (8)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="95%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Big M Soru 3 (9)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="95%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter02_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 6: Big M Soru 3 (10)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 6: Big M Soru 3 (11)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 6: Big M Soru 3 (12)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex6\ex6_iter02_07_after_objective.html >}}
+```
+
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=15.29$]{.light-blue} amaç fonksiyonu için bulunabilecek en küçük değerdir. [Çözüm optimuma ulaşmıştır.]{.green}
+* Bu çözümde [$x_1 = 4.71$]{.light-blue}, [$x_2 =0.57$]{.light-blue}, [$x_3 =0$]{.light-blue},  [$s_1 = 0$]{.light-blue}, [$s_2 = 0$]{.light-blue} [$a_1 = 0$]{.light-blue} ve [$a_2 = 0.50$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+
+## Örnek 7: Standart ve Kanonik Form (1)
+::: {.callout-tip icon=false title="Örnek 7: Standart ve Kanonik Form" style="font-size: 100%;"}
+
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5x_4$$]{.light-blue}
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20,\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30,\\
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50,\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60,
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1 \geq 0, x_2 \geq 0, x_3 \geq 0, x_4 \quad{} sınırlandırılmamış$$]{.light-blue}
+
+şeklinde verilmiş olan doğrusal programlama problemini
+
+**a)** [Standart biçimde]{.light-red}
+
+**b)** [Kanonik biçimde]{.light-red}
+
+yazınız.
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (2)
+::: {.callout-tip icon=false title="Standart Form (1)" style="font-size: 80%;"}
+
+* Genel kural olarak, standart formda [tüm kısıtlar eşitlik]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* [$\leq$]{.light-red} kısıtları için [aylak değişken]{.light-red} eklenmeli [$\geq$]{.light-red} kısıtları için [artık değişken]{.light-red} çıkarılmalıdır.
+* İşaret sınırı olmayan [$x_4$]{.light-red} değişkeni yerine [$(x_4^+ - x_4^-)$]{.light-red} yazılmalıdır.
+* Kısıtların [sağ tarafındaki sabitler negatif olmamalıdır.]{.light-red}
+
+Amaç fonksiyonu standart formda minimum ya da maksimum problemi olabileceği için ilk aşamada değişiklik yapmaya gerek yoktur.
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5x_4$$]{.light-blue}
+Kısıtlar için ise
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &+& s_1 & &   &\;= & 20\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30      \Rightarrow x_1 & &       &+&  3x_3 &-& 2x_4 & &     &-&v_1&\;= & 30\\    
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50         \Rightarrow 6x_1 & &  &+& 2x_3 &+& 3x_4 & & & & &\;= & 50\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60       \Rightarrow 2x_1 &+& 5x_2 && && && && &\;\leq &  60\\
+&&  & &  & &  & &  \Rightarrow 2x_1 &+& 5x_2 && && && && &\;\geq & -60
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+
+## Örnek 7: Standart ve Kanonik Form (3)
+::: {.callout-tip icon=false title="Standart Form (2)" style="font-size: 120%;"}
+
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5x_4$$]{.light-blue}
+
+
+* Son eşitsizliğin sağ tarafı [$\leq 0$]{.light-red} olduğundan, eşitsizlik [$-$]{.light-red} ile çarpılarak negatiflik giderilir. Bu sırada eşitsizliğin işaret yönü de değişecektir.
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &+& s_1 & &   &\;= & 20\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30      \Rightarrow x_1 & &       &+&  3x_3 &-& 2x_4 & &     &-&v_1&\;= & 30\\    
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50         \Rightarrow 6x_1 & &  &+& 2x_3 &+& 3x_4 & & & & &\;= & 50\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60       \Rightarrow 2x_1 &+& 5x_2 && && && && &\;\leq &  60\\
+&&  & &  & &  & &  \Rightarrow -2x_1 &-& 5x_2 && && && && &\;\leq & 60
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (4)
+::: {.callout-tip icon=false title="Standart Form (3)" style="font-size: 110%;"}
+
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5x_4$$]{.light-blue}
+
+* Son iki eşitsizliğe aylak değişkenler eklenirse
+
+
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &+& s_1 & & & & & &   &\;= & 20\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30      \Rightarrow x_1 & &       &+&  3x_3 &-& 2x_4 & &     &-&v_1& & & & &\;= & 30\\    
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50         \Rightarrow 6x_1 & &  &+& 2x_3 &+& 3x_4 & & & & & & & & &\;= & 50\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60       \Rightarrow 2x_1 &+& 5x_2 && && && && &+&s_2& & &\;= &  60\\
+&&  & &  & &  & &  \Rightarrow -2x_1 &-& 5x_2 && && && && && &+&s_3&\;= & 60
+\end{alignedat}
+$$]{.light-blue}
+
+
+:::
+
+
+
+
+## Örnek 7: Standart ve Kanonik Form (5)
+::: {.callout-tip icon=false title="Standart Form (4)"}
+
+* Amaç fonksiyon ve kısıtlarda [$x_4$]{.light-red} yerine [$(x_4^+ - x_4^-)$]{.light-red} yazılırsa 
+
+
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5(x_4^+ - x_4^-)$$]{.light-blue}
+
+
+:::{style="font-size: 80%;"}
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2(x_4^+ - x_4^-) &+& s_1 & & & & & &   &\;= & 20\\
+x_1 & &       &+&  3x_3 &-& 2(x_4^+ - x_4^-) & &     &-&v_1& & & & &\;= & 30\\    
+6x_1 & &  &+& 2x_3 &+& 3(x_4^+ - x_4^-) & & & & & & & & &\;= & 50\\
+2x_1 &+& 5x_2 && && && && &+&s_2& & &\;= &  60\\
+-2x_1 &-& 5x_2 && && && && && &+&s_3&\;= & 60
+\end{alignedat}
+$$]{.light-blue}
+:::
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (6)
+::: {.callout-tip icon=false title="Standart Form (5)" style="font-size: 110%;"}
+
+* Negatif olmama kısıtları da eklenerek standart formun son haline ulaşılır.
+
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5(x_4^+ - x_4^-)$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &+& s_1 & & & & & &   &\;= & 20\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30      \Rightarrow x_1 & &       &+&  3x_3 &-& 2x_4 & &     &-&v_1& & & & &\;= & 30\\    
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50         \Rightarrow 6x_1 & &  &+& 2x_3 &+& 3x_4 & & & & & & & & &\;= & 50\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60       \Rightarrow 2x_1 &+& 5x_2 && && && && &+&s_2& & &\;= &  60\\
+&&  & &  & &  & &  \Rightarrow -2x_1 &-& 5x_2 && && && && && &+&s_3&\;= & 60
+\end{alignedat}
+$$]{.light-blue}
+
+[$$x_1, x_2, x_3 \geq 0, s_1, s_2, s_3 \geq 0, v_1 \geq 0, x_4^+, x_4^- \geq 0$$]{.light-blue}
+
+:::
+
+
+
+## Örnek 7: Standart ve Kanonik Form (7)
+::: {.callout-tip icon=false title="Kanonik Form (1)"}
+
+:::{style="font-size: 80%;"}
+* Genel kural olarak, kanonik formda [tüm kısıtlar $\leq$]{.light-red} haline getirilmelidir. 
+* Değişkenlerin işaret kısıtlaması ise [$\geq 0$]{.light-red} olacak hale getirilmelidir.
+* İşaret sınırı olmayan [$x_4$]{.light-red} değişkeni yerine [$(x_4^+ - x_4^-)$]{.light-red} yazılmalıdır.
+* Amaç fonksiyon [maksimumu bulacak]{.light-red} şekilde olmalıdır
+:::
+
+:::{style="font-size: 80%;"}
+
+Amaç fonksiyonunun maksimumu bulacak şekilde yazılması gerektiğinden, amaç fonksiyonu [$-$]{.light-red} ile çarpılmalıdır.
+[$$Z_{enk} = 2x_1+4x_2-3x_3+5x_4 \Rightarrow Z_{enb} = -2x_1-4x_2+3x_3-5x_4$$]{.light-blue}
+:::
+
+:::{style="font-size: 80%;"}
+Kısıtlar için ise ilk adımda [$\geq$]{.light-red} olanlar [$-$]{.light-red} ile çarpılır, mutlak değer ve [$=$]{.light-red} şeklinde olan denklemler biri [$\geq$]{.light-red} ve biri [$\leq$]{.light-red} olacak şekilde iki parçada ifade edilir.
+:::
+
+:::{style="font-size: 70%;"}
+
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20\\
+ x_1 & &  &+& 3x_3 &-& 2x_4 &\;\geq & 30      \Rightarrow -x_1 & &       &-&  3x_3 &+& 2x_4 &\;\leq & -30\\    
+6x_1 & &  &+& 2x_3 &+& 3x_4 &\;= & 50         \Rightarrow 6x_1 & &  &+& 2x_3 &+& 3x_4   &\;\geq & 50\\
+&&  & &  & &  & &  \Rightarrow 6x_1 & &  &+&2x_3&+&3x_4 &\;\leq & 50\\
+|2x_1 &+& 5x_2|  & &  & &  &\;\leq & 60       \Rightarrow 2x_1 &+& 5x_2 && &&  &\;\leq &  60\\
+&&  & &  & &  & &  \Rightarrow 2x_1 &+& 5x_2 && && &\;\geq & -60
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (8)
+::: {.callout-tip icon=false title="Kanonik Form (2)" style="font-size: 110%;"}
+
+[$$Z_{enb} = -2x_1-4x_2+3x_3-5x_4$$]{.light-blue}
+
+* Bu aşamada kısıtlardan [$\geq$]{.light-red} işaretine sahip olan iki tanesi [$-$]{.light-red} ile çarpılarak [$\leq$]{.light-red} haline dönüştürülür, diğer kısıtlar aynı kalır.
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-&  1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow  2x_1 &+& 4x_2 &-& 1x_3 &-& 2x_4 &\;\leq & 20 \\ 
+-x_1 & &       &-&  3x_3 &+& 2x_4 &\;\leq & -30 \Rightarrow  -x_1 & &       &-&  3x_3 &+& 2x_4 &\;\leq & -30 \\
+6x_1 & &  &+& 2x_3 &+& 3x_4   &\;\geq & 50 \Rightarrow    -6x_1 & &      &-& 2x_3 &-& 3x_4   &\;\leq & -50\\
+6x_1 & &  &+&2x_3&+&3x_4 &\;\leq & 50 \Rightarrow 6x_1 & &  &+&2x_3&+&3x_4 &\;\leq & 50\\
+2x_1 &+& 5x_2 && &&  &\;\leq &  60 \Rightarrow 2x_1 &+& 5x_2 && &&  &\;\leq &  60\\
+2x_1 &+& 5x_2 && && &\;\geq & -60 \Rightarrow -2x_1 &-& 5x_2 && && &\;\leq & 60
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (9)
+::: {.callout-tip icon=false title="Kanonik Form (3)" style="font-size: 100%;"}
+
+* Hem amaç fonksiyonunda hem de kısıtlarda, sınırlandırılmamış değişken olan [$x_4$]{.light-red} yerine [$(x_4^+ - x_4^-)$]{.light-red} yazılır.
+
+[$$Z_{enb} = -2x_1-4x_2+3x_3-5(x_4^+ - x_4^-)$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-& 1x_3 &-& 2x_4 &\;\leq & 20 \Rightarrow 2x_1 &+& 4x_2 &-& 1x_3 &-& 2(x_4^+ - x_4^-) &\;\leq & 20\\ 
+-x_1 & &       &-&  3x_3 &+& 2x_4 &\;\leq & -30 \Rightarrow -x_1 & &       &-&  3x_3 &+& 2(x_4^+ - x_4^-) &\;\leq & -30 \\
+-6x_1 & &      &-& 2x_3 &-& 3x_4   &\;\leq & -50 \Rightarrow -6x_1 & &      &-& 2x_3 &-& 3(x_4^+ - x_4^-)   &\;\leq & -50 \\
+6x_1 & &  &+&2x_3&+&3x_4 &\;\leq & 50 \Rightarrow 6x_1 & &  &+&2x_3&+&3(x_4^+ - x_4^-) &\;\leq & 50 \\
+2x_1 &+& 5x_2 && &&  &\;\leq &  60 \Rightarrow 2x_1 &+& 5x_2 && &&  &\;\leq &  60\\
+-2x_1 &-& 5x_2 && && &\;\leq & 60 \Rightarrow  -2x_1 &-& 5x_2 && && &\;\leq & 60
+\end{alignedat}
+$$]{.light-blue}
+
+:::
+
+## Örnek 7: Standart ve Kanonik Form (10)
+::: {.callout-tip icon=false title="Kanonik Form (4)" style="font-size: 100%;"}
+
+* Negatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.
+
+
+
+[$$Z_{enb} = -2x_1-4x_2+3x_3-5(x_4^+ - x_4^-)$$]{.light-blue}
+
+[$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &-& 1x_3 &-& 2(x_4^+ - x_4^-) &\;\leq & 20\\ 
+-x_1 & &       &-&  3x_3 &+& 2(x_4^+ - x_4^-) &\;\leq & -30 \\
+-6x_1 & &      &-& 2x_3 &-& 3(x_4^+ - x_4^-)   &\;\leq & -50 \\
+6x_1 & &  &+&2x_3&+&3(x_4^+ - x_4^-) &\;\leq & 50 \\
+2x_1 &+& 5x_2 && &&  &\;\leq &  60\\
+-2x_1 &-& 5x_2 && && &\;\leq & 60
+\end{alignedat}
+$$]{.light-blue}
+[$$x_1, x_2, x_3 \geq 0, x_4^+, x_4^- \geq 0$$]{.light-blue}
+:::
