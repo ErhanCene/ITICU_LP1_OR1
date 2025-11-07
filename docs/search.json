@@ -9026,5 +9026,883 @@
     "title": "Hafta 07",
     "section": "Örnek 7: Standart ve Kanonik Form (10)",
     "text": "Örnek 7: Standart ve Kanonik Form (10)\n\n\n\n\nKanonik Form (4)\n\n\n\nNegatif olmama kısıtları da eklenerek kanonik formun son haline ulaşılır.\n\n\\[Z_{enb} = -2x_1-4x_2+3x_3-5(x_4^+ - x_4^-)\\]\n\\[\n\\begin{alignedat}{7}\n2x_1 &+& 4x_2 &-& 1x_3 &-& 2(x_4^+ - x_4^-) &\\;\\leq & 20\\\\\n-x_1 & &       &-&  3x_3 &+& 2(x_4^+ - x_4^-) &\\;\\leq & -30 \\\\\n-6x_1 & &      &-& 2x_3 &-& 3(x_4^+ - x_4^-)   &\\;\\leq & -50 \\\\\n6x_1 & &  &+&2x_3&+&3(x_4^+ - x_4^-) &\\;\\leq & 50 \\\\\n2x_1 &+& 5x_2 && &&  &\\;\\leq &  60\\\\\n-2x_1 &-& 5x_2 && && &\\;\\leq & 60\n\\end{alignedat}\n\\] \\[x_1, x_2, x_3 \\geq 0, x_4^+, x_4^- \\geq 0\\]"
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK09_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK09_MAIN.html",
+    "title": "IST207 - Hafta 09",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 09"
+    ]
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK09_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK09_MAIN.html",
+    "title": "IST115 - Hafta 09",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 09"
+    ]
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html",
+    "href": "IST115/Hafta09/index.html",
+    "title": "Hafta 09",
+    "section": "",
+    "text": "Simpleks Çözüm Yöntemi (1)\n\n\n\n\nGeçtiğimiz hafta \\(M\\) Yöntemi ni minimizasyon problemleri için işlemiştik.\nBu hafta ise maksimizasyon soruları için çözüm yapacağız.\nAmaç fonksiyonu maksimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(-M\\); minimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(+M\\) olacaktır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#büyük-m-yöntemi---maksimizasyon",
+    "href": "IST115/Hafta09/index.html#büyük-m-yöntemi---maksimizasyon",
+    "title": "Hafta 09",
+    "section": "Büyük M Yöntemi - Maksimizasyon",
+    "text": "Büyük M Yöntemi - Maksimizasyon\n\n\n\n\nSimpleks Çözüm Yöntemi (1)\n\n\n\nGeçtiğimiz hafta \\(M\\) Yöntemi ni minimizasyon problemleri için işlemiştik.\nBu hafta ise maksimizasyon soruları için çözüm yapacağız.\nAmaç fonksiyonu maksimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(-M\\); minimum ise, \\(A_i\\) yapay değişkeninin katsayısı \\(+M\\) olacaktır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-1",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (1)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nÖrnek 1: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=-2x_1-3x_2-x_3\\)\n\\(x_1 + 4x_2 + 2x_3 \\geq 8\\)\n\\(3x_1 + 2x_2 + x_3 \\geq 6\\)\n\\(x_1\\) ,\\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}=-2x_1-3x_2-x_3 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{-MA_1-MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\nx_1 &+& 4x_2 &+& 2x_3 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 8,\\\\\n3x_1 &+& 2x_2 &+& x_3 &+& {\\color{orange} {0s_1 -1s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 6\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\) , \\(x_3 \\geq 0\\), \\(s_1\\) , \\(s_2 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-2",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (2)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (2)\n\n\n\n\nÖrnek 1: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$-M\\, a_{2}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-3",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (3)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (3)\n\n\n\n\nÖrnek 1: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$-M\\, a_{2}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$Z_{j}$\n-4M\n-6M\n-3M\nM\nM\n-M\n-M\n-14M\n \n\n\n$Z_{j}-C_{j}$\n-4M + 2\n-6M + 3\n-3M + 1\nM\nM\n\\(0\\)\n\\(0\\)\n-14M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-4",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (4)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (4)\n\n\n\n\nÖrnek 1: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$-M\\, a_{2}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$Z_{j}$\n-4M\n-6M\n-3M\nM\nM\n-M\n-M\n-14M\n \n\n\n$Z_{j}-C_{j}$\n-4M + 2\n-6M + 3\n-3M + 1\nM\nM\n\\(0\\)\n\\(0\\)\n-14M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-5",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (5)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (5)\n\n\n\n\nÖrnek 1: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n\\(2\\)\n\n\n$-M\\, a_{2}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n\\(3\\)\n\n\n$Z_{j}$\n-4M\n-6M\n-3M\nM\nM\n-M\n-M\n-14M\n \n\n\n$Z_{j}-C_{j}$\n-4M + 2\n-6M + 3\n-3M + 1\nM\nM\n\\(0\\)\n\\(0\\)\n-14M\n \n\n\n\n\n\n\n\\(-6M+3\\) en düşük değer olduğundan \\(x_2\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(2\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(4\\) olduğundan \\(a_1\\) satırı \\(0.25\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(-2\\) ile çarpılarak, \\(a_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-6",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (6)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (6)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$-M\\, a_{2}$\n\\(3\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 4 \\\\ 2 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 8 \\end{pmatrix} \\times 0.25 = \\begin{pmatrix} 0.25 \\\\ 1 \\\\ 0.50 \\\\ -0.25 \\\\ 0 \\\\ 0.25 \\\\ 0 \\\\ 2 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-7",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-7",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (7)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (7)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$-M\\, a_{2}$\n\\(2.50\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-1\\)\n\\(-0.50\\)\n\\(1\\)\n\\(2\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 3 \\\\ 2 \\\\ 1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 6 \\end{pmatrix} - 2 \\times \\begin{pmatrix} 0.25 \\\\ 1 \\\\ 0.50 \\\\ -0.25 \\\\ 0 \\\\ 0.25 \\\\ 0 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 2.5 \\\\ 0 \\\\ 0 \\\\ 0.5 \\\\ -1 \\\\ -0.5 \\\\ 1 \\\\ 2 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-8",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-8",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (8)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (8)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$-M\\, a_{2}$\n\\(2.50\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-1\\)\n\\(-0.50\\)\n\\(1\\)\n\\(2\\)\n \n\n\n$Z_{j}$\n-2.5M - 0.75\n\\(-3\\)\n\\(-1.50\\)\n-0.5M + 0.75\nM\n0.5M - 0.75\n-M\n-2M - 6\n \n\n\n$Z_{j}-C_{j}$\n-2.5M + 1.25\n\\(0\\)\n\\(-0.50\\)\n-0.5M + 0.75\nM\n1.5M - 0.75\n\\(0\\)\n-2M - 6\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(-2M-6\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-9",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-9",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (9)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (9)\n\n\n\n\nÖrnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n\\(8\\)\n\n\n$-M\\, a_{2}$\n\\(2.50\\)\n\\(0\\)\n\\(0\\)\n\\(0.50\\)\n\\(-1\\)\n\\(-0.50\\)\n\\(1\\)\n\\(2\\)\n\\(0.80\\)\n\n\n$Z_{j}$\n-2.5M - 0.75\n\\(-3\\)\n\\(-1.50\\)\n-0.5M + 0.75\nM\n0.5M - 0.75\n-M\n-2M - 6\n \n\n\n$Z_{j}-C_{j}$\n-2.5M + 1.25\n\\(0\\)\n\\(-0.50\\)\n-0.5M + 0.75\nM\n1.5M - 0.75\n\\(0\\)\n-2M - 6\n \n\n\n\n\n\n\n\\(-2.5M+1.25\\) en düşük değer olduğundan \\(x_1\\) anahtar sütun, en düşük oran \\(0.80\\) olduğundan \\(a_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(2.5\\) olduğundan \\(a_2\\) satırı \\(2.5\\) a bölünmelidir.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır \\(-0.25\\) ile çarpılarak \\(x_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-10",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-10",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (10)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (10)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 2.5 \\\\ 0 \\\\ 0 \\\\ 0.5 \\\\ -1 \\\\ -0.5 \\\\ 1 \\\\ 2 \\end{pmatrix} \\div 2.5 = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0.2 \\\\ -0.4 \\\\ -0.2 \\\\ 0.4 \\\\ 0.8 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-11",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-11",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (11)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (11)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.30\\)\n\\(0.10\\)\n\\(0.30\\)\n\\(-0.10\\)\n\\(1.80\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} 0.25 \\\\ 1 \\\\ 0.50 \\\\ -0.25 \\\\ 0 \\\\ 0.25 \\\\ 0 \\\\ 2 \\end{pmatrix} &-& 0.25 \\times \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0.2 \\\\ -0.4 \\\\ -0.2 \\\\ 0.4 \\\\ 0.8 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.50 \\\\ -0.30 \\\\ 0.10 \\\\ 0.30 \\\\ -0.10 \\\\ 1.80 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-12",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-12",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (12)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (12)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.30\\)\n\\(0.10\\)\n\\(0.30\\)\n\\(-0.10\\)\n\\(1.80\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(-0.50\\)\n\\(-7\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(0.50\\)\nM - 0.50\nM - 0.50\n\\(-7\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(-7\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-13",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-13",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (13)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (13)\n\n\n\n\nÖrnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.30\\)\n\\(0.10\\)\n\\(0.30\\)\n\\(-0.10\\)\n\\(1.80\\)\n\\(3.60\\)\n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(-0.50\\)\n\\(-7\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(0.50\\)\nM - 0.50\nM - 0.50\n\\(-7\\)\n \n\n\n\n\n\n\n\\(-0.5\\) en düşük değer olduğundan \\(x_3\\) anahtar sütun, en düşük oran \\(3.6\\) olduğundan \\(x_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.50\\) olduğundan \\(x_2\\) satırı \\(2\\) ile çarpılmalıdır.\nTemel değişkenlerden \\(x_2\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\n\\(x_3\\) sütununun \\(x_1\\) satırı ile kesişim değeri zaten \\(0\\) olduğundan herhangi bir işlem yapmaya gerek yoktur."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-14",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-14",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (14)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (14)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-1\\, x_{3}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0.20\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(3.60\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 0 \\\\ 1 \\\\ 0.5 \\\\ -0.3 \\\\ 0.1 \\\\ 0.30 \\\\ -0.10 \\\\ 1.8 \\end{pmatrix} \\times 2 = \\begin{pmatrix} 0 \\\\ 2 \\\\ 1 \\\\ -0.6 \\\\ 0.2 \\\\ 0.6 \\\\ -0.2 \\\\ 3.6 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-15",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-15",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (15)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (15)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-1\\, x_{3}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0.20\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(3.60\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-16",
+    "href": "IST115/Hafta09/index.html#örnek-1-büyük-m-maksimizasyon-problemi-16",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Büyük M Maksimizasyon Problemi (16)",
+    "text": "Örnek 1: Büyük M Maksimizasyon Problemi (16)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(-2\\)\n\\(-3\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-1\\, x_{3}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-0.60\\)\n\\(0.20\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(3.60\\)\n \n\n\n$-2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0.20\\)\n\\(-0.40\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(0.80\\)\n \n\n\n$Z_{j}$\n\\(-2\\)\n\\(-2\\)\n\\(-1\\)\n\\(0.20\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(-0.60\\)\n\\(-5.20\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(0.20\\)\n\\(0.60\\)\nM - 0.20\nM - 0.60\n\\(-5.20\\)\n \n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=-5.20\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 0.80\\), \\(x_2 =0\\), \\(x_3 =3.60\\), \\(s_1 = 0\\), \\(s_2=0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-1",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (1)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nÖrnek 2: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=21x_1+x_2+x_3\\)\n\\(2x_1 + x_2 + 4x_3 = 20\\)\n\\(x_1 + 3x_2 + 4x_3 = 30\\)\n\\(x_1\\) ,\\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}=21x_1+x_2+x_3 \\\\\n\\color{green}{-MA_1-MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n2x_1 &+& x_2 &+& 4x_3 && {\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 20,\\\\\nx_1 &+& 3x_2 &+& 4x_3 && {\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 30\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\) , \\(x_3 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-2",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (2)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (2)\n\n\n\n\nÖrnek 2: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(2\\)\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(3\\)\n\\(4\\)\n\\(0\\)\n\\(1\\)\n\\(30\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-3",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (3)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (3)\n\n\n\n\nÖrnek 2: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(2\\)\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(3\\)\n\\(4\\)\n\\(0\\)\n\\(1\\)\n\\(30\\)\n \n\n\n$Z_{j}$\n-3M\n-4M\n-8M\n-M\n-M\n-50M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 21\n-4M - 1\n-8M - 1\n\\(0\\)\n\\(0\\)\n-50M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-4",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (4)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (4)\n\n\n\n\nÖrnek 2: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(2\\)\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(3\\)\n\\(4\\)\n\\(0\\)\n\\(1\\)\n\\(30\\)\n \n\n\n$Z_{j}$\n-3M\n-4M\n-8M\n-M\n-M\n-50M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 21\n-4M - 1\n-8M - 1\n\\(0\\)\n\\(0\\)\n-50M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-5",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (5)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (5)\n\n\n\n\nÖrnek 2: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(2\\)\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(20\\)\n\\(5\\)\n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(3\\)\n\\(4\\)\n\\(0\\)\n\\(1\\)\n\\(30\\)\n\\(7.50\\)\n\n\n$Z_{j}$\n-3M\n-4M\n-8M\n-M\n-M\n-50M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 21\n-4M - 1\n-8M - 1\n\\(0\\)\n\\(0\\)\n-50M\n \n\n\n\n\n\n\n\\(-8M-1\\) en düşük değer olduğundan \\(x_3\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(5\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(4\\) olduğundan \\(a_1\\) satırı \\(0.25\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\nAnahtar satır \\(-4\\) ile çarpılarak, \\(a_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-6",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (6)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (6)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(5\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(3\\)\n\\(4\\)\n\\(0\\)\n\\(1\\)\n\\(30\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 2 \\\\ 1 \\\\ 4 \\\\ 1 \\\\ 0 \\\\ 20 \\end{pmatrix} \\times 0.25 = \\begin{pmatrix} 0.50 \\\\ 0.25 \\\\ 1 \\\\ 0.25 \\\\ 0 \\\\ 5 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-7",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-7",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (7)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (7)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(5\\)\n \n\n\n$-M\\, a_{2}$\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 3 \\\\ 4 \\\\ 0 \\\\ 1 \\\\ 30 \\end{pmatrix} - 4 \\times \\begin{pmatrix} 0.50 \\\\ 0.25 \\\\ 1 \\\\ 0.25 \\\\ 0 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 2 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 10 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-8",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-8",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (8)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (8)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(5\\)\n \n\n\n$-M\\, a_{2}$\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\nM + 0.50\n-2M + 0.25\n\\(1\\)\nM + 0.25\n-M\n-10M + 5\n \n\n\n$Z_{j}-C_{j}$\nM - 20.50\n-2M - 0.75\n\\(0\\)\n2M + 0.25\n\\(0\\)\n-10M + 5\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\n\\(-10M+5\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-9",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-9",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (9)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (9)\n\n\n\n\nÖrnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(5\\)\n\\(20\\)\n\n\n$-M\\, a_{2}$\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(10\\)\n\\(5\\)\n\n\n$Z_{j}$\nM + 0.50\n-2M + 0.25\n\\(1\\)\nM + 0.25\n-M\n-10M + 5\n \n\n\n$Z_{j}-C_{j}$\nM - 20.50\n-2M - 0.75\n\\(0\\)\n2M + 0.25\n\\(0\\)\n-10M + 5\n \n\n\n\n\n\n\n\\(-2M+0.25\\) en düşük değer olduğundan \\(x_2\\) anahtar sütun, en düşük oran \\(5\\) olduğundan \\(a_2\\) anahtar satırdır.\n\n\n\n\n\nAnahtar sayı \\(2\\) olduğundan \\(a_2\\) satırı \\(2\\) ye bölünmelidir.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(-0.25\\) ile çarpılarak \\(x_3\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-10",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-10",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (10)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (10)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.50\\)\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(5\\)\n \n\n\n$1\\, x_{2}$\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} -1 \\\\ 2 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 10  \\end{pmatrix} \\div 2 = \\begin{pmatrix} -0.5 \\\\ 1 \\\\ 0 \\\\ -0.5 \\\\ 0.5 \\\\ 5 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-11",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-11",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (11)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (11)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.62\\)\n\\(0\\)\n\\(1\\)\n\\(0.38\\)\n\\(-0.12\\)\n\\(3.75\\)\n \n\n\n$1\\, x_{2}$\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} 0.50 \\\\ 0.25 \\\\ 1 \\\\ 0.25 \\\\ 0 \\\\ 5 \\end{pmatrix} &-& 0.25 \\times \\begin{pmatrix} -0.5 \\\\ 1 \\\\ 0 \\\\ -0.5 \\\\ 0.5 \\\\ 5 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 0.62 \\\\ 0 \\\\ 1 \\\\ 0.38 \\\\ -0.12 \\\\ 3.75 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-12",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-12",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (12)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (12)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.62\\)\n\\(0\\)\n\\(1\\)\n\\(0.38\\)\n\\(-0.12\\)\n\\(3.75\\)\n \n\n\n$1\\, x_{2}$\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(0.12\\)\n\\(1\\)\n\\(1\\)\n\\(-0.12\\)\n\\(0.38\\)\n\\(8.75\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-20.88\\)\n\\(0\\)\n\\(0\\)\nM - 0.12\nM + 0.38\n\\(8.75\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(8.75\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-13",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-13",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (13)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (13)\n\n\n\n\nÖrnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$1\\, x_{3}$\n\\(0.62\\)\n\\(0\\)\n\\(1\\)\n\\(0.38\\)\n\\(-0.12\\)\n\\(3.75\\)\n\\(6\\)\n\n\n$1\\, x_{2}$\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(0.12\\)\n\\(1\\)\n\\(1\\)\n\\(-0.12\\)\n\\(0.38\\)\n\\(8.75\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-20.88\\)\n\\(0\\)\n\\(0\\)\nM - 0.12\nM + 0.38\n\\(8.75\\)\n \n\n\n\n\n\n\n\\(-20.88\\) en düşük değer olduğundan \\(x_1\\) anahtar sütun, en düşük oran \\(6\\) olduğundan \\(x_3\\) anahtar satırdır.\n\n\n\n\n\nAnahtar sayı \\(0.62\\) olduğundan \\(x_3\\) satırı \\(0.62\\) ya bölünmelidir.\nTemel değişkenlerden \\(x_3\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\n\\(x_3\\) sütunu \\(0.5\\) ile çarpılarak \\(x_1\\) satırı ile toplanmalıdır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-14",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-14",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (14)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (14)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$21\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(1.60\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(6\\)\n \n\n\n$1\\, x_{2}$\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 0.62 \\\\ 0 \\\\ 1 \\\\ 0.38 \\\\ -0.12 \\\\ 3.75 \\end{pmatrix} \\div 0.62 = \\begin{pmatrix} 1 \\\\ 0 \\\\ 1.60 \\\\ 0.6 \\\\ -0.2 \\\\ 6 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-15",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-15",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (15)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (15)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$21\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(1.60\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(6\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.80\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\n\\[\\begin{gathered}\n\\begin{pmatrix} -0.50 \\\\ 1 \\\\ 0 \\\\ -0.5 \\\\ 0.5 \\\\ 5 \\end{pmatrix} &+& 0.5 \\times \\begin{pmatrix} 1 \\\\ 0 \\\\ 1.60 \\\\ 0.6 \\\\ -0.2 \\\\ 6 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.8 \\\\ -0.20 \\\\ 0.40 \\\\ 8 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-16",
+    "href": "IST115/Hafta09/index.html#örnek-2-büyük-m-maksimizasyon-problemi-16",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Büyük M Maksimizasyon Problemi (16)",
+    "text": "Örnek 2: Büyük M Maksimizasyon Problemi (16)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(21\\)\n\\(1\\)\n\\(1\\)\n-M\n-M\n\\(0\\)\n \n\n\n$21\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(1.60\\)\n\\(0.60\\)\n\\(-0.20\\)\n\\(6\\)\n \n\n\n$1\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.80\\)\n\\(-0.20\\)\n\\(0.40\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n\\(21\\)\n\\(1\\)\n\\(34.40\\)\n\\(12.40\\)\n\\(-3.80\\)\n\\(134\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(33.40\\)\nM + 12.40\nM - 3.80\n\\(134\\)\n \n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=134\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 6\\), \\(x_2 =8\\), \\(x_3 =0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-1",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (1)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nÖrnek 3: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=0.2x_1+0.5x_2\\)\n\\(3x_1 + 2x_2 \\geq 6\\)\n\\(x_1 + 2x_2 \\leq 4\\)\n\\(x_1\\) ,\\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}=0.2x_1+0.5x_2 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{-MA_1}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n3x_1 &+& 2x_2 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1}} &\\;\\color{orange}= & 6,\\\\\n1x_1 &+& 2x_2 &+& {\\color{orange} {0s_1 +1s_2}}{\\color{green} {+0A_1}} &\\;\\color{orange}= & 4\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\), \\(s_2\\), \\(A_1 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-2",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (2)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (2)\n\n\n\n\nÖrnek 3: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(3\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-3",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (3)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (3)\n\n\n\n\nÖrnek 3: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(3\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n-3M\n-2M\nM\n+ 0\n-M\n-6M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 0.20\n-2M - 0.50\nM\n\\(0\\)\n\\(0\\)\n-6M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-4",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (4)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (4)\n\n\n\n\nÖrnek 3: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(3\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n-3M\n-2M\nM\n+ 0\n-M\n-6M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 0.20\n-2M - 0.50\nM\n\\(0\\)\n\\(0\\)\n-6M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-5",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (5)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (5)\n\n\n\n\nÖrnek 3: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(3\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(6\\)\n\\(2\\)\n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n\\(4\\)\n\n\n$Z_{j}$\n-3M\n-2M\nM\n+ 0\n-M\n-6M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 0.20\n-2M - 0.50\nM\n\\(0\\)\n\\(0\\)\n-6M\n \n\n\n\n\n\n\n\\(-3M-0.20\\) en düşük değer olduğundan \\(x_1\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(2\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(3\\) olduğundan \\(a_1\\) satırı \\(\\frac{1}{3}\\) ile çarpılır.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır \\(-1\\) ile çarpılarak, \\(s_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-6",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (6)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (6)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 3 \\\\ 2 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 6 \\end{pmatrix} \\times \\frac{1}{3} = \\begin{pmatrix} 1 \\\\ 0.67 \\\\ -0.33 \\\\ 0 \\\\ 0.33 \\\\ 2 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-7",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-7",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (7)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (7)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.20\\, x_{1}$\n\\(1\\)\n\\(0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.33\\)\n\\(0.33\\)\n\\(1\\)\n\\(-0.33\\)\n\\(2\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_2\\)\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 4 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 1 \\\\ 0.67 \\\\ -0.33 \\\\ 0 \\\\ 0.33 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1.33 \\\\ 0.33 \\\\ 1 \\\\ -0.33 \\\\ 2 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-8",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-8",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (8)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (8)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.33\\)\n\\(0.33\\)\n\\(1\\)\n\\(-0.33\\)\n\\(2\\)\n \n\n\n$Z_{j}$\n\\(0.20\\)\n\\(0.13\\)\n\\(-0.07\\)\n+ 0\n\\(0.07\\)\n\\(0.40\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-0.37\\)\n\\(-0.07\\)\n\\(0\\)\nM + 0.07\n\\(0.40\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\n\\(0.40\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-9",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-9",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (9)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (9)\n\n\n\n\nÖrnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(2\\)\n\\(3\\)\n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(1.33\\)\n\\(0.33\\)\n\\(1\\)\n\\(-0.33\\)\n\\(2\\)\n\\(1.50\\)\n\n\n$Z_{j}$\n\\(0.20\\)\n\\(0.13\\)\n\\(-0.07\\)\n+ 0\n\\(0.07\\)\n\\(0.40\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-0.37\\)\n\\(-0.07\\)\n\\(0\\)\nM + 0.07\n\\(0.40\\)\n \n\n\n\n\n\n\n\\(-0.37\\) en düşük değer olduğundan \\(x_2\\) anahtar sütun, en düşük oran \\(1.50\\) olduğundan \\(s_2\\) anahtar satırdır.\n\n\n\n\n\nAnahtar sayı \\(1.33\\) olduğundan \\(s_2\\) satırı \\(1.33\\) e bölünmelidir.\nTemel değişkenlerden \\(s_2\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(-0.67\\) ile çarpılarak \\(x_1\\) satırı ile toplanmalıdır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-10",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-10",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (10)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (10)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0.33\\)\n\\(2\\)\n \n\n\n$0.5\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.25\\)\n\\(0.75\\)\n\\(-0.25\\)\n\\(1.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 1.33\\\\ 0.33 \\\\ 1 \\\\ -0.33 \\\\ 2  \\end{pmatrix} \\div 1.33 = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.25 \\\\ 0.75 \\\\ -0.25 \\\\ 1.50 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-11",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-11",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (11)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (11)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(1\\)\n \n\n\n$0.50\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.25\\)\n\\(0.75\\)\n\\(-0.25\\)\n\\(1.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\n\\[\\begin{gathered}\n\\begin{pmatrix} 1 \\\\ 0.67 \\\\ -0.33 \\\\ 0 \\\\ 0.33 \\\\ 2 \\end{pmatrix} &-& 0.67 \\times \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.25 \\\\ 0.75 \\\\ -0.25 \\\\ 1.50 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 1 \\\\ 0 \\\\ -0.50 \\\\ -0.50 \\\\ 0.50 \\\\ 1 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-12",
+    "href": "IST115/Hafta09/index.html#örnek-3-büyük-m-maksimizasyon-problemi-12",
+    "title": "Hafta 09",
+    "section": "Örnek 3: Büyük M Maksimizasyon Problemi (12)",
+    "text": "Örnek 3: Büyük M Maksimizasyon Problemi (12)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0.2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-0.50\\)\n\\(-0.50\\)\n\\(0.50\\)\n\\(1\\)\n \n\n\n$0.5\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.25\\)\n\\(0.75\\)\n\\(-0.25\\)\n\\(1.50\\)\n \n\n\n$Z_{j}$\n\\(0.20\\)\n\\(0.50\\)\n\\(0.02\\)\n\\(0.27\\)\n\\(-0.02\\)\n\\(0.95\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0.02\\)\n\\(0.27\\)\nM - 0.02\n\\(0.95\\)\n \n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=0.95\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 1\\), \\(x_2 =1.5\\),\\(s_1=0\\), \\(s_2=0\\) ve \\(a_1 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-1",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (1)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nÖrnek 4: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=2x_1+3x_2-5x_3\\)\n\\(x_1 + x_2 + x_3 = 7\\)\n\\(2x_1 - 5x_2 + x_3 \\geq 10\\)\n\\(x_1\\) ,\\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}=2x_1+3x_2-5x_3 \\\\\n\\color{orange}{-1s_1} \\color{green}{-MA_1-MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n1x_1 &+& 1x_2 &+& 1x_3 &\\color{orange}+& {\\color{orange} {0s_1}}{\\color{green} {+1A_1 + 0A_2}} &\\;\\color{orange}= & 7,\\\\\n2x_1 &-& 5x_2 &+& x_3 &\\color{orange}-& {\\color{orange} {1s_2}}{\\color{green} {+0A_1 + 1A_2}} &\\;\\color{orange}= & 10\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\) , \\(x_3 \\geq 0\\), \\(s_1 \\geq 0\\) ve \\(A_1\\) , \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-2",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (2)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (2)\n\n\n\n\nÖrnek 4: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$-M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-3",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (3)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (3)\n\n\n\n\nÖrnek 4: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$-M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n-3M\n4M\n-2M\nM\n-M\n-M\n-17M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 2\n4M - 3\n-2M - 5\nM\n\\(0\\)\n\\(0\\)\n-17M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-4",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (4)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (4)\n\n\n\n\nÖrnek 4: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$-M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n-3M\n4M\n-2M\nM\n-M\n-M\n-17M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 2\n4M - 3\n-2M - 5\nM\n\\(0\\)\n\\(0\\)\n-17M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-5",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (5)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (5)\n\n\n\n\nÖrnek 4: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n\\(7\\)\n\n\n$-M\\, a_{2}$\n\\(2\\)\n\\(-5\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n\\(5\\)\n\n\n$Z_{j}$\n-3M\n4M\n-2M\nM\n-M\n-M\n-17M\n \n\n\n$Z_{j}-C_{j}$\n-3M - 2\n4M - 3\n-2M - 5\nM\n\\(0\\)\n\\(0\\)\n-17M\n \n\n\n\n\n\n\n\\(-3M-2\\) en düşük değer olduğundan \\(x_1\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(5\\) olduğundan \\(a_2\\) anahtar satırdır.\nAnahtar sayı \\(2\\) olduğundan \\(a_2\\) satırı \\(0.50\\) ile çarpılır.\nTemel değişkenlerden \\(a_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır \\(-1\\) ile çarpılarak, \\(a_1\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-6",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (6)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (6)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(7\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 2 \\\\ -5 \\\\ 1 \\\\ -1 \\\\ 0 \\\\ 1 \\\\ 10 \\end{pmatrix} \\times 0.50 = \\begin{pmatrix} 1 \\\\ -2.50 \\\\ 0.50 \\\\ -0.55 \\\\ 0 \\\\ 0.50 \\\\ 5 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-7",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-7",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (7)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (7)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(a_1\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\\\ 0 \\\\ 1 \\\\ 0 \\\\ 7 \\end{pmatrix} - 1 \\times \\begin{pmatrix} 1 \\\\ -2.50 \\\\ 0.50 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 3.50 \\\\ 0.5 \\\\ 0.5 \\\\ 1 \\\\ -0.5 \\\\ 2 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-8",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-8",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (8)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (8)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n-3.5M - 5\n-0.5M + 1\n-0.5M - 1\n-M\n0.5M + 1\n-2M + 10\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n-3.5M - 8\n-0.5M - 4\n-0.5M - 1\n\\(0\\)\n1.5M + 1\n-2M + 10\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(-2M+10\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-9",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-9",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (9)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (9)\n\n\n\n\nÖrnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(0\\)\n\\(3.50\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(2\\)\n\\(0.57\\)\n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n-3.5M - 5\n-0.5M + 1\n-0.5M - 1\n-M\n0.5M + 1\n-2M + 10\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n-3.5M - 8\n-0.5M - 4\n-0.5M - 1\n\\(0\\)\n1.5M + 1\n-2M + 10\n \n\n\n\n\n\n\n\\(-3.5M-8\\) en düşük değer olduğundan \\(x_2\\) anahtar sütun, en düşük oran \\(0.57\\) olduğundan \\(a_1\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(3.5\\) olduğundan \\(a_1\\) satırı \\(3.5\\) a bölünmelidir.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(2.5\\) ile çarpılarak \\(x_1\\) satırı ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-10",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-10",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (10)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (10)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-2.50\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(5\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(a_2\\)\n\\[\\begin{pmatrix} 0 \\\\ 3.5 \\\\ 0.50 \\\\ 0.50 \\\\ 1 \\\\ -0.50 \\\\ 2 \\end{pmatrix} \\div 3.5 = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-11",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-11",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (11)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (11)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} 1 \\\\ -2.50 \\\\ 0.50 \\\\ -0.50 \\\\ 0 \\\\ 0.50 \\\\ 5 \\end{pmatrix} &+& 2.50 \\times \\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 1 \\\\ 0 \\\\ 0.86 \\\\ -0.14 \\\\ 0.71 \\\\ 0.14 \\\\ 6.43 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-12",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-12",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (12)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (12)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(3\\)\n\\(2.14\\)\n\\(0.14\\)\n\\(2.29\\)\n\\(-0.14\\)\n\\(14.57\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-2.86\\)\n\\(0.14\\)\nM + 2.29\nM - 0.14\n\\(14.57\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(14.57\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-13",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-13",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (13)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (13)\n\n\n\n\nÖrnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$3\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.14\\)\n\\(0.14\\)\n\\(0.29\\)\n\\(-0.14\\)\n\\(0.57\\)\n\\(4\\)\n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n\\(7.50\\)\n\n\n$Z_{j}$\n\\(2\\)\n\\(3\\)\n\\(2.14\\)\n\\(0.14\\)\n\\(2.29\\)\n\\(-0.14\\)\n\\(14.57\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-2.86\\)\n\\(0.14\\)\nM + 2.29\nM - 0.14\n\\(14.57\\)\n \n\n\n\n\n\n\n\\(-2.86\\) en düşük değer olduğundan \\(x_3\\) anahtar sütun, en düşük oran \\(4\\) olduğundan \\(x_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.14\\) olduğundan \\(x_2\\) satırı \\(0.14\\) ile bölünmelidir.\nTemel değişkenlerden \\(x_2\\) çözümden çıkarken, \\(x_3\\) çözüme girer.\nAnahtar satır \\(-0.86\\) ile çarpılarak \\(x_1\\) satırı ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-14",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-14",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (14)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (14)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(0.86\\)\n\\(-0.14\\)\n\\(0.71\\)\n\\(0.14\\)\n\\(6.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 0 \\\\ 1 \\\\ 0.14 \\\\ 0.14 \\\\ 0.29 \\\\ -0.14 \\\\ 0.57 \\end{pmatrix} \\div 0.14 = \\begin{pmatrix} 0 \\\\ 7 \\\\ 1 \\\\ 1 \\\\ 2 \\\\ -1 \\\\ 4 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-15",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-15",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (15)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (15)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-6\\)\n\\(0\\)\n\\(-1\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} 1 \\\\ 0 \\\\ 0.86 \\\\ -0.14 \\\\ 0.71 \\\\ 0.14 \\\\ 6.43 \\end{pmatrix} &-& 0.86 \\times \\begin{pmatrix}  0 \\\\ 7 \\\\ 1 \\\\ 1 \\\\ 2 \\\\ -1 \\\\ 4 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 1 \\\\ -6 \\\\ 0 \\\\ -1 \\\\ -1 \\\\ 1 \\\\ 3 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-16",
+    "href": "IST115/Hafta09/index.html#örnek-4-büyük-m-maksimizasyon-problemi-16",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Büyük M Maksimizasyon Problemi (16)",
+    "text": "Örnek 4: Büyük M Maksimizasyon Problemi (16)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(3\\)\n\\(5\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$5\\, x_{3}$\n\\(0\\)\n\\(7\\)\n\\(1\\)\n\\(1\\)\n\\(2\\)\n\\(-1\\)\n\\(4\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(-6\\)\n\\(0\\)\n\\(-1\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(23\\)\n\\(5\\)\n\\(3\\)\n\\(8\\)\n\\(-3\\)\n\\(26\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(20\\)\n\\(0\\)\n\\(3\\)\nM + 8\nM - 3\n\\(26\\)\n \n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=26\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 3\\), \\(x_2 =0\\), \\(x_3 =4\\), \\(s_1 = 0\\), \\(a_1=0\\) ve \\(a_2 = 0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-1",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (1)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nÖrnek 5: Büyük M Maksimizasyon Problemi (1)\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=2x_1-7x_2\\)\n\\(4x_1 + 5x_2 \\leq 10\\)\n\\(6x_1 + 7x_2 \\geq 10\\)\n\\(x_1\\) , \\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}=2x_1-7x_2 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{-MA_1}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n4x_1 &+& 5x_2 &\\color{orange}+& {\\color{orange} {1s_1+0s_2}}{\\color{green} {+0A_1}} &\\;\\color{orange}= & 10,\\\\\n6x_1 &+& 7x_2 &\\color{orange}+& {\\color{orange} {0s_1-1s_2}}{\\color{green} {+1A_1}} &\\;\\color{orange}= & 3\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\) , \\(x_3 \\geq 0\\), \\(s_1\\), \\(s_2 \\geq 0\\) ve \\(A_1 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-2",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (2)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (2)\n\n\n\n\nÖrnek 5: Başlangıç Tablosu\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(10\\)\n \n\n\n$-M\\, a_{1}$\n\\(6\\)\n\\(7\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-3",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (3)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (3)\n\n\n\n\nÖrnek 5: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(10\\)\n \n\n\n$-M\\, a_{1}$\n\\(6\\)\n\\(7\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n-6M\n-7M\n+ 0\nM\n-M\n-3M\n \n\n\n$Z_{j}-C_{j}$\n-6M - 2\n-7M + 7\n\\(0\\)\nM\n\\(0\\)\n-3M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-4",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (4)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (4)\n\n\n\n\nÖrnek 5: Anahtar Sütun (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(10\\)\n \n\n\n$-M\\, a_{1}$\n\\(6\\)\n\\(7\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n \n\n\n$Z_{j}$\n-6M\n-7M\n+ 0\nM\n-M\n-3M\n \n\n\n$Z_{j}-C_{j}$\n-6M - 2\n-7M + 7\n\\(0\\)\nM\n\\(0\\)\n-3M"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-5",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (5)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (5)\n\n\n\n\nÖrnek 5: Anahtar Satır (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(10\\)\n\\(2\\)\n\n\n$-M\\, a_{1}$\n\\(6\\)\n\\(7\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(3\\)\n\\(0.43\\)\n\n\n$Z_{j}$\n-6M\n-7M\n+ 0\nM\n-M\n-3M\n \n\n\n$Z_{j}-C_{j}$\n-6M - 2\n-7M + 7\n\\(0\\)\nM\n\\(0\\)\n-3M\n \n\n\n\n\n\n\n\\(-7M+7\\) en düşük değer olduğundan \\(x_2\\) anahtar sütun dur.\n\n\n\n\n\nEn düşük oran \\(0.43\\) olduğundan \\(a_1\\) anahtar satırdır.\nAnahtar sayı \\(7\\) olduğundan \\(a_1\\) satırı \\(7\\) ye bölünmelidir.\nTemel değişkenlerden \\(a_1\\) çözümden çıkarken, \\(x_2\\) çözüme girer.\nAnahtar satır \\(-5\\) ile çarpılarak, \\(x_2\\) ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-6",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (6)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (6)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(10\\)\n \n\n\n$-7\\, x_{2}$\n\\(0.86\\)\n\\(1\\)\n\\(0\\)\n\\(-0.14\\)\n\\(0.14\\)\n\\(0.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_2\\)\n\\[\\begin{pmatrix} 6 \\\\ 7 \\\\ 0 \\\\ -1 \\\\ 1 \\\\ 3 \\end{pmatrix} \\div 7 = \\begin{pmatrix} 0.86 \\\\ 1 \\\\ 0 \\\\ -0.14 \\\\ 0.14 \\\\ 0.43 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-7",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-7",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (7)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (7)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.29\\)\n\\(0\\)\n\\(1\\)\n\\(0.71\\)\n\\(-0.71\\)\n\\(7.86\\)\n \n\n\n$-7\\, x_{2}$\n\\(0.86\\)\n\\(1\\)\n\\(0\\)\n\\(-0.14\\)\n\\(0.14\\)\n\\(0.43\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_1\\)\n\\[\\begin{pmatrix} 4 \\\\ 5 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 10 \\end{pmatrix} - 5 \\times \\begin{pmatrix} 0.86 \\\\ 1 \\\\ 0 \\\\ -0.14 \\\\ 0.14 \\\\ 0.43  \\end{pmatrix} = \\begin{pmatrix} -0.29 \\\\ 0 \\\\ 1 \\\\ 0.71 \\\\ -0.71 \\\\ 7.86 \\end{pmatrix} \\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-8",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-8",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (8)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (8)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.29\\)\n\\(0\\)\n\\(1\\)\n\\(0.71\\)\n\\(-0.71\\)\n\\(7.86\\)\n \n\n\n$-7\\, x_{2}$\n\\(0.86\\)\n\\(1\\)\n\\(0\\)\n\\(-0.14\\)\n\\(0.14\\)\n\\(0.43\\)\n \n\n\n$Z_{j}$\n\\(-6\\)\n\\(-7\\)\n+ 0\n\\(1\\)\n\\(-1\\)\n\\(-3\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\nM - 1\n\\(-3\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(-3\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-9",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-9",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (9)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (9)\n\n\n\n\nÖrnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.29\\)\n\\(0\\)\n\\(1\\)\n\\(0.71\\)\n\\(-0.71\\)\n\\(7.86\\)\n \n\n\n$-7\\, x_{2}$\n\\(0.86\\)\n\\(1\\)\n\\(0\\)\n\\(-0.14\\)\n\\(0.14\\)\n\\(0.43\\)\n\\(0.50\\)\n\n\n$Z_{j}$\n\\(-6\\)\n\\(-7\\)\n+ 0\n\\(1\\)\n\\(-1\\)\n\\(-3\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\nM - 1\n\\(-3\\)\n \n\n\n\n\n\n\n\\(-8\\) en düşük değer olduğundan \\(x_1\\) anahtar sütun, en düşük oran \\(0.50\\) olduğundan \\(x_2\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.86\\) olduğundan \\(x_2\\) satırı \\(0.86\\) a bölünmelidir.\nTemel değişkenlerden \\(x_2\\) çözümden çıkarken, \\(x_1\\) çözüme girer.\nAnahtar satır \\(0.29\\) ile çarpılarak \\(x_1\\) satırı ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-10",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-10",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (10)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (10)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.29\\)\n\\(0\\)\n\\(1\\)\n\\(0.71\\)\n\\(-0.71\\)\n\\(7.86\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.17\\)\n\\(0\\)\n\\(-0.17\\)\n\\(0.17\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_1\\)\n\\[\\begin{pmatrix} 0.86 \\\\ 1 \\\\ 0 \\\\ -0.14 \\\\ 0.14 \\\\ 0.43 \\end{pmatrix} \\div 0.86 = \\begin{pmatrix} 1 \\\\ 1.17 \\\\ 0 \\\\ -0.17 \\\\ 0.17 \\\\ -0.50 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-11",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-11",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (11)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (11)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0.67\\)\n\\(-0.67\\)\n\\(8\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.17\\)\n\\(0\\)\n\\(-0.17\\)\n\\(0.17\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_1\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} -0.29 \\\\ 0 \\\\ 1 \\\\ 0.71 \\\\ -0.71 \\\\ 7.86  \\end{pmatrix} &+& 0.29 \\times \\begin{pmatrix}  1 \\\\ 1.17 \\\\ 0 \\\\ -0.17 \\\\ 0.17 \\\\ -0.50 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 0 \\\\ 0.33 \\\\ 1 \\\\ 0.67 \\\\ -0.67 \\\\ 8 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-12",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-12",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (12)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (12)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0.67\\)\n\\(-0.67\\)\n\\(8\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.17\\)\n\\(0\\)\n\\(-0.17\\)\n\\(0.17\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(2.33\\)\n+ 0\n\\(-0.33\\)\n\\(0.33\\)\n\\(1\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(9.33\\)\n\\(0\\)\n\\(-0.33\\)\nM + 0.33\n\\(1\\)\n \n\n\n\n\n\n\n\\(Z_j - C_j\\) değerlerinde \\(\\leq 0\\) değerler olduğu için henüz optimuma ulaşılmadı.\n\n\n\n\n\n\\(1\\) optimum değer değil.\nİterasyona devam edilmeli."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-13",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-13",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (13)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (13)\n\n\n\n\nÖrnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0.67\\)\n\\(-0.67\\)\n\\(8\\)\n\\(12\\)\n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.17\\)\n\\(0\\)\n\\(-0.17\\)\n\\(0.17\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(2.33\\)\n+ 0\n\\(-0.33\\)\n\\(0.33\\)\n\\(1\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(9.33\\)\n\\(0\\)\n\\(-0.33\\)\nM + 0.33\n\\(1\\)\n \n\n\n\n\n\n\n\\(-0.33\\) en düşük değer olduğundan \\(s_2\\) anahtar sütun, en düşük oran \\(12\\) olduğundan \\(s_1\\) anahtar satırdır.\n\n\n\n\n\n\nAnahtar sayı \\(0.67\\) olduğundan \\(s_1\\) satırı \\(0.67\\) ile bölünmelidir.\nTemel değişkenlerden \\(s_1\\) çözümden çıkarken, \\(s_2\\) çözüme girer.\nAnahtar satır \\(0.17\\) ile çarpılarak \\(x_1\\) satırı ile toplanır."
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-14",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-14",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (14)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (14)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(-1\\)\n\\(12\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.17\\)\n\\(0\\)\n\\(-0.17\\)\n\\(0.17\\)\n\\(0.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nAnahtar satır için değerlerin hesaplanması \\(x_3\\)\n\\[\\begin{pmatrix} 0 \\\\ 0.33 \\\\ 1 \\\\ 0.67 \\\\ -0.67 \\\\ 8 \\end{pmatrix} \\div 0.67 = \\begin{pmatrix} 0 \\\\ 0.50 \\\\ 1.50 \\\\ 1 \\\\ -1 \\\\ 12 \\end{pmatrix}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-15",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-15",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (15)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (15)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(-1\\)\n\\(12\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.25\\)\n\\(0.25\\)\n\\(0\\)\n\\(0\\)\n\\(2.50\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\nDiğer satırlar için değerlerin hesaplanması \\(s_2\\)\n\\[\\begin{gathered}\n\\begin{pmatrix} 1 \\\\ 1.17 \\\\ 0 \\\\ -0.17 \\\\ 0.17 \\\\ 0.50 \\end{pmatrix} &+& 0.17 \\times \\begin{pmatrix} 0 \\\\ 0.50 \\\\ 1.50 \\\\ 1 \\\\ -1 \\\\ 12 \\end{pmatrix} \\\\\n&=& \\begin{pmatrix} 1 \\\\ 1.25 \\\\ 0.25 \\\\ 0 \\\\ 0 \\\\ 2.50 \\end{pmatrix}\n\\end{gathered}\\]"
+  },
+  {
+    "objectID": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-16",
+    "href": "IST115/Hafta09/index.html#örnek-5-büyük-m-maksimizasyon-problemi-16",
+    "title": "Hafta 09",
+    "section": "Örnek 5: Büyük M Maksimizasyon Problemi (16)",
+    "text": "Örnek 5: Büyük M Maksimizasyon Problemi (16)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(-7\\)\n\\(0\\)\n\\(0\\)\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.50\\)\n\\(1.50\\)\n\\(1\\)\n\\(-1\\)\n\\(12\\)\n \n\n\n$2\\, x_{1}$\n\\(1\\)\n\\(1.25\\)\n\\(0.25\\)\n\\(0\\)\n\\(0\\)\n\\(2.50\\)\n \n\n\n$Z_{j}$\n\\(2\\)\n\\(2.50\\)\n\\(0.50\\)\n+ 0\n+ 0\n\\(5\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(9.50\\)\n\\(0.50\\)\n\\(0\\)\nM\n\\(5\\)\n \n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=5\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 2.50\\), \\(x_2 =0\\), \\(s_1 = 0\\), \\(s_2 = 12\\) ve \\(a_1=0\\) dır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html",
+    "href": "IST207/Hafta09/index.html",
+    "title": "Hafta 09",
+    "section": "",
+    "text": "Karar Kuramı\n\n\n\n\nKarar kuramı, karar vericiye karar alma ve karar sürecini geliştirme konularında yol gösteren bir yaklaşımdır.\nSöz konusu yaklaşım, karar verilecek duruma ilişkin bilgi miktarına göre üç başlık altında incelenir.\n\nBelirlilik durumunda karar alma\nRisk durumunda karar alma\nBelirsizlik durumunda karar alma"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#karar-kuramı",
+    "href": "IST207/Hafta09/index.html#karar-kuramı",
+    "title": "Hafta 09",
+    "section": "Karar Kuramı",
+    "text": "Karar Kuramı\n\n\n\n\nKarar Kuramı\n\n\n\nKarar kuramı, karar vericiye karar alma ve karar sürecini geliştirme konularında yol gösteren bir yaklaşımdır.\nSöz konusu yaklaşım, karar verilecek duruma ilişkin bilgi miktarına göre üç başlık altında incelenir.\n\nBelirlilik durumunda karar alma\nRisk durumunda karar alma\nBelirsizlik durumunda karar alma"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#belirlilik-durumunda-karar-alma",
+    "href": "IST207/Hafta09/index.html#belirlilik-durumunda-karar-alma",
+    "title": "Hafta 09",
+    "section": "Belirlilik durumunda karar alma",
+    "text": "Belirlilik durumunda karar alma\n\n\n\n\nBelirlilik durumunda karar alma\n\n\n\nBelirlilik durumunda karar almada, karar vericinin aralarından seçim yapacağı karar seçeneklerine ilişkin sonuç değerleri ile olayın yapısı hakkındaki bilgisinin eksiksiz olduğu varsayılır.\nDoğal olarak en iyi sonucu verecek olan alternatif seçilir.\nDoğrusal programlama belirlilik durumunda karar alma probleminin bir örneğidir.\nÖrnek: Bunun için beslenme gereksinmemizi en düşük maliyetle karşılayacak besin maddeleri miktarlarını belirlemek istediğimizi düşünelim.\n\nBesin maddelerinin birim maliyetleri (\\(C_j\\)) sabit sayılar olsun.\n\\(j\\) ürünü tüketim miktarı \\(x_j\\), değeri bilinen bir sabit sayı olarak kabul edildiğinde, \\(j\\) ürününün maliyete olan katkısı \\(C_j \\cdot x_j\\) de sabit bir sayı olur.\nTüm \\(C_j \\cdot x_j\\) kombinasyonları kıyaslanarak en düşük olan seçilir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#risk-durumunda-karar-alma",
+    "href": "IST207/Hafta09/index.html#risk-durumunda-karar-alma",
+    "title": "Hafta 09",
+    "section": "Risk durumunda karar alma",
+    "text": "Risk durumunda karar alma\n\n\n\n\nRisk durumunda karar alma\n\n\n\nRisk durumunda problemin seçeneklerine ilişkin değerler ve olayın yapısı olasılıklar ile açıklanırken, belirsizlik durumunda sonuç değerleri bir ölçüde bilinse de olayın yapısına ilişkin olasılıklar hakkında hiçbir bilgi edinilememektedir.\nÖzetle, belirlilik ve belirsizlik verilerle ilgili bilgi derecesi bakımından iki aşırı ucu temsil ederken, risk bu iki uç arasında bulunur.\nÖrnek: Risk ve belirsizlik durumlarını açıklamak için beslenme problemi örneğine dönelim.\n\nRisk durumunda maliyet katsayısı \\(C_j\\) sabit sayı olma özelliğini yitirir ve kesin değeri bilinmeyen ancak, istendiğinde değeri ilgili olasılık yoğunluk fonksiyonu cinsinden açıklanabilen bir rasgele değişken olur.\nBuna göre \\(C_j\\), olasılık yoğunluk fonksiyonu \\(f(C_j)\\) ile gösterilen bir rasgele değişken olarak tanımlanabilir.\nBu durumda, kendisine ait bir olasılık yoğunluk fonksiyonu tanımlanmaksızın, \\(C_j\\) hakkında konuşmak fazla anlamlı olmaz.\nBunun sonucunda, \\(x_j\\)’nin belirli bir değeri için \\(j\\)’inci değişkenin kara olan katkısı \\(C_j \\cdot x_j\\)’de kesin değeri bilinmeyen bir rasgele değişken olur."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#belirsizlik-durumunda-karar-alma",
+    "href": "IST207/Hafta09/index.html#belirsizlik-durumunda-karar-alma",
+    "title": "Hafta 09",
+    "section": "Belirsizlik durumunda karar alma",
+    "text": "Belirsizlik durumunda karar alma\n\n\n\n\nBelirsizlik durumunda karar alma\n\n\n\nBelirsizlik durumunda ise, \\(f(C_j)\\) olasılık yoğunluk fonksiyonu bilinmez veya belirlenemez.\nAncak, bu konudaki bilgi eksikliği problem hakkında hiçbir bilgi yoktur şeklinde yorumlanmamalıdır.\nSözgelimi, karar verici \\(C_j\\)’nin değerlerinden birine eşit olduğunu bilebilir ancak, bu bilgi duruma ilişkin olasılıkların belirlenmesinde yetersiz kalır.\nBu durum belirsizlik ortamında karar alma durumudur.\nKarar probleminin nasıl formüle edileceği ve çözüleceği doğrudan doğruya karar verenin problemin bileşenleri hakkındaki bilgi derecesine bağlıdır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#karar-alma-ölçütleri",
+    "href": "IST207/Hafta09/index.html#karar-alma-ölçütleri",
+    "title": "Hafta 09",
+    "section": "Karar Alma Ölçütleri",
+    "text": "Karar Alma Ölçütleri\n\n\n\n\nKarar Alma Ölçütleri\n\n\n\nBelirlilik durumunda evrensel biçimde kabul görmüş karar alma ölçütü, kârın en büyüklenmesi veya maliyetin en küçüklenmesi iken, belirsizlik ve risk durumlarında karar almada değişik ölçütler söz konusu olur.\nSözgelimi, risk ortamında karar almada ortalama (beklenen) kârın en büyüklenmesi karar ölçütü olarak kabul edilebilirse de bu ölçüt bütün durumlar için uygun olmayabilir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#karar-analizinin-temel-adımları",
+    "href": "IST207/Hafta09/index.html#karar-analizinin-temel-adımları",
+    "title": "Hafta 09",
+    "section": "Karar Analizinin Temel Adımları",
+    "text": "Karar Analizinin Temel Adımları\n\n\n\n\nKarar Analizinin Temel Adımları\n\n\n\nSorunun tanımlanması\nTüm olası seçeneklerin listelenmesi\nKarar Verici’nin kontrolunda olmayan / doğanın sunduğu tüm olası olayların listelenmesi\nHer seçeneğin her olay için elde edeceği sonuçları gösteren karar tablosunun oluşturulması.\nBir karar modelinin seçilmesi (doğa durumuna göre)\nModelin uygulanması ve bir seçeneğin seçilerek karar verilmesi."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#karar-problemi",
+    "href": "IST207/Hafta09/index.html#karar-problemi",
+    "title": "Hafta 09",
+    "section": "Karar Problemi",
+    "text": "Karar Problemi\n\n\n\n\nKarar Problemi\n\n\n\nBirden fazla olay ve birden fazla karar seçeneğinin (eylem biçimi, strateji) bulunması, sistemin davranış ölçeğinin her bir stratejiye göre farklı değer alması ve bu değerlerin bilinmemesi durumundaki bir probleme karar problemi denir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#karar-probleminin-ortak-özellikleri",
+    "href": "IST207/Hafta09/index.html#karar-probleminin-ortak-özellikleri",
+    "title": "Hafta 09",
+    "section": "Karar Probleminin Ortak Özellikleri",
+    "text": "Karar Probleminin Ortak Özellikleri\n\n\n\n\nKarar Probleminin Ortak Özellikleri\n\n\n\nKarar Verici: Sisteme amacına göre hedefler koyan, bu hedeflere ulaşmak için amaçlar, stratejiler ve taktikler tanımlayan, bu tanımlar uyarınca sistemin davranışlarını planlayan, örgütleyen, denetleyen, sapmalar karşısında gerekli düzenlemeyi yapan birey ya da topluluğa karar verici denir.\nStrateji (Eylem Biçimi): Karar vericinin amaç veya amaçlarına ulaşmasını sağlayacak değişik yollar veya hareket tarzlarının her birine strateji veya eylem biçimi denir. Stratejilerin belirlenmesi ve tanımlanması karar vericinin en önemli görevlerindendir. Stratejiler karar vericinin kontrolünde olan faktörlerdir.\nOlay (Doğal Durum): Karar vericinin davranışını etkileyen ve alabileceği değerlerde karar vericinin hiçbir etkisi olmayan faktörlerdir. Olaylar, karar vericinin içinde bulunduğu karar ortamını oluştururlar. Sayıları ne olursa olsun gelecekte yalnızca bir olayın gerçekleşeceği unutulmamalıdır.\nSonuç: Her bir strateji ve olay bileşimi sonucu ortaya çıkan değerdir. Sonuç değerlerine ödeme, yarar veya kayıp denir ve bunlar genellikle parasal değer cinsinden açıklanır"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#belirlilik-altında-karar-verme---analitik-hiyerarşi-yaklaşımı",
+    "href": "IST207/Hafta09/index.html#belirlilik-altında-karar-verme---analitik-hiyerarşi-yaklaşımı",
+    "title": "Hafta 09",
+    "section": "Belirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı",
+    "text": "Belirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı\n\n\n\n\nBelirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı\n\n\n\nAnalitik Hiyerarşi Süreci (AHP), 1970’lerde Thomas L. Saaty tarafından geliştirilen ve çok kriterli karar verme problemlerinde kullanılan bir yöntemdir.\nAHP, karmaşık kararları hiyerarşik bir yapıya dönüştürerek karar vericinin hem nicel hem de nitel yargılarını sistematik biçimde değerlendirmesini sağlar.\nSüreç, karar hedefinin en üstte yer aldığı bir hiyerarşi oluşturulmasıyla başlar; ardından kriterler, alt kriterler ve alternatifler belirlenir.\nKarar verici, ikili karşılaştırmalar aracılığıyla her seviyedeki öğelerin göreli önemini değerlendirir.\nElde edilen karşılaştırma matrislerinden özvektör yöntemiyle ağırlıklar hesaplanır ve tutarlılık oranı (CR) analiziyle yargıların tutarlılığı kontrol edilir.\nBöylece AHP, öznel yargılara dayalı kararları matematiksel temele oturtarak en uygun alternatifi seçmede güçlü ve esnek bir yöntem sunar."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-1",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-1",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Basit Versiyon (1)",
+    "text": "Örnek 1: Üniversite Tercihi - Basit Versiyon (1)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Basit Versiyon (1)\n\n\n\n\n\n\nBaşarılı bir öğrenci olan Zeki üç üniversiteden akademik burs kazanmıştır: A üniversitesi, B üniversitesi ve C üniversitesi.\n\n\n\n\nBir üniversiteyi seçmek için Zeki iki kriter belirler: üniversitenin yeri ve akademik saygınlık.\n\n\n\n\nMükemmel bir öğrenci olarak, akademik saygınlığa üniversitenin yerinden 5 kat fazla önem verip ağırlıkları %83 akademik saygınlık, %17 üniversitenin yeri olarak belirler.\n\n\n\n\nSonra bu üç üniversiteyi yer ve akademik saygınlık açısından derecelendirmek için sistematik analizi kullanır (daha sonra anlatılacaktır).\n\n\n\n\n\n\nZeki yaptığı analiz sonucunda,\n\n\n\nYer: A üni. (%12.9), B üni. (%27.7) ve C üni. (%59.4)\nSaygınlık: A üni. (%54.5), B üni. (%27.3) ve C üni. (%18.2)\n\nolarak belirlemiştir.\n\n\nProblem iki kriter (yer ve saygınlık) ve üç karar alternatifiyle (A, B ve C üniversiteleri) işlenen tek hiyerarşiyle ilgilenmektedir.\n\n\nZeki bu durumda hangi üniversiteyi seçmelidir?"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-2",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-2",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Basit Versiyon (2)",
+    "text": "Örnek 1: Üniversite Tercihi - Basit Versiyon (2)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Basit Versiyon (2)\n\n\n\n\n\nBu üç üniversitenin derecelenmesi her bir üniversite için birleşik bir ağırlığın hesaplanmasına dayanır.\n\n\n\nA üniversitesi = \\(0.167 \\times 0.129 + 0.833 \\times 0.545 = 0.476\\)\n\n\n\n\nB üniversitesi = \\(0.167 \\times 0.277 + 0.833 \\times 0.273 = 0.273\\)\n\n\n\n\nC üniversitesi = \\(0.167 \\times 0.595 + 0.833 \\times 0.182 = 0.251\\)\n\n\n\nBu hesaplara göre A üniversitesi en yüksek birleşik ağırlıkla (\\(0.476\\)) Zeki için en uygun tercih olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-3",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---basit-versiyon-3",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Basit Versiyon (3)",
+    "text": "Örnek 1: Üniversite Tercihi - Basit Versiyon (3)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Basit Versiyon (2)"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-1",
+    "href": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-1",
+    "title": "Hafta 09",
+    "section": "Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)",
+    "text": "Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)\n\n\n\n\nAnalitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)\n\n\n\nAHP’nin püf noktası, karar alternatiflerinin derecelendiği göreceli ağırlıkların belirlenmesidir.\nBir önceki örnekte göreceli ağırlıklar, \\(0.129\\), \\(0.277\\), \\(0.595\\), \\(0.545\\), \\(0.273\\) ve \\(0.182\\) idi.\nBu değerler aşağıda bahsedilen yaklaşımla belirlenir.\n\nVerilmiş olan bir hiyerarşide \\(n\\) adet kriterle ilgilendiğimizi varsayalım.\nBurada ilk adım, karar vericinin farklı kriterlerin göreceli önemini yorumlamasını yansıtan ve \\(\\mathbf{A}\\) ile tanımlanan \\(n \\times n\\) ikili karşılaştırma matrisini oluşturmaktır.\nİkili karşılaştırma, \\(i\\) satırındaki \\((i = 1,2, \\dots,n)\\) kriterlerin \\(n\\) sütunla temsil edilen her bir kritere bağlı olarak derecelendirilmesiyle yapılır.\n\\(a_{ij}\\), \\(\\mathbf{A}\\)’nın \\((i,j)\\) elemanını tanımladığında, AHP \\(1\\) ile \\(9\\) arasında bir ölçek önerir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-2",
+    "href": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-2",
+    "title": "Hafta 09",
+    "section": "Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)",
+    "text": "Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)\n\n\n\n\nAnalitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)\n\n\n\nÖnerilen bu ölçeğe göre,\n\n\\(a_{ij} = 1\\), \\(i\\) ve \\(j\\) nin eşit önemde olduğunu,\n\\(a_{ij} = 5\\), \\(i\\)’nin \\(j\\)’den çok önemli olduğunu\n\\(a_{ij} = 9\\), \\(i\\)’nin \\(j\\)’den kesinlikle çok önemli olduğunu yansıtır.\n\\(1\\) ile \\(9\\) arasındaki diğer değerler ara değerler olarak yorumlanır.\nTutarlılık için \\(a_{ij} = k \\Rightarrow a_{ji} = \\frac{1}{k}\\) olarak ifade edilmelidir.\nAyrıca \\(\\mathbf{A}\\)’nın tüm diyagonal \\(a_{ii}\\) elemanları, kendilerine bağlı kriteri değerlendirdiği için \\(1\\) olmalıdır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-1",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)",
+    "text": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)\n\n\n\n\n\nZeki’nin karar problemi için belirlenen \\(\\mathbf{A}\\) karar matrisini gösterelim.\n\n\nZeki bir üniversitenin saygınlığının (S) yerine (Y) göre çok daha önemli olacağını belirttiği için \\(\\mathbf{A}\\) karar matrisinde saygınlığın yere göre önemi \\(5\\) olacak iken, yerin saygınlığa göre önemi ise bu değerin tersi olan \\(\\frac{1}{5}\\) olacaktır.\n\n\n\\[\n\\mathbf{A} = \\left[\\begin{array}{c|cc}\n& \\text{S} & \\text{Y} \\\\\n\\hline\n\\text{S} & 1 & 5 \\\\\n\\text{Y} & \\frac{1}{5} & 1\n\\end{array}\\right]\\]\n\n\n\n\n\nS ve Y’nin göreceli ağırlıkları her bir sütunun elemanlarını aynı sütunun elemanlarının toplamına bölerek \\(\\mathbf{A}\\)’dan bulunur.\n\n\nBöylece 1. sütunun elemanlarını \\((1+\\frac{1}{5}=1.2)\\)’ye, 2. sütunun elemanlarını \\((5+1=6)\\)’ya bölerek normalleştiririz.\n\n\n\\[\n\\mathbf{N} = \\left[\\begin{array}{c|cc}\n& \\text{S} & \\text{Y} \\\\\n\\hline\n\\text{S} & 0.833 & 0.833 \\\\\n\\text{Y} & 0.167 & 0.167\n\\end{array}\\right]\n\\]\n\n\n\\(n_{11} = \\frac{1}{1.2}=0.833\\), \\(n_{21} = \\frac{\\frac{1}{5}}{1.2}=0.167\\), \\(n_{12} = \\frac{5}{6}=0.833\\) ve \\(n_{22} = \\frac{1}{6}=0.167\\)"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-2",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)",
+    "text": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)\n\n\n\n\n\n\\[\n\\mathbf{N} = \\left[\\begin{array}{c|cc}\n& \\text{S} & \\text{Y} \\\\\n\\hline\n\\text{S} & 0.833 & 0.833 \\\\\n\\text{Y} & 0.167 & 0.167\n\\end{array}\\right]\n\\]\n\n\n\\(\\mathbf{N}\\) belirlendikten sonra, istenen göreceli ağırlıklar \\(w_S\\) ve \\(w_Y\\) normalleştirilen matrisin satır ortalaması olarak bulunur.\n\n\nSatır ortalamaları:\n\\(w_S = \\frac{0.833+0.833}{2}= 0.833\\) \\(w_Y = \\frac{0.167+0.167}{2}= 0.167\\)\nolarak bulunur.\n\n\n\n\n\nSatır ortalamaları bir matris şeklinde\n\\[w = \\begin{bmatrix}0.833 & 0.167\\end{bmatrix}^T\\]\nşeklinde de gösterilebilir.\n\n\nBu örnek için \\(\\mathbf{N}\\)’nin sütunları özdeştir. Bu durum yalnıca karar vericinin, \\(\\mathbf{A}\\) matrislerine girişlerde mükemmel bir tutarlılık sergilediğinde ortaya çıkar. Bu noktaya daha sonra tekrar değinilecektir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-3",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)",
+    "text": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)\n\n\n\n\n\nAğırlıkların sadece değerlendirme kriterleri için belirlenmesi yeterli değildir. Her bir kriter için her bir alternatifin de birbiriyle karşılaştırıldığı matrislere ihtiyaç vardır.\n\n\nA, B ve C üniversitesi alternatiflerinin göreceli ağırlıkları aşağıdaki karşılaştırma matrisleri kullanılarak \\(S\\) ve \\(Y\\) kriterleri içerisinde belirlenir.\n\n\nÖrneğin, Zeki her bir üniversite seçeneği için Saygınlık (S) kriteri için aşağıdaki karşılaştıma matrisini oluşturmuş olsun.\n\n\n\\[A_S = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 2 & 3 \\\\\n\\text{B} & 0.5 & 1 & 1.5 \\\\\n\\text{C} & 0.333 & 0.667 & 1\n\\end{array}\\right] \\]\n\n\nBu matris saygınlık açısından A’nın B’den (\\(2\\)); A’nın C’den (\\(3\\)) ve B’nin C’den (\\(1.5\\)) daha önemli olduğunu belirtmektedir.\n\n\n\n\n\nSütun toplamları = \\([1.833, 3.667, 5.5]\\)\n\n\n\\[N_S = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.545 & 0.545 & 0.545 \\\\\n\\text{B} & 0.273 & 0.273 & 0.273 \\\\\n\\text{C} & 0.182 & 0.182 & 0.182\n\\end{array}\\right]\\]\n\n\nSatır ortalamaları:\n\\(w_{SA} = \\frac{0.545+0.545+0.545}{3}= 0.545\\) \\(w_{SB} = \\frac{0.273+0.273+0.273}{3}= 0.273\\) \\(w_{SC} = \\frac{0.182+0.182+0.182}{3}= 0.182\\)\nolarak hesaplanır.\n\n\nSatır ortalamaları matris şeklinde \\(w_S = \\begin{bmatrix}0.545 & 0.273 & 0.182 \\end{bmatrix}^T\\) gösterilir.\n\n\nBu üç değer sırasıyla A, B ve C üniversitelerinin akademik saygınlık açısından ağırlıklarını verir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-4",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)",
+    "text": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)\n\n\n\n\n\nAynı işlem bu kez akademik saygınlık yerine, üniversitenin yeri için yapılmalıdır.\n\n\nZeki bu kez her bir üniversite seçeneği için Yer (Y) kriteri için aşağıdaki karşılaştıma matrisini oluşturmuş olsun.\n\n\n\n\n\n\\[A_Y = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 0.5 & 0.2 \\\\\n\\text{B} & 2 & 1 & 0.5 \\\\\n\\text{C} & 5 & 2 & 1\n\\end{array}\\right]\\]\n\n\nBu matris yer açısından A’nın B’den (\\(0.5\\)); A’nın C’den (\\(0.2\\)) ve B’nin C’den (\\(0.5\\)) daha kötü konumda olduğunu belirtmektedir.\n\n\nSütun toplamları = \\([8, 3.5, 1.7]\\)\n\n\n\n\n\n\\[N_Y = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.125 & 0.143 & 0.118 \\\\\n\\text{B} & 0.25 & 0.286 & 0.294 \\\\\n\\text{C} & 0.625 & 0.571 & 0.588\n\\end{array}\\right]\\]\n\n\nSatır ortalamaları:\n\\(w_{YA} = \\frac{0.125+0.143+0.118}{3}= 0.129\\) \\(w_{YB} = \\frac{0.25+0.286+0.294}{3}= 0.277\\) \\(w_{YC} = \\frac{0.625+0.571+0.588}{3}= 0.595\\)\n\n\nSatır ortalamaları matris şeklinde \\(w_Y = \\begin{bmatrix}0.129 & 0.277 & 0.595 \\end{bmatrix}^T\\) gösterilir.\n\n\nBu üç değer sırasıyla A, B ve C üniversitelerinin yer açısından ağırlıklarını verir.\n\n\nDikkat ederseniz \\(N\\) ve \\(N_S\\) nin tüm sütunları özdeş iken \\(N_Y\\) nin sütunları özdeş değildir. Şimdi bunun ne anlama geldiğini öğrenelim."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-5",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)",
+    "text": "Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-1",
+    "href": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-1",
+    "title": "Hafta 09",
+    "section": "Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)",
+    "text": "Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)\n\n\n\n\nAnalitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)\n\n\n\n\\(N\\) ve \\(N_S\\) nin tüm sütunları özdeş iken \\(N_Y\\) nin sütunlarının özdeş olmadığından bahsetmiştik.\n\n\nÖzdeş sütunlar karşılaştırmanın nasıl yapıldığına bakılmaksızın elde edilen göreceli ağırlıkların aynı olduğunu göstermektedir.\n\n\nBu orijinal \\(A\\) ve \\(A_S\\) karşılaştırma matrislerinin tutarlı olduğuna işaret ederken, \\(A_Y\\) matrisi tutarlı değildir.\n\n\nTüm karşılaştırma matrislerinin tutarlı olması zordur. Açıkçası, bu matrislerin temel yapısını insan yargısı oluşturur ve bir dereceye kadar tutarsızlık beklenebilir.\n\n\nÖnemli olan bu tutarsızlığın mantıksız diye değerlendirilmeyecek şekilde tölere edilebilmesini sağlamaktır.\n\n\nBir tutarsızlık söz konusu ise bunun kabul edilebilir düzeyde olup olmadığını belirlemek için A karşılaştırma matrisi için objektif bir ölçüt geliştirmek gerekir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-2",
+    "href": "IST207/Hafta09/index.html#analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-2",
+    "title": "Hafta 09",
+    "section": "Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)",
+    "text": "Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)\n\n\n\n\nAnalitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)\n\n\n\n\n\nAHP tutarlılık oranı\n\\[CR = \\frac{CI}{RI}\\] şeklinde hesaplanır.\n\n\nBurada, \\(CI\\), \\(A\\) nın tutarlılık indeksini göstermekte ve\n\\[CI = \\frac{n_{maks}-n}{n-1}\\]\nile hesaplanmaktadır.\n\n\nFormülde \\(n\\), \\(A\\) matrisinin satır sayısı iken, \\(n_{maks}\\), \\(A \\overline{w}\\) matrislerinin çarpımı sonucunda elde edilen sütun vektörünun elemanlarının toplanmasıyla bulunur.\n\n\n\n\n\n\\(RI\\), \\(A\\) nın rastgele tutarlılık indeksi olarak tanımlanır ve\n\\[RI = \\frac{1.98 (n-2)}{n}\\]\nformülüyle hesaplanır.\n\n\nEğer \\(CR \\leq 0.1\\) ise tutarsızlık düzeyi kabul edilebilir. Aksi taktirde \\(A\\) karşılaştırma matrisinde tutarsızlık yüksektir. Matris elemanları kontrol edilmelidir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---tutarlılığın-kontrolü",
+    "href": "IST207/Hafta09/index.html#örnek-1-üniversite-tercihi---tutarlılığın-kontrolü",
+    "title": "Hafta 09",
+    "section": "Örnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü",
+    "text": "Örnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü\n\n\n\n\nÖrnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü\n\n\n\n\n\n\\(A_Y\\) matrisi \\(N_Y\\) matrisinin sütunları özdeş olmadığı için tutarsızdır. Tutarsızlığın kabul edilebilir ölçülerde olup olmadığını belirleyelim.\n\n\nİşleme \\(n_{maks}\\) ı bularak başlayalım.\n\\[A_Y \\cdot \\overline{w}_Y = \\left[\\begin{array}{ccc}\n1 & \\frac{1}{2} & \\frac{1}{5} \\\\\n2 & 1 & \\frac{1}{2} \\\\\n5 & 2 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.129\\\\\n0.277\\\\\n0.595\\end{array}\\right] = \\left[\\begin{array}{c}\n0.386\\\\\n0.831\\\\\n1.791\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 0.386 + 0.831 + 1.791 = 3.007\\]\n\n\n\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{n_{maks}-n}{n-1} = \\tfrac{3.007 - 3}{2} = 0.004\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.006\\]\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A_Y\\) nin tutarsızlık düzeyi kabul edilebilir seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-1",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-1",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (1)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (1)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (1)\n\n\n\n\n\nBir yazar yeni bir Yöneylem Araştırması kitabı için yayımcı seçmek üzere üç kriter belirler.\n\n\nYazara verilen telif hakkı yüzdesi (T), satış ve pazarlama (SP) ve avans ödemesi (A).\n\n\nKitapla ilgilendiği bilinen iki yayımcı şirket H ve P dir.\n\n\nYazar karşılaştırma matrislerini yanda verildiği şekilde oluşturduğuna göre, H ve P yayımcısından hangisini tercih etmesi gerektiğini ve kararın tutarlılığının seviyesini belirleyin.\n\n\n\n\n\n\\[A = \\left[\\begin{array}{c|ccc}\n& \\text{T} & \\text{SP} & \\text{A} \\\\\n\\hline\n\\text{T} & 1 & 1 & 0.25 \\\\\n\\text{SP} & 1 & 1 & 0.2 \\\\\n\\text{A} & 4 & 5 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_T= \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 1 & 2 \\\\\n\\text{P} & 0.5 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_{SP} = \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 1 & 0.5 \\\\\n\\text{P} & 2 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_{A} = \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 1 & 1 \\\\\n\\text{P} & 1 & 1\n\\end{array}\\right]\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-2",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-2",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (2)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (2)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (2)\n\n\nÖncelikle sorunun şemasını çizerek başlayalım."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-3",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-3",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (3)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (3)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (3)\n\n\n\n\n\nTüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.\n\n\n\\[N = \\left[\\begin{array}{c|ccc}\n& \\text{T} & \\text{SP} & \\text{A} \\\\\n\\hline\n\\text{T} & 0.167 & 0.143 & 0.172 \\\\\n\\text{SP} & 0.167 & 0.143 & 0.138 \\\\\n\\text{A} & 0.667 & 0.714 & 0.69\n\\end{array}\\right]\\]\n\n\n\\[N_T = \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 0.667 & 0.667 \\\\\n\\text{P} & 0.333 & 0.333\n\\end{array}\\right]\\]\n\n\n\\[N_{SP} = \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 0.333 & 0.333 \\\\\n\\text{P} & 0.667 & 0.667\n\\end{array}\\right]\\]\n\n\n\\[N_A = \\left[\\begin{array}{c|cc}\n& \\text{H} & \\text{P} \\\\\n\\hline\n\\text{H} & 0.5 & 0.5 \\\\\n\\text{P} & 0.5 & 0.5\n\\end{array}\\right]\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N\\) matrisi için \\[w_{T} = \\tfrac{1}{3}(0.167 + 0.143 + 0.172) = 0.161\\] \\[w_{SP} = \\tfrac{1}{3}(0.167 + 0.143 + 0.138) = 0.149\\] \\[w_{A} = \\tfrac{1}{3}(0.667 + 0.714 + 0.69) = 0.69\\] \\[w = \\begin{bmatrix}0.161 & 0.149 & 0.69\\end{bmatrix}^T\\]\n\n\n\\(N_T\\) matrisi için \\[w_{T,H} = \\tfrac{1}{2}(0.667 + 0.667) = 0.667\\] \\[w_{T,P} = \\tfrac{1}{2}(0.333 + 0.333) = 0.333\\] \\[w_T = \\begin{bmatrix}0.667 & 0.333\\end{bmatrix}^T\\]\n\n\n\\(N_T\\), \\(N_{SP}\\) ve \\(N_A\\) matrislerinin sütunları özdeş olduğundan tutarlılardır.\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N_{SP}\\) matrisi için \\[w_{SP,H} = \\tfrac{1}{2}(0.333 + 0.333) = 0.333\\] \\[w_{SP,P} = \\tfrac{1}{2}(0.667 + 0.667) = 0.667\\] \\[w_{SP} = \\begin{bmatrix}0.333 & 0.667\\end{bmatrix}^T\\]\n\n\n\\(N_A\\) matrisi için \\[w_{A,H} = \\tfrac{1}{2}(0.5 + 0.5) = 0.5\\] \\[w_{A,P} = \\tfrac{1}{2}(0.5 + 0.5) = 0.5\\] \\[w_A = \\begin{bmatrix}0.5 & 0.5\\end{bmatrix}^T\\]\n\n\n\\(N\\) matrisinin sütunları özdeş olmadığından tutarlı değildir. Tutarlılık derecesi araştırılmalıdır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-4",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-4",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (4)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (4)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (4)\n\n\n\n\n\n\\(N_T\\), \\(N_{SP}\\) ve \\(N_A\\) matrisleri tutarlı olduklarından \\(CR\\) değerleri \\(0\\) dır.\nSadece \\(N\\) matrisinin tutarlılığına bakılmalıdır.\n\n\n\\[A \\cdot \\overline{w} = \\left[\\begin{array}{ccc}\n1 & 1 & 0.25 \\\\\n1 & 1 & 0.2 \\\\\n4 & 5 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.161 \\\\\n0.149 \\\\\n0.69\\end{array}\\right] =\n\\left[\\begin{array}{c}\n0.482 \\\\\n0.448 \\\\\n2.079\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 0.482 + 0.448 + 2.079 = 3.009\\]\n\n\n\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.009 - 3}{2} = 0.004\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.007\\]\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A\\) nin tutarsızlık düzeyi kabul edilebilir seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-5",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-5",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (5)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (5)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (5)\n\n\n\n\n\nSon olarak hesaplanan ağırlıklar ile yazarın tercihini belirleyelim.\n\n\n\\[P(H) = w_T\\cdot w_{T,H} + w_{SP}\\cdot w_{SP,H} + w_A\\cdot w_{A,H}\\] \\[P(H) = 0.161\\cdot0.667 + 0.149\\cdot0.333 + 0.69\\cdot0.5 = 0.502\\]\n\n\n\\[P(P) = w_T\\cdot w_{T,P} + w_{SP}\\cdot w_{SP,P} + w_A\\cdot w_{A,P} \\] \\[P(P) = 0.161\\cdot0.333 + 0.149\\cdot0.667 + 0.69\\cdot0.5 = 0.498\\]\n\n\nÇok küçük bir farkla da olsa (\\(\\%50.2\\)) yazar \\(H\\) yayınevini seçmelidir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-6",
+    "href": "IST207/Hafta09/index.html#örnek-2-yazar---yayıncı-seçimi-6",
+    "title": "Hafta 09",
+    "section": "Örnek 2: Yazar - Yayıncı Seçimi (6)",
+    "text": "Örnek 2: Yazar - Yayıncı Seçimi (6)\n\n\n\n\nÖrnek 2: Yazar - Yayıncı Seçimi (6)\n\n\nSon durumda şema aşağıdaki hale gelir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-1",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-1",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (1)",
+    "text": "Örnek 3: İşe Alım (1)\n\n\n\n\nÖrnek 3: İşe Alım (1)\n\n\n\n\n\n\\(C\\&H\\) firmasının insan kaynakları departmanı muhtemel bir çalışan arayışını üç adaya indirmiştir. Sinan (S), Jale (J) ve Melis (M).\n\n\nSon seçim üç kritere dayanmaktadır: kişisel görüşme (I), deneyim (D) ve Referanslar (R).\n\n\nÜç kriter arasında öncelikleri belirlemek için departman \\(A\\) matrisini kullanmaktadır.\n\n\nAdaylarla görüşülüp, deneyim ve referanslarına bakılarak veriler toplanınca \\(A_I\\), \\(A_D\\) ve \\(A_R\\) karşılaştırma matrisleri de oluşturulmuştur.\n\n\nBu adaylardan hangisi işe alınmalıdır? Verinin tutarlılığını değerlendirin.\n\n\n\n\n\n\\[A = \\left[\\begin{array}{c|ccc}\n& \\text{I} & \\text{D} & \\text{R} \\\\\n\\hline\n\\text{I} & 1 & 2 & 0.25 \\\\\n\\text{D} & 0.5 & 1 & 0.2 \\\\\n\\text{R} & 4 & 5 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_I = \\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 1 & 3 & 4 \\\\\n\\text{J} & 0.333 & 1 & 0.2 \\\\\n\\text{M} & 0.25 & 5 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_D = \\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 1 & 0.333 & 2 \\\\\n\\text{J} & 3 & 1 & 0.5 \\\\\n\\text{M} & 0.5 & 2 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_R = \\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 1 & 0.5 & 1 \\\\\n\\text{J} & 2 & 1 & 0.5 \\\\\n\\text{M} & 1 & 2 & 1\n\\end{array}\\right]\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-2",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-2",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (2)",
+    "text": "Örnek 3: İşe Alım (2)\n\n\n\n\nÖrnek 3: İşe Alım (2)\n\n\nÖncelikle sorunun şemasını çizerek başlayalım."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-3",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-3",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (3)",
+    "text": "Örnek 3: İşe Alım (3)\n\n\n\n\nÖrnek 3: İşe Alım (3)\n\n\n\n\n\nTüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.\n\n\n\\[N = \\left[\\begin{array}{c|ccc}\n& \\text{I} & \\text{D} & \\text{R} \\\\\n\\hline\n\\text{I} & 0.182 & 0.25 & 0.172 \\\\\n\\text{D} & 0.091 & 0.125 & 0.138 \\\\\n\\text{R} & 0.727 & 0.625 & 0.69\n\\end{array}\\right]\\]\n\n\n\\[N_I = \\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 0.632 & 0.333 & 0.769 \\\\\n\\text{J} & 0.211 & 0.111 & 0.038 \\\\\n\\text{M} & 0.158 & 0.556 & 0.192\n\\end{array}\\right]\\]\n\n\n\\[N_{D} = \\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 0.222 & 0.1 & 0.571 \\\\\n\\text{J} & 0.667 & 0.3 & 0.143 \\\\\n\\text{M} & 0.111 & 0.6 & 0.286\n\\end{array}\\right]\\]\n\n\n\\[N_R =\\left[\\begin{array}{c|ccc}\n& \\text{S} & \\text{J} & \\text{M} \\\\\n\\hline\n\\text{S} & 0.25 & 0.143 & 0.4 \\\\\n\\text{J} & 0.5 & 0.286 & 0.2 \\\\\n\\text{M} & 0.25 & 0.571 & 0.4\n\\end{array}\\right]\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N\\) matrisi için \\[w_{I} = \\tfrac{1}{3}(0.182 + 0.25 + 0.172) = 0.201\\] \\[w_{D} = \\tfrac{1}{3}(0.091 + 0.125 + 0.138) = 0.118\\] \\[w_{R} = \\tfrac{1}{3}(0.727 + 0.625 + 0.69) = 0.681\\] \\[w = \\begin{bmatrix}0.201 & 0.118 & 0.681\\end{bmatrix}^T\\]\n\n\n\\(N_I\\) matrisi için \\[w_{I,S} = \\tfrac{1}{3}(0.632 + 0.333 + 0.769) = 0.578\\] \\[w_{I,J} = \\tfrac{1}{3}(0.211 + 0.111 + 0.038) = 0.12\\] \\[w_{I,M} = \\tfrac{1}{3}(0.158 + 0.556 + 0.192) = 0.302\\] \\[w_I = \\begin{bmatrix}0.578 & 0.12 & 0.302\\end{bmatrix}^T\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N_{D}\\) matrisi için \\[w_{D,S} = \\tfrac{1}{3}(0.222 + 0.1 + 0.571) = 0.298\\] \\[w_{D,J} = \\tfrac{1}{3}(0.667 + 0.3 + 0.143) = 0.37\\] \\[w_{D,M} = \\tfrac{1}{3}(0.111 + 0.6 + 0.286) = 0.332\\] \\[w_D = \\begin{bmatrix}0.298 & 0.37 & 0.332\\end{bmatrix}^T\\]\n\n\n\\(N_R\\) matrisi için \\[w_{R,S} = \\tfrac{1}{3}(0.25 + 0.143 + 0.4) = 0.264\\] \\[w_{R,J} = \\tfrac{1}{3}(0.5 + 0.286 + 0.2) = 0.329\\] \\[w_{R,M} = \\tfrac{1}{3}(0.25 + 0.571 + 0.4) = 0.407\\] \\[w_R = \\begin{bmatrix}0.264 & 0.329 & 0.407\\end{bmatrix}^T\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-4",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-4",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (4)",
+    "text": "Örnek 3: İşe Alım (4)\n\n\n\n\nÖrnek 3: İşe Alım (4)\n\n\n\n\n\nElde edilen matrislerin hiç biri tutarlı değildir. Hangi matrislerdeki tutarsızlığa katlanılabilineceğine bakalım.\n\n\nÖncelikle \\(A\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A \\cdot \\overline{w} = \\left[\\begin{array}{ccc}\n1 & 2 & 0.25 \\\\\n0.5 & 1 & 0.2 \\\\\n4 & 5 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.201 \\\\\n0.118 \\\\\n0.681\\end{array}\\right] =\n\\left[\\begin{array}{c}\n0.607 \\\\\n0.355 \\\\\n2.076\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 0.607 + 0.355 + 2.076 = 3.038\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.038 - 3}{2} = 0.019\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.029\\]\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A\\) nin tutarsızlık düzeyi kabul edilebilir seviyededir.\n\n\n\n\n\nŞimdi \\(A_I\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_I \\cdot \\overline{w}_I = \\left[\\begin{array}{ccc}\n1 & 3 & 4 \\\\\n0.333 & 1 & 0.2 \\\\\n0.25 & 5 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.578 \\\\\n0.12 \\\\\n0.302\\end{array}\\right] =\n\\left[\\begin{array}{c}\n2.146 \\\\\n0.373 \\\\\n1.047\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 2.146 + 0.373 + 1.047 = 3.566\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.566 - 3}{2} = 0.283\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.428\\]\n\n\n\\(CR \\geq 0.1\\) olduğundan \\(A_I\\) nin tutarsızlık düzeyi kabul edilemez seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-5",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-5",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (5)",
+    "text": "Örnek 3: İşe Alım (5)\n\n\n\n\nÖrnek 3: İşe Alım (5)\n\n\n\n\n\nArdından \\(A_D\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_D \\cdot \\overline{w}_D = \\left[\\begin{array}{ccc}\n1 & 0.333 & 2 \\\\\n3 & 1 & 0.5 \\\\\n0.5 & 2 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.298 \\\\\n0.37 \\\\\n0.332\\end{array}\\right] =\n\\left[\\begin{array}{c}\n1.086 \\\\\n1.43 \\\\\n1.221\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 1.086 + 1.43 + 1.221 = 3.736\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.736 - 3}{2} = 0.368\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.558\\]\n\n\n\\(CR \\geq 0.1\\) olduğundan \\(A_D\\) nin tutarsızlık düzeyi kabul edilemez seviyededir.\n\n\n\n\n\nSon olarak \\(A_R\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_R \\cdot \\overline{w}_R = \\left[\\begin{array}{ccc}\n1 & 0.5 & 1 \\\\\n2 & 1 & 0.5 \\\\\n1 & 2 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.264 \\\\\n0.329 \\\\\n0.407\\end{array}\\right] =\n\\left[\\begin{array}{c}\n0.836 \\\\\n1.061 \\\\\n1.329\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 0.836 + 1.061 + 1.329 = 3.225\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.009 - 3}{2} = 0.113\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.017\\]\n\n\n\\(CR \\geq 0.1\\) olduğundan \\(A_R\\) nin tutarsızlık düzeyi kabul edilemez seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-6",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-6",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (6)",
+    "text": "Örnek 3: İşe Alım (6)\n\n\n\n\nÖrnek 3: İşe Alım (6)\n\n\n\n\n\nSon olarak hesaplanan ağırlıklar ile işe alım tercihini belirleyelim.\n\n\n\\[P(S) = w_I\\cdot w_{I,S} + w_{D}\\cdot w_{D,S} + w_R\\cdot w_{R,S}\\] \\[P(S) = 0.201 \\cdot 0.578 + 0.118 \\cdot 0.298 + 0.681 \\cdot 0.264 = 0.331\\]\n\n\n\\[P(J) = w_I\\cdot w_{I,J} + w_{D}\\cdot w_{D,J} + w_R\\cdot w_{R,J} \\] \\[P(J) = 0.201 \\cdot 0.12 + 0.118 \\cdot 0.37 + 0.681 \\cdot 0.329 = 0.291\\]\n\n\n\\[P(M) = w_I\\cdot w_{I,M} + w_{D}\\cdot w_{D,M} + w_R\\cdot w_{R,M} \\] \\[P(M) = 0.201 \\cdot 0.302 + 0.118 \\cdot 0.332 + 0.681 \\cdot 0.407 = 0.377\\]\n\n\nİş için en iyi aday \\(\\%37.7\\) ile Melis (M) tir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-3-işe-alım-7",
+    "href": "IST207/Hafta09/index.html#örnek-3-işe-alım-7",
+    "title": "Hafta 09",
+    "section": "Örnek 3: İşe Alım (7)",
+    "text": "Örnek 3: İşe Alım (7)\n\n\n\n\nÖrnek 3: İşe Alım (7)\n\n\nSon durumda şema aşağıdaki hale gelir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-1",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-1",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (1)",
+    "text": "Örnek 4: Ev Satın Alma (1)\n\n\n\n\nÖrnek 4: Ev Satın Alma (1)\n\n\n\n\n\nKerem ve Jale Perçem (K ve J) çifti yeni bir ev alacaklardır.\n\n\nA, B ve C evlerinin fiyatları bütçelerine uygundur.\n\n\nPerçem ailesi evin seçimi için iki kriter belirler: Depreme Dayanıklılık (D) ve İşe Yakınlık (İ).\n\n\nBuradan yandaki karşılaştırma matrisleri elde edilmiştir.\n\n\nBuna göre üç evin öncelik sırasını değerlendirin ve her bir matris için tutarlılık oranını hesaplayın.\n\n\n\n\n\n\\[A = \\left[\\begin{array}{c|cc}\n& \\text{K} & \\text{J} \\\\\n\\hline\n\\text{K} & 1 & 2 \\\\\n\\text{J} & 0.5 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_K = \\left[\\begin{array}{c|cc}\n& \\text{KD} & \\text{KI} \\\\\n\\hline\n\\text{KD} & 1 & 0.333 \\\\\n\\text{KI} & 3 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_J = \\left[\\begin{array}{c|cc}\n& \\text{JD} & \\text{JI} \\\\\n\\hline\n\\text{JD} & 1 & 4 \\\\\n\\text{JI} & 0.25 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_{KD} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 2 & 3 \\\\\n\\text{B} & 0.5 & 1 & 2 \\\\\n\\text{C} & 0.333 & 0.5 & 1\n\\end{array}\\right]\\]\n\n\n\n\n\n\\[A_{KI} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 2 & 0.5 \\\\\n\\text{B} & 0.5 & 1 & 0.333 \\\\\n\\text{C} & 2 & 3 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_{JD} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 4 & 2 \\\\\n\\text{B} & 0.25 & 1 & 3 \\\\\n\\text{C} & 0.5 & 0.333 & 1\n\\end{array}\\right]\\]\n\n\n\\[A_{JI} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 1 & 0.5 & 4 \\\\\n\\text{B} & 2 & 1 & 3 \\\\\n\\text{C} & 0.25 & 0.333 & 1\n\\end{array}\\right]\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-2",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-2",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (2)",
+    "text": "Örnek 4: Ev Satın Alma (2)\n\n\n\n\nÖrnek 4: Ev Satın Alma (2)\n\n\nÖncelikle sorunun şemasını çizerek başlayalım."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-3",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-3",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (3)",
+    "text": "Örnek 4: Ev Satın Alma (3)\n\n\n\n\nÖrnek 4: Ev Satın Alma (3)\n\n\n\n\n\nTüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.\n\n\n\\[N = \\left[\\begin{array}{c|cc}\n& \\text{K} & \\text{J} \\\\\n\\hline\n\\text{K} & 0.667 & 0.667 \\\\\n\\text{J} & 0.333 & 0.333\n\\end{array}\\right]\\]\n\n\n\\[N_K = \\left[\\begin{array}{c|cc}\n& \\text{KD} & \\text{KI} \\\\\n\\hline\n\\text{KD} & 0.25 & 0.25 \\\\\n\\text{KI} & 0.75 & 0.75\n\\end{array}\\right]\\]\n\n\n\\[N_J = \\left[\\begin{array}{c|cc}\n& \\text{JD} & \\text{JI} \\\\\n\\hline\n\\text{JD} & 0.8 & 0.8 \\\\\n\\text{JI} & 0.2 & 0.2\n\\end{array}\\right]\\]\n\n\n\\[N_{KD} =  \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.545 & 0.571 & 0.5 \\\\\n\\text{B} & 0.273 & 0.286 & 0.333 \\\\\n\\text{C} & 0.182 & 0.143 & 0.167\n\\end{array}\\right]\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N\\) matrisi için \\[w_{K} = \\tfrac{1}{2}(0.667 + 0.667) = 0.667\\] \\[w_{J} = \\tfrac{1}{2}(0.333 + 0.333) = 0.333\\] \\[w = \\begin{bmatrix}0.667 & 0.333\\end{bmatrix}^T\\]\n\n\n\\(N_K\\) matrisi için \\[w_{K,D} = \\tfrac{1}{2}(0.25 + 0.25) = 0.25\\] \\[w_{K,I} = \\tfrac{1}{2}(0.75 + 0.75) = 0.75\\] \\[w_K = \\begin{bmatrix}0.25 & 0.75\\end{bmatrix}^T\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N_J\\) matrisi için \\[w_{J,D} = \\tfrac{1}{2}(0.8 + 0.8) = 0.8\\] \\[w_{J,I} = \\tfrac{1}{2}(0.2 + 0.2) = 0.2\\] \\[w_J = \\begin{bmatrix}0.8 & 0.2\\end{bmatrix}^T\\]\n\n\n\\(N_{KD}\\) matrisi için\n\\[w_{KD,A} = \\tfrac{1}{3}(0.545 + 0.571 + 0.5) = 0.539\\] \\[w_{KD,B} = \\tfrac{1}{3}(0.273 + 0.286 + 0.333) = 0.297\\] \\[w_{KD,C} = \\tfrac{1}{3}(0.182 + 0.143 + 0.167) = 0.164\\] \\[w_{KD} = \\begin{bmatrix}0.539 & 0.297 & 0.164\\end{bmatrix}^T\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-4",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-4",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (4)",
+    "text": "Örnek 4: Ev Satın Alma (4)\n\n\n\n\nÖrnek 4: Ev Satın Alma (4)\n\n\n\n\n\nTüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.\n\n\n\\[N_{KI} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.286 & 0.333 & 0.273 \\\\\n\\text{B} & 0.143 & 0.167 & 0.182 \\\\\n\\text{C} & 0.571 & 0.5 & 0.545\n\\end{array}\\right]\\]\n\n\n\\[N_{JD} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.571 & 0.75 & 0.333 \\\\\n\\text{B} & 0.143 & 0.188 & 0.5 \\\\\n\\text{C} & 0.286 & 0.062 & 0.167\n\\end{array}\\right]\\]\n\n\n\\[N_{JI} = \\left[\\begin{array}{c|ccc}\n& \\text{A} & \\text{B} & \\text{C} \\\\\n\\hline\n\\text{A} & 0.308 & 0.273 & 0.5 \\\\\n\\text{B} & 0.615 & 0.545 & 0.375 \\\\\n\\text{C} & 0.077 & 0.182 & 0.125\n\\end{array}\\right]\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N_{KI}\\) matrisi için \\[w_{KI,A} = \\tfrac{1}{3}(0.286 + 0.333 + 0.273) = 0.297\\] \\[w_{KI,B} = \\tfrac{1}{3}(0.143 + 0.167 + 0.182) = 0.164\\] \\[w_{KI,C} = \\tfrac{1}{3}(0.571 + 0.5 + 0.545) = 0.539\\] \\[w_{KI} = \\begin{bmatrix}0.297 & 0.164 & 0.539\\end{bmatrix}^T\\]\n\n\n\\(N_{JD}\\) matrisi için\n\\[w_{JD,A} = \\tfrac{1}{3}(0.571 + 0.75 + 0.333) = 0.552\\] \\[w_{JD,B} = \\tfrac{1}{3}(0.143 + 0.188 + 0.5) = 0.277\\] \\[w_{JD,C} = \\tfrac{1}{3}(0.286 + 0.062 + 0.167) = 0.172\\] \\[w_{JD} = \\begin{bmatrix}0.552 & 0.277 & 0.172\\end{bmatrix}^T\\]\n\n\n\n\n\nSatır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.\n\n\n\\(N_{JI}\\) matrisi için\n\\[w_{JI,A} = \\tfrac{1}{3}(0.308 + 0.273 + 0.5) = 0.36\\] \\[w_{JI,B} = \\tfrac{1}{3}(0.615 + 0.545 + 0.375) = 0.512\\] \\[w_{JI,C} = \\tfrac{1}{3}(0.077 + 0.182 + 0.125) = 0.128\\] \\[w_{JI} = \\begin{bmatrix}0.36 & 0.512 & 0.128\\end{bmatrix}^T\\]"
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-5",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-5",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (5)",
+    "text": "Örnek 4: Ev Satın Alma (5)\n\n\n\n\nÖrnek 4: Ev Satın Alma (5)\n\n\n\n\n\nElde edilen matrislerden \\(A\\), \\(A_K\\) ve \\(A_J\\) sütunları özdeş olduğundan tutarlıyken, sütunları özdeş olmayan \\(A_{KD}\\),\\(A_{KI}\\), \\(A_{JD}\\) ve \\(A_{JI}\\) tutarlı değildir. Tutarlı olmayan bu matrislerden hangilerindeki tutarsızlığa katlanılabilineceğine bakalım.\n\n\nÖncelikle \\(A_{KD}\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_{KD} \\cdot \\overline{w}_{KD} = \\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n0.5 & 1 & 2 \\\\\n0.333 & 0.5 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.539 \\\\\n0.297 \\\\\n0.164\\end{array}\\right] =\n\\left[\\begin{array}{c}\n1.625 \\\\\n0.894 \\\\\n0.492\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 1.625 + 0.894 + 0.492 = 3.011\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.011 - 3}{2} = 0.006\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.008\\]\n\n\n\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A_{KD}\\) nin tutarsızlık düzeyi kabul edilebilir seviyededir.\n\n\nŞimdi \\(A_{KI}\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_{KI} \\cdot \\overline{w}_{KI} = \\left[\\begin{array}{ccc}\n1 & 2 & 0.5 \\\\\n0.5 & 1 & 0.333 \\\\\n2 & 3 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.297 \\\\\n0.164 \\\\\n0.539\\end{array}\\right] =\n\\left[\\begin{array}{c}\n0.894 \\\\\n0.492 \\\\\n1.625\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 0.894 + 0.492 + 1.625 = 3.011\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.011 - 3}{2} = 0.006\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.008\\]\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A_{KI}\\) nın tutarsızlık düzeyi kabul edilebilir seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-6",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-6",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (6)",
+    "text": "Örnek 4: Ev Satın Alma (6)\n\n\n\n\nÖrnek 4: Ev Satın Alma (6)\n\n\n\n\n\nÖncelikle \\(A_{JD}\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_{JD} \\cdot \\overline{w}_{JD} = \\left[\\begin{array}{ccc}\n1 & 4 & 2 \\\\\n0.25 & 1 & 3 \\\\\n0.5 & 0.333 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.552 \\\\\n0.277 \\\\\n0.172\\end{array}\\right] =\n\\left[\\begin{array}{c}\n2.002 \\\\\n0.93 \\\\\n0.54\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 2.002 + 0.93 + 0.54 = 3.471\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.471 - 3}{2} = 0.236\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.357\\]\n\n\n\\(CR \\geq 0.1\\) olduğundan \\(A_{JD}\\) nin tutarsızlık düzeyi kabul edilemez seviyededir.\n\n\n\n\n\nŞimdi \\(A_{JI}\\) matrisinin tutarlılığına bakalım.\n\n\n\\[A_{JI} \\cdot \\overline{w}_{JI} = \\left[\\begin{array}{ccc}\n1 & 0.5 & 4 \\\\\n2 & 1 & 3 \\\\\n0.25 & 0.333 & 1\n\\end{array}\\right] \\cdot \\left[\\begin{array}{c}\n0.36 \\\\\n0.512 \\\\\n0.128\\end{array}\\right] =\n\\left[\\begin{array}{c}\n1.128 \\\\\n1.616 \\\\\n0.389\\end{array}\\right]\\]\n\n\n\\[n_{maks} = 1.128 + 1.616 + 0.389 = 3.132\\]\n\n\n\\(n=3\\) olduğundan\n\\[CI = \\tfrac{\\lambda_{\\max}-n}{n-1} = \\tfrac{3.132 - 3}{2} = 0.066\\]\n\n\n\\[RI = \\tfrac{1.98(n-2)}{n} = \\tfrac{1.98(3-2)}{3} = 0.66\\]\n\n\n\\[CR = \\tfrac{CI}{RI} = 0.1\\]\n\n\n\\(CR \\leq 0.1\\) olduğundan \\(A_{JI}\\) nın tutarsızlık düzeyi kabul edilebilir seviyededir."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-7",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-7",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (7)",
+    "text": "Örnek 4: Ev Satın Alma (7)\n\n\n\n\nÖrnek 4: Ev Satın Alma (7)\n\n\n\nSon olarak hesaplanan ağırlıklar ile ev tercihini belirleyelim.\n\n\n\\[P(A) = w_K \\cdot w_{K,D} \\cdot w_{KD,A}  + w_K \\cdot w_{K,I} \\cdot w_{KI,A}  +  w_J \\cdot w_{J,D} \\cdot w_{JD,A} + w_J \\cdot w_{J,I} \\cdot w_{JI,A}\\]\n\\[P(A) = 0.667\\cdot0.25\\cdot0.539 + 0.667\\cdot0.75\\cdot0.297 + 0.333\\cdot0.8\\cdot0.552 + 0.333\\cdot0.2\\cdot0.36 = 0.41\\]\n\n\n\\[P(B) = w_K \\cdot w_{K,D} \\cdot w_{KD,B}  + w_K \\cdot w_{K,I} \\cdot w_{KI,B}  +  w_J \\cdot w_{J,D} \\cdot w_{JD,B} + w_J \\cdot w_{J,I} \\cdot w_{JI,B}\\]\n\\[P(B) = 0.667\\cdot0.25\\cdot0.297 + 0.667\\cdot0.75\\cdot0.164 + 0.333\\cdot0.8\\cdot0.277 + 0.333\\cdot0.2\\cdot0.512 = 0.239\\]\n\n\n\\[P(C) = w_K \\cdot w_{K,D} \\cdot w_{KD,C}  + w_K \\cdot w_{K,I} \\cdot w_{KI,C}  +  w_J \\cdot w_{J,D} \\cdot w_{JD,C} + w_J \\cdot w_{J,I} \\cdot w_{JI,C}\\]\n\\[P(C) = 0.667\\cdot0.25\\cdot0.164 + 0.667\\cdot0.75\\cdot0.539 + 0.333\\cdot0.8\\cdot0.172 + 0.333\\cdot0.2\\cdot0.128 = 0.351\\]\n\n\nEv için en iyi aday \\(\\%41\\) ile A dır."
+  },
+  {
+    "objectID": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-8",
+    "href": "IST207/Hafta09/index.html#örnek-4-ev-satın-alma-8",
+    "title": "Hafta 09",
+    "section": "Örnek 4: Ev Satın Alma (8)",
+    "text": "Örnek 4: Ev Satın Alma (8)\n\n\n\n\nÖrnek 4: Ev Satın Alma (8)\n\n\nSon durumda şema aşağıdaki hale gelir."
   }
 ]
