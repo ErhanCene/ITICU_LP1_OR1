@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.light-red{
+  color: #EB85B2;
+}
+
+.light-blue{
+  color: #4183C4;
+}
+
+.red{
+  color:#9C0311;
+}
+
+.orange{
+  color:#ffc107;
+}
+
+.green{
+  color:green;
+}
+
+h1.title{
+  font-size: 2.5em;
+  font-family: 'Chewy', cursive;
+  color: #F54927;
+}
+
+p.subtitle{
+  font-size: 2em;
+  font-family: 'Poppins', cursive;
+  color: #F54927;
+  font-weight: bold;
+}
+
+
+div.quarto-title-author-name{
+  font-size: 1.2em;
+  font-family: "Lato", cursive;
+  color: #F54927;
+}
+
+p.date{
+  font-size: 1.2em;
+  font-family: "Lato", cursive;
+  color: #F54927;
+
+}
+
+div.footer p{
+  font-family: 'Chewy', cursive;
+  color: #F54927;
+}
+
+section.slide h2{
+  color: #F54927;
+  font-size: 0.8em;
+}
+
+/* =========================================================
+   Quarto revealjs — Table Control Kit (specificity-safe)
+   ========================================================= */
+
+/* Let columns stretch */
+.reveal .columns, .reveal .column { min-height: 0 !important; }
+.reveal .column.r-stretch { display:flex !important; flex-direction:column !important; }
+.reveal .column.r-stretch > * { flex:1 1 auto !important; min-height:0 !important; }
+
+/* Global offset for title/footer when using vh utilities */
+.reveal { --tbl-vh-offset: 120px !important; }
+
+/* -------------------------
+   1) Core wrapper
+   ------------------------- */
+.reveal .tblbox{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+  width:100% !important;              /* default width */
+  height:100% !important;             /* fills parent if parent has height */
+  overflow:auto !important;
+  background:#fff !important;
+  padding:6px !important;
+
+  /* default sizing vars (overridable by helper classes below) */
+  --tbl-fs: 2.6vh !important;
+  --tbl-pad-y: 0.6rem !important;
+  --tbl-pad-x: 0.8rem !important;
+  --tbl-maxw: 1600px !important;
+
+  font-size: var(--tbl-fs) !important; /* wrapper owns size */
+}
+
+/* Make included HTML obey wrapper size (beats px sizes) */
+.reveal .tblbox *,
+.reveal .tblbox table,
+.reveal .tblbox thead,
+.reveal .tblbox tbody,
+.reveal .tblbox tr,
+.reveal .tblbox th,
+.reveal .tblbox td{
+  font-size: inherit !important;
+  line-height: 1.2 !important;
+}
+
+.reveal .tblbox th, .reveal .tblbox td{
+  padding: var(--tbl-pad-y) var(--tbl-pad-x) !important;
+  white-space: nowrap !important;  /* toggle with .tbl-wrap */
+}
+
+.reveal .tblbox table{
+  width: 100% !important;
+  max-width: var(--tbl-maxw) !important;
+  table-layout: auto !important;
+  border-collapse: collapse !important;
+}
+.reveal .tblbox col[width], .reveal .tblbox th[width], .reveal .tblbox td[width]{
+  width:auto !important;
+}
+
+/* Center narrower wrappers when a w-* class is used */
+.reveal .tblbox[class*="w-"] { margin-left:auto !important; margin-right:auto !important; }
+.reveal .column.r-stretch > .tblbox[class*="w-"] { align-self:center !important; }
+
+/* -------------------------
+   2) Width helpers  (override base width)
+   ------------------------- */
+.reveal .tblbox.w-100{ width:100% !important; }
+.reveal .tblbox.w-95 { width:95%  !important; }
+.reveal .tblbox.w-90 { width:90%  !important; }
+.reveal .tblbox.w-80 { width:80%  !important; }
+.reveal .tblbox.w-70 { width:70%  !important; }
+.reveal .tblbox.w-60 { width:60%  !important; }
+.reveal .tblbox.w-50 { width:50%  !important; }
+
+/* Max-width caps for the TABLE content */
+.reveal .tblbox.maxw-none { --tbl-maxw: 10000px !important; }
+.reveal .tblbox.maxw-2000{ --tbl-maxw: 2000px  !important; }
+.reveal .tblbox.maxw-1400{ --tbl-maxw: 1400px  !important; }
+.reveal .tblbox.maxw-1200{ --tbl-maxw: 1200px  !important; }
+
+/* -------------------------
+   3) Height helpers
+   ------------------------- */
+
+/* Adjust offset per-table if needed */
+.reveal .tblbox.vh-off-0   { --tbl-vh-offset: 0px   !important; }
+.reveal .tblbox.vh-off-140 { --tbl-vh-offset: 140px !important; }
+.reveal .tblbox.vh-off-160 { --tbl-vh-offset: 160px !important; }
+
+
+/* --- HEIGHT: make helpers override the base .tblbox height --- */
+.reveal .slides section .tblbox.vh-120 { height: calc(120vh - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-110 { height: calc(110vh - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-100 { height: calc(100vh - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-95  { height: calc(95vh  - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-90  { height: calc(90vh  - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-85  { height: calc(85vh  - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-80  { height: calc(80vh  - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-70  { height: calc(70vh  - var(--tbl-vh-offset)) !important; }
+.reveal .slides section .tblbox.vh-60  { height: calc(60vh  - var(--tbl-vh-offset)) !important; }
+
+/* If you really want % heights, these need to beat the base rule too */
+.reveal .slides section .tblbox.h-100 { height:100% !important; }
+.reveal .slides section .tblbox.h-90  { height:90%  !important; }
+.reveal .slides section .tblbox.h-80  { height:80%  !important; }
+.reveal .slides section .tblbox.h-70  { height:70%  !important; }
+
+
+
+/* -------------------------
+   4) Font-size helpers
+   ------------------------- */
+.reveal .tblbox.tbl-fs-xs  { --tbl-fs: 1.6vh !important; }
+.reveal .tblbox.tbl-fs-sm  { --tbl-fs: 2.0vh !important; }
+.reveal .tblbox.tbl-fs-md  { --tbl-fs: 2.6vh !important; } /* default */
+.reveal .tblbox.tbl-fs-lg  { --tbl-fs: 3.2vh !important; }
+.reveal .tblbox.tbl-fs-xl  { --tbl-fs: 3.8vh !important; }
+.reveal .tblbox.tbl-fs-xxl { --tbl-fs: 4.6vh !important; }
+
+/* “Scale” aliases (same effect) */
+.reveal .tblbox.scale-70  { --tbl-fs: 1.8vh !important; }
+.reveal .tblbox.scale-80  { --tbl-fs: 2.0vh !important; }
+.reveal .tblbox.scale-90  { --tbl-fs: 2.3vh !important; }
+.reveal .tblbox.scale-100 { --tbl-fs: 2.6vh !important; }
+.reveal .tblbox.scale-110 { --tbl-fs: 2.9vh !important; }
+.reveal .tblbox.scale-120 { --tbl-fs: 3.2vh !important; }
+.reveal .tblbox.scale-150 { --tbl-fs: 3.5vh !important; }
+.reveal .tblbox.scale-180 { --tbl-fs: 3.8vh !important; }
+.reveal .tblbox.scale-240 { --tbl-fs: 4.4vh !important; }
+.reveal .tblbox.scale-360 { --tbl-fs: 5.6vh !important; }
+
+/* -------------------------
+   5) Padding helpers
+   ------------------------- */
+/* set variables */
+.reveal .tblbox.pad-none  { --tbl-pad-y: 0rem   !important; --tbl-pad-x: 0rem   !important; }
+.reveal .tblbox.pad-tight { --tbl-pad-y: 0.3rem !important; --tbl-pad-x: 0.4rem !important; }
+.reveal .tblbox.pad-cozy  { --tbl-pad-y: 0.6rem !important; --tbl-pad-x: 0.8rem !important; } /* default */
+.reveal .tblbox.pad-comfy { --tbl-pad-y: 0.9rem !important; --tbl-pad-x: 1.1rem !important; }
+.reveal .tblbox.pad-loose { --tbl-pad-y: 1.2rem !important; --tbl-pad-x: 1.5rem !important; }
+/* also apply directly with higher specificity (beats stubborn cell CSS) */
+/*.reveal .tblbox.pad-none  th, .reveal .tblbox.pad-none  td  { padding: 0rem   0rem   !important; }
+.reveal .tblbox.pad-tight th, .reveal .tblbox.pad-tight td  { padding: 0.3rem  0.4rem  !important; }
+.reveal .tblbox.pad-cozy  th, .reveal .tblbox.pad-cozy  td  { padding: 0.6rem  0.8rem  !important; }
+.reveal .tblbox.pad-comfy th, .reveal .tblbox.pad-comfy td  { padding: 0.9rem  1.1rem  !important; }
+.reveal .tblbox.pad-loose th, .reveal .tblbox.pad-loose td  { padding: 1.2rem  1.5rem  !important; }
+*/
+/* -------------------------
+   6) Wrapping & scrolling
+   ------------------------- */
+.reveal .tblbox.tbl-wrap th, .reveal .tblbox.tbl-wrap td { white-space: normal !important; }
+.reveal .tblbox.scroll-x { overflow-x:auto !important; }
+.reveal .tblbox.scroll-y { overflow-y:auto !important; }
+
+/* -------------------------
+   7) Cell alignment helpers
+   ------------------------- */
+.reveal .tblbox.text-left  th, .reveal .tblbox.text-left  td { text-align:left  !important; }
+.reveal .tblbox.text-center th, .reveal .tblbox.text-center td { text-align:center !important; }
+.reveal .tblbox.text-right th, .reveal .tblbox.text-right td { text-align:right !important; }
+
+/* -------------------------
+   8) Sticky header & visuals
+   ------------------------- */
+.reveal .tblbox.tbl-sticky thead th{
+  position: sticky !important; top: 0 !important; z-index: 2 !important;
+  background: #fff !important;
+  box-shadow: 0 1px 0 rgba(0,0,0,.08) !important;
+}
+.reveal .tblbox.tbl-zebra tbody tr:nth-child(odd){ background:#fafafa !important; }
+.reveal .tblbox.tbl-grid  th, .reveal .tblbox.tbl-grid  td{ border:1px solid #cfd8dc !important; }
+.reveal .tblbox.border-thick th, .reveal .tblbox.border-thick td{ border-width:2px !important; }
+
+/* -------------------------
+   9) Reset (for stubborn includes)
+   ------------------------- */
+.reveal .tblbox.tbl-reset table,
+.reveal .tblbox.tbl-reset thead,
+.reveal .tblbox.tbl-reset tbody,
+.reveal .tblbox.tbl-reset tr,
+.reveal .tblbox.tbl-reset th,
+.reveal .tblbox.tbl-reset td{
+  font-size: inherit !important;
+  line-height: 1.2 !important;
+}
+
+
+
+.reveal .r-stretch.scale-40 { font-size: 50%; }           /* wrapper font size */
+.reveal .r-stretch.scale-40 .tbl-sim { font-size: 1em; }  /* inherit cleanly   */
+
+.reveal .r-stretch.scale-40 .tbl-sim th,
+.reveal .r-stretch.scale-40 .tbl-sim td {
+  padding: 0.2em 0.4em;
+}
+
+
+.header-color{
+  color: red;
+}
+
+

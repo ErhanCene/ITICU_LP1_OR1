@@ -1,0 +1,615 @@
+<!doctype html><html><head><meta charset='utf-8'><title>AHP — Group Report</title>
+  <style>
+    body{font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.45; max-width:980px; margin:24px auto; padding:0 16px;}
+    h2{margin:0 0 8px;}
+    h3{margin:18px 0 8px; border-bottom:1px solid #eee; padding-bottom:6px;}
+    h4{margin:14px 0 6px;}
+    pre.latex{background:#f7f7f9; border:1px solid #eee; padding:10px; overflow:auto;}
+    .copyrow{display:flex; justify-content:flex-end; margin:4px 0;}
+    .copybtn{font-size:12px; padding:4px 8px; cursor:pointer; border:1px solid #999; background:#fff;}
+  </style>
+  <script>
+    function copyNext(btn){
+      const pre = btn.parentElement.nextElementSibling;
+      if (!pre) return;
+      const txt = pre.innerText;
+      navigator.clipboard.writeText(txt).then(()=>{
+        const old = btn.textContent; btn.textContent='Copied!';
+        setTimeout(()=>{btn.textContent=old;},900);
+      });
+    }
+  </script><script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js' id='MathJax-script'></script></head><body>
+<h2>AHP — Group Report — </h2>
+<h3>Node: Goal</h3>
+<h4>Beginning matrix</h4>
+\[\text{Goal} = \left[\begin{array}{c|cc}
+ & \text{K} & \text{J} \\
+\hline
+\text{K} & 1 & 2 \\
+\text{J} & 0.5 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{Goal} = \left[\begin{array}{c|cc}
+ &amp; \text{K} &amp; \text{J} \\
+\hline
+\text{K} &amp; 1 &amp; 2 \\
+\text{J} &amp; 0.5 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{K} = a_{11} + a_{21} = 1 + 0.5 = 1.5\)
+\(N_{K,K} = \frac{a_{11}}{S_{K}} = \frac{1}{1.5} = 0.667\)
+\(N_{J,K} = \frac{a_{21}}{S_{K}} = \frac{0.5}{1.5} = 0.333\)
+\(S_{J} = a_{12} + a_{22} = 2 + 1 = 3\)
+\(N_{K,J} = \frac{a_{12}}{S_{J}} = \frac{2}{3} = 0.667\)
+\(N_{J,J} = \frac{a_{22}}{S_{J}} = \frac{1}{3} = 0.333\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{K} = a_{11} + a_{21} = 1 + 0.5 = 1.5\)
+\(N_{K,K} = \frac{a_{11}}{S_{K}} = \frac{1}{1.5} = 0.667\)
+\(N_{J,K} = \frac{a_{21}}{S_{K}} = \frac{0.5}{1.5} = 0.333\)
+\(S_{J} = a_{12} + a_{22} = 2 + 1 = 3\)
+\(N_{K,J} = \frac{a_{12}}{S_{J}} = \frac{2}{3} = 0.667\)
+\(N_{J,J} = \frac{a_{22}}{S_{J}} = \frac{1}{3} = 0.333\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{Goal\_norm} = \left[\begin{array}{c|cc}
+ & \text{K} & \text{J} \\
+\hline
+\text{K} & 0.667 & 0.667 \\
+\text{J} & 0.333 & 0.333
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{Goal\_norm} = \left[\begin{array}{c|cc}
+ &amp; \text{K} &amp; \text{J} \\
+\hline
+\text{K} &amp; 0.667 &amp; 0.667 \\
+\text{J} &amp; 0.333 &amp; 0.333
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{K} = \tfrac{1}{2}(0.667 + 0.667) = 0.667\)
+\(w_{J} = \tfrac{1}{2}(0.333 + 0.333) = 0.333\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{K} = \tfrac{1}{2}(0.667 + 0.667) = 0.667\)
+\(w_{J} = \tfrac{1}{2}(0.333 + 0.333) = 0.333\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.667 & 0.333\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.667 &amp; 0.333\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{K} = 1\,w_{K} + 2\,w_{J} = 1.333\)
+\((Aw)_{J} = 0.5\,w_{K} + 1\,w_{J} = 0.667\)
+\[\lambda_{\max} = 1.333 + 0.667 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{K} = 1\,w_{K} + 2\,w_{J} = 1.333\)
+\((Aw)_{J} = 0.5\,w_{K} + 1\,w_{J} = 0.667\)
+\[\lambda_{\max} = 1.333 + 0.667 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]</pre>
+<h4>Local probabilities</h4>
+\[K:\; 0.667\quad J:\; 0.333\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[K:\; 0.667\quad J:\; 0.333\]</pre>
+<h3>Node: K</h3>
+<h4>Beginning matrix</h4>
+\[\text{K} = \left[\begin{array}{c|cc}
+ & \text{KD} & \text{KI} \\
+\hline
+\text{KD} & 1 & 0.333 \\
+\text{KI} & 3 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{K} = \left[\begin{array}{c|cc}
+ &amp; \text{KD} &amp; \text{KI} \\
+\hline
+\text{KD} &amp; 1 &amp; 0.333 \\
+\text{KI} &amp; 3 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{KD} = a_{11} + a_{21} = 1 + 3 = 4\)
+\(N_{KD,KD} = \frac{a_{11}}{S_{KD}} = \frac{1}{4} = 0.25\)
+\(N_{KI,KD} = \frac{a_{21}}{S_{KD}} = \frac{3}{4} = 0.75\)
+\(S_{KI} = a_{12} + a_{22} = 0.333 + 1 = 1.333\)
+\(N_{KD,KI} = \frac{a_{12}}{S_{KI}} = \frac{0.333}{1.333} = 0.25\)
+\(N_{KI,KI} = \frac{a_{22}}{S_{KI}} = \frac{1}{1.333} = 0.75\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{KD} = a_{11} + a_{21} = 1 + 3 = 4\)
+\(N_{KD,KD} = \frac{a_{11}}{S_{KD}} = \frac{1}{4} = 0.25\)
+\(N_{KI,KD} = \frac{a_{21}}{S_{KD}} = \frac{3}{4} = 0.75\)
+\(S_{KI} = a_{12} + a_{22} = 0.333 + 1 = 1.333\)
+\(N_{KD,KI} = \frac{a_{12}}{S_{KI}} = \frac{0.333}{1.333} = 0.25\)
+\(N_{KI,KI} = \frac{a_{22}}{S_{KI}} = \frac{1}{1.333} = 0.75\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{K\_norm} = \left[\begin{array}{c|cc}
+ & \text{KD} & \text{KI} \\
+\hline
+\text{KD} & 0.25 & 0.25 \\
+\text{KI} & 0.75 & 0.75
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{K\_norm} = \left[\begin{array}{c|cc}
+ &amp; \text{KD} &amp; \text{KI} \\
+\hline
+\text{KD} &amp; 0.25 &amp; 0.25 \\
+\text{KI} &amp; 0.75 &amp; 0.75
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{KD} = \tfrac{1}{2}(0.25 + 0.25) = 0.25\)
+\(w_{KI} = \tfrac{1}{2}(0.75 + 0.75) = 0.75\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{KD} = \tfrac{1}{2}(0.25 + 0.25) = 0.25\)
+\(w_{KI} = \tfrac{1}{2}(0.75 + 0.75) = 0.75\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.25 & 0.75\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.25 &amp; 0.75\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{KD} = 1\,w_{KD} + 0.333\,w_{KI} = 0.5\)
+\((Aw)_{KI} = 3\,w_{KD} + 1\,w_{KI} = 1.5\)
+\[\lambda_{\max} = 0.5 + 1.5 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{KD} = 1\,w_{KD} + 0.333\,w_{KI} = 0.5\)
+\((Aw)_{KI} = 3\,w_{KD} + 1\,w_{KI} = 1.5\)
+\[\lambda_{\max} = 0.5 + 1.5 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]</pre>
+<h4>Local probabilities</h4>
+\[KD:\; 0.25\quad KI:\; 0.75\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[KD:\; 0.25\quad KI:\; 0.75\]</pre>
+<h3>Node: KD</h3>
+<h4>Beginning matrix</h4>
+\[\text{KD} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 1 & 2 & 3 \\
+\text{B} & 0.5 & 1 & 2 \\
+\text{C} & 0.333 & 0.5 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{KD} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 2 &amp; 3 \\
+\text{B} &amp; 0.5 &amp; 1 &amp; 2 \\
+\text{C} &amp; 0.333 &amp; 0.5 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.5 + 0.333 = 1.833\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{1.833} = 0.545\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.333}{1.833} = 0.182\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 2 + 1 + 0.5 = 3.5\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{2}{3.5} = 0.571\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{3.5} = 0.286\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.5}{3.5} = 0.143\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 3 + 2 + 1 = 6\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{3}{6} = 0.5\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{2}{6} = 0.333\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{6} = 0.167\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.5 + 0.333 = 1.833\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{1.833} = 0.545\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.333}{1.833} = 0.182\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 2 + 1 + 0.5 = 3.5\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{2}{3.5} = 0.571\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{3.5} = 0.286\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.5}{3.5} = 0.143\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 3 + 2 + 1 = 6\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{3}{6} = 0.5\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{2}{6} = 0.333\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{6} = 0.167\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{KD\_norm} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 0.545 & 0.571 & 0.5 \\
+\text{B} & 0.273 & 0.286 & 0.333 \\
+\text{C} & 0.182 & 0.143 & 0.167
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{KD\_norm} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.545 &amp; 0.571 &amp; 0.5 \\
+\text{B} &amp; 0.273 &amp; 0.286 &amp; 0.333 \\
+\text{C} &amp; 0.182 &amp; 0.143 &amp; 0.167
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{A} = \tfrac{1}{3}(0.545 + 0.571 + 0.5) = 0.539\)
+\(w_{B} = \tfrac{1}{3}(0.273 + 0.286 + 0.333) = 0.297\)
+\(w_{C} = \tfrac{1}{3}(0.182 + 0.143 + 0.167) = 0.164\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{A} = \tfrac{1}{3}(0.545 + 0.571 + 0.5) = 0.539\)
+\(w_{B} = \tfrac{1}{3}(0.273 + 0.286 + 0.333) = 0.297\)
+\(w_{C} = \tfrac{1}{3}(0.182 + 0.143 + 0.167) = 0.164\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.539 & 0.297 & 0.164\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.539 &amp; 0.297 &amp; 0.164\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{A} = 1\,w_{A} + 2\,w_{B} + 3\,w_{C} = 1.625\)
+\((Aw)_{B} = 0.5\,w_{A} + 1\,w_{B} + 2\,w_{C} = 0.894\)
+\((Aw)_{C} = 0.333\,w_{A} + 0.5\,w_{B} + 1\,w_{C} = 0.492\)
+\[\lambda_{\max} = 1.625 + 0.894 + 0.492 = 3.011\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.008\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{A} = 1\,w_{A} + 2\,w_{B} + 3\,w_{C} = 1.625\)
+\((Aw)_{B} = 0.5\,w_{A} + 1\,w_{B} + 2\,w_{C} = 0.894\)
+\((Aw)_{C} = 0.333\,w_{A} + 0.5\,w_{B} + 1\,w_{C} = 0.492\)
+\[\lambda_{\max} = 1.625 + 0.894 + 0.492 = 3.011\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.008\]</pre>
+<h4>Local probabilities</h4>
+\[A:\; 0.539\quad B:\; 0.297\quad C:\; 0.164\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[A:\; 0.539\quad B:\; 0.297\quad C:\; 0.164\]</pre>
+<h3>Node: KI</h3>
+<h4>Beginning matrix</h4>
+\[\text{KI} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 1 & 2 & 0.5 \\
+\text{B} & 0.5 & 1 & 0.333 \\
+\text{C} & 2 & 3 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{KI} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 2 &amp; 0.5 \\
+\text{B} &amp; 0.5 &amp; 1 &amp; 0.333 \\
+\text{C} &amp; 2 &amp; 3 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.5 + 2 = 3.5\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{3.5} = 0.286\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.5}{3.5} = 0.143\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{2}{3.5} = 0.571\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 2 + 1 + 3 = 6\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{2}{6} = 0.333\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{6} = 0.167\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{3}{6} = 0.5\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 0.5 + 0.333 + 1 = 1.833\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{0.333}{1.833} = 0.182\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{1.833} = 0.545\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.5 + 2 = 3.5\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{3.5} = 0.286\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.5}{3.5} = 0.143\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{2}{3.5} = 0.571\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 2 + 1 + 3 = 6\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{2}{6} = 0.333\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{6} = 0.167\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{3}{6} = 0.5\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 0.5 + 0.333 + 1 = 1.833\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{0.333}{1.833} = 0.182\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{1.833} = 0.545\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{KI\_norm} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 0.286 & 0.333 & 0.273 \\
+\text{B} & 0.143 & 0.167 & 0.182 \\
+\text{C} & 0.571 & 0.5 & 0.545
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{KI\_norm} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.286 &amp; 0.333 &amp; 0.273 \\
+\text{B} &amp; 0.143 &amp; 0.167 &amp; 0.182 \\
+\text{C} &amp; 0.571 &amp; 0.5 &amp; 0.545
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{A} = \tfrac{1}{3}(0.286 + 0.333 + 0.273) = 0.297\)
+\(w_{B} = \tfrac{1}{3}(0.143 + 0.167 + 0.182) = 0.164\)
+\(w_{C} = \tfrac{1}{3}(0.571 + 0.5 + 0.545) = 0.539\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{A} = \tfrac{1}{3}(0.286 + 0.333 + 0.273) = 0.297\)
+\(w_{B} = \tfrac{1}{3}(0.143 + 0.167 + 0.182) = 0.164\)
+\(w_{C} = \tfrac{1}{3}(0.571 + 0.5 + 0.545) = 0.539\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.297 & 0.164 & 0.539\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.297 &amp; 0.164 &amp; 0.539\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{A} = 1\,w_{A} + 2\,w_{B} + 0.5\,w_{C} = 0.894\)
+\((Aw)_{B} = 0.5\,w_{A} + 1\,w_{B} + 0.333\,w_{C} = 0.492\)
+\((Aw)_{C} = 2\,w_{A} + 3\,w_{B} + 1\,w_{C} = 1.625\)
+\[\lambda_{\max} = 0.894 + 0.492 + 1.625 = 3.011\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.008\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{A} = 1\,w_{A} + 2\,w_{B} + 0.5\,w_{C} = 0.894\)
+\((Aw)_{B} = 0.5\,w_{A} + 1\,w_{B} + 0.333\,w_{C} = 0.492\)
+\((Aw)_{C} = 2\,w_{A} + 3\,w_{B} + 1\,w_{C} = 1.625\)
+\[\lambda_{\max} = 0.894 + 0.492 + 1.625 = 3.011\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.008\]</pre>
+<h4>Local probabilities</h4>
+\[A:\; 0.297\quad B:\; 0.164\quad C:\; 0.539\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[A:\; 0.297\quad B:\; 0.164\quad C:\; 0.539\]</pre>
+<h3>Node: J</h3>
+<h4>Beginning matrix</h4>
+\[\text{J} = \left[\begin{array}{c|cc}
+ & \text{JD} & \text{JI} \\
+\hline
+\text{JD} & 1 & 4 \\
+\text{JI} & 0.25 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{J} = \left[\begin{array}{c|cc}
+ &amp; \text{JD} &amp; \text{JI} \\
+\hline
+\text{JD} &amp; 1 &amp; 4 \\
+\text{JI} &amp; 0.25 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{JD} = a_{11} + a_{21} = 1 + 0.25 = 1.25\)
+\(N_{JD,JD} = \frac{a_{11}}{S_{JD}} = \frac{1}{1.25} = 0.8\)
+\(N_{JI,JD} = \frac{a_{21}}{S_{JD}} = \frac{0.25}{1.25} = 0.2\)
+\(S_{JI} = a_{12} + a_{22} = 4 + 1 = 5\)
+\(N_{JD,JI} = \frac{a_{12}}{S_{JI}} = \frac{4}{5} = 0.8\)
+\(N_{JI,JI} = \frac{a_{22}}{S_{JI}} = \frac{1}{5} = 0.2\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{JD} = a_{11} + a_{21} = 1 + 0.25 = 1.25\)
+\(N_{JD,JD} = \frac{a_{11}}{S_{JD}} = \frac{1}{1.25} = 0.8\)
+\(N_{JI,JD} = \frac{a_{21}}{S_{JD}} = \frac{0.25}{1.25} = 0.2\)
+\(S_{JI} = a_{12} + a_{22} = 4 + 1 = 5\)
+\(N_{JD,JI} = \frac{a_{12}}{S_{JI}} = \frac{4}{5} = 0.8\)
+\(N_{JI,JI} = \frac{a_{22}}{S_{JI}} = \frac{1}{5} = 0.2\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{J\_norm} = \left[\begin{array}{c|cc}
+ & \text{JD} & \text{JI} \\
+\hline
+\text{JD} & 0.8 & 0.8 \\
+\text{JI} & 0.2 & 0.2
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{J\_norm} = \left[\begin{array}{c|cc}
+ &amp; \text{JD} &amp; \text{JI} \\
+\hline
+\text{JD} &amp; 0.8 &amp; 0.8 \\
+\text{JI} &amp; 0.2 &amp; 0.2
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{JD} = \tfrac{1}{2}(0.8 + 0.8) = 0.8\)
+\(w_{JI} = \tfrac{1}{2}(0.2 + 0.2) = 0.2\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{JD} = \tfrac{1}{2}(0.8 + 0.8) = 0.8\)
+\(w_{JI} = \tfrac{1}{2}(0.2 + 0.2) = 0.2\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.8 & 0.2\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.8 &amp; 0.2\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{JD} = 1\,w_{JD} + 4\,w_{JI} = 1.6\)
+\((Aw)_{JI} = 0.25\,w_{JD} + 1\,w_{JI} = 0.4\)
+\[\lambda_{\max} = 1.6 + 0.4 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{JD} = 1\,w_{JD} + 4\,w_{JI} = 1.6\)
+\((Aw)_{JI} = 0.25\,w_{JD} + 1\,w_{JI} = 0.4\)
+\[\lambda_{\max} = 1.6 + 0.4 = 2\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{2 - 2}{1} = 0\]
+\[RI = 0 = 0\]
+\[CR = 0\]</pre>
+<h4>Local probabilities</h4>
+\[JD:\; 0.8\quad JI:\; 0.2\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[JD:\; 0.8\quad JI:\; 0.2\]</pre>
+<h3>Node: JD</h3>
+<h4>Beginning matrix</h4>
+\[\text{JD} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 1 & 4 & 2 \\
+\text{B} & 0.25 & 1 & 3 \\
+\text{C} & 0.5 & 0.333 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{JD} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 4 &amp; 2 \\
+\text{B} &amp; 0.25 &amp; 1 &amp; 3 \\
+\text{C} &amp; 0.5 &amp; 0.333 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.25 + 0.5 = 1.75\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{1.75} = 0.571\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.25}{1.75} = 0.143\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.5}{1.75} = 0.286\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 4 + 1 + 0.333 = 5.333\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{4}{5.333} = 0.75\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{5.333} = 0.188\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.333}{5.333} = 0.062\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 2 + 3 + 1 = 6\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{2}{6} = 0.333\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{3}{6} = 0.5\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{6} = 0.167\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 0.25 + 0.5 = 1.75\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{1.75} = 0.571\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{0.25}{1.75} = 0.143\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.5}{1.75} = 0.286\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 4 + 1 + 0.333 = 5.333\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{4}{5.333} = 0.75\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{5.333} = 0.188\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.333}{5.333} = 0.062\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 2 + 3 + 1 = 6\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{2}{6} = 0.333\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{3}{6} = 0.5\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{6} = 0.167\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{JD\_norm} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 0.571 & 0.75 & 0.333 \\
+\text{B} & 0.143 & 0.188 & 0.5 \\
+\text{C} & 0.286 & 0.062 & 0.167
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{JD\_norm} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.571 &amp; 0.75 &amp; 0.333 \\
+\text{B} &amp; 0.143 &amp; 0.188 &amp; 0.5 \\
+\text{C} &amp; 0.286 &amp; 0.062 &amp; 0.167
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{A} = \tfrac{1}{3}(0.571 + 0.75 + 0.333) = 0.552\)
+\(w_{B} = \tfrac{1}{3}(0.143 + 0.188 + 0.5) = 0.277\)
+\(w_{C} = \tfrac{1}{3}(0.286 + 0.062 + 0.167) = 0.172\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{A} = \tfrac{1}{3}(0.571 + 0.75 + 0.333) = 0.552\)
+\(w_{B} = \tfrac{1}{3}(0.143 + 0.188 + 0.5) = 0.277\)
+\(w_{C} = \tfrac{1}{3}(0.286 + 0.062 + 0.167) = 0.172\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.552 & 0.277 & 0.172\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.552 &amp; 0.277 &amp; 0.172\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{A} = 1\,w_{A} + 4\,w_{B} + 2\,w_{C} = 2.002\)
+\((Aw)_{B} = 0.25\,w_{A} + 1\,w_{B} + 3\,w_{C} = 0.93\)
+\((Aw)_{C} = 0.5\,w_{A} + 0.333\,w_{B} + 1\,w_{C} = 0.54\)
+\[\lambda_{\max} = 2.002 + 0.93 + 0.54 = 3.471\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.471 - 3}{2} = 0.236\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.357\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{A} = 1\,w_{A} + 4\,w_{B} + 2\,w_{C} = 2.002\)
+\((Aw)_{B} = 0.25\,w_{A} + 1\,w_{B} + 3\,w_{C} = 0.93\)
+\((Aw)_{C} = 0.5\,w_{A} + 0.333\,w_{B} + 1\,w_{C} = 0.54\)
+\[\lambda_{\max} = 2.002 + 0.93 + 0.54 = 3.471\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.471 - 3}{2} = 0.236\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.357\]</pre>
+<h4>Local probabilities</h4>
+\[A:\; 0.552\quad B:\; 0.277\quad C:\; 0.172\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[A:\; 0.552\quad B:\; 0.277\quad C:\; 0.172\]</pre>
+<h3>Node: JI</h3>
+<h4>Beginning matrix</h4>
+\[\text{JI} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 1 & 0.5 & 4 \\
+\text{B} & 2 & 1 & 3 \\
+\text{C} & 0.25 & 0.333 & 1
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{JI} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 0.5 &amp; 4 \\
+\text{B} &amp; 2 &amp; 1 &amp; 3 \\
+\text{C} &amp; 0.25 &amp; 0.333 &amp; 1
+\end{array}\right]\]</pre>
+<h4>Calculation to normalisation</h4>
+\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 2 + 0.25 = 3.25\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{3.25} = 0.308\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{2}{3.25} = 0.615\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.25}{3.25} = 0.077\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 0.5 + 1 + 0.333 = 1.833\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{1.833} = 0.545\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.333}{1.833} = 0.182\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 4 + 3 + 1 = 8\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{4}{8} = 0.5\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{3}{8} = 0.375\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{8} = 0.125\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(S_{A} = a_{11} + a_{21} + a_{31} = 1 + 2 + 0.25 = 3.25\)
+\(N_{A,A} = \frac{a_{11}}{S_{A}} = \frac{1}{3.25} = 0.308\)
+\(N_{B,A} = \frac{a_{21}}{S_{A}} = \frac{2}{3.25} = 0.615\)
+\(N_{C,A} = \frac{a_{31}}{S_{A}} = \frac{0.25}{3.25} = 0.077\)
+\(S_{B} = a_{12} + a_{22} + a_{32} = 0.5 + 1 + 0.333 = 1.833\)
+\(N_{A,B} = \frac{a_{12}}{S_{B}} = \frac{0.5}{1.833} = 0.273\)
+\(N_{B,B} = \frac{a_{22}}{S_{B}} = \frac{1}{1.833} = 0.545\)
+\(N_{C,B} = \frac{a_{32}}{S_{B}} = \frac{0.333}{1.833} = 0.182\)
+\(S_{C} = a_{13} + a_{23} + a_{33} = 4 + 3 + 1 = 8\)
+\(N_{A,C} = \frac{a_{13}}{S_{C}} = \frac{4}{8} = 0.5\)
+\(N_{B,C} = \frac{a_{23}}{S_{C}} = \frac{3}{8} = 0.375\)
+\(N_{C,C} = \frac{a_{33}}{S_{C}} = \frac{1}{8} = 0.125\)</pre>
+<h4>Normalized matrix</h4>
+\[\text{JI\_norm} = \left[\begin{array}{c|ccc}
+ & \text{A} & \text{B} & \text{C} \\
+\hline
+\text{A} & 0.308 & 0.273 & 0.5 \\
+\text{B} & 0.615 & 0.545 & 0.375 \\
+\text{C} & 0.077 & 0.182 & 0.125
+\end{array}\right]\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[\text{JI\_norm} = \left[\begin{array}{c|ccc}
+ &amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.308 &amp; 0.273 &amp; 0.5 \\
+\text{B} &amp; 0.615 &amp; 0.545 &amp; 0.375 \\
+\text{C} &amp; 0.077 &amp; 0.182 &amp; 0.125
+\end{array}\right]\]</pre>
+<h4>Calculation to Row weights</h4>
+\(w_{A} = \tfrac{1}{3}(0.308 + 0.273 + 0.5) = 0.36\)
+\(w_{B} = \tfrac{1}{3}(0.615 + 0.545 + 0.375) = 0.512\)
+\(w_{C} = \tfrac{1}{3}(0.077 + 0.182 + 0.125) = 0.128\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(w_{A} = \tfrac{1}{3}(0.308 + 0.273 + 0.5) = 0.36\)
+\(w_{B} = \tfrac{1}{3}(0.615 + 0.545 + 0.375) = 0.512\)
+\(w_{C} = \tfrac{1}{3}(0.077 + 0.182 + 0.125) = 0.128\)</pre>
+<h4>Local weights (row mean of normalized columns)</h4>
+\[w = \begin{bmatrix}0.36 & 0.512 & 0.128\end{bmatrix}^T\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[w = \begin{bmatrix}0.36 &amp; 0.512 &amp; 0.128\end{bmatrix}^T\]</pre>
+<h4>Consistency check</h4>
+\((Aw)_{A} = 1\,w_{A} + 0.5\,w_{B} + 4\,w_{C} = 1.128\)
+\((Aw)_{B} = 2\,w_{A} + 1\,w_{B} + 3\,w_{C} = 1.616\)
+\((Aw)_{C} = 0.25\,w_{A} + 0.333\,w_{B} + 1\,w_{C} = 0.389\)
+\[\lambda_{\max} = 1.128 + 1.616 + 0.389 = 3.132\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.132 - 3}{2} = 0.066\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.1\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\((Aw)_{A} = 1\,w_{A} + 0.5\,w_{B} + 4\,w_{C} = 1.128\)
+\((Aw)_{B} = 2\,w_{A} + 1\,w_{B} + 3\,w_{C} = 1.616\)
+\((Aw)_{C} = 0.25\,w_{A} + 0.333\,w_{B} + 1\,w_{C} = 0.389\)
+\[\lambda_{\max} = 1.128 + 1.616 + 0.389 = 3.132\]
+\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.132 - 3}{2} = 0.066\]
+\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]
+\[CR = \tfrac{CI}{RI} = 0.1\]</pre>
+<h4>Local probabilities</h4>
+\[A:\; 0.36\quad B:\; 0.512\quad C:\; 0.128\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[A:\; 0.36\quad B:\; 0.512\quad C:\; 0.128\]</pre>
+<hr/>
+<h3>Global probabilities & decision</h3>
+<h4>Global probability vector</h4>
+\[P(A) = 0.41\quad P(B) = 0.239\quad P(C) = 0.351\]
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\[P(A) = 0.41\quad P(B) = 0.239\quad P(C) = 0.351\]</pre>
+<h4>Path-sum equations</h4>
+\(P(A) = 0.667*0.25*0.539 + 0.667*0.75*0.297 + 0.333*0.8*0.552 + 0.333*0.2*0.36 = 0.41\)
+\(P(B) = 0.667*0.25*0.297 + 0.667*0.75*0.164 + 0.333*0.8*0.277 + 0.333*0.2*0.512 = 0.239\)
+\(P(C) = 0.667*0.25*0.164 + 0.667*0.75*0.539 + 0.333*0.8*0.172 + 0.333*0.2*0.128 = 0.351\)
+<div class='copyrow'><button class='copybtn' onclick='copyNext(this)'>Copy LaTeX</button></div>
+<pre class='latex'>\(P(A) = 0.667*0.25*0.539 + 0.667*0.75*0.297 + 0.333*0.8*0.552 + 0.333*0.2*0.36 = 0.41\)
+\(P(B) = 0.667*0.25*0.297 + 0.667*0.75*0.164 + 0.333*0.8*0.277 + 0.333*0.2*0.512 = 0.239\)
+\(P(C) = 0.667*0.25*0.164 + 0.667*0.75*0.539 + 0.333*0.8*0.172 + 0.333*0.2*0.128 = 0.351\)</pre>
+<p><b>Decision:</b> choose <span>\(A\)</span> with probability 0.41.</p>
+</body></html>

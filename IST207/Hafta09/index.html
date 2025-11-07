@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.23">
+
+  <meta name="author" content="Doç. Dr.&nbsp;Erhan Çene">
+  <title>Hafta 09</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-00ac2f6af1389919a18f42df5b7c0002.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Hafta 09</h1>
+  <p class="subtitle">Karar Kuramı: Temel Kavramlar ve Belirlilik Altında Karar Verme</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Doç. Dr.&nbsp;Erhan Çene 
+</div>
+</div>
+</div>
+
+  <p class="date">13/11/2025</p>
+</section>
+<section id="karar-kuramı" class="slide level2">
+<h2>Karar Kuramı</h2>
+<div title="Karar Kuramı" style="font-size: 115%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Karar Kuramı</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Karar kuramı</span>, karar vericiye karar alma ve karar sürecini geliştirme konularında yol gösteren bir yaklaşımdır.</li>
+<li>Söz konusu yaklaşım, karar verilecek duruma ilişkin bilgi miktarına göre <span class="light-red">üç</span> başlık altında incelenir.
+<ul>
+<li><span class="light-red">Belirlilik</span> durumunda karar alma</li>
+<li><span class="light-red">Risk</span> durumunda karar alma</li>
+<li><span class="light-red">Belirsizlik</span> durumunda karar alma</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="belirlilik-durumunda-karar-alma" class="slide level2">
+<h2>Belirlilik durumunda karar alma</h2>
+<div title="Belirlilik durumunda karar alma" style="font-size: 100%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Belirlilik durumunda karar alma</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Belirlilik durumunda karar almada, karar vericinin aralarından seçim yapacağı karar seçeneklerine ilişkin <span class="light-red">sonuç değerleri</span> ile olayın yapısı hakkındaki <span class="light-red">bilgisinin</span> <span class="light-red">eksiksiz</span> olduğu varsayılır.</li>
+<li>Doğal olarak <span class="light-red">en iyi sonucu</span> verecek olan alternatif seçilir.</li>
+<li><span class="light-red">Doğrusal programlama</span> belirlilik durumunda karar alma probleminin bir <span class="light-red">örneğidir</span>.</li>
+<li><span class="light-red">Örnek:</span> Bunun için beslenme gereksinmemizi <span class="light-red">en düşük maliyetle</span> karşılayacak besin maddeleri miktarlarını belirlemek istediğimizi düşünelim.
+<ul>
+<li>Besin maddelerinin birim maliyetleri <span class="light-red">(<span class="math inline">\(C_j\)</span>)</span> <span class="light-red">sabit sayılar</span> olsun.</li>
+<li><span class="light-red"><span class="math inline">\(j\)</span></span> ürünü tüketim miktarı <span class="light-red"><span class="math inline">\(x_j\)</span></span>, değeri bilinen bir <span class="light-red">sabit sayı</span> olarak kabul edildiğinde, <span class="light-red"><span class="math inline">\(j\)</span></span> ürününün maliyete olan katkısı <span class="light-red"><span class="math inline">\(C_j \cdot x_j\)</span></span> de <span class="light-red">sabit bir sayı</span> olur.</li>
+<li>Tüm <span class="light-red"><span class="math inline">\(C_j \cdot x_j\)</span></span> kombinasyonları kıyaslanarak <span class="light-red">en düşük olan</span> seçilir.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="risk-durumunda-karar-alma" class="slide level2">
+<h2>Risk durumunda karar alma</h2>
+<div title="Risk durumunda karar alma" style="font-size: 90%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Risk durumunda karar alma</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Risk durumunda</span> problemin seçeneklerine ilişkin değerler ve olayın yapısı <span class="light-red">olasılıklar</span> ile açıklanırken, <span class="light-red">belirsizlik</span> durumunda sonuç değerleri bir ölçüde bilinse de olayın yapısına ilişkin <span class="light-red">olasılıklar hakkında hiçbir bilgi edinilememektedir</span>.</li>
+<li>Özetle, <span class="light-red">belirlilik</span> ve <span class="light-red">belirsizlik</span> verilerle ilgili bilgi derecesi bakımından <span class="light-red">iki aşırı ucu</span> temsil ederken, <span class="light-red">risk</span> bu iki uç <span class="light-red">arasında</span> bulunur.</li>
+<li><span class="light-red">Örnek:</span> Risk ve belirsizlik durumlarını açıklamak için beslenme problemi örneğine dönelim.
+<ul>
+<li><span class="light-red">Risk durumunda</span> maliyet katsayısı <span class="light-red"><span class="math inline">\(C_j\)</span></span> sabit sayı olma özelliğini yitirir ve kesin değeri bilinmeyen ancak, istendiğinde değeri ilgili <span class="light-red">olasılık yoğunluk fonksiyonu</span> cinsinden açıklanabilen bir <span class="light-red">rasgele değişken</span> olur.</li>
+<li>Buna göre <span class="light-red"><span class="math inline">\(C_j\)</span></span>, olasılık yoğunluk fonksiyonu <span class="light-red"><span class="math inline">\(f(C_j)\)</span></span> ile gösterilen bir <span class="light-red">rasgele değişken</span> olarak tanımlanabilir.</li>
+<li>Bu durumda, kendisine ait bir olasılık yoğunluk fonksiyonu tanımlanmaksızın, <span class="light-red"><span class="math inline">\(C_j\)</span></span> hakkında konuşmak fazla anlamlı olmaz.</li>
+<li>Bunun sonucunda, <span class="light-red"><span class="math inline">\(x_j\)</span></span>’nin belirli bir değeri için <span class="light-red"><span class="math inline">\(j\)</span></span>’inci değişkenin kara olan katkısı <span class="light-red"><span class="math inline">\(C_j \cdot x_j\)</span></span>’de kesin değeri bilinmeyen bir rasgele değişken olur.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="belirsizlik-durumunda-karar-alma" class="slide level2">
+<h2>Belirsizlik durumunda karar alma</h2>
+<div title="Belirsizlik durumunda karar alma" style="font-size: 115%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Belirsizlik durumunda karar alma</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Belirsizlik durumunda ise, <span class="light-red"><span class="math inline">\(f(C_j)\)</span></span> olasılık yoğunluk fonksiyonu <span class="light-red">bilinmez</span> veya <span class="light-red">belirlenemez</span>.</li>
+<li>Ancak, bu konudaki bilgi eksikliği problem hakkında <span class="light-red">hiçbir bilgi yoktur şeklinde yorumlanmamalıdır</span>.</li>
+<li>Sözgelimi, karar verici <span class="light-red"><span class="math inline">\(C_j\)</span></span>’nin değerlerinden birine <span class="light-red">eşit olduğunu bilebilir</span> ancak, bu bilgi duruma ilişkin <span class="light-red">olasılıkların belirlenmesinde yetersiz kalır</span>.</li>
+<li>Bu durum <span class="light-red">belirsizlik ortamında karar alma</span> durumudur.</li>
+<li>Karar probleminin nasıl formüle edileceği ve çözüleceği doğrudan doğruya karar verenin problemin bileşenleri hakkındaki <span class="light-red">bilgi derecesine</span> bağlıdır.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="karar-alma-ölçütleri" class="slide level2">
+<h2>Karar Alma Ölçütleri</h2>
+<div title="Karar Alma Ölçütleri" style="font-size: 115%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Karar Alma Ölçütleri</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Belirlilik durumunda</span> evrensel biçimde kabul görmüş karar alma ölçütü, <span class="light-red">kârın en büyüklenmesi</span> veya <span class="light-red">maliyetin en küçüklenmesi</span> iken, <span class="light-red">belirsizlik</span> ve <span class="light-red">risk</span> durumlarında karar almada <span class="light-red">değişik ölçütler</span> söz konusu olur.</li>
+<li>Sözgelimi, <span class="light-red">risk ortamında karar almada ortalama (beklenen) kârın en büyüklenmesi</span> karar ölçütü olarak kabul edilebilirse de bu ölçüt <span class="light-red">bütün durumlar için uygun olmayabilir</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="karar-analizinin-temel-adımları" class="slide level2">
+<h2>Karar Analizinin Temel Adımları</h2>
+<div title="Karar Analizinin Temel Adımları" style="font-size: 115%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Karar Analizinin Temel Adımları</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Sorunun tanımlanması</span></li>
+<li><span class="light-red">Tüm olası seçeneklerin listelenmesi</span></li>
+<li>Karar Verici’nin kontrolunda olmayan / doğanın sunduğu <span class="light-red">tüm olası olayların listelenmesi</span></li>
+<li>Her seçeneğin her olay için elde edeceği sonuçları gösteren <span class="light-red">karar tablosunun oluşturulması</span>.</li>
+<li>Bir <span class="light-red">karar modelinin seçilmesi</span> (doğa durumuna göre)</li>
+<li>Modelin uygulanması ve bir seçeneğin seçilerek <span class="light-red">karar verilmesi</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="karar-problemi" class="slide level2">
+<h2>Karar Problemi</h2>
+<div title="Karar Problemi" style="font-size: 130%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Karar Problemi</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Birden fazla olay</span> ve <span class="light-red">birden fazla karar seçeneğinin</span> (eylem biçimi, strateji) bulunması, sistemin <span class="light-red">davranış ölçeğinin</span> her bir stratejiye göre <span class="light-red">farklı değer alması</span> ve bu <span class="light-red">değerlerin bilinmemesi</span> durumundaki bir probleme <span class="light-red">karar problemi</span> denir.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="karar-probleminin-ortak-özellikleri" class="slide level2">
+<h2>Karar Probleminin Ortak Özellikleri</h2>
+<div title="Karar Probleminin Ortak Özellikleri" style="font-size: 95%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Karar Probleminin Ortak Özellikleri</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Karar Verici:</span> Sisteme amacına göre <span class="light-red">hedefler koyan</span>, bu hedeflere ulaşmak için <span class="light-red">amaçlar</span>, <span class="light-red">stratejiler</span> ve <span class="light-red">taktikler</span> tanımlayan, bu tanımlar uyarınca sistemin davranışlarını <span class="light-red">planlayan</span>, <span class="light-red">örgütleyen</span>, <span class="light-red">denetleyen</span>, sapmalar karşısında gerekli <span class="light-red">düzenlemeyi</span> yapan <span class="light-red">birey</span> ya da <span class="light-red">topluluğa</span> <span class="light-red">karar verici</span> denir.</li>
+<li><span class="light-red">Strateji (Eylem Biçimi):</span> Karar vericinin <span class="light-red">amaç</span> veya <span class="light-red">amaçlarına ulaşmasını sağlayacak değişik yollar</span> veya <span class="light-red">hareket tarzlarının</span> her birine <span class="light-red">strateji</span> veya <span class="light-red">eylem biçimi</span> denir. Stratejilerin belirlenmesi ve tanımlanması <span class="light-red">karar vericinin</span> en önemli görevlerindendir. Stratejiler karar vericinin <span class="light-red">kontrolünde olan faktörlerdir</span>.</li>
+<li><span class="light-red">Olay (Doğal Durum):</span> Karar vericinin <span class="light-red">davranışını etkileyen</span> ve alabileceği değerlerde <span class="light-red">karar vericinin hiçbir etkisi olmayan</span> faktörlerdir. Olaylar, karar vericinin içinde bulunduğu karar ortamını oluştururlar. <span class="light-red">Sayıları ne olursa olsun</span> gelecekte yalnızca <span class="light-red">bir olayın gerçekleşeceği</span> unutulmamalıdır.</li>
+<li><span class="light-red">Sonuç:</span> Her bir <span class="light-red">strateji</span> ve <span class="light-red">olay bileşimi</span> sonucu ortaya çıkan <span class="light-red">değerdir</span>. Sonuç değerlerine <span class="light-red">ödeme</span>, <span class="light-red">yarar</span> veya <span class="light-red">kayıp</span> denir ve bunlar genellikle <span class="light-red">parasal değer</span> cinsinden açıklanır</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="belirlilik-altında-karar-verme---analitik-hiyerarşi-yaklaşımı" class="slide level2">
+<h2>Belirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı</h2>
+<div title="Belirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı" style="font-size: 95%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Belirlilik Altında Karar Verme - Analitik Hiyerarşi Yaklaşımı</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><span class="light-red">Analitik Hiyerarşi Süreci (AHP)</span>, 1970’lerde <span class="light-red">Thomas L. Saaty</span> tarafından geliştirilen ve <span class="light-red">çok kriterli karar verme</span> problemlerinde kullanılan bir yöntemdir.</li>
+<li><span class="light-red">AHP</span>, karmaşık kararları <span class="light-red">hiyerarşik bir yapıya</span> dönüştürerek karar vericinin <span class="light-red">hem nicel hem de nitel</span> yargılarını sistematik biçimde değerlendirmesini sağlar.</li>
+<li>Süreç, <span class="light-red">karar hedefinin</span> en üstte yer aldığı bir hiyerarşi oluşturulmasıyla başlar; ardından <span class="light-red">kriterler</span>, <span class="light-red">alt kriterler</span> ve <span class="light-red">alternatifler</span> belirlenir.</li>
+<li>Karar verici, <span class="light-red">ikili karşılaştırmalar</span> aracılığıyla her seviyedeki öğelerin <span class="light-red">göreli önemini</span> değerlendirir.</li>
+<li>Elde edilen <span class="light-red">karşılaştırma matrislerinden</span> özvektör yöntemiyle <span class="light-red">ağırlıklar</span> hesaplanır ve <span class="light-red">tutarlılık oranı (CR)</span> analiziyle <span class="light-red">yargıların tutarlılığı</span> kontrol edilir.</li>
+<li>Böylece <span class="light-red">AHP</span>, <span class="light-red">öznel</span> yargılara dayalı kararları <span class="light-red">matematiksel temele</span> oturtarak en <span class="light-red">uygun alternatifi seçmede</span> güçlü ve esnek bir yöntem sunar.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---basit-versiyon-1" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Basit Versiyon (1)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Basit Versiyon (1)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Basit Versiyon (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Başarılı bir öğrenci olan Zeki <span class="light-blue">üç</span> üniversiteden akademik burs kazanmıştır: <span class="light-red">A</span> üniversitesi, <span class="light-red">B</span> üniversitesi ve <span class="light-red">C</span> üniversitesi.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Bir üniversiteyi seçmek için Zeki iki kriter belirler: <span class="light-red">üniversitenin yeri</span> ve <span class="light-red">akademik saygınlık</span>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Mükemmel bir öğrenci olarak, akademik saygınlığa üniversitenin yerinden <span class="light-blue">5</span> kat fazla önem verip ağırlıkları <span class="light-blue">%83</span> <span class="light-red">akademik saygınlık</span>, <span class="light-blue">%17</span> <span class="light-red">üniversitenin yeri</span> olarak belirler.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Sonra bu üç üniversiteyi yer ve akademik saygınlık açısından derecelendirmek için <span class="light-red">sistematik analizi</span> kullanır <span class="orange">(daha sonra anlatılacaktır)</span>.</li>
+</ul>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:39%;">
+<div class="fragment" data-fragment-index="5">
+<p>Zeki yaptığı analiz sonucunda,</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<ul>
+<li><span class="red">Yer:</span> <span class="light-red">A</span> üni. <span class="light-blue">(%12.9)</span>, <span class="light-red">B</span> üni. <span class="light-blue">(%27.7)</span> ve <span class="light-red">C</span> üni. <span class="light-blue">(%59.4)</span></li>
+<li><span class="red">Saygınlık:</span> <span class="light-red">A</span> üni. <span class="light-blue">(%54.5)</span>, <span class="light-red">B</span> üni. <span class="light-blue">(%27.3)</span> ve <span class="light-red">C</span> üni. <span class="light-blue">(%18.2)</span></li>
+</ul>
+<p>olarak belirlemiştir.</p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p>Problem <span class="light-blue">iki</span> <span class="light-red">kriter</span> (<span class="light-red">yer</span> ve <span class="light-red">saygınlık</span>) ve <span class="light-blue">üç</span> <span class="light-red">karar</span> alternatifiyle (<span class="light-red">A</span>, <span class="light-red">B</span> ve <span class="light-red">C</span> üniversiteleri) işlenen <span class="light-blue">tek</span> <span class="light-red">hiyerarşiyle</span> ilgilenmektedir.</p>
+</div>
+<div class="fragment" data-fragment-index="8">
+<p><span class="red">Zeki bu durumda hangi üniversiteyi seçmelidir?</span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---basit-versiyon-2" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Basit Versiyon (2)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Basit Versiyon (2)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Basit Versiyon (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:90%;">
+<div class="fragment" data-fragment-index="1">
+<p>Bu <span class="light-blue">üç</span> üniversitenin derecelenmesi her bir üniversite için <span class="light-red">birleşik bir ağırlığın</span> hesaplanmasına dayanır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><span class="light-red">A üniversitesi</span> = <span class="light-blue"><span class="math inline">\(0.167 \times 0.129 + 0.833 \times 0.545 = 0.476\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><span class="light-red">B üniversitesi</span> = <span class="light-blue"><span class="math inline">\(0.167 \times 0.277 + 0.833 \times 0.273 = 0.273\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li><span class="light-red">C üniversitesi</span> = <span class="light-blue"><span class="math inline">\(0.167 \times 0.595 + 0.833 \times 0.182 = 0.251\)</span></span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Bu hesaplara göre <span class="red">A üniversitesi</span> <span class="light-red">en yüksek birleşik ağırlıkla</span> (<span class="light-blue"><span class="math inline">\(0.476\)</span></span>) Zeki için <span class="red">en uygun tercih</span> olacaktır.</p>
+</div>
+</div></div>
+<div class="column" style="width:1%;">
+
+</div><div class="column" style="width:9%;">
+
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---basit-versiyon-3" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Basit Versiyon (3)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Basit Versiyon (2)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Basit Versiyon (2)</strong></p>
+</div>
+<div class="callout-content">
+<p><img data-src="./images/EX_1ahp_expanded.png" width="1000" height="500"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-1" class="slide level2">
+<h2>Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)</h2>
+<div title="Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)" style="font-size: 100%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (1)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>AHP’nin püf noktası, karar alternatiflerinin derecelendiği <span class="light-red">göreceli ağırlıkların</span> belirlenmesidir.</li>
+<li>Bir önceki örnekte <span class="light-red">göreceli ağırlıklar</span>, <span class="light-blue"><span class="math inline">\(0.129\)</span></span>, <span class="light-blue"><span class="math inline">\(0.277\)</span></span>, <span class="light-blue"><span class="math inline">\(0.595\)</span></span>, <span class="light-blue"><span class="math inline">\(0.545\)</span></span>, <span class="light-blue"><span class="math inline">\(0.273\)</span></span> ve <span class="light-blue"><span class="math inline">\(0.182\)</span></span> idi.</li>
+<li>Bu değerler aşağıda bahsedilen yaklaşımla belirlenir.
+<ul>
+<li>Verilmiş olan bir hiyerarşide <span class="light-red"><span class="math inline">\(n\)</span></span> adet kriterle ilgilendiğimizi varsayalım.</li>
+<li>Burada ilk adım, karar vericinin farklı kriterlerin göreceli önemini yorumlamasını yansıtan ve <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span> ile tanımlanan <span class="light-red"><span class="math inline">\(n \times n\)</span></span> ikili <span class="light-red">karşılaştırma matrisini</span> oluşturmaktır.</li>
+<li><span class="light-red">İkili karşılaştırma</span>, <span class="light-red"><span class="math inline">\(i\)</span></span> satırındaki <span class="light-red"><span class="math inline">\((i = 1,2, \dots,n)\)</span></span> kriterlerin <span class="light-red"><span class="math inline">\(n\)</span></span> sütunla temsil edilen her bir kritere bağlı olarak derecelendirilmesiyle yapılır.</li>
+<li><span class="light-red"><span class="math inline">\(a_{ij}\)</span></span>, <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span>’nın <span class="light-red"><span class="math inline">\((i,j)\)</span></span> elemanını tanımladığında, AHP <span class="light-blue"><span class="math inline">\(1\)</span></span> ile <span class="light-blue"><span class="math inline">\(9\)</span></span> arasında bir <span class="light-red">ölçek</span> önerir.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analitik-hiyerarşi-yaklaşımı---ağırlıkların-belirlenmesi-2" class="slide level2">
+<h2>Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)</h2>
+<div title="Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)" style="font-size: 100%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Analitik Hiyerarşi Yaklaşımı - Ağırlıkların Belirlenmesi (2)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Önerilen bu <span class="light-red">ölçeğe</span> göre,
+<ul>
+<li><span class="light-blue"><span class="math inline">\(a_{ij} = 1\)</span></span>, <span class="light-red"><span class="math inline">\(i\)</span></span> ve <span class="light-red"><span class="math inline">\(j\)</span></span> nin eşit önemde olduğunu,</li>
+<li><span class="light-blue"><span class="math inline">\(a_{ij} = 5\)</span></span>, <span class="light-red"><span class="math inline">\(i\)</span></span>’nin <span class="light-red"><span class="math inline">\(j\)</span></span>’den çok önemli olduğunu</li>
+<li><span class="light-blue"><span class="math inline">\(a_{ij} = 9\)</span></span>, <span class="light-red"><span class="math inline">\(i\)</span></span>’nin <span class="light-red"><span class="math inline">\(j\)</span></span>’den kesinlikle çok önemli olduğunu yansıtır.</li>
+<li><span class="light-blue"><span class="math inline">\(1\)</span></span> ile <span class="light-blue"><span class="math inline">\(9\)</span></span> arasındaki diğer değerler ara değerler olarak yorumlanır.</li>
+<li>Tutarlılık için <span class="light-red"><span class="math inline">\(a_{ij} = k \Rightarrow a_{ji} = \frac{1}{k}\)</span></span> olarak ifade edilmelidir.</li>
+<li>Ayrıca <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span>’nın tüm diyagonal <span class="light-red"><span class="math inline">\(a_{ii}\)</span></span> elemanları, kendilerine bağlı kriteri değerlendirdiği için <span class="light-blue"><span class="math inline">\(1\)</span></span> olmalıdır.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-1" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Zeki’nin karar problemi için belirlenen <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span> karar matrisini gösterelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Zeki bir üniversitenin <span class="light-red">saygınlığının (S) yerine (Y)</span> göre <span class="orange">çok daha önemli olacağını</span> belirttiği için <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span> karar matrisinde <span class="light-red">saygınlığın yere</span> göre önemi <span class="light-blue"><span class="math inline">\(5\)</span></span> olacak iken, <span class="light-red">yerin saygınlığa</span> göre önemi ise <span class="light-red">bu değerin tersi</span> olan <span class="light-blue"><span class="math inline">\(\frac{1}{5}\)</span></span> olacaktır.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[
+\mathbf{A} = \left[\begin{array}{c|cc}
+&amp; \text{S} &amp; \text{Y} \\
+\hline
+\text{S} &amp; 1 &amp; 5 \\
+\text{Y} &amp; \frac{1}{5} &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-red">S</span> ve <span class="light-red">Y</span>’nin göreceli ağırlıkları <span class="red">her bir sütunun elemanlarını aynı sütunun elemanlarının toplamına bölerek</span> <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span>’dan bulunur.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Böylece <span class="light-red">1.</span> sütunun elemanlarını <span class="light-blue"><span class="math inline">\((1+\frac{1}{5}=1.2)\)</span></span>’ye, <span class="light-red">2.</span> sütunun elemanlarını <span class="light-blue"><span class="math inline">\((5+1=6)\)</span></span>’ya bölerek normalleştiririz.</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[
+\mathbf{N} = \left[\begin{array}{c|cc}
+&amp; \text{S} &amp; \text{Y} \\
+\hline
+\text{S} &amp; 0.833 &amp; 0.833 \\
+\text{Y} &amp; 0.167 &amp; 0.167
+\end{array}\right]
+\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math inline">\(n_{11} = \frac{1}{1.2}=0.833\)</span></span>, <span class="light-blue"><span class="math inline">\(n_{21} = \frac{\frac{1}{5}}{1.2}=0.167\)</span></span>, <span class="light-blue"><span class="math inline">\(n_{12} = \frac{5}{6}=0.833\)</span></span> ve <span class="light-blue"><span class="math inline">\(n_{22} = \frac{1}{6}=0.167\)</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-2" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p><span class="light-blue"><span class="math display">\[
+\mathbf{N} = \left[\begin{array}{c|cc}
+&amp; \text{S} &amp; \text{Y} \\
+\hline
+\text{S} &amp; 0.833 &amp; 0.833 \\
+\text{Y} &amp; 0.167 &amp; 0.167
+\end{array}\right]
+\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-red"><span class="math inline">\(\mathbf{N}\)</span></span> belirlendikten sonra, istenen göreceli ağırlıklar <span class="light-red"><span class="math inline">\(w_S\)</span></span> ve <span class="light-red"><span class="math inline">\(w_Y\)</span></span> <span class="red">normalleştirilen matrisin satır ortalaması</span> olarak bulunur.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-red">Satır ortalamaları:</span></p>
+<p><span class="light-blue"><span class="math inline">\(w_S = \frac{0.833+0.833}{2}= 0.833\)</span></span> <span class="light-blue"><span class="math inline">\(w_Y = \frac{0.167+0.167}{2}= 0.167\)</span></span></p>
+<p>olarak bulunur.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="4">
+<p>Satır ortalamaları bir matris şeklinde</p>
+<p><span class="light-blue"><span class="math display">\[w = \begin{bmatrix}0.833 &amp; 0.167\end{bmatrix}^T\]</span></span></p>
+<p>şeklinde de gösterilebilir.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Bu örnek için <span class="light-red"><span class="math inline">\(\mathbf{N}\)</span></span>’nin sütunları özdeştir. Bu durum yalnıca karar vericinin, <span class="light-red"><span class="math inline">\(\mathbf{A}\)</span></span> matrislerine girişlerde <span class="light-red">mükemmel bir tutarlılık</span> sergilediğinde ortaya çıkar. <span class="orange">Bu noktaya daha sonra tekrar değinilecektir.</span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-3" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Ağırlıkların sadece değerlendirme kriterleri için belirlenmesi yeterli değildir. <span class="light-red">Her bir kriter</span> için <span class="light-red">her bir alternatifin</span> de birbiriyle karşılaştırıldığı <span class="light-red">matrislere</span> ihtiyaç vardır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-red">A</span>, <span class="light-red">B</span> ve <span class="light-red">C</span> üniversitesi alternatiflerinin göreceli ağırlıkları aşağıdaki <span class="light-red">karşılaştırma matrisleri</span> kullanılarak <span class="light-red"><span class="math inline">\(S\)</span></span> ve <span class="light-red"><span class="math inline">\(Y\)</span></span> kriterleri içerisinde belirlenir.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Örneğin, Zeki her bir <span class="light-red">üniversite seçeneği</span> için <span class="light-red">Saygınlık (S)</span> kriteri için aşağıdaki <span class="light-red">karşılaştıma matrisini</span> oluşturmuş olsun.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math display">\[A_S = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 2 &amp; 3 \\
+\text{B} &amp; 0.5 &amp; 1 &amp; 1.5 \\
+\text{C} &amp; 0.333 &amp; 0.667 &amp; 1
+\end{array}\right] \]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Bu matris <span class="light-red">saygınlık</span> açısından <span class="light-red">A</span>’nın <span class="light-red">B</span>’den (<span class="light-blue"><span class="math inline">\(2\)</span></span>); <span class="light-red">A</span>’nın <span class="light-red">C</span>’den (<span class="light-blue"><span class="math inline">\(3\)</span></span>) ve <span class="light-red">B</span>’nin <span class="light-red">C</span>’den (<span class="light-blue"><span class="math inline">\(1.5\)</span></span>) <span class="red">daha önemli</span> olduğunu belirtmektedir.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-red">Sütun toplamları =</span> <span class="light-blue"><span class="math inline">\([1.833, 3.667, 5.5]\)</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math display">\[N_S = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.545 &amp; 0.545 &amp; 0.545 \\
+\text{B} &amp; 0.273 &amp; 0.273 &amp; 0.273 \\
+\text{C} &amp; 0.182 &amp; 0.182 &amp; 0.182
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8">
+<p><span class="light-red">Satır ortalamaları:</span></p>
+<p><span class="light-blue"><span class="math inline">\(w_{SA} = \frac{0.545+0.545+0.545}{3}= 0.545\)</span></span> <span class="light-blue"><span class="math inline">\(w_{SB} = \frac{0.273+0.273+0.273}{3}= 0.273\)</span></span> <span class="light-blue"><span class="math inline">\(w_{SC} = \frac{0.182+0.182+0.182}{3}= 0.182\)</span></span></p>
+<p>olarak hesaplanır.</p>
+</div>
+<div class="fragment" data-fragment-index="9">
+<p>Satır ortalamaları matris şeklinde <span class="light-blue"><span class="math inline">\(w_S = \begin{bmatrix}0.545 &amp; 0.273 &amp; 0.182 \end{bmatrix}^T\)</span></span> gösterilir.</p>
+</div>
+<div class="fragment" data-fragment-index="10">
+<p>Bu üç değer sırasıyla <span class="light-red">A</span>, <span class="light-red">B</span> ve <span class="light-red">C</span> üniversitelerinin <span class="light-red">akademik saygınlık</span> açısından <span class="light-red">ağırlıklarını</span> verir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-4" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (4)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Aynı işlem bu kez akademik saygınlık yerine, üniversitenin <span class="light-red">yeri</span> için yapılmalıdır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Zeki bu kez her bir <span class="light-red">üniversite seçeneği</span> için <span class="light-red">Yer (Y)</span> kriteri için aşağıdaki <span class="light-red">karşılaştıma matrisini</span> oluşturmuş olsun.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math display">\[A_Y = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 0.5 &amp; 0.2 \\
+\text{B} &amp; 2 &amp; 1 &amp; 0.5 \\
+\text{C} &amp; 5 &amp; 2 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Bu matris <span class="light-red">yer</span> açısından <span class="light-red">A</span>’nın <span class="light-red">B</span>’den (<span class="light-blue"><span class="math inline">\(0.5\)</span></span>); <span class="light-red">A</span>’nın <span class="light-red">C</span>’den (<span class="light-blue"><span class="math inline">\(0.2\)</span></span>) ve <span class="light-red">B</span>’nin <span class="light-red">C</span>’den (<span class="light-blue"><span class="math inline">\(0.5\)</span></span>) <span class="red">daha kötü konumda</span> olduğunu belirtmektedir.</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-red">Sütun toplamları =</span> <span class="light-blue"><span class="math inline">\([8, 3.5, 1.7]\)</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math display">\[N_Y = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.125 &amp; 0.143 &amp; 0.118 \\
+\text{B} &amp; 0.25 &amp; 0.286 &amp; 0.294 \\
+\text{C} &amp; 0.625 &amp; 0.571 &amp; 0.588
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8">
+<p><span class="light-red">Satır ortalamaları:</span></p>
+<p><span class="light-blue"><span class="math inline">\(w_{YA} = \frac{0.125+0.143+0.118}{3}= 0.129\)</span></span> <span class="light-blue"><span class="math inline">\(w_{YB} = \frac{0.25+0.286+0.294}{3}= 0.277\)</span></span> <span class="light-blue"><span class="math inline">\(w_{YC} = \frac{0.625+0.571+0.588}{3}= 0.595\)</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="9">
+<p>Satır ortalamaları matris şeklinde <span class="light-blue"><span class="math inline">\(w_Y = \begin{bmatrix}0.129 &amp; 0.277 &amp; 0.595 \end{bmatrix}^T\)</span></span> gösterilir.</p>
+</div>
+<div class="fragment" data-fragment-index="10">
+<p>Bu üç değer sırasıyla <span class="light-red">A</span>, <span class="light-red">B</span> ve <span class="light-red">C</span> üniversitelerinin <span class="light-red">yer</span> açısından <span class="light-red">ağırlıklarını</span> verir.</p>
+</div>
+<div class="fragment" data-fragment-index="11">
+<p>Dikkat ederseniz <span class="light-red"><span class="math inline">\(N\)</span></span> ve <span class="light-red"><span class="math inline">\(N_S\)</span></span> nin tüm sütunları <span class="red">özdeş iken</span> <span class="light-red"><span class="math inline">\(N_Y\)</span></span> nin sütunları <span class="red">özdeş değildir</span>. <span class="orange">Şimdi bunun ne anlama geldiğini öğrenelim.</span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---ağırlıkların-belirlenmesi-5" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)</h2>
+<div title="Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)" style="font-size: 95%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Ağırlıkların Belirlenmesi (5)</strong></p>
+</div>
+<div class="callout-content">
+<p><img data-src="./images/EX_1ahp_expanded.png" width="1000" height="500"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-1" class="slide level2">
+<h2>Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)</h2>
+<div title="Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)" style="font-size: 95%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment" data-fragment-index="1">
+<p><span class="light-red"><span class="math inline">\(N\)</span></span> ve <span class="light-red"><span class="math inline">\(N_S\)</span></span> nin tüm sütunları <span class="red">özdeş iken</span> <span class="light-red"><span class="math inline">\(N_Y\)</span></span> nin sütunlarının <span class="red">özdeş olmadığından</span> bahsetmiştik.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-red">Özdeş sütunlar</span> karşılaştırmanın nasıl yapıldığına <span class="light-red">bakılmaksızın</span> elde edilen <span class="light-red">göreceli ağırlıkların aynı</span> olduğunu göstermektedir.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Bu orijinal <span class="light-red"><span class="math inline">\(A\)</span></span> ve <span class="light-red"><span class="math inline">\(A_S\)</span></span> karşılaştırma matrislerinin <span class="light-red">tutarlı</span> olduğuna işaret ederken, <span class="light-red"><span class="math inline">\(A_Y\)</span></span> matrisi <span class="light-red">tutarlı değildir</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-red">Tüm</span> karşılaştırma matrislerinin tutarlı olması zordur. Açıkçası, bu matrislerin temel yapısını insan yargısı oluşturur ve <span class="light-red">bir dereceye kadar tutarsızlık beklenebilir</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Önemli olan bu tutarsızlığın <span class="light-red">mantıksız</span> diye değerlendirilmeyecek şekilde <span class="light-red">tölere edilebilmesini</span> sağlamaktır.</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p>Bir tutarsızlık söz konusu ise bunun <span class="light-red">kabul edilebilir</span> düzeyde olup olmadığını belirlemek için <span class="light-red">A</span> karşılaştırma matrisi için <span class="light-red">objektif bir ölçüt</span> geliştirmek gerekir.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analitik-hiyerarşi-yaklaşımı---karşılaştırma-matrisinin-tutarlılığı-2" class="slide level2">
+<h2>Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)</h2>
+<div title="Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)" style="font-size: 85%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Analitik Hiyerarşi Yaklaşımı - Karşılaştırma Matrisinin Tutarlılığı (2)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p><span class="red">AHP tutarlılık oranı</span></p>
+<p><span class="light-red"><span class="math display">\[CR = \frac{CI}{RI}\]</span></span> şeklinde hesaplanır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Burada, <span class="light-red"><span class="math inline">\(CI\)</span></span>, <span class="light-red"><span class="math inline">\(A\)</span></span> nın <span class="light-red">tutarlılık indeksini</span> göstermekte ve</p>
+<p><span class="light-red"><span class="math display">\[CI = \frac{n_{maks}-n}{n-1}\]</span></span></p>
+<p>ile hesaplanmaktadır.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Formülde <span class="light-red"><span class="math inline">\(n\)</span></span>, <span class="light-red"><span class="math inline">\(A\)</span></span> matrisinin <span class="light-red">satır sayısı</span> iken, <span class="light-red"><span class="math inline">\(n_{maks}\)</span></span>, <span class="light-red"><span class="math inline">\(A \overline{w}\)</span></span> matrislerinin çarpımı sonucunda elde edilen <span class="light-red">sütun vektörünun elemanlarının toplanmasıyla</span> bulunur.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-red"><span class="math inline">\(RI\)</span></span>, <span class="light-red"><span class="math inline">\(A\)</span></span> nın <span class="light-red">rastgele tutarlılık indeksi</span> olarak tanımlanır ve</p>
+<p><span class="light-red"><span class="math display">\[RI = \frac{1.98 (n-2)}{n}\]</span></span></p>
+<p>formülüyle hesaplanır.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p>Eğer <span class="light-red"><span class="math inline">\(CR \leq 0.1\)</span></span> ise tutarsızlık düzeyi kabul edilebilir. Aksi taktirde <span class="light-red"><span class="math inline">\(A\)</span></span> karşılaştırma matrisinde <span class="light-red">tutarsızlık yüksektir</span>. Matris elemanları kontrol edilmelidir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-1-üniversite-tercihi---tutarlılığın-kontrolü" class="slide level2">
+<h2>Örnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü</h2>
+<div title="Örnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 1: Üniversite Tercihi - Tutarlılığın Kontrolü</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p><span class="light-red"><span class="math inline">\(A_Y\)</span></span> matrisi <span class="light-red"><span class="math inline">\(N_Y\)</span></span> matrisinin <span class="light-red">sütunları özdeş olmadığı</span> için <span class="light-red">tutarsızdır</span>. <span class="red">Tutarsızlığın kabul edilebilir ölçülerde olup olmadığını belirleyelim.</span></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>İşleme <span class="light-red"><span class="math inline">\(n_{maks}\)</span></span> ı bularak başlayalım.</p>
+<p><span class="light-blue"><span class="math display">\[A_Y \cdot \overline{w}_Y = \left[\begin{array}{ccc}
+1 &amp; \frac{1}{2} &amp; \frac{1}{5} \\
+2 &amp; 1 &amp; \frac{1}{2} \\
+5 &amp; 2 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.129\\
+0.277\\
+0.595\end{array}\right] = \left[\begin{array}{c}
+0.386\\
+0.831\\
+1.791\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 0.386 + 0.831 + 1.791 = 3.007\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{n_{maks}-n}{n-1} = \tfrac{3.007 - 3}{2} = 0.004\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.006\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_Y\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-1" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (1)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (1)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Bir yazar yeni bir Yöneylem Araştırması kitabı için yayımcı seçmek üzere <span class="light-red">üç</span> kriter belirler.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Yazara verilen <span class="light-red">telif hakkı yüzdesi (T)</span>, <span class="light-red">satış ve pazarlama (SP)</span> ve <span class="light-red">avans ödemesi (A)</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Kitapla ilgilendiği bilinen <span class="light-blue">iki</span> yayımcı şirket <span class="light-red">H</span> ve <span class="light-red">P</span> dir.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p>Yazar <span class="light-red">karşılaştırma matrislerini</span> yanda verildiği şekilde oluşturduğuna göre, <span class="light-red">H</span> ve <span class="light-red">P</span> yayımcısından <span class="red">hangisini tercih etmesi gerektiğini</span> ve kararın <span class="red">tutarlılığının seviyesini</span> belirleyin.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="5" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[A = \left[\begin{array}{c|ccc}
+&amp; \text{T} &amp; \text{SP} &amp; \text{A} \\
+\hline
+\text{T} &amp; 1 &amp; 1 &amp; 0.25 \\
+\text{SP} &amp; 1 &amp; 1 &amp; 0.2 \\
+\text{A} &amp; 4 &amp; 5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[A_T= \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 1 &amp; 2 \\
+\text{P} &amp; 0.5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[A_{SP} = \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 1 &amp; 0.5 \\
+\text{P} &amp; 2 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[A_{A} = \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 1 &amp; 1 \\
+\text{P} &amp; 1 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-2" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (2)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (2)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (2)</strong></p>
+</div>
+<div class="callout-content">
+<p>Öncelikle sorunun şemasını çizerek başlayalım.</p>
+<p><img data-src="./images/EX_2_figure.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-3" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (3)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (3)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="fragment" data-fragment-index="1" style="font-size: 90%;">
+<p>Tüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[N = \left[\begin{array}{c|ccc}
+&amp; \text{T} &amp; \text{SP} &amp; \text{A} \\
+\hline
+\text{T} &amp; 0.167 &amp; 0.143 &amp; 0.172 \\
+\text{SP} &amp; 0.167 &amp; 0.143 &amp; 0.138 \\
+\text{A} &amp; 0.667 &amp; 0.714 &amp; 0.69
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[N_T = \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 0.667 &amp; 0.667 \\
+\text{P} &amp; 0.333 &amp; 0.333
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[N_{SP} = \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 0.333 &amp; 0.333 \\
+\text{P} &amp; 0.667 &amp; 0.667
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5" style="font-size: 90%;">
+<p><span class="light-blue"><span class="math display">\[N_A = \left[\begin{array}{c|cc}
+&amp; \text{H} &amp; \text{P} \\
+\hline
+\text{H} &amp; 0.5 &amp; 0.5 \\
+\text{P} &amp; 0.5 &amp; 0.5
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 82%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 82%;">
+<p><span class="red"><span class="math inline">\(N\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{T} = \tfrac{1}{3}(0.167 + 0.143 + 0.172) = 0.161\]</span></span> <span class="light-blue"><span class="math display">\[w_{SP} = \tfrac{1}{3}(0.167 + 0.143 + 0.138) = 0.149\]</span></span> <span class="light-blue"><span class="math display">\[w_{A} = \tfrac{1}{3}(0.667 + 0.714 + 0.69) = 0.69\]</span></span> <span class="light-blue"><span class="math display">\[w = \begin{bmatrix}0.161 &amp; 0.149 &amp; 0.69\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 82%;">
+<p><span class="red"><span class="math inline">\(N_T\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{T,H} = \tfrac{1}{2}(0.667 + 0.667) = 0.667\]</span></span> <span class="light-blue"><span class="math display">\[w_{T,P} = \tfrac{1}{2}(0.333 + 0.333) = 0.333\]</span></span> <span class="light-blue"><span class="math display">\[w_T = \begin{bmatrix}0.667 &amp; 0.333\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12" style="font-size: 82%;">
+<p><span class="light-red"><span class="math inline">\(N_T\)</span></span>, <span class="light-red"><span class="math inline">\(N_{SP}\)</span></span> ve <span class="light-red"><span class="math inline">\(N_A\)</span></span> matrislerinin sütunları <span class="red">özdeş olduğundan tutarlılardır</span>.</p>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:28%;">
+<div class="fragment" data-fragment-index="9" style="font-size: 82%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="10" style="font-size: 82%;">
+<p><span class="red"><span class="math inline">\(N_{SP}\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{SP,H} = \tfrac{1}{2}(0.333 + 0.333) = 0.333\]</span></span> <span class="light-blue"><span class="math display">\[w_{SP,P} = \tfrac{1}{2}(0.667 + 0.667) = 0.667\]</span></span> <span class="light-blue"><span class="math display">\[w_{SP} = \begin{bmatrix}0.333 &amp; 0.667\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11" style="font-size: 82%;">
+<p><span class="red"><span class="math inline">\(N_A\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{A,H} = \tfrac{1}{2}(0.5 + 0.5) = 0.5\]</span></span> <span class="light-blue"><span class="math display">\[w_{A,P} = \tfrac{1}{2}(0.5 + 0.5) = 0.5\]</span></span> <span class="light-blue"><span class="math display">\[w_A = \begin{bmatrix}0.5 &amp; 0.5\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="13" style="font-size: 82%;">
+<p><span class="light-red"><span class="math inline">\(N\)</span></span> matrisinin sütunları <span class="red">özdeş olmadığından tutarlı değildir</span>. <span class="orange">Tutarlılık derecesi araştırılmalıdır</span>.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-4" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (4)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (4)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (4)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p><span class="light-red"><span class="math inline">\(N_T\)</span></span>, <span class="light-red"><span class="math inline">\(N_{SP}\)</span></span> ve <span class="light-red"><span class="math inline">\(N_A\)</span></span> matrisleri tutarlı olduklarından <span class="light-red"><span class="math inline">\(CR\)</span></span> değerleri <span class="light-blue"><span class="math inline">\(0\)</span></span> dır.</p>
+<p>Sadece <span class="light-red"><span class="math inline">\(N\)</span></span> matrisinin tutarlılığına bakılmalıdır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[A \cdot \overline{w} = \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 0.25 \\
+1 &amp; 1 &amp; 0.2 \\
+4 &amp; 5 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.161 \\
+0.149 \\
+0.69\end{array}\right] =
+\left[\begin{array}{c}
+0.482 \\
+0.448 \\
+2.079\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 0.482 + 0.448 + 2.079 = 3.009\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.009 - 3}{2} = 0.004\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.007\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-5" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (5)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (5)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (5)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:90%;">
+<div class="fragment" data-fragment-index="1">
+<p>Son olarak hesaplanan ağırlıklar ile yazarın tercihini belirleyelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[P(H) = w_T\cdot w_{T,H} + w_{SP}\cdot w_{SP,H} + w_A\cdot w_{A,H}\]</span></span> <span class="light-blue"><span class="math display">\[P(H) = 0.161\cdot0.667 + 0.149\cdot0.333 + 0.69\cdot0.5 = 0.502\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[P(P) = w_T\cdot w_{T,P} + w_{SP}\cdot w_{SP,P} + w_A\cdot w_{A,P} \]</span></span> <span class="light-blue"><span class="math display">\[P(P) = 0.161\cdot0.333 + 0.149\cdot0.667 + 0.69\cdot0.5 = 0.498\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="orange">Çok küçük bir farkla da olsa (<span class="math inline">\(\%50.2\)</span>) yazar <span class="math inline">\(H\)</span> yayınevini seçmelidir.</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:9%;">
+<div class="fragment" data-fragment-index="4">
+
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-2-yazar---yayıncı-seçimi-6" class="slide level2">
+<h2>Örnek 2: Yazar - Yayıncı Seçimi (6)</h2>
+<div title="Örnek 2: Yazar - Yayıncı Seçimi (6)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 2: Yazar - Yayıncı Seçimi (6)</strong></p>
+</div>
+<div class="callout-content">
+<p>Son durumda şema aşağıdaki hale gelir.</p>
+<p><img data-src="./images/EX_2ahp_expanded.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-1" class="slide level2">
+<h2>Örnek 3: İşe Alım (1)</h2>
+<div title="Örnek 3: İşe Alım (1)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p><span class="light-red"><span class="math inline">\(C\&amp;H\)</span></span> firmasının insan kaynakları departmanı muhtemel bir çalışan arayışını <span class="light-blue">üç</span> adaya indirmiştir. <span class="light-red">Sinan (S)</span>, <span class="light-red">Jale (J)</span> ve <span class="light-red">Melis (M)</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Son seçim <span class="light-blue">üç</span> kritere dayanmaktadır: <span class="light-red">kişisel görüşme (I)</span>, <span class="light-red">deneyim (D)</span> ve <span class="light-red">Referanslar (R)</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Üç kriter arasında öncelikleri belirlemek için departman <span class="light-red"><span class="math inline">\(A\)</span></span> matrisini kullanmaktadır.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p>Adaylarla görüşülüp, deneyim ve referanslarına bakılarak veriler toplanınca <span class="light-red"><span class="math inline">\(A_I\)</span></span>, <span class="light-red"><span class="math inline">\(A_D\)</span></span> ve <span class="light-red"><span class="math inline">\(A_R\)</span></span> karşılaştırma matrisleri de oluşturulmuştur.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="red">Bu adaylardan hangisi işe alınmalıdır? Verinin tutarlılığını değerlendirin.</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A = \left[\begin{array}{c|ccc}
+&amp; \text{I} &amp; \text{D} &amp; \text{R} \\
+\hline
+\text{I} &amp; 1 &amp; 2 &amp; 0.25 \\
+\text{D} &amp; 0.5 &amp; 1 &amp; 0.2 \\
+\text{R} &amp; 4 &amp; 5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_I = \left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 1 &amp; 3 &amp; 4 \\
+\text{J} &amp; 0.333 &amp; 1 &amp; 0.2 \\
+\text{M} &amp; 0.25 &amp; 5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_D = \left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 1 &amp; 0.333 &amp; 2 \\
+\text{J} &amp; 3 &amp; 1 &amp; 0.5 \\
+\text{M} &amp; 0.5 &amp; 2 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="9" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_R = \left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 1 &amp; 0.5 &amp; 1 \\
+\text{J} &amp; 2 &amp; 1 &amp; 0.5 \\
+\text{M} &amp; 1 &amp; 2 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-2" class="slide level2">
+<h2>Örnek 3: İşe Alım (2)</h2>
+<div title="Örnek 3: İşe Alım (2)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (2)</strong></p>
+</div>
+<div class="callout-content">
+<p>Öncelikle sorunun şemasını çizerek başlayalım.</p>
+<p><img data-src="./images/EX_3_figure.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-3" class="slide level2">
+<h2>Örnek 3: İşe Alım (3)</h2>
+<div title="Örnek 3: İşe Alım (3)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="fragment" data-fragment-index="1" style="font-size: 90%;">
+<p>Tüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N = \left[\begin{array}{c|ccc}
+&amp; \text{I} &amp; \text{D} &amp; \text{R} \\
+\hline
+\text{I} &amp; 0.182 &amp; 0.25 &amp; 0.172 \\
+\text{D} &amp; 0.091 &amp; 0.125 &amp; 0.138 \\
+\text{R} &amp; 0.727 &amp; 0.625 &amp; 0.69
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_I = \left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 0.632 &amp; 0.333 &amp; 0.769 \\
+\text{J} &amp; 0.211 &amp; 0.111 &amp; 0.038 \\
+\text{M} &amp; 0.158 &amp; 0.556 &amp; 0.192
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_{D} = \left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 0.222 &amp; 0.1 &amp; 0.571 \\
+\text{J} &amp; 0.667 &amp; 0.3 &amp; 0.143 \\
+\text{M} &amp; 0.111 &amp; 0.6 &amp; 0.286
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_R =\left[\begin{array}{c|ccc}
+&amp; \text{S} &amp; \text{J} &amp; \text{M} \\
+\hline
+\text{S} &amp; 0.25 &amp; 0.143 &amp; 0.4 \\
+\text{J} &amp; 0.5 &amp; 0.286 &amp; 0.2 \\
+\text{M} &amp; 0.25 &amp; 0.571 &amp; 0.4
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:33%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 80%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{I} = \tfrac{1}{3}(0.182 + 0.25 + 0.172) = 0.201\]</span></span> <span class="light-blue"><span class="math display">\[w_{D} = \tfrac{1}{3}(0.091 + 0.125 + 0.138) = 0.118\]</span></span> <span class="light-blue"><span class="math display">\[w_{R} = \tfrac{1}{3}(0.727 + 0.625 + 0.69) = 0.681\]</span></span> <span class="light-blue"><span class="math display">\[w = \begin{bmatrix}0.201 &amp; 0.118 &amp; 0.681\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_I\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{I,S} = \tfrac{1}{3}(0.632 + 0.333 + 0.769) = 0.578\]</span></span> <span class="light-blue"><span class="math display">\[w_{I,J} = \tfrac{1}{3}(0.211 + 0.111 + 0.038) = 0.12\]</span></span> <span class="light-blue"><span class="math display">\[w_{I,M} = \tfrac{1}{3}(0.158 + 0.556 + 0.192) = 0.302\]</span></span> <span class="light-blue"><span class="math display">\[w_I = \begin{bmatrix}0.578 &amp; 0.12 &amp; 0.302\end{bmatrix}^T\]</span></span></p>
+</div>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:31%;">
+<div class="fragment" data-fragment-index="9" style="font-size: 80%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="10" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_{D}\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{D,S} = \tfrac{1}{3}(0.222 + 0.1 + 0.571) = 0.298\]</span></span> <span class="light-blue"><span class="math display">\[w_{D,J} = \tfrac{1}{3}(0.667 + 0.3 + 0.143) = 0.37\]</span></span> <span class="light-blue"><span class="math display">\[w_{D,M} = \tfrac{1}{3}(0.111 + 0.6 + 0.286) = 0.332\]</span></span> <span class="light-blue"><span class="math display">\[w_D = \begin{bmatrix}0.298 &amp; 0.37 &amp; 0.332\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_R\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{R,S} = \tfrac{1}{3}(0.25 + 0.143 + 0.4) = 0.264\]</span></span> <span class="light-blue"><span class="math display">\[w_{R,J} = \tfrac{1}{3}(0.5 + 0.286 + 0.2) = 0.329\]</span></span> <span class="light-blue"><span class="math display">\[w_{R,M} = \tfrac{1}{3}(0.25 + 0.571 + 0.4) = 0.407\]</span></span> <span class="light-blue"><span class="math display">\[w_R = \begin{bmatrix}0.264 &amp; 0.329 &amp; 0.407\end{bmatrix}^T\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-4" class="slide level2">
+<h2>Örnek 3: İşe Alım (4)</h2>
+<div title="Örnek 3: İşe Alım (4)" style="font-size: 75%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (4)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Elde edilen matrislerin hiç biri tutarlı değildir. Hangi matrislerdeki tutarsızlığa katlanılabilineceğine bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="1">
+<p>Öncelikle <span class="light-red"><span class="math inline">\(A\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[A \cdot \overline{w} = \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 0.25 \\
+0.5 &amp; 1 &amp; 0.2 \\
+4 &amp; 5 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.201 \\
+0.118 \\
+0.681\end{array}\right] =
+\left[\begin{array}{c}
+0.607 \\
+0.355 \\
+2.076\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 0.607 + 0.355 + 2.076 = 3.038\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.038 - 3}{2} = 0.019\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.029\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="8">
+<p>Şimdi <span class="light-red"><span class="math inline">\(A_I\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="9">
+<p><span class="light-blue"><span class="math display">\[A_I \cdot \overline{w}_I = \left[\begin{array}{ccc}
+1 &amp; 3 &amp; 4 \\
+0.333 &amp; 1 &amp; 0.2 \\
+0.25 &amp; 5 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.578 \\
+0.12 \\
+0.302\end{array}\right] =
+\left[\begin{array}{c}
+2.146 \\
+0.373 \\
+1.047\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="10">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 2.146 + 0.373 + 1.047 = 3.566\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.566 - 3}{2} = 0.283\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="13">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.428\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="14">
+<p><span class="light-blue"><span class="math inline">\(CR \geq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_I\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilemez</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-5" class="slide level2">
+<h2>Örnek 3: İşe Alım (5)</h2>
+<div title="Örnek 3: İşe Alım (5)" style="font-size: 75%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (5)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Ardından <span class="light-red"><span class="math inline">\(A_D\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[A_D \cdot \overline{w}_D = \left[\begin{array}{ccc}
+1 &amp; 0.333 &amp; 2 \\
+3 &amp; 1 &amp; 0.5 \\
+0.5 &amp; 2 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.298 \\
+0.37 \\
+0.332\end{array}\right] =
+\left[\begin{array}{c}
+1.086 \\
+1.43 \\
+1.221\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 1.086 + 1.43 + 1.221 = 3.736\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.736 - 3}{2} = 0.368\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.558\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math inline">\(CR \geq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_D\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilemez</span> seviyededir.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="8">
+<p>Son olarak <span class="light-red"><span class="math inline">\(A_R\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="9">
+<p><span class="light-blue"><span class="math display">\[A_R \cdot \overline{w}_R = \left[\begin{array}{ccc}
+1 &amp; 0.5 &amp; 1 \\
+2 &amp; 1 &amp; 0.5 \\
+1 &amp; 2 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.264 \\
+0.329 \\
+0.407\end{array}\right] =
+\left[\begin{array}{c}
+0.836 \\
+1.061 \\
+1.329\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="10">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 0.836 + 1.061 + 1.329 = 3.225\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.009 - 3}{2} = 0.113\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="13">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.017\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="14">
+<p><span class="light-blue"><span class="math inline">\(CR \geq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_R\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilemez</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-6" class="slide level2">
+<h2>Örnek 3: İşe Alım (6)</h2>
+<div title="Örnek 3: İşe Alım (6)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (6)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:90%;">
+<div class="fragment" data-fragment-index="1">
+<p>Son olarak hesaplanan ağırlıklar ile işe alım tercihini belirleyelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[P(S) = w_I\cdot w_{I,S} + w_{D}\cdot w_{D,S} + w_R\cdot w_{R,S}\]</span></span> <span class="light-blue"><span class="math display">\[P(S) = 0.201 \cdot 0.578 + 0.118 \cdot 0.298 + 0.681 \cdot 0.264 = 0.331\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[P(J) = w_I\cdot w_{I,J} + w_{D}\cdot w_{D,J} + w_R\cdot w_{R,J} \]</span></span> <span class="light-blue"><span class="math display">\[P(J) = 0.201 \cdot 0.12 + 0.118 \cdot 0.37 + 0.681 \cdot 0.329 = 0.291\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math display">\[P(M) = w_I\cdot w_{I,M} + w_{D}\cdot w_{D,M} + w_R\cdot w_{R,M} \]</span></span> <span class="light-blue"><span class="math display">\[P(M) = 0.201 \cdot 0.302 + 0.118 \cdot 0.332 + 0.681 \cdot 0.407 = 0.377\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="orange">İş için en iyi aday <span class="math inline">\(\%37.7\)</span> ile Melis (M) tir.</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:9%;">
+<div class="fragment" data-fragment-index="4">
+
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-3-işe-alım-7" class="slide level2">
+<h2>Örnek 3: İşe Alım (7)</h2>
+<div title="Örnek 3: İşe Alım (7)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 3: İşe Alım (7)</strong></p>
+</div>
+<div class="callout-content">
+<p>Son durumda şema aşağıdaki hale gelir.</p>
+<p><img data-src="./images/EX_3ahp_expanded.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-1" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (1)</h2>
+<div title="Örnek 4: Ev Satın Alma (1)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (1)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="fragment" data-fragment-index="1">
+<p>Kerem ve Jale Perçem (<span class="light-red">K</span> ve <span class="light-red">J</span>) çifti yeni bir ev alacaklardır.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-red">A</span>, <span class="light-red">B</span> ve <span class="light-red">C</span> evlerinin fiyatları bütçelerine uygundur.</p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p>Perçem ailesi evin seçimi için iki kriter belirler: <span class="light-red">Depreme Dayanıklılık (D)</span> ve <span class="light-red">İşe Yakınlık (İ)</span>.</p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p>Buradan yandaki karşılaştırma matrisleri elde edilmiştir.</p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="red">Buna göre üç evin öncelik sırasını değerlendirin ve her bir matris için tutarlılık oranını hesaplayın.</span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:32%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A = \left[\begin{array}{c|cc}
+&amp; \text{K} &amp; \text{J} \\
+\hline
+\text{K} &amp; 1 &amp; 2 \\
+\text{J} &amp; 0.5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_K = \left[\begin{array}{c|cc}
+&amp; \text{KD} &amp; \text{KI} \\
+\hline
+\text{KD} &amp; 1 &amp; 0.333 \\
+\text{KI} &amp; 3 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_J = \left[\begin{array}{c|cc}
+&amp; \text{JD} &amp; \text{JI} \\
+\hline
+\text{JD} &amp; 1 &amp; 4 \\
+\text{JI} &amp; 0.25 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="9" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_{KD} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 2 &amp; 3 \\
+\text{B} &amp; 0.5 &amp; 1 &amp; 2 \\
+\text{C} &amp; 0.333 &amp; 0.5 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:30%;">
+<div class="fragment" data-fragment-index="10" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_{KI} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 2 &amp; 0.5 \\
+\text{B} &amp; 0.5 &amp; 1 &amp; 0.333 \\
+\text{C} &amp; 2 &amp; 3 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_{JD} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 4 &amp; 2 \\
+\text{B} &amp; 0.25 &amp; 1 &amp; 3 \\
+\text{C} &amp; 0.5 &amp; 0.333 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[A_{JI} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 1 &amp; 0.5 &amp; 4 \\
+\text{B} &amp; 2 &amp; 1 &amp; 3 \\
+\text{C} &amp; 0.25 &amp; 0.333 &amp; 1
+\end{array}\right]\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-2" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (2)</h2>
+<div title="Örnek 4: Ev Satın Alma (2)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (2)</strong></p>
+</div>
+<div class="callout-content">
+<p>Öncelikle sorunun şemasını çizerek başlayalım.</p>
+<p><img data-src="./images/EX_4_figure.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-3" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (3)</h2>
+<div title="Örnek 4: Ev Satın Alma (3)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (3)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="fragment" data-fragment-index="1" style="font-size: 90%;">
+<p>Tüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N = \left[\begin{array}{c|cc}
+&amp; \text{K} &amp; \text{J} \\
+\hline
+\text{K} &amp; 0.667 &amp; 0.667 \\
+\text{J} &amp; 0.333 &amp; 0.333
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_K = \left[\begin{array}{c|cc}
+&amp; \text{KD} &amp; \text{KI} \\
+\hline
+\text{KD} &amp; 0.25 &amp; 0.25 \\
+\text{KI} &amp; 0.75 &amp; 0.75
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_J = \left[\begin{array}{c|cc}
+&amp; \text{JD} &amp; \text{JI} \\
+\hline
+\text{JD} &amp; 0.8 &amp; 0.8 \\
+\text{JI} &amp; 0.2 &amp; 0.2
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_{KD} =  \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.545 &amp; 0.571 &amp; 0.5 \\
+\text{B} &amp; 0.273 &amp; 0.286 &amp; 0.333 \\
+\text{C} &amp; 0.182 &amp; 0.143 &amp; 0.167
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:33%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 80%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{K} = \tfrac{1}{2}(0.667 + 0.667) = 0.667\]</span></span> <span class="light-blue"><span class="math display">\[w_{J} = \tfrac{1}{2}(0.333 + 0.333) = 0.333\]</span></span> <span class="light-blue"><span class="math display">\[w = \begin{bmatrix}0.667 &amp; 0.333\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_K\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{K,D} = \tfrac{1}{2}(0.25 + 0.25) = 0.25\]</span></span> <span class="light-blue"><span class="math display">\[w_{K,I} = \tfrac{1}{2}(0.75 + 0.75) = 0.75\]</span></span> <span class="light-blue"><span class="math display">\[w_K = \begin{bmatrix}0.25 &amp; 0.75\end{bmatrix}^T\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:34%;">
+<div class="fragment" data-fragment-index="9" style="font-size: 80%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="10" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_J\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{J,D} = \tfrac{1}{2}(0.8 + 0.8) = 0.8\]</span></span> <span class="light-blue"><span class="math display">\[w_{J,I} = \tfrac{1}{2}(0.2 + 0.2) = 0.2\]</span></span> <span class="light-blue"><span class="math display">\[w_J = \begin{bmatrix}0.8 &amp; 0.2\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11" style="font-size: 80%;">
+<p><span class="red"><span class="math inline">\(N_{KD}\)</span> matrisi için</span></p>
+<p><span class="light-blue"><span class="math display">\[w_{KD,A} = \tfrac{1}{3}(0.545 + 0.571 + 0.5) = 0.539\]</span></span> <span class="light-blue"><span class="math display">\[w_{KD,B} = \tfrac{1}{3}(0.273 + 0.286 + 0.333) = 0.297\]</span></span> <span class="light-blue"><span class="math display">\[w_{KD,C} = \tfrac{1}{3}(0.182 + 0.143 + 0.167) = 0.164\]</span></span> <span class="light-blue"><span class="math display">\[w_{KD} = \begin{bmatrix}0.539 &amp; 0.297 &amp; 0.164\end{bmatrix}^T\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-4" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (4)</h2>
+<div title="Örnek 4: Ev Satın Alma (4)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (4)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="fragment" data-fragment-index="1" style="font-size: 90%;">
+<p>Tüm matrislerin elemanlarını, sütun toplamlarına bölerek normalize edilmiş hale getirelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_{KI} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.286 &amp; 0.333 &amp; 0.273 \\
+\text{B} &amp; 0.143 &amp; 0.167 &amp; 0.182 \\
+\text{C} &amp; 0.571 &amp; 0.5 &amp; 0.545
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_{JD} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.571 &amp; 0.75 &amp; 0.333 \\
+\text{B} &amp; 0.143 &amp; 0.188 &amp; 0.5 \\
+\text{C} &amp; 0.286 &amp; 0.062 &amp; 0.167
+\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4" style="font-size: 80%;">
+<p><span class="light-blue"><span class="math display">\[N_{JI} = \left[\begin{array}{c|ccc}
+&amp; \text{A} &amp; \text{B} &amp; \text{C} \\
+\hline
+\text{A} &amp; 0.308 &amp; 0.273 &amp; 0.5 \\
+\text{B} &amp; 0.615 &amp; 0.545 &amp; 0.375 \\
+\text{C} &amp; 0.077 &amp; 0.182 &amp; 0.125
+\end{array}\right]\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:33%;">
+<div class="fragment" data-fragment-index="6" style="font-size: 75%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="7" style="font-size: 75%;">
+<p><span class="red"><span class="math inline">\(N_{KI}\)</span> matrisi için</span> <span class="light-blue"><span class="math display">\[w_{KI,A} = \tfrac{1}{3}(0.286 + 0.333 + 0.273) = 0.297\]</span></span> <span class="light-blue"><span class="math display">\[w_{KI,B} = \tfrac{1}{3}(0.143 + 0.167 + 0.182) = 0.164\]</span></span> <span class="light-blue"><span class="math display">\[w_{KI,C} = \tfrac{1}{3}(0.571 + 0.5 + 0.545) = 0.539\]</span></span> <span class="light-blue"><span class="math display">\[w_{KI} = \begin{bmatrix}0.297 &amp; 0.164 &amp; 0.539\end{bmatrix}^T\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="8" style="font-size: 75%;">
+<p><span class="red"><span class="math inline">\(N_{JD}\)</span> matrisi için</span></p>
+<p><span class="light-blue"><span class="math display">\[w_{JD,A} = \tfrac{1}{3}(0.571 + 0.75 + 0.333) = 0.552\]</span></span> <span class="light-blue"><span class="math display">\[w_{JD,B} = \tfrac{1}{3}(0.143 + 0.188 + 0.5) = 0.277\]</span></span> <span class="light-blue"><span class="math display">\[w_{JD,C} = \tfrac{1}{3}(0.286 + 0.062 + 0.167) = 0.172\]</span></span> <span class="light-blue"><span class="math display">\[w_{JD} = \begin{bmatrix}0.552 &amp; 0.277 &amp; 0.172\end{bmatrix}^T\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:34%;">
+<div class="fragment" data-fragment-index="9" style="font-size: 75%;">
+<p>Satır ortalamalarını hesaplayarak her bir matris için göreceli ağırlıkları elde edelim.</p>
+</div>
+<div class="fragment" data-fragment-index="10" style="font-size: 75%;">
+<p><span class="red"><span class="math inline">\(N_{JI}\)</span> matrisi için</span></p>
+<p><span class="light-blue"><span class="math display">\[w_{JI,A} = \tfrac{1}{3}(0.308 + 0.273 + 0.5) = 0.36\]</span></span> <span class="light-blue"><span class="math display">\[w_{JI,B} = \tfrac{1}{3}(0.615 + 0.545 + 0.375) = 0.512\]</span></span> <span class="light-blue"><span class="math display">\[w_{JI,C} = \tfrac{1}{3}(0.077 + 0.182 + 0.125) = 0.128\]</span></span> <span class="light-blue"><span class="math display">\[w_{JI} = \begin{bmatrix}0.36 &amp; 0.512 &amp; 0.128\end{bmatrix}^T\]</span></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-5" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (5)</h2>
+<div title="Örnek 4: Ev Satın Alma (5)" style="font-size: 75%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (5)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Elde edilen matrislerden <span class="light-red"><span class="math inline">\(A\)</span></span>, <span class="light-red"><span class="math inline">\(A_K\)</span></span> ve <span class="light-red"><span class="math inline">\(A_J\)</span></span> sütunları özdeş olduğundan tutarlıyken, sütunları özdeş olmayan <span class="light-red"><span class="math inline">\(A_{KD}\)</span></span>,<span class="light-red"><span class="math inline">\(A_{KI}\)</span></span>, <span class="light-red"><span class="math inline">\(A_{JD}\)</span></span> ve <span class="light-red"><span class="math inline">\(A_{JI}\)</span></span> tutarlı değildir. Tutarlı olmayan bu matrislerden hangilerindeki tutarsızlığa katlanılabilineceğine bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Öncelikle <span class="light-red"><span class="math inline">\(A_{KD}\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="3" style="font-size: 95%;">
+<p><span class="light-blue"><span class="math display">\[A_{KD} \cdot \overline{w}_{KD} = \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 3 \\
+0.5 &amp; 1 &amp; 2 \\
+0.333 &amp; 0.5 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.539 \\
+0.297 \\
+0.164\end{array}\right] =
+\left[\begin{array}{c}
+1.625 \\
+0.894 \\
+0.492\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 1.625 + 0.894 + 0.492 = 3.011\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.008\]</span></span></p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="8">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_{KD}\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+<div class="fragment" data-fragment-index="9">
+<p>Şimdi <span class="light-red"><span class="math inline">\(A_{KI}\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="10" style="font-size: 95%;">
+<p><span class="light-blue"><span class="math display">\[A_{KI} \cdot \overline{w}_{KI} = \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 0.5 \\
+0.5 &amp; 1 &amp; 0.333 \\
+2 &amp; 3 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.297 \\
+0.164 \\
+0.539\end{array}\right] =
+\left[\begin{array}{c}
+0.894 \\
+0.492 \\
+1.625\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 0.894 + 0.492 + 1.625 = 3.011\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.011 - 3}{2} = 0.006\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="13">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="14">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.008\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="15">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_{KI}\)</span></span> nın <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-6" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (6)</h2>
+<div title="Örnek 4: Ev Satın Alma (6)" style="font-size: 75%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (6)</strong></p>
+</div>
+<div class="callout-content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment" data-fragment-index="1">
+<p>Öncelikle <span class="light-red"><span class="math inline">\(A_{JD}\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="2" style="font-size: 95%;">
+<p><span class="light-blue"><span class="math display">\[A_{JD} \cdot \overline{w}_{JD} = \left[\begin{array}{ccc}
+1 &amp; 4 &amp; 2 \\
+0.25 &amp; 1 &amp; 3 \\
+0.5 &amp; 0.333 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.552 \\
+0.277 \\
+0.172\end{array}\right] =
+\left[\begin{array}{c}
+2.002 \\
+0.93 \\
+0.54\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 2.002 + 0.93 + 0.54 = 3.471\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.471 - 3}{2} = 0.236\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.357\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="7">
+<p><span class="light-blue"><span class="math inline">\(CR \geq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_{JD}\)</span></span> nin <span class="light-red">tutarsızlık düzeyi kabul edilemez</span> seviyededir.</p>
+</div>
+</div><div class="column" style="width:1%;">
+
+</div><div class="column" style="width:49%;">
+<div class="fragment" data-fragment-index="8">
+<p>Şimdi <span class="light-red"><span class="math inline">\(A_{JI}\)</span></span> matrisinin tutarlılığına bakalım.</p>
+</div>
+<div class="fragment" data-fragment-index="9" style="font-size: 95%;">
+<p><span class="light-blue"><span class="math display">\[A_{JI} \cdot \overline{w}_{JI} = \left[\begin{array}{ccc}
+1 &amp; 0.5 &amp; 4 \\
+2 &amp; 1 &amp; 3 \\
+0.25 &amp; 0.333 &amp; 1
+\end{array}\right] \cdot \left[\begin{array}{c}
+0.36 \\
+0.512 \\
+0.128\end{array}\right] =
+\left[\begin{array}{c}
+1.128 \\
+1.616 \\
+0.389\end{array}\right]\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="10">
+<p><span class="light-blue"><span class="math display">\[n_{maks} = 1.128 + 1.616 + 0.389 = 3.132\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="11">
+<p><span class="light-blue"><span class="math inline">\(n=3\)</span></span> olduğundan</p>
+<p><span class="light-blue"><span class="math display">\[CI = \tfrac{\lambda_{\max}-n}{n-1} = \tfrac{3.132 - 3}{2} = 0.066\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="12">
+<p><span class="light-blue"><span class="math display">\[RI = \tfrac{1.98(n-2)}{n} = \tfrac{1.98(3-2)}{3} = 0.66\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="13">
+<p><span class="light-blue"><span class="math display">\[CR = \tfrac{CI}{RI} = 0.1\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="14">
+<p><span class="light-blue"><span class="math inline">\(CR \leq 0.1\)</span></span> olduğundan <span class="light-red"><span class="math inline">\(A_{JI}\)</span></span> nın <span class="light-red">tutarsızlık düzeyi kabul edilebilir</span> seviyededir.</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-7" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (7)</h2>
+<div title="Örnek 4: Ev Satın Alma (7)" style="font-size: 80%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (7)</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment" data-fragment-index="1">
+<p>Son olarak hesaplanan ağırlıklar ile ev tercihini belirleyelim.</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><span class="light-blue"><span class="math display">\[P(A) = w_K \cdot w_{K,D} \cdot w_{KD,A}  + w_K \cdot w_{K,I} \cdot w_{KI,A}  +  w_J \cdot w_{J,D} \cdot w_{JD,A} + w_J \cdot w_{J,I} \cdot w_{JI,A}\]</span></span></p>
+<p><span class="light-blue"><span class="math display">\[P(A) = 0.667\cdot0.25\cdot0.539 + 0.667\cdot0.75\cdot0.297 + 0.333\cdot0.8\cdot0.552 + 0.333\cdot0.2\cdot0.36 = 0.41\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><span class="light-blue"><span class="math display">\[P(B) = w_K \cdot w_{K,D} \cdot w_{KD,B}  + w_K \cdot w_{K,I} \cdot w_{KI,B}  +  w_J \cdot w_{J,D} \cdot w_{JD,B} + w_J \cdot w_{J,I} \cdot w_{JI,B}\]</span></span></p>
+<p><span class="light-blue"><span class="math display">\[P(B) = 0.667\cdot0.25\cdot0.297 + 0.667\cdot0.75\cdot0.164 + 0.333\cdot0.8\cdot0.277 + 0.333\cdot0.2\cdot0.512 = 0.239\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><span class="light-blue"><span class="math display">\[P(C) = w_K \cdot w_{K,D} \cdot w_{KD,C}  + w_K \cdot w_{K,I} \cdot w_{KI,C}  +  w_J \cdot w_{J,D} \cdot w_{JD,C} + w_J \cdot w_{J,I} \cdot w_{JI,C}\]</span></span></p>
+<p><span class="light-blue"><span class="math display">\[P(C) = 0.667\cdot0.25\cdot0.164 + 0.667\cdot0.75\cdot0.539 + 0.333\cdot0.8\cdot0.172 + 0.333\cdot0.2\cdot0.128 = 0.351\]</span></span></p>
+</div>
+<div class="fragment" data-fragment-index="5">
+<p><span class="orange">Ev için en iyi aday <span class="math inline">\(\%41\)</span> ile A dır.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="örnek-4-ev-satın-alma-8" class="slide level2">
+<h2>Örnek 4: Ev Satın Alma (8)</h2>
+<div title="Örnek 4: Ev Satın Alma (8)" style="font-size: 90%;">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Örnek 4: Ev Satın Alma (8)</strong></p>
+</div>
+<div class="callout-content">
+<p>Son durumda şema aşağıdaki hale gelir.</p>
+<p><img data-src="./images/EX_4ahp_expanded.png" width="900" height="450"></p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/iticulogo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>IST207 - Yöneylem Araştırması - Hafta 09 - 13 Kasım 2025 - Doç. Dr.&nbsp;Erhan Çene</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -1,0 +1,2789 @@
+---
+title: Hafta 09
+subtitle: "Simpleks Yöntem: Büyük M yöntemi - Maksimizasyon"
+date: 11/13/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 09 - 13 Kasım 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+## Büyük M Yöntemi - Maksimizasyon
+
+::: {.callout-important icon=false title="Simpleks Çözüm Yöntemi (1)" style="font-size: 120%;"}
+
+
+* Geçtiğimiz hafta [$M$ Yöntemi]{.light-red} ni minimizasyon problemleri için işlemiştik. 
+* Bu hafta ise [maksimizasyon soruları]{.light-red} için çözüm yapacağız.
+* Amaç fonksiyonu [maksimum]{.light-red} ise, [$A_i$]{.light-red} yapay değişkeninin katsayısı [$-M$]{.light-red}; [minimum]{.light-red} ise, [$A_i$]{.light-red} yapay değişkeninin katsayısı [$+M$]{.light-red} olacaktır.
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 1: Büyük M Maksimizasyon Problemi (1)" style="font-size: 120%;"}
+
+::: columns
+::: {.column width="40%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=-2x_1-3x_2-x_3$]{.light-blue}
+
+[$x_1 + 4x_2 + 2x_3 \geq 8$]{.light-blue}
+
+[$3x_1 + 2x_2 + x_3 \geq 6$]{.light-blue}
+
+[$x_1$ ,$x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="59%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=-2x_1-3x_2-x_3 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1-MA_2}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 90%;"}
+
+$$
+\begin{alignedat}{7}
+x_1 &+& 4x_2 &+& 2x_3 &\color{orange}-& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+1A_1 + 0A_2}} &\;\color{orange}= & 8,\\
+3x_1 &+& 2x_2 &+& x_3 &+& {\color{orange} {0s_1 -1s_2}}{\color{green} {+0A_1 + 1A_2}} &\;\color{orange}= & 6
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 95%;"}
+$x_1$, $x_2$ , $x_3 \geq 0$, [$s_1$ , $s_2 \geq 0$]{.orange} ve [$A_1$ , $A_2 \geq 0$]{.green} 
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 1: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="80%"}
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 1: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="80%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_04_select.html >}}
+```
+:::
+* [$-6M+3$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue} dur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* En düşük oran [$2$]{.red} olduğundan [$a_1$]{.red} [anahtar satırdır]{.light-blue}.
+* Anahtar sayı [$4$]{.red} olduğundan [$a_1$]{.light-blue} satırı [$0.25$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$a_1$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-2$]{.light-blue} ile çarpılarak, [$a_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 1 \\ 4 \\ 2 \\ -1 \\ 0 \\ 1 \\ 0 \\ 8 \end{pmatrix} \times 0.25 = \begin{pmatrix} 0.25 \\ 1 \\ 0.50 \\ -0.25 \\ 0 \\ 0.25 \\ 0 \\ 2 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $a_2$]{.red}
+
+$$\begin{pmatrix} 3 \\ 2 \\ 1 \\ 0 \\ -1 \\ 0 \\ 1 \\ 6 \end{pmatrix} - 2 \times \begin{pmatrix} 0.25 \\ 1 \\ 0.50 \\ -0.25 \\ 0 \\ 0.25 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 2.5 \\ 0 \\ 0 \\ 0.5 \\ -1 \\ -0.5 \\ 1 \\ 2 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="84%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter01_07_after_objective.html >}}
+```
+:::
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="15%"}
+
+
+* [$-2M-6$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_04_select.html >}}
+```
+:::
+
+* [$-2.5M+1.25$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$0.80$]{.red} olduğundan [$a_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 100%;"}
+* Anahtar sayı [$2.5$]{.red} olduğundan [$a_2$]{.light-blue} satırı [$2.5$]{.light-blue} a bölünmelidir.
+* Temel değişkenlerden [$a_2$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$-0.25$]{.light-blue} ile çarpılarak [$x_2$]{.light-blue} ile toplanır.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $a_2$]{.red}
+
+$$\begin{pmatrix} 2.5 \\ 0 \\ 0 \\ 0.5 \\ -1 \\ -0.5 \\ 1 \\ 2 \end{pmatrix} \div 2.5 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0.2 \\ -0.4 \\ -0.2 \\ 0.4 \\ 0.8 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 70%;"}
+[Diğer satırlar için değerlerin hesaplanması $x_2$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 0.25 \\ 1 \\ 0.50 \\ -0.25 \\ 0 \\ 0.25 \\ 0 \\ 2 \end{pmatrix} &-& 0.25 \times \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0.2 \\ -0.4 \\ -0.2 \\ 0.4 \\ 0.8 \end{pmatrix} \\
+&=& \begin{pmatrix} 0 \\ 1 \\ 0.50 \\ -0.30 \\ 0.10 \\ 0.30 \\ -0.10 \\ 1.80 \end{pmatrix} 
+\end{multline}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$-7$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (13)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter03_04_select.html >}}
+```
+:::
+
+* [$-0.5$]{.red} en düşük değer olduğundan [$x_3$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$3.6$]{.red} olduğundan [$x_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 85%;"}
+
+* Anahtar sayı [$0.50$]{.red} olduğundan [$x_2$]{.light-blue} satırı [$2$]{.light-blue} ile çarpılmalıdır.
+* Temel değişkenlerden [$x_2$]{.red} çözümden çıkarken, [$x_3$]{.red} çözüme girer.
+* [$x_3$]{.red} sütununun [$x_1$]{.red} satırı ile kesişim değeri zaten [$0$]{.red} olduğundan herhangi bir işlem yapmaya gerek yoktur.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (14)
+
+::: {.callout-tip icon=false title="Örnek 1: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter03_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_3$]{.red}
+
+$$\begin{pmatrix} 0 \\ 1 \\ 0.5 \\ -0.3 \\ 0.1 \\ 0.30 \\ -0.10 \\ 1.8 \end{pmatrix} \times 2 = \begin{pmatrix} 0 \\ 2 \\ 1 \\ -0.6 \\ 0.2 \\ 0.6 \\ -0.2 \\ 3.6 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (15)
+
+::: {.callout-tip icon=false title="Örnek 1: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter03_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 1: Büyük M Maksimizasyon Problemi (16)
+
+::: {.callout-tip icon=false title="Örnek 1: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex1\ex1_iter03_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=-5.20$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+* Bu çözümde [$x_1 = 0.80$]{.light-blue}, [$x_2 =0$]{.light-blue}, [$x_3 =3.60$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=0$]{.light-blue}, [$a_1=0$]{.light-blue}  ve [$a_2 = 0$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 2: Büyük M Maksimizasyon Problemi (1)" style="font-size: 120%;"}
+
+::: columns
+::: {.column width="40%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=21x_1+x_2+x_3$]{.light-blue}
+
+[$2x_1 + x_2 + 4x_3 = 20$]{.light-blue}
+
+[$x_1 + 3x_2 + 4x_3 = 30$]{.light-blue}
+
+[$x_1$ ,$x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="59%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=21x_1+x_2+x_3 \\ 
+ \color{green}{-MA_1-MA_2}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 95%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& x_2 &+& 4x_3 && {\color{green} {+1A_1 + 0A_2}} &\;\color{orange}= & 20,\\
+x_1 &+& 3x_2 &+& 4x_3 && {\color{green} {+0A_1 + 1A_2}} &\;\color{orange}= & 30
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 95%;"}
+$x_1$, $x_2$ , $x_3 \geq 0$ ve [$A_1$ , $A_2 \geq 0$]{.green} 
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 2: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="73%"}
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 2: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="80%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_04_select.html >}}
+```
+:::
+* [$-8M-1$]{.red} en düşük değer olduğundan [$x_3$]{.red} [anahtar sütun]{.light-blue} dur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* En düşük oran [$5$]{.red} olduğundan [$a_1$]{.red} [anahtar satırdır]{.light-blue}.
+* Anahtar sayı [$4$]{.red} olduğundan [$a_1$]{.light-blue} satırı [$0.25$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$a_1$]{.red} çözümden çıkarken, [$x_3$]{.red} çözüme girer.
+* Anahtar satır [$-4$]{.light-blue} ile çarpılarak, [$a_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_3$]{.red}
+
+$$\begin{pmatrix} 2 \\ 1 \\ 4 \\ 1 \\ 0 \\ 20 \end{pmatrix} \times 0.25 = \begin{pmatrix} 0.50 \\ 0.25 \\ 1 \\ 0.25 \\ 0 \\ 5 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $a_2$]{.red}
+
+$$\begin{pmatrix} 1 \\ 3 \\ 4 \\ 0 \\ 1 \\ 30 \end{pmatrix} - 4 \times \begin{pmatrix} 0.50 \\ 0.25 \\ 1 \\ 0.25 \\ 0 \\ 5 \end{pmatrix} = \begin{pmatrix} -1 \\ 2 \\ 0 \\ -1 \\ 1 \\ 10 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="84%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter01_07_after_objective.html >}}
+```
+:::
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="15%"}
+
+:::{style="font-size: 90%;"}
+* [$-10M+5$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_04_select.html >}}
+```
+:::
+
+* [$-2M+0.25$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$5$]{.red} olduğundan [$a_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$2$]{.red} olduğundan [$a_2$]{.light-blue} satırı [$2$]{.light-blue} ye bölünmelidir.
+* Temel değişkenlerden [$a_2$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-0.25$]{.light-blue} ile çarpılarak [$x_3$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} -1 \\ 2 \\ 0 \\ -1 \\ 1 \\ 10  \end{pmatrix} \div 2 = \begin{pmatrix} -0.5 \\ 1 \\ 0 \\ -0.5 \\ 0.5 \\ 5 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $x_3$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 0.50 \\ 0.25 \\ 1 \\ 0.25 \\ 0 \\ 5 \end{pmatrix} &-& 0.25 \times \begin{pmatrix} -0.5 \\ 1 \\ 0 \\ -0.5 \\ 0.5 \\ 5 \end{pmatrix} \\
+&=& \begin{pmatrix} 0.62 \\ 0 \\ 1 \\ 0.38 \\ -0.12 \\ 3.75 \end{pmatrix} 
+\end{multline}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$8.75$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (13)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_04_select.html >}}
+```
+:::
+
+* [$-20.88$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$6$]{.red} olduğundan [$x_3$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$0.62$]{.red} olduğundan [$x_3$]{.light-blue} satırı [$0.62$]{.light-blue} ya bölünmelidir.
+* Temel değişkenlerden [$x_3$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* [$x_3$]{.red} sütunu [$0.5$]{.red} ile çarpılarak [$x_1$]{.red} satırı ile toplanmalıdır.
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (14)
+
+::: {.callout-tip icon=false title="Örnek 2: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_3$]{.red}
+
+$$\begin{pmatrix} 0.62 \\ 0 \\ 1 \\ 0.38 \\ -0.12 \\ 3.75 \end{pmatrix} \div 0.62 = \begin{pmatrix} 1 \\ 0 \\ 1.60 \\ 0.6 \\ -0.2 \\ 6 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (15)
+
+::: {.callout-tip icon=false title="Örnek 2: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 80%;"}
+\begin{multline}
+\begin{pmatrix} -0.50 \\ 1 \\ 0 \\ -0.5 \\ 0.5 \\ 5 \end{pmatrix} &+& 0.5 \times \begin{pmatrix} 1 \\ 0 \\ 1.60 \\ 0.6 \\ -0.2 \\ 6 \end{pmatrix} \\
+&=& \begin{pmatrix} 0 \\ 1 \\ 0.8 \\ -0.20 \\ 0.40 \\ 8 \end{pmatrix} 
+\end{multline}
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 2: Büyük M Maksimizasyon Problemi (16)
+
+::: {.callout-tip icon=false title="Örnek 2: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex2\ex2_iter03_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=134$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+* Bu çözümde [$x_1 = 6$]{.light-blue}, [$x_2 =8$]{.light-blue}, [$x_3 =0$]{.light-blue}, [$a_1=0$]{.light-blue}  ve [$a_2 = 0$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 3: Büyük M Maksimizasyon Problemi (1)" style="font-size: 120%;"}
+
+::: columns
+::: {.column width="40%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=0.2x_1+0.5x_2$]{.light-blue}
+
+[$3x_1 + 2x_2 \geq 6$]{.light-blue}
+
+[$x_1 + 2x_2 \leq 4$]{.light-blue}
+
+[$x_1$ ,$x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="59%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=0.2x_1+0.5x_2 \\ 
+ \color{orange}{+0s_1+0s_2} \color{green}{-MA_1}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 95%;"}
+
+$$
+\begin{alignedat}{7}
+3x_1 &+& 2x_2 &\color{orange}-& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 6,\\
+1x_1 &+& 2x_2 &+& {\color{orange} {0s_1 +1s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 4
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 95%;"}
+$x_1$, $x_2 \geq 0$ ve [$s_1$, $s_2$, $A_1 \geq 0$]{.green} 
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 3: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="73%"}
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 3: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="80%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_04_select.html >}}
+```
+:::
+* [$-3M-0.20$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue} dur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* En düşük oran [$2$]{.red} olduğundan [$a_1$]{.red} [anahtar satırdır]{.light-blue}.
+* Anahtar sayı [$3$]{.red} olduğundan [$a_1$]{.light-blue} satırı [$\frac{1}{3}$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$a_1$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$-1$]{.light-blue} ile çarpılarak, [$s_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 3 \\ 2 \\ -1 \\ 0 \\ 1 \\ 6 \end{pmatrix} \times \frac{1}{3} = \begin{pmatrix} 1 \\ 0.67 \\ -0.33 \\ 0 \\ 0.33 \\ 2 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_2$]{.red}
+
+$$\begin{pmatrix} 1 \\ 2 \\ 0 \\ 1 \\ 0 \\ 4 \end{pmatrix} - 1 \times \begin{pmatrix} 1 \\ 0.67 \\ -0.33 \\ 0 \\ 0.33 \\ 2 \end{pmatrix} = \begin{pmatrix} 0 \\ 1.33 \\ 0.33 \\ 1 \\ -0.33 \\ 2 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 3: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="84%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter01_07_after_objective.html >}}
+```
+:::
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="15%"}
+
+:::{style="font-size: 90%;"}
+* [$0.40$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_04_select.html >}}
+```
+:::
+
+* [$-0.37$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$1.50$]{.red} olduğundan [$s_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Anahtar sayı [$1.33$]{.red} olduğundan [$s_2$]{.light-blue} satırı [$1.33$]{.light-blue} e bölünmelidir.
+* Temel değişkenlerden [$s_2$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-0.67$]{.red} ile çarpılarak [$x_1$]{.red} satırı ile toplanmalıdır.
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 3: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 0 \\ 1.33\\ 0.33 \\ 1 \\ -0.33 \\ 2  \end{pmatrix} \div 1.33 = \begin{pmatrix} 0 \\ 1 \\ 0.25 \\ 0.75 \\ -0.25 \\ 1.50 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 3: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 80%;"}
+\begin{multline}
+\begin{pmatrix} 1 \\ 0.67 \\ -0.33 \\ 0 \\ 0.33 \\ 2 \end{pmatrix} &-& 0.67 \times \begin{pmatrix} 0 \\ 1 \\ 0.25 \\ 0.75 \\ -0.25 \\ 1.50 \end{pmatrix} \\
+&=& \begin{pmatrix} 1 \\ 0 \\ -0.50 \\ -0.50 \\ 0.50 \\ 1 \end{pmatrix} 
+\end{multline}
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 3: Büyük M Maksimizasyon Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 3: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex3\ex3_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=0.95$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+* Bu çözümde [$x_1 = 1$]{.light-blue}, [$x_2 =1.5$]{.light-blue},[$s_1=0$]{.light-blue}, [$s_2=0$]{.light-blue}  ve [$a_1 = 0$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 4: Büyük M Maksimizasyon Problemi (1)" style="font-size: 120%;"}
+
+::: columns
+::: {.column width="40%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=2x_1+3x_2-5x_3$]{.light-blue}
+
+[$x_1 + x_2 + x_3 = 7$]{.light-blue}
+
+[$2x_1 - 5x_2 + x_3 \geq 10$]{.light-blue}
+
+[$x_1$ ,$x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="59%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=2x_1+3x_2-5x_3 \\ 
+\color{orange}{-1s_1} \color{green}{-MA_1-MA_2}
+\end{multline}
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 90%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 1x_2 &+& 1x_3 &\color{orange}+& {\color{orange} {0s_1}}{\color{green} {+1A_1 + 0A_2}} &\;\color{orange}= & 7,\\
+2x_1 &-& 5x_2 &+& x_3 &\color{orange}-& {\color{orange} {1s_2}}{\color{green} {+0A_1 + 1A_2}} &\;\color{orange}= & 10
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 95%;"}
+$x_1$, $x_2$ , $x_3 \geq 0$, [$s_1 \geq 0$]{.orange} ve [$A_1$ , $A_2 \geq 0$]{.green} 
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 4: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="80%"}
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 4: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="80%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_04_select.html >}}
+```
+:::
+* [$-3M-2$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue} dur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* En düşük oran [$5$]{.red} olduğundan [$a_2$]{.red} [anahtar satırdır]{.light-blue}.
+* Anahtar sayı [$2$]{.red} olduğundan [$a_2$]{.light-blue} satırı [$0.50$]{.light-blue} ile çarpılır.
+* Temel değişkenlerden [$a_2$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$-1$]{.light-blue} ile çarpılarak, [$a_1$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 2 \\ -5 \\ 1 \\ -1 \\ 0 \\ 1 \\ 10 \end{pmatrix} \times 0.50 = \begin{pmatrix} 1 \\ -2.50 \\ 0.50 \\ -0.55 \\ 0 \\ 0.50 \\ 5 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $a_1$]{.red}
+
+$$\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \\ 1 \\ 0 \\ 7 \end{pmatrix} - 1 \times \begin{pmatrix} 1 \\ -2.50 \\ 0.50 \\ -0.50 \\ 0 \\ 0.50 \\ 5 \end{pmatrix} = \begin{pmatrix} 0 \\ 3.50 \\ 0.5 \\ 0.5 \\ 1 \\ -0.5 \\ 2 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="84%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter01_07_after_objective.html >}}
+```
+:::
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="15%"}
+
+
+* [$-2M+10$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_04_select.html >}}
+```
+:::
+
+* [$-3.5M-8$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$0.57$]{.red} olduğundan [$a_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 100%;"}
+* Anahtar sayı [$3.5$]{.red} olduğundan [$a_1$]{.light-blue} satırı [$3.5$]{.light-blue} a bölünmelidir.
+* Temel değişkenlerden [$a_1$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$2.5$]{.light-blue} ile çarpılarak [$x_1$]{.light-blue} satırı ile toplanır.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $a_2$]{.red}
+
+$$\begin{pmatrix} 0 \\ 3.5 \\ 0.50 \\ 0.50 \\ 1 \\ -0.50 \\ 2 \end{pmatrix} \div 3.5 = \begin{pmatrix} 0 \\ 1 \\ 0.14 \\ 0.14 \\ 0.29 \\ -0.14 \\ 0.57 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 4: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 70%;"}
+[Diğer satırlar için değerlerin hesaplanması $x_1$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 1 \\ -2.50 \\ 0.50 \\ -0.50 \\ 0 \\ 0.50 \\ 5 \end{pmatrix} &+& 2.50 \times \begin{pmatrix} 0 \\ 1 \\ 0.14 \\ 0.14 \\ 0.29 \\ -0.14 \\ 0.57 \end{pmatrix} \\
+&=& \begin{pmatrix} 1 \\ 0 \\ 0.86 \\ -0.14 \\ 0.71 \\ 0.14 \\ 6.43 \end{pmatrix} 
+\end{multline}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$14.57$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (13)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter03_04_select.html >}}
+```
+:::
+
+* [$-2.86$]{.red} en düşük değer olduğundan [$x_3$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$4$]{.red} olduğundan [$x_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 85%;"}
+
+* Anahtar sayı [$0.14$]{.red} olduğundan [$x_2$]{.light-blue} satırı [$0.14$]{.light-blue} ile bölünmelidir.
+* Temel değişkenlerden [$x_2$]{.red} çözümden çıkarken, [$x_3$]{.red} çözüme girer.
+* Anahtar satır [$-0.86$]{.light-blue} ile çarpılarak [$x_1$]{.light-blue} satırı ile toplanır.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (14)
+
+::: {.callout-tip icon=false title="Örnek 4: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter03_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_3$]{.red}
+
+$$\begin{pmatrix} 0 \\ 1 \\ 0.14 \\ 0.14 \\ 0.29 \\ -0.14 \\ 0.57 \end{pmatrix} \div 0.14 = \begin{pmatrix} 0 \\ 7 \\ 1 \\ 1 \\ 2 \\ -1 \\ 4 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (15)
+
+::: {.callout-tip icon=false title="Örnek 4: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter03_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+:::{style="font-size: 75%;"}
+
+
+[Diğer satırlar için değerlerin hesaplanması $x_1$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 1 \\ 0 \\ 0.86 \\ -0.14 \\ 0.71 \\ 0.14 \\ 6.43 \end{pmatrix} &-& 0.86 \times \begin{pmatrix}  0 \\ 7 \\ 1 \\ 1 \\ 2 \\ -1 \\ 4 \end{pmatrix} \\
+&=& \begin{pmatrix} 1 \\ -6 \\ 0 \\ -1 \\ -1 \\ 1 \\ 3 \end{pmatrix} 
+\end{multline}
+:::
+:::
+:::
+
+:::
+
+
+## Örnek 4: Büyük M Maksimizasyon Problemi (16)
+
+::: {.callout-tip icon=false title="Örnek 4: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex4\ex4_iter03_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=26$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+* Bu çözümde [$x_1 = 3$]{.light-blue}, [$x_2 =0$]{.light-blue}, [$x_3 =4$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$a_1=0$]{.light-blue}  ve [$a_2 = 0$]{.light-blue}’dır.
+:::
+
+:::
+
+:::
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (1)
+
+::: {.callout-tip icon=false title="Örnek 5: Büyük M Maksimizasyon Problemi (1)" style="font-size: 120%;"}
+
+::: columns
+::: {.column width="40%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+
+[$Z_{max}=2x_1-7x_2$]{.light-blue}
+
+[$4x_1 + 5x_2 \leq 10$]{.light-blue}
+
+[$6x_1 + 7x_2 \geq 10$]{.light-blue}
+
+[$x_1$ , $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="59%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=2x_1-7x_2 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1}
+\end{multline}
+:::
+
+:::{.fragment fragment-index=7 style="font-size: 90%;"}
+
+$$
+\begin{alignedat}{7}
+4x_1 &+& 5x_2 &\color{orange}+& {\color{orange} {1s_1+0s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 10,\\
+6x_1 &+& 7x_2 &\color{orange}+& {\color{orange} {0s_1-1s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 3
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 95%;"}
+$x_1$, $x_2$ , $x_3 \geq 0$, [$s_1$, $s_2 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green} 
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (2)
+
+::: {.callout-tip icon=false title="Örnek 5: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+
+::: {.column width="80%"}
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (3)
+
+::: {.callout-tip icon=false title="Örnek 5: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="80%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (4)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (5)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_04_select.html >}}
+```
+:::
+* [$-7M+7$]{.red} en düşük değer olduğundan [$x_2$]{.red} [anahtar sütun]{.light-blue} dur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* En düşük oran [$0.43$]{.red} olduğundan [$a_1$]{.red} [anahtar satırdır]{.light-blue}.
+* Anahtar sayı [$7$]{.red} olduğundan [$a_1$]{.light-blue} satırı [$7$]{.light-blue} ye bölünmelidir.
+* Temel değişkenlerden [$a_1$]{.red} çözümden çıkarken, [$x_2$]{.red} çözüme girer.
+* Anahtar satır [$-5$]{.light-blue} ile çarpılarak, [$x_2$]{.light-blue} ile toplanır.
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (6)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+[Anahtar satır için değerlerin hesaplanması $x_2$]{.red}
+
+$$\begin{pmatrix} 6 \\ 7 \\ 0 \\ -1 \\ 1 \\ 3 \end{pmatrix} \div 7 = \begin{pmatrix} 0.86 \\ 1 \\ 0 \\ -0.14 \\ 0.14 \\ 0.43 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (7)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 75%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_1$]{.red}
+
+$$\begin{pmatrix} 4 \\ 5 \\ 1 \\ 0 \\ 0 \\ 10 \end{pmatrix} - 5 \times \begin{pmatrix} 0.86 \\ 1 \\ 0 \\ -0.14 \\ 0.14 \\ 0.43  \end{pmatrix} = \begin{pmatrix} -0.29 \\ 0 \\ 1 \\ 0.71 \\ -0.71 \\ 7.86 \end{pmatrix} $$
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (8)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="84%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter01_07_after_objective.html >}}
+```
+:::
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="15%"}
+
+
+* [$-3$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (9)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-md .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_04_select.html >}}
+```
+:::
+
+* [$-8$]{.red} en düşük değer olduğundan [$x_1$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$0.50$]{.red} olduğundan [$x_2$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 100%;"}
+* Anahtar sayı [$0.86$]{.red} olduğundan [$x_2$]{.light-blue} satırı [$0.86$]{.light-blue} a bölünmelidir.
+* Temel değişkenlerden [$x_2$]{.red} çözümden çıkarken, [$x_1$]{.red} çözüme girer.
+* Anahtar satır [$0.29$]{.light-blue} ile çarpılarak [$x_1$]{.light-blue} satırı ile toplanır.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (10)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_1$]{.red}
+
+$$\begin{pmatrix} 0.86 \\ 1 \\ 0 \\ -0.14 \\ 0.14 \\ 0.43 \end{pmatrix} \div 0.86 = \begin{pmatrix} 1 \\ 1.17 \\ 0 \\ -0.17 \\ 0.17 \\ -0.50 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (11)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 70%;"}
+[Diğer satırlar için değerlerin hesaplanması $s_1$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} -0.29 \\ 0 \\ 1 \\ 0.71 \\ -0.71 \\ 7.86  \end{pmatrix} &+& 0.29 \times \begin{pmatrix}  1 \\ 1.17 \\ 0 \\ -0.17 \\ 0.17 \\ -0.50 \end{pmatrix} \\
+&=& \begin{pmatrix} 0 \\ 0.33 \\ 1 \\ 0.67 \\ -0.67 \\ 8 \end{pmatrix} 
+\end{multline}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (12)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$Z_j - C_j$]{.light-blue} değerlerinde [$\leq 0$]{.light-blue} değerler olduğu için henüz optimuma ulaşılmadı.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* [$1$]{.light-blue} optimum değer değil.
+* [İterasyona devam edilmeli.]{.orange}
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (13)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="79%"}
+
+:::{.tblbox .tbl-fs-lg .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter03_04_select.html >}}
+```
+:::
+
+* [$-0.33$]{.red} en düşük değer olduğundan [$s_2$]{.red} [anahtar sütun]{.light-blue}, en düşük oran [$12$]{.red} olduğundan [$s_1$]{.red} [anahtar satırdır]{.light-blue}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::{style="font-size: 85%;"}
+
+* Anahtar sayı [$0.67$]{.red} olduğundan [$s_1$]{.light-blue} satırı [$0.67$]{.light-blue} ile bölünmelidir.
+* Temel değişkenlerden [$s_1$]{.red} çözümden çıkarken, [$s_2$]{.red} çözüme girer.
+* Anahtar satır [$0.17$]{.light-blue} ile çarpılarak [$x_1$]{.light-blue} satırı ile toplanır.
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (14)
+
+::: {.callout-tip icon=false title="Örnek 5: Anahtar Satır İçin Yeni Değerler (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter03_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+[Anahtar satır için değerlerin hesaplanması $x_3$]{.red}
+
+$$\begin{pmatrix} 0 \\ 0.33 \\ 1 \\ 0.67 \\ -0.67 \\ 8 \end{pmatrix} \div 0.67 = \begin{pmatrix} 0 \\ 0.50 \\ 1.50 \\ 1 \\ -1 \\ 12 \end{pmatrix}$$
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (15)
+
+::: {.callout-tip icon=false title="Örnek 5: Diğer Satırlar İçin Yeni Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter03_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+:::{style="font-size: 75%;"}
+
+
+[Diğer satırlar için değerlerin hesaplanması $s_2$]{.red}
+
+
+\begin{multline}
+\begin{pmatrix} 1 \\ 1.17 \\ 0 \\ -0.17 \\ 0.17 \\ 0.50 \end{pmatrix} &+& 0.17 \times \begin{pmatrix} 0 \\ 0.50 \\ 1.50 \\ 1 \\ -1 \\ 12 \end{pmatrix} \\
+&=& \begin{pmatrix} 1 \\ 1.25 \\ 0.25 \\ 0 \\ 0 \\ 2.50 \end{pmatrix} 
+\end{multline}
+:::
+:::
+:::
+
+:::
+
+
+## Örnek 5: Büyük M Maksimizasyon Problemi (16)
+
+::: {.callout-tip icon=false title="Örnek 5: Simpleks Adım Sonu (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{.tblbox .tbl-fs-xl .w-100  .pad-none .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\out\ex5\ex5_iter03_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+* Son durumda [$Z=5$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+* Bu çözümde [$x_1 = 2.50$]{.light-blue}, [$x_2 =0$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 12$]{.light-blue} ve [$a_1=0$]{.light-blue} dır.
+:::
+
+:::
+
+:::
