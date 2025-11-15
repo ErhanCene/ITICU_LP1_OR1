@@ -9904,5 +9904,1191 @@
     "title": "Hafta 09",
     "section": "Örnek 4: Ev Satın Alma (8)",
     "text": "Örnek 4: Ev Satın Alma (8)\n\n\n\n\nÖrnek 4: Ev Satın Alma (8)\n\n\nSon durumda şema aşağıdaki hale gelir."
+  },
+  {
+    "objectID": "IST207/MainPage/IST207_WEEK10_MAIN.html",
+    "href": "IST207/MainPage/IST207_WEEK10_MAIN.html",
+    "title": "IST207 - Hafta 10",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST207 - Yöneylem Araştırması 1 Ders Notları",
+      "IST207 - Hafta 10"
+    ]
+  },
+  {
+    "objectID": "IST115/MainPage/IST115_WEEK10_MAIN.html",
+    "href": "IST115/MainPage/IST115_WEEK10_MAIN.html",
+    "title": "IST115 - Hafta 10",
+    "section": "",
+    "text": "Tam Ekran moduna klavyenizden ff tuşuna basarak geçebilirsiniz.\nDers notunun PDF haline bağlantıdan ulaşabilirsiniz\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Öğretim Üyesi hk.",
+      "IST115 - Doğrusal Programlama 1 Ders Notları",
+      "IST115 - Hafta 10"
+    ]
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html",
+    "href": "IST115/Hafta10/index.html",
+    "title": "Hafta 10",
+    "section": "",
+    "text": "Temel Kavramlar\n\n\n\n\nÖnümüzdeki iki hafta boyunca simpleks yöntem ya da Büyük M yöntemi uygulanırken karşılaşılabilecek özel durumlardan bahsedilecektir.\nBu özel durumlar arasında,\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması,\n\\(Z_j-C_j\\) değerlerinin aynı olması,\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu),\nsınırsız çözüm bulunması,\nalternatif en iyi çözümün bulunması,\nsınırlandırılmamış değişkenler ve\nuygun çözümün bulunmaması sayılabilir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#simpleks-yöntemde-özel-durumlar",
+    "href": "IST115/Hafta10/index.html#simpleks-yöntemde-özel-durumlar",
+    "title": "Hafta 10",
+    "section": "Simpleks Yöntemde Özel Durumlar",
+    "text": "Simpleks Yöntemde Özel Durumlar\n\n\n\n\nTemel Kavramlar\n\n\n\nÖnümüzdeki iki hafta boyunca simpleks yöntem ya da Büyük M yöntemi uygulanırken karşılaşılabilecek özel durumlardan bahsedilecektir.\nBu özel durumlar arasında,\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması,\n\\(Z_j-C_j\\) değerlerinin aynı olması,\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu),\nsınırsız çözüm bulunması,\nalternatif en iyi çözümün bulunması,\nsınırlandırılmamış değişkenler ve\nuygun çözümün bulunmaması sayılabilir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#fracb_ianahtar-quad-sütun-değerinin-0-olması",
+    "href": "IST115/Hafta10/index.html#fracb_ianahtar-quad-sütun-değerinin-0-olması",
+    "title": "Hafta 10",
+    "section": "\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması",
+    "text": "\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması\n\n\n\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması\n\n\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması, simpleks yöntemin uygulanmasına bir etkisi yoktur.\nOranın \\(0\\) olması, ilgili satırın kesinlikle temel çözümden çıkarılacağını gösterir.\nSimpleks yöntem adımları aynı şekilde uygulanır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-1",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (1)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (1)\n\n\n\n\nÖrnek 1: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=3x_1+9x_2\\)\n\\(x_1 + 4x_2 \\leq 8\\)\n\\(x_1 + 2x_2 \\leq 4\\)\n\\(x_1\\) , \\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&3x_1+9x_2 \\\\\n&+& \\color{orange}{0s_1+0s_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\nx_1 &+& 4x_2 &+& {\\color{orange} {1s_1 + 0s_2}} &\\;\\color{orange}= & 8,\\\\\nx_1 &+& 2x_2 &+& {\\color{orange} {0s_1 + 1s_2}} &\\;\\color{orange}= & 4\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\) , \\(s_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-2",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (2)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (2)\n\n\n\n\nÖrnek 1: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 1\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-3",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-3",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (3)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (3)\n\n\n\n\nÖrnek 1: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 2\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-9\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-4",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-4",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (4)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (4)\n\n\n\n\nÖrnek 1: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 3\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-9\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-5",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-5",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (5)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (5)\n\n\n\n\nÖrnek 1: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 4\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n\\(2\\)\n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-9\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-6",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-6",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (6)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (6)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 5\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-7",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-7",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (7)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (7)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 6\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0.50\\)\n\\(0\\)\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-8",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-8",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (8)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (8)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 7\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{2}$\n\\(0.50\\)\n\\(0\\)\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(2.25\\)\n\\(9\\)\n\\(2.25\\)\n+ 0\n\\(18\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-0.75\\)\n\\(0\\)\n\\(2.25\\)\n\\(0\\)\n\\(18\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-9",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-9",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (9)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (9)\n\n\n\n\nÖrnek 1: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 8\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n\\(8\\)\n\n\n$0\\, s_{2}$\n\\(0.50\\)\n\\(0\\)\n\\(-0.50\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\n\n$Z_{j}$\n\\(2.25\\)\n\\(9\\)\n\\(2.25\\)\n+ 0\n\\(18\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-0.75\\)\n\\(0\\)\n\\(2.25\\)\n\\(0\\)\n\\(18\\)\n \n\n\n\n\n\n\n\n\n\n\n\\(\\frac{b_i}{a_j}=0\\) olduğundan temelden çıkacak satır \\(s_2\\) dir.\nTüm işlemler simpleks yönteme göre devam eder."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-10",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-10",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (10)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (10)\n\n\n\n\nÖrnek 1: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 9\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0.25\\)\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-11",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-11",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (11)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (11)\n\n\n\n\nÖrnek 1: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 10\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-12",
+    "href": "IST115/Hafta10/index.html#örnek-1-fracb_ianahtar-quad-sütun-değerinin-0-olması-12",
+    "title": "Hafta 10",
+    "section": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (12)",
+    "text": "Örnek 1: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması (12)\n\n\n\n\nÖrnek 1: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 11\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$9\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(3\\)\n\\(9\\)\n\\(1.50\\)\n\\(1.50\\)\n\\(18\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(1.50\\)\n\\(1.50\\)\n\\(18\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=18\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 0\\), \\(x_2 =2\\), \\(s_1 = 0\\), ve \\(s_2=0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#z_j-c_j-değerlerinin-aynı-olması",
+    "href": "IST115/Hafta10/index.html#z_j-c_j-değerlerinin-aynı-olması",
+    "title": "Hafta 10",
+    "section": "\\(Z_j-C_j\\) değerlerinin aynı olması",
+    "text": "\\(Z_j-C_j\\) değerlerinin aynı olması\n\n\n\n\n\\(Z_j-C_j\\) değerlerinin aynı olması\n\n\n\n\\(Z_j-C_j\\) değerlerinin aynı olması durumunda hangi sütunun seçileceğine dair bir kararsızlık oluşabilir.\nSütun seçimi için alternatif yöntemler olsa da bu derste aynı \\(Z_j-C_j\\) değerine sahip değişkenlerden soldaki anahtar sütun olarak seçilecektir.\nSimpleks yöntem adımları aynı şekilde uygulanmaya devam edilir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-1",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-1",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (1)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (1)\n\n\n\n\nÖrnek 2: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=8x_1+8x_2 + 6x_3\\)\n\\(2x_1 + 3x_2 + 4x_3 \\leq 12\\)\n\\(x_1 + 2x_2+ x_3 \\leq 4\\)\n\\(3x_1 + 5x_2 \\leq 10\\)\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&8x_1+8x_2 + 6x_3 \\\\\n&+& \\color{orange}{0s_1+0s_2+0s_3}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n2x_1 &+& 3x_2 &+& 4x_3 &+& {\\color{orange} {1s_1 + 0s_2 + 0s_3}} &\\;\\color{orange}= & 12,\\\\\n1x_1 &+& 2x_2 &+& 1x_3 &+& {\\color{orange} {0s_1 + 1s_2 + 0s_3}} &\\;\\color{orange}= & 4,\\\\\n3x_1 &+& 5x_2 &+& 0x_3 &+& {\\color{orange} {0s_1 + 0s_2 + 1s_3}} &\\;\\color{orange}= & 10\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\), \\(s_2\\) ve \\(s_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-2",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-2",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (2)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (2)\n\n\n\n\nÖrnek 2: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 12\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(2\\)\n\\(3\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(3\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-3",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-3",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (3)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (3)\n\n\n\n\nÖrnek 2: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 13\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(2\\)\n\\(3\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(3\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-4",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-4",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (4)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (4)\n\n\n\n\nÖrnek 2: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 14\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(2\\)\n\\(3\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(3\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(x_1\\) hem de \\(x_2\\) sütunlarına ait \\(Z_j-C_j\\) değerleri en düşük olup ikisi de \\(-8\\) dir.\nBu durumda işleme soldaki sütun olan \\(x_1\\) anahtar sütun olarak seçilerek devam edilir.\n\nDiğer adımlar aynı simpleks yöntemdeki gibidir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-5",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-5",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (5)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (5)\n\n\n\n\nÖrnek 2: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 15\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(2\\)\n\\(3\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n\\(6\\)\n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n\\(4\\)\n\n\n$0\\, s_{3}$\n\\(3\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n\\(3.33\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-6",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-6",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (6)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (6)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 16\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(2\\)\n\\(3\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(2\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-7",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-7",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (7)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (7)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 17\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-0.33\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(-0.67\\)\n\\(5.33\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-8",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-8",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (8)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (8)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 18\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-0.33\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(-0.67\\)\n\\(5.33\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(13.33\\)\n+ 0\n+ 0\n+ 0\n\\(2.67\\)\n\\(26.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(5.33\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(2.67\\)\n\\(26.67\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-9",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-9",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (9)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (9)\n\n\n\n\nÖrnek 2: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 19\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-0.33\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(-0.67\\)\n\\(5.33\\)\n\\(1.33\\)\n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n\\(0.67\\)\n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(13.33\\)\n+ 0\n+ 0\n+ 0\n\\(2.67\\)\n\\(26.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(5.33\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(2.67\\)\n\\(26.67\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-10",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-10",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (10)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (10)\n\n\n\n\nÖrnek 2: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 20\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-0.33\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(-0.67\\)\n\\(5.33\\)\n \n\n\n$6\\, x_{3}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-11",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-11",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (11)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (11)\n\n\n\n\nÖrnek 2: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 21\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-4\\)\n\\(0.67\\)\n\\(2.67\\)\n \n\n\n$6\\, x_{3}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-12",
+    "href": "IST115/Hafta10/index.html#örnek-2-z_j-c_j-değerlerinin-aynı-olması-12",
+    "title": "Hafta 10",
+    "section": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (12)",
+    "text": "Örnek 2: \\(Z_j-C_j\\) değerlerinin aynı olması (12)\n\n\n\n\nÖrnek 2: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 22\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(-1.67\\)\n\\(0\\)\n\\(1\\)\n\\(-4\\)\n\\(0.67\\)\n\\(2.67\\)\n \n\n\n$6\\, x_{3}$\n\\(0\\)\n\\(0.33\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(15.33\\)\n\\(6\\)\n+ 0\n\\(6\\)\n\\(0.67\\)\n\\(30.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(7.33\\)\n\\(0\\)\n\\(0\\)\n\\(6\\)\n\\(0.67\\)\n\\(30.67\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=30.67\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 3.33\\), \\(x_2 =0\\), \\(x_3 =0.67\\), \\(s_1 = 2.67\\), \\(s_2=0\\) ve \\(s_3=0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-1",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-1",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (1)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (1)\n\n\n\n\nÖrnek 3: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=10x_1+8x_2 + 10x_3\\)\n\\(x_1 + x_2 + x_3 \\leq 20\\)\n\\(5x_1 + 4x_2 + 3x_3 \\leq 60\\)\n\\(2x_1 + 3x_2 + x_3 \\leq 80\\)\n\\(x_1\\) , \\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&10x_1+8x_2 + 10x_3 \\\\\n&+& \\color{orange}{0s_1+0s_2+0s_3}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n1x_1 &+& 1x_2 &+& 1x_3 &+& {\\color{orange} {1s_1 + 0s_2 + 0s_3}} &\\;\\color{orange}= & 20,\\\\\n5x_1 &+& 4x_2 &+& 3x_3 &+& {\\color{orange} {0s_1 + 1s_2 + 0s_3}} &\\;\\color{orange}= & 60,\\\\\n2x_1 &+& 3x_2 &+& 1x_3 &+& {\\color{orange} {0s_1 + 0s_2 + 1s_3}} &\\;\\color{orange}= & 80\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\), \\(s_2\\) ve \\(s_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-2",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-2",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (2)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (2)\n\n\n\n\nÖrnek 3: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 23\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{2}$\n\\(5\\)\n\\(4\\)\n\\(3\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(60\\)\n \n\n\n$0\\, s_{3}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-3",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-3",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (3)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (3)\n\n\n\n\nÖrnek 3: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 24\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{2}$\n\\(5\\)\n\\(4\\)\n\\(3\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(60\\)\n \n\n\n$0\\, s_{3}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(80\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-10\\)\n\\(-8\\)\n\\(-10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-4",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-4",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (4)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (4)\n\n\n\n\nÖrnek 3: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 25\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{2}$\n\\(5\\)\n\\(4\\)\n\\(3\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(60\\)\n \n\n\n$0\\, s_{3}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(80\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-10\\)\n\\(-8\\)\n\\(-10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(x_1\\) hem de \\(x_3\\) sütunlarına ait \\(Z_j-C_j\\) değerleri en düşük olup ikisi de \\(-10\\) dur.\nBu durumda işleme soldaki sütun olan \\(x_1\\) anahtar sütun olarak seçilerek devam edilir.\n\nDiğer adımlar aynı simpleks yöntemdeki gibidir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-5",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-5",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (5)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (5)\n\n\n\n\nÖrnek 3: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 26\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(20\\)\n\\(20\\)\n\n\n$0\\, s_{2}$\n\\(5\\)\n\\(4\\)\n\\(3\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(60\\)\n\\(12\\)\n\n\n$0\\, s_{3}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(80\\)\n\\(40\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-10\\)\n\\(-8\\)\n\\(-10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-6",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-6",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (6)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (6)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 27\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.80\\)\n\\(0.60\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{3}$\n\\(2\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(80\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-7",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-7",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (7)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (7)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 28\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.20\\)\n\\(0.40\\)\n\\(1\\)\n\\(-0.20\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.80\\)\n\\(0.60\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(1.40\\)\n\\(-0.20\\)\n\\(0\\)\n\\(-0.40\\)\n\\(1\\)\n\\(56\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-8",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-8",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (8)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (8)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 29\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.20\\)\n\\(0.40\\)\n\\(1\\)\n\\(-0.20\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.80\\)\n\\(0.60\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(1.40\\)\n\\(-0.20\\)\n\\(0\\)\n\\(-0.40\\)\n\\(1\\)\n\\(56\\)\n \n\n\n$Z_{j}$\n\\(10\\)\n\\(8\\)\n\\(6\\)\n+ 0\n\\(2\\)\n+ 0\n\\(120\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-4\\)\n\\(0\\)\n\\(2\\)\n\\(0\\)\n\\(120\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-9",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-9",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (9)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (9)\n\n\n\n\nÖrnek 3: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 30\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.20\\)\n\\(0.40\\)\n\\(1\\)\n\\(-0.20\\)\n\\(0\\)\n\\(8\\)\n\\(20\\)\n\n\n$10\\, x_{1}$\n\\(1\\)\n\\(0.80\\)\n\\(0.60\\)\n\\(0\\)\n\\(0.20\\)\n\\(0\\)\n\\(12\\)\n\\(20\\)\n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(1.40\\)\n\\(-0.20\\)\n\\(0\\)\n\\(-0.40\\)\n\\(1\\)\n\\(56\\)\n \n\n\n$Z_{j}$\n\\(10\\)\n\\(8\\)\n\\(6\\)\n+ 0\n\\(2\\)\n+ 0\n\\(120\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-4\\)\n\\(0\\)\n\\(2\\)\n\\(0\\)\n\\(120\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-10",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-10",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (10)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (10)\n\n\n\n\nÖrnek 3: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 31\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.20\\)\n\\(0.40\\)\n\\(1\\)\n\\(-0.20\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$10\\, x_{3}$\n\\(1.67\\)\n\\(1.33\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(1.40\\)\n\\(-0.20\\)\n\\(0\\)\n\\(-0.40\\)\n\\(1\\)\n\\(56\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-11",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-11",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (11)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (11)\n\n\n\n\nÖrnek 3: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 32\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$10\\, x_{3}$\n\\(1.67\\)\n\\(1.33\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{3}$\n\\(0.33\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(-0.33\\)\n\\(1\\)\n\\(60\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-12",
+    "href": "IST115/Hafta10/index.html#örnek-3-z_j-c_j-değerlerinin-aynı-olması-12",
+    "title": "Hafta 10",
+    "section": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (12)",
+    "text": "Örnek 3: \\(Z_j-C_j\\) değerlerinin aynı olması (12)\n\n\n\n\nÖrnek 3: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 33\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(10\\)\n\\(8\\)\n\\(10\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-0.67\\)\n\\(-0.33\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$10\\, x_{3}$\n\\(1.67\\)\n\\(1.33\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(0\\)\n\\(20\\)\n \n\n\n$0\\, s_{3}$\n\\(0.33\\)\n\\(1.67\\)\n\\(0\\)\n\\(0\\)\n\\(-0.33\\)\n\\(1\\)\n\\(60\\)\n \n\n\n$Z_{j}$\n\\(16.67\\)\n\\(13.33\\)\n\\(10\\)\n+ 0\n\\(3.33\\)\n+ 0\n\\(200\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(6.67\\)\n\\(5.33\\)\n\\(0\\)\n\\(0\\)\n\\(3.33\\)\n\\(0\\)\n\\(200\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=200\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 0\\), \\(x_2 =0\\), \\(x_3 =20\\), \\(s_1 = 0\\), \\(s_2=0\\) ve \\(s_3=60\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu",
+    "href": "IST115/Hafta10/index.html#fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu",
+    "title": "Hafta 10",
+    "section": "\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu)",
+    "text": "\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu)\n\n\n\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) değerinin 0 olması\n\n\n\n\\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının farklı satırlarda aynı olması durumunda bozulma durumu ortaya çıkar.\nOranın eşit olması durumunda farklı yaklaşımlar bulunsa da, bu ders kapsamında eşit olan satırlardan daha yukarıda olan tercih edilecektir.\nSimpleks yöntem adımları aynı şekilde uygulanmaya devam edilir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-1",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (1)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (1)\n\n\n\n\nÖrnek 4: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=3x_1+2x_2\\)\n\\(4x_1 + 3x_2 \\leq 12\\)\n\\(4x_1 + x_2 \\leq 8\\)\n\\(4x_1 - x_2 \\leq 8\\)\n\\(x_1\\), \\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&3x_1+2x_2 \\\\\n&+& \\color{orange}{0s_1+0s_2+0s_3}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n4x_1 &+& 3x_2 &+& {\\color{orange} {1s_1 + 0s_2 + 0s_3}} &\\;\\color{orange}= & 12,\\\\\n4x_1 &+& 1x_2 &+& {\\color{orange} {0s_1 + 1s_2 + 0s_3}} &\\;\\color{orange}= & 8,\\\\\n4x_1 &-& 1x_2 &+& {\\color{orange} {0s_1 + 0s_2 + 1s_3}} &\\;\\color{orange}= & 8\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\), \\(s_2\\) ve \\(s_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-2",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (2)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (2)\n\n\n\n\nÖrnek 4: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 34\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-3",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-3",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (3)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (3)\n\n\n\n\nÖrnek 4: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 35\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-4",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-4",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (4)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (4)\n\n\n\n\nÖrnek 4: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 36\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-5",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-5",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (5)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (5)\n\n\n\n\nÖrnek 4: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 37\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n\\(3\\)\n\n\n$0\\, s_{2}$\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n\\(2\\)\n\n\n$0\\, s_{3}$\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(8\\)\n\\(2\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-3\\)\n\\(-2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(s_2\\) hem de \\(s_3\\) satırlarına ait \\(\\frac{b_j}{a_j}\\) oranları en düşük olup ikisi de \\(2\\) dir.\nBu durumda işleme yukarıdaki satır olan \\(s_2\\) anahtar satır olarak seçilerek devam edilir.\nDiğer işlemler simpleks yöntemle aynıdır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-6",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-6",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (6)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (6)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 38\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(4\\)\n\\(3\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(8\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-7",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-7",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (7)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (7)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 39\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-8",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-8",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (8)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (8)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 40\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(3\\)\n\\(0.75\\)\n+ 0\n\\(0.75\\)\n+ 0\n\\(6\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-1.25\\)\n\\(0\\)\n\\(0.75\\)\n\\(0\\)\n\\(6\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-9",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-9",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (9)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (9)\n\n\n\n\nÖrnek 4: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 41\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(2\\)\n\\(1\\)\n\\(-1\\)\n\\(0\\)\n\\(4\\)\n\\(2\\)\n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n\\(8\\)\n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(3\\)\n\\(0.75\\)\n+ 0\n\\(0.75\\)\n+ 0\n\\(6\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-1.25\\)\n\\(0\\)\n\\(0.75\\)\n\\(0\\)\n\\(6\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-10",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-10",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (10)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (10)\n\n\n\n\nÖrnek 4: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 42\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(-2\\)\n\\(0\\)\n\\(-1\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-11",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-11",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (11)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (11)\n\n\n\n\nÖrnek 4: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 43\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-0.12\\)\n\\(0.38\\)\n\\(0\\)\n\\(1.50\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-2\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-12",
+    "href": "IST115/Hafta10/index.html#örnek-4-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-12",
+    "title": "Hafta 10",
+    "section": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (12)",
+    "text": "Örnek 4: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (12)\n\n\n\n\nÖrnek 4: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 44\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(3\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$2\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(0.50\\)\n\\(-0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$3\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(-0.12\\)\n\\(0.38\\)\n\\(0\\)\n\\(1.50\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-2\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n\\(3\\)\n\\(2\\)\n\\(0.62\\)\n\\(0.12\\)\n+ 0\n\\(8.50\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(0.62\\)\n\\(0.12\\)\n\\(0\\)\n\\(8.50\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=8.5\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 1.5\\), \\(x_2 =2\\), \\(s_1 = 0\\), \\(s_2=0\\) ve \\(s_3=4\\)’tür."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-1",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (1)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (1)\n\n\n\n\nÖrnek 5: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=8x_1+6x_2+5x_3\\)\n\\(3x_1 + 4x_2 + 5x_3 \\leq 12\\)\n\\(2x_1 + 5x_3  \\leq 8\\)\n\\(x_1 + 4x_2 + 2x_3 \\leq 4\\)\n\\(x_1\\),\\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&8x_1+6x_2+5x_3 \\\\\n&+& \\color{orange}{0s_1+0s_2+0s_3}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n3x_1 &+& 4x_2 &+& 5x_3 &+&  {\\color{orange} {1s_1 + 0s_2 + 0s_3}} &\\;\\color{orange}= & 12,\\\\\n2x_1 &+& 0x_2 &+& 5x_3 &+& {\\color{orange} {0s_1 + 1s_2 + 0s_3}} &\\;\\color{orange}= & 8,\\\\\n1x_1 &+& 4x_2 &+& 2x_3 &+& {\\color{orange} {0s_1 + 0s_2 + 1s_3}} &\\;\\color{orange}= & 4\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), \\(x_3 \\geq 0\\) ve \\(s_1\\), \\(s_2\\) ve \\(s_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-2",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (2)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (2)\n\n\n\n\nÖrnek 5: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 45\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(0\\)\n\\(5\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-3",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-3",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (3)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (3)\n\n\n\n\nÖrnek 5: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 46\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(0\\)\n\\(5\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-6\\)\n\\(-5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-4",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-4",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (4)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (4)\n\n\n\n\nÖrnek 5: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 47\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(0\\)\n\\(5\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-6\\)\n\\(-5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-5",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-5",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (5)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (5)\n\n\n\n\nÖrnek 5: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 48\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(4\\)\n\\(5\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n\\(4\\)\n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(0\\)\n\\(5\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n\\(4\\)\n\n\n$0\\, s_{3}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n\\(4\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-6\\)\n\\(-5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(s_1\\), hem \\(s_2\\), hem de \\(s_3\\) satırlarına ait \\(\\frac{b_j}{a_j}\\) oranları en düşük olup tümü de \\(4\\) tür.\nBu durumda işleme yukarıdaki satır olan \\(s_1\\) anahtar satır olarak seçilerek devam edilir.\nDiğer işlemler simpleks yöntemle aynıdır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-6",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-6",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (6)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (6)\n\n\n\n\nÖrnek 5: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 49\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.33\\)\n\\(1.67\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(0\\)\n\\(5\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(8\\)\n \n\n\n$0\\, s_{3}$\n\\(1\\)\n\\(4\\)\n\\(2\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-7",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-7",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (7)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (7)\n\n\n\n\nÖrnek 5: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 50\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.33\\)\n\\(1.67\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-2.67\\)\n\\(1.67\\)\n\\(-0.67\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(2.67\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-8",
+    "href": "IST115/Hafta10/index.html#örnek-5-fracb_ianahtar-quad-sütun-oranının-aynı-olması-bozulma-durumu-8",
+    "title": "Hafta 10",
+    "section": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (8)",
+    "text": "Örnek 5: \\(\\frac{b_i}{anahtar \\quad{} sütun}\\) oranının aynı olması (bozulma durumu) (8)\n\n\n\n\nÖrnek 5: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 51\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(6\\)\n\\(5\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(1.33\\)\n\\(1.67\\)\n\\(0.33\\)\n\\(0\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-2.67\\)\n\\(1.67\\)\n\\(-0.67\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(2.67\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(10.67\\)\n\\(13.33\\)\n\\(2.67\\)\n+ 0\n+ 0\n\\(32\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(4.67\\)\n\\(8.33\\)\n\\(2.67\\)\n\\(0\\)\n\\(0\\)\n\\(32\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=32\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 4\\), \\(x_2 =0\\), \\(x_3 =0\\), \\(s_1 = 0\\), \\(s_2=0\\) ve \\(s_3=0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-1",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-1",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (1)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (1)\n\n\n\n\nÖrnek 6: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=8x_1+8x_2+6x_3\\)\n\\(3x_1 + 2x_2 + 4x_3 \\leq 12\\)\n\\(2x_1 + x_2 + x_3 \\leq 4\\)\n\\(5x_1 + 3x_2 \\leq 10\\)\n\\(x_1\\), \\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{max}&=&8x_1+8x_2+6x_3 \\\\\n&+& \\color{orange}{0s_1+0s_2+0s_3}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n3x_1 &+& 2x_2 &+& 4x_3 &+&{\\color{orange} {1s_1 + 0s_2 + 0s_3}} &\\;\\color{orange}= & 12,\\\\\n2x_1 &+& 1x_2 &+& 1x_3 &+& {\\color{orange} {0s_1 + 1s_2 + 0s_3}} &\\;\\color{orange}= & 4,\\\\\n5x_1 &+& 3x_2 &+& 0x_3 &+& {\\color{orange} {0s_1 + 0s_2 + 1s_3}} &\\;\\color{orange}= & 10\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), \\(x_3 \\geq 0\\) ve \\(s_1\\), \\(s_2\\) ve \\(s_3 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-2",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-2",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (2)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (2)\n\n\n\n\nÖrnek 6: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 52\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(2\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(5\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-3",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-3",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (3)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (3)\n\n\n\n\nÖrnek 6: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 53\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(2\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(5\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-4",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-4",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (4)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (4)\n\n\n\n\nÖrnek 6: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 54\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(2\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n \n\n\n$0\\, s_{3}$\n\\(5\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(x_1\\) hem de \\(x_2\\) sütunlarına ait \\(Z_j-C_j\\) değerleri en düşük olup ikisi de \\(-8\\) dir.\nBu durumda işleme soldaki sütun olan \\(x_1\\) anahtar sütun olarak seçilerek devam edilir.\n\nDiğer adımlara simpleks yöntemdeki gibi devam edilir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-5",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-5",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (5)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (5)\n\n\n\n\nÖrnek 6: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 55\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(2\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n\\(4\\)\n\n\n$0\\, s_{2}$\n\\(2\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(4\\)\n\\(2\\)\n\n\n$0\\, s_{3}$\n\\(5\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n\\(2\\)\n\n\n$Z_{j}$\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n+ 0\n \n\n\n$Z_{j}-C_{j}$\n\\(-8\\)\n\\(-8\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n+ 0\n \n\n\n\n\n\n\n\n\n\n\nHem \\(s_2\\) hem de \\(s_3\\) satırlarına ait \\(\\frac{b_j}{a_j}\\) oranları en düşük olup ikisi de \\(2\\) dir.\nBu durumda işleme yukarıdaki satır olan \\(s_2\\) anahtar satır olarak seçilerek devam edilir.\nDiğer işlemler simpleks yöntemle aynıdır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-6",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-6",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (6)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (6)\n\n\n\n\nÖrnek 6: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 56\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(3\\)\n\\(2\\)\n\\(4\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(5\\)\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(10\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-7",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-7",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (7)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (7)\n\n\n\n\nÖrnek 6: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 57\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.50\\)\n\\(2.50\\)\n\\(1\\)\n\\(-1.50\\)\n\\(0\\)\n\\(6\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(0.50\\)\n\\(-2.50\\)\n\\(0\\)\n\\(-2.50\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-8",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-8",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (8)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (8)\n\n\n\n\nÖrnek 6: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 58\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.50\\)\n\\(2.50\\)\n\\(1\\)\n\\(-1.50\\)\n\\(0\\)\n\\(6\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(0.50\\)\n\\(-2.50\\)\n\\(0\\)\n\\(-2.50\\)\n\\(1\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(4\\)\n\\(4\\)\n+ 0\n\\(4\\)\n+ 0\n\\(16\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(4\\)\n\\(0\\)\n\\(16\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-9",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-9",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (9)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (9)\n\n\n\n\nÖrnek 6: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 59\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.50\\)\n\\(2.50\\)\n\\(1\\)\n\\(-1.50\\)\n\\(0\\)\n\\(6\\)\n\\(12\\)\n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(2\\)\n\\(4\\)\n\n\n$0\\, s_{3}$\n\\(0\\)\n\\(0.50\\)\n\\(-2.50\\)\n\\(0\\)\n\\(-2.50\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\n\n$Z_{j}$\n\\(8\\)\n\\(4\\)\n\\(4\\)\n+ 0\n\\(4\\)\n+ 0\n\\(16\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(-4\\)\n\\(-2\\)\n\\(0\\)\n\\(4\\)\n\\(0\\)\n\\(16\\)\n \n\n\n\n\n\n\n\n\n\n\n\\(\\frac{b_i}{a_j}=0\\) olduğundan temelden çıkacak satır \\(s_3\\) tür.\nTüm işlemler simpleks yönteme göre devam eder."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-10",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-10",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (10)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (10)\n\n\n\n\nÖrnek 6: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 60\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0.50\\)\n\\(2.50\\)\n\\(1\\)\n\\(-1.50\\)\n\\(0\\)\n\\(6\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0.50\\)\n\\(0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(0\\)\n\\(2\\)\n \n\n\n$8\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-5\\)\n\\(0\\)\n\\(-5\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-11",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-11",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (11)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (11)\n\n\n\n\nÖrnek 6: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 61\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(5\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(6\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(3\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(2\\)\n \n\n\n$8\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-5\\)\n\\(0\\)\n\\(-5\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-12",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-12",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (12)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (12)\n\n\n\n\nÖrnek 6: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 62\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(5\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(6\\)\n \n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(3\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(2\\)\n \n\n\n$8\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-5\\)\n\\(0\\)\n\\(-5\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(8\\)\n\\(-16\\)\n+ 0\n\\(-16\\)\n\\(8\\)\n\\(16\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-22\\)\n\\(0\\)\n\\(-16\\)\n\\(8\\)\n\\(16\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-13",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-13",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (13)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (13)\n\n\n\n\nÖrnek 6: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 63\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(5\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(6\\)\n\\(1.20\\)\n\n\n$8\\, x_{1}$\n\\(1\\)\n\\(0\\)\n\\(3\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(2\\)\n\\(0.67\\)\n\n\n$8\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-5\\)\n\\(0\\)\n\\(-5\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n\\(8\\)\n\\(8\\)\n\\(-16\\)\n+ 0\n\\(-16\\)\n\\(8\\)\n\\(16\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(0\\)\n\\(-22\\)\n\\(0\\)\n\\(-16\\)\n\\(8\\)\n\\(16\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-14",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-14",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (14)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (14)\n\n\n\n\nÖrnek 6: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 64\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(0\\)\n\\(0\\)\n\\(5\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(6\\)\n \n\n\n$6\\, x_{3}$\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{2}$\n\\(0\\)\n\\(1\\)\n\\(-5\\)\n\\(0\\)\n\\(-5\\)\n\\(2\\)\n\\(0\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-15",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-15",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (15)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (15)\n\n\n\n\nÖrnek 6: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 65\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-1.67\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-4\\)\n\\(0.67\\)\n\\(2.67\\)\n \n\n\n$6\\, x_{3}$\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{2}$\n\\(1.67\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-16",
+    "href": "IST115/Hafta10/index.html#örnek-6-birden-fazla-özel-durum-olması-16",
+    "title": "Hafta 10",
+    "section": "Örnek 6: Birden Fazla Özel Durum Olması (16)",
+    "text": "Örnek 6: Birden Fazla Özel Durum Olması (16)\n\n\n\n\nÖrnek 6: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 66\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$s_{3}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(8\\)\n\\(8\\)\n\\(6\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n \n\n\n$0\\, s_{1}$\n\\(-1.67\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-4\\)\n\\(0.67\\)\n\\(2.67\\)\n \n\n\n$6\\, x_{3}$\n\\(0.33\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.67\\)\n \n\n\n$8\\, x_{2}$\n\\(1.67\\)\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(0.33\\)\n\\(3.33\\)\n \n\n\n$Z_{j}$\n\\(15.33\\)\n\\(8\\)\n\\(6\\)\n+ 0\n\\(6\\)\n\\(0.67\\)\n\\(30.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(7.33\\)\n\\(0\\)\n\\(0\\)\n\\(0\\)\n\\(6\\)\n\\(0.67\\)\n\\(30.67\\)\n \n\n\n\n\n\n\n\n\n\\(z_j-c_j\\) değerlerinin tamamı \\(\\geq 0\\) olduğundan çözüm optimuma ulaşmıştır.\n\n\n\n\n\nSon durumda \\(Z=30.67\\) amaç fonksiyonu için bulunabilecek en büyük değerdir.\nBu çözümde \\(x_1 = 0\\), \\(x_2 =3.33\\), \\(x_3 = 0.67\\), \\(s_1=2.67\\), \\(s_2=0\\) ve \\(s_3=0\\)’dır."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#sınırsız-çözüm-olması",
+    "href": "IST115/Hafta10/index.html#sınırsız-çözüm-olması",
+    "title": "Hafta 10",
+    "section": "Sınırsız Çözüm olması",
+    "text": "Sınırsız Çözüm olması\n\n\n\n\nSınırsız Çözüm olması\n\n\n\nSınırsız çözüm olması genelde hatalı bir kısıt eklenmesi ya da eksik bir kısıtın bulunması durumunda, değişkenlerin sınırlı değerler almasını engelleyen bir durum olarak ortaya çıkar.\nSınırsız çözüm durumunda, çözüme girecek değişkenin değeri ve buna bağlı olarak da amaç fonksiyonunun değeri sınırsız olarak artar (ya da azalır). Bu durum en iyi çözüme ulaşılmasını engeller.\nHerhangi bir doğrusal programlama probleminin sınırsız çözüme sahip olup olmadığı anahtar sütun elemanlarının incelenmesiyle anlaşılır.\nAnahtar sütun elemanlarının hepsinin sıfır ya da negatif olması durumunda temelden ayrılan değişken seçimi gerçekleştirilemez.\nBu durumda problemin sınırsız çözümü vardır denir."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-1",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-1",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (1)",
+    "text": "Örnek 7: Sınırsız Çözüm (1)\n\n\n\n\nÖrnek 7: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{min}=5x_1-6x_2\\)\n\\(9x_1 + 2x_2 \\geq 36\\)\n\\(x_1 \\leq 15\\)\n\\(x_1\\), \\(x_2 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=5x_1-6x_2 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{+MA_1}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n9x_1 &+& 2x_2 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1}} &\\;\\color{orange}= & 36,\\\\\n1x_1 &+& 0x_2 &\\color{orange}+& {\\color{orange} {0s_1 +1s_2}}{\\color{green} {+0A_1}} &\\;\\color{orange}= & 15\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2 \\geq 0\\) ve \\(s_1\\), \\(s_2 \\geq 0\\), \\(a_1 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-2",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-2",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (2)",
+    "text": "Örnek 7: Sınırsız Çözüm (2)\n\n\n\n\nÖrnek 7: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 67\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(9\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(36\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-3",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-3",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (3)",
+    "text": "Örnek 7: Sınırsız Çözüm (3)\n\n\n\n\nÖrnek 7: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 68\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(9\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(36\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n9M\n2M\n-M\n+ 0\nM\n36M\n \n\n\n$Z_{j}-C_{j}$\n9M - 5\n2M + 6\n-M\n\\(0\\)\n\\(0\\)\n36M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-4",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-4",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (4)",
+    "text": "Örnek 7: Sınırsız Çözüm (4)\n\n\n\n\nÖrnek 7: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 69\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(9\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(36\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n9M\n2M\n-M\n+ 0\nM\n36M\n \n\n\n$Z_{j}-C_{j}$\n9M - 5\n2M + 6\n-M\n\\(0\\)\n\\(0\\)\n36M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-5",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-5",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (5)",
+    "text": "Örnek 7: Sınırsız Çözüm (5)\n\n\n\n\nÖrnek 7: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 70\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$M\\, a_{1}$\n\\(9\\)\n\\(2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(36\\)\n\\(4\\)\n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n\\(15\\)\n\n\n$Z_{j}$\n9M\n2M\n-M\n+ 0\nM\n36M\n \n\n\n$Z_{j}-C_{j}$\n9M - 5\n2M + 6\n-M\n\\(0\\)\n\\(0\\)\n36M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-6",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-6",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (6)",
+    "text": "Örnek 7: Sınırsız Çözüm (6)\n\n\n\n\nÖrnek 7: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 71\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$5\\, x_{1}$\n\\(1\\)\n\\(0.22\\)\n\\(-0.11\\)\n\\(0\\)\n\\(0.11\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-7",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-7",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (7)",
+    "text": "Örnek 7: Sınırsız Çözüm (7)\n\n\n\n\nÖrnek 7: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 72\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$5\\, x_{1}$\n\\(1\\)\n\\(0.22\\)\n\\(-0.11\\)\n\\(0\\)\n\\(0.11\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-0.22\\)\n\\(0.11\\)\n\\(1\\)\n\\(-0.11\\)\n\\(11\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-8",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-8",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (8)",
+    "text": "Örnek 7: Sınırsız Çözüm (8)\n\n\n\n\nÖrnek 7: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 73\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$5\\, x_{1}$\n\\(1\\)\n\\(0.22\\)\n\\(-0.11\\)\n\\(0\\)\n\\(0.11\\)\n\\(4\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-0.22\\)\n\\(0.11\\)\n\\(1\\)\n\\(-0.11\\)\n\\(11\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(1.11\\)\n\\(-0.56\\)\n+ 0\n\\(0.56\\)\n\\(20\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(7.11\\)\n\\(-0.56\\)\n\\(0\\)\n-M + 0.56\n\\(20\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-9",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-9",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (9)",
+    "text": "Örnek 7: Sınırsız Çözüm (9)\n\n\n\n\nÖrnek 7: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 74\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$5\\, x_{1}$\n\\(1\\)\n\\(0.22\\)\n\\(-0.11\\)\n\\(0\\)\n\\(0.11\\)\n\\(4\\)\n\\(18\\)\n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-0.22\\)\n\\(0.11\\)\n\\(1\\)\n\\(-0.11\\)\n\\(11\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(1.11\\)\n\\(-0.56\\)\n+ 0\n\\(0.56\\)\n\\(20\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(0\\)\n\\(7.11\\)\n\\(-0.56\\)\n\\(0\\)\n-M + 0.56\n\\(20\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-10",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-10",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (10)",
+    "text": "Örnek 7: Sınırsız Çözüm (10)\n\n\n\n\nÖrnek 7: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 75\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$-6\\, x_{2}$\n\\(4.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(18\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(-0.22\\)\n\\(0.11\\)\n\\(1\\)\n\\(-0.11\\)\n\\(11\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-11",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-11",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (11)",
+    "text": "Örnek 7: Sınırsız Çözüm (11)\n\n\n\n\nÖrnek 7: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 76\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$-6\\, x_{2}$\n\\(4.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(18\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-12",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-12",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (12)",
+    "text": "Örnek 7: Sınırsız Çözüm (12)\n\n\n\n\nÖrnek 7: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 77\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$-6\\, x_{2}$\n\\(4.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(18\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n\\(-27\\)\n\\(-6\\)\n\\(3\\)\n+ 0\n\\(-3\\)\n\\(-108\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-32\\)\n\\(0\\)\n\\(3\\)\n\\(0\\)\n-M - 3\n\\(-108\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-13",
+    "href": "IST115/Hafta10/index.html#örnek-7-sınırsız-çözüm-13",
+    "title": "Hafta 10",
+    "section": "Örnek 7: Sınırsız Çözüm (13)",
+    "text": "Örnek 7: Sınırsız Çözüm (13)\n\n\n\n\nÖrnek 7: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\n\n\nTable 78\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(5\\)\n\\(-6\\)\n\\(0\\)\n\\(0\\)\nM\n\\(0\\)\n \n\n\n$-6\\, x_{2}$\n\\(4.50\\)\n\\(1\\)\n\\(-0.50\\)\n\\(0\\)\n\\(0.50\\)\n\\(18\\)\n \n\n\n$0\\, s_{2}$\n\\(1\\)\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(15\\)\n \n\n\n$Z_{j}$\n\\(-27\\)\n\\(-6\\)\n\\(3\\)\n+ 0\n\\(-3\\)\n\\(-108\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(-32\\)\n\\(0\\)\n\\(3\\)\n\\(0\\)\n-M - 3\n\\(-108\\)\n \n\n\n\n\n\n\n\n\n\n\nAnahtar sütun olan \\(s_1\\) teki değerler sırasıyla \\(-0.50\\) ve \\(0\\) olduğundan her iki satır için de \\(\\frac{b_i}{a_j}\\) hesabı yapılamaz.\nİşlem burada sonlandırılır. Sınırsız çözüm vardır. Optimum değer bulunamaz."
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-1",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-1",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (1)",
+    "text": "Örnek 8: Sınırsız Çözüm (1)\n\n\n\n\nÖrnek 8: DP Problemi ve Standart Form\n\n\n\n\nAşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.\n\\(Z_{max}=2x_1+5x_2+9x_3\\)\n\\(x_1 + x_2 + 4x_3 \\geq 12\\)\n\\(x_1 + x_2 + x_3 \\geq 4\\)\n\\(x_1\\),\\(x_2\\), \\(x_3 \\geq 0\\)\n\n\n\n\nStandart Form:\n\n\n\\[\\begin{gathered}\nZ_{min}=2x_1+5x_2+9x_3 \\\\\n\\color{orange}{+0s_1+0s_2} \\color{green}{-MA_1-MA_2}\n\\end{gathered}\\]\n\n\n\\[\n\\begin{alignedat}{7}\n1x_1 &+& 1x_2 &+& 4x_3 &\\color{orange}-& {\\color{orange} {1s_1 + 0s_2}}{\\color{green} {+1A_1+0A_2}} &\\;\\color{orange}= & 12,\\\\\n1x_1 &+& 1x_2 &+& 1x_3 &\\color{orange}+& {\\color{orange} {0s_1 -1s_2}}{\\color{green} {+0A_1+1A_2}} &\\;\\color{orange}= & 4\n\\end{alignedat}\n\\]\n\n\n\\(x_1\\), \\(x_2\\), \\(x_3 \\geq 0\\) ve \\(s_1\\), \\(s_2 \\geq 0\\), \\(A_1\\), \\(A_2 \\geq 0\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-2",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-2",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (2)",
+    "text": "Örnek 8: Sınırsız Çözüm (2)\n\n\n\n\nÖrnek 8: Başlangıç Tablosu\n\n\n\n\n\n\n\nTable 79\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-3",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-3",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (3)",
+    "text": "Örnek 8: Sınırsız Çözüm (3)\n\n\n\n\nÖrnek 8: \\(Z_j\\) ve \\(Z_j-C_j\\) (İter 1)\n\n\n\n\n\n\n\nTable 80\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n-2M\n-2M\n-5M\nM\nM\n-M\n-M\n-16M\n \n\n\n$Z_{j}-C_{j}$\n-2M - 2\n-2M - 5\n-5M - 9\nM\nM\n\\(0\\)\n\\(0\\)\n-16M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-4",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-4",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (4)",
+    "text": "Örnek 8: Sınırsız Çözüm (4)\n\n\n\n\nÖrnek 8: Anahtar Sütun (İter 1)\n\n\n\n\n\n\n\nTable 81\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n-2M\n-2M\n-5M\nM\nM\n-M\n-M\n-16M\n \n\n\n$Z_{j}-C_{j}$\n-2M - 2\n-2M - 5\n-5M - 9\nM\nM\n\\(0\\)\n\\(0\\)\n-16M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-5",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-5",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (5)",
+    "text": "Örnek 8: Sınırsız Çözüm (5)\n\n\n\n\nÖrnek 8: Anahtar Satır (İter 1)\n\n\n\n\n\n\n\nTable 82\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$-M\\, a_{1}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n\\(3\\)\n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n\\(4\\)\n\n\n$Z_{j}$\n-2M\n-2M\n-5M\nM\nM\n-M\n-M\n-16M\n \n\n\n$Z_{j}-C_{j}$\n-2M - 2\n-2M - 5\n-5M - 9\nM\nM\n\\(0\\)\n\\(0\\)\n-16M"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-6",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-6",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (6)",
+    "text": "Örnek 8: Sınırsız Çözüm (6)\n\n\n\n\nÖrnek 8: Anahtar Satır İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 83\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0.25\\)\n\\(0.25\\)\n\\(1\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$-M\\, a_{2}$\n\\(1\\)\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-7",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-7",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (7)",
+    "text": "Örnek 8: Sınırsız Çözüm (7)\n\n\n\n\nÖrnek 8: Diğer Satırlar İçin Yeni Değer (İter 1)\n\n\n\n\n\n\n\nTable 84\n\n\nSimplex – iteration 1 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0.25\\)\n\\(0.25\\)\n\\(1\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$-M\\, a_{2}$\n\\(0.75\\)\n\\(0.75\\)\n\\(0\\)\n\\(0.25\\)\n\\(-1\\)\n\\(-0.25\\)\n\\(1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-8",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-8",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (8)",
+    "text": "Örnek 8: Sınırsız Çözüm (8)\n\n\n\n\nÖrnek 8: Simpleks Adım Sonu (İter 1)\n\n\n\n\n\n\n\nTable 85\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0.25\\)\n\\(0.25\\)\n\\(1\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$-M\\, a_{2}$\n\\(0.75\\)\n\\(0.75\\)\n\\(0\\)\n\\(0.25\\)\n\\(-1\\)\n\\(-0.25\\)\n\\(1\\)\n\\(1\\)\n \n\n\n$Z_{j}$\n-0.75M + 2.25\n-0.75M + 2.25\n\\(9\\)\n-0.25M - 2.25\nM\n0.25M + 2.25\n-M\n-M + 27\n \n\n\n$Z_{j}-C_{j}$\n-0.75M + 0.25\n-0.75M - 2.75\n\\(0\\)\n-0.25M - 2.25\nM\n1.25M + 2.25\n\\(0\\)\n-M + 27"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-9",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-9",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (9)",
+    "text": "Örnek 8: Sınırsız Çözüm (9)\n\n\n\n\nÖrnek 8: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)\n\n\n\n\n\n\n\nTable 86\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0.25\\)\n\\(0.25\\)\n\\(1\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(3\\)\n\\(12\\)\n\n\n$-M\\, a_{2}$\n\\(0.75\\)\n\\(0.75\\)\n\\(0\\)\n\\(0.25\\)\n\\(-1\\)\n\\(-0.25\\)\n\\(1\\)\n\\(1\\)\n\\(1.33\\)\n\n\n$Z_{j}$\n-0.75M + 2.25\n-0.75M + 2.25\n\\(9\\)\n-0.25M - 2.25\nM\n0.25M + 2.25\n-M\n-M + 27\n \n\n\n$Z_{j}-C_{j}$\n-0.75M + 0.25\n-0.75M - 2.75\n\\(0\\)\n-0.25M - 2.25\nM\n1.25M + 2.25\n\\(0\\)\n-M + 27"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-10",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-10",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (10)",
+    "text": "Örnek 8: Sınırsız Çözüm (10)\n\n\n\n\nÖrnek 8: Anahtar Satır İçin Yeni Değerler (İter 2)\n\n\n\n\n\n\n\nTable 87\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0.25\\)\n\\(0.25\\)\n\\(1\\)\n\\(-0.25\\)\n\\(0\\)\n\\(0.25\\)\n\\(0\\)\n\\(3\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(-1.33\\)\n\\(-0.33\\)\n\\(1.33\\)\n\\(1.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-11",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-11",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (11)",
+    "text": "Örnek 8: Sınırsız Çözüm (11)\n\n\n\n\nÖrnek 8: Diğer Satırlar İçin Yeni Değer (İter 2)\n\n\n\n\n\n\n\nTable 88\n\n\nSimplex – iteration 2 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(2.67\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(-1.33\\)\n\\(-0.33\\)\n\\(1.33\\)\n\\(1.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-12",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-12",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (12)",
+    "text": "Örnek 8: Sınırsız Çözüm (12)\n\n\n\n\nÖrnek 8: Simpleks Adım Sonu (İter 2)\n\n\n\n\n\n\n\nTable 89\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(2.67\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(-1.33\\)\n\\(-0.33\\)\n\\(1.33\\)\n\\(1.33\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(5\\)\n\\(9\\)\n\\(-1.33\\)\n\\(-3.67\\)\n\\(1.33\\)\n\\(3.67\\)\n\\(30.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(-1.33\\)\n\\(-3.67\\)\nM + 1.33\nM + 3.67\n\\(30.67\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-13",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-13",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (13)",
+    "text": "Örnek 8: Sınırsız Çözüm (13)\n\n\n\n\nÖrnek 8: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)\n\n\n\n\n\n\n\nTable 90\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$9\\, x_{3}$\n\\(0\\)\n\\(0\\)\n\\(1\\)\n\\(-0.33\\)\n\\(0.33\\)\n\\(0.33\\)\n\\(-0.33\\)\n\\(2.67\\)\n\\(8\\)\n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(-1.33\\)\n\\(-0.33\\)\n\\(1.33\\)\n\\(1.33\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(5\\)\n\\(9\\)\n\\(-1.33\\)\n\\(-3.67\\)\n\\(1.33\\)\n\\(3.67\\)\n\\(30.67\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(3\\)\n\\(0\\)\n\\(0\\)\n\\(-1.33\\)\n\\(-3.67\\)\nM + 1.33\nM + 3.67\n\\(30.67\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-14",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-14",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (14)",
+    "text": "Örnek 8: Sınırsız Çözüm (14)\n\n\n\n\nÖrnek 8: Anahtar Satır İçin Yeni Değerler (İter 3)\n\n\n\n\n\n\n\nTable 91\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(8\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(0\\)\n\\(0.33\\)\n\\(-1.33\\)\n\\(-0.33\\)\n\\(1.33\\)\n\\(1.33\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-15",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-15",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (15)",
+    "text": "Örnek 8: Sınırsız Çözüm (15)\n\n\n\n\nÖrnek 8: Diğer Satırlar İçin Yeni Değer (İter 3)\n\n\n\n\n\n\n\nTable 92\n\n\nSimplex – iteration 3 (eliminate)\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(8\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n \n \n \n \n \n \n \n \n \n\n\n$Z_{j}-C_{j}$"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-16",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-16",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (16)",
+    "text": "Örnek 8: Sınırsız Çözüm (16)\n\n\n\n\nÖrnek 8: Simpleks Adım Sonu (İter 3)\n\n\n\n\n\n\n\nTable 93\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(8\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(5\\)\n\\(20\\)\n\\(-5\\)\n+ 0\n\\(5\\)\n+ 0\n\\(60\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(3\\)\n\\(0\\)\n\\(11\\)\n\\(-5\\)\n\\(0\\)\nM + 5\nM\n\\(60\\)"
+  },
+  {
+    "objectID": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-17",
+    "href": "IST115/Hafta10/index.html#örnek-8-sınırsız-çözüm-17",
+    "title": "Hafta 10",
+    "section": "Örnek 8: Sınırsız Çözüm (17)",
+    "text": "Örnek 8: Sınırsız Çözüm (17)\n\n\n\n\nÖrnek 8: Anahtar Satır, Sütun ve Anahtar Değer (İter 4)\n\n\n\n\n\n\n\nTable 94\n\n\nSimplex Tableau\n  \n\n\n\n$\\textbf{TDV}$\n$x_{1}$\n$x_{2}$\n$x_{3}$\n$s_{1}$\n$s_{2}$\n$a_{1}$\n$a_{2}$\n$b$\n$\\displaystyle\\frac{b_{j}}{a_{j^*}}$\n\n\n\n\n$C_{j}$\n\\(2\\)\n\\(5\\)\n\\(9\\)\n\\(0\\)\n\\(0\\)\n-M\n-M\n\\(0\\)\n \n\n\n$0\\, s_{2}$\n\\(0\\)\n\\(0\\)\n\\(3\\)\n\\(-1\\)\n\\(1\\)\n\\(1\\)\n\\(-1\\)\n\\(8\\)\n \n\n\n$5\\, x_{2}$\n\\(1\\)\n\\(1\\)\n\\(4\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(0\\)\n\\(12\\)\n \n\n\n$Z_{j}$\n\\(5\\)\n\\(5\\)\n\\(20\\)\n\\(-5\\)\n+ 0\n\\(5\\)\n+ 0\n\\(60\\)\n \n\n\n$Z_{j}-C_{j}$\n\\(3\\)\n\\(0\\)\n\\(11\\)\n\\(-5\\)\n\\(0\\)\nM + 5\nM\n\\(60\\)\n \n\n\n\n\n\n\n\n\nAnahtar sütun olan \\(s_1\\) teki her iki değer de \\(-1\\) olduğundan her iki satır için de \\(\\frac{b_i}{a_j}\\) hesabı yapılamaz.\nİşlem burada sonlandırılır. Sınırsız çözüm vardır. Optimum değer bulunamaz."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html",
+    "href": "IST207/Hafta10/index.html",
+    "title": "Hafta 10",
+    "section": "",
+    "text": "Karar Matrisi\n\n\n\n\nRisk veya belirsizlik ortamındaki bir karar probleminin matris biçiminde gösterilmesi, problemin değerlendirilmesi ve çözülmesinde büyük kolaylıklar sağlar.\nAlternatif stratejiler, olası olaylar ve sonuç değerlerinden oluşan matrise karar matrisi denir.\nKarar matrisi kavramı son derece genel olup, bunun yerine sonuç, kazanç, ödeme veya kâr-zarar matrisi deyimleri de kullanılmaktadır.\nMatrisin \\(a_{ij}\\) elemanları \\(R(S_i, O_j)\\) sonuç değerleridir."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#karar-matrisi",
+    "href": "IST207/Hafta10/index.html#karar-matrisi",
+    "title": "Hafta 10",
+    "section": "Karar Matrisi",
+    "text": "Karar Matrisi\n\n\n\n\nKarar Matrisi\n\n\n\nRisk veya belirsizlik ortamındaki bir karar probleminin matris biçiminde gösterilmesi, problemin değerlendirilmesi ve çözülmesinde büyük kolaylıklar sağlar.\nAlternatif stratejiler, olası olaylar ve sonuç değerlerinden oluşan matrise karar matrisi denir.\nKarar matrisi kavramı son derece genel olup, bunun yerine sonuç, kazanç, ödeme veya kâr-zarar matrisi deyimleri de kullanılmaktadır.\nMatrisin \\(a_{ij}\\) elemanları \\(R(S_i, O_j)\\) sonuç değerleridir."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#belirsizlik-durumunda-karar-alma-1",
+    "href": "IST207/Hafta10/index.html#belirsizlik-durumunda-karar-alma-1",
+    "title": "Hafta 10",
+    "section": "Belirsizlik durumunda karar alma (1)",
+    "text": "Belirsizlik durumunda karar alma (1)\n\n\n\n\nBelirsizlik durumunda karar alma (1)\n\n\n\nBelirsizlik durumunda karar vericinin değişik stratejiler arasından seçim yapmasında esas alabileceği belli başlı ölçütler şunlardır:\n\nLaplace Ölçütü\nMinimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)\nMaksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)\nSavage (Pişmanlık) Ölçütü\nHurwicz Ölçütü"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#belirsizlik-durumunda-karar-alma-2",
+    "href": "IST207/Hafta10/index.html#belirsizlik-durumunda-karar-alma-2",
+    "title": "Hafta 10",
+    "section": "Belirsizlik durumunda karar alma (2)",
+    "text": "Belirsizlik durumunda karar alma (2)\n\n\n\n\nBelirsizlik durumunda karar alma (2)\n\n\n\nUygun ölçütün seçilmesi karar ortamının yapısına, karar vericinin deneyim ve eğilimine bağlıdır.\nSözgelimi, minimaks ölçütünü seçen karar verici ile karşılaştırıldığında, Laplace ölçütünü benimseyen karar vericinin daha iyimser olduğu söylenebilir.\nHurwicz ölçütünü benimseyen karar vericinin ise minimaks ölçütü ile maksimaks ölçütü arasında bir denge bulmaya çalıştığı kabul edilir.\nKısaca bu ölçütler arasında seçim yapmada genel kabul görmüş bir kural yoktur.\nYukarıdaki ölçütlerden birini kullanacak olan karar vericinin zeki bir rakibinin bulunmadığı, tek rakibinin doğa olduğu kabul edilir."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#laplace-ölçütü",
+    "href": "IST207/Hafta10/index.html#laplace-ölçütü",
+    "title": "Hafta 10",
+    "section": "Laplace Ölçütü",
+    "text": "Laplace Ölçütü\n\n\n\n\nLaplace Ölçütü\n\n\n\nLaplace ölçütü muhtemel olayların ortaya çıkması ile ilgili olasılıkların birbirlerine eşit olduğu ilkesine dayanır.\nOlayların ortaya çıkması olasılıkları belirlenebildiğinden problem belirsizlik durumunda karar alma problemi olmaktan çıkarak, risk durumunda karar alma problemine dönüşür.\nLaplace ölçütü, olayların gerçekleşmesi olasılıklarının farklı olduğuna ilişkin bir kanıt olmaması durumunda kullanılabilir.\nAnılan olasılıkların eşit kabul edilmesi ilkesine yetersiz sebep ilkesi denir."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kazanç-durumu-1",
+    "href": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kazanç-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Laplace Ölçütü - Kazanç Durumu (1)",
+    "text": "Örnek 1: Laplace Ölçütü - Kazanç Durumu (1)\n\n\n\n\nÖrnek 1: Laplace Ölçütü - Kazanç Durumu (1)\n\n\n\nLaplace ölçütünü aşağıdaki kazanç matrisine uygulayarak en iyi stratejiyi kararlaştırınız.\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kazanç-durumu-2",
+    "href": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kazanç-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Laplace Ölçütü - Kazanç Durumu (2)",
+    "text": "Örnek 1: Laplace Ölçütü - Kazanç Durumu (2)\n\n\n\n\nÖrnek 1: Laplace Ölçütü - Kazanç Durumu (2)\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.25\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nS1 için \\(0.25\\cdot26 + 0.25\\cdot26 + 0.25\\cdot18 + 0.25\\cdot22 = 23.0\\)\nS2 için \\(0.25\\cdot22 + 0.25\\cdot34 + 0.25\\cdot30 + 0.25\\cdot18 = 26.0\\)\nS3 için \\(0.25\\cdot28 + 0.25\\cdot24 + 0.25\\cdot34 + 0.25\\cdot26 = 28.0\\)\nS4 için \\(0.25\\cdot22 + 0.25\\cdot30 + 0.25\\cdot28 + 0.25\\cdot20 = 25.0\\)\n\n\n\n\n\n\n\nEn yüksek beklenen kazancı \\(S3\\) seçeneği sağladığından \\((28.0)\\), karar vericinin en iyi kararı \\(S3\\)’ü seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Getiri Tablosu\n\n\n  \n\n\n\nLaplace — Getiri Tablosu\n\n\nStrateji\nOlay\nLaplace\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nOlasılık\n0.25\n0.25\n0.25\n0.25\n\n\n\nS1\n26\n26\n18\n22\n23.00\n\n\nS2\n22\n34\n30\n18\n26.00\n\n\nS3\n28\n24\n34\n26\n28.00\n\n\nS4\n22\n30\n28\n20\n25.00"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#minimaks-veya-maksimin-ölçütü-kötümserlik-ölçütü",
+    "href": "IST207/Hafta10/index.html#minimaks-veya-maksimin-ölçütü-kötümserlik-ölçütü",
+    "title": "Hafta 10",
+    "section": "Minimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)",
+    "text": "Minimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)\n\n\n\n\nMinimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)\n\n\n\nBu ölçüt yaklaşımlarında tutucu, kötümser karar vericilerin benimsedikleri karar ölçütüdür.\nBu yaklaşım, hangi strateji seçilmiş olursa olsun daima o eylem için en kötü olan olayın gerçekleşeceği varsayımına dayanır.\nBu nedenle, her bir strateji için öncelikle o eylem için en kötü olan olayın ortaya çıkması nedeniyle oluşan en kötü sonuç belirlenir.\nBu yolla bulunan en kötü sonuçlar arasından en iyi olanının işaret ettiği stratejinin seçilmesiyle en iyi hareket tarzı belirlenmiş olur.\nKarar matrisi elemanları;\n\nGelir, kâr, kazanç gibi büyük olması arzulanan değerlere karşılık geliyorsa ölçüt en küçüklerin en büyüğü anlamına gelen maksimin;\nGider, zarar, kayıp gibi küçük olması arzulanan değerlere karşılık geliyorsa en büyüklerin en küçüğü anlamını ifade eden minimaks ölçütü adını alır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kazanç-durumu-1",
+    "href": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kazanç-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (1)",
+    "text": "Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (1)\n\n\n\n\nÖrnek 1: Kötümserlik Ölçütü - Kazanç Durumu (1)\n\n\n\nKaramsarlık ölçütünü aşağıdaki kazanç matrisine uygulayarak en iyi stratejiyi kararlaştırınız.\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kazanç-durumu-2",
+    "href": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kazanç-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (2)",
+    "text": "Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (2)\n\n\n\n\nÖrnek 1: Kötümserlik Ölçütü - Kazanç Durumu (2)\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda \\(S1\\) için beklenen kazanç \\(18\\), \\(S2\\) için beklenen kazanç \\(18\\), \\(S3\\) için beklenen kazanç \\(24\\) ve \\(S4\\) için beklenen kazanç \\(20\\) olacaktır.\n\n\n\n\n\n\nMaximin — Getiri Tablosu\n\n\n  \n\n\n\nMaximin — Getiri Tablosu\n\n\nStrateji\nOlay\nMaximin\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n18.00\n\n\nS2\n22\n34\n30\n18\n18.00\n\n\nS3\n28\n24\n34\n26\n24.00\n\n\nS4\n22\n30\n28\n20\n20.00\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani maksiminini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(24\\) beklenen getirisiyle \\(S3\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#maksimaks-veya-minimin-ölçütü-iyimserlik-ölçütü",
+    "href": "IST207/Hafta10/index.html#maksimaks-veya-minimin-ölçütü-iyimserlik-ölçütü",
+    "title": "Hafta 10",
+    "section": "Maksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)",
+    "text": "Maksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)\n\n\n\n\nMaksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)\n\n\n\nBu yaklaşım, hangi strateji seçilmiş olursa olsun daima o eylem için en iyi olan olayın gerçekleşeceği varsayımına dayanır.\nBu nedenle, her bir strateji için öncelikle o eylem için en iyi olan olayın gerçekleşmesi sonucunda oluşan en iyi sonuç belirlenir.\nBu yolla bulunan en iyi sonuçlar arasından en iyi olanının işaret ettiği stratejinin seçilmesiyle en iyi hareket tarzı belirlenmiş olur.\nKarar matrisi elemanları;\n\nGelir, kâr, kazanç gibi büyük olması arzulanan değerlere karşılık geliyorsa ölçüt en büyüklerin en büyüğü anlamına gelen maksimaks;\nGider, zarar, kayıp gibi küçük olması arzulanan değerlere karşılık geliyorsa en küçüklerin en küçüğü anlamını ifade eden minimin ölçütü adını alır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kazanç-durumu-1",
+    "href": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kazanç-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (1)",
+    "text": "Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (1)\n\n\n\n\nÖrnek 1: İyimserlik Ölçütü - Kazanç Durumu (1)\n\n\n\nİyimserlik ölçütünü aşağıdaki kazanç matrisine uygulayarak en iyi stratejiyi kararlaştırınız.\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kazanç-durumu-2",
+    "href": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kazanç-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (2)",
+    "text": "Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (2)\n\n\n\n\nÖrnek 1: İyimserlik Ölçütü - Kazanç Durumu (2)\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda \\(S1\\) için beklenen kazanç \\(26\\), \\(S2\\) için beklenen kazanç \\(34\\), \\(S3\\) için beklenen kazanç \\(34\\) ve \\(S4\\) için beklenen kazanç \\(30\\) olacaktır.\n\n\n\n\n\n\nMaximax — Getiri Tablosu\n\n\n  \n\n\n\nMaximax — Getiri Tablosu\n\n\nStrateji\nOlay\nMaximax\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n26.00\n\n\nS2\n22\n34\n30\n18\n34.00\n\n\nS3\n28\n24\n34\n26\n34.00\n\n\nS4\n22\n30\n28\n20\n30.00\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani maksimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(32\\) beklenen getirisiyle \\(S2\\) ya da \\(S3\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#savage-ölçütü-1",
+    "href": "IST207/Hafta10/index.html#savage-ölçütü-1",
+    "title": "Hafta 10",
+    "section": "Savage Ölçütü (1)",
+    "text": "Savage Ölçütü (1)\n\n\n\n\nSavage Ölçütü (1)\n\n\n\nBu ölçüt en büyük fırsat kaybının en küçüklenmesi esasına dayanır. Bu nedenle minimaks fırsat kaybı ölçütü olarak da bilinir.\nÖlçütün uygulanması için öncelikle fırsat kaybı veya pişmanlık matrisinin oluşturulması gerekir.\nFırsat kaybı her bir olay için en iyi sonucu sağlayacak stratejinin seçilmemesi sonucu vazgeçilen kazanç veya katlanılan kayıp miktarıdır.\nFırsat kayıpları genellikle pozitif değerler ve rakamlarla açıklanır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#savage-ölçütü-2",
+    "href": "IST207/Hafta10/index.html#savage-ölçütü-2",
+    "title": "Hafta 10",
+    "section": "Savage Ölçütü (2)",
+    "text": "Savage Ölçütü (2)\n\n\n\n\nSavage Ölçütü (2)\n\n\n\nKarar tablosu gelirler cinsinden ifade edildiğinde, ele alınan her bir olaya ilişkin fırsat kaybı değerleri; en iyi olan eylemin seçilmesi durumunda sağlanacak olan gelirden diğer seçeneklerin sağlayacağı gelirlerin çıkartılmasıyla hesaplanırlar.\n\nSütun Enbüyük Değeri – Sütun Değerleri\n\nKarar matrisinin maliyetleri göstermesi durumunda fırsat kaybı değerleri en iyi seçimin maliyet değerinin diğer eylemlerin maliyet rakamlarından çıkartılması ile belirlenirler.\n\nSütun Değerleri – Sütun En küçük Değeri"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kazanç-durumu-1",
+    "href": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kazanç-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Savage Ölçütü - Kazanç Durumu (1)",
+    "text": "Örnek 1: Savage Ölçütü - Kazanç Durumu (1)\n\n\n\n\nÖrnek 1: Savage Ölçütü - Kazanç Durumu (1)\n\n\n\nSavage ölçütünü aşağıdaki kazanç matrisine uygulayarak en iyi stratejiyi kararlaştırınız.\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kazanç-durumu-2",
+    "href": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kazanç-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Savage Ölçütü - Kazanç Durumu (2)",
+    "text": "Örnek 1: Savage Ölçütü - Kazanç Durumu (2)\n\n\n\n\nÖrnek 1: Savage Ölçütü - Kazanç Durumu (2)\n\n\n\nKarar verici kazançlar için karar vermek istediğinden her bir sütunun maksimum değerinden o sütundaki diğer değerleri çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\nStrateji\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n2\n8\n16\n4\n16.00\n\n\nS2\n6\n0\n4\n8\n8.00\n\n\nS3\n0\n10\n0\n0\n10.00\n\n\nS4\n6\n4\n6\n6\n6.00\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda \\(S1\\) için beklenen pişmanlık \\(16\\), \\(S2\\) için beklenen pişmanlık \\(8\\), \\(S3\\) için beklenen pişmanlık \\(10\\) ve \\(S4\\) için beklenen pişmanlık \\(6\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(6\\) beklenen pişmanlık değeriyle \\(S4\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#hurwicz-ölçütü-1",
+    "href": "IST207/Hafta10/index.html#hurwicz-ölçütü-1",
+    "title": "Hafta 10",
+    "section": "Hurwicz Ölçütü (1)",
+    "text": "Hurwicz Ölçütü (1)\n\n\n\n\nHurwicz Ölçütü (1)\n\n\n\nHurwicz’e göre, karar vericinin ne aşırı derecede iyimser, ne de aşırı derecede kötümser olmasını gerektiren güçlü gerekçeleri yoktur.\nBu nedenle, karar vericinin maksimin ölçütünün aşırı kötümserliği ile maksimaks ölçütünün aşırı iyimserliği arasında bir denge kurması uygun olur.\nBu nedenle bu ölçüte ağırlıklı ortalama veya gerçekçilik ölçütü de denir.\nHurwicz ölçütü, seçilen her strateji için iyimserlik koşullarında ortaya çıkan sonuçlar ile kötümserlik koşullarında ortaya çıkan sonuçların ağırlıklandırılması esasına dayanır.\nBunun için iyimserlik katsayısı olarak bilinen \\(\\alpha\\) kullanılır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#hurwicz-ölçütü-2",
+    "href": "IST207/Hafta10/index.html#hurwicz-ölçütü-2",
+    "title": "Hafta 10",
+    "section": "Hurwicz Ölçütü (2)",
+    "text": "Hurwicz Ölçütü (2)\n\n\n\n\nHurwicz Ölçütü (2)\n\n\n\n\\(\\alpha\\), \\(0 \\leq \\alpha \\leq 1\\) aralığında bir değerdir.\nÇok kötümser bir karar vericinin \\(\\alpha\\) için seçeceği değer \\(0\\), aşırı derecede iyimser bir karar vericinin seçeceği değer \\(1\\) olur.\nKarar verici \\(\\alpha\\)’nın değeri hakkında kararsızsa, \\(\\alpha=0.5\\) seçmesi akılcı olur.\n\\(\\alpha\\)’nın belirlenmesinden sonra karar matrisindeki her bir strateji için en iyi ve en kötü sonuç değerlerinin sırasıyla \\(\\alpha\\) ve \\(1-\\alpha\\) ile çarpılarak sonuçların toplanması gerekir.\nToplama işlemiyle belirlenen değerler stratejilerin beklenen değerleri olarak yorumlanır ve beklenen değerler taranarak; karar matrisi\n\nkazanç değerlerinden oluşmuşsa en büyük,\nmaliyet değerlerinden oluşmuşsa en küçük beklenen değere sahip stratejinin uygulanması önerilir."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-1",
+    "href": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-1",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (1)",
+    "text": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (1)\n\n\n\n\nÖrnek 1: Hurwicz Ölçütü - Kazanç Durumu (1)\n\n\n\nHurwicz ölçütünü aşağıdaki kazanç matrisine sırasıyla \\(\\alpha=0\\), \\(\\alpha=1\\) ve \\(\\alpha=0.6\\) için uygulayarak her bir senaryo için en iyi stratejiyi kararlaştırınız.\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-2",
+    "href": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-2",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (2)",
+    "text": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (2)\n\n\n\n\nÖrnek 1: Hurwicz Ölçütü - Kazanç Durumu (2)\n\n\n\n\n\\(\\alpha\\) iyimserlik ölçütü için katsayı olduğundan\n\n\\(\\alpha=0\\) için tamamen kötümser bir senaryo oluşacak ve hesaplama kötümserlik (maksimin) stratejisiyle aynı olacaktır.\n\\(\\alpha=1\\) için ise tamamen iyimser bir senaryo oluşacak ve hesaplama iyimserlik (maksimaks) stratejisiyle aynı olacaktır.\n\n\n\n\n\n\n\n\n\n\nMaximin — Getiri Tablosu\n\n\n  \n\n\n\nMaximin — Getiri Tablosu\n\n\nStrateji\nOlay\nMaximin\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n18.00\n\n\nS2\n22\n34\n30\n18\n18.00\n\n\nS3\n28\n24\n34\n26\n24.00\n\n\nS4\n22\n30\n28\n20\n20.00\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaximax — Getiri Tablosu\n\n\n  \n\n\n\nMaximax — Getiri Tablosu\n\n\nStrateji\nOlay\nMaximax\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n26.00\n\n\nS2\n22\n34\n30\n18\n34.00\n\n\nS3\n28\n24\n34\n26\n34.00\n\n\nS4\n22\n30\n28\n20\n30.00\n\n\n\n\n\n\n\n\n\n\n\\(\\alpha=0\\) için kullanıcının seçimi kötümserlik stratejisiyle hesaplanan \\(24\\) beklenen getirisiyle \\(S3\\) stratejisi olacaktır.\n\n\n\n\n\\(\\alpha=1\\) için kullanıcının seçimi iyimserlik stratejisiyle hesaplanan \\(34\\) beklenen getirisiyle \\(S2\\) ya da \\(S3\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-3",
+    "href": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kazanç-durumu-3",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (3)",
+    "text": "Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (3)\n\n\n\n\nÖrnek 1: Hurwicz Ölçütü - Kazanç Durumu (3)\n\n\n\n\\(\\alpha=0.6\\) seçildiğinde ise iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.6\\) ve kötümser sonucun \\(0.4\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kazancı maksimum yapacak değer seçilir.\n\n\n\n\n\nS1 için \\(0.6\\cdot26 + 0.4\\cdot18 = 22.8\\)\nS2 için \\(0.6\\cdot34 + 0.4\\cdot18 = 27.6\\)\nS3 için \\(0.6\\cdot34 + 0.4\\cdot24 = 30.0\\)\nS4 için \\(0.6\\cdot30 + 0.4\\cdot20 = 26.0\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en yüksek getiriye sahip \\((30)\\) \\(S3\\) stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.60) — Getiri Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.60) — Getiri Tablosu\n\n\nStrateji\nOlay\nEn İyi\nEn Kötü\nHurwicz (α=0.60)\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n26.00\n18.00\n22.80\n\n\nS2\n22\n34\n30\n18\n34.00\n18.00\n27.60\n\n\nS3\n28\n24\n34\n26\n34.00\n24.00\n30.00\n\n\nS4\n22\n30\n28\n20\n30.00\n20.00\n26.00"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Kayıp Durumu",
+    "text": "Örnek 1: Kayıp Durumu\n\n\n\n\nÖrnek 1: Kayıp Durumu\n\n\n\nBu kez strateji ve olay matrisinin olası kayıpları gösterdiği varsayımı altında en iyi stratejiyi\n\n\n\n\nLaplace Ölçütü\nKötümserlik Ölçütü\nİyimserlik Ölçütü\n\n\n\n\n\nSavage Pişmanlık Ölçütü ve\n\\(\\alpha=0.3\\) alarak Hurwicz Ölçütü\n\n\niçin belirleyin.\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nStrateji\nOlay\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n\n\nS2\n22\n34\n30\n18\n\n\nS3\n28\n24\n34\n26\n\n\nS4\n22\n30\n28\n20"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-laplace-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Laplace Ölçütü - Kayıp Durumu",
+    "text": "Örnek 1: Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 1: Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.25\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nS1 için \\(0.25\\cdot26 + 0.25\\cdot26 + 0.25\\cdot18 + 0.25\\cdot22 = 23.0\\)\nS2 için \\(0.25\\cdot22 + 0.25\\cdot34 + 0.25\\cdot30 + 0.25\\cdot18 = 26.0\\)\nS3 için \\(0.25\\cdot28 + 0.25\\cdot24 + 0.25\\cdot34 + 0.25\\cdot26 = 28.0\\)\nS4 için \\(0.25\\cdot22 + 0.25\\cdot30 + 0.25\\cdot28 + 0.25\\cdot20 = 25.0\\)\n\n\n\n\n\n\n\nEn düşük beklenen kayıp \\(S1\\) seçeneği sağladığından \\((23.0)\\), karar vericinin en iyi kararı \\(S1\\)’i seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Kayıp Tablosu\n\n\n  \n\n\n\nLaplace — Kayıp Tablosu\n\n\nStrateji\nOlay\nLaplace\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nOlasılık\n0.25\n0.25\n0.25\n0.25\n\n\n\nS1\n26\n26\n18\n22\n23.00\n\n\nS2\n22\n34\n30\n18\n26.00\n\n\nS3\n28\n24\n34\n26\n28.00\n\n\nS4\n22\n30\n28\n20\n25.00"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-kötümserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Kötümserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 1: Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 1: Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda \\(S1\\) için beklenen kayıp \\(26\\), \\(S2\\) için beklenen kayıp \\(34\\), \\(S3\\) için beklenen kayıp \\(34\\) ve \\(S4\\) için beklenen kayıp \\(30\\) olacaktır.\n\n\n\n\n\n\nMinimax — Kayıp Tablosu\n\n\n  \n\n\n\nMinimax — Kayıp Tablosu\n\n\nStrateji\nOlay\nMinimax\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n26.00\n\n\nS2\n22\n34\n30\n18\n34.00\n\n\nS3\n28\n24\n34\n26\n34.00\n\n\nS4\n22\n30\n28\n20\n30.00\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani minimaksı seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(26\\) beklenen kayıpla \\(S1\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-iyimserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: İyimserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 1: İyimserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 1: İyimserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda \\(S1\\) için beklenen kayıp \\(18\\), \\(S2\\) için beklenen kayıp \\(18\\), \\(S3\\) için beklenen kayıp \\(24\\) ve \\(S4\\) için beklenen kayıp \\(20\\) olacaktır.\n\n\n\n\n\n\nMinimin — Kayıp Tablosu\n\n\n  \n\n\n\nMinimin — Kayıp Tablosu\n\n\nStrateji\nOlay\nMinimin\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n18.00\n\n\nS2\n22\n34\n30\n18\n18.00\n\n\nS3\n28\n24\n34\n26\n24.00\n\n\nS4\n22\n30\n28\n20\n20.00\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani minimini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(18\\) beklenen kaybıyla \\(S1\\) ya da \\(S2\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-savage-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Savage Ölçütü - Kayıp Durumu",
+    "text": "Örnek 1: Savage Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 1: Savage Ölçütü - Kayıp Durumu\n\n\n\nKarar verici kayıplar için karar vermek istediğinden her bir sütun değerinden o sütunun en küçük değerini çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\nStrateji\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n4\n2\n0\n4\n4.00\n\n\nS2\n0\n10\n12\n0\n12.00\n\n\nS3\n6\n0\n16\n8\n16.00\n\n\nS4\n0\n6\n10\n2\n10.00\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda \\(S1\\) için beklenen pişmanlık \\(4\\), \\(S2\\) için beklenen pişmanlık \\(12\\), \\(S3\\) için beklenen pişmanlık \\(16\\) ve \\(S4\\) için beklenen pişmanlık \\(10\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(4\\) beklenen pişmanlık değeriyle \\(S1\\) stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-1-hurwicz-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 1: Hurwicz Ölçütü - Kayıp Durumu",
+    "text": "Örnek 1: Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 1: Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\\(\\alpha=0.3\\) seçildiği için iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.3\\) ve kötümser sonucun \\(0.7\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kaybı minimum yapacak değer seçilir.\n\n\n\n\n\nS1 için \\(0.3\\cdot18 + 0.7\\cdot26 = 23.6\\)\nS2 için \\(0.3\\cdot18 + 0.7\\cdot34 = 29.2\\)\nS3 için \\(0.3\\cdot24 + 0.7\\cdot34 = 31.0\\)\nS4 için \\(0.3\\cdot20 + 0.7\\cdot30 = 27.0\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en düşük kayba sahip \\((23.60)\\) \\(S1\\) stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.30) — Kayıp Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.30) — Kayıp Tablosu\n\n\nStrateji\nOlay\nEn İyi\nEn Kötü\nHurwicz (α=0.30)\n\n\nO1\nO2\nO3\nO4\n\n\n\n\nS1\n26\n26\n18\n22\n18.00\n26.00\n23.60\n\n\nS2\n22\n34\n30\n18\n18.00\n34.00\n29.20\n\n\nS3\n28\n24\n34\n26\n24.00\n34.00\n31.00\n\n\nS4\n22\n30\n28\n20\n20.00\n30.00\n27.00"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza",
+    "text": "Örnek 2: Mağaza\n\n\n\n\nÖrnek 2: Mağaza\n\n\n\nBir mağaza sahibinin; \\(100\\), \\(200\\) veya \\(300\\) adet sipariş vermek gibi sırasıyla \\(S1\\), \\(S2\\) ve \\(S3\\) olarak adlandırılan üç stratejisi vardır.\nMağaza sahibi istem miktarlarının ise sırasıyla \\(M1\\), \\(M2\\), \\(M3\\) ve \\(M4\\) olarak nitelenen \\(100\\), \\(150\\), \\(200\\) ve ya \\(250\\) adetten bir tanesi olacağını bilmektedir.\nKarar matrisinin elemanları farklı sipariş ve istem miktarı birleşimlerinin sonucu elde edilecek kâr olarak tanımlanmıştır.\n\n\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nSipariş\nİstem Miktarı\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n\n\n\n\n\n\n\n\n\nMağaza sahibinin en iyi stratejisini ve bu stratejiye ait değerini Laplace, Kötümserlik, İyimserlik, Pişmanlık ve Hurwitz yöntemleriyle matris elemanları\n\nolası kazancı gösterdiği durumda \\((\\alpha=0.5)\\)\nolası kaybı gösterdiği durum için \\((\\alpha=0.2)\\) belirleyiniz."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---laplace-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---laplace-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Laplace Ölçütü - Kazanç Durumu",
+    "text": "Örnek 2: Mağaza - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 2: Mağaza - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.25\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nS1 - 100 sipariş için \\(0.25\\cdot 3000 + 0.25\\cdot 2750 + 0.25\\cdot 2500 + 0.25\\cdot 2250 = 2625\\)\nS2 - 200 sipariş için \\(0.25\\cdot 1500 + 0.25\\cdot 4750 + 0.25\\cdot 8000 + 0.25\\cdot 7750 = 5500\\)\nS3 - 300 sipariş için \\(0.25\\cdot 2000 + 0.25\\cdot 5250 + 0.25\\cdot 8500 + 0.25\\cdot 11750 = 6875\\)\n\n\n\n\n\n\n\nEn yüksek beklenen kazancı S3 - \\(300\\) sipariş seçeneği sağladığından \\((6875)\\), karar vericinin en iyi kararı \\(300\\) siparişi seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Getiri Tablosu\n\n\n  \n\n\n\nLaplace — Getiri Tablosu\n\n\nSipariş\nİstem Miktarı\nLaplace\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nOlasılık\n0.25\n0.25\n0.25\n0.25\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n2 625\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n5 500\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n6 875"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---kötümserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---kötümserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Kötümserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 2: Mağaza - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 2: Mağaza - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda S1 - 100 sipariş için beklenen kazanç \\(2250\\), S2 - 200 sipariş için beklenen kazanç \\(1500\\) ve S3 - 300 sipariş için beklenen kazanç \\(2000\\) olacaktır.\n\n\n\n\n\n\nMaximin — Getiri Tablosu\n\n\n  \n\n\n\nMaximin — Getiri Tablosu\n\n\nSipariş\nİstem Miktarı\nMaximin\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n2 250\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n1 500\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n2 000\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani maksiminini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(2250\\) beklenen getirisiyle S1 - \\(100\\) sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---iyimserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---iyimserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - İyimserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 2: Mağaza - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 2: Mağaza - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda S1 - 100 sipariş için beklenen kazanç \\(3000\\), S2 - 200 sipariş için beklenen kazanç \\(8000\\) ve S3 - 300 sipariş için beklenen kazanç \\(11750\\) olacaktır.\n\n\n\n\n\n\nMaximax — Getiri Tablosu\n\n\n  \n\n\n\nMaximax — Getiri Tablosu\n\n\nSipariş\nİstem Miktarı\nMaximax\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n3 000\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n8 000\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n11 750\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani maksimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(11750\\) beklenen getirisiyle S3 - \\(300\\) sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---savage-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---savage-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Savage Ölçütü - Kazanç Durumu",
+    "text": "Örnek 2: Mağaza - Savage Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 2: Mağaza - Savage Ölçütü - Kazanç Durumu\n\n\n\nKarar verici kazançlar için karar vermek istediğinden her bir sütunun maksimum değerinden o sütundaki diğer değerleri çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\nSipariş\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n0\n2 500\n6 000\n9 500\n9 500\n\n\nS2 (200)\n1 500\n500\n500\n4 000\n4 000\n\n\nS3 (300)\n1 000\n0\n0\n0\n1 000\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda S1 - 100 sipariş için beklenen pişmanlık \\(9500\\), S2 - 200 sipariş için beklenen pişmanlık \\(4000\\) ve S3 - 300 sipariş için beklenen pişmanlık \\(1000\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(1000\\) beklenen pişmanlık değeriyle S3 - 300 sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---hurwicz-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---hurwicz-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Hurwicz Ölçütü - Kazanç Durumu",
+    "text": "Örnek 2: Mağaza - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 2: Mağaza - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\\(\\alpha=0.5\\) seçildiğinde ise iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.5\\) ve kötümser sonucun \\(0.5\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kazancı maksimum yapacak değer seçilir.\n\n\n\n\n\nS1 - 100 sipariş için \\(0.5\\cdot 3000 + 0.5\\cdot 2250 = 2625\\)\nS2 - 200 sipariş için \\(0.5\\cdot 8000 + 0.5\\cdot 1500 = 4750\\)\nS3 - 300 sipariş için \\(0.5\\cdot 11750 + 0.5\\cdot 2000 = 6875\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en yüksek getiriye sahip \\((6875)\\) S3 - \\(300\\) sipariş stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.50) — Getiri Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.50) — Getiri Tablosu\n\n\nSipariş\nİstem Miktarı\nEn İyi\nEn Kötü\nHurwicz (α=0.50)\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n3 000\n2 250\n2 625\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n8 000\n1 500\n4 750\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n11 750\n2 000\n6 875"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---laplace-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---laplace-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Laplace Ölçütü - Kayıp Durumu",
+    "text": "Örnek 2: Mağaza - Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 2: Mağaza - Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.25\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nS1 - 100 sipariş için \\(0.25\\cdot 3000 + 0.25\\cdot 2750 + 0.25\\cdot 2500 + 0.25\\cdot 2250 = 2625\\)\nS2 - 200 sipariş için \\(0.25\\cdot 1500 + 0.25\\cdot 4750 + 0.25\\cdot 8000 + 0.25\\cdot 7750 = 5500\\)\nS3 - 300 sipariş için \\(0.25\\cdot 2000 + 0.25\\cdot 5250 + 0.25\\cdot 8500 + 0.25\\cdot 11750 = 6875\\)\n\n\n\n\n\n\n\nEn düşük beklenen kayıp \\(100\\) sipariş seçeneği sağladığından \\((2625)\\), karar vericinin en iyi kararı S1 - \\(100\\) sipariş’i seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Kayıp Tablosu\n\n\n  \n\n\n\nLaplace — Kayıp Tablosu\n\n\nSipariş\nİstem Miktarı\nLaplace\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nOlasılık\n0.25\n0.25\n0.25\n0.25\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n2 625\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n5 500\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n6 875"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---kötümserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---kötümserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Kötümserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 2: Mağaza - Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 2: Mağaza - Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda S1 - 100 sipariş için beklenen kayıp \\(3000\\), S2 - 200 sipariş için beklenen kayıp \\(8000\\) ve S3 - 300 sipariş için beklenen kayıp \\(11750\\) olacaktır.\n\n\n\n\n\n\nMinimax — Kayıp Tablosu\n\n\n  \n\n\n\nMinimax — Kayıp Tablosu\n\n\nSipariş\nİstem Miktarı\nMinimax\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n3 000\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n8 000\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n11 750\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani minimaksı seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(3000\\) beklenen kayıpla S1 - \\(100\\) sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---iyimserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---iyimserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - İyimserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 2: Mağaza - İyimserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 2: Mağaza - İyimserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda S1 - 100 sipariş için beklenen kayıp \\(2250\\), S2 - 200 sipariş için beklenen kayıp \\(1500\\) ve S3 - 300 sipariş için beklenen kayıp \\(2000\\) olacaktır.\n\n\n\n\n\n\nMinimin — Kayıp Tablosu\n\n\n  \n\n\n\nMinimin — Kayıp Tablosu\n\n\nSipariş\nİstem Miktarı\nMinimin\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n2 250\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n1 500\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n2 000\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani minimini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(1500\\) beklenen kaybıyla S2 - \\(200\\) sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---savage-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---savage-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Savage Ölçütü - Kayıp Durumu",
+    "text": "Örnek 2: Mağaza - Savage Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 2: Mağaza - Savage Ölçütü - Kayıp Durumu\n\n\n\nKarar verici kayıplar için karar vermek istediğinden her bir sütun değerinden o sütunun en küçük değerini çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\nSipariş\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n1 500\n0\n0\n0\n1 500\n\n\nS2 (200)\n0\n2 000\n5 500\n5 500\n5 500\n\n\nS3 (300)\n500\n2 500\n6 000\n9 500\n9 500\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda S1 - 100 sipariş için beklenen pişmanlık \\(1500\\), S2 - 200 sipariş için beklenen pişmanlık \\(5500\\) ve S3 - 300 sipariş için beklenen pişmanlık \\(9500\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(1500\\) beklenen pişmanlık değeriyle S1 - \\(100\\) sipariş stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-2-mağaza---hurwicz-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-2-mağaza---hurwicz-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 2: Mağaza - Hurwicz Ölçütü - Kayıp Durumu",
+    "text": "Örnek 2: Mağaza - Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 2: Mağaza - Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\\(\\alpha=0.2\\) seçildiği için iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.3\\) ve kötümser sonucun \\(0.7\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kaybı minimum yapacak değer seçilir.\n\n\n\n\n\nS1 - 100 sipariş için \\(0.2\\cdot 2250 + 0.8\\cdot 3000 = 2850\\)\nS2 - 200 sipariş için \\(0.2\\cdot 1500 + 0.8\\cdot 8000 = 6700\\)\nS3 - 300 sipariş için \\(0.2\\cdot 2000 + 0.8\\cdot 11750 = 9800\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en düşük kayba sahip \\((2850)\\) S1 - \\(100\\) sipariş stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.20) — Kayıp Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.20) — Kayıp Tablosu\n\n\nSipariş\nİstem Miktarı\nEn İyi\nEn Kötü\nHurwicz (α=0.20)\n\n\nM1 (100)\nM2 (150)\nM3 (200)\nM4 (250)\n\n\n\n\nS1 (100)\n3 000\n2 750\n2 500\n2 250\n2 250\n3 000\n2 850\n\n\nS2 (200)\n1 500\n4 750\n8 000\n7 750\n1 500\n8 000\n6 700\n\n\nS3 (300)\n2 000\n5 250\n8 500\n11 750\n2 000\n11 750\n9 800"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi",
+    "text": "Örnek 3: Hisse Senedi\n\n\n\n\nÖrnek 3: Hisse Senedi\n\n\n\nA ve B firmalarının hisse senetlerini alarak borsaya \\(10000\\) pb para yatırmak istediğinizi varsayalım.\nA firmasının hisse senetleri riskli olmakla birlikte,\n\nBorsanın iyi gittiği durumda (boğaların hakim olduğu pazarda) gelecek sene için değeri \\(\\%50\\) artacaktır.\nEğer borsa iyi gitmezse (ayıların hakim olduğu pazarda) hisse senedinin değeri \\(%20\\) azalacaktır.\n\nB hisse senedi ise güvenli bir şekilde\n\nboğaların hakim olduğu pazarda \\(\\%15\\) getiri,\nayıların hakim olduğu pazarda \\(\\%5\\) getiri sağlayacaktır.\n\nParanızı nereye yatırmanız gerektiğini ve olası kazancınızı Laplace, Kötümserlik, İyimserlik, Pişmanlık ve \\((\\alpha=0.25)\\) ile Hurwitz yöntemleriyle hesaplayınız."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---karar-matrisinin-oluşturulması",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---karar-matrisinin-oluşturulması",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - Karar Matrisinin Oluşturulması",
+    "text": "Örnek 3: Hisse Senedi - Karar Matrisinin Oluşturulması\n\n\n\n\nÖrnek 3: Hisse Senedi - Karar Matrisinin Oluşturulması\n\n\n\n\nDiğer sorulardan farklı olarak bu soruda karar matrisi bize verilmemiş, olası durumlara göre matrisi bizden hazırlamamız beklenmektedir.\n\n\n\n\nOlası durumlara bakılırsa,\n\nA hisse senedi seçilir ve boğa yılı olursa, \\(10000 \\times 0.5 = 5000\\) pb getiri olur.\nA hisse senedi seçilir ve ayı yılı olursa, \\(10000 \\times (-0.2) = (-2000)\\) pb getiri olur.\nB hisse senedi seçilir ve boğa yılı olursa, \\(10000 \\times 0.15 = 1500\\) pb getiri olur.\nA hisse senedi seçilir ve ayı yılı olursa, \\(10000 \\times 0.05 = 500\\) pb getiri olur.\n\n\n\n\nBu bilgilere göre karar matrisi aşağıdaki gibi elde edilir.\n\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nHisse Senedi\nYıllık Getiri\n\n\nBoğa\nAyı\n\n\n\n\nA\n5 000\n-2 000\n\n\nB\n1 500\n500"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---laplace-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---laplace-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - Laplace Ölçütü - Kazanç Durumu",
+    "text": "Örnek 3: Hisse Senedi - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 3: Hisse Senedi - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.5\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nA hisse senedi için \\(0.50\\cdot 5000 + 0.50\\cdot (-2000) = 1500\\)\nB hisse senedi için \\(0.50\\cdot 1500 + 0.50\\cdot 500  = 1000\\)\n\n\n\n\n\n\n\nEn yüksek beklenen kazancı \\(A\\) hisse senedi seçeneği sağladığından \\((1500)\\), karar vericinin en iyi kararı \\(A\\) hisse senedini seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Getiri Tablosu\n\n\n  \n\n\n\nLaplace — Getiri Tablosu\n\n\nHisse Senedi\nYıllık Getiri\nLaplace\n\n\nBoğa\nAyı\n\n\n\n\nOlasılık\n0.500\n0.500\n\n\n\nA\n5 000\n-2 000\n1 500\n\n\nB\n1 500\n500\n1 000"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---kötümserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---kötümserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - Kötümserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 3: Hisse Senedi - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 3: Hisse Senedi - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda A hisse senedi için beklenen kazanç \\(-2000\\) ve B hisse senedi için beklenen kazanç \\(500\\) olacaktır.\n\n\n\n\n\n\nMaximin — Getiri Tablosu\n\n\n  \n\n\n\nMaximin — Getiri Tablosu\n\n\nHisse Senedi\nYıllık Getiri\nMaximin\n\n\nBoğa\nAyı\n\n\n\n\nA\n5 000\n-2 000\n-2 000\n\n\nB\n1 500\n500\n500\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani maksiminini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(500\\) beklenen getirisiyle B hisse senedi stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---iyimserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---iyimserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - İyimserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 3: Hisse Senedi - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 3: Hisse Senedi - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda A hisse senedi için beklenen kazanç \\(5000\\) ve B hisse senedi için beklenen kazanç \\(1500\\) olacaktır.\n\n\n\n\n\n\nMaximax — Getiri Tablosu\n\n\n  \n\n\n\nMaximax — Getiri Tablosu\n\n\nHisse Senedi\nYıllık Getiri\nMaximax\n\n\nBoğa\nAyı\n\n\n\n\nA\n5 000\n-2 000\n5 000\n\n\nB\n1 500\n500\n1 500\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani maksimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(5000\\) beklenen getirisiyle A hisse senedi stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---savage-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---savage-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - Savage Ölçütü - Kazanç Durumu",
+    "text": "Örnek 3: Hisse Senedi - Savage Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 3: Hisse Senedi - Savage Ölçütü - Kazanç Durumu\n\n\n\nKarar verici kazançlar için karar vermek istediğinden her bir sütunun maksimum değerinden o sütundaki diğer değerleri çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\nHisse Senedi\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nBoğa\nAyı\n\n\n\n\nA\n0\n2 500\n2 500\n\n\nB\n3 500\n0\n3 500\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda A hisse senedi için beklenen pişmanlık \\(2500\\) ve B hisse senedi için beklenen pişmanlık \\(3500\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(2500\\) beklenen pişmanlık değeriyle A hisse senedi stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---hurwicz-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-3-hisse-senedi---hurwicz-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 3: Hisse Senedi - Hurwicz Ölçütü - Kazanç Durumu",
+    "text": "Örnek 3: Hisse Senedi - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 3: Hisse Senedi - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\\(\\alpha=0.25\\) seçildiğinden iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.25\\) ve kötümser sonucun \\(0.75\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kazancı maksimum yapacak değer seçilir.\n\n\n\n\n\nA hisse senedi için \\(0.25\\cdot 5000 + 0.5\\cdot (-2000) = -250\\)\nB hisse senedi için \\(0.75\\cdot 1500 + 0.5\\cdot 500 = 750\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en yüksek getiriye sahip \\((750)\\) B hisse senedi stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.25) — Getiri Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.25) — Getiri Tablosu\n\n\nHisse Senedi\nYıllık Getiri\nEn İyi\nEn Kötü\nHurwicz (α=0.25)\n\n\nBoğa\nAyı\n\n\n\n\nA\n5 000\n-2 000\n5 000\n-2 000\n-250\n\n\nB\n1 500\n500\n1 500\n500\n750"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon",
+    "text": "Örnek 4: Fon\n\n\n\n\nÖrnek 4: Fon\n\n\n\nParanızı kamu, gelişme ve global gibi üç farklı fonda değerlendirebilme şansına sahip olduğunuzu düşünelim.\nYatırımınızın değeri pazar koşullarına bağlı olarak değişecektir.\nAşağıdaki tabloda pazarın durumu ve paranın yatırıldığı fon göz önüne alınarak hazırlanan kazanç matrisi verilmiştir.\n\n\n\n\n\n\n\nTemel Getiri Tablosu\n\n\n  \n\n\n\nTemel Getiri Tablosu\n\n\nFon\nGelecekteki Pazar Durumu (% Değişim)\n\n\nKötü\nNötr\nİyi\n\n\n\n\nKamu\n5\n7\n8\n\n\nGelişme\n-10\n5\n30\n\n\nGlobal\n2\n7\n20\n\n\n\n\n\n\n\n\n\nBuna göre hangi fonu seçmeniz gerektiğini ve elde edeceğiniz beklenen kazancı Laplace, Kötümserlik, İyimserlik, Pişmanlık ve \\((\\alpha=0.8)\\) olmak üzere Hurwitz yöntemleriyle belirleyiniz."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon---laplace-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon---laplace-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon - Laplace Ölçütü - Kazanç Durumu",
+    "text": "Örnek 4: Fon - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 4: Fon - Laplace Ölçütü - Kazanç Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(\\frac{1}{3}\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nKamu fonu için \\(\\frac{1}{3}\\cdot 5 + \\frac{1}{3}\\cdot 7 + \\frac{1}{3} \\cdot 8= 6.667\\)\nGelişme fonu için \\(\\frac{1}{3}\\cdot (-10) + \\frac{1}{3}\\cdot 5 + \\frac{1}{3} \\cdot 30= 8.333\\)\nGlobal fonu için \\(\\frac{1}{3}\\cdot 2 + \\frac{1}{3}\\cdot 7 + \\frac{1}{3} \\cdot 20= 9.667\\)\n\n\n\n\n\n\n\nEn yüksek beklenen kazancı Global fon seçeneği sağladığından \\((9.667)\\), karar vericinin en iyi kararı Global fonu seçmek olacaktır.\n\n\n\n\n\n\n\n\nLaplace — Getiri Tablosu\n\n\n  \n\n\n\nLaplace — Getiri Tablosu\n\n\nFon\nGelecekteki Pazar Durumu (% Değişim)\nLaplace\n\n\nKötü\nNötr\nİyi\n\n\n\n\nOlasılık\n0.333\n0.333\n0.333\n\n\n\nKamu\n5\n7\n8\n6.667\n\n\nGelişme\n-10\n5\n30\n8.333\n\n\nGlobal\n2\n7\n20\n9.667"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon---kötümserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon---kötümserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon - Kötümserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 4: Fon - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 4: Fon - Kötümserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda Kamu fonu için beklenen kazanç \\(5\\), Gelişme fonu için beklenen kazanç \\(-10\\) ve Global fon için beklenen kazanç \\(2\\) olacaktır.\n\n\n\n\n\n\nMaximin — Getiri Tablosu\n\n\n  \n\n\n\nMaximin — Getiri Tablosu\n\n\nFon\nGelecekteki Pazar Durumu (% Değişim)\nMaximin\n\n\nKötü\nNötr\nİyi\n\n\n\n\nKamu\n5\n7\n8\n5\n\n\nGelişme\n-10\n5\n30\n-10\n\n\nGlobal\n2\n7\n20\n2\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani maksiminini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(5\\) beklenen getirisiyle Kamu fonu stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon---iyimserlik-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon---iyimserlik-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon - İyimserlik Ölçütü - Kazanç Durumu",
+    "text": "Örnek 4: Fon - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 4: Fon - İyimserlik Ölçütü - Kazanç Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda Kamu fonu için beklenen kazanç \\(8\\), Gelişme fonu için beklenen kazanç \\(30\\) ve Global fon için beklenen kazanç \\(20\\) olacaktır.\n\n\n\n\n\n\nMaximax — Getiri Tablosu\n\n\n  \n\n\n\nMaximax — Getiri Tablosu\n\n\nFon\nGelecekteki Pazar Durumu (% Değişim)\nMaximax\n\n\nKötü\nNötr\nİyi\n\n\n\n\nKamu\n5\n7\n8\n8\n\n\nGelişme\n-10\n5\n30\n30\n\n\nGlobal\n2\n7\n20\n20\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani maksimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(30\\) beklenen getirisiyle Gelişme fonu stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon---savage-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon---savage-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon - Savage Ölçütü - Kazanç Durumu",
+    "text": "Örnek 4: Fon - Savage Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 4: Fon - Savage Ölçütü - Kazanç Durumu\n\n\n\nKarar verici kazançlar için karar vermek istediğinden her bir sütunun maksimum değerinden o sütundaki diğer değerleri çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Getiri Tablosu\n\n\nFon\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nKötü\nNötr\nİyi\n\n\n\n\nKamu\n0\n0\n22\n22\n\n\nGelişme\n15\n2\n0\n15\n\n\nGlobal\n3\n0\n10\n10\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda Kamu fonu için beklenen pişmanlık \\(22\\), Gelişme fonu için beklenen pişmanlık \\(15\\) ve Global fon için beklenen pişmanlık \\(10\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(10\\) beklenen pişmanlık değeriyle Global Fon stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-4-fon---hurwicz-ölçütü---kazanç-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-4-fon---hurwicz-ölçütü---kazanç-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 4: Fon - Hurwicz Ölçütü - Kazanç Durumu",
+    "text": "Örnek 4: Fon - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\nÖrnek 4: Fon - Hurwicz Ölçütü - Kazanç Durumu\n\n\n\n\\(\\alpha=0.8\\) seçildiğinden iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.80\\) ve kötümser sonucun \\(0.20\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kazancı maksimum yapacak değer seçilir.\n\n\n\n\n\nKamu fonu için \\(0.8\\cdot 8 + 0.2\\cdot 5 = 7.4\\)\nGelişme fonu için \\(0.8 \\cdot 30 + 0.2\\cdot (-10) = 22\\)\nGlobal fonu için \\(0.8\\cdot 20 + 0.2\\cdot 2 = 16.4\\)\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en yüksek getiriye sahip \\((22)\\) Gelişme fonu stratejisi seçilir.\n\n\n\n\n\n\n\nHurwicz (α=0.80) — Getiri Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.80) — Getiri Tablosu\n\n\nFon\nGelecekteki Pazar Durumu (% Değişim)\nEn İyi\nEn Kötü\nHurwicz (α=0.80)\n\n\nKötü\nNötr\nİyi\n\n\n\n\nKamu\n5\n7\n8\n8.0\n5.0\n7.4\n\n\nGelişme\n-10\n5\n30\n30.0\n-10.0\n22.0\n\n\nGlobal\n2\n7\n20\n20.0\n2.0\n16.4"
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu",
+    "text": "Örnek 5: Doğal Yaşam Okulu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu\n\n\n\nDoğal yaşam okulu katılanları doğal koşullarda yaşama konusunda eğitmek üzere ormanda kamp yapacaktır. Okul katılımcı sayısının 200, 250, 300 ve 350 olmak üzere dört kategoriden birine ait olacağı tahmin edilmektedir.\nEğer talebi tam olarak karşılayabilecek şekilde bir kamp organizasyonu yapılabilirse maliyet minimum olacaktır. İdeal talep düzeyinin altında ya da üstündeki sapmalar oda fazlası ve ya talebin karşılanmayan kısmından kaynaklanan gelir kaybı gibi ek maliyetlere neden olacaktır.\nA1, A2, A3 ve A4 sırasıyla 200, 250, 300 ve 350 kişi olarak kamp yerlerinin kapasitesini göstermektedir.\nS1, S2, S3 ve S4 ise yine sırasıyla 200, 250, 300 ve 350 kişi olarak kampa katılım düzeyini belirtmektedir.\nAşağıdaki tablo her bir kamp yeri ve kampa katılım düzeyi çifti için maliyet tablosunu vermektedir.\n\n\n\n\n\n\n\nTemel Kayıp Tablosu\n\n\n  \n\n\n\nTemel Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nKatılımcı Sayısı\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nA1(200)\n5\n10\n18\n25\n\n\nA2(250)\n8\n7\n12\n23\n\n\nA3(300)\n21\n18\n12\n21\n\n\nA4(350)\n30\n22\n19\n15\n\n\n\n\n\n\n\n\n\nBuna göre kaç kişilik bir kamp yeri tutulması gerektiğini Laplace, Kötümserlik, İyimserlik, Pişmanlık ve \\((\\alpha=0.5)\\) olmak üzere Hurwitz yöntemleriyle belirleyiniz. Her strateji için beklenen maliyeti belirleyiniz."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---laplace-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---laplace-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu - Laplace Ölçütü - Kayıp Durumu",
+    "text": "Örnek 5: Doğal Yaşam Okulu - Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu - Laplace Ölçütü - Kayıp Durumu\n\n\n\n\nLaplace ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık \\(0.25\\) olduğundan stratejilerin beklenen değerleri aşağıdaki gibi hesaplanır.\n\n\n\n\n\n\nA1 (200 kişilik kamp yeri için) \\(0.25\\cdot 5 + 0.25\\cdot 10 + 0.25\\cdot 18 + 0.25\\cdot 25 = 14.5\\)\nA2 (250 kişilik kamp yeri için) \\(0.25\\cdot 8 + 0.25\\cdot 7 + 0.25\\cdot 12 + 0.25\\cdot 23 = 12.5\\)\nA3 (300 kişilik kamp yeri için) \\(0.25\\cdot 21 + 0.25\\cdot 18 + 0.25\\cdot 12 + 0.25\\cdot 21 = 18.0\\)\nA4 (350 kişilik kamp yeri için) \\(0.25\\cdot 30 + 0.25\\cdot 22 + 0.25\\cdot 19 + 0.25\\cdot 15 = 21.5\\)\n\n\n\n\n\n\n\nLaplace — Kayıp Tablosu\n\n\n  \n\n\n\nLaplace — Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nKatılımcı Sayısı\nLaplace\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nOlasılık\n0.25\n0.25\n0.25\n0.25\n\n\n\nA1(200)\n5\n10\n18\n25\n14.5\n\n\nA2(250)\n8\n7\n12\n23\n12.5\n\n\nA3(300)\n21\n18\n12\n21\n18.0\n\n\nA4(350)\n30\n22\n19\n15\n21.5\n\n\n\n\n\n\n\n\n\n\n\n\nEn düşük beklenen kayıp A2 - 250 kişilik kamp yeri seçeneği için sağlandığından \\((12.5)\\), karar vericinin en iyi kararı 250 kişilik kamp yerini seçmek olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---kötümserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---kötümserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu - Kötümserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 5: Doğal Yaşam Okulu - Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu - Kötümserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en kötü senaryoyu düşünecektir.\n\n\nBu durumda A1 (200 kişilik kamp yeri için) için beklenen kayıp \\(25\\), A2 (250 kişilik kamp yeri için) için beklenen kayıp \\(23\\), A3 (300 kişilik kamp yeri için) için beklenen kayıp \\(21\\) ve A4 (350 kişilik kamp yeri için) için beklenen kayıp \\(30\\) olacaktır.\n\n\n\n\n\n\nMinimax — Kayıp Tablosu\n\n\n  \n\n\n\nMinimax — Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nKatılımcı Sayısı\nMinimax\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nA1(200)\n5\n10\n18\n25\n25\n\n\nA2(250)\n8\n7\n12\n23\n23\n\n\nA3(300)\n21\n18\n12\n21\n21\n\n\nA4(350)\n30\n22\n19\n15\n30\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu kötümser stratejiler arasından en iyisini yani minimaksı seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(21\\) beklenen kayıpla A3 - 300 kişilik kamp yeri stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---iyimserlik-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---iyimserlik-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu - İyimserlik Ölçütü - Kayıp Durumu",
+    "text": "Örnek 5: Doğal Yaşam Okulu - İyimserlik Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu - İyimserlik Ölçütü - Kayıp Durumu\n\n\n\nKarar verici her bir strateji sonucunda oluşabilecek en iyi senaryoyu düşünecektir.\n\n\nBu durumda A1 (200 kişilik kamp yeri için) için beklenen kayıp \\(5\\), A2 (250 kişilik kamp yeri için) için beklenen kayıp \\(7\\), A3 (300 kişilik kamp yeri için) için beklenen kayıp \\(12\\) ve A4 (350 kişilik kamp yeri için) için beklenen kayıp \\(15\\) olacaktır.\n\n\n\n\n\n\nMinimin — Kayıp Tablosu\n\n\n  \n\n\n\nMinimin — Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nKatılımcı Sayısı\nMinimin\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nA1(200)\n5\n10\n18\n25\n5\n\n\nA2(250)\n8\n7\n12\n23\n7\n\n\nA3(300)\n21\n18\n12\n21\n12\n\n\nA4(350)\n30\n22\n19\n15\n15\n\n\n\n\n\n\n\n\nKullanıcı oluşan bu iyimser stratejiler arasından en iyisini yani minimini seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(5\\) beklenen kaybıyla A1 - 200 kişilik kamp yeri stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---savage-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---savage-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu - Savage Ölçütü - Kayıp Durumu",
+    "text": "Örnek 5: Doğal Yaşam Okulu - Savage Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu - Savage Ölçütü - Kayıp Durumu\n\n\n\nKarar verici kayıplar için karar vermek istediğinden her bir sütun değerinden o sütunun en küçük değerini çıkararak pişmanlık matrisini elde eder.\n\n\n\n\n\n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\n  \n\n\n\nSavage (Minimax Pişmanlık) — Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nPişmanlık (Regret) Matrisi\nMR (Satır Maks. Pişmanlık)\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nA1(200)\n0\n3\n6\n10\n10\n\n\nA2(250)\n3\n0\n0\n8\n8\n\n\nA3(300)\n16\n11\n0\n6\n16\n\n\nA4(350)\n25\n15\n7\n0\n25\n\n\n\n\n\n\n\n\n\n\n\nElde edilen pişmanlık matrisindeki her bir strateji için en çok pişmanlık yaratacak değeri belirler.\n\n\n\nBu durumda A1 (200 kişilik kamp yeri için) için beklenen pişmanlık \\(10\\), A2 (250 kişilik kamp yeri için) için beklenen pişmanlık \\(8\\), A3 (300 kişilik kamp yeri için) için beklenen pişmanlık \\(16\\) ve A4 (350 kişilik kamp yeri için) için beklenen pişmanlık \\(25\\) olacaktır.\n\n\nKullanıcı oluşan bu yüksek pişmanlıklı stratejiler arasından en az pişmanlık getirecek stratejiyi yani minimaksını seçecektir.\n\n\nBu durumda kullanıcının seçimi \\(8\\) beklenen pişmanlık değeriyle A2 - 250 kişilik kamp yeri stratejisi olacaktır."
+  },
+  {
+    "objectID": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---hurwicz-ölçütü---kayıp-durumu",
+    "href": "IST207/Hafta10/index.html#örnek-5-doğal-yaşam-okulu---hurwicz-ölçütü---kayıp-durumu",
+    "title": "Hafta 10",
+    "section": "Örnek 5: Doğal Yaşam Okulu - Hurwicz Ölçütü - Kayıp Durumu",
+    "text": "Örnek 5: Doğal Yaşam Okulu - Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\nÖrnek 5: Doğal Yaşam Okulu - Hurwicz Ölçütü - Kayıp Durumu\n\n\n\n\\(\\alpha=0.5\\) seçildiği için iyimser ve kötümser senaryoların ağırlıklı bir ortalaması hesaplanmalıdır.\n\n\nBu hesap her bir strateji için iyimser sonucun \\(0.5\\) ve kötümser sonucun \\(0.5\\) ile çarpılıp toplanmasıyla bulunur.\n\n\nElde edilen sonuçlardan kaybı minimum yapacak değer seçilir.\n\n\n\n\n\nA1 (200 kişilik kamp yeri için) \\(0.5\\cdot 5 + 0.5\\cdot 25 = 15\\)\nA2 (250 kişilik kamp yeri için) \\(0.5\\cdot 7 + 0.5\\cdot 23 = 15\\)\nA3 (300 kişilik kamp yeri için) \\(0.5\\cdot 12 + 0.5\\cdot 21 = 16.5\\)\nA4 (350 kişilik kamp yeri için) \\(0.5\\cdot 15 + 0.5\\cdot 30 = 22.5\\)\n\n\n\n\n\n\n\nHurwicz (α=0.50) — Kayıp Tablosu\n\n\n  \n\n\n\nHurwicz (α=0.50) — Kayıp Tablosu\n\n\nKamp Yeri Kapasitesi\nKatılımcı Sayısı\nEn İyi\nEn Kötü\nHurwicz (α=0.50)\n\n\nS1(200)\nS2(250)\nS3(300)\nS4(350)\n\n\n\n\nA1(200)\n5\n10\n18\n25\n5.0\n25.0\n15.0\n\n\nA2(250)\n8\n7\n12\n23\n7.0\n23.0\n15.0\n\n\nA3(300)\n21\n18\n12\n21\n12.0\n21.0\n16.5\n\n\nA4(350)\n30\n22\n19\n15\n15.0\n30.0\n22.5\n\n\n\n\n\n\n\n\n\n\n\nElde edilen sonuçlara bakıldığında en düşük kayba sahip \\((15)\\) iki kamp yeri A1 - 200 kişilik kamp yeri ve A2 - 250 kişilik kamp yeri stratejilerinden bir tanesi seçilir."
   }
 ]

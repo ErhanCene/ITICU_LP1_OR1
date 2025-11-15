@@ -1,0 +1,1860 @@
+---
+title: Hafta 10
+subtitle: "Karar Kuramı: Belirsizlik Altında Karar Verme"
+date: 11/20/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST207 - Yöneylem Araştırması - Hafta 10 - 20 Kasım 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+## Karar Matrisi
+
+::: {.callout-important icon=false title="Karar Matrisi" style="font-size: 90%;"}
+
+* [Risk]{.light-red} veya [belirsizlik]{.light-red} ortamındaki bir karar probleminin [matris]{.light-red} biçiminde gösterilmesi, [problemin değerlendirilmesi]{.light-red} ve [çözülmesinde]{.light-red} büyük [kolaylıklar]{.light-red} sağlar. 
+* [Alternatif stratejiler]{.light-red}, [olası olaylar]{.light-red} ve [sonuç]{.light-red} değerlerinden oluşan matrise [karar matrisi]{.light-red} denir. 
+* Karar matrisi kavramı son derece genel olup, bunun yerine [sonuç]{.light-red}, [kazanç]{.light-red}, [ödeme]{.light-red} veya [kâr-zarar]{.light-red} matrisi deyimleri de kullanılmaktadır.
+* Matrisin [$a_{ij}$]{.light-blue} elemanları [$R(S_i, O_j)$]{.light-blue} sonuç değerleridir.
+
+![](./images/karar_matrisi.png){width=620 height=250 fig-align="center"}
+
+:::
+
+## Belirsizlik durumunda karar alma (1)
+
+::: {.callout-important icon=false title="Belirsizlik durumunda karar alma (1)" style="font-size: 130%;"}
+* Belirsizlik durumunda karar vericinin değişik stratejiler arasından seçim yapmasında esas alabileceği belli başlı [ölçütler]{.light-red} şunlardır:
+  * [Laplace]{.light-red} Ölçütü
+  * [Minimaks]{.light-red} veya [Maksimin]{.light-red} Ölçütü ([Kötümserlik]{.light-red} Ölçütü)
+  * [Maksimaks]{.light-red} veya [Minimin]{.light-red} Ölçütü ([İyimserlik]{.light-red} Ölçütü)
+  * [Savage (Pişmanlık)]{.light-red} Ölçütü
+  * [Hurwicz]{.light-red} Ölçütü
+:::
+
+## Belirsizlik durumunda karar alma (2)
+
+::: {.callout-important icon=false title="Belirsizlik durumunda karar alma (2)" style="font-size: 120%;"}
+* Uygun ölçütün seçilmesi karar ortamının [yapısına]{.light-red}, karar vericinin [deneyim]{.light-red} ve [eğilimine]{.light-red} bağlıdır. 
+* Sözgelimi, [minimaks]{.light-red} ölçütünü seçen karar verici ile karşılaştırıldığında, [Laplace]{.light-red} ölçütünü benimseyen karar vericinin [daha iyimser]{.light-red} olduğu söylenebilir.
+* [Hurwicz]{.light-red} ölçütünü benimseyen karar vericinin ise [minimaks]{.light-red} ölçütü ile [maksimaks]{.light-red} ölçütü arasında bir [denge]{.light-red} bulmaya çalıştığı kabul edilir. 
+* Kısaca bu ölçütler arasında seçim yapmada [genel kabul görmüş bir kural yoktur]{.light-red}. 
+* Yukarıdaki ölçütlerden birini kullanacak olan karar vericinin [zeki bir rakibinin bulunmadığı]{.light-red}, [tek rakibinin doğa]{.light-red} olduğu kabul edilir.
+:::
+
+## Laplace Ölçütü
+
+::: {.callout-important icon=false title="Laplace Ölçütü" style="font-size: 120%;"}
+* [Laplace ölçütü]{.light-red} muhtemel olayların ortaya çıkması ile ilgili [olasılıkların birbirlerine eşit]{.light-red} olduğu ilkesine dayanır.
+* Olayların ortaya çıkması olasılıkları belirlenebildiğinden problem [belirsizlik durumunda]{.light-red} karar alma problemi [olmaktan çıkarak]{.light-red}, [risk durumunda]{.light-red} karar alma [problemine dönüşür]{.light-red}. 
+* Laplace ölçütü, olayların gerçekleşmesi olasılıklarının [farklı olduğuna ilişkin bir kanıt olmaması]{.light-red} durumunda kullanılabilir. 
+* Anılan olasılıkların eşit kabul edilmesi ilkesine [yetersiz sebep ilkesi]{.light-red} denir.
+:::
+
+## Örnek 1: Laplace Ölçütü - Kazanç Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Laplace Ölçütü - Kazanç Durumu (1)" style="font-size: 110%;"}
+
+* [Laplace]{.light-red} ölçütünü aşağıdaki [kazanç matrisine]{.orange} uygulayarak [en iyi stratejiyi]{.light-red} kararlaştırınız.
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Laplace Ölçütü - Kazanç Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Laplace Ölçütü - Kazanç Durumu (2)" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.25$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 80%;"}
+* [S1 için]{.red} [$0.25\cdot26 + 0.25\cdot26 + 0.25\cdot18 + 0.25\cdot22 = 23.0$]{.light-blue}
+* [S2 için]{.red} [$0.25\cdot22 + 0.25\cdot34 + 0.25\cdot30 + 0.25\cdot18 = 26.0$]{.light-blue}
+* [S3 için]{.red} [$0.25\cdot28 + 0.25\cdot24 + 0.25\cdot34 + 0.25\cdot26 = 28.0$]{.light-blue}
+* [S4 için]{.red} [$0.25\cdot22 + 0.25\cdot30 + 0.25\cdot28 + 0.25\cdot20 = 25.0$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En yüksek beklenen kazancı]{.light-red} [$S3$]{.light-blue} seçeneği sağladığından [$(28.0)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [$S3$]{.light-blue}’ü seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Minimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)
+
+::: {.callout-important icon=false title="Minimaks veya Maksimin Ölçütü (Kötümserlik Ölçütü)" style="font-size: 100%;"}
+* Bu ölçüt yaklaşımlarında [tutucu]{.light-red}, [kötümser]{.light-red} karar vericilerin benimsedikleri karar ölçütüdür. 
+* Bu yaklaşım, hangi strateji seçilmiş olursa olsun daima o eylem için [en kötü]{.light-red} olan olayın gerçekleşeceği varsayımına dayanır. 
+* Bu nedenle, her bir strateji için öncelikle o eylem için [en kötü olan olayın]{.light-red} ortaya çıkması nedeniyle oluşan [en kötü sonuç]{.light-red} belirlenir. 
+* Bu yolla bulunan [en kötü sonuçlar]{.light-red} arasından [en iyi]{.light-red} olanının işaret ettiği stratejinin seçilmesiyle [en iyi hareket tarzı]{.light-red} belirlenmiş olur. 
+* Karar matrisi elemanları; 
+  * [Gelir]{.light-red}, [kâr]{.light-red}, [kazanç]{.light-red} gibi [büyük]{.light-red} olması arzulanan değerlere karşılık geliyorsa ölçüt [en küçüklerin en büyüğü]{.light-red} anlamına gelen [maksimin]{.light-red}; 
+  * [Gider]{.light-red}, [zarar]{.light-red}, [kayıp]{.light-red} gibi [küçük]{.light-red} olması arzulanan değerlere karşılık geliyorsa [en büyüklerin en küçüğü]{.light-red} anlamını ifade eden [minimaks]{.light-red} ölçütü adını alır.
+:::
+
+
+## Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (1)" style="font-size: 110%;"}
+
+* [Karamsarlık]{.light-red} ölçütünü aşağıdaki [kazanç matrisine]{.orange} uygulayarak [en iyi stratejiyi]{.light-red} kararlaştırınız.
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Kötümserlik Ölçütü - Kazanç Durumu (2)" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [$S1$]{.light-blue} için beklenen kazanç [$18$]{.light-blue}, [$S2$]{.light-blue} için beklenen kazanç [$18$]{.light-blue}, [$S3$]{.light-blue} için beklenen kazanç [$24$]{.light-blue} ve [$S4$]{.light-blue} için beklenen kazanç [$20$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksiminini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$24$]{.orange} beklenen getirisiyle [$S3$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Maksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)
+
+::: {.callout-important icon=false title="Maksimaks veya Minimin Ölçütü (İyimserlik Ölçütü)" style="font-size: 100%;"}
+* Bu yaklaşım, hangi strateji seçilmiş olursa olsun daima o eylem için [en iyi]{.light-red} olan olayın gerçekleşeceği varsayımına dayanır. 
+* Bu nedenle, her bir strateji için öncelikle o eylem için [en iyi olan olayın]{.light-red} gerçekleşmesi sonucunda oluşan [en iyi sonuç]{.light-red} belirlenir. 
+* Bu yolla bulunan [en iyi sonuçlar]{.light-red} arasından [en iyi]{.light-red} olanının işaret ettiği stratejinin seçilmesiyle [en iyi hareket tarzı]{.light-red} belirlenmiş olur. 
+* Karar matrisi elemanları; 
+  * [Gelir]{.light-red}, [kâr]{.light-red}, [kazanç]{.light-red} gibi [büyük]{.light-red} olması arzulanan değerlere karşılık geliyorsa ölçüt [en büyüklerin en büyüğü]{.light-red} anlamına gelen [maksimaks]{.light-red}; 
+  * [Gider]{.light-red}, [zarar]{.light-red}, [kayıp]{.light-red} gibi [küçük]{.light-red} olması arzulanan değerlere karşılık geliyorsa [en küçüklerin en küçüğü]{.light-red} anlamını ifade eden [minimin]{.light-red} ölçütü adını alır.
+:::
+
+
+## Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (1)" style="font-size: 110%;"}
+
+* [İyimserlik]{.light-red} ölçütünü aşağıdaki [kazanç matrisine]{.orange} uygulayarak [en iyi stratejiyi]{.light-red} kararlaştırınız.
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: İyimserlik Ölçütü - Kazanç Durumu (2)" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [$S1$]{.light-blue} için beklenen kazanç [$26$]{.light-blue}, [$S2$]{.light-blue} için beklenen kazanç [$34$]{.light-blue}, [$S3$]{.light-blue} için beklenen kazanç [$34$]{.light-blue} ve [$S4$]{.light-blue} için beklenen kazanç [$30$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$32$]{.orange} beklenen getirisiyle [$S2$]{.light-blue} ya da [$S3$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Savage Ölçütü (1)
+
+::: {.callout-important icon=false title="Savage Ölçütü (1)" style="font-size: 120%;"}
+* Bu ölçüt [en büyük]{.light-red} fırsat kaybının [en küçüklenmesi]{.light-red} esasına dayanır. Bu nedenle [minimaks fırsat kaybı]{.light-red} ölçütü olarak da bilinir. 
+* Ölçütün uygulanması için öncelikle [fırsat kaybı]{.light-red} veya [pişmanlık matrisinin]{.light-red} oluşturulması gerekir.
+* Fırsat kaybı her bir olay için [en iyi sonucu sağlayacak stratejinin seçilmemesi]{.light-red} sonucu [vazgeçilen kazanç]{.light-red} veya [katlanılan kayıp]{.light-red} miktarıdır. 
+* Fırsat kayıpları [genellikle pozitif değerler]{.light-red} ve [rakamlarla]{.light-red} açıklanır. 
+:::
+
+## Savage Ölçütü (2)
+
+::: {.callout-important icon=false title="Savage Ölçütü (2)" style="font-size: 110%;"}
+* Karar tablosu [gelirler]{.light-red} cinsinden ifade edildiğinde, ele alınan her bir olaya ilişkin fırsat kaybı değerleri; [en iyi olan eylemin]{.light-red} seçilmesi durumunda sağlanacak olan gelirden [diğer seçeneklerin sağlayacağı]{.light-red} gelirlerin çıkartılmasıyla hesaplanırlar.
+
+[Sütun Enbüyük Değeri – Sütun Değerleri]{.light-red}
+
+* Karar matrisinin [maliyetleri]{.light-red} göstermesi durumunda fırsat kaybı değerleri [en iyi seçimin]{.light-red} maliyet değerinin [diğer eylemlerin]{.light-red} maliyet rakamlarından çıkartılması ile belirlenirler.
+
+[Sütun Değerleri – Sütun En küçük Değeri]{.light-red}
+:::
+
+
+## Örnek 1: Savage Ölçütü - Kazanç Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Savage Ölçütü - Kazanç Durumu (1)" style="font-size: 110%;"}
+
+* [Savage]{.light-red} ölçütünü aşağıdaki [kazanç matrisine]{.orange} uygulayarak [en iyi stratejiyi]{.light-red} kararlaştırınız.
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Savage Ölçütü - Kazanç Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Savage Ölçütü - Kazanç Durumu (2)" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kazançlar]{.light-red} için karar vermek istediğinden [her bir sütunun maksimum değerinden o sütundaki diğer değerleri]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [$S1$]{.light-blue} için beklenen pişmanlık [$16$]{.light-blue}, [$S2$]{.light-blue} için beklenen pişmanlık [$8$]{.light-blue}, [$S3$]{.light-blue} için beklenen pişmanlık [$10$]{.light-blue} ve [$S4$]{.light-blue} için beklenen pişmanlık [$6$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$6$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [$S4$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Hurwicz Ölçütü (1)
+
+::: {.callout-important icon=false title="Hurwicz Ölçütü (1)" style="font-size: 120%;"}
+* Hurwicz’e göre, karar vericinin [ne aşırı derecede iyimser]{.light-red}, [ne de aşırı derecede kötümser]{.light-red} olmasını gerektiren güçlü gerekçeleri yoktur. 
+* Bu nedenle, karar vericinin [maksimin ölçütünün aşırı kötümserliği]{.light-red} ile [maksimaks ölçütünün aşırı iyimserliği]{.light-red} arasında bir [denge kurması]{.light-red} uygun olur. 
+* Bu nedenle bu ölçüte [ağırlıklı ortalama]{.light-red} veya [gerçekçilik ölçütü]{.light-red} de denir. 
+* [Hurwicz ölçütü]{.light-red}, seçilen her strateji için [iyimserlik]{.light-red} koşullarında ortaya çıkan sonuçlar ile [kötümserlik]{.light-red} koşullarında ortaya çıkan sonuçların [ağırlıklandırılması]{.light-red} esasına dayanır. 
+* Bunun için [iyimserlik katsayısı]{.light-red} olarak bilinen [$\alpha$]{.light-red} kullanılır.
+:::
+
+## Hurwicz Ölçütü (2)
+
+::: {.callout-important icon=false title="Hurwicz Ölçütü (2)" style="font-size: 105%;"}
+* [$\alpha$]{.light-red}, [$0 \leq \alpha \leq 1$]{.light-red} aralığında bir değerdir.
+* [Çok kötümser]{.light-red} bir karar vericinin [$\alpha$]{.light-red} için seçeceği değer [$0$]{.light-red}, [aşırı derecede iyimser]{.light-red} bir karar vericinin seçeceği değer [$1$]{.light-red} olur.
+* Karar verici [$\alpha$]{.light-red}’nın değeri hakkında [kararsızsa]{.light-red}, [$\alpha=0.5$]{.light-red} seçmesi akılcı olur.
+* [$\alpha$]{.light-red}’nın belirlenmesinden sonra karar matrisindeki her bir strateji için [en iyi]{.light-red} ve [en kötü]{.light-red} sonuç değerlerinin sırasıyla [$\alpha$]{.light-red} ve [$1-\alpha$]{.light-red} ile çarpılarak [sonuçların toplanması]{.light-red} gerekir. 
+* Toplama işlemiyle belirlenen değerler [stratejilerin beklenen değerleri]{.light-red} olarak yorumlanır ve beklenen değerler taranarak; karar matrisi 
+  * [kazanç]{.light-red} değerlerinden oluşmuşsa [en büyük]{.light-red}, 
+  * [maliyet]{.light-red} değerlerinden oluşmuşsa [en küçük]{.light-red} beklenen değere sahip stratejinin uygulanması önerilir.
+:::
+
+
+## Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (1)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (1)" style="font-size: 110%;"}
+
+* [Hurwicz]{.light-red} ölçütünü aşağıdaki [kazanç matrisine]{.orange} sırasıyla [$\alpha=0$]{.light-blue}, [$\alpha=1$]{.light-blue} ve [$\alpha=0.6$]{.light-blue} için uygulayarak her bir senaryo için [en iyi stratejiyi]{.light-red} kararlaştırınız.
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+
+## Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (2)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (2)" style="font-size: 78%;"}
+
+:::{.fragment fragment-index=1}
+* [$\alpha$]{.light-blue} [iyimserlik ölçütü]{.light-red} için katsayı olduğundan 
+  * [$\alpha=0$]{.light-blue} için [tamamen kötümser]{.light-red} bir senaryo oluşacak ve hesaplama [kötümserlik (maksimin)]{.light-red} stratejisiyle aynı olacaktır. 
+  * [$\alpha=1$]{.light-blue} için ise [tamamen iyimser]{.light-red} bir senaryo oluşacak ve hesaplama [iyimserlik (maksimaks)]{.light-red} stratejisiyle aynı olacaktır. 
+:::
+
+::: columns
+
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_maximin_minimax.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+:::{.fragment fragment-index=4}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_maximax_minimin.html >}}
+```
+:::
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+
+* [$\alpha=0$]{.light-blue} için kullanıcının seçimi [kötümserlik]{.light-red} stratejisiyle hesaplanan [$24$]{.orange} beklenen getirisiyle [$S3$]{.light-blue} stratejisi olacaktır.
+:::
+
+:::{.fragment fragment-index=5}
+* [$\alpha=1$]{.light-blue} için kullanıcının seçimi [iyimserlik]{.light-red} stratejisiyle hesaplanan [$34$]{.orange} beklenen getirisiyle [$S2$]{.light-blue} ya da [$S3$]{.light-blue} stratejisi olacaktır.
+:::
+
+:::
+
+
+## Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (3)
+
+
+::: {.callout-tip icon=false title="Örnek 1: Hurwicz Ölçütü - Kazanç Durumu (3)" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.6$]{.light-blue} seçildiğinde ise [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.6$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.4$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kazancı maksimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=4}
+* [S1 için]{.red} [$0.6\cdot26 + 0.4\cdot18 = 22.8$]{.light-blue}
+* [S2 için]{.red} [$0.6\cdot34 + 0.4\cdot18 = 27.6$]{.light-blue}
+* [S3 için]{.red} [$0.6\cdot34 + 0.4\cdot24 = 30.0$]{.light-blue}
+* [S4 için]{.red} [$0.6\cdot30 + 0.4\cdot20 = 26.0$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en yüksek]{.light-red} getiriye sahip [$(30)$]{.orange} [$S3$]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+## Örnek 1: Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: Kayıp Durumu" style="font-size: 90%;"}
+
+* Bu kez [strateji]{.light-red} ve [olay]{.light-red} matrisinin olası [kayıpları]{.light-red} gösterdiği varsayımı altında [en iyi stratejiyi]{.light-red}
+
+
+::: columns
+
+
+::: {.column width="50%"}
+* [Laplace]{.light-red} Ölçütü
+* [Kötümserlik]{.light-red} Ölçütü
+* [İyimserlik]{.light-red} Ölçütü
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+* [Savage Pişmanlık]{.light-red} Ölçütü ve
+* [$\alpha=0.3$]{.light-blue} alarak [Hurwicz]{.light-red} Ölçütü 
+:::
+:::
+için belirleyin.
+
+
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_gain_base.html >}}
+```
+:::
+
+:::
+
+## Örnek 1: Laplace Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: Laplace Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.25$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 80%;"}
+* [S1 için]{.red} [$0.25\cdot26 + 0.25\cdot26 + 0.25\cdot18 + 0.25\cdot22 = 23.0$]{.light-blue}
+* [S2 için]{.red} [$0.25\cdot22 + 0.25\cdot34 + 0.25\cdot30 + 0.25\cdot18 = 26.0$]{.light-blue}
+* [S3 için]{.red} [$0.25\cdot28 + 0.25\cdot24 + 0.25\cdot34 + 0.25\cdot26 = 28.0$]{.light-blue}
+* [S4 için]{.red} [$0.25\cdot22 + 0.25\cdot30 + 0.25\cdot28 + 0.25\cdot20 = 25.0$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En düşük beklenen kayıp]{.light-red} [$S1$]{.light-blue} seçeneği sağladığından [$(23.0)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [$S1$]{.light-blue}’i seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_loss_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Örnek 1: Kötümserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: Kötümserlik Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [$S1$]{.light-blue} için beklenen kayıp [$26$]{.light-blue}, [$S2$]{.light-blue} için beklenen kayıp [$34$]{.light-blue}, [$S3$]{.light-blue} için beklenen kayıp [$34$]{.light-blue} ve [$S4$]{.light-blue} için beklenen kayıp [$30$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_loss_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimaksı]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$26$]{.orange} beklenen kayıpla [$S1$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 1: İyimserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: İyimserlik Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [$S1$]{.light-blue} için beklenen kayıp [$18$]{.light-blue}, [$S2$]{.light-blue} için beklenen kayıp [$18$]{.light-blue}, [$S3$]{.light-blue} için beklenen kayıp [$24$]{.light-blue} ve [$S4$]{.light-blue} için beklenen kayıp [$20$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_loss_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$18$]{.orange} beklenen kaybıyla [$S1$]{.light-blue} ya da [$S2$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 1: Savage Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: Savage Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kayıplar]{.light-red} için karar vermek istediğinden [her bir sütun değerinden o sütunun en küçük değerini]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-90  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_loss_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [$S1$]{.light-blue} için beklenen pişmanlık [$4$]{.light-blue}, [$S2$]{.light-blue} için beklenen pişmanlık [$12$]{.light-blue}, [$S3$]{.light-blue} için beklenen pişmanlık [$16$]{.light-blue} ve [$S4$]{.light-blue} için beklenen pişmanlık [$10$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$4$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [$S1$]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 1: Hurwicz Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 1: Hurwicz Ölçütü - Kayıp Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.3$]{.light-blue} seçildiği için [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.3$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.7$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kaybı minimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=4}
+* [S1 için]{.red} [$0.3\cdot18 + 0.7\cdot26 = 23.6$]{.light-blue}
+* [S2 için]{.red} [$0.3\cdot18 + 0.7\cdot34 = 29.2$]{.light-blue}
+* [S3 için]{.red} [$0.3\cdot24 + 0.7\cdot34 = 31.0$]{.light-blue}
+* [S4 için]{.red} [$0.3\cdot20 + 0.7\cdot30 = 27.0$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en düşük]{.light-red} kayba sahip [$(23.60)$]{.orange} [$S1$]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX1\EX01_loss_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Örnek 2: Mağaza
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza" style="font-size: 85%;"}
+
+* Bir [mağaza]{.light-red} sahibinin; [$100$]{.light-blue}, [$200$]{.light-blue} veya [$300$]{.light-blue} adet sipariş vermek gibi sırasıyla [$S1$]{.light-blue}, [$S2$]{.light-blue} ve [$S3$]{.light-blue} olarak adlandırılan [üç]{.light-blue} [stratejisi]{.light-red} vardır. 
+* Mağaza sahibi [istem miktarlarının]{.light-red} ise sırasıyla [$M1$]{.light-blue}, [$M2$]{.light-blue}, [$M3$]{.light-blue} ve [$M4$]{.light-blue} olarak nitelenen  [$100$]{.light-blue}, [$150$]{.light-blue}, [$200$]{.light-blue} ve ya [$250$]{.light-blue} adetten bir tanesi olacağını bilmektedir. 
+* Karar matrisinin elemanları [farklı sipariş]{.light-red} ve [istem miktarı]{.light-red} birleşimlerinin sonucu elde edilecek [kâr]{.light-red} olarak tanımlanmıştır.
+
+
+::: columns
+
+::: {.column width="60%"}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\Ex02_gain_base.html >}}
+```
+:::
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+[Mağaza sahibinin en iyi stratejisini ve bu stratejiye ait değerini]{.red} [Laplace]{.orange}, [Kötümserlik]{.orange}, [İyimserlik]{.orange}, [Pişmanlık]{.orange} ve [Hurwitz]{.orange} [yöntemleriyle matris elemanları]{.red}
+
+* olası [kazancı]{.red} gösterdiği durumda [$(\alpha=0.5)$]{.light-blue}
+* olası [kaybı]{.red} gösterdiği durum için [$(\alpha=0.2)$]{.light-blue} belirleyiniz.
+
+:::
+:::
+:::
+
+## Örnek 2: Mağaza - Laplace Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Laplace Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.25$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 80%;"}
+* [S1 - 100 sipariş için]{.red} [$0.25\cdot 3000 + 0.25\cdot 2750 + 0.25\cdot 2500 + 0.25\cdot 2250 = 2625$]{.light-blue}
+* [S2 - 200 sipariş için]{.red} [$0.25\cdot 1500 + 0.25\cdot 4750 + 0.25\cdot 8000 + 0.25\cdot 7750 = 5500$]{.light-blue}
+* [S3 - 300 sipariş için]{.red} [$0.25\cdot 2000 + 0.25\cdot 5250 + 0.25\cdot 8500 + 0.25\cdot 11750 = 6875$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En yüksek beklenen kazancı]{.light-red} [S3 - $300$ sipariş]{.light-blue} seçeneği sağladığından [$(6875)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [$300$ sipariş]{.light-blue}i seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_gain_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+## Örnek 2: Mağaza - Kötümserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Kötümserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen kazanç [$2250$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen kazanç [$1500$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen kazanç [$2000$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_gain_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksiminini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$2250$]{.orange} beklenen getirisiyle [S1 - $100$ sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - İyimserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - İyimserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen kazanç [$3000$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen kazanç [$8000$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen kazanç [$11750$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_gain_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$11750$]{.orange} beklenen getirisiyle [S3 - $300$ sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - Savage Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Savage Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kazançlar]{.light-red} için karar vermek istediğinden [her bir sütunun maksimum değerinden o sütundaki diğer değerleri]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_gain_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen pişmanlık [$9500$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen pişmanlık [$4000$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen pişmanlık [$1000$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$1000$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [S3 - 300 sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - Hurwicz Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Hurwicz Ölçütü - Kazanç Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.5$]{.light-blue} seçildiğinde ise [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.5$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.5$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kazancı maksimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="60%"}
+:::{.fragment fragment-index=4}
+* [S1 - 100 sipariş için]{.red} [$0.5\cdot 3000 + 0.5\cdot 2250 = 2625$]{.light-blue}
+* [S2 - 200 sipariş için]{.red} [$0.5\cdot 8000 + 0.5\cdot 1500 = 4750$]{.light-blue}
+* [S3 - 300 sipariş için]{.red} [$0.5\cdot 11750 + 0.5\cdot 2000 = 6875$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en yüksek]{.light-red} getiriye sahip [$(6875)$]{.orange} [S3 - $300$ sipariş]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_gain_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Örnek 2: Mağaza - Laplace Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Laplace Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.25$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 80%;"}
+* [S1 - 100 sipariş için]{.red} [$0.25\cdot 3000 + 0.25\cdot 2750 + 0.25\cdot 2500 + 0.25\cdot 2250 = 2625$]{.light-blue}
+* [S2 - 200 sipariş için]{.red} [$0.25\cdot 1500 + 0.25\cdot 4750 + 0.25\cdot 8000 + 0.25\cdot 7750 = 5500$]{.light-blue}
+* [S3 - 300 sipariş için]{.red} [$0.25\cdot 2000 + 0.25\cdot 5250 + 0.25\cdot 8500 + 0.25\cdot 11750 = 6875$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En düşük beklenen kayıp]{.light-red} [$100$ sipariş]{.light-blue} seçeneği sağladığından [$(2625)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [S1 - $100$ sipariş]{.light-blue}’i seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_loss_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Örnek 2: Mağaza - Kötümserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Kötümserlik Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen kayıp [$3000$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen kayıp [$8000$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen kayıp [$11750$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_loss_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimaksı]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$3000$]{.orange} beklenen kayıpla [S1 - $100$ sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - İyimserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - İyimserlik Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen kayıp [$2250$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen kayıp [$1500$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen kayıp [$2000$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_loss_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$1500$]{.orange} beklenen kaybıyla [S2 - $200$ sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - Savage Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Savage Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kayıplar]{.light-red} için karar vermek istediğinden [her bir sütun değerinden o sütunun en küçük değerini]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_loss_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [S1 - 100 sipariş]{.light-blue} için beklenen pişmanlık [$1500$]{.light-blue}, [S2 - 200 sipariş]{.light-blue} için beklenen pişmanlık [$5500$]{.light-blue} ve [S3 - 300 sipariş]{.light-blue} için beklenen pişmanlık [$9500$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$1500$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [S1 - $100$ sipariş]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 2: Mağaza - Hurwicz Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 2: Mağaza - Hurwicz Ölçütü - Kayıp Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.2$]{.light-blue} seçildiği için [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.3$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.7$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kaybı minimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="60%"}
+:::{.fragment fragment-index=4}
+* [S1 - 100 sipariş için]{.red} [$0.2\cdot 2250 + 0.8\cdot 3000 = 2850$]{.light-blue}
+* [S2 - 200 sipariş için]{.red} [$0.2\cdot 1500 + 0.8\cdot 8000 = 6700$]{.light-blue}
+* [S3 - 300 sipariş için]{.red} [$0.2\cdot 2000 + 0.8\cdot 11750 = 9800$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en düşük]{.light-red} kayba sahip [$(2850)$]{.orange} [S1 - $100$ sipariş]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX2\EX02_loss_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+## Örnek 3: Hisse Senedi
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi" style="font-size: 100%;"}
+
+* [A]{.light-red} ve [B]{.light-red} firmalarının hisse senetlerini alarak borsaya [$10000$ pb]{.light-blue} para yatırmak istediğinizi varsayalım. 
+* [A]{.light-red} firmasının hisse senetleri riskli olmakla birlikte, 
+  * Borsanın [iyi]{.light-red} gittiği durumda [(boğaların hakim olduğu pazarda)]{.light-red} gelecek sene için değeri [$\%50$ artacaktır]{.light-blue}. 
+  * Eğer borsa [iyi gitmezse]{.light-red} [(ayıların hakim olduğu pazarda)]{.light-red} hisse senedinin değeri [$%20$ azalacaktır]{.light-blue}. 
+* [B]{.light-red} hisse senedi ise güvenli bir şekilde 
+  * [boğaların]{.light-red} hakim olduğu pazarda [$\%15$ getiri]{.light-blue}, 
+  * [ayıların]{.light-red} hakim olduğu pazarda [$\%5$ getiri]{.light-blue} sağlayacaktır. 
+* [Paranızı nereye yatırmanız gerektiğini ve olası kazancınızı]{.red} [Laplace]{.orange}, [Kötümserlik]{.orange}, [İyimserlik]{.orange}, [Pişmanlık]{.orange} ve [$(\alpha=0.25)$]{.light-blue} ile [Hurwitz]{.orange} [yöntemleriyle]{.red} hesaplayınız.
+
+:::
+
+## Örnek 3: Hisse Senedi - Karar Matrisinin Oluşturulması
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - Karar Matrisinin Oluşturulması" style="font-size: 85%;"}
+:::{.fragment fragment-index=1}
+* Diğer sorulardan farklı olarak bu soruda [karar matrisi bize verilmemiş]{.light-red}, olası durumlara göre matrisi [bizden  hazırlamamız beklenmektedir]{.light-red}.
+:::
+
+:::{.fragment fragment-index=2}
+* Olası durumlara bakılırsa,
+  * [A]{.light-red} hisse senedi seçilir ve [boğa]{.light-red} yılı olursa, [$10000 \times 0.5 = 5000$ pb]{.light-blue} getiri olur.
+  * [A]{.light-red} hisse senedi seçilir ve [ayı]{.light-red} yılı olursa, [$10000 \times (-0.2) = (-2000)$ pb]{.light-blue} getiri olur.
+  * [B]{.light-red} hisse senedi seçilir ve [boğa]{.light-red} yılı olursa, [$10000 \times 0.15 = 1500$ pb]{.light-blue} getiri olur.
+  * [A]{.light-red} hisse senedi seçilir ve [ayı]{.light-red} yılı olursa, [$10000 \times 0.05 = 500$ pb]{.light-blue} getiri olur.
+:::
+
+:::{.fragment fragment-index=3}
+Bu bilgilere göre [karar matrisi]{.light-red} aşağıdaki gibi elde edilir. 
+:::
+
+:::{.fragment fragment-index=4}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_base.html >}}
+```
+:::
+:::
+:::
+
+
+## Örnek 3: Hisse Senedi - Laplace Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - Laplace Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.5$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 100%;"}
+* [A hisse senedi için]{.red} [$0.50\cdot 5000 + 0.50\cdot (-2000) = 1500$]{.light-blue}
+* [B hisse senedi için]{.red} [$0.50\cdot 1500 + 0.50\cdot 500  = 1000$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En yüksek beklenen kazancı]{.light-red} [$A$ hisse senedi]{.light-blue} seçeneği sağladığından [$(1500)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [$A$ hisse senedi]{.light-blue}ni seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-130  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+## Örnek 3: Hisse Senedi - Kötümserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - Kötümserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [A hisse senedi]{.light-blue} için beklenen kazanç [$-2000$]{.light-blue} ve [B hisse senedi]{.light-blue} için beklenen kazanç [$500$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksiminini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$500$]{.orange} beklenen getirisiyle [B hisse senedi]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 3: Hisse Senedi - İyimserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - İyimserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [A hisse senedi]{.light-blue} için beklenen kazanç [$5000$]{.light-blue} ve [B hisse senedi]{.light-blue} için beklenen kazanç [$1500$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-60 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$5000$]{.orange} beklenen getirisiyle [A hisse senedi]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 3: Hisse Senedi - Savage Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - Savage Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kazançlar]{.light-red} için karar vermek istediğinden [her bir sütunun maksimum değerinden o sütundaki diğer değerleri]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [A hisse senedi]{.light-blue} için beklenen pişmanlık [$2500$]{.light-blue} ve [B hisse senedi]{.light-blue} için beklenen pişmanlık [$3500$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$2500$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [A hisse senedi]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 3: Hisse Senedi - Hurwicz Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 3: Hisse Senedi - Hurwicz Ölçütü - Kazanç Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.25$]{.light-blue} seçildiğinden [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.25$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.75$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kazancı maksimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=4}
+* [A hisse senedi için]{.red} [$0.25\cdot 5000 + 0.5\cdot (-2000) = -250$]{.light-blue}
+* [B hisse senedi için]{.red} [$0.75\cdot 1500 + 0.5\cdot 500 = 750$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en yüksek]{.light-red} getiriye sahip [$(750)$]{.orange} [B hisse senedi]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX3\EX03_gain_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+
+
+## Örnek 4: Fon
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon" style="font-size: 90%;"}
+
+* Paranızı [kamu]{.light-red}, [gelişme]{.light-red} ve [global]{.light-red} gibi [üç]{.light-blue} farklı [fonda]{.light-red} değerlendirebilme şansına sahip olduğunuzu düşünelim.
+* Yatırımınızın değeri [pazar koşullarına]{.light-red} bağlı olarak [değişecektir]{.light-red}.
+* Aşağıdaki [tabloda]{.light-red} [pazarın durumu]{.light-red} ve [paranın yatırıldığı fon]{.light-red} göz önüne alınarak hazırlanan [kazanç matrisi]{.orange} verilmiştir.
+
+
+::: columns
+
+::: {.column width="60%"}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\Ex04_gain_base.html >}}
+```
+:::
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+[Buna göre hangi fonu seçmeniz gerektiğini ve elde edeceğiniz beklenen kazancı]{.red} [Laplace]{.orange}, [Kötümserlik]{.orange}, [İyimserlik]{.orange}, [Pişmanlık]{.orange} ve [$(\alpha=0.8)$]{.light-blue} olmak üzere [Hurwitz]{.orange} [yöntemleriyle belirleyiniz.]{.red}
+
+:::
+:::
+:::
+
+## Örnek 4: Fon - Laplace Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon - Laplace Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$\frac{1}{3}$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="65%"}
+
+:::{.fragment fragment-index=2 style="font-size: 90%;"}
+* [Kamu fonu için]{.red} [$\frac{1}{3}\cdot 5 + \frac{1}{3}\cdot 7 + \frac{1}{3} \cdot 8= 6.667$]{.light-blue}
+* [Gelişme fonu için]{.red} [$\frac{1}{3}\cdot (-10) + \frac{1}{3}\cdot 5 + \frac{1}{3} \cdot 30= 8.333$]{.light-blue}
+* [Global fonu için]{.red} [$\frac{1}{3}\cdot 2 + \frac{1}{3}\cdot 7 + \frac{1}{3} \cdot 20= 9.667$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="34%"}
+
+:::{.fragment fragment-index=4}
+* [En yüksek beklenen kazancı]{.light-red} [Global fon]{.light-blue} seçeneği sağladığından [$(9.667)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [Global fon]{.light-blue}u seçmek olacaktır. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-70 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\EX04_gain_laplace.html >}}
+```
+:::
+:::
+
+:::
+
+## Örnek 4: Fon - Kötümserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon - Kötümserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [Kamu fonu]{.light-blue} için beklenen kazanç [$5$]{.light-blue}, [Gelişme fonu]{.light-blue} için beklenen kazanç [$-10$]{.light-blue} ve [Global fon]{.light-blue} için beklenen kazanç [$2$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\EX04_gain_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksiminini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$5$]{.orange} beklenen getirisiyle [Kamu fonu]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 4: Fon - İyimserlik Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon - İyimserlik Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [Kamu fonu]{.light-blue} için beklenen kazanç [$8$]{.light-blue}, [Gelişme fonu]{.light-blue} için beklenen kazanç [$30$]{.light-blue} ve [Global fon]{.light-blue} için beklenen kazanç [$20$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\EX04_gain_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [maksimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$30$]{.orange} beklenen getirisiyle [Gelişme fonu]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 4: Fon - Savage Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon - Savage Ölçütü - Kazanç Durumu" style="font-size: 90%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kazançlar]{.light-red} için karar vermek istediğinden [her bir sütunun maksimum değerinden o sütundaki diğer değerleri]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\EX04_gain_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [Kamu fonu]{.light-blue} için beklenen pişmanlık [$22$]{.light-blue}, [Gelişme fonu]{.light-blue} için beklenen pişmanlık [$15$]{.light-blue} ve [Global fon]{.light-blue} için beklenen pişmanlık [$10$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$10$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [Global Fon]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 4: Fon - Hurwicz Ölçütü - Kazanç Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 4: Fon - Hurwicz Ölçütü - Kazanç Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.8$]{.light-blue} seçildiğinden [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.80$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.20$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kazancı maksimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=4 style="font-size: 100%;"}
+* [Kamu fonu için]{.red} [$0.8\cdot 8 + 0.2\cdot 5 = 7.4$]{.light-blue}
+* [Gelişme fonu için]{.red} [$0.8 \cdot 30 + 0.2\cdot (-10) = 22$]{.light-blue}
+* [Global fonu için]{.red} [$0.8\cdot 20 + 0.2\cdot 2 = 16.4$]{.light-blue}
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="49%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en yüksek]{.light-red} getiriye sahip [$(22)$]{.orange} [Gelişme fonu]{.light-blue} stratejisi seçilir. 
+:::
+:::
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-110  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX4\EX04_gain_hurwicz.html >}}
+```
+:::
+:::
+
+:::
+
+
+## Örnek 5: Doğal Yaşam Okulu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu" style="font-size: 80%;"}
+
+* [Doğal yaşam okulu]{.light-red} katılanları doğal koşullarda yaşama konusunda eğitmek üzere ormanda kamp yapacaktır. Okul [katılımcı sayısının]{.light-red} [200]{.light-blue}, [250]{.light-blue}, [300]{.light-blue} ve [350]{.light-blue} olmak üzere [dört]{.light-blue} kategoriden birine ait olacağı tahmin edilmektedir.
+* Eğer talebi [tam olarak karşılayabilecek]{.light-red} şekilde bir kamp organizasyonu yapılabilirse [maliyet minimum]{.light-red} olacaktır. İdeal talep düzeyinin [altında]{.light-red} ya da [üstündeki]{.light-red} sapmalar [oda fazlası]{.light-red} ve ya talebin karşılanmayan kısmından kaynaklanan [gelir kaybı]{.light-red} gibi [ek maliyetlere]{.light-red} neden olacaktır.
+* [A1]{.light-blue}, [A2]{.light-blue}, [A3]{.light-blue} ve [A4]{.light-blue} sırasıyla [200]{.light-blue}, [250]{.light-blue}, [300]{.light-blue} ve [350]{.light-blue} kişi olarak [kamp yerlerinin kapasitesini]{.light-red} göstermektedir.
+* [S1]{.light-blue}, [S2]{.light-blue}, [S3]{.light-blue} ve [S4]{.light-blue} ise yine sırasıyla [200]{.light-blue}, [250]{.light-blue}, [300]{.light-blue} ve [350]{.light-blue} kişi olarak [kampa katılım düzeyini]{.light-red} belirtmektedir.
+* Aşağıdaki tablo her bir [kamp yeri]{.light-red} ve [kampa katılım düzeyi]{.light-red} çifti için [maliyet tablosunu]{.orange} vermektedir.
+
+
+::: columns
+
+::: {.column width="60%"}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\Ex05_loss_base.html >}}
+```
+:::
+:::
+
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="39%"}
+[Buna göre kaç kişilik bir kamp yeri tutulması gerektiğini]{.red} [Laplace]{.orange}, [Kötümserlik]{.orange}, [İyimserlik]{.orange}, [Pişmanlık]{.orange} ve [$(\alpha=0.5)$]{.light-blue} olmak üzere [Hurwitz]{.orange} [yöntemleriyle belirleyiniz. Her strateji için beklenen maliyeti belirleyiniz.]{.red}
+
+:::
+:::
+:::
+
+## Örnek 5: Doğal Yaşam Okulu - Laplace Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu - Laplace Ölçütü - Kayıp Durumu" style="font-size: 90%;"}
+
+
+:::{.fragment fragment-index=1}
+* [Laplace]{.light-red} ölçütü tüm olasılıkları eşit olarak kabul ettiğinden her bir olay için olasılık [$0.25$]{.light-red} olduğundan [stratejilerin beklenen değerleri]{.light-red} aşağıdaki gibi hesaplanır.
+
+:::
+
+::: columns
+
+::: {.column width="80%"}
+
+:::{.fragment fragment-index=2 style="font-size: 85%;"}
+* [A1 (200 kişilik kamp yeri için)]{.red} [$0.25\cdot 5 + 0.25\cdot 10 + 0.25\cdot 18 + 0.25\cdot 25 = 14.5$]{.light-blue}
+* [A2 (250 kişilik kamp yeri için)]{.red} [$0.25\cdot 8 + 0.25\cdot 7 + 0.25\cdot 12 + 0.25\cdot 23 = 12.5$]{.light-blue}
+* [A3 (300 kişilik kamp yeri için)]{.red} [$0.25\cdot 21 + 0.25\cdot 18 + 0.25\cdot 12 + 0.25\cdot 21 = 18.0$]{.light-blue}
+* [A4 (350 kişilik kamp yeri için)]{.red} [$0.25\cdot 30 + 0.25\cdot 22 + 0.25\cdot 19 + 0.25\cdot 15 = 21.5$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-90 .scale-100  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\EX05_loss_laplace.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="19%"}
+
+:::{.fragment fragment-index=4}
+* [En düşük beklenen kayıp]{.light-red} [A2 - 250 kişilik kamp yeri]{.light-blue} seçeneği için sağlandığından [$(12.5)$]{.orange}, [karar vericinin en iyi kararı]{.light-red} [250 kişilik kamp yeri]{.light-blue}ni seçmek olacaktır. 
+:::
+:::
+:::
+
+
+
+:::
+
+
+## Örnek 5: Doğal Yaşam Okulu - Kötümserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu - Kötümserlik Ölçütü - Kayıp Durumu" style="font-size: 85%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en kötü senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [A1 (200 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$25$]{.light-blue}, [A2 (250 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$23$]{.light-blue}, [A3 (300 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$21$]{.light-blue} ve [A4 (350 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$30$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\EX05_loss_maximin_minimax.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [kötümser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimaksı]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$21$]{.orange} beklenen kayıpla [A3 - 300 kişilik kamp yeri]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 5: Doğal Yaşam Okulu - İyimserlik Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu - İyimserlik Ölçütü - Kayıp Durumu" style="font-size: 85%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici her bir strateji sonucunda oluşabilecek [en iyi senaryoyu]{.light-red} düşünecektir.
+:::
+
+:::{.fragment fragment-index=2}
+Bu durumda [A1 (200 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$5$]{.light-blue}, [A2 (250 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$7$]{.light-blue}, [A3 (300 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$12$]{.light-blue} ve [A4 (350 kişilik kamp yeri için)]{.light-blue} için beklenen kayıp [$15$]{.light-blue} olacaktır.
+:::
+
+:::{.fragment fragment-index=3}
+:::{.tblbox .tbl-fs-xl .w-80 .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\EX05_loss_maximax_minimin.html >}}
+```
+:::
+:::
+
+:::{.fragment fragment-index=4}
+Kullanıcı oluşan bu [iyimser]{.light-red} stratejiler arasından [en iyisini]{.light-red} yani [minimini]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=5}
+Bu durumda kullanıcının seçimi [$5$]{.orange} beklenen kaybıyla [A1 - 200 kişilik kamp yeri]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 5: Doğal Yaşam Okulu - Savage Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu - Savage Ölçütü - Kayıp Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+Karar verici [kayıplar]{.light-red} için karar vermek istediğinden [her bir sütun değerinden o sütunun en küçük değerini]{.light-red} çıkararak [pişmanlık matrisini]{.light-red} elde eder.
+:::
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=2}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-90  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\EX05_loss_savage.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=3}
+Elde edilen [pişmanlık matrisindeki]{.orange} her bir strateji için [en çok pişmanlık]{.light-red} yaratacak değeri belirler.
+:::
+:::
+:::
+
+
+:::{.fragment fragment-index=4}
+Bu durumda [A1 (200 kişilik kamp yeri için)]{.light-blue} için beklenen pişmanlık [$10$]{.light-blue}, [A2 (250 kişilik kamp yeri için)]{.light-blue} için beklenen pişmanlık [$8$]{.light-blue}, [A3 (300 kişilik kamp yeri için)]{.light-blue} için beklenen pişmanlık [$16$]{.light-blue} ve [A4 (350 kişilik kamp yeri için)]{.light-blue} için beklenen pişmanlık [$25$]{.light-blue} olacaktır.
+:::
+
+
+
+:::{.fragment fragment-index=5}
+Kullanıcı oluşan bu [yüksek pişmanlıklı]{.light-red} stratejiler arasından [en az pişmanlık getirecek]{.light-red} stratejiyi yani [minimaksını]{.light-red} seçecektir.
+:::
+
+:::{.fragment fragment-index=6}
+Bu durumda kullanıcının seçimi [$8$]{.orange} [beklenen pişmanlık]{.light-red} değeriyle [A2 - 250 kişilik kamp yeri]{.light-blue} stratejisi olacaktır.
+:::
+:::
+
+## Örnek 5: Doğal Yaşam Okulu - Hurwicz Ölçütü - Kayıp Durumu
+
+
+::: {.callout-tip icon=false title="Örnek 5: Doğal Yaşam Okulu - Hurwicz Ölçütü - Kayıp Durumu" style="font-size: 80%;"}
+
+:::{.fragment fragment-index=1}
+[$\alpha=0.5$]{.light-blue} seçildiği için [iyimser]{.light-red} ve [kötümser]{.light-red} senaryoların [ağırlıklı bir ortalaması]{.light-red} hesaplanmalıdır.
+:::
+
+:::{.fragment fragment-index=2}
+Bu hesap her bir strateji için [iyimser]{.light-red} sonucun [$0.5$]{.light-blue} ve [kötümser]{.light-red} sonucun [$0.5$]{.light-blue} ile çarpılıp toplanmasıyla bulunur.
+:::
+
+:::{.fragment fragment-index=3}
+Elde edilen sonuçlardan [kaybı minimum]{.light-red} yapacak değer seçilir. 
+:::
+
+
+::: columns
+
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=4}
+* [A1 (200 kişilik kamp yeri için)]{.red} [$0.5\cdot 5 + 0.5\cdot 25 = 15$]{.light-blue}
+* [A2 (250 kişilik kamp yeri için)]{.red} [$0.5\cdot 7 + 0.5\cdot 23 = 15$]{.light-blue}
+* [A3 (300 kişilik kamp yeri için)]{.red} [$0.5\cdot 12 + 0.5\cdot 21 = 16.5$]{.light-blue}
+* [A4 (350 kişilik kamp yeri için)]{.red} [$0.5\cdot 15 + 0.5\cdot 30 = 22.5$]{.light-blue}
+:::
+
+:::{.fragment fragment-index=5}
+:::{.tblbox .tbl-fs-xl .w-100 .scale-80  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\EX5\EX05_loss_hurwicz.html >}}
+```
+:::
+:::
+:::
+
+::: {.column width="1%"}
+:::
+
+::: {.column width="29%"}
+:::{.fragment fragment-index=6 style="font-size: 110%;"}
+Elde edilen sonuçlara bakıldığında [en düşük]{.light-red} kayba sahip [$(15)$]{.orange} iki kamp yeri [A1 - 200 kişilik kamp yeri]{.light-blue} ve [A2 - 250 kişilik kamp yeri]{.light-blue} stratejilerinden bir tanesi seçilir. 
+:::
+:::
+:::
+
+
+
+:::

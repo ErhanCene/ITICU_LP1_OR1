@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.light-red{
+  color: #EB85B2;
+}
+
+.light-blue{
+  color: #4183C4;
+}
+
+.red{
+  color:#9C0311;
+}
+
+.orange{
+  color:#ffc107;
+}
+
+h1.title{
+  font-size: 2.5em;
+  font-family: 'Chewy', cursive;
+  color: #F6DD7C;
+}
+
+p.subtitle{
+  font-size: 2em;
+  font-family: 'Poppins', cursive;
+  color: #F6DD7C;
+  font-weight: bold;
+}
+
+
+div.quarto-title-author-name{
+  font-size: 1.2em;
+  font-family: "Lato", cursive;
+  color: #F6DD7C;
+}
+
+p.date{
+  font-size: 1.2em;
+  font-family: "Lato", cursive;
+  color: #F6DD7C;
+
+}
+
+div.footer p{
+  font-family: 'Chewy', cursive;
+  color: #F6DD7C;
+}
+
+section.slide h2{
+  color: #F6DD7C;
+  font-size: 0.8em;
+}
+
+/* ==== TABLO GENEL STİLİ ==== */
+.tbl-sim {
+  border-collapse: collapse;
+/*  width: 70%;    */           /* tabloyu genişlet */
+  font-size: 3rem;        /* yazı boyutu */
+}
+
+.tbl-down {
+  margin-top: 20px !important;   /* tabloyu 150px aşağı kaydırır */
+  /* margin-left: auto; */  /* isteğe bağlı: yatayda ortala */
+  /* margin-right: auto; */
+}
+
+.tbl-sim th, .tbl-sim td {
+  border: 1px solid #444;
+
+}
+.tbl-sim thead th { background: #f4f4f4; }
+.tbl-sim caption {
+  caption-side: top;
+  font-weight: 600;
+  margin-bottom: .6rem;
+  font-size: 1.6rem !important;
+}
+
+.header-color{
+  color: red;
+}
+
+/* ==== REVEALJS ÖZEL ==== */
+.reveal .tbl-sim { 
+  width: 80% !important; 
+  font-size: 1.7rem !important; 
+  margin-right: 0.5rem !important;
+}
+
+.reveal .tbl-down {
+  margin-top: 20px !important;   /* tabloyu 150px aşağı kaydırır */
+}
+  
+.reveal .tbl-sim th, .reveal .tbl-sim td { 
+  padding: .3rem 0.4rem !important; 
+  text-align: center !important; 
+}
+  
+.reveal .r-stretch { 
+  height: 80% !important; 
+  display:flex !important; 
+  align-items:center !important; 
+}
+
+
+.tbl-sim .pivot { color: purple; font-weight: bold; font-size:2rem; }
+
+.tbl-highlight-x2 td:nth-child(3),
+.tbl-highlight-x2 th:nth-child(3) {
+  border: 2px solid green !important;
+  background-color: #eafaea; /* pale green background */
+}
+
+.highlight-s1 {
+  background-color: #eafaea;
+  color: green;
+  font-weight: bold;
+}
+
+.highlight-zj {
+  background-color: #FFF5E6;
+  border: 2px solid orange !important;
+  font-weight: bold;
+  color: orange;
+}
+
+.highlight-zj-cj {
+  background-color: #FFE8E5;
+  border: 2px solid red !important;
+  font-weight: bold;
+  color: red;
+}
+
+.highlight-purple {
+  background-color: #F9E5FF;
+  border: 2px solid purple !important;
+  font-weight: bold;
+  color: purple;
+}
+
+
+.tbl-highlight-7 td:nth-child(7),
+.tbl-highlight-7 th:nth-child(7){
+  border: 2px solid green !important;
+  background-color: #eafaea; /* pale green background */
+  color: green;
+}
+
+#opt-value{
+  font-weight: bold;
+  font-size:2rem;
+  color: blue;
+}
+
+
+/* EXAMPLE 2 ---- */
+
+
+#tbl-start-ex2 {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+}
+#tbl-start-ex2 th, #tbl-start-ex2 td {
+  border: 1px solid #777;
+  padding: .60rem .9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+#tbl-start-ex2 thead th { background: #f3f3f3; }
+#tbl-start-ex2 .subhead th { background: #fafafa; font-weight: 600; }  
+  
+#tbl-start-ex2 .zero { color:#666; }
+#tbl-start-ex2 .neg { color:#c0392b; font-weight:700; }
+#tbl-start-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+
+/* ---- scoped to this table only ---- */
+#simplex-step0-ex2 {
+  border-collapse: collapse; margin: 1rem auto; font-size: 1.7rem;
+}
+#simplex-step0-ex2 th, #simplex-step0-ex2 td {
+  border: 1px solid #444; padding: .45rem .5rem; text-align: center; vertical-align: middle;
+}
+#simplex-step0-ex2 thead th { background: #f5f5f5; }
+
+/* entering column (x2) highlight */
+
+#simplex-step0-ex2 th:nth-child(3),
+#simplex-step0-ex2 td:nth-child(3) {
+  border: 2px solid #1e9340;           /* green box */
+  background: #eafaea;                  /* pale green */
+}
+
+/* pivot cell */
+#simplex-step0-ex2 td.pivot {
+  background: #c9f0d1;                  /* stronger green */
+  border: 3px solid #14833b;            /* thicker border */
+  font-weight: 700;
+}
+
+/* helper styles */
+#simplex-step0-ex2 .zero { color:#666; }
+#simplex-step0-ex2 .neg { color:#c0392b; font-weight:700; }
+#simplex-step0-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+#simplex-step1-start-ex2 {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+}
+#simplex-step1-start-ex2 th, #simplex-step1-start-ex2 td {
+  border: 1px solid #777;
+  padding: .60rem .9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+#simplex-step1-start-ex2 thead th { background: #f3f3f3; }
+#simplex-step1-start-ex2 .subhead th { background: #fafafa; font-weight: 600; }  
+  
+#simplex-step1-start-ex2 .zero { color:#666; }
+#simplex-step1-start-ex2 .neg { color:#c0392b; font-weight:700; }
+#simplex-step1-start-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+#simplex-step1-ex2 {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+}
+#simplex-step1-ex2 th, #simplex-step1-ex2 td {
+  border: 1px solid #777;
+  padding: .50rem .4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#simplex-step1-ex2 td:nth-child(2),
+#simplex-step1-ex2 th:nth-child(2){
+  border: 2px solid green;
+  background-color: #eafaea; /* pale green background */
+}
+
+
+#simplex-step1-ex2 thead th { background: #f3f3f3; }
+
+#simplex-step1-ex2 .zero { color:#666; }
+#simplex-step1-ex2 .neg { color:#c0392b; font-weight:700; }
+#simplex-step1-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+
+#simplex-step2-start-ex2 {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+}
+#simplex-step2-start-ex2 th, #simplex-step2-start-ex2 td {
+  border: 1px solid #777;
+  padding: .60rem .9rem;
+  text-align: center;
+  vertical-align: middle;
+}
+#simplex-step2-start-ex2 thead th { background: #f3f3f3; }
+#simplex-step2-start-ex2 .subhead th { background: #fafafa; font-weight: 600; }  
+  
+#simplex-step2-start-ex2 .zero { color:#666; }
+#simplex-step2-start-ex2 .neg { color:#c0392b; font-weight:700; }
+#simplex-step2-start-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+#simplex-step2-ex2 {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+}
+#simplex-step2-ex2 th, #simplex-step2-ex2 td {
+  border: 1px solid #777;
+  padding: .50rem .4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#simplex-step2-ex2 td:nth-child(9),
+#simplex-step2-ex2 th:nth-child(9){
+  border: 2px solid green;
+  background-color: #eafaea; /* pale green background */
+}
+
+
+#simplex-step2-ex2 thead th { background: #f3f3f3; }
+
+#simplex-step2-ex2 .zero { color:#666; }
+#simplex-step2-ex2 .neg { color:#c0392b; font-weight:700; }
+#simplex-step2-ex2 .ok  { color:#14833b; font-weight:700; }
+
+
+#simplex-step2-ex2 .final-sol td:nth-child(7),
+#simplex-step2-ex2 .final-sol th:nth-child(7){
+  border: 2px solid green !important;
+  background-color: #eafaea; /* pale green background */
+  color: green;
+}
+
+/* Generic */
+
+
+#highlight-s1 {
+  background-color: #eafaea;
+  color: green;
+  font-weight: bold;
+}
+
+#highlight-zj {
+  background-color: #FFF5E6;
+  border: 2px solid orange !important;
+  font-weight: bold;
+  color: orange;
+}
+
+#highlight-zj-cj {
+  background-color: #FFE8E5;
+  border: 2px solid red !important;
+  font-weight: bold;
+}
+
+#highlight-purple {
+  background-color: #F9E5FF;
+  border: 2px solid purple !important;
+  font-weight: bold;
+  color: purple;
+}
+
+#highlight-pivot { 
+  color: purple; 
+  font-weight: bold; 
+  font-size:2rem; }
+  
+
+
+#opt-value{
+  font-weight: bold;
+  font-size:2rem;
+  color: blue;
+}
+
+
+/* size & position of the panel on the slide */
+.reveal .slides section #tbl-my-table {
+  width: 100% !important;          /* use more of the slide; try 95% or 100% */
+  margin: 0 auto !important;      /* center */
+  max-height: 150vh !important;    /* use vertical space; scroll when too tall */
+  overflow: auto !important;
+  display: block !important;
+  box-sizing: border-box;
+  padding: 10px !important;
+  /* optional framing */
+  border: 0;                       /* remove thick border */
+  /*box-shadow: 0 6px 24px rgba(0,0,0,.12);*/
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* make the table itself larger */
+.reveal .slides section #tbl-my-table table.simplex {
+  font-size: 25px;                 /* was ~13px in our generator */
+}
+
+.reveal .slides section #tbl-my-table table.simplex th,
+.reveal .slides section #tbl-my-table table.simplex td {
+  padding: 6px 8px;               /* was 6px 8px */
+}
+
+/* slightly thicker grid lines for projector readability */
+.reveal .slides section #tbl-my-table table.simplex th,
+.reveal .slides section #tbl-my-table table.simplex td {
+  border-color: #c9d1d9;
+}
+
+.reveal figcaption{
+  display: none;
+  font-size: 30px !important;
+}

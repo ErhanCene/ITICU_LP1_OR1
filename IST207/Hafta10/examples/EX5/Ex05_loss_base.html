@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='tr'><head><meta charset='utf-8'/>
+<title>
+Temel Kayıp Tablosu
+</title>
+
+  <style>
+    :root{
+      --grid:#333; --head-bg:#f0f0f0; --lbl-bg:#fafafa;
+      --lilac-bg:#F5F3FF; --lilac-br:#7C3AED;   /* winner row */
+      --amber-bg:#FFF7ED; --amber-br:#F59E0B;  /* criterion cell */
+      --prob-bg:#FCFCFC;  --metcol-bg:#F8F9FF; /* right metric cols */
+      --rose-bg:#FFE4E6;  --rose-br:#EF4444;   /* dashed regret cells */
+    }
+    body { font-family:'Segoe UI', Roboto, Arial, sans-serif; margin:18px; color:#111; }
+    table.tt { border-collapse:collapse; border:1.5px solid var(--grid); margin-bottom:14px; width:auto; }
+    table.tt th, table.tt td { border:1px solid var(--grid); padding:6px 10px; }
+    thead th { background:var(--head-bg); font-weight:700; text-align:center; }
+    td.lbl { font-weight:700; background:var(--lbl-bg); white-space:nowrap; }
+    td.num { text-align:right; }
+    .corner { background:var(--head-bg); font-weight:700; text-align:center; }
+    .prob   { background:var(--prob-bg); font-size:12px; }
+    .met-h  { background:var(--head-bg); }
+    .met-c  { background:var(--metcol-bg); font-weight:700; }
+    .mark-row td  { background:var(--lilac-bg) !important; }
+    .mark-row td.lbl { border-left:2px solid var(--lilac-br) !important; }
+    .mark-row td   { border-top:2px solid var(--lilac-br) !important; border-bottom:2px solid var(--lilac-br) !important; }
+    .mark-row td:last-child { border-right:2px solid var(--lilac-br) !important; }
+    .best-cell { background:var(--amber-bg) !important; font-weight:700; box-shadow: inset 0 0 0 3px var(--amber-br); }
+    .mr-cell   { background:var(--rose-bg) !important;  font-weight:700; border:3px dashed var(--rose-br) !important; }
+    caption { caption-side: top; text-align:left; font-weight:700; margin:0 0 8px 0; }
+  </style>
+</head><body>
+<table class='tt'>
+<caption>
+Temel Kayıp Tablosu
+</caption>
+<thead>
+<tr><th class='corner' rowspan='2'>Kamp Yeri Kapasitesi</th><th colspan='4'>Katılımcı Sayısı</th></tr><tr><th>S1(200)</th><th>S2(250)</th><th>S3(300)</th><th>S4(350)</th></tr>
+</thead>
+<tbody>
+
+<tr><td class='lbl'>A1(200)</td><td class='num'>5</td><td class='num'>10</td><td class='num'>18</td><td class='num'>25</td></tr><tr><td class='lbl'>A2(250)</td><td class='num'>8</td><td class='num'>7</td><td class='num'>12</td><td class='num'>23</td></tr><tr><td class='lbl'>A3(300)</td><td class='num'>21</td><td class='num'>18</td><td class='num'>12</td><td class='num'>21</td></tr><tr><td class='lbl'>A4(350)</td><td class='num'>30</td><td class='num'>22</td><td class='num'>19</td><td class='num'>15</td></tr>
+</tbody>
+</table>
+</body></html>
