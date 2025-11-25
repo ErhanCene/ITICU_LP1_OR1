@@ -1,0 +1,3009 @@
+---
+title: Hafta 11
+subtitle: "Simpleks Yöntemde Özel Durumlar II"
+date: 11/27/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 11 - 27 Kasım 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+
+
+## Örnek 9: Sınırsız Çözüm (1)
+
+::: {.callout-tip icon=false title="Örnek 9: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=3x_1+6x_2$]{.light-blue}
+
+[$3x_1 + 4x_2 \geq 12$]{.light-blue}
+
+[$-2x_1 + x_2 \leq 4$]{.light-blue}
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{min}=3x_1+6x_2 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+3x_1 &+& 4x_2 &\color{orange}-& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 12,\\
+-2x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {0s_1 +1s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 4
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$ ve [$s_1$, $s_2 \geq 0$]{.orange}, [$A_1 \geq 0$]{.green}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (2)
+
+::: {.callout-tip icon=false title="Örnek 9: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 9: Sınırsız Çözüm (3)
+
+::: {.callout-tip icon=false title="Örnek 9: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (4)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+:::
+:::
+
+## Örnek 9: Sınırsız Çözüm (5)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (6)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 9: Sınırsız Çözüm (7)
+
+::: {.callout-tip icon=false title="Örnek 9: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 9: Sınırsız Çözüm (8)
+
+::: {.callout-tip icon=false title="Örnek 9: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (9)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter02_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (10)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 9: Sınırsız Çözüm (11)
+
+::: {.callout-tip icon=false title="Örnek 9: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 9: Sınırsız Çözüm (12)
+
+::: {.callout-tip icon=false title="Örnek 9: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter02_07_after_objective.html >}}
+```
+
+:::
+
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+## Örnek 9: Sınırsız Çözüm (13)
+
+::: {.callout-tip icon=false title="Örnek 9: Anahtar Satır, Sütun ve Anahtar Değer (İter 3)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex9\ex9_iter03_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+Anahtar sütun olan [$x_1$]{.red} teki değerler sırasıyla [$-2$]{.light-blue} ve [$-11$]{.light-blue} olduğundan her iki satır için de [$\frac{b_i}{a_j}$]{.red} hesabı yapılamaz. 
+
+İşlem burada sonlandırılır. [Sınırsız çözüm vardır. Optimum değer bulunamaz.]{.orange}
+
+:::
+
+:::
+
+:::
+
+## Alternatif en iyi çözümün olması (1)
+
+
+::: {.callout-important icon=false title="Alternatif en iyi çözümün olması (1)" style="font-size: 100%;"}
+
+* Bazı doğrusal programlama problemlerinde, amaç fonksiyonu [en iyi değerine birden fazla uç noktada]{.light-red} ulaşabilir. 
+* Bu durumda amaç fonksiyonunun en iyi değeri [her uç noktası için aynıdır]{.light-red}. 
+* Farklı olan yalnızca [temel değişkenler]{.light-red} ve onların [değerleridir]{.light-red}.
+* Bir doğrusal programlama probleminin birden fazla en iyi çözümü olup olmadığı en iyi çözümün belirlendiği tablonun [$Z_j-C_j$ satır elemanlarının incelenmesiyle]{.light-red} anlaşılır.
+* [En iyi çözümün bulunduğu]{.light-red} simpleks tablosunda [temel değişkenlerin]{.light-red} [$Z_j-C_j$]{.light-red} değerlerinin [$0$]{.light-red} olması beklenir. 
+:::
+
+## Alternatif en iyi çözümün olması (2)
+
+
+::: {.callout-important icon=false title="Alternatif en iyi çözümün olması (2)" style="font-size: 100%;"}
+
+* [Temelde olmayan değişkenlerin $Z_j-C_j$]{.light-red} değerleri de [$0$]{.light-red} ise o problemin [alternatif en iyi çözümleri vardır]{.light-red} denir.
+* Alternatif en iyi çözümü elde etmek üzere [$Z_j-C_j$]{.light-red} değeri [$0$]{.light-red} olan [değişken temele alınarak]{.light-red} simpleks yöntem adımları uygulanır.
+* Yeni [en iyi çözüm bulunduğunda]{.light-red} işlem tamamlanmış olur. 
+* Yeni en iyi çözümde [temel değişkenler listesi değişir]{.light-red} ancak [amaç fonksiyonun değeri değişmez]{.light-red}.
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm (1)
+
+::: {.callout-tip icon=false title="Örnek 10: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=2x_1+4x_2+6x_3$]{.light-blue}
+
+[$4x_1 + 8x_2 + 12x_3 \leq 36$]{.light-blue}
+[$x_1 + x_2 + 3x_3 \leq 12$]{.light-blue}
+[$2x_1 + 2x_2 + x_3 \leq 20$]{.light-blue}
+
+[$x_1$, $x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}=2x_1+4x_2+6x_3 \\ 
+\color{orange}{+0s_1+0s_2+0s_3}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+4x_1 &+& 8x_2 &+& 12x_3 &\color{orange}+& {\color{orange} {1s_1 + 0s_2+0s_3}} &\;\color{orange}= & 36,\\
+1x_1 &+& 1x_2 &+& 3x_3 &\color{orange}+& {\color{orange} {0s_1 + 1s_2+0s_3}} &\;\color{orange}= & 12,\\
+2x_1 &+& 2x_2 &+& 1x_3 &\color{orange}+& {\color{orange} {0s_1 + 0s_2+1s_3}} &\;\color{orange}= & 20
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2$, $x_3 \geq 0$ ve [$s_1$, $s_2$ $s_3 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm (2)
+
+::: {.callout-tip icon=false title="Örnek 10: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 10: Alternatif Çözüm (3)
+
+::: {.callout-tip icon=false title="Örnek 10: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 10: Alternatif Çözüm (4)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+:::
+:::
+
+## Örnek 10: Alternatif Çözüm (5)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm (6)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 10: Alternatif Çözüm (7)
+
+::: {.callout-tip icon=false title="Örnek 10: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 10: Alternatif Çözüm (8)
+
+::: {.callout-tip icon=false title="Örnek 10: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_iter01_07_after_objective.html >}}
+```
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+* Son durumda [$Z = 18$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::{style="font-size: 90%;"}
+* Bu çözümde [$x_1 = 0$]{.light-blue}, [$x_2 =0$]{.light-blue},  [$x_3 =3$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=3$]{.light-blue} ve [$s_3=17$]{.light-blue}’dir.
+* Temel değişken olmayan [$x_1$]{.light-blue}, [$x_2$]{.light-blue} ve [$s_1$]{.light-blue} arasından [$z_j-c_j$]{.light-blue} değeri [$0$]{.light-blue} olanlar [$x_1$]{.red} ve [$x_2$]{.red} dir.
+* [$x_1$]{.red} ve ya [$x_2$]{.red} nin modele eklenmesi yeni bir en iyi çözüm oluşturur. 
+* Örneğin, [$x_2$]{.red} modele girerken, [$s_2$]{.red} modelden çıksın.
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm  (9)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır, Sütun ve Anahtar Değer (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm  (10)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır İçin Yeni Değerler (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 10: Alternatif Çözüm (11)
+
+::: {.callout-tip icon=false title="Örnek 10: Diğer Satırlar İçin Yeni Değer (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post01_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm (12)
+
+::: {.callout-tip icon=false title="Örnek 10: Simpleks Adım Sonu (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post01_07_after_objective.html >}}
+```
+
+:::
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm yine optimuma ulaşmıştır.
+* Son durumda [$Z = 18$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir ve değişmemiştir.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+:::{style="font-size: 90%;"}
+* Bu çözümde [$x_1 = 0$]{.light-blue}, [$x_2 =-3$]{.light-blue},  [$x_3 =5$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=0$]{.light-blue} ve [$s_3=21$]{.light-blue}’dir.
+
+* Optimum değer değişmediği halde hem temel değişkenler hem de değerleri değişmiştir. 
+* Bu kez de örneğin, [$x_1$]{.red} modele girerken, [$s_3$]{.red} modelden çıksın.
+:::
+:::
+
+:::
+
+:::
+
+## Örnek 10: Alternatif Çözüm  (13)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır, Sütun ve Anahtar Değer (Post İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post02_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm  (14)
+
+::: {.callout-tip icon=false title="Örnek 10: Anahtar Satır İçin Yeni Değerler (Post İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 10: Alternatif Çözüm (15)
+
+::: {.callout-tip icon=false title="Örnek 10: Diğer Satırlar İçin Yeni Değer (Post İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 10: Alternatif Çözüm (16)
+
+::: {.callout-tip icon=false title="Örnek 10: Simpleks Adım Sonu (Post İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex10\ex10_post02_07_after_objective.html >}}
+```
+
+:::
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm yine optimuma ulaşmıştır.
+* Son durumda [$Z = 18$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir ve değişmemiştir.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Bu çözümde [$x_1 = 12.60$]{.light-blue}, [$x_2 =-3$]{.light-blue},  [$x_3 =0.80$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=0$]{.light-blue} ve [$s_3=0$]{.light-blue}’dir.
+* Optimum değer değişmediği halde hem temel değişkenler hem de değerleri değişmiştir. 
+:::
+
+:::
+
+:::
+
+## Örnek 11: Alternatif Çözüm (1)
+
+::: {.callout-tip icon=false title="Örnek 11: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=3x_1+6x_2$]{.light-blue}
+
+[$2x_1 + 4x_2 \leq 1600$]{.light-blue}
+
+[$6x_1 + 2x_2 \leq 1800$]{.light-blue}
+
+[$x_2 \leq 3500$]{.light-blue}
+
+
+[$x_1$ , $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}&=&3x_1+6x_2 \\ 
+&+& \color{orange}{0s_1+0s_2+0s_3}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 4x_2 &+& {\color{orange} {1s_1 + 0s_2 + 0s_3}} &\;\color{orange}= & 1600,\\
+6x_1 &+& 2x_2 &+& {\color{orange} {0s_1 + 1s_2 + 0s_3}} &\;\color{orange}= & 1800, \\
+0x_1 &+& 1x_2 &+& {\color{orange} {0s_1 + 0s_2 + 1s_3}} &\;\color{orange}= & 350, \\
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$ ve [$s_1$, $s_2$, $s_3 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (2)
+
+::: {.callout-tip icon=false title="Örnek 11: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 11: Alternatif Çözüm (3)
+
+::: {.callout-tip icon=false title="Örnek 11: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 11: Alternatif Çözüm (4)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 11: Alternatif Çözüm (5)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (6)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 11: Alternatif Çözüm (7)
+
+::: {.callout-tip icon=false title="Örnek 11: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 11: Alternatif Çözüm (8)
+
+::: {.callout-tip icon=false title="Örnek 11: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (9)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter02_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (10)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 11: Alternatif Çözüm (11)
+
+::: {.callout-tip icon=false title="Örnek 11: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (12)
+
+::: {.callout-tip icon=false title="Örnek 11: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+* Son durumda [$Z=2400$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+:::{style="font-size: 90%;"}
+* Bu çözümde [$x_1 = 100$]{.light-blue}, [$x_2 =350$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=500$]{.light-blue} ve [$s_3=0$]{.light-blue}’dır.
+* Temel değişken olmayan [$s_3$]{.light-blue} için [$z_j-c_j$]{.light-blue} değeri [$0$]{.light-blue} olduğundan bu değişken modele sokularak alternatif bir çözüm elde edilebilir.
+* [$s_3$]{.red} modele girerken, [$s_2$]{.red} modelden çıksın.
+:::
+:::
+:::
+
+:::
+
+## Örnek 11: Alternatif Çözüm  (9)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır, Sütun ve Anahtar Değer (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_post01_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm  (10)
+
+::: {.callout-tip icon=false title="Örnek 11: Anahtar Satır İçin Yeni Değerler (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_post01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 11: Alternatif Çözüm (11)
+
+::: {.callout-tip icon=false title="Örnek 11: Diğer Satırlar İçin Yeni Değer (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_post01_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 11: Alternatif Çözüm (12)
+
+::: {.callout-tip icon=false title="Örnek 11: Simpleks Adım Sonu (Post İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex11\ex11_post01_07_after_objective.html >}}
+```
+
+:::
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm yine optimuma ulaşmıştır.
+* Son durumda [$Z = 2400$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir ve değişmemiştir.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+:::{style="font-size: 90%;"}
+* Yeni çözümde [$x_1 = 200$]{.light-blue}, [$x_2 =300$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2=0$]{.light-blue} ve [$s_3=50$]{.light-blue}’dir.
+
+* Optimum değer değişmediği halde hem temel değişkenler hem de değerleri değişmiştir. 
+:::
+:::
+
+:::
+
+:::
+
+## Sınırlandırılmamış Değişkenler
+
+
+::: {.callout-important icon=false title="Sınırlandırılmamış Değişkenler" style="font-size: 100%;"}
+
+* Bir doğrusal programlama probleminde herhangi bir [temel değişken]{.light-red} [$x_i$]{.light-red} [sınırlandırılmamış]{.light-red} olarak tanımlanabilir. 
+* Değişkenin sınırlandırılmamış olması [hem negatif hem pozitif]{.light-red} değerler alabileceğine işarettir.
+* Bu durumda doğrusal programlama probleminde, [$x_i$]{.light-red} değişkeni [$x_i = x_i^+ - x_i^-$]{.light-red}, [$x_i^+ \geq 0$]{.light-red} ve [$x_i^- \geq 0$]{.light-red} olacak şekilde iki pozitif parçaya bölünerek simpleks adımlara geçilir.
+* Simpleks adımlarda [herhangi bir değişiklik olmaz]{.light-red}.
+:::
+
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (1)
+
+::: {.callout-tip icon=false title="Örnek 12: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=2x_1+x_2$]{.light-blue}
+
+[$3x_1 + x_2 \leq 6$]{.light-blue}
+
+[$x_1 + x_2 \leq 4$]{.light-blue}
+
+[$x_1 \geq 0$ , $x_2 \quad{} sınırlandırılmamış$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}&=&2x_1+\color{purple}{x_2^+-x_2^-} \\ 
+&+& \color{orange}{0s_1+0s_2}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+3x_1 &+& {\color{purple}{1x_2^+ - 1x_2^-}} &+& {\color{orange} {1s_1 + 0s_2}} &\;\color{orange}= & 6,\\
+1x_1 &+& {\color{purple}{1x_2^+ - 1x_2^-}} &+& {\color{orange} {0s_1 + 1s_2}} &\;\color{orange}= & 4
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1 \geq 0$, [$x_2^+, x_2^- \geq 0$]{.purple} ve [$s_1$, $s_2 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (2)
+
+::: {.callout-tip icon=false title="Örnek 12: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 12: Sınırlandırılmamış Değişken (3)
+
+::: {.callout-tip icon=false title="Örnek 12: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (4)
+
+::: {.callout-tip icon=false title="Örnek 12: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 12: Sınırlandırılmamış Değişken (5)
+
+::: {.callout-tip icon=false title="Örnek 12: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (6)
+
+::: {.callout-tip icon=false title="Örnek 12: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (7)
+
+::: {.callout-tip icon=false title="Örnek 12: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (8)
+
+::: {.callout-tip icon=false title="Örnek 12: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (9)
+
+::: {.callout-tip icon=false title="Örnek 12: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter02_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (10)
+
+::: {.callout-tip icon=false title="Örnek 12: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (11)
+
+::: {.callout-tip icon=false title="Örnek 12: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 12: Sınırlandırılmamış Değişken (12)
+
+::: {.callout-tip icon=false title="Örnek 12: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex12\ex12_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+* Son durumda [$Z=5$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+:::{style="font-size: 90%;"}
+* Bu çözümde [$x_1 = 1$]{.light-blue}, [$x_2^+ =3$]{.light-blue}, [$x_2^- =0$]{.light-blue}, [$s_1 = 0$]{.light-blue}, ve [$s_2=0$]{.light-blue}’dır.
+
+:::
+:::
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (1)
+
+::: {.callout-tip icon=false title="Örnek 13: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=4x_1+3x_2$]{.light-blue}
+
+[$x_1 + x_2 \leq 6$]{.light-blue}
+
+[$2x_1 - x_2 \leq 4$]{.light-blue}
+
+[$x_1 \geq 0$ , $x_2 \quad{} sınırlandırılmamış$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}&=&4x_1+\color{purple}{3x_2^+-3x_2^-} \\ 
+&+& \color{orange}{0s_1+0s_2}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& {\color{purple}{3x_2^+ - 3x_2^-}} &+& {\color{orange} {1s_1 + 0s_2}} &\;\color{orange}= & 6,\\
+2x_1 &-& {\color{purple}{1x_2^+ + 1x_2^-}} &+& {\color{orange} {0s_1 + 1s_2}} &\;\color{orange}= & 4
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1 \geq 0$, [$x_2^+, x_2^- \geq 0$]{.purple} ve [$s_1$, $s_2 \geq 0$]{.orange}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (2)
+
+::: {.callout-tip icon=false title="Örnek 13: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 13: Sınırlandırılmamış Değişken (3)
+
+::: {.callout-tip icon=false title="Örnek 13: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (4)
+
+::: {.callout-tip icon=false title="Örnek 13: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 13: Sınırlandırılmamış Değişken (5)
+
+::: {.callout-tip icon=false title="Örnek 13: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (6)
+
+::: {.callout-tip icon=false title="Örnek 13: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (7)
+
+::: {.callout-tip icon=false title="Örnek 13: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (8)
+
+::: {.callout-tip icon=false title="Örnek 13: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter01_07_after_objective.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (9)
+
+::: {.callout-tip icon=false title="Örnek 13: Anahtar Satır, Sütun ve Anahtar Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter02_04_select.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (10)
+
+::: {.callout-tip icon=false title="Örnek 13: Anahtar Satır İçin Yeni Değerler (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="68%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter02_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="30%"}
+
+
+:::{style="font-size: 75%;"}
+
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (11)
+
+::: {.callout-tip icon=false title="Örnek 13: Diğer Satırlar İçin Yeni Değer (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter02_06_update_other_row.html >}}
+```
+
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+
+:::{style="font-size: 75%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Örnek 13: Sınırlandırılmamış Değişken (12)
+
+::: {.callout-tip icon=false title="Örnek 13: Simpleks Adım Sonu (İter 2)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="73%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex13\ex13_iter02_07_after_objective.html >}}
+```
+
+:::
+
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+* Son durumda [$Z=21.33$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değerdir.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+:::{style="font-size: 90%;"}
+* Bu çözümde [$x_1 = 3.33$]{.light-blue}, [$x_2^+ =2.67$]{.light-blue}, [$x_2^- =0$]{.light-blue}, [$s_1 = 0$]{.light-blue}, ve [$s_2=0$]{.light-blue}’dır.
+
+:::
+:::
+:::
+
+:::
+
+## Uygun çözümün olmaması
+
+
+::: {.callout-important icon=false title="Uygun çözümün olmaması" style="font-size: 100%;"}
+
+* Bir doğrusal programlama probleminde bazen [uygun bir çözüm olmayabilir]{.light-red}.
+* Bu durum kendini özellikle [büyük M metodunda]{.light-red} simpleks tablo optimuma ulaştığı halde [$A$]{.green} [yapay değişkeninin]{.light-red} hala [temel çözümde yer almasıyla]{.light-red} kendini belli eder.
+* [$A$]{.green} yapay değişkeni temel çözümde yer aldığında optimum değer [$M$]{.red} li bir değer olacak ve [istenilen optimizasyon gerçekleşmeyecektir]{.light-red}.
+* Büyük M metodunda [temel çözümden çıkması beklenen]{.light-red} ilk değişken [$A$]{.green} yapay değişkenidir.
+:::
+
+
+## Örnek 14: Uygun Çözüm Olmaması (1)
+
+::: {.callout-tip icon=false title="Örnek 14: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{min}=2x_1+2x_2$]{.light-blue}
+
+[$-x_1 + x_2 \leq 4$]{.light-blue}
+
+[$x_1 + 2x_2 \geq 5$]{.light-blue}
+
+[$3x_1 + 4x_2 \leq 6$]{.light-blue}
+
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{min}=2x_1+2x_2 \\ 
+\color{orange}{+0s_1+0s_2+0s_3} \color{green}{+MA_1}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+-1x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {1s_1 + 0s_2+0s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 4,\\
+1x_1 &+& 2x_2 &\color{orange}+& {\color{orange} {0s_1 -1s_2+0s_3}}{\color{green} {+1A_1}} &\;\color{orange}= & 5,\\
+3x_1 &+& 4x_2 &\color{orange}+& {\color{orange} {0s_1+ 0s_2+1s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 6
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$, [$s_1$, $s_2$, $s_3 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 14: Uygun Çözüm Olmaması (2)
+
+::: {.callout-tip icon=false title="Örnek 14: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 14: Uygun Çözüm Olmaması (3)
+
+::: {.callout-tip icon=false title="Örnek 14: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 14: Uygun Çözüm Olmaması (4)
+
+::: {.callout-tip icon=false title="Örnek 14: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 14: Uygun Çözüm Olmaması (5)
+
+::: {.callout-tip icon=false title="Örnek 14: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 14: Uygun Çözüm Olmaması (6)
+
+::: {.callout-tip icon=false title="Örnek 14: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 14: Uygun Çözüm Olmaması (7)
+
+::: {.callout-tip icon=false title="Örnek 14: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 14: Uygun Çözüm Olmaması (8)
+
+::: {.callout-tip icon=false title="Örnek 14: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex14\ex14_iter01_07_after_objective.html >}}
+```
+:::
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\leq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Son durumda [$Z=2M+3$]{.light-blue} amaç fonksiyonu için bulunabilecek en küçük değer olarak gözlense de amaç fonksiyonu [$M$]{.red} değerini içerdiğinden [uygun çözüm yoktur]{.orange}.
+
+:::
+
+:::
+
+:::
+
+
+
+## Örnek 15: Uygun Çözüm Olmaması (1)
+
+::: {.callout-tip icon=false title="Örnek 15: DP Problemi ve Standart Form" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=3x_1+2x_2$]{.light-blue}
+
+[$2x_1 + x_2 \leq 2$]{.light-blue}
+
+[$3x_1 + 4x_2 \geq 12$]{.light-blue}
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}=3x_1+2x_2 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 2,\\
+3x_1 &+& 4x_2 &\color{orange}+& {\color{orange} {0s_1 -1s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 12
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$, [$s_1$, $s_2 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 15: Uygun Çözüm Olmaması (2)
+
+::: {.callout-tip icon=false title="Örnek 15: Başlangıç Tablosu" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_01_before.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 15: Uygun Çözüm Olmaması (3)
+
+::: {.callout-tip icon=false title="Örnek 15: $Z_j$ ve $Z_j-C_j$ (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_02_write.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+:::
+:::
+
+
+## Örnek 15: Uygun Çözüm Olmaması (4)
+
+::: {.callout-tip icon=false title="Örnek 15: Anahtar Sütun (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_03_enter_col.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="20%"}
+:::
+
+:::
+:::
+
+## Örnek 15: Uygun Çözüm Olmaması (5)
+
+::: {.callout-tip icon=false title="Örnek 15: Anahtar Satır (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_04_select.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+
+
+:::
+
+:::
+
+:::
+
+
+## Örnek 15: Uygun Çözüm Olmaması (6)
+
+::: {.callout-tip icon=false title="Örnek 15: Anahtar Satır İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_05_update_base_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 93%;"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+## Örnek 15: Uygun Çözüm Olmaması (7)
+
+::: {.callout-tip icon=false title="Örnek 15: Diğer Satırlar İçin Yeni Değer (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="63%"}
+
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_06_update_other_row.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::{style="font-size: 80%;"}
+
+:::
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+## Örnek 15: Uygun Çözüm Olmaması (8)
+
+::: {.callout-tip icon=false title="Örnek 15: Simpleks Adım Sonu (İter 1)" style="font-size: 100%;"}
+
+::: columns
+::: {.column width="70%"}
+
+:::{#tbl-my-table}
+```{=html}
+{{< include .\out\ex15\ex15_iter01_07_after_objective.html >}}
+```
+:::
+* [$z_j-c_j$]{.light-blue} değerlerinin tamamı [$\geq 0$]{.light-blue} olduğundan çözüm optimuma ulaşmıştır.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="25%"}
+* Son durumda [$Z=-4M+4$]{.light-blue} amaç fonksiyonu için bulunabilecek en büyük değer olarak gözlense de amaç fonksiyonu [$M$]{.red} değerini içerdiğinden [uygun çözüm yoktur]{.orange}.
+
+:::
+
+:::
+
+:::
+
+
+

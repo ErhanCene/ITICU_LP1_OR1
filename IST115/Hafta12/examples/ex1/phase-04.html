@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Two-Phase Simplex — Step 04</title></head><body><style>
+  .sx{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    font-size:1em;   /* or 1.3em / 1.4em */
+    line-height:1.25
+  }  .sx .t{border-collapse:collapse;margin:4px 0 14px}
+  .sx th,.sx td{border:1px solid #d0d0d0;padding:6px 8px}
+  .sx thead th{background:#eef3f8}
+  .sx .title{font-weight:700;margin:6px 0 4px}
+  .sx .cap{font-style:italic;margin:2px 0 10px; font-size: 1em;}
+  .sx .tdv{background:#efeafe;font-weight:600}
+  .sx .bcol{background:#fff7d6}
+  .sx .ratiocol{background:#fff1bf}
+  .sx .cjrow th,.sx .cjrow td{background:#f7f7ff;font-weight:600}
+  .sx .zjrow th,.sx .zjrow td{background:#eefaf1}
+  .sx .diffrow th,.sx .diffrow td{background:#fff3f0}
+  .sx .neg{color:#c0392b;font-weight:700}
+  .sx .pos{color:#1e8449;font-weight:700}
+  /* highlight borders */
+  .sx .pivot{outline:3px solid #3b82f6}
+  .sx .entercol{background:rgba(0,128,0,0.08);border-left:3px solid #1e8449;border-right:3px solid #1e8449}
+  .sx .leaverow>td, .sx .leaverow>th{background:rgba(255,165,0,0.12);border-top:3px solid #e67e22;border-bottom:3px solid #e67e22}
+  .sx .note{margin-top:6px;color:#444}
+  </style><div class='sx'><div class='title'>Phase I - Iteration 2 (choose)</div><div class='cap'>Iteration 2: Enter x1; compute ratios and choose leaving row.</div><table class='t'><thead><tr><th class='tdv'>TDV</th><th class='entercol'>x1</th><th>x2</th><th>x3</th><th>s1</th><th>s2</th><th>s3</th><th>a1</th><th>a2</th><th>a3</th><th class='bcol'>b</th><th class='ratiocol'>b/a<sub>j*</sub></th></tr></thead><tbody><tr class='cjrow'><th>C<sub>j</sub></th><td class='entercol'>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td class='bcol'>0</td><td class='ratiocol'></td></tr><tr><th class='tdv'>0&nbsp;x2</th><td class='entercol'>0.25</td><td>1</td><td>0.5</td><td>-0.25</td><td>0</td><td>0</td><td>0.25</td><td>0</td><td>0</td><td class='bcol'>2</td><td class='ratiocol'>8</td></tr><tr class='leaverow'><th class='tdv'>1&nbsp;a2</th><td class='entercol'>2.5</td><td>0</td><td>0</td><td>0.5</td><td>-1</td><td>0</td><td>-0.5</td><td>1</td><td>0</td><td class='bcol'>2</td><td class='ratiocol'>0.8</td></tr><tr><th class='tdv'>1&nbsp;a3</th><td class='entercol'>0.75</td><td>0</td><td>-0.5</td><td>0.25</td><td>0</td><td>-1</td><td>-0.25</td><td>0</td><td>1</td><td class='bcol'>1</td><td class='ratiocol'>1.333</td></tr><tr class='zjrow'><th>Z<sub>j</sub>*</th><td class='entercol pos'>3.25</td><td class=''>0</td><td class='neg'>-0.5</td><td class='pos'>0.75</td><td class='neg'>-1</td><td class='neg'>-1</td><td class='neg'>-0.75</td><td class='pos'>1</td><td class='pos'>1</td><td class='bcol pos'>3</td><td class='ratiocol'></td></tr><tr class='diffrow'><th>Z<sub>j</sub>*-C<sub>j</sub>*</th><td class='entercol pos'>3.25</td><td class=''>0</td><td class='neg'>-0.5</td><td class='pos'>0.75</td><td class='neg'>-1</td><td class='neg'>-1</td><td class='neg'>-1.75</td><td class=''>0</td><td class=''>0</td><td class='bcol'></td><td class='ratiocol'></td></tr></tbody></table></div></body></html>

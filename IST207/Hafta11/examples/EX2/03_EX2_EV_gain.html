@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='tr'><head><meta charset='utf-8'/>
+<title>Payoff</title>
+
+  <style>
+    :root{
+      --grid:#333; --head-bg:#f0f0f0; --lbl-bg:#fafafa;
+      --lilac-bg:#F5F3FF;  --lilac-br:#7C3AED;   /* EV row */
+      --green-bg:#ECFDF5;  --green-br:#16A34A;  /* ML col */
+      --amber-bg:#FFF7ED;  --amber-br:#F59E0B;  /* best cell */
+      --prob-bg:#FCFCFC;   --evcol-bg:#F8F9FF;  /* EV col */
+    }
+    body { font-family:'Segoe UI', Roboto, Arial, sans-serif; margin:18px; color:#111; }
+    table.tt { border-collapse:collapse; border:1.5px solid var(--grid); margin-bottom:14px; }
+    table.tt th, table.tt td { border:1px solid var(--grid); padding:6px 10px; }
+    thead th { background:var(--head-bg); font-weight:700; text-align:center; }
+    td.lbl { font-weight:700; background:var(--lbl-bg); white-space:nowrap; }
+    td.num { text-align:right; }
+    .corner { background:var(--head-bg); font-weight:700; text-align:center; }
+    .prob   { background:var(--prob-bg); font-size:12px; }
+    .evh    { background:var(--head-bg); }
+    .evc    { background:var(--evcol-bg); font-weight:700; }
+
+    /* ----- MARKS ----- */
+
+    /* full green band for ML column */
+    .mark-col-hdr { background:var(--green-bg) !important; border-bottom:3px solid var(--green-br) !important; }
+    .ml-col       { background:var(--green-bg) !important; border-left:3px solid var(--green-br) !important; border-right:3px solid var(--green-br) !important; }
+
+    /* purple framed lilac row for EV best */
+    .mark-row td  { background:var(--lilac-bg) !important; }
+    .mark-row td.lbl { border-left:2px solid var(--lilac-br) !important; }
+    .mark-row td   { border-top:2px solid var(--lilac-br) !important; border-bottom:2px solid var(--lilac-br) !important; }
+    .mark-row td:last-child { border-right:2px solid var(--lilac-br) !important; }
+
+    /* amber best cell *inside* ML column, keep outer green borders via inset box-shadow */
+    .best-ml { background:var(--amber-bg) !important; font-weight:700; box-shadow: inset 0 0 0 3px var(--amber-br); }
+
+    /* EV winning cell */
+    .mark-ev-cell { background:var(--amber-bg) !important; font-weight:700; box-shadow: inset 0 0 0 3px var(--amber-br); }
+
+    caption { caption-side: top; text-align:left; font-weight:700; margin:0 0 8px 0; }
+  </style>
+</head><body>
+<table class='tt'>
+<caption>Payoff Tablosu</caption>
+<thead>
+<tr><th class='corner' rowspan='2'>Sipariş Miktarı</th><th colspan='4'>İstem Miktarı</th><th class='evh' rowspan='2'>Beklenen Değer (EV)</th></tr>
+<tr><th>M1 (100)</th><th>M2 (150)</th><th>M3 (200)</th><th>M4 (250)</th></tr>
+</thead>
+<tbody>
+<tr class='prob'>
+<td class='lbl'>Olasılık</td>
+<td class='num'>0.2</td><td class='num'>0.3</td><td class='num'>0.3</td><td class='num'>0.2</td>
+<td class='evc'></td>
+</tr>
+<tr>
+<td class='lbl'>S1 (100)</td>
+<td class='num'>3 000</td><td class='num'>2 750</td><td class='num'>2 500</td><td class='num'>2 250</td>
+<td class='num evc'>2 625</td>
+</tr>
+<tr>
+<td class='lbl'>S2 (200)</td>
+<td class='num'>1 500</td><td class='num'>4 750</td><td class='num'>8 000</td><td class='num'>7 750</td>
+<td class='num evc'>5 675</td>
+</tr>
+<tr class='mark-row'>
+<td class='lbl'>S3 (300)</td>
+<td class='num'>2 000</td><td class='num'>5 250</td><td class='num'>8 500</td><td class='num'>11 750</td>
+<td class='num evc mark-ev-cell'>6 875</td>
+</tr>
+</tbody>
+</table>
+</body></html>

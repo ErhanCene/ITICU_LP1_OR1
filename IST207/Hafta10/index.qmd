@@ -1149,7 +1149,7 @@ Elde edilen sonuçlara bakıldığında [en düşük]{.light-red} kayba sahip [$
 * [A]{.light-red} ve [B]{.light-red} firmalarının hisse senetlerini alarak borsaya [$10000$ pb]{.light-blue} para yatırmak istediğinizi varsayalım. 
 * [A]{.light-red} firmasının hisse senetleri riskli olmakla birlikte, 
   * Borsanın [iyi]{.light-red} gittiği durumda [(boğaların hakim olduğu pazarda)]{.light-red} gelecek sene için değeri [$\%50$ artacaktır]{.light-blue}. 
-  * Eğer borsa [iyi gitmezse]{.light-red} [(ayıların hakim olduğu pazarda)]{.light-red} hisse senedinin değeri [$%20$ azalacaktır]{.light-blue}. 
+  * Eğer borsa [iyi gitmezse]{.light-red} [(ayıların hakim olduğu pazarda)]{.light-red} hisse senedinin değeri [$\%20$ azalacaktır]{.light-blue}. 
 * [B]{.light-red} hisse senedi ise güvenli bir şekilde 
   * [boğaların]{.light-red} hakim olduğu pazarda [$\%15$ getiri]{.light-blue}, 
   * [ayıların]{.light-red} hakim olduğu pazarda [$\%5$ getiri]{.light-blue} sağlayacaktır. 

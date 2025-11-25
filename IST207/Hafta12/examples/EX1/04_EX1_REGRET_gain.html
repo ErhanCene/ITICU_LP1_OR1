@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='tr'><head><meta charset='utf-8'/>
+<title>Regret</title>
+
+  <style>
+    :root{
+      --grid:#333; --head-bg:#f0f0f0; --lbl-bg:#fafafa;
+      --lilac-bg:#F5F3FF;  --lilac-br:#7C3AED;   /* winning row */
+      --amber-bg:#FFF7ED;  --amber-br:#F59E0B;  /* ER cell */
+      --rose-bg:#FFE4E6;   --rose-br:#EF4444;   /* MR cells */
+      --prob-bg:#FCFCFC;   --evcol-bg:#F8F9FF;  /* ER col */
+    }
+    body { font-family:'Segoe UI', Roboto, Arial, sans-serif; margin:18px; color:#111; }
+    table.tt { border-collapse:collapse; border:1.5px solid var(--grid); margin-bottom:14px; }
+    table.tt th, table.tt td { border:1px solid var(--grid); padding:6px 10px; }
+    thead th { background:var(--head-bg); font-weight:700; text-align:center; }
+    td.lbl { font-weight:700; background:var(--lbl-bg); white-space:nowrap; }
+    td.num { text-align:right; }
+    .corner { background:var(--head-bg); font-weight:700; text-align:center; }
+    .prob   { background:var(--prob-bg); font-size:12px; }
+    .evh    { background:var(--head-bg); }
+    .evc    { background:var(--evcol-bg); font-weight:700; }
+
+    /* purple framed lilac row (ER or MR winner) */
+    .mark-row td  { background:var(--lilac-bg) !important; }
+    .mark-row td.lbl { border-left:2px solid var(--lilac-br) !important; }
+    .mark-row td   { border-top:2px solid var(--lilac-br) !important; border-bottom:2px solid var(--lilac-br) !important; }
+    .mark-row td:last-child { border-right:2px solid var(--lilac-br) !important; }
+
+    /* amber ER cell (inset so row frame stays visible) */
+    .er-best { background:var(--amber-bg) !important; font-weight:700; box-shadow: inset 0 0 0 3px var(--amber-br); }
+
+    /* dashed red MR max cells */
+    .mr-cell { background:var(--rose-bg) !important; font-weight:700; border:3px dashed var(--rose-br) !important; }
+
+    caption { caption-side: top; text-align:left; font-weight:700; margin:0 0 8px 0; }
+  </style>
+</head><body>
+<table class='tt'>
+<caption>Pişmanlık (Regret) Tablosu</caption>
+<thead>
+<tr><th class='corner' rowspan='2'>Sipariş Miktarı</th><th colspan='4'>İstem Miktarı</th><th class='evh' rowspan='2'>Beklenen Pişmanlık (ER)</th></tr><tr><th>O1</th><th>O2</th><th>O3</th><th>O4</th></tr>
+</thead>
+<tbody>
+<tr class='prob'>
+<td class='lbl'>Olasılık</td>
+<td class='num'>0.2</td><td class='num'>0.5</td><td class='num'>0.2</td><td class='num'>0.1</td>
+<td class='evc'></td>
+</tr>
+<tr>
+<td class='lbl'>S1</td>
+<td class='num'>2</td><td class='num'>8</td><td class='num'>16</td><td class='num'>4</td>
+<td class='num evc'>8.0</td>
+</tr>
+<tr class='mark-row'>
+<td class='lbl'>S2</td>
+<td class='num'>6</td><td class='num'>0</td><td class='num'>4</td><td class='num'>8</td>
+<td class='num evc er-best'>2.8</td>
+</tr>
+<tr>
+<td class='lbl'>S3</td>
+<td class='num'>0</td><td class='num'>10</td><td class='num'>0</td><td class='num'>0</td>
+<td class='num evc'>5.0</td>
+</tr>
+<tr>
+<td class='lbl'>S4</td>
+<td class='num'>6</td><td class='num'>4</td><td class='num'>6</td><td class='num'>6</td>
+<td class='num evc'>5.0</td>
+</tr>
+</tbody>
+</table>
+</body></html>

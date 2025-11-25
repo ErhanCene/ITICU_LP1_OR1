@@ -35,6 +35,8 @@ website:
           - IST115/MainPage/IST115_WEEK07_MAIN.qmd
           - IST115/MainPage/IST115_WEEK09_MAIN.qmd
           - IST115/MainPage/IST115_WEEK10_MAIN.qmd
+          - IST115/MainPage/IST115_WEEK11_MAIN.qmd
+          - IST115/MainPage/IST115_WEEK12_MAIN.qmd
       - section: IST207 - Yöneylem Araştırması 1 Ders Notları
         contents: 
           - IST207/MainPage/IST207_WEEK01_MAIN.qmd
@@ -46,6 +48,8 @@ website:
           - IST207/MainPage/IST207_WEEK07_MAIN.qmd
           - IST207/MainPage/IST207_WEEK09_MAIN.qmd
           - IST207/MainPage/IST207_WEEK10_MAIN.qmd
+          - IST207/MainPage/IST207_WEEK11_MAIN.qmd
+          - IST207/MainPage/IST207_WEEK12_MAIN.qmd
   page-footer:
     background: light # or `dark`
     left: Copyright 2025, Erhan ÇENE

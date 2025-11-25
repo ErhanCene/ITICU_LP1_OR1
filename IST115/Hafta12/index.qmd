@@ -1,0 +1,2268 @@
+---
+title: Hafta 12
+subtitle: "İki Aşamalı Simpleks Çözüm Yöntemi"
+date: 12/04/2025
+date-format: DD/MM/YYYY
+author: "Doç. Dr. Erhan Çene"
+format: 
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/iticulogo.png
+    css: styles.css
+    footer: "IST115 - Doğrusal Programlama 1 - Hafta 12 - 04 Aralık 2025 - Doç. Dr. Erhan Çene"
+    # width: 2000
+    # height: 1500
+filters:
+  - parse-latex
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+## İki Aşamalı Yöntem
+
+::: {.callout-important icon=false title="İki Aşamalı Yöntem" style="font-size: 120%;"}
+
+* [Büyük M yöntemi]{.light-red}, yapay değişkenlerin kullanıldığı problemlerin çözümünde [en çok kullanılan]{.light-red} yöntem olmakla birlikte, [diğer çözüm yöntemleri]{.light-red} de araştırmacılar tarafından ele alınmıştır. 
+* Değişik çözüm tekniklerinden birisi de [iki aşamalı simpleks]{.light-red} yöntemidir. 
+* Büyük M yönteminin [sakıncalarını gidermek]{.light-red} ve [hesaplamanın etkinliğini arttırmak]{.light-red} amacıyla geliştirilen iki aşamalı yöntem [hesaplamada iki aşama gerektirdiğinden]{.light-red} bu isimle anılmaktadır.
+
+:::
+
+## İki Aşamalı Yöntem: Birinci Aşama (1)
+
+::: {.callout-important icon=false title="İki Aşamalı Yöntem: Birinci Aşama (1)" style="font-size: 120%;"}
+
+* [Birinci aşama:]{.red} Problemin kısıtlayıcı fonksiyonları uygun değişkenlerle [standart biçim]{.light-red} kısıtlayıcı fonksiyonlarına dönüştürülür. 
+* Bu işlemden sonra problemin [orijinal amaç fonksiyonu yerine kullanılacak yeni bir amaç fonksiyonu]{.light-red} tanımlanır
+* Problem klasik simpleks yöntemin [bilinen kural]{.light-red} ve [işlemleriyle]{.light-red} aynı süreç izlenerek çözülür.
+:::
+
+## İki Aşamalı Yöntem: Birinci Aşama (2)
+
+::: {.callout-important icon=false title="İki Aşamalı Yöntem: Birinci Aşama (2)" style="font-size: 100%;"}
+
+* Gerçek amaç fonksiyonu yerine geçirilen [değiştirilmiş amaç fonksiyonunda]{.light-red},
+  * [yapay değişkenler dışında kalan tüm değişkenlerin]{.light-red} katsayıları [sıfır]{.light-blue},   
+  * [yapay değişkenlerin]{.light-red} katsayıları ise 
+    * [en büyükleme]{.light-red} problemlerinde [$-1$]{.light-blue}, 
+    * [en küçükleme]{.light-red} problemlerinde [$+1$]{.light-blue} kabul edilir.
+* Yani değiştirilmiş amaç fonksiyonu,
+  * en büyükleme problemlerinde
+  [$$Z_{max}^*=-A_1-A_2-\cdots-A_n$$]{.light-blue}
+  * en küçükleme problemlerinde
+  [$$Z_{min}^*=A_1+A_2+\cdots+A_n$$]{.light-blue}
+şeklinde yazılır.
+:::
+
+
+## İki Aşamalı Yöntem: Birinci Aşama (3)
+
+::: {.callout-important icon=false title="İki Aşamalı Yöntem: Birinci Aşama (3)" style="font-size: 120%;"}
+
+* Değiştirilmiş [amaç fonksiyonunun değeri]{.light-red} [sıfır]{.light-blue} ise bu durumda [yapay değişkenlerin değerinin]{.light-red} [sıfır]{.light-blue} olduğu anlamına gelir ve [ikinci aşamaya geçilir]{.light-red}. Aksi takdirde [uygun çözüm yoktur]{.orange}.
+* [Bir ya da birden fazla yapay değişken]{.light-red} [sıfır]{.light-blue} değerli olarak [temelde kalmış olabilir]{.light-red}. 
+* Çözüm değeri [sıfır]{.light-blue} olan yapay değişkenlerin temelde bulunması [orijinal problemin çözümüne ulaşmayı engellememekle]{.light-red} birlikte, [kısıtlayıcı fonksiyonlarda fazlalık bulunması]{.light-red} söz konusu olabilir.
+:::
+
+## İki Aşamalı Yöntem: İkinci Aşama
+
+::: {.callout-important icon=false title="İki Aşamalı Yöntem: İkinci Aşama" style="font-size: 100%;"}
+
+* [İkinci aşama:]{.red} [Birinci aşamada belirlenen çözüm]{.light-red}, [orijinal problemin çözümü]{.light-red} için [temel]{.light-red} oluşturur. 
+* Temelde [hiçbir yapay değişken bulunmadığı durumda]{.light-red} birinci aşamanın çözüm tablosundaki [yapay değişken sütunları devre dışı]{.light-red} bırakılır. Bu, çözüm tablosunda gerçekleştirilmesi gereken [ilk değişikliktir]{.light-red}. 
+* Diğer bir değişiklik, [$Z_j$]{.light-blue} ve [$Z_j - C_j$]{.light-blue} değerlerinde ortaya çıkar. Değişkenlerin [orijinal amaç fonksiyonu katsayıları]{.light-red} kullanılarak [$Z_j$]{.light-blue} ve [$Z_j - C_j$]{.light-blue}’nin [yeni değerleri]{.light-red} hesaplanır ve [ikinci aşamanın başlangıç tablosu]{.light-red} oluşturulur. 
+* Bundan sonra simpleks yöntemin [bilinen işlemleriyle]{.light-red} problemin [en iyi çözümü]{.light-red} elde edilir.
+* Birinci aşamanın temelde [sıfır]{.light-blue} değerli bir [yapay değişken olması]{.light-red} durumunda ikinci aşamanın [başlangıç tablosunun]{.light-red} [$Z_j$]{.light-blue} ve [$Z_j - C_j$]{.light-blue} değerlerinin hesaplanabilmesi için [sıfır]{.light-blue} değerli [yapay değişkenlerin amaç fonksiyonundaki katsayıları]{.light-red} [sıfır]{.light-blue} alınırken, [diğer değişkenler]{.light-red} için ise [orijinal amaç fonksiyonundaki katsayıları]{.light-blue} esas alınır
+:::
+
+
+
+## Örnek 1: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 1: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="33%"}
+Aşağıdaki doğrusal programlama problemini iki aşamalı simpleks yöntemle çözünüz.
+
+[$Z_{min}=2x_1+3x_2+x_3$]{.light-blue}
+
+[$x_1 + 4x_2 + 2x_3 \geq 8$]{.light-blue}
+
+[$3x_1 + 2x_2 + x_3 \geq 6$]{.light-blue}
+
+[$x_1 + x_2 \geq 3$]{.light-blue}
+
+
+[$x_1$, $x_2$, $x_3 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="66%" style="font-size: 100%;"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=2x_1+3x_2+x_3 \\ 
+\color{orange}{+0s_1+0s_2+0s_3} \color{green}{+MA_1+MA_2+MA_3}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 4x_2 &+& 2x_3 &\color{orange}-& {\color{orange} {1s_1 + 0s_2+0s_3}}{\color{green} {+1A_1+0A_2+0A_3}} &\;\color{orange}= & 8,\\
+3x_1 &+& 2x_2 &+& 1x_3 &\color{orange}+& {\color{orange} {0s_1 - 1s_2+0s_3}}{\color{green} {+0A_1+1A_2+0A_3}} &\;\color{orange}= & 6,\\
+1x_1 &+& 1x_2 &+& 0x_3 &\color{orange}+& {\color{orange} {0s_1 + 0s_2-1s_3}}{\color{green} {+0A_1+0A_2+1A_3}} &\;\color{orange}= & 3
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2$, $x_3 \geq 0$ ve [$s_1$, $s_2$, $s_3 \geq 0$]{.orange},<br> [$A_1$, $A_2$, $A_3 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{min}^*=1\cdot A_1+1\cdot A_2+1\cdot A_3$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Örnek 1: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 1: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-05.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 3 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-06.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (8)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 3 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-07.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (9)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-08.html >}}
+```
+:::
+
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} ve [$Z^*_{min} = 0$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmıştır]{.orange}.
+* [İkinci aşama tablosu]{.light-red}, ilk aşama tablosundan [$A_j$]{.light-blue} değişkenleri [satır ve sütundan çıkarılarak]{.light-red} ve [orijinal amaç fonksiyonunu katsayılarına geri dönülerek]{.light-red} oluşturulur.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (10)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-09.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 1: İki Aşamalı Yöntem (11)
+
+::: {.callout-tip icon=false title="Aşama 2 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="75%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex1\phase-10.html >}}
+```
+:::
+
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} olduğundan [ikinci aşama tablosu optimuma ulaşmıştır]{.orange}.
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="24%"}
+* Optimum değer [$Z_{min} = 7.667$]{.red} ve optimum çözüm [$x_1 = 1.333$]{.light-blue},[$x_2 = 1.667$]{.light-blue}, <br> [$x_3 = 0$]{.light-blue}, [$s_1 = 0$]{.light-blue}, [$s_2 = 1.333$]{.light-blue} ve [$s_3 = 0$]{.light-blue} olarak bulunur.
+:::
+
+:::
+:::
+
+
+
+
+## Örnek 2: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 2: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="33%"}
+Aşağıdaki doğrusal programlama problemini iki aşamalı simpleks yöntemle çözünüz.
+
+[$Z_{max}=5x_1+x_2$]{.light-blue}
+
+[$x_1 - x_2 \geq 3$]{.light-blue}
+
+[$-x_1 + 4x_2 \geq 1$]{.light-blue}
+
+[$x_1 + 2x_2 \leq 8$]{.light-blue}
+
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="66%" style="font-size: 100%;"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{max}=5x_1+x_2 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1-MA_2}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &-& 1x_2 &\color{orange}-& {\color{orange} {1s_1 + 0s_2+0s_3}}{\color{green} {+1A_1+0A_2}} &\;\color{orange}= & 3,\\
+-1x_1 &+& 4x_2 &\color{orange}+& {\color{orange} {0s_1 - 1s_2+0s_3}}{\color{green} {+0A_1+1A_2}} &\;\color{orange}= & 1,\\
+1x_1 &+& 2x_2 &\color{orange}+& {\color{orange} {0s_1 + 0s_2+1s_3}}{\color{green} {+0A_1+0A_2}} &\;\color{orange}= & 8
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2 \geq 0$ ve [$s_1$, $s_2$, $s_3 \geq 0$]{.orange},<br> [$A_1$, $A_2 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{max}^*=-1\cdot A_1-1\cdot A_2$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Örnek 2: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 2: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-05.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-06.html >}}
+```
+:::
+
+:::{style="font-size: 86%;"}
+
+* Tüm [$Z_j^* - C_j^*\geq 0$]{.light-blue} ve [$Z^*_{max} = 0$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmıştır]{.orange}.
+* [İkinci aşama tablosu]{.light-red}, ilk aşama tablosundan [$A_j$]{.light-blue} değişkenleri [satır ve sütundan çıkarılarak]{.light-red} ve [orijinal amaç fonksiyonunu katsayılarına geri dönülerek]{.light-red} oluşturulur.
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (8)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-07.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (9)
+
+::: {.callout-tip icon=false title="Aşama 2 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-08.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (10)
+
+::: {.callout-tip icon=false title="Aşama 2 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-09.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 2: İki Aşamalı Yöntem (11)
+
+::: {.callout-tip icon=false title="Aşama 2 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="60%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex2\phase-10.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="34%"}
+* Optimum değer [$Z_{max} = 26.5$]{.red} ve optimum çözüm [$x_1 = 5$]{.light-blue},[$x_2 = 1.5$]{.light-blue}, [$s_1 = 0.5$]{.light-blue}, [$s_2 = 0$]{.light-blue} ve [$s_3 = 0$]{.light-blue} olarak bulunur.
+:::
+
+:::
+* Tüm [$Z_j^* - C_j^*\geq 0$]{.light-blue} olduğundan [ikinci aşama tablosu optimuma ulaşmıştır]{.orange}.
+
+:::
+
+
+
+## Örnek 3: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 3: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="33%"}
+Aşağıdaki doğrusal programlama problemini iki aşamalı simpleks yöntemle çözünüz.
+
+[$Z_{min}=2x_1+3x_2$]{.light-blue}
+
+[$0.5x_1 + 0.25x_2 \leq 4$]{.light-blue}
+
+[$x_1 + 3x_2 \geq 20$]{.light-blue}
+
+[$x_1 +x_2 = 10$]{.light-blue}
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="66%" style="font-size: 100%;"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=2x_1+3x_2 \\ 
+\color{orange}{0s_1+0s_2} \color{green}{+MA_1+MA_2}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+0.5x_1 &+& 0.25x_2 &\color{orange}+& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+0A_1+0A_2}} &\;\color{orange}= & 4,\\
+1x_1 &+& 3x_2 &\color{orange}+& {\color{orange} {0s_1 - 1s_2}}{\color{green} {+1A_1+0A_2}} &\;\color{orange}= & 20,\\
+1x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {0s_1 + 0s_2}}{\color{green} {+0A_1+1A_2}} &\;\color{orange}= & 10
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2$, $x_3 \geq 0$ ve [$s_1$, $s_2$, $s_3 \geq 0$]{.orange},<br> [$A_1$, $A_2$, $A_3 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{min}^*=1\cdot A_1+1\cdot A_2$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Örnek 3: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 3: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 3: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 3: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 3: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-05.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+
+
+## Örnek 3: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-06.html >}}
+```
+:::
+
+
+:::{style="font-size: 86%;"}
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} ve [$Z^*_{min} = 0$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmıştır]{.orange}.
+* [İkinci aşama tablosu]{.light-red}, ilk aşama tablosundan [$A_j$]{.light-blue} değişkenleri [satır ve sütundan çıkarılarak]{.light-red} ve [orijinal amaç fonksiyonunu katsayılarına geri dönülerek]{.light-red} oluşturulur.
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 3: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-07.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 3: İki Aşamalı Yöntem (9)
+
+::: {.callout-tip icon=false title="Aşama 2 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="60%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex3\phase-08.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="39%"}
+* Optimum değer [$Z_{min} = 25$]{.red} ve optimum çözüm [$x_1 = 5$]{.light-blue},[$x_2 = 5$]{.light-blue}, <br> [$s_1 = 0.25$]{.light-blue} ve [$s_2 = 0$]{.light-blue} olarak bulunur.
+:::
+
+:::
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} olduğundan [ikinci aşama tablosu optimuma ulaşmıştır]{.orange}.
+:::
+
+
+## Örnek 4: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 4: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="33%"}
+Aşağıdaki doğrusal programlama problemini iki aşamalı simpleks yöntemle çözünüz.
+
+[$Z_{min}=6x_1+3x_2$]{.light-blue}
+
+[$x_1 + x_2 \geq 1$]{.light-blue}
+
+[$2x_1 - x_2  \geq 1$]{.light-blue}
+
+[$3x_2 \leq 2$]{.light-blue}
+
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="66%" style="font-size: 100%;"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=6x_1+3x_2 \\ 
+\color{orange}{+0s_1+0s_2+0s_3} \color{green}{+MA_1+MA_2}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 1x_2 &\color{orange}-& {\color{orange} {1s_1 + 0s_2+0s_3}}{\color{green} {+1A_1+0A_2}} &\;\color{orange}= & 1,\\
+2x_1 &-& 1x_2 &\color{orange}+& {\color{orange} {0s_1 - 1s_2+0s_3}}{\color{green} {+0A_1+1A_2}} &\;\color{orange}= & 1,\\
+0x_1 &+& 3x_2 &\color{orange}+& {\color{orange} {0s_1 + 0s_2+1s_3}}{\color{green} {+0A_1+0A_2}} &\;\color{orange}= & 2
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2 \geq 0$ ve [$s_1$, $s_2$, $s_3 \geq 0$]{.orange},<br> [$A_1$, $A_2 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{min}^*=1\cdot A_1+1\cdot A_2$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Örnek 4: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 4: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 4: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 4: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 4: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-05.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+
+
+## Örnek 4: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-06.html >}}
+```
+:::
+
+:::{style="font-size: 86%;"}
+
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} ve [$Z^*_{min} = 0$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmıştır]{.orange}.
+* [İkinci aşama tablosu]{.light-red}, ilk aşama tablosundan [$A_j$]{.light-blue} değişkenleri [satır ve sütundan çıkarılarak]{.light-red} ve [orijinal amaç fonksiyonunu katsayılarına geri dönülerek]{.light-red} oluşturulur.
+:::
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 4: İki Aşamalı Yöntem (8)
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-07.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 4: İki Aşamalı Yöntem (9)
+
+::: {.callout-tip icon=false title="Aşama 2 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="68%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex4\phase-08.html >}}
+```
+:::
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} olduğundan [ikinci aşama tablosu optimuma ulaşmıştır]{.orange}.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="31%"}
+* Optimum değer [$Z_{min} = 5$]{.red} ve optimum çözüm [$x_1 = 0.667$]{.light-blue},[$x_2 = 0.333$]{.light-blue}, <br> [$s_1 = 0$]{.light-blue}, [$s_2 = 0$]{.light-blue} ve [$s_3 = 1$]{.light-blue} olarak bulunur.
+:::
+
+:::
+:::
+
+
+## Örnek 5: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 5: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="38%"}
+Aşağıdaki doğrusal programlama problemini iki aşamalı simpleks yöntemle çözünüz.
+
+[$Z_{min}=2x_1+6x_2+x_3+x_4$]{.light-blue}
+
+[$x_1 + 2x_2 + x_4 = 6$]{.light-blue}
+
+[$x_1 + 2x_2 + x_3 + x_4 = 7$]{.light-blue}
+
+[$x_1 + 3x_2 - x_3 + 2x_4 = 7$]{.light-blue}
+
+[$x_1 + x_2 + x_3 = 5$]{.light-blue}
+
+[$x_1$, $x_2$, $x_3$ ve $x_4 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="61%" style="font-size: 100%;"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 100%;"}
+\begin{multline}
+Z_{min}=2x_1+6x_2+x_3 + x_4 \\
+\color{green}{+MA_1+MA_2+MA_3+MA_4}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+1x_1 &+& 2x_2 &+& 0x_3 &+& 1x_4 {\color{green} {+1A_1+0A_2+0A_3+0A_4}} &\;\color{orange}= & 6,\\
+1x_1 &+& 2x_2 &+& 1x_3 &+& 1x_4 {\color{green} {+0A_1+1A_2+0A_3+0A_4}} &\;\color{orange}= & 7,\\
+1x_1 &+& 3x_2 &-& 1x_3 &+& 2x_4 {\color{green} {+0A_0+0A_2+1A_3+0A_4}} &\;\color{orange}= & 7,\\
+1x_1 &+& 1x_2 &+& 1x_3 &+& 0x_4 {\color{green} {+0A_0+0A_2+0A_3+1A_4}} &\;\color{orange}= & 5
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8 style="font-size: 100%;"}
+$x_1$, $x_2$, $x_3$ ve $x_4 \geq 0$ ve <br> [$A_1$, $A_2$, $A_3$ ve $A_4 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{min}^*=1\cdot A_1+1\cdot A_2+1\cdot A_3 +1\cdot A_4$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+## Örnek 5: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 5: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-150  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 2 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-05.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (7)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 3 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-06.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (8)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 3 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-07.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (9)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="60%"}
+
+
+:::{.tblbox .scale-120  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-08.html >}}
+```
+:::
+
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="39%"}
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} ve [$Z^*_{min} = 0$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmıştır]{.orange}.
+* [İkinci aşama tablosu]{.light-red}, ilk aşama tablosundan [$A_j$]{.light-blue} değişkenleri [satır ve sütundan çıkarılarak]{.light-red} ve [orijinal amaç fonksiyonunu katsayılarına geri dönülerek]{.light-red} oluşturulur.
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (10)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-09.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (11)
+
+::: {.callout-tip icon=false title="Aşama 2 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-10.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (12)
+
+::: {.callout-tip icon=false title="Aşama 2 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-11.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 5: İki Aşamalı Yöntem (13)
+
+::: {.callout-tip icon=false title="Aşama 2 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="60%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex5\phase-12.html >}}
+```
+:::
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} olduğundan [ikinci aşama tablosu optimuma ulaşmıştır]{.orange}.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="39%"}
+* Optimum değer [$Z_{min} =11$]{.red} ve optimum çözüm [$x_1 = 4$]{.light-blue},[$x_2 = 0$]{.light-blue}, <br> [$x_3 = 1$]{.light-blue} ve [$x_4 = 2$]{.light-blue} olarak bulunur.
+:::
+
+:::
+:::
+
+## Örnek 6: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 6: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{min}=2x_1+2x_2$]{.light-blue}
+
+[$-x_1 + x_2 \leq 4$]{.light-blue}
+
+[$x_1 + 2x_2 \geq 5$]{.light-blue}
+
+[$3x_1 + 4x_2 \leq 6$]{.light-blue}
+
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{min}=2x_1+2x_2 \\ 
+\color{orange}{+0s_1+0s_2+0s_3} \color{green}{+MA_1}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+-1x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {1s_1 + 0s_2+0s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 4,\\
+1x_1 &+& 2x_2 &\color{orange}+& {\color{orange} {0s_1 -1s_2+0s_3}}{\color{green} {+1A_1}} &\;\color{orange}= & 5,\\
+3x_1 &+& 4x_2 &\color{orange}+& {\color{orange} {0s_1+ 0s_2+1s_3}}{\color{green} {+0A_1}} &\;\color{orange}= & 6
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$, [$s_1$, $s_2$, $s_3 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{min}^*=1\cdot A_1$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek 6: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex6\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 6: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex6\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 6: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex6\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 6: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="70%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex6\phase-04.html >}}
+```
+:::
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="29%"}
+* Tüm [$Z_j^* - C_j^*\leq 0$]{.light-blue} olmasına rağmen [$Z^*_{min} = 2 (\neq 0)$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmamıştır]{.orange}.
+* [İkinci tabloyu oluşturmaya ve işleme devam etmeye gerek yoktur.]{.red}
+:::
+:::
+
+:::
+
+## Örnek 6: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç Tablosu (Çözüm Yok)" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex6\phase-05.html >}}
+```
+:::
+* Doğrusal programlama probleminin [uygun çözümü yoktur]{.orange}.
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+
+:::
+
+:::
+:::
+
+
+
+## Örnek 7: İki Aşamalı Yöntem (1)
+
+::: {.callout-tip icon=false title="Örnek 7: DP Problemi, Standart Form ve Alternatif Amaç Fonksiyonu" style="font-size: 105%;"}
+
+::: columns
+::: {.column width="45%"}
+Aşağıdaki doğrusal programlama problemini simpleks yöntemle çözünüz.
+
+[$Z_{max}=3x_1+2x_2$]{.light-blue}
+
+[$2x_1 + x_2 \leq 2$]{.light-blue}
+
+[$3x_1 + 4x_2 \geq 12$]{.light-blue}
+
+[$x_1$, $x_2 \geq 0$]{.light-blue}
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=5}
+[Standart Form:]{.red}
+:::
+
+:::{.fragment fragment-index=6 style="font-size: 85%;"}
+\begin{multline}
+Z_{max}=3x_1+2x_2 \\ 
+\color{orange}{+0s_1+0s_2} \color{green}{-MA_1}
+\end{multline}
+
+:::
+
+
+:::{.fragment fragment-index=7 style="font-size: 85%;"}
+
+$$
+\begin{alignedat}{7}
+2x_1 &+& 1x_2 &\color{orange}+& {\color{orange} {1s_1 + 0s_2}}{\color{green} {+0A_1}} &\;\color{orange}= & 2,\\
+3x_1 &+& 4x_2 &\color{orange}+& {\color{orange} {0s_1 -1s_2}}{\color{green} {+1A_1}} &\;\color{orange}= & 12
+\end{alignedat}
+$$
+:::
+
+:::{.fragment fragment-index=8}
+$x_1$, $x_2 \geq 0$, [$s_1$, $s_2 \geq 0$]{.orange} ve [$A_1 \geq 0$]{.green}
+
+:::
+
+:::{.fragment fragment-index=9 style="font-size: 100%;"}
+[Alternatif Amaç Fonksiyonu:]{.red} [$Z_{max}^*=-1\cdot A_1$]{.purple}
+:::
+
+:::
+
+:::
+
+:::
+
+## Örnek 7: İki Aşamalı Yöntem (2)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Başlangıç Tablosu" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex7\phase-01.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+
+## Örnek 7: İki Aşamalı Yöntem (3)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Anahtar Satır, Anahtar Sütun ve Anahtar Değer Seçimi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .tbl-fs-xl .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex7\phase-02.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 7: İki Aşamalı Yöntem (4)
+
+::: {.callout-tip icon=false title="Aşama 1 - İterasyon 1 - Satır Değerlerin Güncellenmesi, Temeldeki Değişkenin Değişmesi" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex7\phase-03.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+:::
+
+:::
+:::
+
+## Örnek 7: İki Aşamalı Yöntem (5)
+
+::: {.callout-tip icon=false title="Aşama 1 - Optimal Tablo" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="71%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex7\phase-04.html >}}
+```
+:::
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="28%"}
+* Tüm [$Z_j^* - C_j^*\geq 0$]{.light-blue} olmasına rağmen [$Z^*_{max} = -4 (\neq 0)$]{.light-blue} olduğundan [ilk aşama tablosu optimuma ulaşmamıştır]{.orange}.
+* [İkinci tabloyu oluşturmaya ve işleme devam etmeye gerek yoktur.]{.red}
+:::
+
+:::
+:::
+
+## Örnek 7: İki Aşamalı Yöntem (6)
+
+::: {.callout-tip icon=false title="Aşama 2 - Başlangıç (Çözüm Yok)" style="font-size: 90%;"}
+
+::: columns
+::: {.column width="90%"}
+
+
+:::{.tblbox .scale-180  .pad-tight .text-center .scroll-x .scroll-y}
+```{=html}
+{{< include .\examples\ex7\phase-05.html >}}
+```
+:::
+* Doğrusal programlama probleminin [uygun çözümü yoktur]{.orange}.
+
+
+:::
+
+
+::: {.column width="1%"}
+
+:::
+
+::: {.column width="9%"}
+
+:::
+
+:::
+:::
+
+
